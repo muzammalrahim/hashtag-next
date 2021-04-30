@@ -1,0 +1,137 @@
+/*
+
+commented by sherin since main title css is already called in main css file
+.case-study.filemaker .main-title {
+  font-size: 50px;
+}*/
+
+.case-study.filemaker .features-blk {
+  background: #f5f5f5;
+  padding: 60px 0;
+}
+.case-study.filemaker .hashtag-underline {
+  margin-left: 0px;
+}
+
+.case-study.filemaker .features-blk .what-we-do-border-style h4 br {
+    display: block !important;
+}
+.expert-blk {
+  padding: 60px 0px;
+}
+.architecture-blk {
+  background: #f5f5f5;
+  padding: 60px 0;
+  background-image: url(/images/case-studies/filemaker/architecture-bg-hashtag.svg);
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: left bottom;
+}
+
+.case-study.filemaker .features-blk .what-we-do-border-style {
+  height: auto;
+  min-height: auto;
+}
+.challenge-sec {
+  margin-top: 80px;
+}
+.case-study.filemaker .common-title-blk {
+     background-color: #FF6B00;
+}
+.case-study.filemaker .common-title-blk {
+  background-image: url(/images/service/vector.svg);
+  background-size: contain;
+}
+
+.case-study.filemaker ul.exp-ul li
+{
+          list-style-position: inside;
+    text-indent: -22px;}
+.filemaker-int-logo ul {
+  list-style: none;
+}
+.filemaker-int-logo ul li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+.filemaker-int-logo ul li img {
+  width: 65%;
+}
+.filemakerintrologo-blk .img-blk {
+  width: 490px;
+    top: 21%;
+    position: absolute;
+    right: 4%;
+}
+.filemakerintrologo-blk .img-blk img {
+  display: block;
+  width: 100%;
+}
+.case-study.filemaker .project-about-blk {
+  padding: 180px 0 60px;
+}
+.benefits-blk {
+  background-color: #FF6B00;
+  padding: 7% 0;
+  position: relative;
+}
+.benefit-para p {
+  color: #fff;
+}
+.benefits-blk .img-blk img {
+  width: 100%;
+}
+ul.exp-ul li {
+  font-weight: 600;
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 25px;
+    list-style-type: none;
+        font-family: Montserrat !important;
+    color: #434343 !important;
+    font-size: 16px;
+}
+ul.exp-ul li::before {
+  content: "";
+  background-image: url(/images/case-studies/filemaker/expert-list-icon.svg);
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  top: 3px;
+  position: relative;
+  margin-right: 6px;
+}
+.benefits-rgt-tag img, .benefits-lft-tag img {
+  width: 100%;
+}
+.benefits-rgt-tag {
+  right: 0px;
+  bottom: 0px;
+  width: 350px;
+  position: absolute;
+}
+.benefits-lft-tag {
+  left: 0px;
+  top: 0px;
+  width: 350px;
+  position: absolute;
+}
+
+
+/* media query */
+@media (max-width: 767px)
+{
+  .sticky-image-section .sticky-img
+{
+position: unset !important;
+}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  #filemaker-case-study .orange-strip-blk
+  {
+    background-size: 296px 400px;
+  }
+  }

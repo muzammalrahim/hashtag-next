@@ -1,0 +1,98 @@
+
+
+/*--------- Multi Token custom css ---------*/
+.multi-token .technology-custom .technology-wrap{
+  margin-bottom: 110px;
+}
+.multi-token .multi-tk-project-about-blk blockquote::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+    top: -34px;
+    background: url('/images/case-studies/blockquote.svg') no-repeat;
+    width: 39px;
+    height: 28px;
+}
+.multi-token .multi-tk-project-about-blk blockquote{
+  margin-bottom: 50px;
+}
+.multi-token .multi-tk-project-about-blk{
+  padding: 60px 0px !important;
+  background: #F5F5F5;
+}
+.multi-token .skillset-blk{
+  background: #F5F5F5;
+}
+.multi-token .skill-list li:before{
+  background: url(/images/case-studies/multitoken/circle-icon.svg) no-repeat;
+  width: 20px;
+    height: 20px;
+}
+.multi-token .technology-blk.no-sticky{
+  padding-top: 35px;
+}
+.multi-token .technology-blk.no-sticky .sticky-img{
+  position: inherit;
+  top: inherit;
+  right: inherit;
+  height: inherit;
+  width: auto;
+  float: right;
+}
+.multi-token .technology-blk.no-sticky .sticky-img img{
+  position: inherit;
+  top: inherit;
+}
+.multi-token .technology-blk.technology-custom{
+  padding-top: 70px;
+}
+.multi-token .technology-blk.technology-custom .sticky-img{
+  position: inherit;
+  top: inherit;
+  right: inherit;
+  width: auto;
+  float: right;
+  padding-top: 20px;
+}
+.multi-token .technology-blk.technology-custom .sticky-img img{
+  top: 110px;
+}
+
+
+
+/* media query */
+@media(min-width: 2500px){
+  .multi-token .common-title-wrap{
+    padding: 105px 0 220px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .multi-token .technology-blk.no-sticky .sticky-img img, .multi-token .technology-blk.technology-custom .sticky-img img{max-width: 70%;float: right;}
+
+}
+
+@media(max-width: 767px) {
+  .multi-token ul.project-info li br{display: none;}
+  .multi-token .technology-blk.no-sticky, .multi-token .technology-blk.technology-custom{padding-bottom: 40px;}
+  .multi-token .technology-blk.no-sticky .sticky-img, .multi-token .technology-blk.technology-custom .sticky-img{padding-top: 25px;}
+}
+
+@media(max-width: 479px) {
+  
+}
+
+/* Sticky image center from KindleFire/Nexus10 screen */
+@media only screen and (min-width: 768px) and (max-width: 800px){
+  .custom-sticky-image{
+    width: 100% !important;
+    height: 100%;
+  }
+  .custom-sticky-image img{
+    max-width: 80% !important;
+    float: none !important;
+    margin: 0 auto;
+  }
+}

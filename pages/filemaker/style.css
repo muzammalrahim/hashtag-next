@@ -1,0 +1,395 @@
+/*.case-study.filemaker-service .common-title-blk{
+	background-color: #E7E7E7;
+	background-image: url('/images/file-maker/grey-hash.svg');
+}
+.case-study.filemaker-service .common-title-blk p{
+	color: #434343;
+}*/
+
+.case-study.filemaker-service .project-about-blk{
+	padding-bottom: 100px;
+}
+.case-study.filemaker-service .project-about-blk .img-blk{
+	position: relative;
+	margin-top: -65%;
+	left: inherit;
+	top: inherit;
+	width: auto;
+}
+.case-study.filemaker-service .project-about-blk .img-blk img{
+	position: sticky;
+	top: 0;
+}
+.btn-comm.orange-btn a{
+	background: #FF6B00;
+	color: #fff;
+}
+.btn-comm.orange-btn a:after{
+	background: #fff;
+	color: #43484C;
+}
+
+.case-study.filemaker-service .features-blk{
+	background: #F5F5F5;
+	padding: 100px 0;
+}
+.case-study.filemaker-service .features-blk .what-we-do-border-style{
+	height: auto;
+}
+.case-study.filemaker-service .features-blk .what-we-do-border-style h4{
+	font-size: 29px;
+}
+.case-study.filemaker-service .features-blk .what-we-do-border-style img{
+	max-height: 64px;
+}
+.case-study.filemaker-service .features-blk .what-we-do-border-style hr{
+	margin-left: 0 !important;
+}
+.case-study.filemaker-service .features-blk .sc-ip-pro-mt{
+	margin-top: 5%;
+}
+
+.outer-grey-blk{
+	background: #F5F5F5;
+}
+
+
+.quote-centered{
+	width: 100%;
+	margin-top: 120px;
+	text-align: center;
+}
+.quote-centered blockquote{
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 56px;
+	color: #434343;
+	position: relative;
+}
+.quote-centered blockquote:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -45px;
+    background: url('/images/case-studies/blockquote.svg') no-repeat;
+    width: 39px;
+    height: 28px;
+    margin: 0 auto;
+}
+
+.testimonial-blk{
+	width: 100%;
+	padding: 100px 0 160px;
+	background: linear-gradient(99.73deg, #FF7A00 6.63%, #F96B04 95.19%);
+	position: relative;
+	z-index: 9;
+	overflow: hidden;
+	height: 1120px;
+}
+.testimonial-blk:before{
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	width: 575px;
+	height: 566px;
+	background: url('/images/file-maker/testimonial-before.svg') no-repeat;
+	background-position: left top;
+}
+.testimonial-blk:after{
+	position: absolute;
+	content: "";
+	right: 0;
+	bottom: 0;
+	width: 537px;
+	height: 566px;
+	background: url('/images/file-maker/testimonial-after.svg') no-repeat;
+	background-position: right bottom;
+}
+.testimonial-blk .project-blk-title p{
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	margin: 20px 0 50px;
+}
+
+.testimonial-wrap{
+	width: 100%;
+	max-width: 930px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 9;
+}
+.testimonial-wrap .widgets_wrapper{
+	margin: 0 !important;
+}
+/*.testimonial-wrap:after{
+	position: absolute;
+	content: "";
+	background: url('/images/file-maker/white-quotes.svg') no-repeat;
+	background-size: 62px 45px;
+	width: 62px;
+	height: 45px;
+	right: -20px;
+	top: -15px;
+	z-index: 999;
+}*/
+.testimonial-wrap .slick-track{
+	display: flex !important;
+}
+.testimonial-wrap .slick-slide:not(.slick-active){
+	transform: none;
+}
+.testimonial-wrap .slick-slide:not(.slick-active){
+	box-shadow: none;
+}
+.testimonial-wrap .slick-slide{
+	opacity: 1;
+	height: inherit !important;
+}
+.testimonial-wrap .slick-slide > div{
+	height: 100%;
+}
+
+.testimonial-wrap .slide-content{
+	display: flex !important;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	padding: 40px 70px;
+	background: #fff;
+	border-radius: 20px;
+}
+.testimonial-wrap .cont-top{
+	width: 100%;
+	padding-bottom: 25px;
+}
+.testimonial-wrap .rtg{
+	line-height: none;
+	margin-bottom: 25px;
+}
+.testimonial-wrap .rtg li{
+	display: inline-block;
+	margin: 0 3px;
+}
+.testimonial-wrap .rtg li:first-child{
+	margin-left: 0;
+}
+.testimonial-wrap .rtg li i{
+	color: #f56a27;
+}
+.testimonial-wrap p{
+	font-weight: 500;
+}
+.testimonial-wrap .cont-btm{
+	width: 100%;
+	align-self: flex-end;
+}
+.testimonial-wrap .author-col{
+	float: left;
+}
+.testimonial-wrap .author-col h6{
+	font-weight: 700;
+	font-size: 21px;
+	color: #f56a27;
+}
+.testimonial-wrap .author-col span{
+	font-weight: 500;
+	font-size: 16px;
+	color: #72767A;
+}
+.testimonial-wrap .logo-col{
+	float: right;
+}
+.testimonial-wrap .logo-col span{
+	display: block;
+	font-size: 12px;
+	font-weight: 700;
+	color: #7F8284;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin-bottom: 7px;
+}
+.testimonial-wrap .logo-col img{
+	display: block;
+	margin: 0 auto;
+}
+
+.testimonial-wrap .slick-arrow.slick-next{
+	right: -100px;
+}
+.testimonial-wrap .slick-arrow.slick-prev{
+	left: -100px;
+}
+.testimonial-wrap .slick-arrow{
+	background: rgba(255, 255, 255, 1);
+	border: none;
+	-webkit-transition: .7s ease;
+  -moz-transition: .7s ease;
+  -o-transition: .7s ease;
+  transition: .7s ease;
+}
+.testimonial-wrap .slick-arrow:before{
+	color: #f56a27;
+	font-weight: 700;
+}
+.testimonial-wrap .slick-arrow:hover,
+.testimonial-wrap .slick-arrow:focus{
+	background: rgba(255, 255, 255, 0.4);
+}
+.testimonial-wrap .slick-arrow:hover:before,
+.testimonial-wrap .slick-arrow:focus:before{
+	color: #fff;
+}
+.testimonial-wrap .slick-dots{
+	bottom: -100px;
+}
+.testimonial-wrap .slick-dots li button{
+	background: #fff;
+	-webkit-transition: .7s ease;
+  -moz-transition: .7s ease;
+  -o-transition: .7s ease;
+  transition: .7s ease;
+}
+.testimonial-wrap .slick-dots li.slick-active button{
+	background: rgba(255, 255, 255, 0.4);
+}
+
+
+
+
+
+
+.experts-blk{
+	width: 100%;
+	padding: 96px 0 65px;
+	margin-bottom: 40px;
+	background-color: #F5F5F5;
+	background-image: url('/images/file-maker/experts-hash.svg');
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+.expert-col{
+	float: left;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.expert-col h6{
+	position: absolute;
+	left: 20px;
+	bottom: 65px;
+	font-size: 32px;
+	font-weight: 700;
+	color: #434343;
+}
+.expert-col img{
+	float: right;
+}
+
+
+
+
+
+
+@media(min-width: 2500px) {
+	.case-study.filemaker-service .common-title-blk{min-height: 700px !important;}
+	.case-study.filemaker-service .project-about-blk .img-blk{margin-top: -55%;}
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+	.case-study.filemaker-service .project-about-blk .img-blk{margin-top: -70%;}
+	.case-study.filemaker-service .features-blk{padding: 90px 0 70px;}
+	.case-study.filemaker-service .features-blk .what-we-do-border-style{padding: 35px 28px;}
+	.case-study.filemaker-service .features-blk .what-we-do-border-style h4{font-size: 24px;}
+	.quote-centered blockquote{font-size: 30px;line-height: 48px;}
+
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+	.case-study.filemaker-service .project-about-blk .img-blk{margin-top: -75%;}
+	.case-study.filemaker-service .features-blk{padding: 90px 0 70px;}
+	.case-study.filemaker-service .features-blk .what-we-do-border-style{padding: 35px 24px;}
+	.case-study.filemaker-service .features-blk .what-we-do-border-style h4{font-size: 22px;}
+	.quote-centered blockquote{font-size: 28px;line-height: 46px;}
+	.expert-col h6{font-size: 28px;}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+	.case-study.filemaker-service .project-about-blk .img-blk{margin-top: -72%;}
+	.case-study.filemaker-service .features-blk{padding: 80px 0 60px;}
+	.case-study.filemaker-service .features-blk .what-we-do-border-style{padding: 32px 22px;min-height: auto;}
+	.case-study.filemaker-service .features-blk .what-we-do-border-style h4{font-size: 20px;line-height: 28px;min-height: auto;}
+	.quote-centered blockquote{font-size: 24px;line-height: 38px;}
+	.experts-blk{padding: 70px 0 65px;}
+	.expert-col h6{font-size: 24px;}
+	.testimonial-blk{padding: 85px 0 135px;height: 1080px;}
+	.testimonial-wrap .slick-dots{bottom: -85px;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.case-study.filemaker-service .common-title-blk p br{display: none;}
+	.case-study.filemaker-service .project-about-blk .img-blk{margin-top: -78%;}
+	.quote-centered{margin-top: 75px;}
+	.case-study.filemaker-service .features-blk{padding: 75px 0 60px;}
+	.experts-blk{padding: 70px 0 65px;}
+	.expert-col h6{font-size: 22px;left: -25px;}
+	.quote-centered blockquote{font-size: 24px;line-height: 38px;}
+	.testimonial-blk{padding: 85px 0 135px;height: 1076px;}
+	.testimonial-wrap .slick-dots{bottom: -85px;}
+	.case-study.filemaker-service .features-blk .sc-ip-pro-mt{margin-top: 0px;}
+	.testimonial-wrap .slick-arrow.slick-prev{left: -65px;}
+	.testimonial-wrap .slick-arrow.slick-next{right: -65px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.case-study.filemaker-service .common-title-blk p br{display: none;}
+	.case-study.filemaker-service .project-about-blk .img-blk{margin-top: 0;}
+	.case-study.filemaker-service .project-about-blk .img-blk img{max-width: 70%;float: none;margin: 0 auto;}
+	.case-study.filemaker-service .project-about-blk{padding-bottom: 60px;}
+	.orange-strip-blk.white-centered .project-blk-title h3{font-size: 46px;line-height: 58px;}
+	.case-study.filemaker-service .features-blk{padding: 75px 0 60px;}
+	.case-study.filemaker-service .features-blk .what-we-do-border-style h4{font-size: 25px;}
+	.case-study.filemaker-service .features-blk .sc-ip-pro-mt{margin-top: 0px;}
+	.quote-centered blockquote{font-size: 22px;line-height: 34px;}
+	.quote-centered{margin-top: 55px;}
+	.testimonial-blk{padding: 65px 0 100px;height: 1350px;}
+	.testimonial-wrap .slick-dots{bottom: -60px;}
+	.testimonial-wrap .slick-arrow{display: none !important;}
+	.experts-blk{padding: 65px 0;margin-bottom: 20px;}
+	.expert-col img{width: 100%;}
+	.expert-col h6{left: -35px;bottom: 40px;font-size:20px;}
+	.testimonial-wrap::after{right: 0px;}
+}
+
+@media(max-width: 767px) {
+	.case-study.filemaker-service .common-title-blk p br{display: none;}
+	.case-study.filemaker-service .project-about-blk .img-blk{margin-top: 0;}
+	.case-study.filemaker-service .project-about-blk .img-blk img{max-width: 70%;float: none;margin: 0 auto;}
+	.case-study.filemaker-service .project-about-blk{padding-bottom: 60px;}
+	.case-study.filemaker-service .features-blk{padding: 70px 0 45px;}
+	.case-study.filemaker-service .features-blk .what-we-do-border-style h4{font-size: 26px;}
+	.case-study.filemaker-service .features-blk .sc-ip-pro-mt{margin-top: 0px;}
+	.quote-centered blockquote{font-size: 22px;line-height: 34px;}
+	.quote-centered{margin-top: 50px;}
+	.testimonial-blk{padding: 65px 0 100px;height: 1440px;}
+	.testimonial-wrap .slick-dots{bottom: -60px;}
+	.testimonial-wrap .slick-arrow{display: none !important;}
+	.testimonial-wrap::after{right: 0px;}
+	.testimonial-blk .project-blk-title p br{display: none;}
+	.testimonial-wrap .slide-content{padding: 40px;}
+	.testimonial-wrap .author-col, .testimonial-wrap .logo-col{float: left;width: 100%;text-align: center;}
+	.testimonial-wrap .author-col h6{margin-bottom: 0;}
+	.testimonial-wrap .logo-col{padding-top: 15px;}
+	.experts-blk{padding: 65px 0;margin-bottom: 10px;}
+	.expert-col{margin-bottom: 50px;}
+	.expert-col img{float: none;display: block;max-width: 300px;margin: 0 auto;}
+	.expert-col h6{bottom: 50px;left: 0;text-align: center;font-size: 22px;width: 100%;}
+	.case-study.filemaker-service #contact-form .custom-contact-style{padding-top: 0px !important;}
+}
+@media(max-width: 479px) {
+	.testimonial-blk{height: 1570px;}
+}

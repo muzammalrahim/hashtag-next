@@ -1,0 +1,154 @@
+@media(max-width: 280px) {
+    .about-third-section .title-level-mobile {
+        font-size: 9px !important;
+        line-height: 20px;
+        margin-top: 48px;
+    }
+
+}
+
+@media(max-width: 767px) {
+    .about-third-section {
+        background: #F2F2F2 !important;
+        min-height: 1000px;
+        height: unset !important;
+    }
+
+    .hash-team-content {
+        margin-top: 30px;
+    }
+
+    .hash-team-first-right {
+        margin-top: 30px;
+    }
+
+    .about-section-2-left,
+    .about-section-2-content {
+        display: block !important;
+    }
+
+    .about-section-2-last {
+        margin-bottom: 55px;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+
+    .about-main .service-banner-content {
+        padding-top: 65px;
+    }
+
+    .about-third-section {
+        padding-top: 150px !important;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .about-main .service-banner-content {
+        padding-top: 100px !important;
+    }
+
+
+
+
+}
+
+
+
+
+@media(min-width: 768px) {
+    .last-why-us-box {
+        margin-bottom: -10px;
+    }
+
+}
+
+
+
+@media (min-width: 1900px) {
+    .about-main .why-us-box {
+        height: 330px !important;
+        width: unset !important;
+        padding: 60px 30px !important;
+    }
+}
+
+
+@media only screen and (device-aspect-ratio: 1920/1080) {
+    .about-main .why-us-box {
+        height: 250px !important;
+        width: unset;
+        padding: 43px 25px !important;
+    }
+}
+
+@media (min-width: 2500px) {
+    .about-main .why-us-box {
+        height: 330px !important;
+        width: unset !important;
+        padding: 60px 30px !important;
+    }
+}
+
+
+
+
+.about-section-2-left,
+.about-section-2-content {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.about-section-2-middle {
+    width: 30px;
+    display: table-cell;
+    vertical-align: top;
+
+}
+
+.about-third-section {
+    background-image: url(/images/about/teambg.svg);
+    min-height: 895px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.border-orange {
+    border: solid #FF6B00;
+    border-width: 0 3px 3px 0;
+}
+
+.about-row {
+    align-items: center;
+}
+
+.font-normal {
+    font-weight: normal;
+}
+
+/* style add by Ninitha 15-09-2020 */
+.about-section-2-left img {
+    width: 200px;
+}
+
+@media only screen and (min-width:2038px) and (max-width:2048px) {
+
+    .about-main .why-us-box {
+
+        height: 250px !important;
+        width: unset;
+        padding: 43px 25px !important;
+    }
+
+
+
+}

@@ -1,0 +1,25 @@
+.slick-slider h3 img {
+    height: 45px;
+    width: 130px;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    color: #FF6B00 !important;
+}
+
+.slick-dots li button:before {
+    font-size: 14px !important;
+
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -32px;
+}
+
+.slick-slider {
+    z-index: 999;
+    position: relative;
+    display: block;
+}
