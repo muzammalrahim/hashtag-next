@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import './style.css';
+// import './style.css';
 import Header from '../../components/header/index.jsx';
 import Footer from '../../components/footer/index.jsx';
 import Contact from '../../components/contacts/index.jsx';
 import DocumentMeta from 'react-document-meta';
+import Link from 'next/link'
 
 require('typeface-montserrat')
 
@@ -103,7 +104,7 @@ export default class Careers extends Component {
                  <h4 className=" title-black hashtag-careers-vacancies ">EXPERIENCED PROFESSIONALS</h4>                     
                         <hr className="hashtag-underline-new ml-2 "/>
                         <p className="pt-4 pb-4">Are you a person with a creative approach to problem solving? Do you have the ability to thrive in a fast-paced environment.</p>
-                        <div className="contact-form-link"><a href="/contact-us"> <div className="btn-group form-btn"><button type="button" className="btn form-button font-12 font-bold">JOIN US</button><button type="button" className="btn form-button-child px-3"><span className=""><span className="form-btn-arrow btn-right-arrow"></span></span></button><div className="dropdown-menu"></div></div></a></div>
+                        <div className="contact-form-link"></div>
                     </div>
                 </div>
 
@@ -114,7 +115,7 @@ export default class Careers extends Component {
                  <h4 className=" title-black hashtag-careers-vacancies">FRESHERS AND ENTRY LEVEL PROFESSIONALS</h4>
                         <hr className="hashtag-underline-new ml-2 "/>
                         <p className="pt-2 pb-2">Are you a person with a creative approach to problem solving? Do you have the ability to thrive in a fast-paced environment. </p>
-                        <div className="contact-form-link"><a href="/contact-us"> <div className="btn-group form-btn"><button type="button" className="btn form-button font-12 font-bold">JOIN US</button><button type="button" className="btn form-button-child px-3"><span className=""><span className="form-btn-arrow btn-right-arrow"></span></span></button><div className="dropdown-menu"></div></div></a></div> 
+                        <div className="contact-form-link"></div> 
                     </div>
                 </div>
 

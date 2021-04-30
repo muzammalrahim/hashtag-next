@@ -11,7 +11,7 @@ export default class Dropdown extends Component {
       <nav className="tab-drop nav">
         <ul className="nav__menu">
           <li className="nav__menu-item">
-          <Link href="/services" className="nav-link dropdown-toggle" activeclassName="active">Service</Link>
+          <Link href="/services" className="nav-link dropdown-toggle" activeclassName="active"><a> Service</a></Link>
             <Submenu />
           </li>
         </ul>
@@ -25,10 +25,10 @@ class Submenu extends React.Component {
     return (
       <ul className="nav__submenu">
         <li className="nav__submenu-item ">
-        <Link href="/services/wordpress-development" className="dropdown-item">Wordpress</Link>
+        <Link href="/services/wordpress-development" className="dropdown-item"><a> Wordpress </a></Link>
         </li>
         <li className="nav__submenu-item ">
-        <Link href="/services/blockchain-development" className="dropdown-item">Blockchain</Link>
+        <Link href="/services/blockchain-development" className="dropdown-item"><a> Blockchain </a></Link>
         </li>
       </ul>
     )

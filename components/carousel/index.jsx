@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
-import './style.css';
+// import { HashLink as Link } from 'react-router-hash-link';
+// import { NavHashLink as NavLink } from 'react-router-hash-link';
+// import './style.css';
 import Slider from "react-slick";
 
 export default class Carousel extends Component {

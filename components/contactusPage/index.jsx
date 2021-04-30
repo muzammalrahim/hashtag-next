@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style.css';
+// import './style.css';
 import axios from 'axios';
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css';

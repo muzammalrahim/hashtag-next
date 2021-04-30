@@ -227,7 +227,7 @@ font-weight: bold;
 }
 
 
-@@media (max-width:2800px) {
+@media (max-width:2800px) {
  .container {
 max-width: 2542px !important;
 }

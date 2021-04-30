@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink,Link } from "react-router-dom";
+import Link from 'next/link'
 import './style.css';
 // Import css files
 import "slick-carousel/slick/slick.css";
@@ -550,7 +550,7 @@ USA
 		  </div>
 		  	{/* contact form */}
 		<Contact></Contact>
- <Footer></Footer>
+ 		<Footer></Footer>
 
         </div>
     )
