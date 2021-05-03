@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import './style.css';
-
-
 {/*import $ from 'jquery'; */}
 export default class Testimonial extends Component {
 

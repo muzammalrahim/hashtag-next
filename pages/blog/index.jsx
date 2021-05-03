@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import './style.css';
 import Header from '../../components/header/index.jsx';
 import Footer from '../../components/footer/index.jsx';
-import Underconstruction from '../../components/under-construction/index.jsx';
+// import Underconstruction from '../../components/under-construction/index.jsx';
 import BlogCategories from '../../components/post-category/index.jsx';
 import BlogRecentPosts from '../../components/post-recent/index.jsx';
 import DocumentMeta from 'react-document-meta';
@@ -45,15 +44,15 @@ export default class Blog extends Component {
     window.addEventListener("resize", this.shiftContent);
   }
 
-  componentWillMount(){
-    if(this.props.location.search){
-      const values = queryString.parse(this.props.location.search);
-      this.setState({
-        keyword: values.keyword,
-        search_val: values.keyword
-      });
-    }
-  }
+  // componentWillMount(){
+    // if(this.props.location.search){
+      // const values = queryString.parse(this.props.location.search);
+      // this.setState({
+        // keyword: values.keyword,
+        // search_val: values.keyword
+      // });
+    // }
+  // }
 
   componentWillUnmount() {
     window.removeEventListener("resize", this.shiftContent);

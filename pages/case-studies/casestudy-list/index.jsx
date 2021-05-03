@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import './style.css';
 import Header from '../../../components/header/index.jsx';
 import Footer from '../../../components/footer/index.jsx';
-import Underconstruction from '../../../components/under-construction/index.jsx';
+// import Underconstruction from '../../../components/under-construction/index.jsx';
 import Contact from '../../../components/contacts/index.jsx';
 import DocumentMeta from 'react-document-meta';
 import $ from 'jquery';
@@ -11,7 +10,7 @@ import * as config from '../../../config.js';
 import Slide from 'react-reveal/Reveal';
 
 require('typeface-montserrat')
-require('paroller.js');
+// require('paroller.js');
 
 export default class Speakinc extends Component {
 
@@ -24,33 +23,33 @@ export default class Speakinc extends Component {
     };
 
 
-
-    $(".list-banner-text .btn-comm a").click(function (e) {
-      e.preventDefault();
-      var target = $(this).attr('href');
-      var HeaderHeight;
-      
-      if ($('.header-container').length) {
-        HeaderHeight = $('.header-container').outerHeight();  
-      } 
-      
-      $('html, body').animate({
-        scrollTop: $(target).offset().top-HeaderHeight
-      }, 2000);
-    });
+// 
+    // $(".list-banner-text .btn-comm a").click(function (e) {
+      // e.preventDefault();
+      // var target = $(this).attr('href');
+      // var HeaderHeight;
+      // 
+      // if ($('.header-container').length) {
+        // HeaderHeight = $('.header-container').outerHeight();  
+      // } 
+      // 
+      // $('html, body').animate({
+        // scrollTop: $(target).offset().top-HeaderHeight
+      // }, 2000);
+    // });
 
 
     
   }
 
   componentDidMount() {
-    $('.parallax-block').paroller({ 
-      factor: 0.2, 
-      factorMd: 0.2, 
-      factorSm: 0.2, 
-      type: 'background', 
-      direction: 'vertical'
-    });
+    // $('.parallax-block').paroller({ 
+      // factor: 0.2, 
+      // factorMd: 0.2, 
+      // factorSm: 0.2, 
+      // type: 'background', 
+      // direction: 'vertical'
+    // });
 
   }
 

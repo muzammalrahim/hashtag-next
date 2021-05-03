@@ -13,9 +13,42 @@ import Slide from 'react-reveal/Reveal';
 
 require('typeface-montserrat')
 
+export async function getServerSideProps(ctx) {
+
+	let data = [], headers = {
+		'Content-Type': 'application/json'
+	 }, search = '';
+	let {authToken} = cookies(ctx)
+  
+	if(authToken !== undefined && authToken !== null)
+	  headers['Authorization'] = `Token ${authToken.replace(/['"]+/g, '')}`
+  
+	
+  
+	if (ctx.query.list === 1 || ctx.query.list === '1') // only for page 1
+	  await randomizeOrdering('home');
+	
+	await axios.get(config.myConfig.apiUrl + `api/v1/home`, {
+	  headers : headers, params: {
+		search:search,
+		page: ctx.query.list,
+		filters: ctx.query.filters !== "{}" ? ctx.query.filters : null,
+		frontend: true
+	  }
+	}
+	).then((response) => {
+	  data = response.data;
+	});
+	return {
+	  props: { data, query:ctx.query}
+	};
+  }
+
 
 export default class Home extends Component {
+
   render() {
+	  console.log(this.props)
   		const meta = {
       title: 'Home - FullStack Web Development| Bay area, California',
       
@@ -32,6 +65,7 @@ export default class Home extends Component {
     return (
     	<div className="home-main" id="home-main">
 <DocumentMeta {...meta} />
+{console.log(this.props)}
 		{/*<div className="container-fluid section-one-bg p-0">*/}
 			<Header></Header>
 			<div className="section-one-bg">
