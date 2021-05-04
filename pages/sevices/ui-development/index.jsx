@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import './style.css';
-import Header from '../../components/header/index.jsx';
-import Footer from '../../components/footer/index.jsx';
-import Contact from '../../components/contacts/index.jsx';
+import Header from '../../../components/header/index.jsx';
+import Footer from '../../../components/footer/index.jsx';
+import Contact from '../../../components/contacts/index.jsx';
 import DocumentMeta from 'react-document-meta';
 import Slide from 'react-reveal/Reveal';
 
@@ -29,7 +28,7 @@ export default class UIPage extends Component {
                     <Header></Header>
                 </div>
                 <section class="content-container">
-                    <div className="container-fluid shopify-bg p-0 m-0">
+                    <div className="container-fluid shopify-bg p-0 m-0 shopifyBg">
                         <div className="shopify-bg-right">
                             <div className="shopify-banner-frame">
                                 <div className="container ">

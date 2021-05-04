@@ -13,42 +13,42 @@ import Slide from 'react-reveal/Reveal';
 
 require('typeface-montserrat')
 
-export async function getServerSideProps(ctx) {
+import Axios from "axios";
+import https from "https";
 
-	let data = [], headers = {
-		'Content-Type': 'application/json'
-	 }, search = '';
-	let {authToken} = cookies(ctx)
+export async function getServerSideProps() {
+	let data = [];
   
-	if(authToken !== undefined && authToken !== null)
-	  headers['Authorization'] = `Token ${authToken.replace(/['"]+/g, '')}`
-  
-	
-  
-	if (ctx.query.list === 1 || ctx.query.list === '1') // only for page 1
-	  await randomizeOrdering('home');
-	
-	await axios.get(config.myConfig.apiUrl + `api/v1/home`, {
-	  headers : headers, params: {
-		search:search,
-		page: ctx.query.list,
-		filters: ctx.query.filters !== "{}" ? ctx.query.filters : null,
-		frontend: true
-	  }
-	}
-	).then((response) => {
-	  data = response.data;
+	const instance = Axios.create({
+	  httpsAgent: new https.Agent({
+		rejectUnauthorized: false,
+	  }),
 	});
+  
+	await instance
+	  .get("https://api.hashtag-ca.com/api/v1/metadata", {
+		params: {
+		  page_type: "static",
+		  slug: "home",
+		},
+	  })
+	  .then((response) => {
+		data = response.data;
+		console.log("dslfksd",data)
+	  });
 	return {
-	  props: { data, query:ctx.query}
+	  props: { data },
 	};
   }
 
 
-export default class Home extends Component {
 
+export default class Home extends Component {
+	constructor(props) {
+		super(props);
+		
+	  }
   render() {
-	  console.log(this.props)
   		const meta = {
       title: 'Home - FullStack Web Development| Bay area, California',
       
@@ -62,12 +62,16 @@ export default class Home extends Component {
        
       }
     };
+
     return (
     	<div className="home-main" id="home-main">
 <DocumentMeta {...meta} />
-{console.log(this.props)}
 		{/*<div className="container-fluid section-one-bg p-0">*/}
-			<Header></Header>
+				
+        <Header
+        
+        ></Header>
+		
 			<div className="section-one-bg">
 				<div className="section-one-bg-small-device m-0 d-none d-xl-block">
 					<div className="container section-one-content ">

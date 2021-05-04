@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import './style.css';
-import Header from '../../components/header/index.jsx';
-import Footer from '../../components/footer/index.jsx';
-import Contact from '../../components/contacts/index.jsx';
+import Header from '../../../components/header/index.jsx';
+import Footer from '../../../components/footer/index.jsx';
+import Contact from '../../../components/contacts/index.jsx';
 import DocumentMeta from 'react-document-meta';
-import Underconstruction from '../../components/under-construction';
-import Testimonial from '../../components/testimonial/index.jsx';
+import Underconstruction from '../../../components/under-construction';
+import Testimonial from '../../../components/testimonial/index.jsx';
 import Slide from 'react-reveal/Reveal';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -48,8 +47,8 @@ export default class filemakerPage extends Component {
 
                 <div className="common-title-blk">
                     <div className="container">
-                      <div className="row">
-                        <div className="col-md-6">
+                      <div className="row shopifyBg">
+                        <div className="col-md-6 ">
                           <div className="common-title-wrap px-md-3">
                             <div className="common-head-blk">
                               <h2 className="main-title title-white">Filemaker <br/>Development</h2>

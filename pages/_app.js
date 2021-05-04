@@ -13,8 +13,15 @@ import "./shopify/style.css";
 import "./shopify/layout.css";
 import "./careers/style.css";
 import './home/style.css'
+
 import "./sevices/style.css";
 import "./sevices/wordpress-development/style.css";
+import "./sevices/blockchain-development/style.css";
+import "./sevices/database/style.css";
+import "./sevices/design-and-prototyping/style.css";
+import "./sevices/filemaker/style.css";
+import "./sevices/ui-development/style.css";
+
 import "../components/contacts/style.css";
 import "../components/testimonial/style.css";
 import "../components/carousel/style.css";
