@@ -20,57 +20,46 @@ import https from "https";
 
 import * as config from '../config'
 
-// export async function getServerSideProps(ctx) {
-//  
-	// let data = [], headers = {
-		// 'Content-Type': 'application/json',
-	//  },
-  // 
-  // 
-	// if (ctx.query.list === 1 || ctx.query.list === '1') // only for page 1
-	  // await randomizeOrdering('home');
-	// 
-	// await axios.get(`https://api.hashtag-ca.com/api/v1/metadata`,
-  //  {
-	  // headers : headers, params: {
-    // page_type:"static",
-    // slug:"home"
-	  // }
-	// }
-	// ).then((response) => {
-	  // data = response.data;
-// 
-	// });
-	// return {
-	  // props: { data, query:ctx.query,}
-	// };
-  // }
+export async function getServerSideProps() {
+
+	let data = [];
+  
+	const instance = Axios.create({
+	  httpsAgent: new https.Agent({
+		rejectUnauthorized: false,
+	  }),
+	});
+  
+	await instance
+	  .get("https://api.hashtag-ca.com/api/v1/metadata", {
+		params: {
+		  page_type: "static",
+		  slug: "home",
+		},
+	  })
+	  .then((response) => {
+		data = response.data;
+	  });
+	return {
+	  props: { data },
+	};
+  }
 
 export default function Home(props) {
   let response = props
-  const [data, setData] = React.useState(response)
+  const [data, setData] = React.useState(response.data.data)
   const router = useRouter();
-  // useEffect(() => {
-    // console.log("router name",router.pathname)
-  //  getData()
-  // }, [])
   
-    // const getData =()=>{
-      // const data={
-        // "page_type":["static"],
-        // "slug":["home"]
-      // }
-      // Axios.get("https://api.hashtag-ca.com/api/v1/metadata",{
-        // params:{
-        // page_type:"static",
-        // slug:"home"
-      // }}).then((response)=>{
-        // console.log({response})
-      // })
-    // }
-
+    
   return (
+    
     <div >
+    <Header
+    title={data.title}
+    description={data.description}
+    keywords={data.keywords}
+  ></Header>
+
        <Homes />
      
     </div>

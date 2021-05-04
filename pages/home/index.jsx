@@ -13,33 +13,7 @@ import Slide from 'react-reveal/Reveal';
 
 require('typeface-montserrat')
 
-import Axios from "axios";
-import https from "https";
 
-export async function getServerSideProps() {
-	let data = [];
-  
-	const instance = Axios.create({
-	  httpsAgent: new https.Agent({
-		rejectUnauthorized: false,
-	  }),
-	});
-  
-	await instance
-	  .get("https://api.hashtag-ca.com/api/v1/metadata", {
-		params: {
-		  page_type: "static",
-		  slug: "home",
-		},
-	  })
-	  .then((response) => {
-		data = response.data;
-		console.log("dslfksd",data)
-	  });
-	return {
-	  props: { data },
-	};
-  }
 
 
 
