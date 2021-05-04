@@ -7,8 +7,40 @@ import DocumentMeta from "react-document-meta";
 import Link from "next/link";
 
 require("typeface-montserrat");
+import Axios from "axios";
+import https from "https";
 
+export async function getServerSideProps() {
+  let data = [];
+
+  const instance = Axios.create({
+    httpsAgent: new https.Agent({
+      rejectUnauthorized: false,
+    }),
+  });
+
+  await instance
+    .get("https://api.hashtag-ca.com/api/v1/metadata", {
+      params: {
+        page_type: "static",
+        slug: "sevices",
+      },
+    })
+    .then((response) => {
+      data = response.data;
+    });
+  return {
+    props: { data },
+  };
+}
 export default class Shopify extends Component {
+  constructor(props) {
+    super(props);
+    let response = this.props;
+    this.state = {
+      data: response.data.data,
+    };
+  }
   render() {
     const meta = {
       title: "Shopify Development-BayArea, California",
@@ -21,11 +53,16 @@ export default class Shopify extends Component {
         },
       },
     };
+    const { data } = this.state;
     return (
       <div className="shopify-main" id="shopify-main">
         <DocumentMeta {...meta} />
 
-        <Header></Header>
+        <Header
+          title={data.title}
+          description={data.description}
+          keywords={data.keywords}
+        ></Header>
         <section class="content-container">
           <div className="container-fluid shopifyBg p-0 m-0 ">
             <div className="shopify-bg-right">
@@ -106,7 +143,7 @@ export default class Shopify extends Component {
                       of the way and grow your brand for the long-term.
                     </span>
                   </p>
-                 {/* <div className="contact-form-link">
+                  {/* <div className="contact-form-link">
                     <Link href="/contact-us"><a className="nav-link">
                       {" "}
                       <div className="btn-group form-btn">
@@ -184,7 +221,7 @@ export default class Shopify extends Component {
                         Shopify Partners from California.
                       </p>
                     </p>
-                  {/*  <div className="contact-form-link">
+                    {/*  <div className="contact-form-link">
                       <Link href="/contact-us" className="contact-form-link"><a>
                         <div className="btn-group">
                           <button
@@ -390,5 +427,4 @@ export default class Shopify extends Component {
       </div>
     );
   }
-
 }

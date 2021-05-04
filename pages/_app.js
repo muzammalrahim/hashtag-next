@@ -12,6 +12,7 @@ import "./blog/style.css";
 import "./shopify/style.css";
 import "./shopify/layout.css";
 import "./careers/style.css";
+import './home/style.css'
 import "./sevices/style.css";
 import "./sevices/wordpress-development/style.css";
 import "../components/contacts/style.css";
