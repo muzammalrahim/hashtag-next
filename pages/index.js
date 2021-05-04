@@ -10,26 +10,19 @@ import Carousel from '../components/carousel/index';
 import axios from 'axios'
 // import Home from '../pages/home/index'
 import cookies from 'next-cookies'
+import Axios from  "axios"
+import React ,{useEffect} from "react"
+import { withRouter,useRouter } from 'next/router'
 import Slide from 'react-reveal/Reveal';
 
 import * as config from '../config'
 
-export async function getServerSideProps(ctx) {
-  return {
-    props: {}, // will be passed to the page component as props
-  }
-
+// export async function getServerSideProps(ctx) {
+//  
 	// let data = [], headers = {
 		// 'Content-Type': 'application/json',
-    // 'page_type':"post",
-    // 'slug':"home"
-	//  }, search = '';
-	// let {authToken} = cookies(ctx)
+	//  },
   // 
-  // if(authToken !== undefined && authToken !== null)
-	  //  headers['Authorization'] = `Token ${authToken.replace(/['"]+/g, '')}`
-  // 
-	// 
   // 
 	// if (ctx.query.list === 1 || ctx.query.list === '1') // only for page 1
 	  // await randomizeOrdering('home');
@@ -37,28 +30,45 @@ export async function getServerSideProps(ctx) {
 	// await axios.get(`https://api.hashtag-ca.com/api/v1/metadata`,
   //  {
 	  // headers : headers, params: {
-		// search:search,
-		// page: ctx.query.list,
-		// filters: ctx.query.filters !== "{}" ? ctx.query.filters : null,
-		// frontend: true,
-    // page_type:"post",
+    // page_type:"static",
     // slug:"home"
 	  // }
 	// }
 	// ).then((response) => {
 	  // data = response.data;
 // 
-    // console.log("data-------------------------------------------------------------------------------",data)
 	// });
 	// return {
-	  // props: { data, query:ctx.query}
+	  // props: { data, query:ctx.query,}
 	// };
-  }
+  // }
 
-export default function Home() {
- 
+export default function Home(props) {
+  let response = props
+  const [data, setData] = React.useState(response)
+  const router = useRouter();
+  // useEffect(() => {
+    // console.log("router name",router.pathname)
+  //  getData()
+  // }, [])
+  
+    // const getData =()=>{
+      // const data={
+        // "page_type":["static"],
+        // "slug":["home"]
+      // }
+      // Axios.get("https://api.hashtag-ca.com/api/v1/metadata",{
+        // params:{
+        // page_type:"static",
+        // slug:"home"
+      // }}).then((response)=>{
+        // console.log({response})
+      // })
+    // }
+
   return (
     <div className={styles.container}>
+    {console.log(data)}
        <Header />
        <div className="section-one-bg">
        <div className="section-one-bg-small-device m-0 d-none d-xl-block">

@@ -3,9 +3,76 @@ import Header from '../../components/header/index.jsx';
 import Footer from '../../components/footer/index.jsx';
 import Contact from '../../components/contacts/index.jsx';
 import DocumentMeta from 'react-document-meta';
+
+import Axios from "axios"
+import https from 'https'
+import { useRouter } from "next/router"
 require('typeface-montserrat')
 
+export async function getServerSideProps() {
+	console.log('server requ'); 
+ 
+	let data = [];
+
+	const instance = Axios.create({
+		httpsAgent: new https.Agent({  
+		  rejectUnauthorized: false
+		})
+	  })
+  
+	await instance.get("https://api.hashtag-ca.com/api/v1/metadata", {
+		params: {
+			page_type: "static",
+			slug: "sevices"
+		}
+
+	}).then((response) => {
+	 data = response.data
+	  
+	})
+	return {
+	  props: { data,}
+	};
+  }
+
 export default class Service extends Component {
+
+	constructor(props){
+		super(props);
+		let response = this.props
+		this.state= {
+          data : response.data.data
+		}
+	}
+	
+
+
+	componentDidMount() {
+		if (this.props.pathname) {
+			let pathaname = this.props.pathname
+			pathaname = pathaname.replace('/', '');
+
+
+			//  this.getData(pathaname)
+		}
+	}
+
+	// getData = (routename) => {
+// 
+		// Axios.get("https://api.hashtag-ca.com/api/v1/metadata", {
+			// params: {
+				// page_type: "static",
+				// slug: routename
+			// }
+// 
+		// }).then((response) => {
+			// console.log("",response.data)
+			// const {title, description, keywords} = response.data.data
+			// this.setState({title, description, keywords })
+		// })
+	// }
+// 
+
 	render() {
 		const meta = {
 			title: 'Services - FullStack Web Development| Bay area, California',
@@ -20,12 +87,13 @@ export default class Service extends Component {
 
 			}
 		};
+		const {data} = this.state
 		return (
 
 			<div className="service-main" id="service-main">
 
 				<DocumentMeta {...meta} />
-				<Header></Header>
+				<Header title={data.title} description = {data.description} keywords = {data.keywords} ></Header>
 				<section class="content-container">
 					<div className="container-fluid service-bg p-0 m-0 ">
 						<div className="service-bg-right">

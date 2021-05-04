@@ -12,8 +12,8 @@ import "./blog/style.css";
 import "./shopify/style.css";
 import "./shopify/layout.css";
 import "./careers/style.css";
-import "./services/style.css";
-import "./services/wordpress-development/style.css";
+import "./sevices/style.css";
+import "./sevices/wordpress-development/style.css";
 import "../components/contacts/style.css";
 import "../components/testimonial/style.css";
 import "../components/carousel/style.css";
@@ -28,3 +28,4 @@ import '../components/contactusPage/style.css'
 export default function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
+
