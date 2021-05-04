@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import './style.css';
+///import './style.css';
+import Axios from "axios"
+import { useRouter } from "next/router"
 import Header from '../../components/header/index.jsx';
 import Footer from '../../components/footer/index.jsx';
 import Contact from '../../components/contacts/index.jsx';
@@ -7,7 +9,36 @@ import DocumentMeta from 'react-document-meta';
 require('typeface-montserrat')
 
 export default class Service extends Component {
+	static getInitialProps({ pathname }) {
+		return { pathname }
+	}
+
+
+	componentDidMount() {
+		if (this.props.pathname) {
+			let pathaname = this.props.pathname
+			pathaname = pathaname.replace('/', '');
+
+
+			this.getData(pathaname)
+		}
+	}
+
+	getData = (routename) => {
+
+		Axios.get("https://api.hashtag-ca.com/api/v1/metadata", {
+			params: {
+				page_type: "static",
+				slug: routename
+			}
+
+		}).then((response) => {
+			console.log("seo responce", response.data.data)
+		})
+	}
+
 	render() {
+		console.log("pathname", this.props.pathname)
 		const meta = {
 			title: 'Services - FullStack Web Development| Bay area, California',
 

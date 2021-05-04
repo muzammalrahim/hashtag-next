@@ -9,7 +9,7 @@ import $ from 'jquery';
 
 export default class Header extends Component {
 
-constructor(props) {    
+  constructor(props) {
     super(props)
     this.state = {
     }
@@ -22,38 +22,43 @@ constructor(props) {
     this.CareersPage = this.CareersPage.bind(this);
     this.ContactusPage = this.ContactusPage.bind(this);
     this.filemakerPage = this.filemakerPage.bind(this);
-    this.ErrorPage  = this.ErrorPage.bind(this);
+    this.ErrorPage = this.ErrorPage.bind(this);
   }
 
   componentDidMount() {
-    this.menuToggle();
-    // window.addEventListener("resize", this.menuToggle);
+    if (typeof window !== 'undefined') {
 
 
-    $(window).scroll(function () {
+      this.menuToggle();
+      // window.addEventListener("resize", this.menuToggle);
+
+
+      $(window).scroll(function () {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 74) {
-            $('.header-container').addClass('sticky');
-            $('.service-bg').addClass('fixed');
+          $('.header-container').addClass('sticky');
+          $('.service-bg').addClass('fixed');
         } else {
-            $('.header-container').removeClass('sticky');
-            $('.service-bg').removeClass('fixed');
+          $('.header-container').removeClass('sticky');
+          $('.service-bg').removeClass('fixed');
         }
 
-    });
-
+      });
+    }
 
   }
 
   componentWillUnmount() {
-    // window.removeEventListener("resize", this.menuToggle);
+    if (typeof window !== 'undefined') {
+      window.removeEventListener("resize", this.menuToggle);
+    }
   }
 
   //menu toggle on mobile
-  menuToggle(){
-    if($(".navbar-light .navbar-toggler").is(":visible")) { 
-      $(".navbar-light .navbar-nav .nav-item > i").click(function(){
+  menuToggle() {
+    if ($(".navbar-light .navbar-toggler").is(":visible")) {
+      $(".navbar-light .navbar-nav .nav-item > i").click(function () {
         $(this).siblings('.submenu').slideToggle();
       });
     }
@@ -65,8 +70,8 @@ constructor(props) {
   AboutusPage() {
     this.props.history.push('/about-us');
   }
-  
-   ServicePage() {
+
+  ServicePage() {
     this.props.history.push('/services');
   }
   WordpressPage() {
@@ -75,8 +80,8 @@ constructor(props) {
   ShopifyPage() {
     this.props.history.push('/shopify-experts');
   }
-  
-   Blog() {
+
+  Blog() {
     this.props.history.push('/blogs');
   }
 
@@ -86,7 +91,7 @@ constructor(props) {
   ContactusPage() {
     this.props.history.push('/contact-us');
   }
-  
+
   filemakerPage() {
     this.props.history.push('/filemaker');
   }

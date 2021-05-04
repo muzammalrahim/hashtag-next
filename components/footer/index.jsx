@@ -7,24 +7,27 @@ import $ from "jquery";
 
 class Footer extends Component {
   componentDidMount() {
-    $(window).scroll(function () {
-      var scroll = $(window).scrollTop();
-      if (scroll >= 250) {
-        $(".text-back-to-top").addClass("sticky");
-      } else {
-        $(".text-back-to-top").removeClass("sticky");
-      }
-    });
+    if (typeof window !== 'undefined') {
 
-    $(".text-back-to-top a").click(function () {
-      $("html, body").animate(
-        {
-          scrollTop: 0,
-        },
-        "slow"
-      );
-      return false;
-    });
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 250) {
+          $(".text-back-to-top").addClass("sticky");
+        } else {
+          $(".text-back-to-top").removeClass("sticky");
+        }
+      });
+
+      $(".text-back-to-top a").click(function () {
+        $("html, body").animate(
+          {
+            scrollTop: 0,
+          },
+          "slow"
+        );
+        return false;
+      });
+    }
   }
 
   render() {
