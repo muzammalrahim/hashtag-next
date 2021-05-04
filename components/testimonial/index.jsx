@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import './style.css';
-
-
 {/*import $ from 'jquery'; */}
 export default class Testimonial extends Component {
 
@@ -101,9 +98,9 @@ window.onload = function() {
             
                 touchPosDiff = touchStartPos - touchEndPos;
             
-                console.log(touchPosDiff);
-                console.log(touchStartPos);    
-                console.log(touchEndPos);    
+                // console.log(touchPosDiff);
+                // console.log(touchStartPos);    
+                // console.log(touchEndPos);    
 
             
                 if (touchPosDiff > 0 + ignoreTouch) {

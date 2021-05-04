@@ -65,7 +65,7 @@
     color: #000 !important;
 }
 
-/*.speak-btn
+.speak-btn
 {
   border: 1px solid #dedede;
   border-radius: 8px;
@@ -76,7 +76,7 @@
 {
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 15px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -84,7 +84,7 @@
   font-family: 'Montserrat', sans-serif;
   text-decoration: none !important;
   
-}*/
+}
 #service-main .btn-header-1 {
     border: 2px solid #f56a27 !important;
 }
@@ -476,21 +476,29 @@
 
 .home-main .header-container .navbar-expand-lg .navbar-collapse .form-inline button.btn-transparent {
     border-color: #fff !important;
+    border-color: #f56a27 !important;
+    color: #f56a27 !important;
+   
 }
 
 .home-main .header-container .navbar-expand-lg .navbar-collapse .form-inline button.btn-transparent a {
-    color: #fff !important;
+    /* color: #fff !important; */
+    border-color: #f56a27 !important;
+    color: #f56a27 !important;
 }
 
 .home-main .header-container .navbar-expand-lg .navbar-collapse .speak-btn.btn-white {
     background: transparent;
     border: 2px solid #fff !important;
     color: #fff !important;
+    background: #f56a27!important;
+    border-radius: 10px;
 }
 
 .home-main .header-container.sticky .navbar-expand-lg .navbar-collapse .form-inline button.btn-transparent {
     border-color: #f56a27 !important;
     color: #f56a27 !important;
+    border-radius: 10px;
 }
 
 
@@ -560,7 +568,7 @@
 }
 
 .header-container.sticky .navbar-expand-lg .navbar-collapse .form-inline button.btn-transparent {
-    height: 40px;
+    height: 35px;
     border-color: #f56a27;
 }
 

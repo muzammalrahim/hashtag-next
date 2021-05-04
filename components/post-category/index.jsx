@@ -35,7 +35,6 @@ export default class BlogCategories extends Component {
         categories: categories
       })
     }).catch(error =>{
-      console.log(error.response);
       toast.error("Something went wrong.");
     });
   }
