@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 {/*import $ from 'jquery'; */}
 export default class Testimonial extends Component {
 
-
+  constructor(props) {
+    super(props);
+    if (typeof window === "undefined") {
+      global.window = {};
+    }
+}
 componentDidMount()
 {
 
@@ -20,27 +25,27 @@ componentDidMount()
         touchPosDiff,
         ignoreTouch = 30;
 ;
+  if (typeof window !== undefined) {
+    window.onload = function () {
 
-window.onload = function() {
-
-    // Testim Script
-    function playSlide(slide) {
+      // Testim Script
+      function playSlide(slide) {
         for (var k = 0; k < testimDots.length; k++) {
-            testimContent[k].classList.remove("active");
-            testimContent[k].classList.remove("inactive");
-            testimDots[k].classList.remove("active");
+          testimContent[k].classList.remove("active");
+          testimContent[k].classList.remove("inactive");
+          testimDots[k].classList.remove("active");
         }
 
         if (slide < 0) {
-            slide = currentSlide = testimContent.length-1;
+          slide = currentSlide = testimContent.length - 1;
         }
 
         if (slide > testimContent.length - 1) {
-            slide = currentSlide = 0;
+          slide = currentSlide = 0;
         }
 
         if (currentActive != currentSlide) {
-            testimContent[currentActive].classList.add("inactive");            
+          testimContent[currentActive].classList.add("inactive");
         }
         testimContent[slide].classList.add("active");
         testimDots[slide].classList.add("active");
@@ -48,71 +53,72 @@ window.onload = function() {
         currentActive = currentSlide;
     
         clearTimeout(testimTimer);
-        testimTimer = setTimeout(function() {
-            playSlide(currentSlide += 1);
+        testimTimer = setTimeout(function () {
+          playSlide(currentSlide += 1);
         }, testimSpeed)
-    }
+      }
 
-    testimLeftArrow.addEventListener("click", function() {
+      testimLeftArrow.addEventListener("click", function () {
         playSlide(currentSlide -= 1);
-    })
+      })
 
-    testimRightArrow.addEventListener("click", function() {
+      testimRightArrow.addEventListener("click", function () {
         playSlide(currentSlide += 1);
-    })    
+      })
 
-    for (var l = 0; l < testimDots.length; l++) {
-        testimDots[l].addEventListener("click", function() {
-            playSlide(currentSlide = testimDots.indexOf(this));
+      for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function () {
+          playSlide(currentSlide = testimDots.indexOf(this));
         })
-    }
+      }
 
-    playSlide(currentSlide);
+      playSlide(currentSlide);
 
-    // keyboard shortcuts
-    document.addEventListener("keyup", function(e) {
+      // keyboard shortcuts
+      document.addEventListener("keyup", function (e) {
         switch (e.keyCode) {
-            case 37:
-                testimLeftArrow.click();
-                break;
+          case 37:
+            testimLeftArrow.click();
+            break;
                 
-            case 39:
-                testimRightArrow.click();
-                break;
+          case 39:
+            testimRightArrow.click();
+            break;
 
-            case 39:
-                testimRightArrow.click();
-                break;
+          case 39:
+            testimRightArrow.click();
+            break;
 
-            default:
-                break;
+          default:
+            break;
         }
-    })
+      })
         
-        testim.addEventListener("touchstart", function(e) {
-                touchStartPos = e.changedTouches[0].clientX;
-        })
+      testim.addEventListener("touchstart", function (e) {
+        touchStartPos = e.changedTouches[0].clientX;
+      })
     
-        testim.addEventListener("touchend", function(e) {
-                touchEndPos = e.changedTouches[0].clientX;
+      testim.addEventListener("touchend", function (e) {
+        touchEndPos = e.changedTouches[0].clientX;
             
-                touchPosDiff = touchStartPos - touchEndPos;
+        touchPosDiff = touchStartPos - touchEndPos;
             
-                // console.log(touchPosDiff);
-                // console.log(touchStartPos);    
-                // console.log(touchEndPos);    
+        // console.log(touchPosDiff);
+        // console.log(touchStartPos);    
+        // console.log(touchEndPos);    
 
             
-                if (touchPosDiff > 0 + ignoreTouch) {
-                        testimLeftArrow.click();
-                } else if (touchPosDiff < 0 - ignoreTouch) {
-                        testimRightArrow.click();
-                } else {
-                    return;
-                }
+        if (touchPosDiff > 0 + ignoreTouch) {
+          testimLeftArrow.click();
+        } else if (touchPosDiff < 0 - ignoreTouch) {
+          testimRightArrow.click();
+        } else {
+          return;
+        }
             
-        })
-}
+      })
+    }
+  }
 }
 
 render() {

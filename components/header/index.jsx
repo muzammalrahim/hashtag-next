@@ -10,7 +10,10 @@ import $ from 'jquery';
 export default class Header extends Component {
 
 constructor(props) {    
-    super(props)
+  super(props)
+  if (typeof window === "undefined") {
+    global.window = {};
+  }
     this.state = {
     }
     this.HomePage = this.HomePage.bind(this);
@@ -29,19 +32,20 @@ constructor(props) {
     this.menuToggle();
     // window.addEventListener("resize", this.menuToggle);
 
-
-    $(window).scroll(function () {
+    if (typeof window !== undefined) {
+      $(window).scroll(function () {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 74) {
-            $('.header-container').addClass('sticky');
-            $('.service-bg').addClass('fixed');
+          $('.header-container').addClass('sticky');
+          $('.service-bg').addClass('fixed');
         } else {
-            $('.header-container').removeClass('sticky');
-            $('.service-bg').removeClass('fixed');
+          $('.header-container').removeClass('sticky');
+          $('.service-bg').removeClass('fixed');
         }
 
-    });
+      })
+    };
 
 
   }
