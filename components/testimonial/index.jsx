@@ -21,7 +21,8 @@ componentDidMount()
         ignoreTouch = 30;
 ;
 
-window.onload = function() {
+// window.onload = function() {
+              function win () {
 
     // Testim Script
     function playSlide(slide) {

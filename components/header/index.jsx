@@ -29,9 +29,11 @@ constructor(props) {
     this.menuToggle();
     // window.addEventListener("resize", this.menuToggle);
 
-
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
+    if (window !== undefined) {
+    
+    // $(window).scroll(function () {
+    $(asdasd).scroll(function () {
+        // var scroll = $(window).scrollTop();
 
         if (scroll >= 74) {
             $('.header-container').addClass('sticky');
@@ -42,7 +44,7 @@ constructor(props) {
         }
 
     });
-
+  }
 
   }
 

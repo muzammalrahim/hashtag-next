@@ -34,13 +34,15 @@ export default class Singlepost extends Component {
 
   componentDidMount() {
     this.shiftContent();
-    window.addEventListener("resize", this.shiftContent);
+    // window.addEventListener("resize", this.shiftContent);
 
     this.get_postData();
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.shiftContent);
+ 
+      // window.removeEventListener("resize", this.shiftContent);
+    
   }
 
   //Search div shift

@@ -56,7 +56,7 @@ export default class BlogCategory extends Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.shiftContent);
+    // window.removeEventListener("resize", this.shiftContent);
   }
 
   handleChange(e) {

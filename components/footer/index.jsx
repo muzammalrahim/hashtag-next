@@ -7,7 +7,8 @@ import $ from "jquery";
 
 class Footer extends Component {
   componentDidMount() {
-    $(window).scroll(function () {
+    // $(window).scroll(function () {
+    $(win).scroll(function () {
       var scroll = $(window).scrollTop();
       if (scroll >= 250) {
         $(".text-back-to-top").addClass("sticky");
