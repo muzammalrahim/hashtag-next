@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 // import { HashLink as Link } from 'react-router-hash-link';
 // import { NavHashLink as NavLink } from 'react-router-hash-link';
 // import './style.css';
-import {Carousel} from '3d-react-carousal';
+import dynamic from "next/dynamic";
+const { Carousel } = dynamic(() => import("3d-react-carousal"), { ssr: false });
 export default class Slider extends Component{
   constructor(props) {
     super(props)

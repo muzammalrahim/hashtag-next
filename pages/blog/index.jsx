@@ -46,6 +46,9 @@ export default class Blog extends Component {
   constructor(props) {
     super(props);
     let response = this.props;
+    if (typeof window === "undefined") {
+      global.window = {};
+    }
     this.state = {
       allPosts: [],
       hasMoreItems: true,
@@ -65,13 +68,15 @@ export default class Blog extends Component {
 
   componentDidMount() {
     this.shiftContent();
-    window.addEventListener("resize", this.shiftContent);
+    if (typeof window !== undefined) {
+      window.addEventListener("resize", this.shiftContent);
+    }
   }
 
   componentWillUnmount() {
- 
-      // window.removeEventListener("resize", this.shiftContent);
-   
+    if (typeof window !== undefined) {
+      window.removeEventListener("resize", this.shiftContent);
+    }
   }
 
   handleChange(e) {

@@ -6,16 +6,23 @@ import $ from "jquery";
 // import './style.css';
 
 class Footer extends Component {
+  constructor(props) {
+    super(props);
+    if (typeof window === "undefined") {
+      global.window = {};
+    }
+  }
   componentDidMount() {
-    // $(window).scroll(function () {
-    $(win).scroll(function () {
-      var scroll = $(window).scrollTop();
-      if (scroll >= 250) {
-        $(".text-back-to-top").addClass("sticky");
-      } else {
-        $(".text-back-to-top").removeClass("sticky");
-      }
-    });
+    if (typeof window !== undefined) {
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll >= 250) {
+          $(".text-back-to-top").addClass("sticky");
+        } else {
+          $(".text-back-to-top").removeClass("sticky");
+        }
+      })
+    };
 
     $(".text-back-to-top a").click(function () {
       $("html, body").animate(

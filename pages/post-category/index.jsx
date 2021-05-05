@@ -21,7 +21,9 @@ export default class BlogCategory extends Component {
 
   constructor(props) {
     super(props);
-
+if (typeof window === "undefined") {
+  global.window = {};
+}
     this.state = {
       allPosts: [],
       hasMoreItems: true,
@@ -42,7 +44,9 @@ export default class BlogCategory extends Component {
 
   componentDidMount() {
     this.shiftContent();
-    window.addEventListener("resize", this.shiftContent);
+    if (typeof window !== undefined) {
+      window.addEventListener("resize", this.shiftContent);
+    }
   }
 
   componentWillMount(){
@@ -56,7 +60,9 @@ export default class BlogCategory extends Component {
   }
 
   componentWillUnmount() {
-    // window.removeEventListener("resize", this.shiftContent);
+    if (typeof window !== undefined) {
+      window.removeEventListener("resize", this.shiftContent);
+    }
   }
 
   handleChange(e) {

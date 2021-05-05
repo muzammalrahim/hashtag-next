@@ -38,6 +38,7 @@ export default class Contactus extends Component {
     this.state = {
       hideForm: false,
       data: response.data.data,
+      tabindex: 1,
     };
     this.handleFormHide = this.handleFormHide.bind(this);
   }
@@ -49,6 +50,7 @@ export default class Contactus extends Component {
   }
 
   render() {
+    let { tabindex } = this.state;
     const meta = {
       title: "Contact us - FullStack Web Development| Bay area, California",
 
@@ -70,7 +72,7 @@ export default class Contactus extends Component {
           description={data.description}
           keywords={data.keywords}
         ></Header>
-        <section class="content-container">
+        <section className="content-container">
           <div className="container-fluid service-bg p-0 m-0 ">
             <div className="service-bg-right">
               <div className="service-banner-frame">
@@ -110,46 +112,58 @@ export default class Contactus extends Component {
                         role="tablist"
                       >
                         <a
-                          className="nav-item nav-link active"
+                          className={`nav-item nav-link ${
+                            tabindex === 1 ? "active" : ""
+                          }`}
                           id="nav-home-tab"
                           data-toggle="tab"
                           href="#nav-home"
                           role="tab"
                           aria-controls="nav-home"
                           aria-selected="true"
+                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 1 })}}
                         >
                           Sunnyvale
                         </a>
                         <a
-                          className="nav-item nav-link"
+                          className={`nav-item nav-link ${
+                            tabindex === 2 ? "active" : ""
+                          }`}
                           id="nav-sanjose-tab"
                           data-toggle="tab"
                           href="#nav-sanjose"
                           role="tab"
                           aria-controls="nav-sanjose"
                           aria-selected="true"
+                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 2 })}}
                         >
                           San Jose
                         </a>
                         <a
-                          className="nav-item nav-link"
+                          className={`nav-item nav-link ${
+                            tabindex === 3 ? "active" : ""
+                          }`}
                           id="nav-contact-tab"
                           data-toggle="tab"
                           href="#nav-contact"
                           role="tab"
                           aria-controls="nav-contact"
                           aria-selected="false"
+                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 3 })}}
                         >
                           San Diego
                         </a>
                         <a
-                          className="nav-item nav-link"
+                          className={`nav-item nav-link ${
+                            tabindex === 4 ? "active" : ""
+                          }`}
                           id="nav-profile-tab"
                           data-toggle="tab"
                           href="#nav-profile"
                           role="tab"
                           aria-controls="nav-profile"
                           aria-selected="false"
+                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 4 })}}
                         >
                           Kochi
                         </a>
@@ -161,7 +175,9 @@ export default class Contactus extends Component {
                     id="nav-tabContent"
                   >
                     <div
-                      className="tab-pane fade show active text-left pl-3"
+                      className={`tab-pane fade  text-left pl-3 ${
+                        tabindex === 1 ? "show active" : ""
+                      }`}
                       id="nav-home"
                       role="tabpanel"
                       aria-labelledby="nav-home-tab"
@@ -221,7 +237,7 @@ export default class Contactus extends Component {
                           >
                             <img
                               src="images/home/facebook-logo.svg"
-                              class="conatct-fb"
+                              className="conatct-fb"
                             />
                           </a>
                         </div>
@@ -236,7 +252,9 @@ export default class Contactus extends Component {
                       </div>
                     </div>
                     <div
-                      class="tab-pane fade text-left pl-3"
+                      className={`tab-pane fade  text-left pl-3 ${
+                        tabindex === 2 ? "show active" : ""
+                      }`}
                       id="nav-sanjose"
                       role="tabpanel"
                       aria-labelledby="nav-sanjose-tab"
@@ -296,7 +314,7 @@ export default class Contactus extends Component {
                           >
                             <img
                               src="images/home/facebook-logo.svg"
-                              class="conatct-fb"
+                              className="conatct-fb"
                             />
                           </a>
                         </div>
@@ -312,7 +330,9 @@ export default class Contactus extends Component {
                     </div>
 
                     <div
-                      className="tab-pane fade text-left pl-3"
+                      className={`tab-pane fade  text-left pl-3 ${
+                        tabindex === 3 ? "show active" : ""
+                      }`}
                       id="nav-contact"
                       role="tabpanel"
                       aria-labelledby="nav-contact-tab"
@@ -361,7 +381,7 @@ export default class Contactus extends Component {
                           >
                             <img
                               src="images/home/facebook-logo.svg"
-                              class="conatct-fb"
+                              className="conatct-fb"
                             />
                           </a>
                         </div>
@@ -376,7 +396,9 @@ export default class Contactus extends Component {
                       </div>
                     </div>
                     <div
-                      class="tab-pane fade text-left pl-3"
+                      className={`tab-pane fade  text-left pl-3 ${
+                        tabindex === 4 ? "show active" : ""
+                      }`}
                       id="nav-profile"
                       role="tabpanel"
                       aria-labelledby="nav-profile-tab"
@@ -436,7 +458,7 @@ export default class Contactus extends Component {
                           >
                             <img
                               src="images/home/facebook-logo.svg"
-                              class="conatct-fb"
+                              className="conatct-fb"
                               alt="facebook"
                             />
                           </a>
@@ -465,14 +487,15 @@ export default class Contactus extends Component {
             <div className="container mt-4 mb-4">
               <div className="row pl-3 pr-3">
                 {this.state.hideForm == false ? (
-                  <>
+                  <div>
+                    {" "}
                     <div className="col-12">
                       <p className="text-above-main-title w-100">
                         TELL US ABOUT YOUR BIG IDEAS AND WE'LL TELL YOU HOW WE
                         CAN HELP
                       </p>
                       <h1 className="main-title">
-                        <span class="title-orange d-block mob-left">
+                        <span className="title-orange d-block mob-left">
                           Have an idea? Lets discuss
                         </span>
                       </h1>
@@ -480,7 +503,7 @@ export default class Contactus extends Component {
                     <Contactusform
                       handleFormHide={this.handleFormHide}
                     ></Contactusform>
-                  </>
+                  </div>
                 ) : (
                   <div className="col-md-12">
                     <div className="message-box">
@@ -521,7 +544,7 @@ export default class Contactus extends Component {
                 </div>
                 <div className="col-lg-5 col-md-12 col-sm-12 my-auto">
                   <h1 className="main-title">
-                    <span class="title-orange d-block mob-left">
+                    <span className="title-orange d-block mob-left">
                       Join the Team
                     </span>
                   </h1>

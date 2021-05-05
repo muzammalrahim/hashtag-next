@@ -18,7 +18,9 @@ export default class Singlepost extends Component {
 
   constructor(props) {
     super(props);
-
+if (typeof window === "undefined") {
+  global.window = {};
+}
     this.state = {
       postData: {
         categories: [{"name":"","slug": ""}]
@@ -34,15 +36,16 @@ export default class Singlepost extends Component {
 
   componentDidMount() {
     this.shiftContent();
-    // window.addEventListener("resize", this.shiftContent);
-
+    if(typeof window !== undefined){
+      window.addEventListener("resize", this.shiftContent);
+    }
     this.get_postData();
   }
 
   componentWillUnmount() {
- 
-      // window.removeEventListener("resize", this.shiftContent);
-    
+    if (typeof window !== undefined) {
+      window.removeEventListener("resize", this.shiftContent);
+    }
   }
 
   //Search div shift
