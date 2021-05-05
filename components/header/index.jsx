@@ -136,7 +136,7 @@ constructor(props) {
               <img
                 id="logo"
                 className="logo"
-                src="./hashtag-new-logo-header.svg"
+                src="/hashtag-new-logo-header.svg"
                 alt="logo"
               />
             </Link>

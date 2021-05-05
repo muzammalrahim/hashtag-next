@@ -14,9 +14,8 @@ import './case-studies/multi-token/style.css';
 import './case-studies/speakinc/style.css'; 
 import './error/style.css'
 import './mobile-app/style.css'
-import './wordpress/style.css'
-import './single-post/style.css'
-import './post-category/style.css'
+import './blog/single/style.css'
+import "./blog/category/style.css";
 import './index.css'
 import "./about-us/style.css";
 import "./contact-us/style.css";
