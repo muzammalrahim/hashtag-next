@@ -103,21 +103,23 @@ constructor(props) {
 
   render() {
     const {title, description, keywords} = this.props
+    console.log(title)
     return (
       <header className="header-container ">
-        <Head>
-          <title>{title}</title>
+        
+          <title>{this.props?.title}</title>
           <meta name="description" content={description} />
           <meta property="og:type" content={keywords} />
           <meta property="og:title" content={title} />
           <meta property="og:description" content={description} />
           <meta property="og:site_name" content='hashtag' />
-          <meta property="twitter:card" content="summary" />
-          <meta property="twitter:creator" content='twitter' />
-          <meta property="twitter:title" content='title' />
+          <meta property="twitter:card" content={keywords} />
+          <meta property="twitter:creator" content='hashtag' />
+          <meta property="twitter:title" content={title} />
           <meta property="twitter:description" content={description }/>
-        </Head>
-        <div className="container " id="main-section">
+        
+        <script>(document.title= {title})</script>
+          <div className="container " id="main-section">
           <nav className="navbar navbar-expand-lg navbar-light bg-light px-5">
             <button
               className="navbar-toggler"
