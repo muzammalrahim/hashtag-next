@@ -121,7 +121,7 @@ export default class Contactus extends Component {
                           role="tab"
                           aria-controls="nav-home"
                           aria-selected="true"
-                          onClick={() => this.setState({ tabindex: 1 })}
+                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 1 })}}
                         >
                           Sunnyvale
                         </a>
@@ -135,7 +135,7 @@ export default class Contactus extends Component {
                           role="tab"
                           aria-controls="nav-sanjose"
                           aria-selected="true"
-                          onClick={() => this.setState({ tabindex: 2 })}
+                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 2 })}}
                         >
                           San Jose
                         </a>
@@ -149,7 +149,7 @@ export default class Contactus extends Component {
                           role="tab"
                           aria-controls="nav-contact"
                           aria-selected="false"
-                          onClick={() => this.setState({ tabindex: 3 })}
+                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 3 })}}
                         >
                           San Diego
                         </a>
@@ -163,7 +163,7 @@ export default class Contactus extends Component {
                           role="tab"
                           aria-controls="nav-profile"
                           aria-selected="false"
-                          onClick={() => this.setState({ tabindex: 4 })}
+                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 4 })}}
                         >
                           Kochi
                         </a>
