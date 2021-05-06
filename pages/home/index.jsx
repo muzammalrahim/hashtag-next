@@ -48,10 +48,11 @@ export default class Home extends Component {
         
         ></Header>
 		
-			<div className="section-one-bg">
+			<div className="section-one-bg p-5">
 				<div className="section-one-bg-small-device m-0 d-none d-xl-block">
-					<div className="container section-one-content ">
-								<div className="row justify-content-center  pl-3 pr-3">
+					<div className="container">
+					<div className="section-one-content ">
+					<div className="row justify-content-center  pl-3 pr-3">
 
 									<div className="col-12 section-one-text">
 										<p className="sub-text-above-main-title">A Full stack development company</p>
@@ -75,7 +76,8 @@ export default class Home extends Component {
 											</a> 
 										</div>
 									</div>
-								</div>	
+								</div></div>
+									
 					</div>
 				</div>
 			</div>
@@ -145,7 +147,7 @@ export default class Home extends Component {
 		  </div>
 
 
-	<div className="container-fluid section-three-bg">
+	<div className="container-fluid section-three-bg p-5 m-5">
 			<div className="container section-three-content ">
 				<div className="row justify-content-center  pl-3 pr-3 mob-padding">
 					  <div className="col-12  section-three-text">
@@ -223,10 +225,10 @@ export default class Home extends Component {
              <div classname="section-four-left-bg">
 				<div className="container section-four-content">
 
-					<div className="row justify-content-center  pl-3 pr-3">
+					<div className="row justify-content-center  pl-5 pr-3">
 					    
 						
-						<div className="col-12 col-lg-5 col-md-12 content-four-section">
+						<div className="col-12 col-lg-5 col-md-12 content-four-section pl-5">
 						<p className="text-above-main-title title-white">WHY CLIENTS CHOOSE US</p>
 							
 						<h1 className="main-title">
@@ -438,8 +440,8 @@ export default class Home extends Component {
 		  			</div>
 		  			<div className="horizontal-line-middle mob-left mob-line-margin"></div>
 		  		</div>
-			 <div className="row justify-content-center mt-5 mb-md-5 mb-sm-0">
-			 <div className="col-12" id="tabs">
+			 <div className="row justify-content-center mt-5 mb-md-5 mb-sm-0 pl-5">
+			 <div className="col-12 pl-5 ml-5" id="tabs">
 			   <div className="col-lg-6 col-md-12 col-sm-12">
 				 <nav>
 				   <div

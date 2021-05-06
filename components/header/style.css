@@ -160,6 +160,11 @@
 
 #wp-main .btn-header-2 {
     background: #f56a27 !important;
+    border:none !important;
+}
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #fff !important;
 }
 
 #shopify-main .btn-header-2 {
@@ -458,7 +463,9 @@
     border-radius: 8px;
     padding: 8px 11px;
 }
-
+.h-send-btn{
+    color: #343434 !important;
+}
 
 /*------------ Sticky header --------------------*/
 .header-container {
@@ -481,6 +488,9 @@
     border-color: #fff !important;
     border-color: #f56a27 !important;
     color: #f56a27 !important;
+    background: white;
+    border-radius: 10px;
+    padding: 2px;
    
 }
 

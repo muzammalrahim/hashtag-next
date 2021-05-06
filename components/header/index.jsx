@@ -154,7 +154,7 @@ constructor(props) {
               id="navbarTogglerDemo03"
             >
             
-              <ul  className="navbar-nav mr-auto mt-2 mt-lg-0">
+              <ul  className="navbar-nav m-auto mt-2 mt-lg-0">
                 <li className="nav-item">
                   <Link
                     href="/about-us"

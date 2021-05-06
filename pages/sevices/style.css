@@ -411,3 +411,6 @@
         height: 49px;
     }
 }
+.h-send-btn:hover {
+    background: white!important;
+}
