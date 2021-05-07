@@ -110,7 +110,7 @@ export default class Blog extends Component {
 
   //Get posts
   async get_allPosts() {
-    var url = config.myConfig.apiUrl + "blog/posts";
+    var url = "https://api.hashtag-ca.com/api/v1/blog/posts";
     var page = this.state.page;
     var keyword = this.state.keyword;
 
