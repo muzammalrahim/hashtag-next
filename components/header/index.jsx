@@ -105,7 +105,7 @@ constructor(props) {
     const {title, description, keywords} = this.props
     console.log(title)
     return (
-      <header className="header-container px-5">
+      <header className="header-container">
         
           <title>{this.props?.title}</title>
           <meta name="description" content={description} />
@@ -119,8 +119,8 @@ constructor(props) {
           <meta property="twitter:description" content={description }/>
         
         <script>(document.title= {title})</script>
-          <div style={{background: "#f8f9fa"}} className="container  px-5" id="main-section">
-          <nav className="navbar navbar-expand-lg navbar-light bg-light px-5">
+          <div  className="container" id="main-section">
+          <nav className="navbar navbar-expand-lg navbar-light bg-Light">
             <button
               className="navbar-toggler"
               type="button"
