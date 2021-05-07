@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import './style.css';
-
-
 {/*import $ from 'jquery'; */ }
 export default class Testimonial extends Component {
 
@@ -91,8 +88,24 @@ export default class Testimonial extends Component {
           }
         })
 
-        testim.addEventListener("touchstart", function (e) {
-          touchStartPos = e.changedTouches[0].clientX;
+        testim.addEventListener("touchend", function (e) {
+          touchEndPos = e.changedTouches[0].clientX;
+
+          touchPosDiff = touchStartPos - touchEndPos;
+
+          // console.log(touchPosDiff);
+          // console.log(touchStartPos);    
+          // console.log(touchEndPos);    
+
+
+          if (touchPosDiff > 0 + ignoreTouch) {
+            testimLeftArrow.click();
+          } else if (touchPosDiff < 0 - ignoreTouch) {
+            testimRightArrow.click();
+          } else {
+            return;
+          }
+
         })
 
         testim.addEventListener("touchend", function (e) {

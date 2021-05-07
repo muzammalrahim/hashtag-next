@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
+// import { HashLink as Link } from 'react-router-hash-link';
+// import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 
 
-import './style.css';
+// import './style.css';
 
 export default class Underconstruction extends Component {
 

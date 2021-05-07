@@ -40,7 +40,7 @@ handleSubmit(e){
 
     axios.post('https://api.hashtag-ca.com/api/v1/contact',{ name, email, message})
       .then((response) => {
-       console.log(response.data.data);
+  
        //errors["sucesss"] = response.data.message;
        errors["sucesss"] = "Thanks for contacting us! We will be in touch with you shortly.";
        this.state.fields.firstname = " ";
@@ -52,8 +52,7 @@ handleSubmit(e){
             });
 
       }).catch(error =>{
-      
-      console.log(error.response)
+
        errors["failure"] = "Something went wrong. Please try again";
           this.setState({
               errors: errors

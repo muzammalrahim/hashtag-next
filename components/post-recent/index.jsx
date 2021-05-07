@@ -40,7 +40,6 @@ export default class BlogRecentPosts extends Component {
         recentPosts: recentPosts
       })
     }).catch(error =>{
-      console.log(error.response);
       toast.error("Something went wrong.");
     });
   }

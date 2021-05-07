@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Link from 'next/link'
-import './style.css';
-// Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Header from '../../components/header/index.jsx';
@@ -14,7 +12,14 @@ import Slide from 'react-reveal/Reveal';
 require('typeface-montserrat')
 
 
+
+
+
 export default class Home extends Component {
+	constructor(props) {
+		super(props);
+		
+	  }
   render() {
   		const meta = {
       title: 'Home - FullStack Web Development| Bay area, California',
@@ -29,11 +34,16 @@ export default class Home extends Component {
        
       }
     };
+
     return (
     	<div className="home-main" id="home-main">
 <DocumentMeta {...meta} />
 		{/*<div className="container-fluid section-one-bg p-0">*/}
-			<Header></Header>
+				
+        <Header
+        
+        ></Header>
+		
 			<div className="section-one-bg">
 				<div className="section-one-bg-small-device m-0 d-none d-xl-block">
 					<div className="container section-one-content ">
