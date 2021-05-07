@@ -1,8 +1,15 @@
 import '../styles/globals.css'
 import '../styles/Home.module.css'
-import '../components/header/style.css';
-import '../components/footer/style.css';
+
+import "../components/carousel/style.css";
 import '../components/contacts/style.css';
+import '../components/contactusPage/style.css';
+import '../components/footer/style.css';
+import '../components/header/style.css';
+import "../components/testimonial/style.css";
+import "../components/wordpress-slider/style.css";
+import "../components/wp-carousel/style.css";
+
 import '../pages/home/style.css';
 import './case-studies/casestudy-list/style.css'; 
 import './case-studies/easy-level/style.css'; 
@@ -33,15 +40,12 @@ import "./sevices/design-and-prototyping/style.css";
 import "./sevices/filemaker/style.css";
 import "./sevices/ui-development/style.css";
 
-import "../components/contacts/style.css";
-import "../components/testimonial/style.css";
-import "../components/carousel/style.css";
-import "../components/wp-carousel/style.css";
+
 import 'bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 import './careers/style.css'
-import '../components/contactusPage/style.css'
+
 
 
 export default function MyApp({ Component, pageProps }) {

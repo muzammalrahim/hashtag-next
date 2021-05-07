@@ -13,15 +13,13 @@ require('typeface-montserrat')
 
 
 
-
-
 export default class Home extends Component {
 	constructor(props) {
 		super(props);
+		let response = this.props;
 		this.state = {
-		
 			tabindex: 1,
-		  };
+		  }
 	  }
   render() {
 	let { tabindex } = this.state;
@@ -38,26 +36,26 @@ export default class Home extends Component {
        
       }
     };
-
+	const { title,description, keyword} = this.state;
     return (
     	<div className="home-main" id="home-main">
 <DocumentMeta {...meta} />
 		{/*<div className="container-fluid section-one-bg p-0">*/}
-				
-        <Header
-        
-        ></Header>
+		<Header
+		title={this.props.title}
+		description={this.props.description}
+		keywords={this.props.keywords}
+	  ></Header>		
 		
-			<div className="section-one-bg p-5">
+			<div className="section-one-bg">
 				<div className="section-one-bg-small-device m-0 d-none d-xl-block">
-					<div className="container">
-					<div className="section-one-content ">
+					<div className="container section-one-content ">
 					<div className="row justify-content-center  pl-3 pr-3">
 
 									<div className="col-12 section-one-text">
 										<p className="sub-text-above-main-title">A Full stack development company</p>
 										<h1 className="banner-main-title">
-											<span className="mobile-white title-orange  d-block" id="banner" >Solutions on</span>
+											<span className="mobile-white title-orange d-block" id="banner" >Solutions on</span>
 			                          		<span className="title-black"> Web, Mobile &amp; Cloud</span>
 			                          		<p className="home-dev sub-text-above-main-title title-orange"><span className="fullstack-dev"># Full Stack Development</span><span className="blockchain-dev"># Blockchain Development</span><span className="filemaker-dev"># FileMaker Development</span>   </p>
 			                          	</h1>
@@ -78,7 +76,7 @@ export default class Home extends Component {
 									</div>
 								</div></div>
 									
-					</div>
+					
 				</div>
 			</div>
 			
@@ -147,7 +145,7 @@ export default class Home extends Component {
 		  </div>
 
 
-	<div className="container-fluid section-three-bg p-5 m-5">
+	<div className="container-fluid section-three-bg p-5">
 			<div className="container section-three-content ">
 				<div className="row justify-content-center  pl-3 pr-3 mob-padding">
 					  <div className="col-12  section-three-text">
@@ -441,7 +439,7 @@ export default class Home extends Component {
 		  			<div className="horizontal-line-middle mob-left mob-line-margin"></div>
 		  		</div>
 			 <div className="row justify-content-center mt-5 mb-md-5 mb-sm-0 pl-5">
-			 <div className="col-12 pl-5 ml-5" id="tabs">
+			 <div className="col-12 pl-5 " id="tabs">
 			   <div className="col-lg-6 col-md-12 col-sm-12">
 				 <nav>
 				   <div
