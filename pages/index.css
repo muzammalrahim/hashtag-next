@@ -229,13 +229,15 @@ font-weight: bold;
 
 @media (max-width:2800px) {
  .container {
-max-width: 2542px !important;
+/* max-width: 2542px !important; */
+max-width: 2542px;
 }
 }
 @media (min-width: 2800px) {
 
 .container {
-max-width: 2542px !important;
+/* max-width: 2542px !important; */
+max-width: 2542px ;
 }
 
 .title-level-6
@@ -249,7 +251,8 @@ max-width: 2542px !important;
 
 
 .container{
-  max-width: 1737px !important;
+  max-width: 1737px ;
+  /* max-width: 1737px !important; */
 }
 }
 

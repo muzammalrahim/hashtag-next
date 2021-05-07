@@ -1,5 +1,5 @@
-import '../styles/globals.css'
-import '../styles/Home.module.css'
+import '../styles/globals.css';
+import '../styles/Home.module.css';
 
 import "../components/carousel/style.css";
 import '../components/contacts/style.css';
@@ -23,14 +23,12 @@ import './error/style.css'
 import './mobile-app/style.css'
 import './blog/single/style.css'
 import "./blog/category/style.css";
-import './index.css'
 import "./about-us/style.css";
 import "./contact-us/style.css";
 import "./blog/style.css";
 import "./shopify/style.css";
 import "./shopify/layout.css";
 import "./careers/style.css";
-import './home/style.css'
 
 import "./sevices/style.css";
 import "./sevices/wordpress-development/style.css";
@@ -40,11 +38,14 @@ import "./sevices/design-and-prototyping/style.css";
 import "./sevices/filemaker/style.css";
 import "./sevices/ui-development/style.css";
 
+import './index.css';
 
-import 'bootstrap/dist/css/bootstrap.css'
-import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-xxl/dist/css/bootstrap.min.css';
+// import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 import './careers/style.css'
+import './home/style.css';
 
 
 
