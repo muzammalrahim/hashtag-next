@@ -106,7 +106,6 @@ constructor(props) {
     console.log(title)
     return (
       <header className="header-container">
-        
           <title>{this.props?.title}</title>
           <meta name="description" content={description} />
           <meta property="og:type" content={keywords} />
