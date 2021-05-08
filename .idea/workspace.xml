@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f2196529-7008-4e62-8d65-2ad0ff0e6b07" name="Default Changelist" comment="idea files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/wp-carousel/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/wp-carousel/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +25,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d02d660d-0c61-47ee-8c71-63110a719b14" name="Default Changelist" comment="" />
+      <changelist id="f2196529-7008-4e62-8d65-2ad0ff0e6b07" name="Default Changelist" comment="idea files" />
       <created>1620017514609</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -33,6 +37,15 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">

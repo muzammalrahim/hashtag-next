@@ -15,9 +15,9 @@ constructor(props) {
     global.window = {};
   }
     this.state = {
-    
+
         tabindex: true,
-       
+
     }
     this.HomePage = this.HomePage.bind(this);
     this.AboutusPage = this.AboutusPage.bind(this);
@@ -111,19 +111,20 @@ constructor(props) {
     console.log(title)
     return (
       <header className="header-container">
+        <Head>
           <title>{this.props?.title}</title>
           <meta name="description" content={description} />
           <meta property="og:type" content={keywords} />
           <meta property="og:title" content={title} />
           <meta property="og:description" content={description} />
-          <meta property="og:site_name" content='hashtag' />
+          <meta property="og:site_name" content="hashtag" />
           <meta property="twitter:card" content={keywords} />
-          <meta property="twitter:creator" content='hashtag' />
+          <meta property="twitter:creator" content="hashtag" />
           <meta property="twitter:title" content={title} />
-          <meta property="twitter:description" content={description }/>
-        
+          <meta property="twitter:description" content={description} />
+        </Head>
         <script>(document.title= {title})</script>
-          <div  className="container" id="main-section">
+        <div className="container" id="main-section">
           <nav className="navbar navbar-expand-lg navbar-light bg-Light">
             <button
               className="navbar-toggler collapsed"
@@ -139,7 +140,7 @@ constructor(props) {
             </button>
 
             <div id="menu-container"></div>
-            <Link href="/"> 
+            <Link href="/">
               <a aria-current="page" class="navbar-brand active"><img id="logo" class="logo" src="/hashtag-new-logo-header.svg" alt="logo"/></a>
             </Link>
 
@@ -153,7 +154,7 @@ constructor(props) {
             </Link> */}
 
             <div className="mob-top-email d-block d-sm-none">
-              
+
               <a href="mailto:info@hashtag-ca.com">
                 <img src="/images/mob-top-email.svg" alt="email" />
               </a>
@@ -168,11 +169,8 @@ constructor(props) {
             
               <ul  className="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li className="nav-item">
-                  <Link
-                    href="/about-us"
-                   
-                  >
-                    <a   className="nav-link"  activeclassName="active">
+                  <Link href="/about-us">
+                    <a className="nav-link" activeclassName="active">
                       {" "}
                       About Us <span className="sr-only">(current)</span>
                     </a>
@@ -243,51 +241,35 @@ constructor(props) {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link
-                    href="/blog"
-                  
-                  >
-                  <a   className="nav-link"  activeclassName="active">
-                  {" "}
-                  Blog <span className="sr-only">(current)</span>
-                </a>
-                   
+                  <Link href="/blog">
+                    <a className="nav-link" activeclassName="active">
+                      {" "}
+                      Blog <span className="sr-only">(current)</span>
+                    </a>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link
-                    href="/careers"
-                   
-                  >
-                  <a   className="nav-link"  activeclassName="active">
-                  {" "}
-                  Careers <span className="sr-only">(current)</span>
-                </a>
-                   
+                  <Link href="/careers">
+                    <a className="nav-link" activeclassName="active">
+                      {" "}
+                      Careers <span className="sr-only">(current)</span>
+                    </a>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link
-                    href="/case-studies/casestudy-list"
-                    
-                  >
-                  <a   className="nav-link"  activeclassName="active">
-                  {" "}
-                  Case studies <span className="sr-only">(current)</span>
-                </a>
-                  
+                  <Link href="/case-studies/casestudy-list">
+                    <a className="nav-link" activeclassName="active">
+                      {" "}
+                      Case studies <span className="sr-only">(current)</span>
+                    </a>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link
-                    href="/contact-us"
-                  
-                  >
-                  <a   className="nav-link"  activeclassName="active">
-                  {" "}
-                  Contact Us <span className="sr-only">(current)</span>
-                </a>
-                    
+                  <Link href="/contact-us">
+                    <a className="nav-link" activeclassName="active">
+                      {" "}
+                      Contact Us <span className="sr-only">(current)</span>
+                    </a>
                   </Link>
                 </li>
               </ul>
