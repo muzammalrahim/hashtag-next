@@ -2374,9 +2374,17 @@ bottom: 186px;
     }
 }
 
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1284px !important;
+    }
+}
+
 @media only screen and (min-width:1300px) and (max-width:1400px) {
 
     .container {
+        /* max-width: 1284px; */
         max-width: 1284px;
     }
 
@@ -2612,4 +2620,30 @@ a.sol-but-ab {
 .home-lm-link-vs {
     position: relative;
     z-index: 9999;
+}
+
+.btn-hashtag {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgb(110 112 116 / 20%) !important;
+    border-radius: 12px !important;
+    border-color: transparent !important;
+    width: 280px;
+    height: 64px;
+    text-align: left !important;
+    padding-left: 38px !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+.btn-group>.btn:not(:first-child) {
+    border-radius: 10px !important;
+    background: linear-gradient(
+273.44deg
+, #FF6B00 4.97%, #FF5C00 92.43%) !important;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    margin: 2px;
+    z-index: 2;
 }

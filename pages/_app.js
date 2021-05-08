@@ -41,6 +41,7 @@ import "./sevices/ui-development/style.css";
 import './index.css';
 
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-xxl/dist/css/bootstrap.min.css';
 // import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
