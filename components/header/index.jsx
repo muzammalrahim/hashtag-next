@@ -15,6 +15,9 @@ constructor(props) {
     global.window = {};
   }
     this.state = {
+    
+        tabindex: true,
+       
     }
     this.HomePage = this.HomePage.bind(this);
     this.AboutusPage = this.AboutusPage.bind(this);
@@ -31,7 +34,7 @@ constructor(props) {
   componentDidMount() {
     this.menuToggle();
     // window.addEventListener("resize", this.menuToggle);
-
+    this.setState({tabindex:false})
     if (typeof window !== undefined) {
       $(window).scroll(function () {
         var scroll = $(window).scrollTop();
@@ -52,6 +55,7 @@ constructor(props) {
 
   componentWillUnmount() {
     // window.removeEventListener("resize", this.menuToggle);
+    this.setState({tabindex:false})
   }
 
   //menu toggle on mobile
@@ -102,6 +106,7 @@ constructor(props) {
   }
 
   render() {
+    let { tabindex } = this.state;
     const {title, description, keywords} = this.props
     console.log(title)
     return (
@@ -121,39 +126,47 @@ constructor(props) {
           <div  className="container" id="main-section">
           <nav className="navbar navbar-expand-lg navbar-light bg-Light">
             <button
-              className="navbar-toggler"
+              className="navbar-toggler collapsed"
               type="button"
               data-toggle="collapse"
               data-target="#navbarTogglerDemo03"
               aria-controls="navbarTogglerDemo03"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: !tabindex })}}
             >
               <span className="navbar-toggler-icon"></span>
             </button>
 
             <div id="menu-container"></div>
-            <Link href="/" className="navbar-brand">
+            <Link href="/"> 
+              <a aria-current="page" class="navbar-brand active"><img id="logo" class="logo" src="/hashtag-new-logo-header.svg" alt="logo"/></a>
+            </Link>
+
+            {/* <Link href="/" className="navbar-brand">
               <img
                 id="logo"
                 className="logo"
                 src="/hashtag-new-logo-header.svg"
                 alt="logo"
               />
-            </Link>
+            </Link> */}
 
             <div className="mob-top-email d-block d-sm-none">
+              
               <a href="mailto:info@hashtag-ca.com">
                 <img src="/images/mob-top-email.svg" alt="email" />
               </a>
             </div>
 
             <div
-              className="collapse navbar-collapse header-menu"
+            className={`collapse navbar-collapse header-menu ${
+              tabindex  ? "show" : ""
+              }`}
               id="navbarTogglerDemo03"
             >
             
-              <ul  className="navbar-nav m-auto mt-2 mt-lg-0">
+              <ul  className="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li className="nav-item">
                   <Link
                     href="/about-us"
@@ -167,14 +180,11 @@ constructor(props) {
                 </li>
 
                 <li className="nav-item">
-                  <Link
-                    href="/sevices"
-                   
-                  >
-                    <a  className="nav-link"
+                  <Link href="/sevices">
+                    <a className="nav-link"
                          activeclassName="active">
-                      services
-                      <i className="fa fa-angle-down" aria-hidden="true"></i>
+                      Services
+                      <i className="fa fa-angle-down nav-down-arrow" aria-hidden="true"></i>
                     </a>
                   </Link>
                   <i className="fa fa-angle-down" aria-hidden="true"></i>

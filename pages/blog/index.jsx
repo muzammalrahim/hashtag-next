@@ -151,10 +151,6 @@ export default class Blog extends Component {
   }
 
   render() {
-<<<<<<< HEAD
-    // console.log(data)
-=======
->>>>>>> f3d454a931bccafb9ac5b5f176e95617200c70e1
     const meta = {
       title: "Blogs - FullStack Web Development| Bay area, California",
       meta: {
