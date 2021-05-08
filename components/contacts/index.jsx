@@ -132,7 +132,7 @@ constructor(props) {
       <div className="container-fluid section-seven-bg pt-5 mb-5" id="contact-form">
         <div className="container">
           <div className="row justify-content-center pl-3 pr-3 ">
-            <div className="col-12 pl-5 ml-5">
+            <div className="col-12">
               <div className="custom-contact-style" id="CcstyleSpaceIs">
                 <div className="contact-form-out">
                   {(this.state.hideForm == false) ? (
@@ -160,9 +160,9 @@ constructor(props) {
                             </div>
                             <div className="col-lg-10 col-md-12 col-sm-12 pt-5">
                               <div className="btn-group form-btn">
-                                <button style={{color: "#343434 !important" ,paddingRight: "98px!important"}} type="submit" className="btn form-button font-12 font-bold h-send-btn">SEND MESSAGE</button>
+                                <button type="submit" className="btn form-button font-12 font-bold h-send-btn">SEND MESSAGE</button>
                                 
-                                <button type="submit" className="btn form-button-child px-3" style={{background: "#f56a27 !important"}}>
+                                <button type="submit" className="btn form-button-child px-3">
                                   {(this.state.btnSpinner == true) ? (
                                     <div className="spinner"></div>
                                   ) : (

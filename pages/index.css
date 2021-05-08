@@ -2617,6 +2617,9 @@ a.sol-but-ab {
   height: 64px !important;
  }*/
 
+
+
+
 .home-lm-link-vs {
     position: relative;
     z-index: 9999;
@@ -2647,3 +2650,39 @@ a.sol-but-ab {
     margin: 2px;
     z-index: 2;
 }
+
+
+@media (min-width: 768px){
+    .container {
+        max-width: 1622px !important;
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 767px){
+    .mob-padding {
+        padding: unset !important;
+    }
+}
+@media (min-width: 768px){
+    .content-four-section {
+        /* margin-top: 265px; */
+        margin-top: 293px !important;
+    }
+    .content-four-section {
+        margin-top: 30px;
+    }
+}
+@media (min-width: 1900px){
+    .content-four-section {
+        margin-top: 352px !important;
+    }
+}
+@media (min-width: 768px){
+    .content-four-section {
+        /* margin-top: 265px; */
+        margin-top: 293px;
+    }
+}
+
+

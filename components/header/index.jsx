@@ -50,7 +50,6 @@ constructor(props) {
       })
     };
 
-
   }
 
   componentWillUnmount() {
@@ -121,6 +120,7 @@ constructor(props) {
           <meta property="twitter:creator" content='hashtag' />
           <meta property="twitter:title" content={title} />
           <meta property="twitter:description" content={description }/>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
         
         <script>(document.title= {title})</script>
           <div  className="container" id="main-section">
