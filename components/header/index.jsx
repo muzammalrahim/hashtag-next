@@ -77,7 +77,7 @@ constructor(props) {
     this.props.history.push('/wordpress');
   }
   ShopifyPage() {
-    this.props.history.push('/shopify');
+    this.props.history.push('/shopify-experts');
   }
   
    Blog() {
@@ -222,7 +222,7 @@ constructor(props) {
 
                 <li className="nav-item">
                   <Link
-                    href="/shopify"
+                    href="/shopify-experts"
                    
                   >
                   <a   className="nav-link"  activeclassName="active">

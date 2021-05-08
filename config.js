@@ -7,4 +7,4 @@ export const myConfig = {
   apiUrl: api_ip+'/api/v1/',
   baseUrl: ui_ip
 
-};
+}; 

@@ -26,8 +26,8 @@ import "./blog/category/style.css";
 import "./about-us/style.css";
 import "./contact-us/style.css";
 import "./blog/style.css";
-import "./shopify/style.css";
-import "./shopify/layout.css";
+import "./shopify-experts/style.css";
+import "./shopify-experts/layout.css";
 import "./careers/style.css";
 
 import "./sevices/style.css";

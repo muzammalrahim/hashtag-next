@@ -164,12 +164,12 @@ class Footer extends Component {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/services" className="footer-nav">
+                      <Link href="/sevices" className="footer-nav">
                         <a>Service </a>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blogs" className="footer-nav">
+                      <Link href="/blog" className="footer-nav">
                         <a> Blog </a>
                       </Link>
                     </li>
