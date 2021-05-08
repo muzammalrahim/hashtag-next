@@ -23,7 +23,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "shopify",
       },
     })
     .then((response) => {

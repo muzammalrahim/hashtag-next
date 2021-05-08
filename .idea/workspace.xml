@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2196529-7008-4e62-8d65-2ad0ff0e6b07" name="Default Changelist" comment="idea files">
+    <list default="true" id="f2196529-7008-4e62-8d65-2ad0ff0e6b07" name="Default Changelist" comment="haider fle changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/wp-carousel/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/wp-carousel/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +31,14 @@
       <option name="presentableId" value="Default" />
       <updated>1620017514609</updated>
     </task>
+    <task id="LOCAL-00001" summary="haider fle changes">
+      <created>1620468506508</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620468506508</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -50,6 +55,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="idea files" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea files" />
+    <MESSAGE value="haider fle changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="haider fle changes" />
   </component>
 </project>

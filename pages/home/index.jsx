@@ -91,7 +91,7 @@ export default class Home extends Component {
 
                           	</h1>
 							<div className="text-center">
-							<a className="sol-but-ab" href="/services">
+							<a className="sol-but-ab" href="/sevices">
 								<div className="btn-group text-center">
 								
 								  <button type="button " className="btn btn-hashtag font-bold">LEARN MORE</button>
