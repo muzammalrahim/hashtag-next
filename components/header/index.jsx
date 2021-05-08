@@ -11,6 +11,9 @@ export default class Header extends Component {
 
   constructor(props) {
     super(props)
+    if (typeof window === "undefined") {
+      global.window = {};
+    }
     this.state = {
     }
     this.HomePage = this.HomePage.bind(this);
@@ -27,9 +30,9 @@ export default class Header extends Component {
 
   componentDidMount() {
     this.menuToggle();
-    // window.addEventListener("resize", this.menuToggle);
+    window.addEventListener("resize", this.menuToggle);
 
-
+    // if (typeof window !== undefined) {
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
 
@@ -41,7 +44,8 @@ export default class Header extends Component {
         $('.service-bg').removeClass('fixed');
       }
 
-    });
+    })
+    // };
 
 
   }
@@ -73,7 +77,7 @@ export default class Header extends Component {
     this.props.history.push('/wordpress');
   }
   ShopifyPage() {
-    this.props.history.push('/shopify');
+    this.props.history.push('/shopify-experts');
   }
 
   Blog() {
@@ -99,22 +103,25 @@ export default class Header extends Component {
 
   render() {
     const { title, description, keywords } = this.props
+    console.log(title)
     return (
-      <header className="header-container ">
-        <Head>
-          <title>{title}</title>
-          <meta name="description" content={description} />
-          <meta property="og:type" content={keywords} />
-          <meta property="og:title" content={title} />
-          <meta property="og:description" content={description} />
-          <meta property="og:site_name" content='hashtag' />
-          <meta property="twitter:card" content="summary" />
-          <meta property="twitter:creator" content='twitter' />
-          <meta property="twitter:title" content='title' />
-          <meta property="twitter:description" content={description} />
-        </Head>
-        <div className="container " id="main-section">
-          <nav className="navbar navbar-expand-lg navbar-light bg-light px-5">
+      <header className="header-container">
+        <title>{this.props?.title}</title>
+        <meta name="description" content={description} />
+        <meta property="og:type" content={keywords} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:site_name" content='hashtag' />
+        <meta property="twitter:card" content={keywords} />
+        <meta property="twitter:creator" content='hashtag' />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={description} />
+
+        <script>(document.title= {title})</script>
+        <div className="container" id="main-section">
+
+
+          <nav className="navbar navbar-expand-lg navbar-light bg-Light">
             <button
               className="navbar-toggler"
               type="button"
@@ -132,7 +139,7 @@ export default class Header extends Component {
               <img
                 id="logo"
                 className="logo"
-                src="./hashtag-new-logo-header.svg"
+                src="/hashtag-new-logo-header.svg"
                 alt="logo"
               />
             </Link>
@@ -147,7 +154,8 @@ export default class Header extends Component {
               className="collapse navbar-collapse header-menu"
               id="navbarTogglerDemo03"
             >
-              <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+
+              <ul className="navbar-nav m-auto mt-2 mt-lg-0">
                 <li className="nav-item">
                   <Link
                     href="/about-us"
@@ -216,7 +224,7 @@ export default class Header extends Component {
 
                 <li className="nav-item">
                   <Link
-                    href="/shopify"
+                    href="/shopify-experts"
 
                   >
                     <a className="nav-link" activeclassName="active">

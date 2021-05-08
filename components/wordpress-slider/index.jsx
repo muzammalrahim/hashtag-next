@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 // import { HashLink as Link } from 'react-router-hash-link';
 // import { NavHashLink as NavLink } from 'react-router-hash-link';
-// import {Carousel} from '3d-react-carousal';
+import dynamic from "next/dynamic";
+const { Carousel } = dynamic(() => import("3d-react-carousal"), { ssr: false });
 
 export default class Wpslider extends Component {
   constructor(props) {
@@ -31,7 +32,7 @@ export default class Wpslider extends Component {
         <br />
 
 
-        {/* <Carousel slides={slides} autoplay={true} interval={3000000}/> */}
+        <Carousel slides={slides} autoplay={true} interval={3000000} />
         {/* Carousal.Carousal because of unpkg in developement use npm import and use only {Carousal}*/}
       </div>
     );

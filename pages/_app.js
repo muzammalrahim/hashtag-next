@@ -1,8 +1,15 @@
-import '../styles/globals.css'
-import '../styles/Home.module.css'
-import '../components/header/style.css';
-import '../components/footer/style.css';
+import '../styles/globals.css';
+import '../styles/Home.module.css';
+
+import "../components/carousel/style.css";
 import '../components/contacts/style.css';
+import '../components/contactusPage/style.css';
+import '../components/footer/style.css';
+import '../components/header/style.css';
+import "../components/testimonial/style.css";
+import "../components/wordpress-slider/style.css";
+import "../components/wp-carousel/style.css";
+
 import '../pages/home/style.css';
 import './case-studies/casestudy-list/style.css'; 
 import './case-studies/easy-level/style.css'; 
@@ -14,17 +21,14 @@ import './case-studies/multi-token/style.css';
 import './case-studies/speakinc/style.css'; 
 import './error/style.css'
 import './mobile-app/style.css'
-import './wordpress/style.css'
-import './single-post/style.css'
-import './post-category/style.css'
-import './index.css'
+import './blog/single/style.css'
+import "./blog/category/style.css";
 import "./about-us/style.css";
 import "./contact-us/style.css";
 import "./blog/style.css";
-import "./shopify/style.css";
-import "./shopify/layout.css";
+import "./shopify-experts/style.css";
+import "./shopify-experts/layout.css";
 import "./careers/style.css";
-import './home/style.css'
 
 import "./sevices/style.css";
 import "./sevices/wordpress-development/style.css";
@@ -34,18 +38,36 @@ import "./sevices/design-and-prototyping/style.css";
 import "./sevices/filemaker/style.css";
 import "./sevices/ui-development/style.css";
 
-import "../components/contacts/style.css";
-import "../components/testimonial/style.css";
-import "../components/carousel/style.css";
-import "../components/wp-carousel/style.css";
-import 'bootstrap/dist/css/bootstrap.css'
-import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import './index.css';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-xxl/dist/css/bootstrap.min.css';
+// import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 import './careers/style.css'
-import '../components/contactusPage/style.css'
+import './home/style.css';
+import Head from "next/head";
 
 
 export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+ return (
+<>
+<Head>
+// Responsive meta tag
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+//  bootstrap CDN
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+crossorigin="anonymous" 
+/>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+crossorigin="anonymous"></script>
+</Head>
+<Component {...pageProps} />
+</>
+);
 }
 

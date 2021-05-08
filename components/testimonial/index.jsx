@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 {/*import $ from 'jquery'; */ }
 export default class Testimonial extends Component {
 
-
+  constructor(props) {
+    super(props);
+    if (typeof window === "undefined") {
+      global.window = {};
+    }
+  }
   componentDidMount() {
 
     var testim = document.getElementById("testim"),
@@ -19,7 +24,7 @@ export default class Testimonial extends Component {
       touchPosDiff,
       ignoreTouch = 30;
     ;
-    if (typeof window !== 'undefined') {
+    if (typeof window !== undefined) {
       window.onload = function () {
 
         // Testim Script
@@ -88,6 +93,10 @@ export default class Testimonial extends Component {
           }
         })
 
+        testim.addEventListener("touchstart", function (e) {
+          touchStartPos = e.changedTouches[0].clientX;
+        })
+
         testim.addEventListener("touchend", function (e) {
           touchEndPos = e.changedTouches[0].clientX;
 
@@ -96,26 +105,6 @@ export default class Testimonial extends Component {
           // console.log(touchPosDiff);
           // console.log(touchStartPos);    
           // console.log(touchEndPos);    
-
-
-          if (touchPosDiff > 0 + ignoreTouch) {
-            testimLeftArrow.click();
-          } else if (touchPosDiff < 0 - ignoreTouch) {
-            testimRightArrow.click();
-          } else {
-            return;
-          }
-
-        })
-
-        testim.addEventListener("touchend", function (e) {
-          touchEndPos = e.changedTouches[0].clientX;
-
-          touchPosDiff = touchStartPos - touchEndPos;
-
-          console.log(touchPosDiff);
-          console.log(touchStartPos);
-          console.log(touchEndPos);
 
 
           if (touchPosDiff > 0 + ignoreTouch) {

@@ -3,7 +3,7 @@ import { ToastContainer, toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import $ from 'jquery';
 import axios from 'axios';
-import * as config from '../../config.js';
+import * as config from '../../config';
 
 require('typeface-montserrat')
 

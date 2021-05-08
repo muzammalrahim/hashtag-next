@@ -51,16 +51,11 @@ export default function Home(props) {
   
     
   return (
-    
-    <div >
-    <Header
-    title={data.title}
-    description={data.description}
-    keywords={data.keywords}
-  ></Header>
-
-       <Homes />
-     
-    </div>
+ 
+       <Homes title={data.title}
+	   description={data.description}
+	   keywords={data.keywords}
+	   />
+	  
   )
 }

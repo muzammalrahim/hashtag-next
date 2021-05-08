@@ -132,7 +132,7 @@ constructor(props) {
       <div className="container-fluid section-seven-bg pt-5 mb-5" id="contact-form">
         <div className="container">
           <div className="row justify-content-center pl-3 pr-3 ">
-            <div className="col-12">
+            <div className="col-12 pl-5 ml-5">
               <div className="custom-contact-style" id="CcstyleSpaceIs">
                 <div className="contact-form-out">
                   {(this.state.hideForm == false) ? (
@@ -144,28 +144,29 @@ constructor(props) {
                         <form id="contact-form" onSubmit={this.handleSubmit}>
                           <div className="form-row">
                             <div className="col-lg-5 col-md-12 col-sm-12 pr-4 pt-5">
-                              <label for="inputName" className="hash-form-label">NAME</label>
+                              <label for="inputName" className="hash-form-label pb-2">NAME</label>
                               <input type="text" className="form-control hash-input" placeholder="Enter your Full name" name="name" value={this.state.fields.name} onChange={this.handleChange} />
                                 <div style={{color: "red"}}>{this.state.errors.name}</div>
                             </div>
                             <div className="col-lg-5 col-md-12 col-sm-12 pt-5">
-                              <label for="inputEmail" className="hash-form-label">EMAIL</label>
+                              <label for="inputEmail" className="hash-form-label pb-2">EMAIL</label>
                               <input type="email" className="form-control hash-input" placeholder="Enter your email" name="email" aria-describedby="emailHelp" value={this.state.fields.email} onChange={this.handleChange}/>
                                <div style={{color: "red"}}>{this.state.errors.email}</div>
                             </div>
                             <div className="col-lg-10 col-md-12 col-sm-12 pt-5">
-                              <label for="inputTextarea" className="hash-form-label">MESSAGE</label>
+                              <label for="inputTextarea" className="hash-form-label pb-2">MESSAGE</label>
                               <textarea className="form-control hash-input"  rows="4" placeholder="Leave your message here" name="message" value={this.state.fields.message} onChange={this.handleChange}  ></textarea>
                                <div style={{color: "red"}}>{this.state.errors.message}</div>
                             </div>
                             <div className="col-lg-10 col-md-12 col-sm-12 pt-5">
                               <div className="btn-group form-btn">
-                                <button type="submit" className="btn form-button font-12 font-bold">SEND MESSAGE</button>
-                                <button type="submit" className="btn form-button-child px-3">
+                                <button style={{color: "#343434 !important" ,paddingRight: "98px!important"}} type="submit" className="btn form-button font-12 font-bold h-send-btn">SEND MESSAGE</button>
+                                
+                                <button type="submit" className="btn form-button-child px-3" style={{background: "#f56a27 !important"}}>
                                   {(this.state.btnSpinner == true) ? (
-                                    <div className="spinner"><div></div><div></div><div></div><div></div></div>
+                                    <div className="spinner"></div>
                                   ) : (
-                                    <span className=""><span className="form-btn-arrow btn-right-arrow"></span></span> 
+                                    <span  className=""><span className="form-btn-arrow btn-right-arrow" ></span></span> 
                                   )}
                                 </button> 
                                                     

@@ -2250,3 +2250,6 @@ a.sol-but-ab {
     position: relative;
     z-index: 9999;
 }
+.h-send-btn{
+    color: #343434 !important;
+}

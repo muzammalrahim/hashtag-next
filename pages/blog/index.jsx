@@ -13,6 +13,7 @@ import axios from "axios";
 import * as config from "../../config.js";
 import queryString from "query-string";
 import Flip from "react-reveal/Reveal";
+import Link from 'next/link'
 
 require("typeface-montserrat");
 import Axios from "axios";
@@ -46,6 +47,9 @@ export default class Blog extends Component {
   constructor(props) {
     super(props);
     let response = this.props;
+    if (typeof window === "undefined") {
+      global.window = {};
+    }
     this.state = {
       allPosts: [],
       hasMoreItems: true,
@@ -53,7 +57,7 @@ export default class Blog extends Component {
       no_items: "",
       search_val: "",
       keyword: "",
-      data: response.data.data,
+      data: response.data,
     };
 
     this.shiftContent = this.shiftContent.bind(this);
@@ -65,11 +69,15 @@ export default class Blog extends Component {
 
   componentDidMount() {
     this.shiftContent();
-    window.addEventListener("resize", this.shiftContent);
+    if (typeof window !== undefined) {
+      window.addEventListener("resize", this.shiftContent);
+    }
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.shiftContent);
+    if (typeof window !== undefined) {
+      window.removeEventListener("resize", this.shiftContent);
+    }
   }
 
   handleChange(e) {
@@ -171,10 +179,18 @@ export default class Blog extends Component {
         <Flip bottom>
           <div className="card" key={index}>
             <h5 className="card-title text-level-4 title-orange">
-              <a href={"/blogs/single/" + post.url}>{post.title}</a>
+              <Link
+                href={"/blog/single/[slug]"}
+                as={"/blog/single/" + post.url}
+              >
+                {post.title}
+              </Link>
             </h5>
             <div className="blog-img">
-              <a href={"/blogs/single/" + post.url}>
+              <Link
+                href={"/blog/single/[slug]"}
+                as={"/blog/single/" + post.url}
+              >
                 <div
                   className="blog-thumb"
                   style={{
@@ -185,24 +201,30 @@ export default class Blog extends Component {
                   }}
                 ></div>
                 {/*{ (post.image == null) ? <img src="/images/blogs/writing-good-blog.jpg" alt={post.image_alt} /> : <img src={post.image} alt={post.image_alt} /> }*/}
-              </a>
+              </Link>
               <div className="card-img-overlay">
                 {post.categories.map((cat, i) => {
                   return (
-                    <a
-                      href={"/blogs/category/" + cat.slug}
+                    <Link
+                      href={"/blog/category/[slug]"}
+                      href={"/blog/category/" + cat.slug}
                       className="btn btn-light btn-sm"
                       key={i}
                     >
                       {cat.name}
-                    </a>
+                    </Link>
                   );
                 })}
               </div>
             </div>
             <div className="card-body">
               <h4 className="card-title text-level-4 title-orange">
-                <a href={"/blogs/single/" + post.url}>{post.title}</a>
+                <Link
+                  href={"/blog/single/[slug]"}
+                  as={"/blog/single/" + post.url}
+                >
+                  {post.title}
+                </Link>
               </h4>
               <small className="text-muted cat text-above-main-title author-blk">
                 <i className="fa fa-hashtag" aria-hidden="true"></i>{" "}
@@ -210,13 +232,16 @@ export default class Blog extends Component {
               </small>
               <p className="card-text">{post.excerpt}</p>
               <span className="cta-link">
-                <a
-                  href={"/blogs/single/" + post.url}
+                <Link
+                  href={"/blog/single/[slug]"}
+                  as={"/blog/single/" + post.url}
                   className="shopify-sub-title"
                 >
-                  <span>Read More</span>{" "}
-                  <i className="fa fa-chevron-right" aria-hidden="true"></i>
-                </a>
+                  <a>
+                    <span>Read More</span>{" "}
+                    <i className="fa fa-chevron-right" aria-hidden="true"></i>
+                  </a>
+                </Link>
               </span>
             </div>
           </div>
