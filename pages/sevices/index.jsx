@@ -93,7 +93,7 @@ export default class Service extends Component {
           <div className="container">
             {/* section 1 */}
             <div className="row justify-content-center mt-3" id="service-db">
-              <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-2 order-sm-2">
+              <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12">
                 <h1 className="service-title">
                   Database & Backend Development
                 </h1>
@@ -167,7 +167,7 @@ export default class Service extends Component {
             <div className="row justify-content-center mt-3" id="service-mob">
               <div className="col-lg-12 mt-5 mb-5"> </div>
 
-              <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-2 order-sm-2">
+              <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12">
                 <h1 className="service-title">Mobile App Development</h1>
                 <div className="service-sub-title">
                   Mobile apps | iOS app | Android Apps{" "}
@@ -243,7 +243,7 @@ export default class Service extends Component {
             <div className="row justify-content-center mt-3" id="service-ui">
               <div className="col-lg-12 mt-5 mb-5"> </div>
 
-              <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-2 order-sm-2">
+              <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12">
                 <h1 className="service-title">UI Development </h1>
                 <div className="service-sub-title">
                   Clean Code | Responsive | Light weight
@@ -324,7 +324,7 @@ export default class Service extends Component {
             >
               <div className="col-lg-12 mt-5 mb-5"> </div>
 
-              <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-2 order-sm-2">
+              <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12">
                 <h1 className="service-title">Shopify Experts</h1>
                 <div className="mt-4 mb-4">
                   <img
@@ -411,7 +411,7 @@ export default class Service extends Component {
             <div className="row justify-content-center mt-3" id="service-ui">
               <div className="col-lg-12 mt-5 mb-5"> </div>
 
-              <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-2 order-sm-2">
+              <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12">
                 <h1 className="service-title">Blockchain Development</h1>
                 <div className="service-sub-title">
                   Smart contract |Ethereum | Dapp

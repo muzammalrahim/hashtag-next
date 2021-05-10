@@ -28,7 +28,9 @@
 	background: #fff;
 	color: #43484C;
 }
-
+.btn-comm a:hover{
+	color: #434343 !important;
+}
 .case-study.filemaker-service .features-blk{
 	background: #F5F5F5;
 	padding: 100px 0;

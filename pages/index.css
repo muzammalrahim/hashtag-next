@@ -697,7 +697,7 @@ hiding this for build
     background: #FFFFFF;
     border: 2px solid #E4E4E4;
     box-sizing: border-box;
-    padding: 36px 32px;
+    padding: 36px 28px;
     height: 420px;
     border-bottom: 4px solid #FF6B00;
 
@@ -982,8 +982,8 @@ hiding this for build
 .form-btn>.btn:focus,
 .form-btn>.btn:hover {
     color: #000;
-    background: #FF6B00;
-    box-shadow: 0px 4px 25px rgba(110, 112, 116, 0.2) !important;
+    background: #FF6B00 !important;
+    box-shadow: 0px 4px 25px rgb(110 112 116 / 20%) !important;
     border-radius: 12px !important;
     border-color: transparent !important;
 
@@ -1001,7 +1001,9 @@ hiding this for build
     border-color: transparent !important;
 
 }
-
+button.btn.form-button-child.px-3:hover {
+    border-radius: 12px !important;
+}
 .form-btn-arrow {
     border: solid #43484C;
     border-width: 0 3px 3px 0;
@@ -1968,7 +1970,7 @@ bottom: 186px;
 
     .navbar-light .navbar-nav .nav-link {
 
-        font-size: 17px !important;
+        font-size: 13px !important;
     }
 
 
@@ -2375,17 +2377,17 @@ bottom: 186px;
 }
 
 
-@media (min-width: 1200px){
+/* @media (min-width: 1200px){
     .container {
         max-width: 1284px !important;
     }
-}
+} */
 
 @media only screen and (min-width:1300px) and (max-width:1400px) {
 
     .container {
         /* max-width: 1284px; */
-        max-width: 1284px;
+        max-width: 1277px !important;
     }
 
     .speak-btn.btn-white {
@@ -2651,17 +2653,21 @@ a.sol-but-ab {
     z-index: 2;
 }
 
-
-@media (min-width: 768px){
-    .container {
-        max-width: 1622px !important;
-        font-size: 14px !important;
-    }
-}
-
 @media (max-width: 767px){
     .mob-padding {
         padding: unset !important;
+    }
+    p.hash-content-col.mob-left.text-center {
+        text-align: left !important;
+    }
+    .content-four-section {
+        margin-top: 30px !important;
+    }
+    .hash-team-content {
+        margin-top: 30px !important;
+    }
+    .hash-team-first-right {
+        margin-top: 30px !important;
     }
 }
 @media (min-width: 768px){
@@ -2671,6 +2677,9 @@ a.sol-but-ab {
     }
     .content-four-section {
         margin-top: 30px;
+    }
+    .last-why-us-box {
+        margin-bottom: -10px !important;
     }
 }
 @media (min-width: 1900px){
