@@ -190,7 +190,8 @@ constructor(props) {
                     <a   className="nav-link"
                          activeclassName="active">
                       Services
-                      <i className="fa fa-angle-down pl-1" aria-hidden="true"></i>
+                      {/* <i className="fa fa-angle-down pl-1" aria-hidden="true"></i> */}
+                      <i class="fa fa-angle-down pl-1" aria-hidden="true"></i>
                     </a>
                   </Link>
                   
