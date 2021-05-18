@@ -120,7 +120,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-maikeinc-background.png') repeat center",
+                  "url('/images/case-studies/Parallax-maikeinc-background.png') center -32px / cover repeat",
                 backgroundSize: "cover",
               }}
             >
@@ -184,7 +184,7 @@ export default class Speakinc extends Component {
                           </ul>
                         </div>
                         <a href="/casestudies/maikeinc">
-                          Learn more{" "}
+                          Learn more{""}
                           <i
                             className="fa fa-chevron-right"
                             aria-hidden="true"
@@ -203,8 +203,8 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-speakinc-Background.png') repeat center",
-                backgroundSize: "cover",
+                  "url('/images/case-studies/Parallax-speakinc-Background.png') center -17px / cover repeat"
+              
               }}
             >
               <div className="container">
@@ -286,8 +286,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-megalot-background.png') repeat center",
-                backgroundSize: "cover",
+                  "url('/images/case-studies/Parallax-megalot-background.png') center -25px / cover repeat"
               }}
             >
               <div className="container">
@@ -380,7 +379,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-filemaker-Background.jpg') repeat center",
+                  "url('/images/case-studies/Parallax-filemaker-Background.jpg') center -21px / cover repeat",
                 backgroundSize: "cover",
               }}
             >
@@ -447,7 +446,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-easylevel-background.jpg') repeat center",
+                  "url('/images/case-studies/Parallax-easylevel-background.jpg') center -19px / cover repeat",
                 backgroundSize: "cover",
               }}
             >
@@ -515,7 +514,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-multi-token-Background.jpg') repeat center",
+                  "url('/images/case-studies/Parallax-multi-token-Background.jpg') center -40px / cover repeat",
                 backgroundSize: "cover",
               }}
             >

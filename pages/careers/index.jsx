@@ -5,6 +5,9 @@ import Contact from "../../components/contacts/index.jsx";
 import DocumentMeta from "react-document-meta";
 import Link from "next/link";
 
+
+
+
 require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
@@ -146,7 +149,7 @@ export default class Careers extends Component {
                         
                     </div>
                 </div>*/}
-                  <div className="col-lg-4 col-sm-6 mob-padding ">
+                  <div className="col-lg-4 col-sm-6 mob-padding c-height">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         src="images/careers/software-engineers-d.svg"
@@ -156,13 +159,23 @@ export default class Careers extends Component {
                       <h4 className=" title-black hashtag-careers-vacancies ">
                         EXPERIENCED PROFESSIONALS
                       </h4>
-                      <hr className="hashtag-underline-new ml-2 " />
-                      <p className="pt-4 pb-4">
+                      <hr className="hashtag-underline-new ml-2" />
+                      <p className="pt-5  first-para">
                         Are you a person with a creative approach to problem
                         solving? Do you have the ability to thrive in a
                         fast-paced environment.
                       </p>
-                      <div className="contact-form-link"></div>
+                      <div class="contact-form-link">
+                          <a href="/contact-us"> 
+                            <div class="btn-group form-btn">
+                              <button type="button" class="btn form-button font-12 font-bold">JOIN US</button>
+                              <button type="button" class="btn form-button-child px-3">
+                                <span class=""><span class="form-btn-arrow btn-right-arrow"></span></span>
+                                </button><div class="dropdown-menu">
+                              </div>
+                              </div>
+                            </a>
+                          </div>
                     </div>
                   </div>
 
@@ -177,12 +190,22 @@ export default class Careers extends Component {
                         FRESHERS AND ENTRY LEVEL PROFESSIONALS
                       </h4>
                       <hr className="hashtag-underline-new ml-2 " />
-                      <p className="pt-2 pb-2">
+                      <p className="pt-2 pb-2 first-para">
                         Are you a person with a creative approach to problem
                         solving? Do you have the ability to thrive in a
                         fast-paced environment.{" "}
                       </p>
-                      <div className="contact-form-link"></div>
+                      <div class="contact-form-link">
+                          <a href="/contact-us"> 
+                            <div class="btn-group form-btn">
+                              <button type="button" class="btn form-button font-12 font-bold">JOIN US</button>
+                              <button type="button" class="btn form-button-child px-3">
+                                <span class=""><span class="form-btn-arrow btn-right-arrow"></span></span>
+                                </button><div class="dropdown-menu">
+                              </div>
+                              </div>
+                            </a>
+                          </div>
                     </div>
                   </div>
 

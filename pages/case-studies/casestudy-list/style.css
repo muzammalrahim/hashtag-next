@@ -29,8 +29,6 @@
 	border: 1px solid #eee;
 }
 
-
-
 .parallax-outer{
 	width: 100%;
 	position: relative;
@@ -86,9 +84,10 @@
 }
 .parallax-inner-blk a{
 	color: #f56a27;
-	font-weight: 500;
+	font-weight: 400;
 	text-align: center;
 	text-decoration: none;
+	font-size: 20px;
 }
 .parallax-inner-blk a i{
 	display: inline-block;
@@ -131,7 +130,12 @@
 	float: left;
 	width: 100%;
 }
-
+.list-banner-text .btn-comm a:hover{
+	color: #434343 !important;
+}
+.parallax-inner-blk a:hover{
+	color: #f56a27 !important;
+}
 
 /* media query */
 

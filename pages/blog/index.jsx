@@ -205,8 +205,8 @@ export default class Blog extends Component {
               <div className="card-img-overlay">
                 {post.categories.map((cat, i) => {
                   return (
-                    <Link
-                      href={"/blog/category/[slug]"}
+                    <Link className="btn btn-light btn-sm"
+                      href={"/blog/category/[slug]"} className="btn btn-light btn-sm"
                       href={"/blog/category/" + cat.slug}
                       className="btn btn-light btn-sm"
                       key={i}
@@ -237,7 +237,7 @@ export default class Blog extends Component {
                   as={"/blog/single/" + post.url}
                   className="shopify-sub-title"
                 >
-                  <a>
+                  <a className="shopify-sub-title">
                     <span>Read More</span>{" "}
                     <i className="fa fa-chevron-right" aria-hidden="true"></i>
                   </a>

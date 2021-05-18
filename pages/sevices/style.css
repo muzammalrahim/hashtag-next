@@ -87,19 +87,20 @@
 
 .service-image {
     width: 488px;
-    height: 350.87px;
+    height: 350.87px !important;
 }
 
 .mobile-image-border {
     border-bottom: 0px solid #FFFFFF;
 }
-
+.shopify-sec-3-content{
+    margin-top: 100px !important;
+}
 
 /* style by sherin */
 .service-banner-content {
     align-items: center;
 }
-
 
 /*  media query */
 @media(min-width: 2800px) {
@@ -399,6 +400,8 @@
     }
 }
 
+
+
 @media(max-width: 280px) {
 
     .btn-white {
@@ -414,3 +417,15 @@
 .h-send-btn:hover {
     background: white!important;
 }
+
+
+@media (min-width: 992px){
+    .col-lg-6.col-md-12.col-sm-12.order-2.order-lg-12.order-md-12.order-sm-12 {
+        order: 12 !important;
+} 
+}
+/* @media (min-width: 768px){
+    .order-md-2 {
+        order: 12!important;
+    };
+} */

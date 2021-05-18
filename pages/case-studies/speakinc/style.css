@@ -303,15 +303,15 @@ ul.project-info li:first-child{
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  background: #C4C4C4;
+  background: #C4C4C4 !important;
   border: none;
   outline: none !important;
 }
 .slick-dots li button::before {
   display: none;
 }
-.slick-dots li.slick-active button{
-  background: #FF6B00;
+.slick-dots li.slick-active button {
+  background: #FF6B00 !important;
 }
 .slick-dots .slick-active{
   padding: 0px;
