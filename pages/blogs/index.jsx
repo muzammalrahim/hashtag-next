@@ -174,21 +174,22 @@ export default class Blog extends Component {
 
     var post_lists = [];
     this.state.allPosts.map((post, index) => {
+      post.image = post.image.replace('http://','https://');
       post_lists.push(
         <Flip bottom>
           <div className="card" key={index}>
             <h5 className="card-title text-level-4 title-orange">
               <Link
-                href={"/blog/single/[slug]"}
-                as={"/blog/single/" + post.url}
+                href={"/blogs/single/[slug]"}
+                as={"/blogs/single/" + post.url}
               >
                 {post.title}
               </Link>
             </h5>
             <div className="blog-img">
               <Link
-                href={"/blog/single/[slug]"}
-                as={"/blog/single/" + post.url}
+                href={"/blogs/single/[slug]"}
+                as={"/blogs/single/" + post.url}
               >
                 <div
                   className="blog-thumb"
@@ -205,8 +206,8 @@ export default class Blog extends Component {
                 {post.categories.map((cat, i) => {
                   return (
                     <Link className="btn btn-light btn-sm"
-                      href={"/blog/category/[slug]"} className="btn btn-light btn-sm"
-                      href={"/blog/category/" + cat.slug}
+                      href={"/blogs/category/[slug]"} className="btn btn-light btn-sm"
+                      href={"/blogs/category/" + cat.slug}
                       className="btn btn-light btn-sm"
                       key={i}
                     >
@@ -219,8 +220,8 @@ export default class Blog extends Component {
             <div className="card-body">
               <h4 className="card-title text-level-4 title-orange">
                 <Link
-                  href={"/blog/single/[slug]"}
-                  as={"/blog/single/" + post.url}
+                  href={"/blogs/single/[slug]"}
+                  as={"/blogs/single/" + post.url}
                 >
                   {post.title}
                 </Link>
@@ -232,8 +233,8 @@ export default class Blog extends Component {
               <p className="card-text">{post.excerpt}</p>
               <span className="cta-link">
                 <Link
-                  href={"/blog/single/[slug]"}
-                  as={"/blog/single/" + post.url}
+                  href={"/blogs/single/[slug]"}
+                  as={"/blogs/single/" + post.url}
                   className="shopify-sub-title"
                 >
                   <a className="shopify-sub-title">
