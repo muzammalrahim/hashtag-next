@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // import { NavHashLink as Link } from 'react-router-hash-link';
 import Link from 'next/link'
 import Head from "next/head";
-// import "@fortawesome/fontawesome-free/css/all.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import Post from "./post.jsx"
 import Dropdown from '../dropdown/index.jsx';
 import $ from 'jquery';
