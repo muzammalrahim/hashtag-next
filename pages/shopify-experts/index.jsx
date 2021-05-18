@@ -3,6 +3,7 @@ import Header from "../../components/header/index.jsx";
 import Footer from "../../components/footer/index.jsx";
 import Contact from "../../components/contacts/index.jsx";
 // import Slider from "../../components/slider/index.jsx";
+import Wpsliderv2 from '../../components/wordpress-sliderv2/index.jsx';
 import DocumentMeta from "react-document-meta";
 import Link from "next/link";
 
@@ -54,6 +55,27 @@ export default class Shopify extends Component {
       },
     };
     const { data } = this.state;
+
+    const latestWork = [
+        {
+          id: 1,
+          src: "../images/shopify/together-home.jpg",
+          alt: "slider1",
+        },{
+          id: 2,
+          src: "../images/shopify/warped-table-s.jpg",
+          alt: "slider2",
+        },{
+          id: 3,
+          src: "../images/shopify/shopurbanalchemy.jpg",
+          alt: "slider3",
+        },{
+          id: 4,
+          src: "../images/shopify/berrybay.jpg",
+          alt: "slider4",
+        }
+      ];
+
     return (
       <div className="shopify-main" id="shopify-main">
         <DocumentMeta {...meta} />
@@ -193,6 +215,7 @@ export default class Shopify extends Component {
             {/*section 3 */}
 
             {/* <Slider> </Slider>*/}
+             <Wpsliderv2 images={latestWork}> </Wpsliderv2>
           </div>
 
           <div className="shopify-section-4-main">

@@ -39,6 +39,11 @@ import "./sevices/filemaker/style.css";
 import "./sevices/ui-development/style.css";
 import 'font-awesome/css/font-awesome.min.css';
 
+/*slick slider*/
+import "slick-carousel/slick/slick.css";
+import './slick-slider.css';
+// import "slick-carousel/slick/slick-theme.css";
+
 import './index.css';
 
 // import 'bootstrap/dist/css/bootstrap.css';

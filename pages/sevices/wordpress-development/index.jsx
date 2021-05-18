@@ -4,6 +4,7 @@ import Footer from '../../../components/footer/index.jsx';
 import Contact from '../../../components/contacts/index.jsx';
 import Wpslider from '../../../components/wordpress-slider/index.jsx';
 import Wpcarousel from '../../../components/wp-carousel/index.jsx';
+import Wpsliderv2 from '../../../components/wordpress-sliderv2/index.jsx';
 import Testimonial from '../../../components/testimonial/index.jsx';
 import DocumentMeta from 'react-document-meta';
 import Slide from "react-reveal/Reveal";
@@ -57,11 +58,43 @@ export default class Shopify extends Component {
       },
     };
 	  let { data } = this.state;
+
+	  const recentWork = [
+        {
+          id: 1,
+          src: "../images/wordpress/67-baltimore.png",
+          alt: "slider1",
+        },{
+          id: 2,
+          src: "../images/wordpress/face-shield.png",
+          alt: "slider2",
+        },{
+          id: 3,
+          src: "../images/wordpress/stories-upon.png",
+          alt: "slider3",
+        },{
+          id: 4,
+          src: "../images/wordpress/global-moonshot.png",
+          alt: "slider4",
+        },{
+          id: 5,
+          src: "../images/wordpress/society-kitchella.png",
+          alt: "slider5",
+        },{
+          id: 6,
+          src: "../images/wordpress/sharon-get-organised.png",
+          alt: "slider6",
+        },{
+          id: 7,
+          src: "../images/wordpress/fameleon.png",
+          alt: "slider7",
+        }
+      ];
 	//   console.log(data)
     return (
+
       <div className="wp-main" id="wp-main">
         <DocumentMeta {...meta} />
-
         <Header
           title={data.data.title}
           description={data.data.description}
@@ -214,6 +247,7 @@ export default class Shopify extends Component {
             {/*section 3 */}
 
             {/* <Wpslider> </Wpslider> */}
+             <Wpsliderv2 images={recentWork}> </Wpsliderv2>
           </div>
           <div className="container-fluid ask-expert-section">
             <div className="row">
@@ -310,7 +344,8 @@ export default class Shopify extends Component {
                 </div>
               </div>
 
-              {/* <div className="d-block d-sm-none"><Wpcarousel> </Wpcarousel></div> */}
+               <div className="d-block d-sm-none"><Wpcarousel> </Wpcarousel></div>
+               {/*<div className="d-block d-sm-none"><Wpsliderv2> </Wpsliderv2></div>*/}
 
               <div class="desktop-only-expertise d-none d-sm-block">
                 <div className="row justify-content-center about-row pl-3 pr-3 pt-4">
