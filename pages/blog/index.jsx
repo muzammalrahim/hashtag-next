@@ -19,34 +19,34 @@ require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
 
-export async function getServerSideProps() {
-  let data = [];
+// export async function getServerSideProps() {
+//   let data = [];
 
-  const instance = Axios.create({
-    httpsAgent: new https.Agent({
-      rejectUnauthorized: false,
-    }),
-  });
+//   const instance = Axios.create({
+//     httpsAgent: new https.Agent({
+//       rejectUnauthorized: false,
+//     }),
+//   });
 
-  await instance
-    .get("https://api.hashtag-ca.com/api/v1/metadata", {
-      params: {
-        page_type: "static",
-        slug: "sevices",
-      },
-    })
-    .then((response) => {
-      data = response.data;
-    });
-  return {
-    props: { data },
-  };
-}
+//   await instance
+//     .get("https://api.hashtag-ca.com/api/v1/metadata", {
+//       params: {
+//         page_type: "static",
+//         slug: "sevices",
+//       },
+//     })
+//     .then((response) => {
+//       data = response.data;
+//     });
+//   return {
+//     props: { data },
+//   };
+// }
 
 export default class Blog extends Component {
   constructor(props) {
     super(props);
-    let response = this.props;
+    // let response = this.props;
     if (typeof window === "undefined") {
       global.window = {};
     }
@@ -57,7 +57,7 @@ export default class Blog extends Component {
       no_items: "",
       search_val: "",
       keyword: "",
-      data: response.data,
+      // data: response.data,
     };
 
     this.shiftContent = this.shiftContent.bind(this);
@@ -254,9 +254,9 @@ export default class Blog extends Component {
         <ToastContainer transition={Slide} />
         <DocumentMeta {...meta} />
         <Header
-          title={data.title}
-          description={data.description}
-          keywords={data.keywords}
+          title="blog"
+          // description={data.description}
+          // keywords={data.keywords}
         ></Header>
         <section class="content-container">
           <div className="container-fluid service-bg p-0 m-0 ">
