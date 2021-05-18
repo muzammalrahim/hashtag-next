@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 // import { NavHashLink as Link } from 'react-router-hash-link';
 import Link from 'next/link'
 import Head from "next/head";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+// import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import Dropdown from '../dropdown/index.jsx';
 import $ from 'jquery';
@@ -126,7 +126,8 @@ constructor(props) {
           <meta property="twitter:creator" content='hashtag' />
           <meta property="twitter:title" content={title} />
           <meta property="twitter:description" content={description }/>
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+          {/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" /> */}
+          {/* <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> */}
         
         <script>(document.title= {title})</script>
           <div  className="container" id="main-section">
@@ -191,7 +192,7 @@ constructor(props) {
                          activeclassName="active">
                       Services
                       {/* <i className="fa fa-angle-down pl-1" aria-hidden="true"></i> */}
-                      <i class="fa fa-angle-down pl-1" aria-hidden="true"></i>
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
                     </a>
                   </Link>
                   

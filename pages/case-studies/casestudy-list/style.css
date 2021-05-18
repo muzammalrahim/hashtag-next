@@ -48,7 +48,7 @@
 .parallax-inner-blk{
 	width: 100%;
 }
-.parallax-inner-blk h3{
+.parallax-inner-blk h3 a{
 	font-size: 70px;
 	font-weight: 700;
 	margin-bottom: 10px;
@@ -84,10 +84,9 @@
 }
 .parallax-inner-blk a{
 	color: #f56a27;
-	font-weight: 400;
+	font-weight: 500;
 	text-align: center;
 	text-decoration: none;
-	font-size: 20px;
 }
 .parallax-inner-blk a i{
 	display: inline-block;

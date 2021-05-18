@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet');
 
+.nav-link .fa {
+    font: normal normal normal 18px FontAwesome !important;
+    font-size: inherit !important;
+    text-rendering: auto;
+}
+.nav-link i{
+    padding-left: 5.5px;
+}
+.header-container.sticky .nav-link i{
+    padding-left: 4.5px !important;
+}
+
 @media(max-width: 280px) {
 
     .mob-top-email {
@@ -354,6 +366,7 @@
     display: inline-block;
     vertical-align: middle;
     z-index: 222;
+    /* font-size: 20px !important; */
 }
 
 .navbar-light .navbar-nav .nav-item>i {
@@ -444,8 +457,9 @@
 
 .navbar .navbar-nav .active {
     color: #FF6B00 !important;
-    font-weight: bold;
+    font-weight: bold !important;
 }
+
 
 .nav-link-active {
     color: #FF6B00 !important;
@@ -532,7 +546,7 @@ li a:active{
     background: transparent;
     border: 2px solid #fff !important;
     color: #fff !important;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .home-main .header-container.sticky .navbar-expand-lg .navbar-collapse .form-inline button.btn-transparent {
@@ -675,7 +689,7 @@ li a:active{
     }
 
     .navbar-light .navbar-brand {
-        margin-right: 45px !important;
+        margin-right: 44.5px !important;
     }
 }
 
@@ -1027,11 +1041,11 @@ li a:active{
     color: #43484C !important;
     font-family: 'Montserrat', sans-serif;
 }
-@media (min-width: 768px){
+/* @media (min-width: 768px){
     .container {
-        max-width: 1298px !important;
-        font-size: 14px !important;
+        max-width: 1298px;
+        font-size: 14px;
     }
    
-}
+} */
 

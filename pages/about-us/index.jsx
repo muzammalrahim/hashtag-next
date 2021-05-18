@@ -42,6 +42,7 @@ export default class About extends Component {
     this.state = {
       data: response.data.data,
     };
+    console.log('props: ',props);
   }
 
   render() {

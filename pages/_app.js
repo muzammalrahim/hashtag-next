@@ -5,12 +5,12 @@ import "../components/carousel/style.css";
 import '../components/contacts/style.css';
 import '../components/contactusPage/style.css';
 import '../components/footer/style.css';
-import '../components/header/style.css';
+import '../components/header/header.css';
 import "../components/testimonial/style.css";
 import "../components/wordpress-slider/style.css";
 import "../components/wp-carousel/style.css";
 
-import '../pages/home/style.css';
+import '../pages/home/home.css';
 import './case-studies/casestudy-list/style.css'; 
 import './case-studies/easy-level/style.css'; 
 import './case-studies/filemaker/style.css'; 
@@ -37,16 +37,17 @@ import "./sevices/database-and-backend/style.css";
 import "./sevices/design-and-prototyping/style.css";
 import "./sevices/filemaker/style.css";
 import "./sevices/ui-development/style.css";
+import 'font-awesome/css/font-awesome.min.css';
 
 import './index.css';
 
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-xxl/dist/css/bootstrap.css';
 // import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
 import './careers/style.css'
-import './home/style.css';
+// import './home/style.css';
 
 
 
