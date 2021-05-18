@@ -23,16 +23,16 @@ import './error/style.css'
 import './mobile-app/style.css'
 import './blogs/single/style.css'
 import "./blogs/category/style.css";
-import "./about-us/style.css";
+import "./about-us/about.css";
 import "./contact-us/style.css";
 import "./blogs/style.css";
-import "./shopify-experts/style.css";
+import "./shopify-experts/shopify.css";
 import "./shopify-experts/layout.css";
-import "./careers/style.css";
+import "./careers/career.css";
 
 import "./sevices/style.css";
 import "./sevices/wordpress-development/style.css";
-import "./sevices/blockchain-development/style.css";
+import "./sevices/blockchain-development/blockchain.css";
 import "./sevices/database-and-backend/style.css";
 import "./sevices/design-and-prototyping/style.css";
 import "./sevices/filemaker/style.css";
@@ -51,7 +51,7 @@ import './index.css';
 import 'bootstrap-xxl/dist/css/bootstrap.css';
 // import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
-import './careers/style.css'
+// import './careers/style.css'
 // import './home/style.css';
 
 
