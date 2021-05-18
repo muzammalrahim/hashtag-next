@@ -152,7 +152,7 @@ constructor(props) {
         </Head>
         <script>(document.title= {title})</script>
           <div  className="container" id="main-section">
-           <Post />
+           {/*<Post />*/}
 
           <nav className="navbar navbar-expand-lg navbar-light bg-Light">
             <button
