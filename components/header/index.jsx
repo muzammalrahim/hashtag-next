@@ -290,8 +290,14 @@ constructor(props) {
                   
                   >
                   <a    className={`nav-link ${
-                    Activetabindex === "/blogs" ? "active" : ""
-                  }`} activeclassName="active">
+                    Activetabindex === "/blogs" ||  
+                    Activetabindex === "/blogs/single/[slug]" ||
+                    Activetabindex === "/blogs/category/[slug]" 
+         
+                    ? "active" : ""
+                  }`}
+                       activeclassName="active">
+              
                   {" "}
                   Blog <span className="sr-only">(current)</span>
                 </a>
