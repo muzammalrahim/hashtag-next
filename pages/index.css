@@ -693,7 +693,7 @@ hiding this for build
 
 }
 
-.what-we-do-border-style {
+/* .what-we-do-border-style {
     background: #FFFFFF;
     border: 2px solid #E4E4E4;
     box-sizing: border-box;
@@ -701,7 +701,7 @@ hiding this for build
     height: 420px;
     border-bottom: 4px solid #FF6B00;
 
-}
+} */
 
 .what-we-do-border-style:hover {
     box-shadow: 0px 8px 30px rgba(196, 196, 196, 0.7);
@@ -1051,7 +1051,7 @@ button.btn.form-button-child.px-3:hover {
 }
 
 .font-bold {
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 @media(max-width: 280px) {
@@ -1801,7 +1801,7 @@ bottom: 186px;
 
 @media (min-width: 768px) {
     .container {
-        max-width: 1622px;
+        max-width: 1622px !important;
     }
 
     .section-four-bg {
@@ -2021,7 +2021,7 @@ bottom: 186px;
     }
 
     .section-one-text {
-        top: 75px;
+        top: 75px !important;
     }
 
     .section-two-text-one {
@@ -2340,7 +2340,7 @@ bottom: 186px;
 
 @media only screen and (min-width:1600px) and (max-width:1679px) {
     .container {
-        max-width: 1371px;
+        max-width: 1371px !important;
     }
 
     .who-we-right-bg {
@@ -2694,4 +2694,8 @@ a.sol-but-ab {
     }
 }
 
-
+@media only screen and (min-width: 1599px) and (max-width: 1601px){
+    #shopify-main .content-four-section {
+        margin-top: 270px !important;
+    }
+}

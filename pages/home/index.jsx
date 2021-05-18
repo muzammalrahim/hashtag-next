@@ -439,6 +439,8 @@ export default class Home extends Component {
 		  			<div className="horizontal-line-middle mob-left mob-line-margin"></div>
 		  		</div>
 			 <div className="row justify-content-center mt-5 mb-md-5 mb-sm-0">
+			 &nbsp;
+			 
 			 <div className="col-12" id="tabs">
 			   <div className="col-lg-6 col-md-12 col-sm-12">
 				 <nav>
@@ -811,6 +813,7 @@ export default class Home extends Component {
 				 </div>
 			   </div>
 			 </div>
+			 &nbsp; &nbsp; &nbsp; 
 		   </div>
 			  		
 		  		

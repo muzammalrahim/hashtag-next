@@ -160,7 +160,7 @@ export default class Careers extends Component {
                         EXPERIENCED PROFESSIONALS
                       </h4>
                       <hr className="hashtag-underline-new ml-2" />
-                      <p className="pt-5  first-para">
+                      <p className="pt-4 pb-4 first-para">
                         Are you a person with a creative approach to problem
                         solving? Do you have the ability to thrive in a
                         fast-paced environment.

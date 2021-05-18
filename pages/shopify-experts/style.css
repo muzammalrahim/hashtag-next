@@ -212,4 +212,6 @@ border-radius: 8px;
     }
 }
 
-
+.text-level-4 {
+    line-height: 43px !important;
+}
