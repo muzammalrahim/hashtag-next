@@ -8,12 +8,16 @@ hiding this for build
    min-height: 1500px !important;
  }} */
 
+
+ 
 /*style by sherin */
 .blockchain-dev,
 .filemaker-dev {
     margin-left: 12px;
 }
-
+p{
+    font-size: 18px;
+}
 .home-dev {
     margin-top: 30px;
     margin-bottom: 40px;
@@ -305,9 +309,11 @@ hiding this for build
 }
 
 .hashtag-underline {
-    border: 2px solid #FF6B00;
-    width: 16px;
-    margin-left: 18px;
+    border: 2px solid #FF6B00 !important;
+    width: 16px !important;
+    margin-left: 18px !important;
+    background: #FF6B00 !important;
+    opacity: 1 !important;
 }
 
 .section-three-bg {
@@ -457,10 +463,17 @@ hiding this for build
 }
 
 .horizontal-line-middle {
-    width: 20px;
-    height: 2px;
-    border: 2px solid #FF6B00;
-    margin: auto;
+    width: 20px !important;
+    height: 2px !important;
+    border: 2px solid #FF6B00 !important;
+    margin: auto !important;
+}
+
+.hash-input {
+    border: 0px  !important;
+    border-bottom: 1px solid #D5D4DD !important;
+    border-radius: 0px !important;
+    padding: .375rem .75rem .375rem .0rem !important;
 }
 
 .title-level-3 {
@@ -945,6 +958,13 @@ hiding this for build
     .title-level-6 {
 
         margin-top: 18px;
+    }
+    .why-us-first-section {
+        margin-top: 90px !important;
+    }
+    .why-us-second-section {
+        /* margin-top: 75px; */
+        margin-top: 200px !important;
     }
 
 

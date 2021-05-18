@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // import { NavHashLink as Link } from 'react-router-hash-link';
 import Link from 'next/link'
 import Head from "next/head";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import Dropdown from '../dropdown/index.jsx';
 import $ from 'jquery';
@@ -30,6 +31,8 @@ constructor(props) {
     this.filemakerPage = this.filemakerPage.bind(this);
     this.ErrorPage  = this.ErrorPage.bind(this);
   }
+
+
 
   componentDidMount() {
     this.menuToggle();
@@ -65,6 +68,7 @@ constructor(props) {
       });
     }
   }
+
 
   HomePage() {
     this.props.history.push('/');
@@ -155,6 +159,7 @@ constructor(props) {
               />
             </Link> */}
 
+
             <div className="mob-top-email d-block d-sm-none">
 
               <a href="mailto:info@hashtag-ca.com">
@@ -171,9 +176,11 @@ constructor(props) {
             
               <ul  className="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li className="nav-item">
-                  <Link href="/about-us">
-                    <a className="nav-link" activeclassName="active">
-                      {" "}
+                  <Link
+                    href="/about-us"
+                   
+                  >
+                    <a   className="nav-link"  activeclassName="active">
                       About Us <span className="sr-only">(current)</span>
                     </a>
                   </Link>
@@ -181,13 +188,15 @@ constructor(props) {
 
                 <li className="nav-item">
                   <Link href="/sevices">
-                    <a className="nav-link"
+                    <a   className="nav-link"
                          activeclassName="active">
                       Services
-                      <i className="fa fa-angle-down nav-down-arrow" aria-hidden="true"></i>
+                      {/* <i className="fa fa-angle-down pl-1" aria-hidden="true"></i> */}
+                      <i class="fa fa-angle-down pl-1" aria-hidden="true"></i>
                     </a>
                   </Link>
-                  <i className="fa fa-angle-down" aria-hidden="true"></i>
+
+
                   <ul className="submenu">
                     <div className="row m-0">
                       <div className="col-md-6 p-0">

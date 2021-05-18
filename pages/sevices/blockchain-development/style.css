@@ -13,6 +13,11 @@
 #Blcnbanner .main-title-sub-bc {
     font-size: 50px;
 }
+#Blcnbanner .why-choose-bc-sec-btn button:first-child {
+    background: #fff !important;
+    color: #434343 !important;
+    font-weight: 500;
+}
 
 @media only screen and (min-width: 2500px) {
     #Blcnbanner .what-we-do-border-style {

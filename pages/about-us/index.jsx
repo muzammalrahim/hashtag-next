@@ -6,6 +6,8 @@ import Contact from "../../components/contacts/index.jsx";
 import DocumentMeta from "react-document-meta";
 require("typeface-montserrat");
 
+import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
+
 import Axios from "axios";
 import https from "https";
 
