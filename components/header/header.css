@@ -1,13 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet');
-
+/* @media (max-width: 991px){
+    .navbar-light .navbar-nav .nav-item>i {
+        position: absolute;
+        top: 7px;
+        right: 0;
+        z-index: 99;
+        display: block !important;
+        cursor: pointer;
+        font-size: 22px;
+    }
+    .navbar-light .navbar-nav .nav-item a i {
+        display: none;
+    }
+}
+.navbar-light .navbar-nav .nav-item>i {
+    display: none;
+} */
 .nav-link .fa {
     font: normal normal normal 18px FontAwesome !important;
     font-size: inherit !important;
     text-rendering: auto;
 }
-.nav-link i{
+/* .nav-link i{
     padding-left: 5.5px;
-}
+} */
 .header-container.sticky .nav-link i{
     padding-left: 4.5px !important;
 }
@@ -370,7 +386,7 @@
 }
 
 .navbar-light .navbar-nav .nav-item>i {
-    display: block;
+    display: none;
 }
 .navbar-light .navbar-nav .nav-link.active {
     color: #FF6B00 !important;
@@ -737,6 +753,9 @@ li a:active{
 @media (max-width: 991px) {
     .navbar-light .navbar-nav .nav-item a i {
         display: none;
+    }
+    .header-container nav.navbar.navbar-expand-lg.navbar-light.bg-Light {
+        padding: 8px 0 !important;
     }
 
     .navbar-light .navbar-nav .nav-item>i {

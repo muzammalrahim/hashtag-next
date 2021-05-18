@@ -3,10 +3,11 @@ import React, { Component } from 'react';
 // import { NavHashLink as Link } from 'react-router-hash-link';
 import Link from 'next/link'
 import Head from "next/head";
-// import "@fortawesome/fontawesome-free/css/all.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import Post from "./post.jsx"
 import Dropdown from '../dropdown/index.jsx';
 import $ from 'jquery';
+// import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default class Header extends Component {
 
@@ -19,7 +20,7 @@ constructor(props) {
       Activetabindex:1,
         tabindex: true,
         navonclick : false,
-       
+
     }
     this.HomePage = this.HomePage.bind(this);
     this.AboutusPage = this.AboutusPage.bind(this);
@@ -48,7 +49,7 @@ constructor(props) {
     {
     this.setState({Activetabindex:localStorage.getItem("Activetabindex2")})
     }
-    
+
 }
 
 
@@ -135,23 +136,25 @@ constructor(props) {
     console.log(title)
     return (
       <header className="header-container">
+        <Head>
           <title>{this.props?.title}</title>
           <meta name="description" content={description} />
           <meta property="og:type" content={keywords} />
           <meta property="og:title" content={title} />
           <meta property="og:description" content={description} />
-          <meta property="og:site_name" content='hashtag' />
+          <meta property="og:site_name" content="hashtag" />
           <meta property="twitter:card" content={keywords} />
-          <meta property="twitter:creator" content='hashtag' />
+          <meta property="twitter:creator" content="hashtag" />
           <meta property="twitter:title" content={title} />
           <meta property="twitter:description" content={description }/>
-          {/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" /> */}
-          {/* <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> */}
-        
+{/*           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" /> */}
+
+          <meta property="twitter:description" content={description} />
+        </Head>
         <script>(document.title= {title})</script>
           <div  className="container" id="main-section">
            <Post />
-         
+
           <nav className="navbar navbar-expand-lg navbar-light bg-Light">
             <button
               className="navbar-toggler collapsed"
@@ -195,7 +198,7 @@ constructor(props) {
               id="navbarTogglerDemo03" 
             >
               <ul  className="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li className="nav-item" onClick={(e) => this.changeHandler(1, e)}>
+                <li className="nav-item" >
                   <Link
                     href="/about-us"
                    
@@ -207,70 +210,29 @@ constructor(props) {
                     </a>
                   </Link>
                 </li>
-
-                <li className="nav-item" onClick={(e) => this.changeHandler(2, e)} >
-                  <Link href="/sevices">
-                    <a    className={`nav-link ${
-                      Activetabindex === "/sevices" ||  
-                      Activetabindex === "/sevices/wordpress-development" ||
-                      Activetabindex === "/sevices/blockchain-development" ||
-                      Activetabindex === "/sevices/design-and-prototyping" ||
-                      Activetabindex === "/sevices/filemaker" ||
-                      Activetabindex === "/sevices/ui-development" ||
-                      Activetabindex === "/sevices/database-and-backend" 
-                      ? "active" : ""
-                    }`}
-                         activeclassName="active">
-                      Services
-                      {/* <i className="fa fa-angle-down pl-1" aria-hidden="true"></i> */}
-                      <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </a>
-                  </Link>
-                  
-                  
-                  <ul className="submenu">
-                    <div className="row m-0">
-                      <div className="col-md-6 p-0">
-                        <li>
-                          <Link href="/sevices/wordpress-development">
-                            Wordpress Development
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/sevices/blockchain-development">
-                            Blockchain Development
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/sevices/design-and-prototyping">
-                            Design and Prototyping
-                          </Link>
-                        </li>
-                      </div>
-                      <div className="col-md-6 p-0">
-                        {/*<li><NavLink to="/sevices/aws">AWS</NavLink></li>*/}
-                        <li>
-                          <Link href="/sevices/filemaker">
-                            FileMaker Pro Development
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/sevices/ui-development">
-                            UI Development
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/sevices/database-and-backend">
-                            DB & Backend Development
-                          </Link>
-                        </li>
-                        {/*<li><NavLink to="/sevices/mobile-app">Mobile App Development</NavLink></li>*/}
-                      </div>
+                <li className="nav-item">
+                <Link href="/sevices"><a className="nav-link" activeclassName="active"> Services <i className="fa fa-angle-down" aria-hidden="true"></i></a></Link>
+                <i className="fa fa-angle-down" aria-hidden="true"></i>
+                <ul className="submenu">
+                  <div className="row m-0">
+                    <div className="col-md-6 p-0">
+                      <li><Link href="/sevices/wordpress-development"><a>Wordpress Development</a></Link></li>
+                      <li><Link href="/sevices/blockchain-development">Blockchain Development</Link></li>
+                      <li><Link href="/sevices/design-and-prototyping">Design and Prototyping</Link></li>
                     </div>
-                  </ul>
-                </li>
+                  <div className="col-md-6 p-0">
+                      {/*<li><NavLink to="/services/aws">AWS</NavLink></li>*/}
+                      <li><Link href="/sevices/filemaker">FileMaker Pro Development</Link></li>
+                      <li><Link href="/sevices/ui-development">UI Development</Link></li>
+                      <li><Link href="/sevices/database-and-backend">DB & Backend Development</Link></li>
+                      {/*<li><NavLink to="/services/mobile-app">Mobile App Development</NavLink></li>*/}
+                  </div> 
+                  </div>
+                </ul>
 
-                <li className="nav-item" onClick={(e) => this.changeHandler(3, e)} >
+              </li>
+
+                <li className="nav-item"  >
                   <Link
                     href="/shopify-experts"
                    
@@ -284,7 +246,7 @@ constructor(props) {
                   
                   </Link>
                 </li>
-                <li className="nav-item" onClick={(e) => this.changeHandler(4, e)}>
+                <li className="nav-item" >
                   <Link
                     href="/blogs"
                   
@@ -304,7 +266,7 @@ constructor(props) {
                    
                   </Link>
                 </li>
-                <li className="nav-item" onClick={(e) => this.changeHandler(5, e)}>
+                <li className="nav-item">
                   <Link
                     href="/careers"
                    
@@ -318,7 +280,7 @@ constructor(props) {
                    
                   </Link>
                 </li>
-                <li className="nav-item" onClick={(e) => this.changeHandler(6, e)}>
+                <li className="nav-item" >
                   <Link
                     href="/case-studies/casestudy-list"
                     
@@ -332,7 +294,7 @@ constructor(props) {
                   
                   </Link>
                 </li>
-                <li className="nav-item" onClick={(e) => this.changeHandler(7, e)}>
+                <li className="nav-item" >
                   <Link
                     href="/contact-us"
                   

@@ -8,8 +8,7 @@ const Post = () => {
     localStorage.setItem("Activetabindex2",router.route)
     
     }
-
-  return  <p> {}</p>
+    return null;
 }
 
 export default Post

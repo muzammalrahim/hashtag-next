@@ -61,7 +61,7 @@ export default class Home extends Component {
 			                          	</h1>
 			                          	
 										<div className="learn-more home-lm-link-vs">
-											<a className="sol-but-ab" href="/services">
+											<Link href="/sevices" className="sol-but-ab" >
 											    <div className="btn-group">
 													  <button type="button" className="btn btn-hashtag font-bold">LEARN MORE</button>
 													  <button type="button" className="btn  px-3">
@@ -71,7 +71,7 @@ export default class Home extends Component {
 												
 													  </div>
 											    </div>
-											</a> 
+											</Link> 
 										</div>
 									</div>
 								</div></div>
@@ -91,7 +91,7 @@ export default class Home extends Component {
 
                           	</h1>
 							<div className="text-center">
-							<a className="sol-but-ab" href="/services">
+							<a className="sol-but-ab" href="/sevices">
 								<div className="btn-group text-center">
 								
 								  <button type="button " className="btn btn-hashtag font-bold">LEARN MORE</button>

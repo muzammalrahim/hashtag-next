@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 // import { HashLink as Link } from 'react-router-hash-link';
 // import { NavHashLink as NavLink } from 'react-router-hash-link';
 
+/*import dynamic from "next/dynamic";
+const { Slider } = dynamic(() => import("react-slick"), { ssr: false });*/
+
 import Slider from "react-slick";
+
+// import Slider from "react-slick";
 
 export default class Wpcarousel extends Component {
 
