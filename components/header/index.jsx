@@ -4,11 +4,9 @@ import React, { Component } from 'react';
 import Link from 'next/link'
 import Head from "next/head";
 // import "@fortawesome/fontawesome-free/css/all.min.css";
-
+import Post from "./post.jsx"
 import Dropdown from '../dropdown/index.jsx';
 import $ from 'jquery';
-
-
 
 export default class Header extends Component {
 
@@ -18,8 +16,9 @@ constructor(props) {
     global.window = {};
   }
     this.state = {
-    
+      Activetabindex:1,
         tabindex: true,
+        navonclick : false,
        
     }
     this.HomePage = this.HomePage.bind(this);
@@ -34,9 +33,28 @@ constructor(props) {
     this.ErrorPage  = this.ErrorPage.bind(this);
   }
 
- 
+
+
+
+  changeHandler = (getindex,e) => {
+    e.preventDefault()
+    this.setState({Activetabindex:getindex,navonclick :true})
+    localStorage.setItem("Activetabindex",getindex)
+}
+
+    getindex = () => {
+
+  if(localStorage.getItem("Activetabindex2"))
+    {
+    this.setState({Activetabindex:localStorage.getItem("Activetabindex2")})
+    }
+    
+}
+
+
 
   componentDidMount() {
+    this.getindex()
     this.menuToggle();
     // window.addEventListener("resize", this.menuToggle);
     this.setState({tabindex:false})
@@ -90,7 +108,7 @@ constructor(props) {
   }
   
    Blog() {
-    this.props.history.push('/blog');
+    this.props.history.push('/blogs');
   }
 
   CareersPage() {
@@ -111,7 +129,8 @@ constructor(props) {
   }
 
   render() {
-    let { tabindex } = this.state;
+
+    let { tabindex, Activetabindex } = this.state;
     const {title, description, keywords} = this.props
     console.log(title)
     return (
@@ -131,6 +150,8 @@ constructor(props) {
         
         <script>(document.title= {title})</script>
           <div  className="container" id="main-section">
+           <Post />
+         
           <nav className="navbar navbar-expand-lg navbar-light bg-Light">
             <button
               className="navbar-toggler collapsed"
@@ -173,22 +194,32 @@ constructor(props) {
               }`}
               id="navbarTogglerDemo03" 
             >
-            
               <ul  className="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li className="nav-item">
+                <li className="nav-item" onClick={(e) => this.changeHandler(1, e)}>
                   <Link
                     href="/about-us"
                    
                   >
-                    <a   className="nav-link"  activeclassName="active">
+                    <a   className="nav-link"  className={`nav-link ${
+                      Activetabindex === "/" || Activetabindex === "/about-us" ? "active" : ""
+                    }`}  activeclassName="active">
                       About Us <span className="sr-only">(current)</span>
                     </a>
                   </Link>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item" onClick={(e) => this.changeHandler(2, e)} >
                   <Link href="/sevices">
-                    <a   className="nav-link"
+                    <a    className={`nav-link ${
+                      Activetabindex === "/sevices" ||  
+                      Activetabindex === "/sevices/wordpress-development" ||
+                      Activetabindex === "/sevices/blockchain-development" ||
+                      Activetabindex === "/sevices/design-and-prototyping" ||
+                      Activetabindex === "/sevices/filemaker" ||
+                      Activetabindex === "/sevices/ui-development" ||
+                      Activetabindex === "/sevices/database-and-backend" 
+                      ? "active" : ""
+                    }`}
                          activeclassName="active">
                       Services
                       {/* <i className="fa fa-angle-down pl-1" aria-hidden="true"></i> */}
@@ -239,60 +270,70 @@ constructor(props) {
                   </ul>
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item" onClick={(e) => this.changeHandler(3, e)} >
                   <Link
                     href="/shopify-experts"
                    
                   >
-                  <a   className="nav-link"  activeclassName="active">
+                  <a   className={`nav-link ${
+                    Activetabindex === "/shopify-experts" ? "active" : ""
+                  }`}  activeclassName="active">
                   {" "}
                   Shopify <span className="sr-only">(current)</span>
                 </a>
                   
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" onClick={(e) => this.changeHandler(4, e)}>
                   <Link
-                    href="/blog"
+                    href="/blogs"
                   
                   >
-                  <a   className="nav-link"  activeclassName="active">
+                  <a    className={`nav-link ${
+                    Activetabindex === "/blogs" ? "active" : ""
+                  }`} activeclassName="active">
                   {" "}
                   Blog <span className="sr-only">(current)</span>
                 </a>
                    
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" onClick={(e) => this.changeHandler(5, e)}>
                   <Link
                     href="/careers"
                    
                   >
-                  <a   className="nav-link"  activeclassName="active">
+                  <a    className={`nav-link ${
+                    Activetabindex === "/careers" ? "active" : ""
+                  }`}  activeclassName="active">
                   {" "}
                   Careers <span className="sr-only">(current)</span>
                 </a>
                    
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" onClick={(e) => this.changeHandler(6, e)}>
                   <Link
                     href="/case-studies/casestudy-list"
                     
                   >
-                  <a   className="nav-link"  activeclassName="active">
+                  <a    className={`nav-link ${
+                    Activetabindex === "/case-studies/casestudy-list" ? "active" : ""
+                  }`}  activeclassName="active">
                   {" "}
                   Case studies <span className="sr-only">(current)</span>
                 </a>
                   
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" onClick={(e) => this.changeHandler(7, e)}>
                   <Link
                     href="/contact-us"
                   
                   >
-                  <a   className="nav-link"  activeclassName="active">
+                  <a    className={`nav-link ${
+                    Activetabindex === "/contact-us" ? "active" : ""
+                  }`}  activeclassName="active">
                   {" "}
                   Contact Us <span className="sr-only">(current)</span>
                 </a>
