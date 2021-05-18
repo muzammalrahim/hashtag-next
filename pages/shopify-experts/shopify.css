@@ -203,3 +203,15 @@ border-radius: 8px;
     object-fit: contain;
     box-shadow: 0 10px 30px rgba(110,112,116,.4)!important;
 }
+
+
+@media (min-width: 992px){
+   
+    .order-lg-12{
+        order: 12 !important;
+    }
+}
+
+.text-level-4 {
+    line-height: 43px !important;
+}

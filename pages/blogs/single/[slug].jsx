@@ -132,6 +132,10 @@ export default class Singlepost extends Component {
       </div>
     );
     let { postData, data } = this.state;
+    if(postData.image){
+      postData.image = postData.image.replace('http://','https://');
+    }
+
     //console.log(data)
     return (
       <div className="single-blog-main" id="single-blog-main">
@@ -151,7 +155,7 @@ export default class Singlepost extends Component {
                     <div className="col-lg-6 col-md-12">
                       <ul className="breadcrumbs">
                         <li>
-                          <Link href="/blog">Blogs</Link>
+                          <Link href="/blogs">Blogs</Link>
                         </li>
                         <li>{postData.title}</li>
                       </ul>

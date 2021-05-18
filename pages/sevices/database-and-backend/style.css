@@ -1,3 +1,4 @@
+
 #Dbdevbanner .section-2-row .title-black {
     color: #434343 !important;
 }
@@ -332,7 +333,7 @@
 }
 
 #Dbdevbanner .why-choose-bc-sec-btn button:first-child {
-    background: #fff;
+    background: #fff !important;
     color: #434343 !important;
 }
 

@@ -1,3 +1,4 @@
+
 .ipad-pro-only {
     display: none !important;
 }
@@ -308,16 +309,52 @@ and (max-device-width : 1024px)  { .career-join-bg
     font-weight: bold;
     font-size: 20px;
     line-height: 32px;
-    letter-spacing: -0.05em;
-    color: #7F8284;
+    letter-spacing: -0.05em !important;
+    color: #7F8284 !important;
     padding-top: 20px;
 }
 .hashtag-underline-new {
-    border: 2px solid #FF6B00;
-    width: 40px;
+    border: 2px solid #FF6B00 !important;
+    width: 40px !important;
+    opacity: 1 !important;
+    background: #FF6B00;
 }
 .vacancy-section-image{
-    height:160px;
+    height:160px !important;
+   padding-left: 60px !important;
+}
 
-   padding-left: 60px;
+
+@media (max-width: 767px){
+    .career-join-bg {
+        background-color: #f2f2f2 !important;
+        background-image: unset !important;
+        margin-top: 50px !important;
+        min-height: 550px !important;
+    }
+    .mob-padding {
+        padding: unset !important;
+    }
+    .row.mt-5.section-2-row.pl-3.pr-3.first-career-row.justify-content-center {
+        margin-top: 50px !important;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .row.mt-5.section-2-row.pl-3.pr-3.first-career-row.justify-content-center {
+        margin-top: 50px !important;
+    }
+    
+}
+
+
+
+.what-we-do-border-style {
+    background: #FFFFFF;
+    border: 2px solid #E4E4E4;
+    box-sizing: border-box;
+    padding: 36px 32px;
+    height: 420px;
+    border-bottom: 4px solid #FF6B00;
 }

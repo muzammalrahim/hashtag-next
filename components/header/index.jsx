@@ -3,9 +3,11 @@ import React, { Component } from 'react';
 // import { NavHashLink as Link } from 'react-router-hash-link';
 import Link from 'next/link'
 import Head from "next/head";
-
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import Post from "./post.jsx"
 import Dropdown from '../dropdown/index.jsx';
 import $ from 'jquery';
+// import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default class Header extends Component {
 
@@ -15,8 +17,9 @@ export default class Header extends Component {
       global.window = {};
     }
     this.state = {
-
+      Activetabindex: 1,
       tabindex: true,
+      navonclick: false,
 
     }
     this.HomePage = this.HomePage.bind(this);
@@ -31,7 +34,27 @@ export default class Header extends Component {
     this.ErrorPage = this.ErrorPage.bind(this);
   }
 
+
+
+
+  changeHandler = (getindex, e) => {
+    e.preventDefault()
+    this.setState({ Activetabindex: getindex, navonclick: true })
+    localStorage.setItem("Activetabindex", getindex)
+  }
+
+  getindex = () => {
+
+    if (localStorage.getItem("Activetabindex2")) {
+      this.setState({ Activetabindex: localStorage.getItem("Activetabindex2") })
+    }
+
+  }
+
+
+
   componentDidMount() {
+    this.getindex()
     this.menuToggle();
     // window.addEventListener("resize", this.menuToggle);
     this.setState({ tabindex: false })
@@ -50,7 +73,6 @@ export default class Header extends Component {
       })
     };
 
-
   }
 
   componentWillUnmount() {
@@ -66,6 +88,7 @@ export default class Header extends Component {
       });
     }
   }
+
 
   HomePage() {
     this.props.history.push('/');
@@ -85,7 +108,7 @@ export default class Header extends Component {
   }
 
   Blog() {
-    this.props.history.push('/blog');
+    this.props.history.push('/blogs');
   }
 
   CareersPage() {
@@ -106,24 +129,31 @@ export default class Header extends Component {
   }
 
   render() {
-    let { tabindex } = this.state;
+
+    let { tabindex, Activetabindex } = this.state;
     const { title, description, keywords } = this.props
     console.log(title)
     return (
       <header className="header-container">
-        <title>{this.props?.title}</title>
-        <meta name="description" content={description} />
-        <meta property="og:type" content={keywords} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:site_name" content='hashtag' />
-        <meta property="twitter:card" content={keywords} />
-        <meta property="twitter:creator" content='hashtag' />
-        <meta property="twitter:title" content={title} />
-        <meta property="twitter:description" content={description} />
+        <Head>
+          <title>{this.props?.title}</title>
+          <meta name="description" content={description} />
+          <meta property="og:type" content={keywords} />
+          <meta property="og:title" content={title} />
+          <meta property="og:description" content={description} />
+          <meta property="og:site_name" content="hashtag" />
+          <meta property="twitter:card" content={keywords} />
+          <meta property="twitter:creator" content="hashtag" />
+          <meta property="twitter:title" content={title} />
+          <meta property="twitter:description" content={description} />
+          {/*           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" /> */}
 
+          <meta property="twitter:description" content={description} />
+        </Head>
         <script>(document.title= {title})</script>
         <div className="container" id="main-section">
+          <Post />
+
           <nav className="navbar navbar-expand-lg navbar-light bg-Light">
             <button
               className="navbar-toggler collapsed"
@@ -152,6 +182,7 @@ export default class Header extends Component {
               />
             </Link> */}
 
+
             <div className="mob-top-email d-block d-sm-none">
 
               <a href="mailto:info@hashtag-ca.com">
@@ -164,89 +195,74 @@ export default class Header extends Component {
                 }`}
               id="navbarTogglerDemo03"
             >
-
               <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li className="nav-item">
+                <li className="nav-item" >
                   <Link
                     href="/about-us"
 
                   >
-                    <a className="nav-link" activeclassName="active">
-                      {" "}
+                    <a className="nav-link" className={`nav-link ${Activetabindex === "/" || Activetabindex === "/about-us" ? "active" : ""
+                      }`} activeclassName="active">
                       About Us <span className="sr-only">(current)</span>
                     </a>
                   </Link>
                 </li>
-
                 <li className="nav-item">
-                  <Link href="/sevices">
-                    <a className="nav-link"
-                      activeclassName="active">
-                      Services
-                      <i className="fa fa-angle-down nav-down-arrow" aria-hidden="true"></i>
-                    </a>
-                  </Link>
+                  <Link href="/sevices"><a className={`nav-link ${Activetabindex === "/sevices" ||
+                    Activetabindex === "/sevices/wordpress-development" ||
+                    Activetabindex === "/sevices/blockchain-development" ||
+                    Activetabindex === "/sevices/design-and-prototyping" ||
+                    Activetabindex === "/sevices/filemaker" ||
+                    Activetabindex === "/sevices/ui-development"
+
+                    ? "active" : ""
+                    }`} activeclassName="active"> Services <i className="fa fa-angle-down" aria-hidden="true"></i></a></Link>
                   <i className="fa fa-angle-down" aria-hidden="true"></i>
                   <ul className="submenu">
                     <div className="row m-0">
                       <div className="col-md-6 p-0">
-                        <li>
-                          <Link href="/sevices/wordpress-development">
-                            Wordpress Development
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/sevices/blockchain-development">
-                            Blockchain Development
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/sevices/design-and-prototyping">
-                            Design and Prototyping
-                          </Link>
-                        </li>
+                        <li><Link href="/sevices/wordpress-development"><a>Wordpress Development</a></Link></li>
+                        <li><Link href="/sevices/blockchain-development">Blockchain Development</Link></li>
+                        <li><Link href="/sevices/design-and-prototyping">Design and Prototyping</Link></li>
                       </div>
                       <div className="col-md-6 p-0">
-                        {/*<li><NavLink to="/sevices/aws">AWS</NavLink></li>*/}
-                        <li>
-                          <Link href="/sevices/filemaker">
-                            FileMaker Pro Development
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/sevices/ui-development">
-                            UI Development
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/sevices/database-and-backend">
-                            DB & Backend Development
-                          </Link>
-                        </li>
-                        {/*<li><NavLink to="/sevices/mobile-app">Mobile App Development</NavLink></li>*/}
+                        {/*<li><NavLink to="/services/aws">AWS</NavLink></li>*/}
+                        <li><Link href="/sevices/filemaker">FileMaker Pro Development</Link></li>
+                        <li><Link href="/sevices/ui-development">UI Development</Link></li>
+                        <li><Link href="/sevices/database-and-backend">DB & Backend Development</Link></li>
+                        {/*<li><NavLink to="/services/mobile-app">Mobile App Development</NavLink></li>*/}
                       </div>
                     </div>
                   </ul>
+
                 </li>
 
-                <li className="nav-item">
+                <li className="nav-item"  >
                   <Link
                     href="/shopify-experts"
 
                   >
-                    <a className="nav-link" activeclassName="active">
+                    <a className={`nav-link ${Activetabindex === "/shopify-experts" ? "active" : ""
+                      }`} activeclassName="active">
                       {" "}
                   Shopify <span className="sr-only">(current)</span>
                     </a>
 
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" >
                   <Link
-                    href="/blog"
+                    href="/blogs"
 
                   >
-                    <a className="nav-link" activeclassName="active">
+                    <a className={`nav-link ${Activetabindex === "/blogs" ||
+                      Activetabindex === "/blogs/single/[slug]" ||
+                      Activetabindex === "/blogs/category/[slug]"
+
+                      ? "active" : ""
+                      }`}
+                      activeclassName="active">
+
                       {" "}
                   Blog <span className="sr-only">(current)</span>
                     </a>
@@ -258,31 +274,34 @@ export default class Header extends Component {
                     href="/careers"
 
                   >
-                    <a className="nav-link" activeclassName="active">
+                    <a className={`nav-link ${Activetabindex === "/careers" ? "active" : ""
+                      }`} activeclassName="active">
                       {" "}
                   Careers <span className="sr-only">(current)</span>
                     </a>
 
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" >
                   <Link
                     href="/case-studies/casestudy-list"
 
                   >
-                    <a className="nav-link" activeclassName="active">
+                    <a className={`nav-link ${Activetabindex === "/case-studies/casestudy-list" ? "active" : ""
+                      }`} activeclassName="active">
                       {" "}
                   Case studies <span className="sr-only">(current)</span>
                     </a>
 
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" >
                   <Link
                     href="/contact-us"
 
                   >
-                    <a className="nav-link" activeclassName="active">
+                    <a className={`nav-link ${Activetabindex === "/contact-us" ? "active" : ""
+                      }`} activeclassName="active">
                       {" "}
                   Contact Us <span className="sr-only">(current)</span>
                     </a>

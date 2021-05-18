@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  font-family:  'Montserrat', sans-serif;
+  font-family:  'Montserrat', sans-serif !important;
   
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -693,15 +693,15 @@ hiding this for build
 
 }
 
-.what-we-do-border-style {
+/* .what-we-do-border-style {
     background: #FFFFFF;
     border: 2px solid #E4E4E4;
     box-sizing: border-box;
-    padding: 36px 32px;
+    padding: 36px 28px;
     height: 420px;
     border-bottom: 4px solid #FF6B00;
 
-}
+} */
 
 .what-we-do-border-style:hover {
     box-shadow: 0px 8px 30px rgba(196, 196, 196, 0.7);
@@ -982,8 +982,8 @@ hiding this for build
 .form-btn>.btn:focus,
 .form-btn>.btn:hover {
     color: #000;
-    background: #FF6B00;
-    box-shadow: 0px 4px 25px rgba(110, 112, 116, 0.2) !important;
+    background: #FF6B00 !important;
+    box-shadow: 0px 4px 25px rgb(110 112 116 / 20%) !important;
     border-radius: 12px !important;
     border-color: transparent !important;
 
@@ -1001,7 +1001,9 @@ hiding this for build
     border-color: transparent !important;
 
 }
-
+button.btn.form-button-child.px-3:hover {
+    border-radius: 12px !important;
+}
 .form-btn-arrow {
     border: solid #43484C;
     border-width: 0 3px 3px 0;
@@ -1049,7 +1051,7 @@ hiding this for build
 }
 
 .font-bold {
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 @media(max-width: 280px) {
@@ -1799,7 +1801,7 @@ bottom: 186px;
 
 @media (min-width: 768px) {
     .container {
-        max-width: 1622px;
+        max-width: 1622px !important;
     }
 
     .section-four-bg {
@@ -1968,7 +1970,7 @@ bottom: 186px;
 
     .navbar-light .navbar-nav .nav-link {
 
-        font-size: 17px !important;
+        font-size: 13px !important;
     }
 
 
@@ -2019,7 +2021,7 @@ bottom: 186px;
     }
 
     .section-one-text {
-        top: 75px;
+        top: 75px !important;
     }
 
     .section-two-text-one {
@@ -2338,7 +2340,7 @@ bottom: 186px;
 
 @media only screen and (min-width:1600px) and (max-width:1679px) {
     .container {
-        max-width: 1371px;
+        max-width: 1371px !important;
     }
 
     .who-we-right-bg {
@@ -2375,17 +2377,17 @@ bottom: 186px;
 }
 
 
-@media (min-width: 1200px){
+/* @media (min-width: 1200px){
     .container {
         max-width: 1284px !important;
     }
-}
+} */
 
 @media only screen and (min-width:1300px) and (max-width:1400px) {
 
     .container {
-        /* max-width: 1284px; */
         max-width: 1284px;
+        /* max-width: 1277px !important; */
     }
 
     .speak-btn.btn-white {
@@ -2617,13 +2619,16 @@ a.sol-but-ab {
   height: 64px !important;
  }*/
 
+
+
+
 .home-lm-link-vs {
     position: relative;
     z-index: 9999;
 }
 
 .btn-hashtag {
-    background: #FFFFFF;
+    background: #FFFFFF !important;
     box-shadow: 0px 4px 25px rgb(110 112 116 / 20%) !important;
     border-radius: 12px !important;
     border-color: transparent !important;
@@ -2646,4 +2651,66 @@ a.sol-but-ab {
     right: 6px;
     margin: 2px;
     z-index: 2;
+}
+
+@media (max-width: 767px){
+    .mob-padding {
+        padding: unset !important;
+    }
+    p.hash-content-col.mob-left.text-center {
+        text-align: left !important;
+    }
+    .content-four-section {
+        margin-top: 30px !important;
+    }
+    .hash-team-content {
+        margin-top: 30px !important;
+    }
+    .hash-team-first-right {
+        margin-top: 30px !important;
+    }
+}
+@media (min-width: 768px){
+    .content-four-section {
+        /* margin-top: 265px; */
+        margin-top: 293px !important;
+    }
+    .content-four-section {
+        margin-top: 30px;
+    }
+    .last-why-us-box {
+        margin-bottom: -10px !important;
+    }
+}
+@media (min-width: 1900px){
+    .content-four-section {
+        margin-top: 352px !important;
+    }
+}
+@media (min-width: 768px){
+    .content-four-section {
+        /* margin-top: 265px; */
+        margin-top: 293px;
+    }
+}
+
+@media only screen and (min-width: 1599px) and (max-width: 1601px){
+    #shopify-main .content-four-section {
+        margin-top: 270px !important;
+    }
+}
+
+
+
+@media only screen and (min-width: 1400px) and (max-width: 1499px){
+    .container {
+    max-width: 1300px !important;
+    }
+}
+
+
+@media only screen and (min-width: 1600px) and (max-width: 1679px){
+    .container {
+        max-width: 1371px !important;
+    }
 }

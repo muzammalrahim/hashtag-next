@@ -5,7 +5,41 @@ import Contact from '../../../components/contacts/index.jsx';
 import DocumentMeta from 'react-document-meta';
 import Slide from 'react-reveal/Reveal';
 
+import Axios from "axios";
+import https from "https";
+
+export async function getServerSideProps() {
+  let data = [];
+
+  const instance = Axios.create({
+    httpsAgent: new https.Agent({
+      rejectUnauthorized: false,
+    }),
+  });
+
+  await instance
+    .get("https://api.hashtag-ca.com/api/v1/metadata", {
+      params: {
+        page_type: "static",
+        slug: "sevices",
+      },
+    })
+    .then((response) => {
+      data = response.data;
+    });
+  return {
+    props: { data },
+  };
+}
+
 export default class BlockChain extends Component {
+    constructor(props) {
+        super(props);
+        let response = this.props
+        this.state = {
+            data: response.data
+        }
+    }
     render() {
         const meta = {
             title: 'Blockchain - FullStack Web Development| Bay area, California',
@@ -20,12 +54,13 @@ export default class BlockChain extends Component {
 
             }
         };
+        let {data} =this.state
         return (
 
             <div className="contact-main" id="Blcnbanner">
                 <DocumentMeta {...meta} />
                 <div className="wp-main" id="wp-main">
-                    <Header></Header>
+                    <Header title={data.data.title} description={data.data.description} keywords={data.data.keywords}></Header>
                 </div>
                 <section class="content-container">
                     <div className="container-fluid shopify-bg p-0 m-0 shopifyBg">

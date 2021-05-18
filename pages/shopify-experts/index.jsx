@@ -1,12 +1,9 @@
 import React, { Component } from "react";
-import dynamic from 'next/dynamic';
-
-const Slider = dynamic(() => import('../../components/slider/index.jsx'), { ssr: false });
-
 import Header from "../../components/header/index.jsx";
 import Footer from "../../components/footer/index.jsx";
 import Contact from "../../components/contacts/index.jsx";
 // import Slider from "../../components/slider/index.jsx";
+import Wpsliderv2 from '../../components/wordpress-sliderv2/index.jsx';
 import DocumentMeta from "react-document-meta";
 import Link from "next/link";
 
@@ -27,7 +24,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "shopify",
       },
     })
     .then((response) => {
@@ -58,6 +55,27 @@ export default class Shopify extends Component {
       },
     };
     const { data } = this.state;
+
+    const latestWork = [
+      {
+        id: 1,
+        src: "../images/shopify/together-home.jpg",
+        alt: "slider1",
+      }, {
+        id: 2,
+        src: "../images/shopify/warped-table-s.jpg",
+        alt: "slider2",
+      }, {
+        id: 3,
+        src: "../images/shopify/shopurbanalchemy.jpg",
+        alt: "slider3",
+      }, {
+        id: 4,
+        src: "../images/shopify/berrybay.jpg",
+        alt: "slider4",
+      }
+    ];
+
     return (
       <div className="shopify-main" id="shopify-main">
         <DocumentMeta {...meta} />
@@ -147,28 +165,32 @@ export default class Shopify extends Component {
                       of the way and grow your brand for the long-term.
                     </span>
                   </p>
-                  {/* <div className="contact-form-link">
-                    <Link href="/contact-us"><a className="nav-link">
-                      {" "}
-                      <div className="btn-group form-btn">
-                        <button
-                          type="button"
-                          className="btn form-button font-12 font-bold"
-                        >
-                           LET'S TALK{" "}
-                        </button>
-                        <button
-                          type="button"
-                          className="btn form-button-child px-3"
-                        >
-                          <span className="">
-                            <span className="form-btn-arrow btn-right-arrow"></span>
-                          </span>
-                        </button>
-                        <div className="dropdown-menu"></div>
-                      </div>
-					  </a></Link>
-                  </div>*/}
+
+
+                  <div className="contact-form-link">
+                    <Link href="/contact-us">
+                      <a className="nav-link p-0">
+                        {" "}
+                        <div className="btn-group form-btn">
+                          <button
+                            type="button"
+                            className="btn form-button font-12 font-bold"
+                          >
+                            LET'S TALK{" "}
+                          </button>
+                          <button
+                            type="button"
+                            className="btn form-button-child px-3"
+                          >
+                            <span className="">
+                              <span className="form-btn-arrow btn-right-arrow"></span>
+                            </span>
+                          </button>
+                          <div className="dropdown-menu"></div>
+                        </div>
+                      </a>
+                    </Link>
+                  </div>
                 </div>
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 text-center ">
@@ -192,7 +214,8 @@ export default class Shopify extends Component {
             </div>
             {/*section 3 */}
 
-            <Slider> </Slider>
+            {/* <Slider> </Slider>*/}
+            <Wpsliderv2 images={latestWork}> </Wpsliderv2>
           </div>
 
           <div className="shopify-section-4-main">
@@ -225,7 +248,7 @@ export default class Shopify extends Component {
                         Shopify Partners from California.
                       </p>
                     </p>
-                    {/*  <div className="contact-form-link">
+                    <div className="contact-form-link">
                       <Link href="/contact-us" className="contact-form-link"><a>
                         <div className="btn-group">
                           <button
@@ -241,8 +264,9 @@ export default class Shopify extends Component {
                           </button>
                           <div className="dropdown-menu"></div>
                         </div>
-						</a></Link>
-                    </div>*/}
+                      </a>
+                      </Link>
+                    </div>
                   </div>
 
                   <div className="col-12 col-lg-3 col-md-12"></div>
@@ -347,7 +371,7 @@ export default class Shopify extends Component {
 
             {/* section 4 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
-              <div className="col-lg-5 col-md-12 col-sm-12 order-2 order-lg-12 order-md-2 order-sm-2">
+              <div className="col-lg-5 col-md-12 col-sm-12  order-2 order-lg-12 order-md-2 order-sm-2">
                 <h1 className="shopify-title text-level-4">
                   Sales and Marketing
                 </h1>
@@ -397,7 +421,8 @@ export default class Shopify extends Component {
 
             {/* section 6 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
-              <div className="col-lg-5 col-md-12 col-sm-12 order-2 order-lg-12 order-md-2 order-sm-2">
+              {/* <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12"> */}
+              <div className="col-lg-5 col-md-12 col-sm-12  order-2 order-lg-12 order-md-2 order-sm-2">
                 <h1 className="shopify-title text-level-4">
                   Enjoy the FREE Admin App
                 </h1>

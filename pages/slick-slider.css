@@ -1,0 +1,108 @@
+/*slick slider*/
+.slick-slider{
+    width: 70%;
+    margin: -0px auto 0px 15%;
+}
+
+.slide {
+  transform: scale(0.5);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+
+.slick-slide{
+    position: relative;
+}
+
+.slideWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.prevArrow {
+  position: absolute;
+  top: 40%;
+  left: 60px;
+  z-index: 100;
+  cursor: pointer;
+  color: #fff;
+    font-size: 1rem;
+}
+
+.nextArrow {
+  position: absolute;
+  top: 40%;
+  right: 60px;
+  z-index: 100;
+  cursor: pointer;
+  color: #fff;
+    font-size: 1rem;
+}
+
+.nextArrow .fa-arrow-right:before{
+    color: #fff;
+}
+
+.slick-slider .prevArrow span
+{
+    background: linear-gradient(273.44deg, #FF6B00 4.97%, #FF5C00 92.43%);
+    box-shadow: 0px 4px 25px rgba(110, 112, 116, 0.2);
+border-radius: 10px;
+    padding: 16px 16px;
+    border: 0px;
+}
+
+.slick-slider .nextArrow span
+{
+    background: linear-gradient(273.44deg, #FF6B00 4.97%, #FF5C00 92.43%);
+    box-shadow: 0px 4px 25px rgba(110, 112, 116, 0.2);
+    border-radius: 10px;
+    padding: 16px 16px;
+    border: 0px;
+}
+@media (min-width:764px) and (max-width:1440px) {
+    .slick-slide img{
+        max-width: 200%;
+    }
+    .slick-slider {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width:320px) and (max-width:426px) {
+    .slick-slide img{
+        max-width: 100%;
+    }
+    .slick-slider {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .slick-slider .prevArrow span,
+    .slick-slider .nextArrow span{
+        padding: 5px 5px;
+        border-radius: 0px;
+    }
+
+    .prevArrow{
+        left: -25px;
+    }
+    .nextArrow{
+        right: -25px;
+    }
+
+}
+
+/*slick slider - plugin integration*/
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}

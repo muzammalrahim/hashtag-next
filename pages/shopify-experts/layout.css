@@ -195,7 +195,7 @@
 @media(min-width: 768px) {
     #shopify-main .content-four-section {
 
-        margin-top: 152px;
+        margin-top: 152px !important;
     }
 
 
@@ -304,7 +304,7 @@
     }
 
     .main-title {
-        line-height: 54px;
+        line-height: 54px !important;
     }
 }
 

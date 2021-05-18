@@ -61,7 +61,7 @@ export default class Home extends Component {
 			                          	</h1>
 			                          	
 										<div className="learn-more home-lm-link-vs">
-											<a className="sol-but-ab" href="/services">
+											<Link href="/sevices" className="sol-but-ab" >
 											    <div className="btn-group">
 													  <button type="button" className="btn btn-hashtag font-bold">LEARN MORE</button>
 													  <button type="button" className="btn  px-3">
@@ -71,7 +71,7 @@ export default class Home extends Component {
 												
 													  </div>
 											    </div>
-											</a> 
+											</Link> 
 										</div>
 									</div>
 								</div></div>
@@ -91,7 +91,7 @@ export default class Home extends Component {
 
                           	</h1>
 							<div className="text-center">
-							<a className="sol-but-ab" href="/services">
+							<a className="sol-but-ab" href="/sevices">
 								<div className="btn-group text-center">
 								
 								  <button type="button " className="btn btn-hashtag font-bold">LEARN MORE</button>
@@ -145,7 +145,7 @@ export default class Home extends Component {
 		  </div>
 
 
-	<div className="container-fluid section-three-bg p-5">
+	<div className="container-fluid section-three-bg">
 			<div className="container section-three-content ">
 				<div className="row justify-content-center  pl-3 pr-3 mob-padding">
 					  <div className="col-12  section-three-text">
@@ -223,10 +223,10 @@ export default class Home extends Component {
              <div classname="section-four-left-bg">
 				<div className="container section-four-content">
 
-					<div className="row justify-content-center  pl-5 pr-3">
+					<div className="row justify-content-center pl-3 pr-3">
 					    
 						
-						<div className="col-12 col-lg-5 col-md-12 content-four-section pl-5">
+						<div className="col-12 col-lg-5 col-md-12 content-four-section">
 						<p className="text-above-main-title title-white">WHY CLIENTS CHOOSE US</p>
 							
 						<h1 className="main-title">
@@ -438,8 +438,10 @@ export default class Home extends Component {
 		  			</div>
 		  			<div className="horizontal-line-middle mob-left mob-line-margin"></div>
 		  		</div>
-			 <div className="row justify-content-center mt-5 mb-md-5 mb-sm-0 pl-5">
-			 <div className="col-12 pl-5 " id="tabs">
+			 <div className="row justify-content-center mt-5 mb-md-5 mb-sm-0">
+			 &nbsp;
+			 
+			 <div className="col-12" id="tabs">
 			   <div className="col-lg-6 col-md-12 col-sm-12">
 				 <nav>
 				   <div
@@ -811,6 +813,7 @@ export default class Home extends Component {
 				 </div>
 			   </div>
 			 </div>
+			 &nbsp; &nbsp; &nbsp; 
 		   </div>
 			  		
 		  		

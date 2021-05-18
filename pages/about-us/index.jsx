@@ -6,6 +6,7 @@ import Contact from "../../components/contacts/index.jsx";
 import DocumentMeta from "react-document-meta";
 require("typeface-montserrat");
 
+
 import Axios from "axios";
 import https from "https";
 
@@ -40,6 +41,7 @@ export default class About extends Component {
     this.state = {
       data: response.data.data,
     };
+    console.log('props: ',props);
   }
 
   render() {
