@@ -21,11 +21,11 @@ import './case-studies/multi-token/style.css';
 import './case-studies/speakinc/style.css'; 
 import './error/style.css'
 import './mobile-app/style.css'
-import './blog/single/style.css'
-import "./blog/category/style.css";
+import './blogs/single/style.css'
+import "./blogs/category/style.css";
 import "./about-us/style.css";
 import "./contact-us/style.css";
-import "./blog/style.css";
+import "./blogs/style.css";
 import "./shopify-experts/style.css";
 import "./shopify-experts/layout.css";
 import "./careers/style.css";

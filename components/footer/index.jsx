@@ -155,7 +155,7 @@ class Footer extends Component {
                   <ul className="footer-links">
                     <li>
                       <Link href="/" className="footer-nav">
-                        <a> Home </a>
+                        <a > Home </a>
                       </Link>
                     </li>
                     <li>
@@ -169,7 +169,7 @@ class Footer extends Component {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/blog" className="footer-nav">
+                      <Link href="/blogs" className="footer-nav">
                         <a> Blog </a>
                       </Link>
                     </li>
