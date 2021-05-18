@@ -2704,6 +2704,13 @@ a.sol-but-ab {
 
 @media only screen and (min-width: 1400px) and (max-width: 1499px){
     .container {
-    max-width: 1300px;
+    max-width: 1300px !important;
+    }
+}
+
+
+@media only screen and (min-width: 1600px) and (max-width: 1679px){
+    .container {
+        max-width: 1371px !important;
     }
 }
