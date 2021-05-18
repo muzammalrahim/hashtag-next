@@ -144,17 +144,17 @@ constructor(props) {
                         <form id="contact-form" onSubmit={this.handleSubmit}>
                           <div className="form-row">
                             <div className="col-lg-5 col-md-12 col-sm-12 pr-4 pt-5">
-                              <label for="inputName" className="hash-form-label pb-2">NAME</label>
+                              <label for="inputName" className="hash-form-label">NAME</label>
                               <input type="text" className="form-control hash-input" placeholder="Enter your Full name" name="name" value={this.state.fields.name} onChange={this.handleChange} />
                                 <div style={{color: "red"}}>{this.state.errors.name}</div>
                             </div>
                             <div className="col-lg-5 col-md-12 col-sm-12 pt-5">
-                              <label for="inputEmail" className="hash-form-label pb-2">EMAIL</label>
+                              <label for="inputEmail" className="hash-form-label">EMAIL</label>
                               <input type="email" className="form-control hash-input" placeholder="Enter your email" name="email" aria-describedby="emailHelp" value={this.state.fields.email} onChange={this.handleChange}/>
                                <div style={{color: "red"}}>{this.state.errors.email}</div>
                             </div>
                             <div className="col-lg-10 col-md-12 col-sm-12 pt-5">
-                              <label for="inputTextarea" className="hash-form-label pb-2">MESSAGE</label>
+                              <label for="inputTextarea" className="hash-form-label">MESSAGE</label>
                               <textarea className="form-control hash-input"  rows="4" placeholder="Leave your message here" name="message" value={this.state.fields.message} onChange={this.handleChange}  ></textarea>
                                <div style={{color: "red"}}>{this.state.errors.message}</div>
                             </div>

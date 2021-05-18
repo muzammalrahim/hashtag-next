@@ -1,6 +1,4 @@
-.first-para {
-    font-size: 18px !important;
-}
+
 .ipad-pro-only {
     display: none !important;
 }
@@ -350,3 +348,13 @@ and (max-device-width : 1024px)  { .career-join-bg
     
 }
 
+
+
+.what-we-do-border-style {
+    background: #FFFFFF;
+    border: 2px solid #E4E4E4;
+    box-sizing: border-box;
+    padding: 36px 32px;
+    height: 420px;
+    border-bottom: 4px solid #FF6B00;
+}

@@ -293,9 +293,9 @@ export default class Shopify extends Component {
 
             {/* section 2 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
-              <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12">
+              <div className="col-lg-5 col-md-12 col-sm-12  order-2 order-lg-12 order-md-2 order-sm-2">
                 <h1 className="shopify-title text-level-4">
-                  Great Shopping  <br></br>Experience
+                  Great Shopping Experience
                 </h1>
                 <div className="shopify-content mt-4">
                   <p>
@@ -348,7 +348,7 @@ export default class Shopify extends Component {
 
             {/* section 4 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
-              <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12">
+              <div className="col-lg-5 col-md-12 col-sm-12  order-2 order-lg-12 order-md-2 order-sm-2">
                 <h1 className="shopify-title text-level-4">
                   Sales and Marketing
                 </h1>
@@ -398,7 +398,8 @@ export default class Shopify extends Component {
 
             {/* section 6 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
-              <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12">
+              {/* <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12"> */}
+              <div className="col-lg-5 col-md-12 col-sm-12  order-2 order-lg-12 order-md-2 order-sm-2">
                 <h1 className="shopify-title text-level-4">
                   Enjoy the FREE Admin App
                 </h1>
