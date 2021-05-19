@@ -11,14 +11,15 @@ import "../components/wordpress-slider/style.css";
 import "../components/wp-carousel/style.css";
 
 import '../pages/home/home.css';
-import './case-studies/casestudy-list/casestudy-list.css'; 
-import './case-studies/easy-level/easy-level.css'; 
-import './case-studies/filemaker/filemaker.css'; 
-import './case-studies/filemaker/responsivness.css'; 
-import './case-studies/maikeinc/maikeinc.css'; 
-import './case-studies/megalot/megalot.css'; 
-import './case-studies/multi-token/multi-token.css'; 
-import './case-studies/speakinc/speakinc.css'; 
+// import './casestudies/casestudy-list/casestudy-list.css';
+import './casestudies/casestudy.css';
+import './casestudies/easy-level/easy-level.css';
+import './casestudies/filemaker/filemaker.css';
+import './casestudies/filemaker/responsivness.css';
+import './casestudies/maikeinc/maikeinc.css';
+import './casestudies/megalot/megalot.css';
+import './casestudies/multi-token/multi-token.css';
+import './casestudies/speakinc/speakinc.css';
 import './error/error.css'
 import './mobile-app/style.css'
 import './blogs/single/style.css'
@@ -54,7 +55,7 @@ import 'bootstrap-xxl/dist/css/bootstrap.css';
 // import './careers/style.css'
 // import './home/style.css';
 
-
+require('typeface-montserrat')
 
 export default function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
