@@ -53,7 +53,7 @@ if (typeof window === "undefined") {
     this.state = {
       allPosts: [],
       hasMoreItems: true,
-      page: 1,
+      page:1,
       no_items: '',
       category: this.props?.match?.params?.slug,
       search_val: '',
@@ -71,31 +71,21 @@ if (typeof window === "undefined") {
 
   componentDidMount() {
     this.shiftContent();
-<<<<<<< HEAD:pages/post-category/index.jsx
-    if (typeof window !== 'undefined') {
-      window.addEventListener("resize", this.shiftContent);
-    }
-  }
-
-  componentWillMount() {
-    if (this.props.location.search) {
-=======
     if (typeof window !== undefined) {
       window.addEventListener("resize", this.shiftContent);
     }
     if (window.location.pathname) {
       let pathNames = window.location.pathname.split("/");
-      console.log("path", pathNames);
-      let singlePost = pathNames[3];
-      console.log(singlePost)
+      // console.log("path", pathNames);
+      let singlePost = decodeURI(pathNames[3]);
+      // console.log(decodeURI(singlePost))
       this.setState({ category: singlePost });
-      
+      this.get_allPosts(singlePost);
     }
   }
 
   componentWillMount(){
     if (this.props.location && this.props.location.search) {
->>>>>>> f3d454a931bccafb9ac5b5f176e95617200c70e1:pages/blog/category/[slug].jsx
       const values = queryString.parse(this.props.location.search);
       this.setState({
         keyword: values.keyword,
@@ -105,11 +95,7 @@ if (typeof window === "undefined") {
   }
 
   componentWillUnmount() {
-<<<<<<< HEAD:pages/post-category/index.jsx
-    if (typeof window !== 'undefined') {
-=======
     if (typeof window !== undefined) {
->>>>>>> f3d454a931bccafb9ac5b5f176e95617200c70e1:pages/blog/category/[slug].jsx
       window.removeEventListener("resize", this.shiftContent);
     }
   }
@@ -122,22 +108,22 @@ if (typeof window === "undefined") {
   }
 
   onSubmit(e) {
-    e.preventDefault();
-    const values = this.state.search_val;
-    this.setState({
-      keyword: values,
-      page: 1,
-      allPosts: [],
-      hasMoreItems: true,
-      no_items: ''
-    });
-    this.props.history.push('/blogs/category/' + this.state.category + '?keyword=' + this.state.search_val);
-
+      e.preventDefault();
+      const values = this.state.search_val;
+      this.setState({
+        keyword: values,
+        page: 1,
+        allPosts: [],
+        hasMoreItems: true,
+        no_items: ''
+      });
+      this.props.history.push('/blogs/category/'+this.state.category+'?keyword='+this.state.search_val);
+      
   }
 
   //Search div shift
-  shiftContent() {
-    if ($(".mob-visible").is(":visible")) {
+  shiftContent(){
+    if($(".mob-visible").is(":visible")) { 
       $('.widget_search').insertBefore($('.blog-list'));
     }
     else {
@@ -147,51 +133,45 @@ if (typeof window === "undefined") {
 
 
   //Get posts
-  async get_allPosts() {
-    var url = config.myConfig.apiUrl + 'blog/posts';
+  get_allPosts(catSlug){
+    var url = config.myConfig.apiUrl+'blog/posts';
     var page = this.state.page;
-    var category = this.state.category;
+    var category = catSlug;
     var keyword = this.state.keyword;
 
-<<<<<<< HEAD:pages/post-category/index.jsx
-    axios.get(url, { params: { page: page, category: category, keyword: keyword } })
-      .then((response) => {
-        const allPosts = this.state.allPosts;
-=======
     Axios.get(url, {params: {page: page, category: category, keyword: keyword}})
     .then((response) => {
       const allPosts = this.state.allPosts;
->>>>>>> f3d454a931bccafb9ac5b5f176e95617200c70e1:pages/blog/category/[slug].jsx
-
-        response.data.data.posts.map((data) => {
+      // console.log("respnes",response)
+      response.data.data.posts.map((data) => {
           allPosts.push(data);
-        });
+      });
 
-        if (response.data.data.more_exists == true) {
+      if(response.data.data.more_exists == true) {
           this.setState({
             allPosts: allPosts,
             hasMoreItems: true,
-            page: page + 1
+            page: page+1
+          });
+      } else {
+        if(allPosts.length == 0) {
+          // console.log('No posts found.');
+          this.setState({
+            hasMoreItems: false,
+            no_items: 'No posts found.'
           });
         } else {
-          if (allPosts.length == 0) {
-            console.log('No posts found.');
-            this.setState({
-              hasMoreItems: false,
-              no_items: 'No posts found.'
-            });
-          } else {
-            this.setState({
-              hasMoreItems: false,
-            });
-          }
+          this.setState({
+            hasMoreItems: false,
+          });
         }
+      }
 
-      }).catch(error => {
-        // console.log(error.response);
-        console.log('API error.');
-        toast.error("Something went wrong.");
-      });
+    }).catch(error =>{
+      // console.log(error.response);
+      // console.log('API error.');
+      toast.error("Something went wrong.");
+    });
   }
 
 
@@ -201,46 +181,33 @@ if (typeof window === "undefined") {
       title: 'Blogs - FullStack Web Development| Bay area, California',
       meta: {
         charset: 'utf-8',
-        name: {
-          keywords: 'Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california'
+          name: {
+            keywords: 'Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california'
         }
-
-
+       
+       
       }
     };
     const loader = <div className="loader"><div className="spinner"><div></div><div></div><div></div><div></div></div>Loading</div>;
 
     var post_lists = [];
     this.state.allPosts.map((post, index) => {
+      post.image = post.image.replace('http://','https://');
       post_lists.push(
         <Flip bottom>
           <div className="card" key={index}>
-<<<<<<< HEAD:pages/post-category/index.jsx
-            <h5 className="card-title text-level-4 title-orange"><a href={"/blogs/single/" + post.url}>{post.title}</a></h5>
-            <div className="blog-img">
-              <a href={"/blogs/single/" + post.url}>
-                <div className="blog-thumb" style={{ backgroundImage: (post.image == null) ? '/images/blogs/writing-good-blog.jpg' : `url(${post.image})` }}>
-                </div>
-                {/*{ (post.image == null) ? <img src="/images/blogs/writing-good-blog.jpg" alt={post.image_alt} /> : <img src={post.image} alt={post.image_alt} /> }*/}
-              </a>
-              <div className="card-img-overlay">
-                {post.categories.map((cat, i) => {
-                  return (
-                    <a href={"/blogs/category/" + cat.slug} className="btn btn-light btn-sm" key={i}>{cat.name}</a>
-                  )
-=======
             <h5 className="card-title text-level-4 title-orange">
               <Link
-                href={"/blog/single/[slug]"}
-                as={"/blog/single/" + post.url}
+                href={"/blogs/single/[slug]"}
+                as={"/blogs/single/" + post.url}
               >
                 {post.title}
               </Link>
             </h5>
             <div className="blog-img">
               <Link
-                href={"/blog/single/[idex]"}
-                as={"/blog/single/" + post.url}
+                href={"/blogs/single/[slug]"}
+                as={"/blogs/single/" + post.url}
               >
                 <div
                   className="blog-thumb"
@@ -256,43 +223,35 @@ if (typeof window === "undefined") {
                 {post.categories.map((cat, i) => {
                   return (
                     <Link
-                      href={"/blog/category/[slug]"}
-                      as={"/blog/category/" + cat.slug}
+                      href={"/blogs/category/[slug]"}
+                      as={"/blogs/category/" + cat.slug}
                       className="btn btn-light btn-sm"
                       key={i}
                     >
                       {cat.name}
                     </Link>
                   );
->>>>>>> f3d454a931bccafb9ac5b5f176e95617200c70e1:pages/blog/category/[slug].jsx
                 })}
               </div>
             </div>
             <div className="card-body">
-<<<<<<< HEAD:pages/post-category/index.jsx
-              <h4 className="card-title text-level-4 title-orange"><a href={"/blogs/single/" + post.url}>{post.title}</a></h4>
-=======
               <h4 className="card-title text-level-4 title-orange">
                 <Link
-                  href={"/blog/single/[slug]"}
-                  as={"/blog/single/" + post.url}
+                  href={"/blogs/single/[slug]"}
+                  as={"/blogs/single/" + post.url}
                 >
                   {post.title}
                 </Link>
               </h4>
->>>>>>> f3d454a931bccafb9ac5b5f176e95617200c70e1:pages/blog/category/[slug].jsx
               <small className="text-muted cat text-above-main-title author-blk">
                 <i className="fa fa-hashtag" aria-hidden="true"></i>{" "}
                 {post.author}
               </small>
               <p className="card-text">{post.excerpt}</p>
-<<<<<<< HEAD:pages/post-category/index.jsx
-              <span className="cta-link"><a href={"/blogs/single/" + post.url} className="shopify-sub-title"><span>Read More</span> <i className="fa fa-chevron-right" aria-hidden="true"></i></a></span>
-=======
               <span className="cta-link">
                 <Link
-                  href={"/blog/single/[slug]"}
-                  as={"/blog/single/" + post.url}
+                  href={"/blogs/single/[slug]"}
+                  as={"/blogs/single/" + post.url}
                   className="shopify-sub-title"
                 >
                   <a>
@@ -301,7 +260,6 @@ if (typeof window === "undefined") {
                   </a>
                 </Link>
               </span>
->>>>>>> f3d454a931bccafb9ac5b5f176e95617200c70e1:pages/blog/category/[slug].jsx
             </div>
           </div>
         </Flip>
@@ -320,14 +278,6 @@ const {data} = this.state
                 <div className="container ">
                   <div className="row justify-content-center service-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-<<<<<<< HEAD:pages/post-category/index.jsx
-                      <p className="sub-text-above-main-title title-white">Blogs</p>
-                      <h1 className="main-title title-white d-block" style={{ textTransform: "capitalize" }}>{this.state.category}</h1>
-                    </div>
-                    <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents service-content-box pl-4">
-                        We are seeking brilliant minds to join our dynamic team and make it even better.</p>
-=======
                       <p className="sub-text-above-main-title title-white">
                         Blogs
                       </p>
@@ -343,7 +293,6 @@ const {data} = this.state
                         We are seeking brilliant minds to join our dynamic team
                         and make it even better.
                       </p>
->>>>>>> f3d454a931bccafb9ac5b5f176e95617200c70e1:pages/blog/category/[slug].jsx
                     </div>
                   </div>
                 </div>
@@ -361,12 +310,8 @@ const {data} = this.state
                         initialLoad={true}
                         loadMore={this.get_allPosts}
                         hasMore={this.state.hasMoreItems}
-<<<<<<< HEAD:pages/post-category/index.jsx
-                        loader={loader}>
-=======
                         loader={loader}
                       >
->>>>>>> f3d454a931bccafb9ac5b5f176e95617200c70e1:pages/blog/category/[slug].jsx
                         {post_lists}
                       </InfiniteScroll>
                       <p>{this.state.no_items}</p>
@@ -388,14 +333,6 @@ const {data} = this.state
                           onSubmit={this.onSubmit}
                         >
                           <div>
-<<<<<<< HEAD:pages/post-category/index.jsx
-                            <input type="text" name="s" id="blog-search" placeholder="Search" className="placeholder" value={this.state.search_val} onChange={this.handleChange} />
-                            <button type="submit" name="search-submit"><i className="fa fa-search" aria-hidden="true"></i></button>
-                          </div>
-                        </form>
-                      </div>
-                      <BlogRecentPosts category={this.state.category}></BlogRecentPosts>
-=======
                             <input
                               type="text"
                               name="s"
@@ -417,7 +354,6 @@ const {data} = this.state
                       <BlogRecentPosts
                         category={this.state.category}
                       ></BlogRecentPosts>
->>>>>>> f3d454a931bccafb9ac5b5f176e95617200c70e1:pages/blog/category/[slug].jsx
                       <BlogCategories></BlogCategories>
                     </aside>
                   </div>

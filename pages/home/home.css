@@ -58,14 +58,14 @@ hiding this for build
     top: 185px;
 }
 
-#home-main  .main-title {
+/*#home-main  .main-title {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 56px;
     line-height: 70px;
     letter-spacing: -0.05em;
-}
+}*/
 
 #home-main  .first-section-title-orange {
     background-image: linear-gradient(180deg, #FF7A00 20.94%, #DF5F02 88.89%);
@@ -309,7 +309,7 @@ hiding this for build
 .hashtag-underline {
     border: 2px solid #FF6B00 !important;
     width: 16px !important;
-    margin-left: 18px !important;
+    /* margin-left: 18px !important; */
     background: #FF6B00 !important;
     opacity: 1 !important;
 }
@@ -320,9 +320,9 @@ hiding this for build
     padding-bottom: 50px;
 }
 
-#home-main .section-three-content {
+/* #home-main .section-three-content {
     height: 1130px;
-}
+} */
 
 #home-main .text-level-4 {
     font-style: normal;
@@ -370,8 +370,7 @@ hiding this for build
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
+
     align-items: center;
     text-align: center;
     padding-top: 18px;
@@ -382,8 +381,6 @@ hiding this for build
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
 }
 
 #home-main  #tabs .nav-tabs .nav-item.show .nav-link,
@@ -395,8 +392,6 @@ hiding this for build
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
 }
 
 #home-main  #tabs .nav-tabs .nav-link {
@@ -406,8 +401,6 @@ hiding this for build
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
     padding: .5rem 0.4rem;
 }
 
@@ -427,14 +420,14 @@ hiding this for build
 }
 
 #home-main .address-text {
-    padding-left: 30px;
+    /*padding-left: 30px;*/
 }
 
 #home-main .address-content {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
+    /*font-size: 12px;*/
     line-height: 15px;
     /* identical to box height */
 
@@ -2283,4 +2276,17 @@ a.sol-but-ab {
         padding-top: 74px !important;
     }
 } */
+
+@media (max-width: 1022px){
+    .what-we-do-responsive {
+        margin-bottom: 45px;
+    }
+}
+@media (min-width: 768px){
+    .content-four-section {
+        /* margin-top: 265px; */
+        margin-top: 293px !important;
+    }
+    
+}
 

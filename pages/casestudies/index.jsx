@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import Header from "../../../components/header/index.jsx";
-import Footer from "../../../components/footer/index.jsx";
+import React, { Component, useEffect } from "react";
+import Header from "../../components/header/index.jsx";
+import Footer from "../../components/footer/index.jsx";
 // import Underconstruction from '../../../components/under-construction/index.jsx';
-import Contact from "../../../components/contacts/index.jsx";
+import Contact from "../../components/contacts/index.jsx";
 import DocumentMeta from "react-document-meta";
-import $ from "jquery";
+// import $ from "jquery";
 import axios from "axios";
-import * as config from "../../../config.js";
+import * as config from "../../config.js";
 import Slide from "react-reveal/Reveal";
 
 require("typeface-montserrat");
@@ -45,6 +45,19 @@ export default class Speakinc extends Component {
       data: response.data.data,
     };
 
+    /*useEffect(() => {
+        window.jQuery = require('jquery');
+        window.paroller = require('paroller.js');
+
+        window.jQuery(".parallax-block'").paroller({
+            factor: 0.2,
+            factorMd: 0.2,
+            factorSm: 0.2,
+            type: 'background',
+            direction: 'vertical'
+        });
+    }, []);*/
+
     //
     // $(".list-banner-text .btn-comm a").click(function (e) {
     // e.preventDefault();
@@ -62,6 +75,16 @@ export default class Speakinc extends Component {
   }
 
   componentDidMount() {
+      window.jQuery = require('jquery');
+      window.paroller = require('paroller.js');
+
+      window.jQuery(".parallax-block").paroller({
+          factor: 0.2,
+          factorMd: 0.2,
+          factorSm: 0.2,
+          type: 'background',
+          direction: 'vertical'
+      });
     // $('.parallax-block').paroller({
     // factor: 0.2,
     // factorMd: 0.2,
