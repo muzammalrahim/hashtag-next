@@ -20,6 +20,8 @@ export default class Header extends Component {
       Activetabindex: 1,
       tabindex: true,
       navonclick: false,
+      width: 0,
+       height: 0 ,
 
     }
     this.HomePage = this.HomePage.bind(this);
@@ -52,8 +54,20 @@ export default class Header extends Component {
   }
 
 
+  updateDimensions = () => {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+    if(window.innerWidth > 994)
+    {
+      window.location.reload(false); 
+    }
+    else if(window.innerWidth < 995)
+    {
+      location.reload(false); 
+    }
+  };
 
   componentDidMount() {
+    window.addEventListener('resize', this.updateDimensions);
     this.getindex()
     this.menuToggle();
     // window.addEventListener("resize", this.menuToggle);
@@ -76,14 +90,14 @@ export default class Header extends Component {
   }
 
   componentWillUnmount() {
+    window.removeEventListener('resize', this.updateDimensions);
     // window.removeEventListener("resize", this.menuToggle);
     this.setState({ tabindex: false })
   }
 
-  //menu toggle on mobile
-  menuToggle() {
-    if ($(".navbar-light .navbar-toggler").is(":visible")) {
-      $(".navbar-light .navbar-nav .nav-item > i").click(function () {
+  menuToggle(){
+    if($(".navbar-light .navbar-toggler").is(":visible")) { 
+      $(".navbar-light .navbar-nav .nav-item > i").click(function(){
         $(this).siblings('.submenu').slideToggle();
       });
     }
