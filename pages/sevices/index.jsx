@@ -3,7 +3,7 @@ import Header from "../../components/header/index.jsx";
 import Footer from "../../components/footer/index.jsx";
 import Contact from "../../components/contacts/index.jsx";
 import DocumentMeta from "react-document-meta";
-
+import a from 'next/link'
 import Axios from "axios";
 import https from "https";
 require("typeface-montserrat");
@@ -63,7 +63,7 @@ export default class Service extends Component {
           description={data.description}
           keywords={data.keywords}
         ></Header>
-        <section class="content-container">
+        <section className="content-container">
           <div className="container-fluid service-bg p-0 m-0 ">
             <div className="service-bg-right">
               <div className="service-banner-frame">
@@ -113,13 +113,15 @@ export default class Service extends Component {
                   </p>
                 </div>
                 <a
-                  href="/services/database-and-backend"
-                  class="nj-who-we-are-button float-right font-12 font-bold"
+                  href="/sevices/database-and-backend"
+                  className="nj-who-we-are-button float-right font-12 font-bold"
                 >
-                  read more{" "}
-                  <span class="nj-arrow">
-                    <span class="hashtag-arrow btn-right-arrow"></span>
-                  </span>
+                  <a>
+                    read more{" "}
+                    <span className="nj-arrow">
+                      <span className="hashtag-arrow btn-right-arrow"></span>
+                    </span>
+                  </a>
                 </a>
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12 order-3  text-center ">
@@ -222,13 +224,15 @@ export default class Service extends Component {
                   </p>
                 </div>
                 <a
-                  href="/services/design-and-prototyping"
+                  href="/sevices/design-and-prototyping"
                   className="nj-who-we-are-button float-right font-12 font-bold"
                 >
-                  read more{" "}
-                  <span className="nj-arrow">
-                    <span class="hashtag-arrow btn-right-arrow"></span>
-                  </span>
+                  <a>
+                    read more{" "}
+                    <span className="nj-arrow">
+                      <span className="hashtag-arrow btn-right-arrow"></span>
+                    </span>
+                  </a>
                 </a>
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12 text-center ">
@@ -261,13 +265,15 @@ export default class Service extends Component {
                   <p> We believe performance is the key!</p>
                 </div>
                 <a
-                  href="/services/ui-development"
-                  class="nj-who-we-are-button float-right font-12 font-bold"
+                  href="/sevices/ui-development"
+                  className="nj-who-we-are-button float-right font-12 font-bold"
                 >
-                  read more{" "}
-                  <span class="nj-arrow">
-                    <span class="hashtag-arrow btn-right-arrow"></span>
-                  </span>
+                  <a>
+                    read more{" "}
+                    <span className="nj-arrow">
+                      <span className="hashtag-arrow btn-right-arrow"></span>
+                    </span>
+                  </a>
                 </a>
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12 order-3 text-center">
@@ -300,13 +306,15 @@ export default class Service extends Component {
                   </p>
                 </div>
                 <a
-                  href="/services/wordpress-development"
+                  href="/sevices/wordpress-development"
                   className="nj-who-we-are-button float-right font-12 font-bold"
                 >
-                  read more{" "}
-                  <span className="nj-arrow">
-                    <span class="hashtag-arrow btn-right-arrow"></span>
-                  </span>
+                  <a>
+                    read more{" "}
+                    <span className="nj-arrow">
+                      <span class="hashtag-arrow btn-right-arrow"></span>
+                    </span>
+                  </a>
                 </a>
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12 text-center ">
@@ -358,9 +366,11 @@ export default class Service extends Component {
                   href="/shopify-experts"
                   className="nj-who-we-are-button float-right font-12 font-bold"
                 >
-                  read more{" "}
-                  <span className="nj-arrow">
-                    <span class="hashtag-arrow btn-right-arrow"></span>
+                  <span>
+                    read more{" "}
+                    <span className="nj-arrow">
+                      <span class="hashtag-arrow btn-right-arrow"></span>
+                    </span>
                   </span>
                 </a>
               </div>
@@ -430,13 +440,15 @@ export default class Service extends Component {
                   </p>
                 </div>
                 <a
-                  href="/services/blockchain-development"
-                  class="nj-who-we-are-button float-right font-12 font-bold"
+                  href="/sevices/blockchain-development"
+                  className="nj-who-we-are-button float-right font-12 font-bold"
                 >
-                  read more{" "}
-                  <span class="nj-arrow">
-                    <span class="hashtag-arrow btn-right-arrow"></span>
-                  </span>
+                  <a>
+                    read more{" "}
+                    <span className="nj-arrow">
+                      <span className="hashtag-arrow btn-right-arrow"></span>
+                    </span>
+                  </a>
                 </a>
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12 order-3 text-center">

@@ -8,7 +8,7 @@ import $ from "jquery";
 import axios from "axios";
 import * as config from "../../../config.js";
 import Slide from "react-reveal/Reveal";
-
+import Link from 'next/link'
 require("typeface-montserrat");
 // require('paroller.js');
 import Axios from "axios";
@@ -106,7 +106,7 @@ export default class Speakinc extends Component {
                         We Let Our Portfolio Do The Talk!
                       </h1>
                       <div className="btn-comm">
-                        <a href="#contact">Say Hello</a>
+                        <Link href="/contact-us">Say Hello</Link>
                       </div>
                     </div>
                   </Slide>
@@ -130,7 +130,7 @@ export default class Speakinc extends Component {
                     <Slide right>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/maikeinc">Maike Inc</a>
+                          <Link href="/case-studies/maikeinc">Maike Inc</Link>
                         </h3>
                         <span>Full Stack Development</span>
                         <p>
@@ -183,13 +183,15 @@ export default class Speakinc extends Component {
                             </li>
                           </ul>
                         </div>
-                        <a href="/casestudies/maikeinc">
-                          Learn more{""}
-                          <i
-                            className="fa fa-chevron-right"
-                            aria-hidden="true"
-                          ></i>
-                        </a>
+                        <Link href="/case-studies/maikeinc">
+                          <a>
+                            Learn more{""}
+                            <i
+                              className="fa fa-chevron-right"
+                              aria-hidden="true"
+                            ></i>
+                          </a>
+                        </Link>
                       </div>
                     </Slide>
                   </div>
@@ -203,8 +205,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-speakinc-Background.png') center -17px / cover repeat"
-              
+                  "url('/images/case-studies/Parallax-speakinc-Background.png') center -17px / cover repeat",
               }}
             >
               <div className="container">
@@ -213,7 +214,7 @@ export default class Speakinc extends Component {
                     <Slide left>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/speakinc">Speakinc</a>
+                          <Link href="/case-studies/speakinc">Speakinc</Link>
                         </h3>
                         <span>Full Stack Development</span>
                         <p>
@@ -266,13 +267,15 @@ export default class Speakinc extends Component {
                             </li>
                           </ul>
                         </div>
-                        <a href="/casestudies/speakinc">
-                          Learn more{" "}
-                          <i
-                            className="fa fa-chevron-right"
-                            aria-hidden="true"
-                          ></i>
-                        </a>
+                        <Link href="/case-studies/speakinc">
+                          <a>
+                            Learn more{" "}
+                            <i
+                              className="fa fa-chevron-right"
+                              aria-hidden="true"
+                            ></i>
+                          </a>
+                        </Link>
                       </div>
                     </Slide>
                   </div>
@@ -286,7 +289,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-megalot-background.png') center -25px / cover repeat"
+                  "url('/images/case-studies/Parallax-megalot-background.png') center -25px / cover repeat",
               }}
             >
               <div className="container">
@@ -295,7 +298,7 @@ export default class Speakinc extends Component {
                     <Slide right>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/megalot">Megalot</a>
+                          <Link href="/case-studies/megalot">Megalot</Link>
                         </h3>
                         <span>Full Stack Development</span>
                         <p>
@@ -359,13 +362,15 @@ export default class Speakinc extends Component {
                             </li>
                           </ul>
                         </div>
-                        <a href="/casestudies/megalot">
-                          Learn more{" "}
-                          <i
-                            className="fa fa-chevron-right"
-                            aria-hidden="true"
-                          ></i>
-                        </a>
+                        <Link href="/case-studies/megalot">
+                          <a>
+                            Learn more{" "}
+                            <i
+                              className="fa fa-chevron-right"
+                              aria-hidden="true"
+                            ></i>
+                          </a>
+                        </Link>
                       </div>
                     </Slide>
                   </div>
@@ -389,7 +394,7 @@ export default class Speakinc extends Component {
                     <Slide left>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/filemaker">Filemaker</a>
+                          <Link href="/case-studies/filemaker">Filemaker</Link>
                         </h3>
                         <span>Full Stack Development</span>
                         <p>
@@ -426,13 +431,15 @@ export default class Speakinc extends Component {
                             </li>
                           </ul>
                         </div>
-                        <a href="/casestudies/filemaker">
-                          Learn more{" "}
-                          <i
-                            className="fa fa-chevron-right"
-                            aria-hidden="true"
-                          ></i>
-                        </a>
+                        <Link href="/case-studies/filemaker">
+                          <a>
+                            Learn more{" "}
+                            <i
+                              className="fa fa-chevron-right"
+                              aria-hidden="true"
+                            ></i>
+                          </a>
+                        </Link>
                       </div>
                     </Slide>
                   </div>
@@ -456,7 +463,9 @@ export default class Speakinc extends Component {
                     <Slide right>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/easy-level">Easy-Level</a>
+                          <Link href="/case-studies/easy-level">
+                            Easy-Level
+                          </Link>
                         </h3>
                         <span>Full Stack Development</span>
                         <p>
@@ -494,13 +503,15 @@ export default class Speakinc extends Component {
                             </li>
                           </ul>
                         </div>
-                        <a href="/casestudies/easy-level">
-                          Learn more{" "}
-                          <i
-                            className="fa fa-chevron-right"
-                            aria-hidden="true"
-                          ></i>
-                        </a>
+                        <Link href="/case-studies/easy-level">
+                          <a>
+                            Learn more{" "}
+                            <i
+                              className="fa fa-chevron-right"
+                              aria-hidden="true"
+                            ></i>
+                          </a>
+                        </Link>
                       </div>
                     </Slide>
                   </div>
@@ -524,9 +535,9 @@ export default class Speakinc extends Component {
                     <Slide left>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/multitoken">
+                          <Link href="/case-studies/multitoken">
                             Multi Token Wallet
-                          </a>
+                          </Link>
                         </h3>
                         <span>Full Stack Development</span>
                         <p>
@@ -565,13 +576,15 @@ export default class Speakinc extends Component {
                             </li>
                           </ul>
                         </div>
-                        <a href="/casestudies/multitoken">
-                          Learn more{" "}
-                          <i
-                            className="fa fa-chevron-right"
-                            aria-hidden="true"
-                          ></i>
-                        </a>
+                        <Link href="/case-studies/multitoken">
+                          <a>
+                            Learn more{" "}
+                            <i
+                              className="fa fa-chevron-right"
+                              aria-hidden="true"
+                            ></i>
+                          </a>
+                        </Link>
                       </div>
                     </Slide>
                   </div>
