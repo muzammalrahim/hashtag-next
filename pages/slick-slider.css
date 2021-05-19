@@ -14,6 +14,10 @@
     position: relative;
 }
 
+.slick-slide.slick-active{
+    opacity: 1;
+}
+
 .slideWrapper {
   display: flex;
   justify-content: center;
