@@ -309,7 +309,7 @@ hiding this for build
 .hashtag-underline {
     border: 2px solid #FF6B00 !important;
     width: 16px !important;
-    margin-left: 18px !important;
+    /* margin-left: 18px !important; */
     background: #FF6B00 !important;
     opacity: 1 !important;
 }
