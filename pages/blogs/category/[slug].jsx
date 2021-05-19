@@ -80,7 +80,7 @@ if (typeof window === "undefined") {
       let singlePost = pathNames[3];
       console.log(singlePost)
       this.setState({ category: singlePost });
-      
+      this.get_allPosts(singlePost);
     }
   }
 
@@ -133,10 +133,10 @@ if (typeof window === "undefined") {
 
 
   //Get posts
-  async get_allPosts(){
+  get_allPosts(catSlug){
     var url = config.myConfig.apiUrl+'blog/posts';
     var page = this.state.page;
-    var category = this.state.category;
+    var category = catSlug;
     var keyword = this.state.keyword;
 
     Axios.get(url, {params: {page: page, category: category, keyword: keyword}})
@@ -166,7 +166,7 @@ if (typeof window === "undefined") {
           });
         }
       }
-      
+
     }).catch(error =>{
       // console.log(error.response);
       console.log('API error.');
@@ -192,6 +192,7 @@ if (typeof window === "undefined") {
 
     var post_lists = [];
     this.state.allPosts.map((post, index) => {
+      post.image = post.image.replace('http://','https://');
       post_lists.push(
         <Flip bottom>
           <div className="card" key={index}>
