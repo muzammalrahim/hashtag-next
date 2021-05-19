@@ -14,6 +14,10 @@
     position: relative;
 }
 
+.slick-slide.slick-active{
+    opacity: 1;
+}
+
 .slideWrapper {
   display: flex;
   justify-content: center;
@@ -71,7 +75,7 @@ border-radius: 10px;
 
 }
 
-@media (min-width:320px) and (max-width:426px) {
+@media (min-width:320px) and (max-width:580px) {
     .slick-slide img{
         max-width: 100%;
     }

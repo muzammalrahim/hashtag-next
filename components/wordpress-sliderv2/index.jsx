@@ -20,7 +20,7 @@ const PrevArrow = ({ onClick }) => {
  const Wpsliderv2 = ({ images }) => {
 // 3.
   const [imageIndex, setImageIndex] = useState(0);
-console.log('images: ',images);
+// console.log('images: ',images);
   // 4.
   const settings = {
     centerMode: true,
@@ -57,12 +57,19 @@ console.log('images: ',images);
         },
       },
         {
-        breakpoint: 430,
+        breakpoint: 580,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
+        {
+        breakpoint: 430,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      }
     ],
   };
 
