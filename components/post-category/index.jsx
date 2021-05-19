@@ -4,7 +4,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import $ from 'jquery';
 import axios from 'axios';
 import * as config from '../../config';
-import Link from 'next/link'
 
 require('typeface-montserrat')
 
@@ -52,17 +51,11 @@ export default class BlogCategories extends Component {
         <h5 className="title-level-6 text-left title-level-mobile b-categories">Categories</h5>    
         <ul>
           {this.state.categories.map((cat, index) => { 
-            return (
+            return(
               <li className="cat-item cat-item-51 current-cat" key={index}>
-                <Link
-                  aria-current="page"
-                  href={"/blogs/category/[slug]"}
-                  as={"/blogs/category/" + cat.slug}
-                >
-                  {cat.name}
-                </Link>
+                <a aria-current="page" href={"/blogs/category/"+cat.slug}>{cat.name}</a>
               </li>
-            );
+            )
           })}
         </ul>
       </div>

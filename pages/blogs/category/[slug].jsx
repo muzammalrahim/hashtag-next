@@ -76,9 +76,9 @@ if (typeof window === "undefined") {
     }
     if (window.location.pathname) {
       let pathNames = window.location.pathname.split("/");
-      console.log("path", pathNames);
-      let singlePost = pathNames[3];
-      console.log(singlePost)
+      // console.log("path", pathNames);
+      let singlePost = decodeURI(pathNames[3]);
+      // console.log(decodeURI(singlePost))
       this.setState({ category: singlePost });
       this.get_allPosts(singlePost);
     }
@@ -142,7 +142,7 @@ if (typeof window === "undefined") {
     Axios.get(url, {params: {page: page, category: category, keyword: keyword}})
     .then((response) => {
       const allPosts = this.state.allPosts;
-      console.log("respnes",response)
+      // console.log("respnes",response)
       response.data.data.posts.map((data) => {
           allPosts.push(data);
       });
@@ -155,7 +155,7 @@ if (typeof window === "undefined") {
           });
       } else {
         if(allPosts.length == 0) {
-          console.log('No posts found.');
+          // console.log('No posts found.');
           this.setState({
             hasMoreItems: false,
             no_items: 'No posts found.'
@@ -169,7 +169,7 @@ if (typeof window === "undefined") {
 
     }).catch(error =>{
       // console.log(error.response);
-      console.log('API error.');
+      // console.log('API error.');
       toast.error("Something went wrong.");
     });
   }
