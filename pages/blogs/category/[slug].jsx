@@ -142,7 +142,7 @@ if (typeof window === "undefined") {
     Axios.get(url, {params: {page: page, category: category, keyword: keyword}})
     .then((response) => {
       const allPosts = this.state.allPosts;
-
+      console.log("respnes",response)
       response.data.data.posts.map((data) => {
           allPosts.push(data);
       });
@@ -197,16 +197,16 @@ if (typeof window === "undefined") {
           <div className="card" key={index}>
             <h5 className="card-title text-level-4 title-orange">
               <Link
-                href={"/blog/single/[slug]"}
-                as={"/blog/single/" + post.url}
+                href={"/blogs/single/[slug]"}
+                as={"/blogs/single/" + post.url}
               >
                 {post.title}
               </Link>
             </h5>
             <div className="blog-img">
               <Link
-                href={"/blog/single/[idex]"}
-                as={"/blog/single/" + post.url}
+                href={"/blogs/single/[slug]"}
+                as={"/blogs/single/" + post.url}
               >
                 <div
                   className="blog-thumb"
@@ -222,8 +222,8 @@ if (typeof window === "undefined") {
                 {post.categories.map((cat, i) => {
                   return (
                     <Link
-                      href={"/blog/category/[slug]"}
-                      as={"/blog/category/" + cat.slug}
+                      href={"/blogs/category/[slug]"}
+                      as={"/blogs/category/" + cat.slug}
                       className="btn btn-light btn-sm"
                       key={i}
                     >
@@ -236,8 +236,8 @@ if (typeof window === "undefined") {
             <div className="card-body">
               <h4 className="card-title text-level-4 title-orange">
                 <Link
-                  href={"/blog/single/[slug]"}
-                  as={"/blog/single/" + post.url}
+                  href={"/blogs/single/[slug]"}
+                  as={"/blogs/single/" + post.url}
                 >
                   {post.title}
                 </Link>
@@ -249,8 +249,8 @@ if (typeof window === "undefined") {
               <p className="card-text">{post.excerpt}</p>
               <span className="cta-link">
                 <Link
-                  href={"/blog/single/[slug]"}
-                  as={"/blog/single/" + post.url}
+                  href={"/blogs/single/[slug]"}
+                  as={"/blogs/single/" + post.url}
                   className="shopify-sub-title"
                 >
                   <a>

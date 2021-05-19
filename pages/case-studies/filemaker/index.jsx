@@ -13,40 +13,57 @@ import "slick-carousel/slick/slick.css";
 import Slide from 'react-reveal/Reveal';
 
 require('typeface-montserrat')
+import Axios from "axios";
+import https from "https";
 
+export async function getServerSideProps() {
+  let data = [];
+
+  const instance = Axios.create({
+    httpsAgent: new https.Agent({
+      rejectUnauthorized: false,
+    }),
+  });
+
+  await instance
+    .get("https://api.hashtag-ca.com/api/v1/metadata", {
+      params: {
+        page_type: "static",
+        slug: "sevices",
+      },
+    })
+    .then((response) => {
+      data = response.data;
+    });
+  return {
+    props: { data },
+  };
+}
 export default class Filemaker extends Component {
-
-
   constructor(props) {
     super(props);
-
+    let response = this.props;
     this.state = {
-      
+      data: response.data.data,
     };
-
-
-    
   }
 
-  componentDidMount() {
-    
-  }
-
-  
-
+  componentDidMount() {}
 
   render() {
     const meta = {
-      title: 'Filemaker Case study - FullStack Web Development| Bay area, California',
+      title:
+        "Filemaker Case study - FullStack Web Development| Bay area, California",
       meta: {
-        charset: 'utf-8',
-          name: {
-            keywords: 'Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california'
-        }
-      }
+        charset: "utf-8",
+        name: {
+          keywords:
+            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
+        },
+      },
     };
-
-    const settings = { 
+const { data } = this.state;
+    const settings = {
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -57,33 +74,47 @@ export default class Filemaker extends Component {
       autoplay: true,
       autoplaySpeed: 4000,
       centerPadding: "23.5%",
-      cssEase:'ease-in-out',
+      cssEase: "ease-in-out",
       responsive: [
         {
           breakpoint: 768,
           settings: {
             centerPadding: "12%",
-          }
-        }
-      ]
+          },
+        },
+      ],
     };
 
     return (
       <div className="case-study filemaker" id="filemaker-case-study">
         <DocumentMeta {...meta} />
-        <Header></Header>
+        <Header
+          title={data.title}
+          description={data.description}
+          keywords={data.keywords}
+        ></Header>
         <section className="content-container case-study">
-
           <div className="common-title-blk">
             <div className="container">
               <div className="row">
                 <div className="col-md-10">
                   <div className="common-title-wrap px-md-3">
                     <div className="common-head-blk">
-                    <h6>Website development &amp; design</h6>
-                      <h2 className="main-title title-white">Filemaker in Action</h2>
+                      <h6>Website development &amp; design</h6>
+                      <h2 className="main-title title-white">
+                        Filemaker in Action
+                      </h2>
                       <div className="intro-desc title-white">
-                        <p><b>The FileMaker Platform empowers problem solvers to<br/>create, share, and integrate custom apps to address their<br/>ever changing business challenges.</b></p>
+                        <p>
+                          <b>
+                            The FileMaker Platform empowers problem solvers to
+                            <br />
+                            create, share, and integrate custom apps to address
+                            their
+                            <br />
+                            ever changing business challenges.
+                          </b>
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -92,7 +123,6 @@ export default class Filemaker extends Component {
             </div>
           </div>
 
-
           <div className="filemakerintrologo-blk">
             <div className="container">
               <div className="row">
@@ -100,19 +130,31 @@ export default class Filemaker extends Component {
                   <div className="filemaker-int-logo">
                     <ul>
                       <li>
-                        <img src="/images/case-studies/filemaker/intro-logo-1.svg" alt="filemaker" />
+                        <img
+                          src="/images/case-studies/filemaker/intro-logo-1.svg"
+                          alt="filemaker"
+                        />
                       </li>
                       <li>
-                        <img src="/images/case-studies/filemaker/intro-logo-2.svg" alt="mysql" />
+                        <img
+                          src="/images/case-studies/filemaker/intro-logo-2.svg"
+                          alt="mysql"
+                        />
                       </li>
                       <li>
-                        <img src="/images/case-studies/filemaker/intro-logo-4.svg" alt="hubspot" />
+                        <img
+                          src="/images/case-studies/filemaker/intro-logo-4.svg"
+                          alt="hubspot"
+                        />
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="img-blk">
-                  <img src="/images/case-studies/filemaker/header-files.svg" alt="file-image" />
+                  <img
+                    src="/images/case-studies/filemaker/header-files.svg"
+                    alt="file-image"
+                  />
                 </div>
               </div>
             </div>
@@ -127,17 +169,41 @@ export default class Filemaker extends Component {
                       <h6 className="text-above-main-title">Description</h6>
                       <h3 className="main-title title-orange">Introduction</h3>
                     </div>
-                      <p><strong>SpeakInc is a No 1 US based speakers booking platform</strong></p>
-                      <p>It helps in searching and booking keynote speakers or entertainers for different conventions, conferences or events. Speakinc has exceptional expertise matching keynote speakers to client events.</p>
+                    <p>
+                      <strong>
+                        SpeakInc is a No 1 US based speakers booking platform
+                      </strong>
+                    </p>
+                    <p>
+                      It helps in searching and booking keynote speakers or
+                      entertainers for different conventions, conferences or
+                      events. Speakinc has exceptional expertise matching
+                      keynote speakers to client events.
+                    </p>
                   </div>
 
                   <div className="project-unique-wrap challenge-sec">
                     <div className="project-blk-title">
                       <h6 className="text-above-main-title">Challenges</h6>
-                      <h3 className="main-title title-orange">Business Challenge</h3>
+                      <h3 className="main-title title-orange">
+                        Business Challenge
+                      </h3>
                     </div>
-                    <p>Processing client queries and keeping track of it manually in<br/> <b>Hubspot</b> and <b>Filemaker</b> was literally a full-time job for the owners and limited business growth. They needed a secure and user friendly way to sync the queries and manage marketing leads and proposals.</p>
-                    <p><b>FileMaker DB</b> has huge client records and it has been used for many years. Another challenge was to upload only active clients on this Web application. So we created an option to mark clients as ACTIVE so that only active clients will get synced with the Web application.</p>
+                    <p>
+                      Processing client queries and keeping track of it manually
+                      in
+                      <br /> <b>Hubspot</b> and <b>Filemaker</b> was literally a
+                      full-time job for the owners and limited business growth.
+                      They needed a secure and user friendly way to sync the
+                      queries and manage marketing leads and proposals.
+                    </p>
+                    <p>
+                      <b>FileMaker DB</b> has huge client records and it has
+                      been used for many years. Another challenge was to upload
+                      only active clients on this Web application. So we created
+                      an option to mark clients as ACTIVE so that only active
+                      clients will get synced with the Web application.
+                    </p>
                   </div>
 
                   <div className="project-unique-wrap challenge-sec">
@@ -145,13 +211,29 @@ export default class Filemaker extends Component {
                       <h6 className="text-above-main-title">What We Do</h6>
                       <h3 className="main-title title-orange">Solution</h3>
                     </div>
-                    <p><b>The solution</b> was to upgrade the database to the current version of FileMaker systems and deploy a new simple interface that could better support their marketing department’s workflow.</p>
-                    <p><b>We built</b> a modern solution with REST API for syncing leads in Filemaker to Hubspot CRM.  Hubspot plays a role in managing leads and clients. These leads, client handling, proposals and bids are then synced automatically to their Hubspot application with all the information validated so that their business can be processed in a timely manner.</p>
+                    <p>
+                      <b>The solution</b> was to upgrade the database to the
+                      current version of FileMaker systems and deploy a new
+                      simple interface that could better support their marketing
+                      department’s workflow.
+                    </p>
+                    <p>
+                      <b>We built</b> a modern solution with REST API for
+                      syncing leads in Filemaker to Hubspot CRM. Hubspot plays a
+                      role in managing leads and clients. These leads, client
+                      handling, proposals and bids are then synced automatically
+                      to their Hubspot application with all the information
+                      validated so that their business can be processed in a
+                      timely manner.
+                    </p>
                   </div>
                 </div>
                 <div className="col-md-6 sticky-image-section">
                   <div className="speakinc-img sticky-img">
-                    <img src="/images/case-studies/filemaker/speakinc-img.svg" alt="Speakinc Intro Image" />
+                    <img
+                      src="/images/case-studies/filemaker/speakinc-img.svg"
+                      alt="Speakinc Intro Image"
+                    />
                   </div>
                 </div>
               </div>
@@ -167,7 +249,10 @@ export default class Filemaker extends Component {
                     <h3 className="main-title title-orange">Architecture</h3>
                   </div>
                   <div className="workflow-wrap">
-                    <img src="/images/case-studies/filemaker/archi.svg" alt="Architecture" />
+                    <img
+                      src="/images/case-studies/filemaker/archi.svg"
+                      alt="Architecture"
+                    />
                   </div>
                 </div>
               </div>
@@ -178,24 +263,44 @@ export default class Filemaker extends Component {
             <div className="container">
               <div className="row">
                 <div className="benefits-lft-tag">
-                  <img src="/images/case-studies/filemaker/benefits-left-hashtag.svg" alt="pattern-left" />
+                  <img
+                    src="/images/case-studies/filemaker/benefits-left-hashtag.svg"
+                    alt="pattern-left"
+                  />
                 </div>
                 <div className="benefits-rgt-tag">
-                  <img src="/images/case-studies/filemaker/benefits-right-hashtag.svg" alt="pattern-right" />
+                  <img
+                    src="/images/case-studies/filemaker/benefits-right-hashtag.svg"
+                    alt="pattern-right"
+                  />
                 </div>
                 <div className="col-md-5 offset-md-1 col-lg-5 offset-lg-1">
                   <div className="project-blk-title">
-                   
                     <h3 className="main-title title-white">Benefits</h3>
                   </div>
                   <div className="benefit-para">
-                    <p><b>With the new Filemake now in the place they have <br/>a modern dahsboard that makes it a easy for access and<br/>manage data in different databases, third party apis.</b></p>
-                    <p>This system uses Filemaker to communicate with a mysql database that is connected with multiple web based applications. Primary call was to centralise a UI for accessing all different modules.</p>
+                    <p>
+                      <b>
+                        With the new Filemake now in the place they have <br />a
+                        modern dahsboard that makes it a easy for access and
+                        <br />
+                        manage data in different databases, third party apis.
+                      </b>
+                    </p>
+                    <p>
+                      This system uses Filemaker to communicate with a mysql
+                      database that is connected with multiple web based
+                      applications. Primary call was to centralise a UI for
+                      accessing all different modules.
+                    </p>
                   </div>
                 </div>
                 <div className="col-md-6 col-lg-6">
                   <div className="img-blk">
-                    <img src="/images/case-studies/filemaker/benefits-img.svg" alt="Architecture" />
+                    <img
+                      src="/images/case-studies/filemaker/benefits-img.svg"
+                      alt="Architecture"
+                    />
                   </div>
                 </div>
               </div>
@@ -204,15 +309,23 @@ export default class Filemaker extends Component {
 
           <div className="features-blk">
             <div className="container">
-            <h3 className="main-title title-orange text-center mb-5">Features</h3>
-              
+              <h3 className="main-title title-orange text-center mb-5">
+                Features
+              </h3>
+
               <div className="row justify-content-center section-2-row pl-3 pr-3 sc-ip-pro">
                 <>
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img src="/images/case-studies/filemaker/featured1.svg" alt="featured1" />
-                        <h4 className="text-level-5 title-black">Easy to <br/>use</h4>
+                        <img
+                          src="/images/case-studies/filemaker/featured1.svg"
+                          alt="featured1"
+                        />
+                        <h4 className="text-level-5 title-black">
+                          Easy to <br />
+                          use
+                        </h4>
                         <hr class="hashtag-underline" />
                       </div>
                     </div>
@@ -220,8 +333,14 @@ export default class Filemaker extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img src="/images/case-studies/filemaker/featured2.svg" alt="featured2" />
-                        <h4 className="text-level-5 title-black">Redesigned <br/>the interface</h4>
+                        <img
+                          src="/images/case-studies/filemaker/featured2.svg"
+                          alt="featured2"
+                        />
+                        <h4 className="text-level-5 title-black">
+                          Redesigned <br />
+                          the interface
+                        </h4>
                         <hr className="hashtag-underline" />
                       </div>
                     </div>
@@ -229,8 +348,13 @@ export default class Filemaker extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img src="/images/case-studies/filemaker/featured3.svg" alt="featured3" />
-                        <h4 className="text-level-5 title-black">Automatic data synchronization</h4>
+                        <img
+                          src="/images/case-studies/filemaker/featured3.svg"
+                          alt="featured3"
+                        />
+                        <h4 className="text-level-5 title-black">
+                          Automatic data synchronization
+                        </h4>
                         <hr className="hashtag-underline" />
                       </div>
                     </div>
@@ -238,8 +362,15 @@ export default class Filemaker extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img src="/images/case-studies/filemaker/featured4.svg" alt="featured4" />
-                        <h4 className="text-level-5 title-black">Available offline<br/>and Online</h4>
+                        <img
+                          src="/images/case-studies/filemaker/featured4.svg"
+                          alt="featured4"
+                        />
+                        <h4 className="text-level-5 title-black">
+                          Available offline
+                          <br />
+                          and Online
+                        </h4>
                         <hr className="hashtag-underline" />
                       </div>
                     </div>
@@ -252,8 +383,15 @@ export default class Filemaker extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img src="/images/case-studies/filemaker/featured5.svg" alt="featured5" />
-                        <h4 className="text-level-5 title-black">Centralised<br/>data</h4>
+                        <img
+                          src="/images/case-studies/filemaker/featured5.svg"
+                          alt="featured5"
+                        />
+                        <h4 className="text-level-5 title-black">
+                          Centralised
+                          <br />
+                          data
+                        </h4>
                         <hr className="hashtag-underline" />
                       </div>
                     </div>
@@ -261,15 +399,19 @@ export default class Filemaker extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img src="/images/case-studies/filemaker/featured6.svg" alt="featured6" />
-                        <h4 className="text-level-5 title-black">Flexible for future requirements</h4>
+                        <img
+                          src="/images/case-studies/filemaker/featured6.svg"
+                          alt="featured6"
+                        />
+                        <h4 className="text-level-5 title-black">
+                          Flexible for future requirements
+                        </h4>
                         <hr className="hashtag-underline" />
                       </div>
                     </div>
                   </Slide>
                 </>
               </div>
-
             </div>
           </div>
 
@@ -279,7 +421,9 @@ export default class Filemaker extends Component {
                 <div className="col-md-12 col-lg-10 col-xl-8">
                   <div className="project-blk-title text-center">
                     <h6 className="text-above-main-title">Our Skillsets</h6>
-                    <h3 className="main-title title-orange">We are experts in</h3>
+                    <h3 className="main-title title-orange">
+                      We are experts in
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -309,15 +453,16 @@ export default class Filemaker extends Component {
                 <div className="col-lg-8 col-sm-12">
                   <Slide bottom>
                     <div className="project-blk-title">
-                      <h3 className="main-title title-white">Committed to creating solutions<br/>that provide value for customers</h3>
+                      <h3 className="main-title title-white">
+                        Committed to creating solutions
+                        <br />
+                        that provide value for customers
+                      </h3>
                       <div className="learn-more home-lm-link-vs">
-
                         <div className="btn-comm">
                           <a href="/contact-us">LET'S TALK</a>
                         </div>
-
                       </div>
-
                     </div>
                   </Slide>
                 </div>
@@ -326,10 +471,9 @@ export default class Filemaker extends Component {
           </div>
 
           <Contact></Contact>
-
         </section>
         <Footer></Footer>
       </div>
-    )
+    );
   }
 }
