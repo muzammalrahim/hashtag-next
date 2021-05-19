@@ -535,7 +535,7 @@ export default class Speakinc extends Component {
                     <Slide left>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <Link href="/case-studies/multitoken">
+                          <Link href="/case-studies/multi-token">
                             Multi Token Wallet
                           </Link>
                         </h3>
@@ -576,7 +576,7 @@ export default class Speakinc extends Component {
                             </li>
                           </ul>
                         </div>
-                        <Link href="/case-studies/multitoken">
+                        <Link href="/case-studies/multi-token">
                           <a>
                             Learn more{" "}
                             <i
