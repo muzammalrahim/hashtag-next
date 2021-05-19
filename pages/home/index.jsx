@@ -198,7 +198,7 @@ export default class Home extends Component {
 							</p>
 						</div>
 					</div>
-					<div className="col-offset-lg-2 col-lg-4 col-sm-12 pl-3 pr-3 mob-padding">
+					<div className="col-offset-lg-2 col-lg-4 col-sm-12  mob-padding">
 						<div className="what-we-do-border-style what-we-do-responsive">
 							<img src="images/Creative conceptual.svg" alt="creative_design" />
 							<h4 className="text-level-4">Creative & conceptual design</h4>
@@ -214,11 +214,6 @@ export default class Home extends Component {
 			</div>
 		</div>
     </div>
-
-{/*<div className="section-four-left-bg">
-</div>*/}
-
-      
 		 	<div className="container-fluid section-four-bg">
              <div classname="section-four-left-bg">
 				<div className="container section-four-content">
