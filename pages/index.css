@@ -676,7 +676,7 @@ hiding this for build
 .section-three-bg {
     background-color: #FDFDFD;
     position: relative;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 }
 
 .section-three-content {
@@ -2164,7 +2164,16 @@ bottom: 186px;
 }
 
 /*styles by Abbas 17-8-20*/
-@media only screen and (min-width:2500px) and (max-width:2799px) {}
+/* @media only screen and (min-width:2500px) and (max-width:2799px) {
+
+} */
+
+@media (min-width: 2500px)
+{
+.container {
+    max-width: 2412px !important;
+}
+}
 
 @media only screen and (min-width:2000px) and (max-width:2499px) {
     .container#main-section {
@@ -2264,7 +2273,7 @@ bottom: 186px;
 
 @media only screen and (min-width:1280px) and (max-width:1499px) {
     .what-we-do-border-style {
-        height: 380px;
+        height: 380px !important;
     }
 }
 
@@ -2712,5 +2721,11 @@ a.sol-but-ab {
 @media only screen and (min-width: 1600px) and (max-width: 1679px){
     .container {
         max-width: 1371px !important;
+    }
+}
+
+@media (max-width: 767px){
+    .section-three-content {
+        height: 2430px;
     }
 }

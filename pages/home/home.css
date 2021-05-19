@@ -320,9 +320,9 @@ hiding this for build
     padding-bottom: 50px;
 }
 
-#home-main .section-three-content {
+/* #home-main .section-three-content {
     height: 1130px;
-}
+} */
 
 #home-main .text-level-4 {
     font-style: normal;
@@ -2283,4 +2283,17 @@ a.sol-but-ab {
         padding-top: 74px !important;
     }
 } */
+
+@media (max-width: 1022px){
+    .what-we-do-responsive {
+        margin-bottom: 45px;
+    }
+}
+@media (min-width: 768px){
+    .content-four-section {
+        /* margin-top: 265px; */
+        margin-top: 293px !important;
+    }
+    
+}
 
