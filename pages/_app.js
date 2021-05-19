@@ -18,7 +18,7 @@ import './casestudies/filemaker/filemaker.css';
 import './casestudies/filemaker/responsivness.css';
 import './casestudies/maikeinc/maikeinc.css';
 import './casestudies/megalot/megalot.css';
-import './casestudies/multi-token/multi-token.css';
+import './casestudies/multitoken/multi-token.css';
 import './casestudies/speakinc/speakinc.css';
 import './error/error.css'
 import './mobile-app/style.css'
