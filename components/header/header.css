@@ -386,7 +386,7 @@
 }
 
 .navbar-light .navbar-nav .nav-item>i {
-    display: none;
+    display: block;
 }
 .navbar-light .navbar-nav .nav-link.active {
     color: #FF6B00 !important;
@@ -577,7 +577,7 @@ li a:active{
 }
 
  .header-container .navbar-expand-lg .navbar-collapse .form-inline button.btn-transparent a {
-    color: #f56a27;
+    color: #f56a27 !important;
 }
 
 .case-study-list .header-container .navbar-expand-lg .navbar-collapse .form-inline button.btn-transparent a {
