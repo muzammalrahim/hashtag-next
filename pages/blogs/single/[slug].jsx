@@ -32,7 +32,7 @@ export async function getServerSideProps() {
       },
     })
     .then((response) => {
-      data = response;
+      data = response.data;
     });
   return {
     props: { data },
@@ -132,7 +132,6 @@ export default class Singlepost extends Component {
       </div>
     );
     let { postData, data } = this.state;
-    console.log(data)
     if(postData.image){
       postData.image = postData.image.replace('http://','https://');
     }
