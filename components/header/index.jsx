@@ -141,14 +141,15 @@ export default class Header extends Component {
                 <Head>
                     <title>{this.props?.title}</title>
                     <meta name="description" content={description}/>
+                    <meta name="keywords" content={keywords}/>
+                    <meta name="head title" content={title}/>
                     <meta property="og:type" content={keywords}/>
                     <meta property="og:title" content={title}/>
                     <meta property="og:description" content={description}/>
                     <meta property="og:site_name" content="hashtag"/>
-                    <meta property="twitter:card" content={keywords}/>
+                    <meta property="twitter:card" content="hashtag"/>
                     <meta property="twitter:creator" content="hashtag"/>
                     <meta property="twitter:title" content={title}/>
-                    <meta property="twitter:description" content={description}/>
                     <meta property="twitter:description" content={description}/>
                 </Head>
                 <div className="container" id="main-section">
