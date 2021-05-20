@@ -23,19 +23,7 @@ export default class Home extends Component {
 	  }
   render() {
 	let { tabindex } = this.state;
-  		const meta = {
-      title: 'Home - FullStack Web Development| Bay area, California',
-      
-     
-      meta: {
-        charset: 'utf-8',
-          name: {
-            keywords: 'Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california'
-        }
-       
-       
-      }
-    };
+  	
 	const { title,description, keyword} = this.state;
     return (
     	<div className="home-main" id="home-main">
