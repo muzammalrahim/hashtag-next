@@ -143,7 +143,6 @@ export default class Header extends Component {
                     <meta name="description" content={description}/>
                     <meta name="keywords" content={keywords}/>
                     <meta name="head title" content={title}/>
-                    <meta property="og:type" content={keywords}/>
                     <meta property="og:title" content={title}/>
                     <meta property="og:description" content={description}/>
                     <meta property="og:site_name" content="hashtag"/>
@@ -207,7 +206,7 @@ alt="logo"
 
                                     >
                                         <a className="nav-link"
-                                           className={`nav-link ${Activetabindex === "/" || Activetabindex === "/about-us" ? "active" : ""
+                                           className={`nav-link ${Activetabindex === "/about-us" || Activetabindex === "/about-us" ? "active" : ""
                                            }`} activeclassName="active">
                                             About Us <span className="sr-only">(current)</span>
                                         </a>
@@ -299,7 +298,13 @@ alt="logo"
                                         href="/casestudies"
 
                                     >
-                                        <a className={`nav-link ${Activetabindex === "/case-studies/casestudy-list" ? "active" : ""
+                                        <a className={`nav-link ${Activetabindex === "/casestudies" ||
+                                            Activetabindex === "/casestudies/megalot" ||
+                                            Activetabindex === "/casestudies/filemaker" ||
+                                            Activetabindex === "/casestudies/speakinc" || 
+                                            Activetabindex === "/casestudies/multitoken" ||
+                                            Activetabindex === "/casestudies/easy-level" ||
+                                            Activetabindex === "/casestudies/maikeinc"? "active" : ""
                                         }`} activeclassName="active">
                                             {" "}
                                             Case studies <span className="sr-only">(current)</span>
