@@ -78,7 +78,7 @@
 
 @media only screen and (max-width: 1499px) and (min-width: 1280px) {
     #Blcnbanner .what-we-do-border-style {
-        height: 530px;
+        height: 530px !important;
     }
 }
 

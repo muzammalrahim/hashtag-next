@@ -380,7 +380,14 @@ export default class filemakerPage extends Component {
                       data-height="auto"
                       data-snippets="true"
                       data-clutchcompany-id="62314"
-                    ></div>
+                    >
+                      <iframe
+                        width="100%"
+                        src="https://widget.clutch.co/widgets/get/4?ref_domain=165.22.214.227&uid=62314&ref_path=/services/filemaker"
+                        height="700px"
+                        scrolling="no"
+                      ></iframe>
+                    </div>
                   </div>
                 </div>
               </div>
