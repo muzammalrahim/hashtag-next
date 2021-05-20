@@ -58,7 +58,16 @@ export default class Easylevel extends Component {
 
 
   render() {
-   
+    const meta = {
+      title: 'Easy level Case study - FullStack Web Development| Bay area, California',
+      meta: {
+        charset: 'utf-8',
+          name: {
+            keywords: 'Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california'
+        }
+      }
+    };
+
     const { data } = this.state;
     const settings = { 
       infinite: true,
@@ -85,9 +94,8 @@ export default class Easylevel extends Component {
     return (
       <div className="case-study easylevel" id="easylevel-case-study">
         <Header
-          title={data.title}
-          description={data.description}
-          keywords={data.keywords}
+          title={meta?.title}
+          keywords={meta?.name?.keywords}
         ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
