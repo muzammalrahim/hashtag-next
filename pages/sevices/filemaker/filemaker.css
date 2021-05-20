@@ -36,7 +36,7 @@
 	padding: 100px 0;
 }
 .case-study.filemaker-service .features-blk .what-we-do-border-style{
-	height: auto;
+	height: auto !important;
 }
 .case-study.filemaker-service .features-blk .what-we-do-border-style h4{
 	font-size: 29px;

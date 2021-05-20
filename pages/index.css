@@ -2729,3 +2729,10 @@ a.sol-but-ab {
         height: 2430px;
     }
 }
+
+@media only screen and (min-width: 1300px) and (max-width: 1400px){
+    .container {
+        max-width: 1284px !important;
+    }
+}
+

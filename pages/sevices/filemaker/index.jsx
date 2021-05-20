@@ -82,7 +82,7 @@ export default class filemakerPage extends Component {
         <section className="content-container">
           <div className="common-title-blk">
             <div className="container">
-              <div className="row shopifyBg">
+              <div className="row">
                 <div className="col-md-6 ">
                   <div className="common-title-wrap px-md-3">
                     <div className="common-head-blk">
