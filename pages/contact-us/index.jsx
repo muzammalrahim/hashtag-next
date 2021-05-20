@@ -56,7 +56,6 @@ export default class Contactus extends Component {
     return (
       <div className="contact-main" id="contact-main">
      
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}

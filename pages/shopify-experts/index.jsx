@@ -68,7 +68,6 @@ export default class Shopify extends Component {
 
     return (
       <div className="shopify-main" id="shopify-main">
-        <DocumentMeta {...meta} />
 
         <Header
           title={data.title}

@@ -61,7 +61,6 @@ export default class filemakerPage extends Component {
     let { data } = this.state;
     return (
       <div className="case-study filemaker-service" id="filemaker-service">
-        <DocumentMeta {...meta} />
         <Header
           title={data.data.title}
           description={data.data.description}

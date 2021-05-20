@@ -48,7 +48,6 @@ export default class Careers extends Component {
     const { data } = this.state;
     return (
       <div className="careers-main" id="careers-main">
-        <DocumentMeta {...meta} />
 
         <Header
           title={data.title}

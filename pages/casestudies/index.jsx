@@ -109,7 +109,7 @@ export default class Speakinc extends Component {
     return (
       <div className="case-study-list" id="case-study-list">
         {console.log(meta)}
-        <DocumentMeta {...meta} />
+        {/* <DocumentMeta {...meta} /> */}
         <Header
           title={meta.title}
           description="hashtag"

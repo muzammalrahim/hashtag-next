@@ -46,7 +46,6 @@ export default class BlockChain extends Component {
         return (
 
             <div className="contact-main" id="Blcnbanner">
-                <DocumentMeta {...meta} />
                 <div className="wp-main" id="wp-main">
                     <Header title={data.data.title} description={data.data.description} keywords={data.data.keywords}></Header>
                 </div>

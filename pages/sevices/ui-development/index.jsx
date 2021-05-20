@@ -43,7 +43,6 @@ export default class UIPage extends Component {
     let { data } = this.state;
     return (
       <div className="contact-main" id="Uidevbanner">
-        <DocumentMeta {...meta} />
         <div className="wp-main" id="wp-main">
           <Header
             title={data.data.title}

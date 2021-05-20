@@ -259,7 +259,6 @@ const {data} = this.state
     return (
       <div className="blog-main" id="blog-main">
         <ToastContainer transition={Slide} />
-        <DocumentMeta {...meta} />
         <Header title={data.title} description={data.description} keywords={data.keywords}></Header>
         <section class="content-container">
           <div className="container-fluid service-bg p-0 m-0 ">

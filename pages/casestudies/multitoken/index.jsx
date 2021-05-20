@@ -76,7 +76,6 @@ export default class Multitoken extends Component {
 
     return (
       <div className="case-study multi-token" id="case-study">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}

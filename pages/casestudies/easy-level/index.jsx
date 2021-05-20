@@ -84,7 +84,6 @@ export default class Easylevel extends Component {
 
     return (
       <div className="case-study easylevel" id="easylevel-case-study">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}

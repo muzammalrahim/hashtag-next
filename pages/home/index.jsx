@@ -24,10 +24,8 @@ export default class Home extends Component {
   render() {
 	let { tabindex } = this.state;
   	
-	const { title,description, keyword} = this.state;
     return (
     	<div className="home-main" id="home-main">
-<DocumentMeta {...meta} />
 		{/*<div className="container-fluid section-one-bg p-0">*/}
 		<Header
 		title={this.props.title}

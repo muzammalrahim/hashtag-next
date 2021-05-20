@@ -243,7 +243,6 @@ export default class Blog extends Component {
     return (
       <div className="blog-main" id="blog-main">
         <ToastContainer transition={Slide} />
-        <DocumentMeta {...meta} />
         <Header
           title={data.data.title}
           description={data.data.description}

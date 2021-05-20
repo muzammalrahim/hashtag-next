@@ -76,7 +76,6 @@ export default class Megalot extends Component {
 
     return (
       <div className="case-study megalot" id="megalot-case-study">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}

@@ -48,7 +48,6 @@ export default class About extends Component {
     const { data } = this.state;
     return (
       <div className="about-main" id="about-main">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}

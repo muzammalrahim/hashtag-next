@@ -47,7 +47,6 @@ export default class Service extends Component {
     const { data } = this.state;
     return (
       <div className="service-main" id="service-main">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}

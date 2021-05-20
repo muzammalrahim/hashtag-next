@@ -76,7 +76,6 @@ export default class Speakinc extends Component {
     const { data } = this.state;
     return (
       <div className="case-study-list" id="case-study-list">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}

@@ -84,7 +84,6 @@ export default class Shopify extends Component {
     return (
 
       <div className="wp-main" id="wp-main">
-        <DocumentMeta {...meta} />
         <Header
           title={data.data.title}
           description={data.data.description}

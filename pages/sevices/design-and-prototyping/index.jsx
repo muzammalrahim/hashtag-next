@@ -44,7 +44,6 @@ export default class DesignPage extends Component {
     let { data } = this.state;
     return (
       <div className="contact-main" id="Dnpbanner">
-        <DocumentMeta {...meta} />
         <div className="wp-main" id="wp-main">
           <Header
             title={data.data.title}

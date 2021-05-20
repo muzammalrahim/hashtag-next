@@ -76,7 +76,6 @@ const { data } = this.state;
 
     return (
       <div className="case-study" id="case-study">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}

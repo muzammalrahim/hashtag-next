@@ -76,7 +76,6 @@ export default class Maikeinc extends Component {
 
     return (
       <div className="case-study maikeinc" id="maikeinc-case-study">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}

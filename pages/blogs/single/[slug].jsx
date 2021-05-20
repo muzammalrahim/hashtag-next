@@ -130,7 +130,6 @@ export default class Singlepost extends Component {
     //console.log(data)
     return (
       <div className="single-blog-main" id="single-blog-main">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}
