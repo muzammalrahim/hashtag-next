@@ -41,24 +41,11 @@ export default class BlockChain extends Component {
         }
     }
     render() {
-        const meta = {
-            title: 'Blockchain - FullStack Web Development| Bay area, California',
-
-
-            meta: {
-                charset: 'utf-8',
-                name: {
-                    keywords: 'Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california'
-                }
-
-
-            }
-        };
+       
         let {data} =this.state
         return (
 
             <div className="contact-main" id="Blcnbanner">
-                <DocumentMeta {...meta} />
                 <div className="wp-main" id="wp-main">
                     <Header title={data.data.title} description={data.data.description} keywords={data.data.keywords}></Header>
                 </div>

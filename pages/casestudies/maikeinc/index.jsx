@@ -86,12 +86,7 @@ export default class Maikeinc extends Component {
 
     return (
       <div className="case-study maikeinc" id="maikeinc-case-study">
-        <DocumentMeta {...meta} />
-        <Header
-          title={data.title}
-          description={data.description}
-          keywords={data.keywords}
-        ></Header>
+        <Header title={meta?.title} keywords={meta?.name?.keywords}></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
             <div className="container">

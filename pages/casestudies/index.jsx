@@ -108,11 +108,12 @@ export default class Speakinc extends Component {
     const { data } = this.state;
     return (
       <div className="case-study-list" id="case-study-list">
-        <DocumentMeta {...meta} />
+        {console.log(meta)}
+        {/* <DocumentMeta {...meta} /> */}
         <Header
-          title={data.title}
-          description={data.description}
-          keywords={data.keywords}
+          title={meta.title}
+          description="hashtag"
+          keywords={meta?.name?.keywords}
         ></Header>
 
         {/*<Underconstruction></Underconstruction>*/}

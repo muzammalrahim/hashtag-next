@@ -86,11 +86,9 @@ const { data } = this.state;
 
     return (
       <div className="case-study" id="case-study">
-        <DocumentMeta {...meta} />
         <Header
-          title={data.title}
-          description={data.description}
-          keywords={data.keywords}
+          title={meta?.title}
+          keywords={meta?.name?.keywords}
         ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
@@ -404,7 +402,7 @@ const { data } = this.state;
                       <li>
                         <strong>Filemaker application</strong> for the bureau
                         that enables the direct communication between the bureau
-                        and users interested in speakers, and speaker handling. 
+                        and users interested in speakers, and speaker handling.
                       </li>
                       <li>
                         <strong>SEO for ensuring the presence</strong> of the

@@ -87,12 +87,7 @@ const { data } = this.state;
 
     return (
       <div className="case-study filemaker" id="filemaker-case-study">
-        <DocumentMeta {...meta} />
-        <Header
-          title={data.title}
-          description={data.description}
-          keywords={data.keywords}
-        ></Header>
+        <Header title={meta?.title} keywords={meta?.name?.keywords}></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
             <div className="container">

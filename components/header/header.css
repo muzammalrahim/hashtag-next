@@ -577,7 +577,7 @@ li a:active{
 }
 
  .header-container .navbar-expand-lg .navbar-collapse .form-inline button.btn-transparent a {
-    color: #f56a27;
+    color: #f56a27 !important;
 }
 
 .case-study-list .header-container .navbar-expand-lg .navbar-collapse .form-inline button.btn-transparent a {

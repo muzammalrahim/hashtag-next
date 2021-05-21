@@ -141,14 +141,14 @@ export default class Header extends Component {
                 <Head>
                     <title>{this.props?.title}</title>
                     <meta name="description" content={description}/>
-                    <meta property="og:type" content={keywords}/>
+                    <meta name="keywords" content={keywords}/>
+                    <meta name="head title" content={title}/>
                     <meta property="og:title" content={title}/>
                     <meta property="og:description" content={description}/>
                     <meta property="og:site_name" content="hashtag"/>
-                    <meta property="twitter:card" content={keywords}/>
+                    <meta property="twitter:card" content="hashtag"/>
                     <meta property="twitter:creator" content="hashtag"/>
                     <meta property="twitter:title" content={title}/>
-                    <meta property="twitter:description" content={description}/>
                     <meta property="twitter:description" content={description}/>
                 </Head>
                 <div className="container" id="main-section">
@@ -205,8 +205,8 @@ alt="logo"
                                         href="/about-us"
 
                                     >
-                                        <a className="nav-link"
-                                           className={`nav-link ${Activetabindex === "/" || Activetabindex === "/about-us" ? "active" : ""
+                                        <a 
+                                           className={`nav-link ${Activetabindex === "/about-us" || Activetabindex === "/about-us" ? "active" : ""
                                            }`} activeclassName="active">
                                             About Us <span className="sr-only">(current)</span>
                                         </a>
@@ -222,7 +222,7 @@ alt="logo"
 
                                         ? "active" : ""
                                     }`} activeclassName="active"> Services <i className="fa fa-angle-down"
-                                                                              aria-hidden="true"></i></a></Link>
+                                            aria-hidden="true"></i></a></Link>
                                     <i className="fa fa-angle-down" aria-hidden="true"></i>
                                     <ul className="submenu">
                                         <div className="row m-0">
@@ -298,7 +298,13 @@ alt="logo"
                                         href="/casestudies"
 
                                     >
-                                        <a className={`nav-link ${Activetabindex === "/case-studies/casestudy-list" ? "active" : ""
+                                        <a className={`nav-link ${Activetabindex === "/casestudies" ||
+                                            Activetabindex === "/casestudies/megalot" ||
+                                            Activetabindex === "/casestudies/filemaker" ||
+                                            Activetabindex === "/casestudies/speakinc" || 
+                                            Activetabindex === "/casestudies/multitoken" ||
+                                            Activetabindex === "/casestudies/easy-level" ||
+                                            Activetabindex === "/casestudies/maikeinc"? "active" : ""
                                         }`} activeclassName="active">
                                             {" "}
                                             Case studies <span className="sr-only">(current)</span>
