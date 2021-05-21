@@ -386,7 +386,7 @@
 }
 
 .navbar-light .navbar-nav .nav-item>i {
-    display: block;
+    display: none;
 }
 .navbar-light .navbar-nav .nav-link.active {
     color: #FF6B00 !important;

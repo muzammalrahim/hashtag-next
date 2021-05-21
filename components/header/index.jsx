@@ -205,7 +205,7 @@ alt="logo"
                                         href="/about-us"
 
                                     >
-                                        <a className="nav-link"
+                                        <a 
                                            className={`nav-link ${Activetabindex === "/about-us" || Activetabindex === "/about-us" ? "active" : ""
                                            }`} activeclassName="active">
                                             About Us <span className="sr-only">(current)</span>
@@ -222,7 +222,8 @@ alt="logo"
 
                                         ? "active" : ""
                                     }`} activeclassName="active"> Services <i className="fa fa-angle-down"
-                                                                              aria-hidden="true"></i></a></Link>
+                                            aria-hidden="true"></i></a></Link>
+                                    <i className="fa fa-angle-down" aria-hidden="true"></i>
                                     <ul className="submenu">
                                         <div className="row m-0">
                                             <div className="col-md-6 p-0">
