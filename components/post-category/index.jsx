@@ -4,10 +4,13 @@ import 'react-toastify/dist/ReactToastify.css';
 import $ from 'jquery';
 import axios from 'axios';
 import * as config from '../../config';
+import Link from 'next/link'
+import { withRouter } from "next/router";
 
 require('typeface-montserrat')
 
-export default class BlogCategories extends Component {
+
+class BlogCategories extends Component {
 
 
   constructor(props) {
@@ -23,8 +26,6 @@ export default class BlogCategories extends Component {
     this.get_categories();
   }
 
-
-
   //Get recent posts
   get_categories(){
     axios.get(config.myConfig.apiUrl+'blog/categories')
@@ -39,10 +40,12 @@ export default class BlogCategories extends Component {
     });
   }
 
-
-
-
-
+  navigate = (id) => {
+  this.props.router.push({
+    pathname: id,
+    // query: { id }
+  });
+  }
   render() {
 
     return (
@@ -53,7 +56,8 @@ export default class BlogCategories extends Component {
           {this.state.categories.map((cat, index) => { 
             return(
               <li className="cat-item cat-item-51 current-cat" key={index}>
-                <a aria-current="page" href={"/blogs/category/"+cat.slug}>{cat.name}</a>
+  
+         <a href="#" style={{cursor:"pointer"}} onClick={() =>{ this.navigate("/blogs/category/" + cat.slug)} }> {cat.name}</a> 
               </li>
             )
           })}
@@ -63,3 +67,5 @@ export default class BlogCategories extends Component {
     )
   }
 }
+
+export default withRouter(BlogCategories)

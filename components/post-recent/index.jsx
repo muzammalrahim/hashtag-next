@@ -4,10 +4,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import $ from 'jquery';
 import axios from 'axios';
 import * as config from '../../config.js';
-
+import { withRouter } from "next/router";
 require('typeface-montserrat')
 
-export default class BlogRecentPosts extends Component {
+ class BlogRecentPosts extends Component {
 
 
   constructor(props) {
@@ -44,7 +44,12 @@ export default class BlogRecentPosts extends Component {
     });
   }
 
-
+  navigate = (id) => {
+    this.props.router.push({
+      pathname: id,
+      // query: { id }
+    });
+    }
 
 
   render() {
@@ -55,7 +60,7 @@ export default class BlogRecentPosts extends Component {
           {this.state.recentPosts.map((post, index) => { 
             return(
               <li key={index}>
-                <a href={"/blogs/single/"+post.url}>{post.title}</a>
+              <a href="#" style={{cursor:"pointer"}} onClick={() =>{ this.navigate("/blogs/single/"+post.url)} }> {post.title}</a> 
               </li>
             )
           })}
@@ -64,3 +69,5 @@ export default class BlogRecentPosts extends Component {
     )
   }
 }
+
+export default withRouter(BlogRecentPosts)

@@ -13,6 +13,9 @@ import https from "https";
 import * as config from '../../../config';
 import Link from 'next/link'
 
+import axios from "axios";
+import { withRouter } from "next/router";
+
 require('typeface-montserrat')
 
 export async function getServerSideProps() {
@@ -28,7 +31,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "blog-home",
       },
     })
     .then((response) => {
@@ -39,7 +42,7 @@ export async function getServerSideProps() {
   };
 }
 
-export default class Singlepost extends Component {
+ class Singlepost extends Component {
   constructor(props) {
     super(props);
     if (typeof window === "undefined") {
@@ -47,6 +50,7 @@ export default class Singlepost extends Component {
     }
     let response = this.props;
     this.state = {
+      recentPosts: [],
       data: response.data.data,
       postData: {
         categories: [{ name: "", slug: "" }],
@@ -60,6 +64,7 @@ export default class Singlepost extends Component {
 
   componentDidMount() {
     this.shiftContent();
+    this.get_recentPosts();
     if (typeof window !== undefined) {
       window.addEventListener("resize", this.shiftContent);
     }
@@ -108,17 +113,56 @@ export default class Singlepost extends Component {
       });
   }
 
-  render() {
-    const meta = {
-      title: "Blogs - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
+  get_recentPosts(){
+    var category;
+    if(this.props.category != undefined){
+      category = this.props.category;
+    } else {
+      category = '';
+    }
+    axios.get(config.myConfig.apiUrl+'blog/posts/recent', {params: {category: category}})
+    .then((response) => {
+      // console.log(response.data);
+      const recentPosts = response.data.data.posts;
+      this.setState({ 
+        recentPosts: recentPosts
+      })
+    }).catch(error =>{
+      toast.error("Something went wrong.");
+    });
+  }
+
+  navigate = (id) => {
+    this.props.router.push({
+      pathname: id,
+      // query: { id }
+    });
+    }
+
+    changeCat = (singlePost) => {
+      
+      let postUrl = singlePost;
+      this.setState({ postData: {} });
+      Axios.get(config.myConfig.apiUrl + "blog/posts/single", {
+        params: { post_url: postUrl },
+      })
+        .then((response) => {
+          // console.log(response.data);
+          const postData = response.data.data;
+          this.setState({
+            postData: postData,
+            loader: false,
+          });
+        })
+        .catch((error) => {
+          console.log(error.response);
+          toast.error("Something went wrong.");
+        });
     };
+
+
+  render() {
+    
 
     const loader = (
       <div className="loader">
@@ -139,7 +183,6 @@ export default class Singlepost extends Component {
     //console.log(data)
     return (
       <div className="single-blog-main" id="single-blog-main">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}
@@ -253,7 +296,30 @@ export default class Singlepost extends Component {
                 <div className="col-12 col-sm-12 col-md-4 col-lg-4">
                   <div className="blog-sidebar">
                     <aside>
-                      <BlogRecentPosts></BlogRecentPosts>
+
+
+                    <div id="recent-posts-4" className="widget widget_recent_entries posts_holder">    
+        <h5 className="title-level-6 title-level-mobile text-left b-recent-posts">Recent Posts</h5>    
+        <ul>
+          {this.state.recentPosts.map((post, index) => { 
+            return(
+              <li key={index}>
+              <a href="#" style={{cursor:"pointer"}} 
+              
+              onClick={() => {
+                this.navigate(
+                  "/blogs/single/"+post.url
+                ),
+                  this.changeCat(post.url);
+              }}
+
+              > {post.title}</a> 
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+                    {/*<BlogRecentPosts></BlogRecentPosts>*/}  
                       <BlogCategories></BlogCategories>
                     </aside>
                   </div>
@@ -268,3 +334,5 @@ export default class Singlepost extends Component {
     );
   }
 }
+
+export default withRouter(Singlepost);
