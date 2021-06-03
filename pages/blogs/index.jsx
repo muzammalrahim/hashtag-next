@@ -127,10 +127,10 @@ export default class Blog extends Component {
             allPosts: allPosts,
             hasMoreItems: true,
             page: page + 1,
+            no_items:""
           });
         } else {
-          if (allPosts.length == 0) {
-            console.log("No posts found.");
+          if (allPosts.length === 0) {
             this.setState({
               hasMoreItems: false,
               no_items: "No posts found.",
@@ -138,13 +138,12 @@ export default class Blog extends Component {
           } else {
             this.setState({
               hasMoreItems: false,
+              no_items:""
             });
           }
         }
       })
       .catch((error) => {
-        // console.log(error.response);
-        console.log("API error.");
         toast.error("Something went wrong.");
       });
   }
@@ -171,16 +170,16 @@ export default class Blog extends Component {
           <div className="card" key={index}>
             <h5 className="card-title text-level-4 title-orange">
               <Link
-                href={"/blogs/single/[slug]"}
-                as={"/blogs/single/" + post.url}
+                href={"/blogs/[slug]"}
+                as={"/blogs/" + post.url}
               >
                 {post.title}
               </Link>
             </h5>
             <div className="blog-img">
               <Link
-                href={"/blogs/single/[slug]"}
-                as={"/blogs/single/" + post.url}
+                href={"/blogs/[slug]"}
+                as={"/blogs/" + post.url}
               >
                 <div
                   className="blog-thumb"
@@ -211,8 +210,8 @@ export default class Blog extends Component {
             <div className="card-body">
               <h4 className="card-title text-level-4 title-orange">
                 <Link
-                  href={"/blogs/single/[slug]"}
-                  as={"/blogs/single/" + post.url}
+                  href={"/blogs/[slug]"}
+                  as={"/blogs/" + post.url}
                 >
                   {post.title}
                 </Link>
@@ -224,8 +223,8 @@ export default class Blog extends Component {
               <p className="card-text">{post.excerpt}</p>
               <span className="cta-link">
                 <Link
-                  href={"/blogs/single/[slug]"}
-                  as={"/blogs/single/" + post.url}
+                  href={"/blogs/[slug]"}
+                  as={"/blogs/" + post.url}
                   className="shopify-sub-title"
                 >
                   <a className="shopify-sub-title">

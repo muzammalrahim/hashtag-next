@@ -24,7 +24,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "sevices-filemaker",
       },
     })
     .then((response) => {
@@ -167,7 +167,7 @@ export default class filemakerPage extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/file-maker/feature1.svg"
-                          alt="feature1"
+                          alt="FileMaker Database Conversions"
                         />
                         <h4 className="text-level-5 title-black">
                           FileMaker Database <br />
@@ -182,7 +182,7 @@ export default class filemakerPage extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/file-maker/feature2.svg"
-                          alt="feature2"
+                          alt="Migration to Filemaker Pro"
                         />
                         <h4 className="text-level-5 title-black">
                           Migration to <br />
@@ -197,7 +197,7 @@ export default class filemakerPage extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/file-maker/feature3.svg"
-                          alt="feature3"
+                          alt="FileMaker Go Mobile Development"
                         />
                         <h4 className="text-level-5 title-black">
                           FileMaker Go Mobile <br />
@@ -212,7 +212,7 @@ export default class filemakerPage extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/file-maker/feature4.svg"
-                          alt="feature4"
+                          alt="Build a new Filemaker Solution"
                         />
                         <h4 className="text-level-5 title-black">
                           Build a new <br />
@@ -232,7 +232,7 @@ export default class filemakerPage extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/file-maker/feature5.svg"
-                          alt="feature5"
+                          alt="Application Optimization"
                         />
                         <h4 className="text-level-5 title-black">
                           Application <br />
@@ -247,7 +247,7 @@ export default class filemakerPage extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/file-maker/feature6.svg"
-                          alt="feature6"
+                          alt="Update and Ongoing Support"
                         />
                         <h4 className="text-level-5 title-black">
                           Update & Ongoing <br />
@@ -262,7 +262,7 @@ export default class filemakerPage extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/file-maker/feature7.svg"
-                          alt="feature7"
+                          alt="Third Party Solutions Integration"
                         />
                         <h4 className="text-level-5 title-black">
                           Third Party <br />
@@ -415,7 +415,7 @@ export default class filemakerPage extends Component {
                     </h6>
                     <img
                       src="../images/file-maker/man-profile.svg"
-                      alt="expert1"
+                      alt="male profile"
                     />
                   </div>
                 </div>
@@ -424,7 +424,7 @@ export default class filemakerPage extends Component {
                     <h6>Selva V</h6>
                     <img
                       src="../images/file-maker/woman-profile.svg"
-                      alt="expert2"
+                      alt="female profile"
                     />
                   </div>
                 </div>

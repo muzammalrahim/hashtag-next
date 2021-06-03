@@ -28,7 +28,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "casestudies-easy-level",
       },
     })
     .then((response) => {
@@ -58,16 +58,6 @@ export default class Easylevel extends Component {
 
 
   render() {
-    const meta = {
-      title: 'Easy level Case study - FullStack Web Development| Bay area, California',
-      meta: {
-        charset: 'utf-8',
-          name: {
-            keywords: 'Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california'
-        }
-      }
-    };
-
     const { data } = this.state;
     const settings = { 
       infinite: true,
@@ -94,8 +84,9 @@ export default class Easylevel extends Component {
     return (
       <div className="case-study easylevel" id="easylevel-case-study">
         <Header
-          title={meta?.title}
-          keywords={meta?.name?.keywords}
+          title={data.title}
+          description={data.description}
+          keywords={data.keywords}
         ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
@@ -307,7 +298,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider.svg"
-                              alt="easy-level1"
+                              alt="decenterakized world"
                             />
                           </div>
                         </div>
@@ -315,7 +306,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider2.svg"
-                              alt="easy-level2"
+                              alt="design pattern"
                             />
                           </div>
                         </div>
@@ -323,7 +314,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider3.svg"
-                              alt="easy-level3"
+                              alt="work flow"
                             />
                           </div>
                         </div>
@@ -331,7 +322,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider4.svg"
-                              alt="easy-level4"
+                              alt="sign up metamask"
                             />
                           </div>
                         </div>
@@ -339,7 +330,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider5.svg"
-                              alt="easy-level5"
+                              alt="affiliate"
                             />
                           </div>
                         </div>
@@ -347,7 +338,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider6.svg"
-                              alt="easy-level6"
+                              alt="earning points"
                             />
                           </div>
                         </div>

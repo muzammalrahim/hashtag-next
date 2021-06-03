@@ -17,21 +17,21 @@ const { Carousel } = dynamic(() => import("3d-react-carousal"), { ssr: false });
 //  });
     let slides = [
      
-          <img src="../images/wordpress/67-baltimore.png" alt="slider1" />,
+          <img src="../images/wordpress/67-baltimore.png" alt="catering" />,
        
-          <img src="../images/wordpress/face-shield.png" alt="slider2" />,
+          <img src="../images/wordpress/face-shield.png" alt="Face shield" />,
      
-          <img src="../images/wordpress/stories-upon.png" alt="slider3" />,
+          <img src="../images/wordpress/stories-upon.png" alt="stories writing" />,
      
-          <img src="../images/wordpress/global-moonshot.png" alt="slider4" />,
+          <img src="../images/wordpress/global-moonshot.png" alt="global moonshot" />,
      
-          <img src="../images/wordpress/society-kitchella.png" alt="slider5" />,
+          <img src="../images/wordpress/society-kitchella.png" alt="society ketchen" />,
       
           <img
             src="../images/wordpress/sharon-get-organised.png"
-            alt="slider6"
+            alt="online shopping"
           />,
-         <img src="../images/wordpress/fameleon.png" alt="slider7" />
+         <img src="../images/wordpress/fameleon.png" alt="Fashion and lifestyle" />
     ]
  
     return (

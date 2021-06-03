@@ -28,7 +28,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "casestudies-maikeinc",
       },
     })
     .then((response) => {
@@ -50,17 +50,6 @@ export default class Maikeinc extends Component {
   componentDidMount() {}
 
   render() {
-    const meta = {
-      title:
-        "Maike Inc Case study - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
     const { data } = this.state;
     const settings = {
       infinite: true,
@@ -86,7 +75,11 @@ export default class Maikeinc extends Component {
 
     return (
       <div className="case-study maikeinc" id="maikeinc-case-study">
-        <Header title={meta?.title} keywords={meta?.name?.keywords}></Header>
+        <Header
+          title={data.title}
+          description={data.description}
+          keywords={data.keywords}
+        ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
             <div className="container">
@@ -234,7 +227,7 @@ export default class Maikeinc extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/maikeinc/maikeinc-1.svg"
-                              alt="maikeinc-1"
+                              alt="Design"
                             />
                           </div>
                         </div>
@@ -242,7 +235,7 @@ export default class Maikeinc extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/maikeinc/maikeinc-2.svg"
-                              alt="maikeinc-2"
+                              alt="Design"
                             />
                           </div>
                         </div>
@@ -250,7 +243,7 @@ export default class Maikeinc extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/maikeinc/maikeinc-3.svg"
-                              alt="maikeinc-3"
+                              alt="Design"
                             />
                           </div>
                         </div>
@@ -258,7 +251,7 @@ export default class Maikeinc extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/maikeinc/maikeinc-4.svg"
-                              alt="maikeinc-4"
+                              alt="Design"
                             />
                           </div>
                         </div>
@@ -345,7 +338,7 @@ export default class Maikeinc extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/maikeinc/feature1.svg"
-                          alt="feature1"
+                          alt="requirement analysis"
                         />
                         <h4 className="text-level-5 title-black">
                           Clear Requirement Analysis
@@ -359,7 +352,7 @@ export default class Maikeinc extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/maikeinc/feature2.svg"
-                          alt="feature2"
+                          alt="responsive design"
                         />
                         <h4 className="text-level-5 title-black">
                           Responsive Web Design
@@ -373,7 +366,7 @@ export default class Maikeinc extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/maikeinc/feature3.svg"
-                          alt="feature3"
+                          alt="user experience"
                         />
                         <h4 className="text-level-5 title-black">
                           Excellent User Experience
@@ -387,7 +380,7 @@ export default class Maikeinc extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/maikeinc/feature4.svg"
-                          alt="feature4"
+                          alt="smart work"
                         />
                         <h4 className="text-level-5 title-black">
                           Smart NLP Integration
@@ -406,7 +399,7 @@ export default class Maikeinc extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/maikeinc/feature5.svg"
-                          alt="feature5"
+                          alt="seo"
                         />
                         <h4 className="text-level-5 title-black">
                           Seo <br />
@@ -421,7 +414,7 @@ export default class Maikeinc extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/maikeinc/feature6.svg"
-                          alt="feature6"
+                          alt="dashboard"
                         />
                         <h4 className="text-level-5 title-black">
                           Admin <br />

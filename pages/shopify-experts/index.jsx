@@ -224,7 +224,7 @@ export default class Shopify extends Component {
                         <br />
                         <img
                           src="images/shopify/shopify-quoute.svg"
-                          alt="quote"
+                          alt="shopify quote"
                         />
                       </span>
                     </h1>

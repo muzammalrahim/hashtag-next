@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import Header from '../../../components/header/index.jsx';
-import Footer from '../../../components/footer/index.jsx';
-import Underconstruction from '../../../components/under-construction/index.jsx';
-import BlogCategories from '../../../components/post-category/index.jsx';
-import BlogRecentPosts from '../../../components/post-recent/index.jsx';
+import Header from '../../components/header';
+import Footer from "../../components/footer/index.jsx";
+import BlogCategories from "../../components/post-category/index.jsx";
+import BlogRecentPosts from "../../components/post-recent/index.jsx";
 import DocumentMeta from 'react-document-meta';
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import $ from 'jquery';
 import Axios from 'axios';
 import https from "https";
-import * as config from '../../../config';
+import * as config from '../../config';
 import Link from 'next/link'
 
 require('typeface-montserrat')
@@ -65,8 +64,7 @@ export default class Singlepost extends Component {
     }
     if (window.location.pathname) {
       let pathNames = window.location.pathname.split("/");
-      console.log("path", pathNames);
-      let singlePost = pathNames[3];
+      let singlePost = pathNames[2];
       this.setState({ postUrl: singlePost });
       this.get_postData(singlePost);
     }
@@ -95,7 +93,6 @@ export default class Singlepost extends Component {
       params: { post_url: postUrl },
     })
       .then((response) => {
-        // console.log(response.data);
         const postData = response.data.data;
         this.setState({
           postData: postData,
@@ -103,7 +100,6 @@ export default class Singlepost extends Component {
         });
       })
       .catch((error) => {
-        console.log(error.response);
         toast.error("Something went wrong.");
       });
   }
@@ -122,12 +118,11 @@ export default class Singlepost extends Component {
         Loading
       </div>
     );
-    let { postData, data } = this.state;
+    let { postData, data, postUrl } = this.state;
     if(postData.image){
       postData.image = postData.image.replace('http://','https://');
     }
-
-    //console.log(data)
+  
     return (
       <div className="single-blog-main" id="single-blog-main">
         <Header
@@ -174,7 +169,7 @@ export default class Singlepost extends Component {
                         ) : (
                           <>
                             <h5 className="card-title text-level-4 title-orange">
-                              {postData.title}
+                              {postData?.title}
                             </h5>
                             <div className="blog-meta">
                               <ul>

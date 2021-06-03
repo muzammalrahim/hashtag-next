@@ -28,7 +28,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "casestudies-multitoken",
       },
     })
     .then((response) => {
@@ -50,17 +50,7 @@ export default class Multitoken extends Component {
   componentDidMount() {}
 
   render() {
-    const meta = {
-      title:
-        "Multi Token Case study - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
+
     const { data } = this.state;
     const settings = {
       infinite: true,
@@ -86,7 +76,11 @@ export default class Multitoken extends Component {
 
     return (
       <div className="case-study multi-token" id="case-study">
-        <Header title={meta?.title} keywords={meta?.name?.keywords}></Header>
+        <Header
+          title={data.title}
+          description={data.description}
+          keywords={data.keywords}
+        ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
             <div className="container">

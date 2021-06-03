@@ -20,7 +20,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "sevices-design",
       },
     })
     .then((response) => {
@@ -117,7 +117,7 @@ export default class DesignPage extends Component {
               <div className="col-lg-5 col-md-12 col-sm-12 text-center ">
                 <img
                   src="/images/design/showcase1.svg"
-                  alt="showcase1"
+                  alt="Showcase Of Your Business"
                   className="img-fluid shopify-image mobile-image-border storefront-img"
                 />
               </div>
@@ -141,7 +141,7 @@ export default class DesignPage extends Component {
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         src="../images/design/expertise-1.svg"
-                        alt="expertise1"
+                        alt="Research and Unique Strategy"
                       />
                       <h4 className="text-level-5 title-black">
                         Research & Unique Strategy
@@ -161,7 +161,7 @@ export default class DesignPage extends Component {
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         src="../images/design/expertise-2.svg"
-                        alt="expertise2"
+                        alt="Design Thinking"
                       />
                       <h4 className="text-level-5 title-black">
                         Design Thinking
@@ -181,7 +181,7 @@ export default class DesignPage extends Component {
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         src="../images/design/expertise-3.svg"
-                        alt="expertise3"
+                        alt="Architecture"
                       />
                       <h4 className="text-level-5 title-black">Architecture</h4>
                       <hr class="hashtag-underline ml-2"></hr>
@@ -199,7 +199,7 @@ export default class DesignPage extends Component {
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         src="../images/design/expertise-4.svg"
-                        alt="expertise4"
+                        alt="Wireframing"
                       />
                       <h4 className="text-level-5 title-black">Wireframing</h4>
                       <hr class="hashtag-underline ml-2"></hr>
@@ -217,7 +217,7 @@ export default class DesignPage extends Component {
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         src="../images/design/expertise7.svg"
-                        alt="expertise5"
+                        alt="Prototyping"
                       />
                       <h4 className="text-level-5 title-black">Prototyping</h4>
                       <hr class="hashtag-underline ml-2"></hr>
@@ -235,7 +235,7 @@ export default class DesignPage extends Component {
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         src="../images/design/expertise-5.svg"
-                        alt="expertise6"
+                        alt="Graphic Designing"
                       />
                       <h4 className="text-level-5 title-black">
                         Graphic Designing

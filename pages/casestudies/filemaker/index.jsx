@@ -29,7 +29,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "casestudies-filemaker",
       },
     })
     .then((response) => {
@@ -51,17 +51,6 @@ export default class Filemaker extends Component {
   componentDidMount() {}
 
   render() {
-    const meta = {
-      title:
-        "Filemaker Case study - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
 const { data } = this.state;
     const settings = {
       infinite: true,
@@ -87,7 +76,11 @@ const { data } = this.state;
 
     return (
       <div className="case-study filemaker" id="filemaker-case-study">
-        <Header title={meta?.title} keywords={meta?.name?.keywords}></Header>
+        <Header
+          title={data.title}
+          description={data.description}
+          keywords={data.keywords}
+        ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
             <div className="container">
@@ -315,7 +308,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured1.svg"
-                          alt="featured1"
+                          alt="Easy to use"
                         />
                         <h4 className="text-level-5 title-black">
                           Easy to <br />
@@ -330,7 +323,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured2.svg"
-                          alt="featured2"
+                          alt="interface design"
                         />
                         <h4 className="text-level-5 title-black">
                           Redesigned <br />
@@ -345,7 +338,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured3.svg"
-                          alt="featured3"
+                          alt="automatic data sync"
                         />
                         <h4 className="text-level-5 title-black">
                           Automatic data synchronization
@@ -359,7 +352,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured4.svg"
-                          alt="featured4"
+                          alt="online offline availibility"
                         />
                         <h4 className="text-level-5 title-black">
                           Available offline
@@ -380,7 +373,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured5.svg"
-                          alt="featured5"
+                          alt="centeralized data"
                         />
                         <h4 className="text-level-5 title-black">
                           Centralised
@@ -396,7 +389,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured6.svg"
-                          alt="featured6"
+                          alt="future changes flexibility"
                         />
                         <h4 className="text-level-5 title-black">
                           Flexible for future requirements

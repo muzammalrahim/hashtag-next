@@ -28,7 +28,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "casestudies-megalot",
       },
     })
     .then((response) => {
@@ -50,17 +50,6 @@ export default class Megalot extends Component {
   componentDidMount() {}
 
   render() {
-    const meta = {
-      title:
-        "Megalot Case study - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
  const { data } = this.state;
     const settings = {
       infinite: true,
@@ -86,7 +75,11 @@ export default class Megalot extends Component {
 
     return (
       <div className="case-study megalot" id="megalot-case-study">
-        <Header title={meta?.title} keywords={meta?.name?.keywords}></Header>
+        <Header
+          title={data.title}
+          description={data.description}
+          keywords={data.keywords}
+        ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
             <div className="container">
@@ -285,7 +278,7 @@ export default class Megalot extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/megalot/megalot-1.jpg"
-                              alt="megalot-1"
+                              alt="design"
                             />
                           </div>
                         </div>
@@ -293,7 +286,7 @@ export default class Megalot extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/megalot/megalot-2.jpg"
-                              alt="megalot-2"
+                              alt="design"
                             />
                           </div>
                         </div>
@@ -301,7 +294,7 @@ export default class Megalot extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/megalot/megalot-3.jpg"
-                              alt="megalot-3"
+                              alt="design"
                             />
                           </div>
                         </div>
@@ -309,7 +302,7 @@ export default class Megalot extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/megalot/megalot-4.jpg"
-                              alt="megalot-4"
+                              alt="design"
                             />
                           </div>
                         </div>
@@ -317,7 +310,7 @@ export default class Megalot extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/megalot/megalot-5.jpg"
-                              alt="megalot-5"
+                              alt="design"
                             />
                           </div>
                         </div>
@@ -414,7 +407,7 @@ export default class Megalot extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/megalot/feature1.svg"
-                          alt="feature1"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           Ease <br />
@@ -433,7 +426,7 @@ export default class Megalot extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/maikeinc/feature2.svg"
-                          alt="feature2"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           Secure <br />
@@ -451,7 +444,7 @@ export default class Megalot extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/maikeinc/feature3.svg"
-                          alt="feature3"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           Multi User <br />
@@ -470,7 +463,7 @@ export default class Megalot extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/maikeinc/feature4.svg"
-                          alt="feature4"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           Secure <br />
@@ -488,7 +481,7 @@ export default class Megalot extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/maikeinc/feature6.svg"
-                          alt="feature5"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           Fair <br />

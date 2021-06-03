@@ -547,6 +547,7 @@ export default class Home extends Component {
 					   >
 						 <img
 						   src="images/home/linkedin.svg"
+						   alt="linkedin"
 						   className="pl-2 pr-2 contact-linkedin"
 						 />
 					   </a>
@@ -557,6 +558,7 @@ export default class Home extends Component {
 						 <img
 						   src="images/home/facebook-logo.svg"
 						   className="conatct-fb"
+						   alt="facebook"
 						 />
 					   </a>
 					 </div>
@@ -625,6 +627,7 @@ export default class Home extends Component {
 						 <img
 						   src="images/home/linkedin.svg"
 						   className="pl-2 pr-2 contact-linkedin"
+						   alt="linkedin"
 						 />
 					   </a>
 					   <a
@@ -634,6 +637,7 @@ export default class Home extends Component {
 						 <img
 						   src="images/home/facebook-logo.svg"
 						   className="conatct-fb"
+						   alt="facebook"
 						 />
 					   </a>
 					 </div>
@@ -691,6 +695,7 @@ export default class Home extends Component {
 					   >
 						 <img
 						   src="images/home/linkedin.svg"
+						   alt="linkedin"
 						   className="pl-2 pr-2 contact-linkedin"
 						 />
 					   </a>
@@ -701,6 +706,7 @@ export default class Home extends Component {
 						 <img
 						   src="images/home/facebook-logo.svg"
 						   className="conatct-fb"
+						   alt="facebook"
 						 />
 					   </a>
 					 </div>

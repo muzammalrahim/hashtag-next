@@ -24,7 +24,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "sevices-wordpress",
       },
     })
     .then((response) => {
@@ -80,7 +80,6 @@ export default class Shopify extends Component {
           alt: "slider7",
         }
       ];
-	//   console.log(data)
     return (
 
       <div className="wp-main" id="wp-main">

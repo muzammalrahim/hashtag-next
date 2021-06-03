@@ -135,7 +135,6 @@ export default class Header extends Component {
 
         let {tabindex, Activetabindex} = this.state;
         const {title, description, keywords} = this.props
-        console.log(title)
         return (
           <header className="header-container">
             <Head>
@@ -220,21 +219,6 @@ alt="logo"
                   id="navbarTogglerDemo03"
                 >
                   <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li className="nav-item">
-                      <Link href="/about-us">
-                        <a
-                          className={`nav-link ${
-                            Activetabindex === "/about-us" ||
-                            Activetabindex === "/about-us"
-                              ? "active"
-                              : ""
-                          }`}
-                          activeclassName="active"
-                        >
-                          About Us <span className="sr-only">(current)</span>
-                        </a>
-                      </Link>
-                    </li>
                     <li className="nav-item">
                       <Link href="/sevices">
                         <a
@@ -324,7 +308,6 @@ alt="logo"
                         <a
                           className={`nav-link ${
                             Activetabindex === "/blogs" ||
-                            Activetabindex === "/blogs/single/[slug]" ||
                             Activetabindex === "/blogs/category/[slug]"
                               ? "active"
                               : ""
@@ -368,6 +351,21 @@ alt="logo"
                           {" "}
                           Case studies{" "}
                           <span className="sr-only">(current)</span>
+                        </a>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link href="/about-us">
+                        <a
+                          className={`nav-link ${
+                            Activetabindex === "/about-us" ||
+                            Activetabindex === "/about-us"
+                              ? "active"
+                              : ""
+                          }`}
+                          activeclassName="active"
+                        >
+                          About Us <span className="sr-only">(current)</span>
                         </a>
                       </Link>
                     </li>

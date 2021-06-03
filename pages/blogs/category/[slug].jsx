@@ -76,9 +76,7 @@ if (typeof window === "undefined") {
     }
     if (window.location.pathname) {
       let pathNames = window.location.pathname.split("/");
-      // console.log("path", pathNames);
       let singlePost = decodeURI(pathNames[3]);
-      // console.log(decodeURI(singlePost))
       this.setState({ category: singlePost });
       this.get_allPosts(singlePost);
     }
@@ -142,34 +140,31 @@ if (typeof window === "undefined") {
     Axios.get(url, {params: {page: page, category: category, keyword: keyword}})
     .then((response) => {
       const allPosts = this.state.allPosts;
-      // console.log("respnes",response)
       response.data.data.posts.map((data) => {
           allPosts.push(data);
       });
-
       if(response.data.data.more_exists == true) {
           this.setState({
             allPosts: allPosts,
             hasMoreItems: true,
-            page: page+1
+            page: page + 1,
+            no_items: ""
           });
       } else {
-        if(allPosts.length == 0) {
-          // console.log('No posts found.');
+        if (allPosts && allPosts.length === 0) {
           this.setState({
             hasMoreItems: false,
-            no_items: 'No posts found.'
+            no_items: "No posts found.",
           });
         } else {
           this.setState({
             hasMoreItems: false,
+            no_items:""
           });
         }
       }
 
     }).catch(error =>{
-      // console.log(error.response);
-      // console.log('API error.');
       toast.error("Something went wrong.");
     });
   }
@@ -177,7 +172,6 @@ if (typeof window === "undefined") {
 
 
   render() {
-    
     const loader = <div className="loader"><div className="spinner"><div></div><div></div><div></div><div></div></div>Loading</div>;
 
     var post_lists = [];
@@ -188,16 +182,16 @@ if (typeof window === "undefined") {
           <div className="card" key={index}>
             <h5 className="card-title text-level-4 title-orange">
               <Link
-                href={"/blogs/single/[slug]"}
-                as={"/blogs/single/" + post.url}
+                href={"/blogs/[slug]"}
+                as={"/blogs/" + post.url}
               >
                 {post.title}
               </Link>
             </h5>
             <div className="blog-img">
               <Link
-                href={"/blogs/single/[slug]"}
-                as={"/blogs/single/" + post.url}
+                href={"/blogs/[slug]"}
+                as={"/blogs/" + post.url}
               >
                 <div
                   className="blog-thumb"
@@ -227,8 +221,8 @@ if (typeof window === "undefined") {
             <div className="card-body">
               <h4 className="card-title text-level-4 title-orange">
                 <Link
-                  href={"/blogs/single/[slug]"}
-                  as={"/blogs/single/" + post.url}
+                  href={"/blogs/[slug]"}
+                  as={"/blogs/" + post.url}
                 >
                   {post.title}
                 </Link>
@@ -240,8 +234,8 @@ if (typeof window === "undefined") {
               <p className="card-text">{post.excerpt}</p>
               <span className="cta-link">
                 <Link
-                  href={"/blogs/single/[slug]"}
-                  as={"/blogs/single/" + post.url}
+                  href={"/blogs/[slug]"}
+                  as={"/blogs/" + post.url}
                   className="shopify-sub-title"
                 >
                   <a>

@@ -28,7 +28,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "casestudies-speakinc",
       },
     })
     .then((response) => {
@@ -50,17 +50,6 @@ export default class Speakinc extends Component {
   componentDidMount() {}
 
   render() {
-    const meta = {
-      title:
-        "Speakinc Case study - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
 const { data } = this.state;
     const settings = {
       infinite: true,
@@ -87,8 +76,9 @@ const { data } = this.state;
     return (
       <div className="case-study" id="case-study">
         <Header
-          title={meta?.title}
-          keywords={meta?.name?.keywords}
+          title={data.title}
+          description={data.description}
+          keywords={data.keywords}
         ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
@@ -171,7 +161,7 @@ const { data } = this.state;
                         <div className="project-spec-col">
                           <img
                             src="/images/case-studies/speakinc/feature-icon1.svg"
-                            alt="feature-icon1"
+                            alt="Design"
                           />
                           <span>Easy navigation</span>
                         </div>
@@ -180,7 +170,7 @@ const { data } = this.state;
                         <div className="project-spec-col">
                           <img
                             src="/images/case-studies/speakinc/feature-icon2.svg"
-                            alt="feature-icon2"
+                            alt="Design"
                           />
                           <span>Dynamic Designs</span>
                         </div>
@@ -189,7 +179,7 @@ const { data } = this.state;
                         <div className="project-spec-col">
                           <img
                             src="/images/case-studies/speakinc/feature-icon3.svg"
-                            alt="feature-icon3"
+                            alt="Design"
                           />
                           <span>Responsive Design</span>
                         </div>
@@ -198,7 +188,7 @@ const { data } = this.state;
                         <div className="project-spec-col">
                           <img
                             src="/images/case-studies/speakinc/feature-icon4.svg"
-                            alt="feature-icon4"
+                            alt="Design"
                           />
                           <span>Trendy, intuitive design</span>
                         </div>
@@ -238,7 +228,7 @@ const { data } = this.state;
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/speakinc/speakinc-1.svg"
-                              alt="speakinc-1"
+                              alt="Design"
                             />
                           </div>
                         </div>
@@ -246,7 +236,7 @@ const { data } = this.state;
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/speakinc/speakinc-2.svg"
-                              alt="speakinc-2"
+                              alt="Design"
                             />
                           </div>
                         </div>
@@ -254,7 +244,7 @@ const { data } = this.state;
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/speakinc/speakinc-3.svg"
-                              alt="speakinc-3"
+                              alt="Design"
                             />
                           </div>
                         </div>
@@ -262,7 +252,7 @@ const { data } = this.state;
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/speakinc/speakinc-4.svg"
-                              alt="speakinc-4"
+                              alt="Design"
                             />
                           </div>
                         </div>
@@ -270,7 +260,7 @@ const { data } = this.state;
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/speakinc/speakinc-5.svg"
-                              alt="speakinc-5"
+                              alt="Design"
                             />
                           </div>
                         </div>
@@ -445,7 +435,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/speakinc/feature1.svg"
-                          alt="feature1"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           User Friendly <br />
@@ -463,7 +453,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/speakinc/feature2.svg"
-                          alt="feature2"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           Easy <br />
@@ -481,7 +471,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/speakinc/feature3.svg"
-                          alt="feature3"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           Portfolio <br />
@@ -500,7 +490,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/speakinc/feature4.svg"
-                          alt="feature4"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">Blogs</h4>
                         <p>
@@ -521,7 +511,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/speakinc/feature5.svg"
-                          alt="feature5"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           Hubspot Form Integrations{" "}
@@ -538,7 +528,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/speakinc/feature6.svg"
-                          alt="feature6"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           Weekly Speakers and Slider Speakers
@@ -555,7 +545,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/speakinc/feature7.svg"
-                          alt="feature7"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           Social Media integrations

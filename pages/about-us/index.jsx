@@ -41,7 +41,6 @@ export default class About extends Component {
     this.state = {
       data: response.data.data,
     };
-    console.log('props: ',props);
   }
 
   render() {
@@ -99,7 +98,7 @@ export default class About extends Component {
               <div className="col-xxl-6 col-lg-6 col-md-12 col-sm-12">
                 <div className="about-section-2">
                   <div className="about-section-2-left">
-                    <img src="/images/about/web.svg" alt="values1" />
+                    <img src="/images/about/web.svg" alt="wev" />
                   </div>
                   <div className="about-section-2-middle"></div>
                   <div className="about-section-2-content">
@@ -118,7 +117,7 @@ export default class About extends Component {
               <div className="col-xxl-6 col-lg-6 col-md-12 col-sm-12">
                 <div className="about-section-2">
                   <div className="about-section-2-left">
-                    <img src="/images/about/value.svg" alt="values2" />
+                    <img src="/images/about/value.svg" alt="We value you" />
                   </div>
                   <div className="about-section-2-middle"></div>
                   <div className="about-section-2-content">
@@ -138,7 +137,7 @@ export default class About extends Component {
               <div className=" col-xxl-6 col-lg-6 col-md-12 col-sm-12">
                 <div className="about-section-2 about-section-2-last">
                   <div className="about-section-2-left">
-                    <img src="/images/about/global.svg" alt="values3" />
+                    <img src="/images/about/global.svg" alt="glob" />
                   </div>
                   <div className="about-section-2-middle"></div>
                   <div className="about-section-2-content">
