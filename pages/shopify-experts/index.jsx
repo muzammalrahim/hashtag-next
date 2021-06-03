@@ -47,24 +47,27 @@ export default class Shopify extends Component {
     const { data } = this.state;
 
     const latestWork = [
-        {
-          id: 1,
-          src: "../images/shopify/together-home.jpg",
-          alt: "slider1",
-        },{
-          id: 2,
-          src: "../images/shopify/warped-table-s.jpg",
-          alt: "slider2",
-        },{
-          id: 3,
-          src: "../images/shopify/shopurbanalchemy.jpg",
-          alt: "slider3",
-        },{
-          id: 4,
-          src: "../images/shopify/berrybay.jpg",
-          alt: "slider4",
-        }
-      ];
+      {
+        id: 1,
+        src: "../images/shopify/together-home.jpg",
+        alt: "Home",
+      },
+      {
+        id: 2,
+        src: "../images/shopify/warped-table-s.jpg",
+        alt: "warped table",
+      },
+      {
+        id: 3,
+        src: "../images/shopify/shopurbanalchemy.jpg",
+        alt: "jewellery",
+      },
+      {
+        id: 4,
+        src: "../images/shopify/berrybay.jpg",
+        alt: "blueberry android tv",
+      },
+    ];
 
     return (
       <div className="shopify-main" id="shopify-main">
