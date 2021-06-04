@@ -58,32 +58,32 @@ export default class Shopify extends Component {
       {
         id: 2,
         src: "../images/wordpress/face-shield.png",
-        alt: "Wordpress Web Design",
+        alt: "custom wordpress development",
       },
       {
         id: 3,
         src: "../images/wordpress/stories-upon.png",
-        alt: "Wordpress Web Design",
+        alt: "wp theme development",
       },
       {
         id: 4,
         src: "../images/wordpress/global-moonshot.png",
-        alt: "Wordpress Web Design",
+        alt: "wp plugin development",
       },
       {
         id: 5,
         src: "../images/wordpress/society-kitchella.png",
-        alt: "Wordpress Web Design",
+        alt: "wordpress plugin development",
       },
       {
         id: 6,
         src: "../images/wordpress/sharon-get-organised.png",
-        alt: "Wordpress Web Design",
+        alt: "wordpress design and development",
       },
       {
         id: 7,
         src: "../images/wordpress/fameleon.png",
-        alt: "Wordpress Web Design",
+        alt: "wp theme development",
       },
     ];
     return (

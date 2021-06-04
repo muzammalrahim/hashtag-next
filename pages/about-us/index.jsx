@@ -98,7 +98,10 @@ export default class About extends Component {
               <div className="col-xxl-6 col-lg-6 col-md-12 col-sm-12">
                 <div className="about-section-2">
                   <div className="about-section-2-left">
-                    <img src="/images/about/web.svg" alt="web" />
+                    <img
+                      src="/images/about/web.svg"
+                      alt="Full Stack Web Application Development"
+                    />
                   </div>
                   <div className="about-section-2-middle"></div>
                   <div className="about-section-2-content">
@@ -119,7 +122,7 @@ export default class About extends Component {
                   <div className="about-section-2-left">
                     <img
                       src="/images/about/value.svg"
-                      alt="About Our Company"
+                      alt="Full Stack Development Company"
                     />
                   </div>
                   <div className="about-section-2-middle"></div>
@@ -142,7 +145,7 @@ export default class About extends Component {
                   <div className="about-section-2-left">
                     <img
                       src="/images/about/global.svg"
-                      alt="About Our Company"
+                      alt="Full Stack Application"
                     />
                   </div>
                   <div className="about-section-2-middle"></div>

@@ -266,7 +266,7 @@ export default class DesignPage extends Component {
                 <div className="dp-on-sm">
                   <img
                     src="/images/design/showcase.svg"
-                    alt="showcase"
+                    alt="design prototyping"
                     className="img-fluid shopify-image mobile-image-border storefront-img"
                   />
                 </div>
@@ -316,7 +316,7 @@ export default class DesignPage extends Component {
               <div className="col-lg-5 col-md-12 col-sm-12 text-center hd-on-sm">
                 <img
                   src="/images/design/showcase.svg"
-                  alt="showcase"
+                  alt="website design"
                   className="img-fluid shopify-image mobile-image-border storefront-img"
                 />
               </div>
