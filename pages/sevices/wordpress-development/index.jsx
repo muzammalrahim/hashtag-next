@@ -53,37 +53,37 @@ export default class Shopify extends Component {
       {
         id: 1,
         src: "../images/wordpress/67-baltimore.png",
-        alt: "catering",
+        alt: "Wordpress Web Design",
       },
       {
         id: 2,
         src: "../images/wordpress/face-shield.png",
-        alt: "Face shield",
+        alt: "Wordpress Web Design",
       },
       {
         id: 3,
         src: "../images/wordpress/stories-upon.png",
-        alt: "stories writing",
+        alt: "Wordpress Web Design",
       },
       {
         id: 4,
         src: "../images/wordpress/global-moonshot.png",
-        alt: "global moonshot",
+        alt: "Wordpress Web Design",
       },
       {
         id: 5,
         src: "../images/wordpress/society-kitchella.png",
-        alt: "slider5",
+        alt: "Wordpress Web Design",
       },
       {
         id: 6,
         src: "../images/wordpress/sharon-get-organised.png",
-        alt: "society kitchen",
+        alt: "Wordpress Web Design",
       },
       {
         id: 7,
         src: "../images/wordpress/fameleon.png",
-        alt: "Fashion and lifestyle",
+        alt: "Wordpress Web Design",
       },
     ];
     return (

@@ -50,22 +50,22 @@ export default class Shopify extends Component {
       {
         id: 1,
         src: "../images/shopify/together-home.jpg",
-        alt: "Home",
+        alt: "Shopify Experts",
       },
       {
         id: 2,
         src: "../images/shopify/warped-table-s.jpg",
-        alt: "warped table",
+        alt: "Shopify Experts",
       },
       {
         id: 3,
         src: "../images/shopify/shopurbanalchemy.jpg",
-        alt: "jewellery",
+        alt: "Shopify Experts",
       },
       {
         id: 4,
         src: "../images/shopify/berrybay.jpg",
-        alt: "blueberry android tv",
+        alt: "Shopify Experts",
       },
     ];
 

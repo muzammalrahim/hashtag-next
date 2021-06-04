@@ -98,7 +98,7 @@ export default class About extends Component {
               <div className="col-xxl-6 col-lg-6 col-md-12 col-sm-12">
                 <div className="about-section-2">
                   <div className="about-section-2-left">
-                    <img src="/images/about/web.svg" alt="wev" />
+                    <img src="/images/about/web.svg" alt="web" />
                   </div>
                   <div className="about-section-2-middle"></div>
                   <div className="about-section-2-content">
@@ -117,7 +117,10 @@ export default class About extends Component {
               <div className="col-xxl-6 col-lg-6 col-md-12 col-sm-12">
                 <div className="about-section-2">
                   <div className="about-section-2-left">
-                    <img src="/images/about/value.svg" alt="We value you" />
+                    <img
+                      src="/images/about/value.svg"
+                      alt="About Our Company"
+                    />
                   </div>
                   <div className="about-section-2-middle"></div>
                   <div className="about-section-2-content">
@@ -137,7 +140,10 @@ export default class About extends Component {
               <div className=" col-xxl-6 col-lg-6 col-md-12 col-sm-12">
                 <div className="about-section-2 about-section-2-last">
                   <div className="about-section-2-left">
-                    <img src="/images/about/global.svg" alt="glob" />
+                    <img
+                      src="/images/about/global.svg"
+                      alt="About Our Company"
+                    />
                   </div>
                   <div className="about-section-2-middle"></div>
                   <div className="about-section-2-content">
@@ -203,7 +209,10 @@ export default class About extends Component {
                   <div className="col-12 col-lg-3 col-md-6 hash-team-first-right">
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
-                        <img src="/images/about/bas.svg" alt="architects" />
+                        <img
+                          src="/images/about/bas.svg"
+                          alt="About Our Company"
+                        />
                       </div>
                       <h6 className="title-level-6 title-level-mobile">
                         BAs &
