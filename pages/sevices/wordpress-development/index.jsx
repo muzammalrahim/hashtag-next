@@ -50,36 +50,42 @@ export default class Shopify extends Component {
 	  let { data } = this.state;
 
 	  const recentWork = [
-        {
-          id: 1,
-          src: "../images/wordpress/67-baltimore.png",
-          alt: "slider1",
-        },{
-          id: 2,
-          src: "../images/wordpress/face-shield.png",
-          alt: "slider2",
-        },{
-          id: 3,
-          src: "../images/wordpress/stories-upon.png",
-          alt: "slider3",
-        },{
-          id: 4,
-          src: "../images/wordpress/global-moonshot.png",
-          alt: "slider4",
-        },{
-          id: 5,
-          src: "../images/wordpress/society-kitchella.png",
-          alt: "slider5",
-        },{
-          id: 6,
-          src: "../images/wordpress/sharon-get-organised.png",
-          alt: "slider6",
-        },{
-          id: 7,
-          src: "../images/wordpress/fameleon.png",
-          alt: "slider7",
-        }
-      ];
+      {
+        id: 1,
+        src: "../images/wordpress/67-baltimore.png",
+        alt: "catering",
+      },
+      {
+        id: 2,
+        src: "../images/wordpress/face-shield.png",
+        alt: "Face shield",
+      },
+      {
+        id: 3,
+        src: "../images/wordpress/stories-upon.png",
+        alt: "stories writing",
+      },
+      {
+        id: 4,
+        src: "../images/wordpress/global-moonshot.png",
+        alt: "global moonshot",
+      },
+      {
+        id: 5,
+        src: "../images/wordpress/society-kitchella.png",
+        alt: "slider5",
+      },
+      {
+        id: 6,
+        src: "../images/wordpress/sharon-get-organised.png",
+        alt: "society kitchen",
+      },
+      {
+        id: 7,
+        src: "../images/wordpress/fameleon.png",
+        alt: "Fashion and lifestyle",
+      },
+    ];
     return (
 
       <div className="wp-main" id="wp-main">

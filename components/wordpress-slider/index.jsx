@@ -25,7 +25,7 @@ const { Carousel } = dynamic(() => import("3d-react-carousal"), { ssr: false });
      
           <img src="../images/wordpress/global-moonshot.png" alt="global moonshot" />,
      
-          <img src="../images/wordpress/society-kitchella.png" alt="society ketchen" />,
+          <img src="../images/wordpress/society-kitchella.png" alt="society kitchen" />,
       
           <img
             src="../images/wordpress/sharon-get-organised.png"
