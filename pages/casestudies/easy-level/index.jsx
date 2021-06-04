@@ -298,7 +298,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider.svg"
-                              alt="decenterakized world"
+                              alt="Easy Level"
                             />
                           </div>
                         </div>
@@ -306,7 +306,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider2.svg"
-                              alt="design pattern"
+                              alt="Easy Level"
                             />
                           </div>
                         </div>
@@ -314,7 +314,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider3.svg"
-                              alt="work flow"
+                              alt="Easy Level"
                             />
                           </div>
                         </div>
@@ -322,7 +322,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider4.svg"
-                              alt="sign up metamask"
+                              alt="Easy Level"
                             />
                           </div>
                         </div>
@@ -330,7 +330,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider5.svg"
-                              alt="affiliate"
+                              alt="Easy Level"
                             />
                           </div>
                         </div>
@@ -338,7 +338,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider6.svg"
-                              alt="earning points"
+                              alt="Easy Level"
                             />
                           </div>
                         </div>

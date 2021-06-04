@@ -120,7 +120,7 @@ const { data } = this.state;
                       <li>
                         <img
                           src="/images/case-studies/filemaker/intro-logo-1.svg"
-                          alt="filemaker"
+                          alt="File Maker"
                         />
                       </li>
                       <li>
@@ -308,7 +308,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured1.svg"
-                          alt="Easy to use"
+                          alt="File Maker"
                         />
                         <h4 className="text-level-5 title-black">
                           Easy to <br />
@@ -323,7 +323,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured2.svg"
-                          alt="interface design"
+                          alt="File Maker"
                         />
                         <h4 className="text-level-5 title-black">
                           Redesigned <br />
@@ -338,7 +338,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured3.svg"
-                          alt="automatic data sync"
+                          alt="File Maker"
                         />
                         <h4 className="text-level-5 title-black">
                           Automatic data synchronization
@@ -352,7 +352,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured4.svg"
-                          alt="online offline availibility"
+                          alt="File Maker"
                         />
                         <h4 className="text-level-5 title-black">
                           Available offline
@@ -373,7 +373,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured5.svg"
-                          alt="centeralized data"
+                          alt="File Maker"
                         />
                         <h4 className="text-level-5 title-black">
                           Centralised
@@ -389,7 +389,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured6.svg"
-                          alt="future changes flexibility"
+                          alt="File Maker"
                         />
                         <h4 className="text-level-5 title-black">
                           Flexible for future requirements
