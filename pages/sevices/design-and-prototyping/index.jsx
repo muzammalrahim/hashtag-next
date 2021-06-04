@@ -117,7 +117,7 @@ export default class DesignPage extends Component {
               <div className="col-lg-5 col-md-12 col-sm-12 text-center ">
                 <img
                   src="/images/design/showcase1.svg"
-                  alt="Showcase Of Your Business"
+                  alt="design prototyping"
                   className="img-fluid shopify-image mobile-image-border storefront-img"
                 />
               </div>
