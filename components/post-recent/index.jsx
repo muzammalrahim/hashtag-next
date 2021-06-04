@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import $ from 'jquery';
 import axios from 'axios';
 import * as config from '../../config.js';
+import Link from 'next/link'
 
 require('typeface-montserrat')
 
@@ -55,7 +56,7 @@ export default class BlogRecentPosts extends Component {
           {this.state.recentPosts.map((post, index) => { 
             return(
               <li key={index}>
-                <a href={"/blogs/single/"+post.url}>{post.title}</a>
+                <Link href="/blogs/[slug]" as={"/blogs/"+post.url}>{post.title}</Link>
               </li>
             )
           })}
