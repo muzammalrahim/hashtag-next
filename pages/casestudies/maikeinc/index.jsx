@@ -86,9 +86,10 @@ export default class Maikeinc extends Component {
               <div className="row">
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
-                    <div className="common-head-blk">
-                      <h6>Website development & design</h6>
-                      <h2 className="main-title title-white">Maike Inc</h2>
+                    <div className="case-maikeinc-size">
+                      <h1>Website development & design</h1>
+                      </div>
+                      <h1 className="main-title title-white">Maike Inc</h1>
                       <ul className="project-info">
                         <li>
                           <strong>Industry:</strong>Review and Shopping
@@ -104,7 +105,7 @@ export default class Maikeinc extends Component {
                           Wordpress, REST API, NLP
                         </li>
                       </ul>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -116,8 +117,8 @@ export default class Maikeinc extends Component {
               <div className="row">
                 <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
                   <div className="project-blk-title">
-                    <h6 className="text-above-main-title">introduction</h6>
-                    <h3 class="main-title title-orange">About Maike</h3>
+                    <h2 className="text-above-main-title">introduction</h2>
+                    <h2 class="main-title title-orange">About Maike</h2>
                   </div>
                   <p>
                     <strong>
@@ -158,10 +159,10 @@ export default class Maikeinc extends Component {
                 <div className="col-md-5 offset-md-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">
+                      <h2 className="text-above-main-title">
                         product uniqueness
-                      </h6>
-                      <h3 class="main-title title-orange">Our Solution ?</h3>
+                      </h2>
+                      <h2 class="main-title title-orange">Our Solution ?</h2>
                     </div>
                     <div className="cust-order-list">
                       <ol>
@@ -215,10 +216,10 @@ export default class Maikeinc extends Component {
                 <div className="col-md-12">
                   <div className="project-slider-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">
+                      <h2 className="text-above-main-title">
                         Design with user in mind
-                      </h6>
-                      <h3 class="main-title title-orange">User Interface</h3>
+                      </h2>
+                      <h2 class="main-title title-orange">User Interface</h2>
                     </div>
 
                     <div className="ui-slider">
@@ -270,8 +271,8 @@ export default class Maikeinc extends Component {
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h6 className="text-above-main-title">project stack</h6>
-                        <h3 class="main-title title-orange">Technogies Used</h3>
+                        <h2 className="text-above-main-title">project stack</h2>
+                        <h2 class="main-title title-orange">Technogies Used</h2>
                       </div>
                       <div className="technology-list-center">
                         <ul>
@@ -325,8 +326,8 @@ export default class Maikeinc extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">WHAT`S INSIDE</h6>
-                    <h3 class="main-title title-orange">How We Helped </h3>
+                    <h2 className="text-above-main-title">WHAT`S INSIDE</h2>
+                    <h2 class="main-title title-orange">How We Helped </h2>
                   </div>
                 </div>
               </div>

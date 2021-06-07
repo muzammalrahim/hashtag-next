@@ -86,16 +86,16 @@ const { data } = this.state;
             <div className="container">
               <div className="row">
                 <div className="col-md-10">
-                  <div className="common-title-wrap px-md-3">
-                    <div className="common-head-blk">
-                      <h6>Website development &amp; design</h6>
+                  <div className="common-title-wrap c-heading px-md-3 ">
+                    <div className="case-filmmaker-size">
+                      <h1>Website development &amp; design</h1>
+                      </div>
                       <h2 className="main-title title-white">
                         Filemaker in Action
                       </h2>
-                      <div className="intro-desc title-white">
+                      <div className="intro-desc title-white filemaker-h2-size">
                         <p>
-                          <b>
-                            The FileMaker Platform empowers problem solvers to
+                          <b><h2 className="filemaker-h2-size">The FileMaker Platform empowers problem solvers to</h2>
                             <br />
                             create, share, and integrate custom apps to address
                             their
@@ -104,7 +104,7 @@ const { data } = this.state;
                           </b>
                         </p>
                       </div>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -154,7 +154,7 @@ const { data } = this.state;
                 <div className="col-md-5 offset-md-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">Description</h6>
+                      <h3 className="text-above-main-title">Description</h3>
                       <h3 className="main-title title-orange">Introduction</h3>
                     </div>
                     <p>
@@ -172,7 +172,7 @@ const { data } = this.state;
 
                   <div className="project-unique-wrap challenge-sec">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">Challenges</h6>
+                      <h3 className="text-above-main-title">Challenges</h3>
                       <h3 className="main-title title-orange">
                         Business Challenge
                       </h3>
@@ -196,7 +196,7 @@ const { data } = this.state;
 
                   <div className="project-unique-wrap challenge-sec">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">What We Do</h6>
+                      <h3 className="text-above-main-title">What We Do</h3>
                       <h3 className="main-title title-orange">Solution</h3>
                     </div>
                     <p>
@@ -233,7 +233,7 @@ const { data } = this.state;
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-10">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">How It Works</h6>
+                    <h3 className="text-above-main-title">How It Works</h3>
                     <h3 className="main-title title-orange">Architecture</h3>
                   </div>
                   <div className="workflow-wrap">

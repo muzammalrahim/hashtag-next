@@ -105,8 +105,8 @@ export default class Home extends Component {
 		  <div className="col-12 col-sm-12 col-lg-2 col-xxl-3 who-we-are-middle-text-1">
 		  	
 						<p className="text-above-main-title" id="section02">SHORTLY ABOUT US</p>
-						<h1 className="main-title"><span className="title-orange d-block">Who&nbsp;</span>
-						<span className="title-orange">we are</span></h1>
+						<h2 className="main-title"><span className="title-orange d-block">Who&nbsp;</span>
+						<span className="title-orange">we are</span></h2>
                         <hr className="hashtag-underline"/>
 
 		  </div>
@@ -135,11 +135,11 @@ export default class Home extends Component {
 			<div className="container section-three-content ">
 				<div className="row justify-content-center  pl-3 pr-3 mob-padding">
 					  <div className="col-12  section-three-text">
-							<h1 className="main-title"><span className="title-orange d-block mob-left text-center"> 
+							<h3 className="main-title"><span className="title-orange d-block mob-left text-center"> 
 							  What we do</span>
 							  <div className="horizontal-line-middle mob-left mob-line-margin"></div>
 							
-							</h1>
+							</h3>
 
 							<p className="hash-content-col mob-left  text-center mt-3">We work with businesses of all sizes in a wide range 
 							   of industries and niches.
@@ -210,10 +210,10 @@ export default class Home extends Component {
 						<div className="col-12 col-lg-5 col-md-12 content-four-section">
 						<p className="text-above-main-title title-white">WHY CLIENTS CHOOSE US</p>
 							
-						<h1 className="main-title">
+						<h4 className="main-title">
 						<span className="title-white d-block">
 						Why us?</span>
-						</h1>
+						</h4>
 
 						<p className="hash-content-col title-white why-us-hash-content">
 							
@@ -503,12 +503,14 @@ export default class Home extends Component {
 				 >
 				   <div className="row tab-content">
 					 <div className="col-lg-6 col-md-12 col-sm-12">
+						<h5 className="address-content">
 					   <img
 						 src="images/home/location.svg"
 						 alt="location"
 						 className="address-icons"
 					   />{" "}
-					   <span className="address-content">Sunnyvale</span>
+					   <span className="address-content">Sunnyvale</span></h5> 
+					   <h5 className="adress-text">
 					   <address className="address-text">
 						 100 S. Murphy Ave. Suite 200
 						 <br />
@@ -516,6 +518,8 @@ export default class Home extends Component {
 						 <br />
 						 USA
 					   </address>
+					   </h5>
+					   
 					   <img
 						 src="images/home/phone.svg"
 						 alt="phone"
@@ -582,20 +586,23 @@ export default class Home extends Component {
 				 >
 				   <div className="row tab-content">
 					 <div className="col-lg-6 col-md-12 col-sm-12">
+						 <h5 className="address-content">
 					   <img
 						 src="images/home/location.svg"
 						 alt="location"
 						 className="address-icons"
 					   />{" "}
-					   <span className="address-content">San Jose</span>
-					   <address className="address-text">
+					   <span className="address-content">San Jose</span></h5>
+					   <h5 className="address-text">
+
 						 99 S Almaden Blvd Suite
 						 <br />
 						 600 San Jose, CA 95113
 						 <br />
 						 USA
 						 <br />
-					   </address>
+
+					   </h5>
 					   <img
 						 src="images/home/phone.svg"
 						 alt="phone"
@@ -662,18 +669,19 @@ export default class Home extends Component {
 				 >
 				   <div className="row tab-content">
 					 <div className="col-lg-6 col-md-12 col-sm-12">
+						 <h5 className="class-content">
 					   <img
 						 src="images/home/location.svg"
 						 alt="location"
 						 className="address-icons"
 					   />{" "}
-					   <span className="address-content">San Diego</span>
-					   <address className="address-text">
+					   <span className="address-content">San Diego</span></h5>
+					   <h5 className="address-text">
 						 7770 Regents Rd. #113-385
 						 <br />
 						 San Diego, CA 92122, <br />
 						 USA
-					   </address>
+					   </h5>
 					   <img
 						 src="images/home/email.svg"
 						 alt="email"
@@ -730,19 +738,22 @@ export default class Home extends Component {
 				 >
 				   <div className="row tab-content">
 					 <div className="col-lg-6 col-md-12 col-sm-12">
+						 <h5 className="address-content">
 					   <img
 						 src="images/home/location.svg"
 						 alt="location"
 						 className="address-icons"
 					   />{" "}
-					   <span className="address-content">Kochi</span>
-					   <address className="address-text">
+					   <span className="address-content">Kochi</span></h5>
+					   <h5 className="address-text">
+
 						 Infopark Technology Business Center JNI Stadium,{" "}
 						 <br />
 						 Kaloor,
 						 <br /> Kerala, India
 						 <br />
-					   </address>
+						 </h5>
+
 					   <img
 						 src="images/home/phone.svg"
 						 alt="phone"

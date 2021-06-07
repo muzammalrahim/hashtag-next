@@ -114,9 +114,10 @@ export default class Speakinc extends Component {
                     <div className="list-banner-text">
                       <h1>
                         <span className="title-orange">Case Studies</span>{" "}
+                      </h1>  
                         <br />
-                        We Let Our Portfolio Do The Talk!
-                      </h1>
+                        <h2>We Let Our Portfolio Do The Talk!</h2>
+                      
                       <div className="btn-comm">
                         <a href="#contact">Say Hello</a>
                       </div>

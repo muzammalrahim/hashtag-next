@@ -57,20 +57,20 @@ export default class UIPage extends Component {
                 <div className="container ">
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <p className="sub-text-above-main-title title-white">
+                      <h1 className="sub-text-above-main-title title-white">
                         We offer Solutions for
-                      </p>
+                      </h1>
                       <h1 className="main-title  title-white d-block">
                         UI <br />
                         Development
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents shopify-content-box pl-4">
+                      <h2 className="bold-contents shopify-content-box pl-4">
                         A complete front-end makeover for your digital business
                         solutions with immersive visual effects and latest
                         technology trends.
-                      </p>
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -81,9 +81,9 @@ export default class UIPage extends Component {
           <div className="container">
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12">
-                <h1 className="main-title title-orange why-bc-sec-tt">
+                <h3 className="main-title title-orange why-bc-sec-tt">
                   Why Us?
-                </h1>
+                </h3>
                 <div className="shopify-content mt-4">
                   <p className="mb-4">
                     We work on certain ethics and our UI development is a
@@ -148,12 +148,12 @@ export default class UIPage extends Component {
             <div className="container">
               <div className="row">
                 <div class="col-12 wp-sec-3-content shopify-sec-3-content">
-                  <p class="text-above-main-title text-above-main-title-c text-center mb-0">
+                  <h3 class="text-above-main-title text-above-main-title-c text-center mb-0">
                     tackling frontend challenges with ease
-                  </p>
-                  <h1 class="main-title title-orange text-center">
+                  </h3>
+                  <h3 class="main-title title-orange text-center">
                     How Does It Work
-                  </h1>
+                  </h3>
                 </div>
               </div>
               <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3 sc-ip-pro">
@@ -420,12 +420,12 @@ export default class UIPage extends Component {
             <div className="container">
               <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3 pt-5 pb-5">
                 <div className="col-lg-5 col-md-12 col-sm-12">
-                  <p class="text-above-main-title text-above-main-title-c mb-0">
+                  <h3 class="text-above-main-title text-above-main-title-c mb-0">
                     build better - every time
-                  </p>
-                  <h1 className="main-title title-orange main-title-rd-gt">
+                  </h3>
+                  <h3 className="main-title title-orange main-title-rd-gt">
                     Ready To Get Started ?
-                  </h1>
+                  </h3>
                   <div class="col-lg-5 col-md-12 col-sm-12 text-center dp-on-sm">
                     <img
                       src="/images/ui/idea1.svg"

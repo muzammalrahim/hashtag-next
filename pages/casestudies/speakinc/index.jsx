@@ -86,9 +86,10 @@ const { data } = this.state;
               <div className="row">
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
-                    <div className="common-head-blk">
-                      <h6>Website development & design</h6>
-                      <h2 className="main-title title-white">SpeakInc</h2>
+                    <div className="case-speakinc-size">
+                      <h1>Website development & design</h1>
+                      </div>
+                      <h1 className="main-title title-white">SpeakInc</h1>
                       <ul className="project-info">
                         <li>
                           <strong>Industry:</strong>Event Management and
@@ -105,7 +106,7 @@ const { data } = this.state;
                           Filemaker, Hubspot
                         </li>
                       </ul>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -117,8 +118,8 @@ const { data } = this.state;
               <div className="row">
                 <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
                   <div className="project-blk-title">
-                    <h6 className="text-above-main-title">introduction</h6>
-                    <h3 class="main-title title-orange">About Speakinc</h3>
+                    <h2 className="text-above-main-title">introduction</h2>
+                    <h2 class="main-title title-orange">About Speakinc</h2>
                   </div>
                   <p>
                     <strong>SpeakInc</strong> is a No 1 US based speakers
@@ -151,10 +152,10 @@ const { data } = this.state;
                 <div className="col-md-5 offset-md-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">
+                      <h2 className="text-above-main-title">
                         product uniqueness
-                      </h6>
-                      <h3 class="main-title title-orange">What`s So Special</h3>
+                      </h2>
+                      <h2 class="main-title title-orange">What`s So Special</h2>
                     </div>
                     <div className="project-spec-grid">
                       <Slide bottom>
@@ -216,10 +217,10 @@ const { data } = this.state;
                 <div className="col-md-12">
                   <div className="project-slider-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">
+                      <h2 className="text-above-main-title">
                         Design with user in mind
-                      </h6>
-                      <h3 class="main-title title-orange">User Interface</h3>
+                      </h2>
+                      <h2 class="main-title title-orange">User Interface</h2>
                     </div>
 
                     <div className="ui-slider">
@@ -279,8 +280,8 @@ const { data } = this.state;
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h6 className="text-above-main-title">project stack</h6>
-                        <h3 class="main-title title-orange">Technogies Used</h3>
+                        <h2 className="text-above-main-title">project stack</h2>
+                        <h2 class="main-title title-orange">Technogies Used</h2>
                       </div>
                       <div className="technology-list">
                         <div className="tech-item">
@@ -379,8 +380,8 @@ const { data } = this.state;
               <div className="row">
                 <div className="col-md-5 offset-md-1">
                   <div className="project-blk-title">
-                    <h6 className="text-above-main-title">how its built</h6>
-                    <h3 class="main-title title-orange">Systems</h3>
+                    <h2 className="text-above-main-title">how its built</h2>
+                    <h2 class="main-title title-orange">Systems</h2>
                   </div>
                   <div className="cust-order-list">
                     <ol>
@@ -422,8 +423,8 @@ const { data } = this.state;
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">WHAT`S INSIDE</h6>
-                    <h3 class="main-title title-orange">Features</h3>
+                    <h2 className="text-above-main-title">WHAT`S INSIDE</h2>
+                    <h2 class="main-title title-orange">Features</h2>
                   </div>
                 </div>
               </div>

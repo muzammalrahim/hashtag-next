@@ -59,20 +59,20 @@ export default class About extends Component {
                 <div className="container ">
                   <div className="row justify-content-center service-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <p className="sub-text-above-main-title title-white">
+                      <h1 className="sub-text-above-main-title title-white">
                         Who we are
-                      </p>
+                      </h1>
                       <h1 className="main-title title-white d-block">
                         About us
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents service-content-box pl-4">
+                      <h2 className="bold-contents service-content-box pl-4">
                         Hashtag Systems Inc., is an international Web
                         development company, headquartered in California,
                         provides cutting edge engineering solutions for
                         world-class brands.
-                      </p>
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -87,7 +87,7 @@ export default class About extends Component {
                 <p class="text-above-main-title text-center">
                   PERFECT SOLUTION FOR BUSINESS
                 </p>
-                <h1 class="main-title title-orange text-center">Our values</h1>
+                <h2 class="main-title title-orange text-center">Our values</h2>
                 <div class="shopify-sub-title text-center">
                   Dedicated to provide best professional Web Solutions
                 </div>
@@ -168,12 +168,12 @@ export default class About extends Component {
               <div class="container">
                 <div className="row about-row justify-content-center  pl-3 pr-3">
                   <div className="col-12 col-lg-5 col-md-12 hash-team-content">
-                    <p className="text-above-main-title title-black">
+                    <h3 className="text-above-main-title title-black">
                       OUR DREAM TEAM
-                    </p>
-                    <h1 className="main-title">
+                    </h3>
+                    <h3 className="main-title">
                       <span class="title-orange d-block"># Team</span>
-                    </h1>
+                    </h3>
 
                     <p class="hash-content-col title-black why-us-hash-content">
                       <p className="font-normal">

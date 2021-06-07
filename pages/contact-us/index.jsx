@@ -68,19 +68,19 @@ export default class Contactus extends Component {
                 <div className="container ">
                   <div className="row justify-content-center service-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <p className="sub-text-above-main-title title-white">
+                      <h1 className="sub-text-above-main-title title-white">
                         Get in touch we'd love to help{" "}
-                      </p>
+                      </h1>
                       <h1 className="main-title title-white d-block">
                         Contact us
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents service-content-box pl-4">
+                      <h2 className="bold-contents service-content-box pl-4">
                         We always love to hear from potential clients. Get in
                         touch, start the conversation, and we’ll take it from
                         there.
-                      </p>
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -176,19 +176,22 @@ export default class Contactus extends Component {
                     >
                       <div className="row tab-content">
                         <div className="col-lg-6 col-md-12 col-sm-12">
+                          <h3 className="address-content">
                           <img
                             src="images/home/location.svg"
                             alt="location"
                             className="address-icons"
                           />{" "}
-                          <span className="address-content">Sunnyvale</span>
-                          <address className="address-text">
+                          <span className="address-content">Sunnyvale</span></h3>
+                          <h3 className="address-text">
+                            
                             100 S. Murphy Ave. Suite 200
                             <br />
                             Sunnyvale, CA 94086
                             <br />
                             USA
-                          </address>
+                        
+                          </h3>
                           <img
                             src="images/home/phone.svg"
                             alt="phone"
@@ -255,20 +258,21 @@ export default class Contactus extends Component {
                     >
                       <div className="row tab-content">
                         <div className="col-lg-6 col-md-12 col-sm-12">
+                        <h3 className="address-content"> 
                           <img
                             src="images/home/location.svg"
                             alt="location"
                             className="address-icons"
                           />{" "}
-                          <span className="address-content">San Jose</span>
-                          <address className="address-text">
+                          <span className="address-content">San Jose</span></h3>
+                          <h3 className="address-text">
                             99 S Almaden Blvd Suite
                             <br />
                             600 San Jose, CA 95113
                             <br />
                             USA
                             <br />
-                          </address>
+                          </h3>
                           <img
                             src="images/home/phone.svg"
                             alt="phone"
@@ -335,18 +339,19 @@ export default class Contactus extends Component {
                     >
                       <div className="row tab-content">
                         <div className="col-lg-6 col-md-12 col-sm-12">
+                          <h3 className="address-content">
                           <img
                             src="images/home/location.svg"
                             alt="location"
                             className="address-icons"
                           />{" "}
-                          <span className="address-content">San Diego</span>
-                          <address className="address-text">
+                          <span className="address-content">San Diego</span></h3>
+                          <h3 className="address-text">
                             7770 Regents Rd. #113-385
                             <br />
                             San Diego, CA 92122, <br />
                             USA
-                          </address>
+                          </h3>
                           <img
                             src="images/home/email.svg"
                             alt="email"
@@ -403,19 +408,20 @@ export default class Contactus extends Component {
                     >
                       <div className="row tab-content">
                         <div className="col-lg-6 col-md-12 col-sm-12">
+                          <h3 className="address-content">
                           <img
                             src="images/home/location.svg"
                             alt="location"
                             className="address-icons"
                           />{" "}
-                          <span className="address-content">Kochi</span>
-                          <address className="address-text">
+                          <span className="address-content">Kochi</span></h3>
+                          <h3 className="address-text">
                             Infopark Technology Business Center JNI Stadium,{" "}
                             <br />
                             Kaloor,
                             <br /> Kerala, India
                             <br />
-                          </address>
+                          </h3>
                           <img
                             src="images/home/phone.svg"
                             alt="phone"
