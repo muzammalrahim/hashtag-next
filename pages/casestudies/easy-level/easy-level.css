@@ -3,6 +3,10 @@
   background-image: url('/images/case-studies/easylevel/curved-head.svg');
   background-color: unset;
 }*/
+.main-title-custom
+{
+    color: white;
+}
 .case-easylevel-size{
     display: inline-block;
 

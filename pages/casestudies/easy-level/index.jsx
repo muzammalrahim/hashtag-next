@@ -495,7 +495,7 @@ export default class Easylevel extends Component {
                     <h2 className="text-above-main-title">
                     PROJECT ACHIEVEMENTS
                     </h2>
-                    <h2 className="main-title mb-2">What We Achieved</h2>
+                    <h2  className="main-title-custom main-title mb-2">What We Achieved</h2>
                     <img
                       className="mb-2"
                       src="../images/shopify/shopify-quoute.svg"

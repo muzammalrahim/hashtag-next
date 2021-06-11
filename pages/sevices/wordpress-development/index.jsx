@@ -101,9 +101,9 @@ export default class Shopify extends Component {
                 <div className="container ">
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <p className="sub-text-above-main-title title-white">
+                      <h1 className="sub-text-above-main-title title-white">
                         Custom Solutions for
-                      </p>
+                      </h1>
                       <h1 className="main-title  title-white d-block">
                         Wordpress <br />
                         development

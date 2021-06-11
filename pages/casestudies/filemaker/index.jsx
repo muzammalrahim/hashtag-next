@@ -408,7 +408,7 @@ const { data } = this.state;
                   <div className="project-blk-title text-center">
                     <h3 className="text-above-main-title">OUR SKILLSET</h3>
                     <h3 className="main-title title-orange">
-                      We are experts in
+                      We Are Experts In
                     </h3>
                   </div>
                 </div>
