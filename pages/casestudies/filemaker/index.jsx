@@ -90,19 +90,17 @@ const { data } = this.state;
                     <div className="case-filmmaker-size">
                       <h1>Website development &amp; design</h1>
                       </div>
-                      <h2 className="main-title title-white">
+                      <h1 className="main-title title-white">
                         Filemaker in Action
-                      </h2>
+                      </h1>
                       <div className="intro-desc title-white filemaker-h2-size">
-                        <p>
-                          <b><h2 className="filemaker-h2-size">The FileMaker Platform empowers problem solvers to</h2>
+                      <h2 >The FileMaker Platform empowers problem solvers to
                             <br />
                             create, share, and integrate custom apps to address
                             their
                             <br />
                             ever changing business challenges.
-                          </b>
-                        </p>
+                      </h2>
                       </div>
                     
                   </div>
@@ -154,7 +152,7 @@ const { data } = this.state;
                 <div className="col-md-5 offset-md-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h3 className="text-above-main-title">Description</h3>
+                      <h3 className="text-above-main-title">DESCRIPTION</h3>
                       <h3 className="main-title title-orange">Introduction</h3>
                     </div>
                     <p>
@@ -172,7 +170,7 @@ const { data } = this.state;
 
                   <div className="project-unique-wrap challenge-sec">
                     <div className="project-blk-title">
-                      <h3 className="text-above-main-title">Challenges</h3>
+                      <h3 className="text-above-main-title">CHALLENGES</h3>
                       <h3 className="main-title title-orange">
                         Business Challenge
                       </h3>
@@ -196,7 +194,7 @@ const { data } = this.state;
 
                   <div className="project-unique-wrap challenge-sec">
                     <div className="project-blk-title">
-                      <h3 className="text-above-main-title">What We Do</h3>
+                      <h3 className="text-above-main-title">WHAT WE DO</h3>
                       <h3 className="main-title title-orange">Solution</h3>
                     </div>
                     <p>
@@ -233,7 +231,7 @@ const { data } = this.state;
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-10">
                   <div className="project-blk-title text-center">
-                    <h3 className="text-above-main-title">How It Works</h3>
+                    <h3 className="text-above-main-title">HOW IT WORKS</h3>
                     <h3 className="main-title title-orange">Architecture</h3>
                   </div>
                   <div className="workflow-wrap">
@@ -408,7 +406,7 @@ const { data } = this.state;
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-8">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">Our Skillsets</h6>
+                    <h3 className="text-above-main-title">OUR SKILLSET</h3>
                     <h3 className="main-title title-orange">
                       We are experts in
                     </h3>

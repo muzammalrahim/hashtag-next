@@ -118,7 +118,7 @@ const { data } = this.state;
               <div className="row">
                 <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
                   <div className="project-blk-title">
-                    <h2 className="text-above-main-title">introduction</h2>
+                    <h2 className="text-above-main-title">INTRODUCTION</h2>
                     <h2 class="main-title title-orange">About Speakinc</h2>
                   </div>
                   <p>
@@ -153,7 +153,7 @@ const { data } = this.state;
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
                       <h2 className="text-above-main-title">
-                        product uniqueness
+                        PRODUCT UNIQUENESS
                       </h2>
                       <h2 class="main-title title-orange">What`s So Special</h2>
                     </div>
@@ -218,7 +218,7 @@ const { data } = this.state;
                   <div className="project-slider-wrap">
                     <div className="project-blk-title">
                       <h2 className="text-above-main-title">
-                        Design with user in mind
+                        DESIGN WITH USER IN MIND
                       </h2>
                       <h2 class="main-title title-orange">User Interface</h2>
                     </div>
@@ -280,7 +280,7 @@ const { data } = this.state;
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h2 className="text-above-main-title">project stack</h2>
+                        <h2 className="text-above-main-title">PROJECT STACK</h2>
                         <h2 class="main-title title-orange">Technogies Used</h2>
                       </div>
                       <div className="technology-list">
@@ -380,7 +380,7 @@ const { data } = this.state;
               <div className="row">
                 <div className="col-md-5 offset-md-1">
                   <div className="project-blk-title">
-                    <h2 className="text-above-main-title">how its built</h2>
+                    <h2 className="text-above-main-title">HOW ITS BUILT</h2>
                     <h2 class="main-title title-orange">Systems</h2>
                   </div>
                   <div className="cust-order-list">

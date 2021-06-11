@@ -122,7 +122,7 @@ export default class Megalot extends Component {
                     dApps.</h2>
                   </blockquote>
                   <div className="project-blk-title">
-                    <h3 className="text-above-main-title">introduction</h3>
+                    <h3 className="text-above-main-title">INTRODUCTION</h3>
                     <h3 class="main-title title-orange">About Megalot</h3>
                   </div>
                   <p>
@@ -150,7 +150,7 @@ export default class Megalot extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title">
-                    <h3 className="text-above-main-title">workflow</h3>
+                    <h3 className="text-above-main-title">WORKFLOW</h3>
                     <h3 class="main-title title-orange">Architecture</h3>
                   </div>
                   <div className="workflow-wrap">
@@ -170,7 +170,7 @@ export default class Megalot extends Component {
                 <div className="col-md-8">
                   <div className="project-blk-title">
                     <h3 className="text-above-main-title">
-                      Cracking challenges with our team of Blockchain experts{" "}
+                    CRACKING CHALLENGES WITH OUR TEAM OF BLOCKCHAIN EXPERTS{" "}
                     </h3>
                     <h3 class="main-title">Challenges</h3>
                   </div>
@@ -203,7 +203,7 @@ export default class Megalot extends Component {
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
                       <h3 className="text-above-main-title">
-                        product uniqueness
+                      PRODUCT UNIQUENESS
                       </h3>
                       <h3 class="main-title title-orange">Our Solution ?</h3>
                     </div>
@@ -268,7 +268,7 @@ export default class Megalot extends Component {
                   <div className="project-slider-wrap">
                     <div className="project-blk-title">
                       <h3 className="text-above-main-title">
-                        Design with user in mind
+                        DESIGN WITH USER IN MIND
                       </h3>
                       <h3 class="main-title title-orange">User Interface</h3>
                     </div>
@@ -330,7 +330,7 @@ export default class Megalot extends Component {
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h3 className="text-above-main-title">project stack</h3>
+                        <h3 className="text-above-main-title">PROJECT STACK</h3>
                         <h3 class="main-title title-orange">Technogies Used</h3>
                       </div>
                       <div className="tech-desc">

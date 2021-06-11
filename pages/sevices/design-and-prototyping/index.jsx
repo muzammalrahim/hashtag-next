@@ -59,7 +59,7 @@ export default class DesignPage extends Component {
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
                       <h1 className="sub-text-above-main-title title-white">
-                        We offer Solutions for
+                        We offer solutions for
                       </h1>
                       <h1 className="main-title  title-white d-block">
                         Design and

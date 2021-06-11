@@ -84,10 +84,10 @@ export default class About extends Component {
             {/* section 2 */}
             <div className="row justify-content-center mt-5 section-2-row">
               <div class="col-12">
-                <p class="text-above-main-title text-center">
+                <h3 class="text-above-main-title text-center">
                   PERFECT SOLUTION FOR BUSINESS
-                </p>
-                <h2 class="main-title title-orange text-center">Our values</h2>
+                </h3>
+                <h3 class="main-title title-orange text-center">Our values</h3>
                 <div class="shopify-sub-title text-center">
                   Dedicated to provide best professional Web Solutions
                 </div>

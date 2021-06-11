@@ -110,10 +110,10 @@ export default class Shopify extends Component {
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents shopify-content-box pl-4">
+                      <h2 className="bold-contents shopify-content-box pl-4">
                         We help agencies code custom Wordpress Solutions. A
                         Silicon Valley Company serving customers worldwide.
-                      </p>
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -124,12 +124,12 @@ export default class Shopify extends Component {
           <div className="container">
             <div className="row justify-content-center mt-5 section-2-row">
               <div className="col-12">
-                <p className="text-above-main-title text-center">
+                <h3 className="text-above-main-title text-center">
                   WE OFFER A WIDE RANGE OF
-                </p>
-                <h1 className="main-title title-orange text-center">
+                </h3>
+                <h3 className="main-title title-orange text-center">
                   Services On
-                </h1>
+                </h3>
               </div>
             </div>
 
@@ -232,10 +232,10 @@ export default class Shopify extends Component {
           <div className="container-fluid wordpress-section-3 top-index">
             <div className="row">
               <div class="col-12 wp-sec-3-content shopify-sec-3-content">
-                <p class="text-above-main-title text-center">OUR EXPERIENCE</p>
-                <h1 class="main-title title-orange text-center">
+                <h3 class="text-above-main-title text-center">OUR EXPERIENCE</h3>
+                <h3 class="main-title title-orange text-center">
                   Recent Works
-                </h1>
+                </h3>
               </div>
             </div>
             {/*section 3 */}
@@ -248,10 +248,10 @@ export default class Shopify extends Component {
               <div className="container">
                 <div className="row justify-content-center about-row pl-3 pr-3">
                   <div className="col-12 col-lg-5 col-sm-6 col-md-12">
-                    <p className="text-above-main-title">FREE CONSULTATIONS</p>
-                    <h1 className="main-title">
+                    <h3 className="text-above-main-title">FREE CONSULTATIONS</h3>
+                    <h3 className="main-title">
                       <span class="title-orange d-block">Ask Our Expert</span>
-                    </h1>
+                    </h3>
                     <p className="hash-content-col title-black why-us-hash-content">
                       <p>
                         Not sure if WordPress is the right solution for you?
@@ -328,13 +328,13 @@ export default class Shopify extends Component {
             <div className="container">
               <div class="row">
                 <div class="col-12 plugin-integration-section shopify-sec-3-content">
-                  <p class="text-above-main-title text-center">
+                  <h3 class="text-above-main-title text-center">
                     LET OUR EXPERTS SUGGEST THE BEST PLUGIN INTEGRATION FOR YOUR
                     WORDPRESS
-                  </p>
-                  <h1 class="main-title title-orange text-center">
+                  </h3>
+                  <h3 class="main-title title-orange text-center">
                     Plugin Integration
-                  </h1>
+                  </h3>
                 </div>
               </div>
 
@@ -518,9 +518,9 @@ export default class Shopify extends Component {
                     <p class="text-above-main-title text-center testimonial-margin">
                       WHAT CLIENT SAY ABOUT US
                     </p>
-                    <h1 class="main-title title-orange text-center">
+                    <h3 class="main-title title-orange text-center">
                       Testimonials
-                    </h1>
+                    </h3>
 
                     <Testimonial></Testimonial>
                   </div>{" "}

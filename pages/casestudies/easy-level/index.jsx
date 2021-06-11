@@ -127,7 +127,7 @@ export default class Easylevel extends Component {
                 <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
                   <div className="project-blk-title">
                     <h2 className="text-above-main-title">
-                      A Descentralized Platform
+                      A DESCENTRALIZED PLATFORM
                     </h2>
                     <h2 class="main-title title-orange">Introduction</h2>
                   </div>
@@ -162,7 +162,7 @@ export default class Easylevel extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-10">
                   <div className="project-blk-title text-center">
-                    <h2 className="text-above-main-title">How It Works</h2>
+                    <h2 className="text-above-main-title">HOW IT WORKS</h2>
                     <h2 className="main-title title-orange">Architecture</h2>
                     <h2 className="title-black">P2P payment</h2>
                   </div>
@@ -181,7 +181,7 @@ export default class Easylevel extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-10">
                   <div className="project-blk-title text-center">
-                    <h2 className="text-above-main-title">How It Works</h2>
+                    <h2 className="text-above-main-title">HOW IT WORKS</h2>
                     <h2 className="main-title title-orange">Architecture</h2>
                     <h2 className="title-black">Advertising platform</h2>
                   </div>
@@ -201,7 +201,7 @@ export default class Easylevel extends Component {
                 <div className="col-md-5 offset-md-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h2 className="text-above-main-title">product work</h2>
+                      <h2 className="text-above-main-title">PRODUCT WORK</h2>
                       <h2 className="main-title title-orange">How it works</h2>
                     </div>
                     <p>
@@ -246,7 +246,7 @@ export default class Easylevel extends Component {
 
                   <div className="project-unique-wrap challenge-sec">
                     <div className="project-blk-title">
-                      <h2 className="text-above-main-title">Process</h2>
+                      <h2 className="text-above-main-title">PROCESS</h2>
                       <h2 className="main-title title-orange">Use Case</h2>
                     </div>
                     <p>
@@ -287,7 +287,7 @@ export default class Easylevel extends Component {
                   <div className="project-slider-wrap">
                     <div className="project-blk-title">
                       <h2 className="text-above-main-title">
-                        Design with user in mind
+                      DESIGN WITH USER IN MIND
                       </h2>
                       <h2 class="main-title title-orange">User Interface</h2>
                     </div>
@@ -385,7 +385,7 @@ export default class Easylevel extends Component {
                 <div className="col-lg-6 col-sm-12 offset-lg-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h2 className="text-above-main-title">project PROCESS</h2>
+                      <h2 className="text-above-main-title">PROJECT PROCESS</h2>
                       <h2 class="main-title title-orange">
                         Agile development process
                       </h2>
@@ -493,7 +493,7 @@ export default class Easylevel extends Component {
                 <div className="col-md-8">
                   <div className="project-blk-title">
                     <h2 className="text-above-main-title">
-                      project achievements
+                    PROJECT ACHIEVEMENTS
                     </h2>
                     <h2 className="main-title mb-2">What We Achieved</h2>
                     <img

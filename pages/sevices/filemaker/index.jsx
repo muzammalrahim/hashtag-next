@@ -293,7 +293,7 @@ export default class filemakerPage extends Component {
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
                     <h3 className="text-above-main-title  title-white">
-                      WHAT CLIENTs SAY ABOUT US
+                      WHAT CLIENT SAY ABOUT US
                     </h3>
                     <h3 class="main-title title-white">Testimonials</h3>
                     <p>
@@ -400,7 +400,7 @@ export default class filemakerPage extends Component {
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
                     <h3 className="text-above-main-title">
-                      proffessional team
+                      PROFFESSIONAL TEAM
                     </h3>
                     <h3 class="main-title title-orange">Our Experts</h3>
                   </div>

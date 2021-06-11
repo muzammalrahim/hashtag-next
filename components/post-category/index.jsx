@@ -48,7 +48,7 @@ export default class BlogCategories extends Component {
     return (
    
       <div id="categories-3" className="widget widget_categories posts_holder">
-        <h5 className="title-level-6 text-left title-level-mobile b-categories">Categories</h5>    
+        <h4 className="title-level-6 text-left title-level-mobile b-categories">Categories</h4>    
         <ul>
           {this.state.categories.map((cat, index) => { 
             return(

@@ -59,9 +59,9 @@ export default class Service extends Component {
                 <div className="container ">
                   <div className="row justify-content-center service-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <p className="sub-text-above-main-title title-white">
+                      <h1 className="sub-text-above-main-title title-white">
                         A Full stack development company
-                      </p>
+                      </h1>
                       <h1 className="main-title title-white d-block">
                         Our Services
                       </h1>

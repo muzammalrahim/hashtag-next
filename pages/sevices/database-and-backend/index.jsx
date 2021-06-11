@@ -61,7 +61,7 @@ export default class DatabasePage extends Component {
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
                       <h1 className="sub-text-above-main-title title-white">
-                        We offer Solutions for
+                        We offer solutions for
                       </h1>
                       <h1 className="main-title  title-white d-block">
                         DB & Backend
@@ -167,9 +167,9 @@ export default class DatabasePage extends Component {
                   <p class="text-above-main-title text-above-main-title-c text-center mb-0">
                     YOU ARE IN GOOD TECH HANDS
                   </p>
-                  <h1 class="main-title title-orange text-center">
-                    Development Services
-                  </h1>
+                  <h3 class="main-title title-orange text-center">
+                    Development and Services
+                  </h3>
                   <div class="col-md-9 mx-auto sw-service-dev-sub">
                     <p>
                       Backend development is one of the vital components of the
