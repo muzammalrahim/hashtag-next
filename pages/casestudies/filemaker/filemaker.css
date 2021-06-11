@@ -17,8 +17,7 @@ commented by sherin since main title css is already called in main css file
   border-radius: 4px;
   color: #fff;
 }
-.filemaker-h2-size 
-{
+.filemaker-h2-size h2{
   font-size: 1.5em;
   color: #fff;
 }

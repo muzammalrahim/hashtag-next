@@ -78,7 +78,7 @@ export default class filemakerPage extends Component {
                         Filemaker <br />
                         Development
                       </h1>
-                      <p className="text-white">
+                      <p className="text-white s-file-maker">
                         <strong>
                           <h1>
                           We are Filemaker development experts located in
