@@ -6,8 +6,11 @@
 	color: #434343;
 }*/
 
-.s-file-maker h1{
-	font-size: 32px;
+
+
+.s-file-maker h2{
+	font-size: 1.5rem;
+	line-height: inherit;
 }
 .case-study.filemaker-service .project-about-blk{
 	padding-bottom: 100px;
@@ -398,3 +401,4 @@
 @media(max-width: 479px) {
 	.testimonial-blk{height: 1570px;}
 }
+	

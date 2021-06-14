@@ -515,9 +515,9 @@ export default class Shopify extends Component {
               <div className="container">
                 <div class="row">
                   <div class="col-12">
-                    <p class="text-above-main-title text-center testimonial-margin">
+                    <h3 class="text-above-main-title text-center testimonial-margin">
                       WHAT CLIENT SAY ABOUT US
-                    </p>
+                    </h3>
                     <h3 class="main-title title-orange text-center">
                       Testimonials
                     </h3>

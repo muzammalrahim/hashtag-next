@@ -168,7 +168,7 @@ export default class DatabasePage extends Component {
                     YOU ARE IN GOOD TECH HANDS
                   </p>
                   <h3 class="main-title title-orange text-center">
-                    Development and Services
+                    Development Services
                   </h3>
                   <div class="col-md-9 mx-auto sw-service-dev-sub">
                     <p>

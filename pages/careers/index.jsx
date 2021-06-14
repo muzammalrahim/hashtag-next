@@ -120,9 +120,9 @@ export default class Careers extends Component {
               <div className="container">
                 <div className="row">
                   <div className="col-12 join-team-title-row">
-                    <p className="text-above-main-title text-center">
+                    <h3 className="text-above-main-title text-center">
                       ARE YOU READY TO STEP INTO THE LOUNGE?
-                    </p>
+                    </h3>
                     {/*<h1 className="main-title title-orange text-center">Join Team</h1>*/}
                   </div>
                 </div>

@@ -80,11 +80,11 @@ export default class filemakerPage extends Component {
                       </h1>
                       <p className="text-white s-file-maker">
                         <strong>
-                          <h1>
+                          <h2>
                           We are Filemaker development experts located in
                           California <br /> and serving customers worldwide on
                           various filemaker <br /> solutions and integrations
-                          </h1>
+                          </h2>
                         </strong>
                       </p>
                     </div>
