@@ -51,7 +51,7 @@ export default class BlogRecentPosts extends Component {
   render() {
     return (
       <div id="recent-posts-4" className="widget widget_recent_entries posts_holder">    
-        <h5 className="title-level-6 title-level-mobile text-left b-recent-posts">Recent Posts</h5>    
+        <h3 className="title-level-6 title-level-mobile text-left b-recent-posts">Recent Posts</h3>    
         <ul>
           {this.state.recentPosts.map((post, index) => { 
             return(

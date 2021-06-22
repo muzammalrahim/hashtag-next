@@ -86,25 +86,23 @@ const { data } = this.state;
             <div className="container">
               <div className="row">
                 <div className="col-md-10">
-                  <div className="common-title-wrap px-md-3">
-                    <div className="common-head-blk">
-                      <h6>Website development &amp; design</h6>
-                      <h2 className="main-title title-white">
+                  <div className="common-title-wrap c-heading px-md-3 ">
+                    <div className="case-filmmaker-size">
+                      <h1>Website development &amp; design</h1>
+                      </div>
+                      <h1 className="main-title title-white">
                         Filemaker in Action
-                      </h2>
-                      <div className="intro-desc title-white">
-                        <p>
-                          <b>
-                            The FileMaker Platform empowers problem solvers to
+                      </h1>
+                      <div className="intro-desc title-white filemaker-h2-size">
+                      <h2 >The FileMaker Platform empowers problem solvers to
                             <br />
                             create, share, and integrate custom apps to address
                             their
                             <br />
                             ever changing business challenges.
-                          </b>
-                        </p>
+                      </h2>
                       </div>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -154,7 +152,7 @@ const { data } = this.state;
                 <div className="col-md-5 offset-md-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">Description</h6>
+                      <h3 className="text-above-main-title">DESCRIPTION</h3>
                       <h3 className="main-title title-orange">Introduction</h3>
                     </div>
                     <p>
@@ -172,7 +170,7 @@ const { data } = this.state;
 
                   <div className="project-unique-wrap challenge-sec">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">Challenges</h6>
+                      <h3 className="text-above-main-title">CHALLENGES</h3>
                       <h3 className="main-title title-orange">
                         Business Challenge
                       </h3>
@@ -196,7 +194,7 @@ const { data } = this.state;
 
                   <div className="project-unique-wrap challenge-sec">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">What We Do</h6>
+                      <h3 className="text-above-main-title">WHAT WE DO</h3>
                       <h3 className="main-title title-orange">Solution</h3>
                     </div>
                     <p>
@@ -233,7 +231,7 @@ const { data } = this.state;
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-10">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">How It Works</h6>
+                    <h3 className="text-above-main-title">HOW IT WORKS</h3>
                     <h3 className="main-title title-orange">Architecture</h3>
                   </div>
                   <div className="workflow-wrap">
@@ -408,9 +406,9 @@ const { data } = this.state;
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-8">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">Our Skillsets</h6>
+                    <h3 className="text-above-main-title">OUR SKILLSET</h3>
                     <h3 className="main-title title-orange">
-                      We are experts in
+                      We Are Experts In
                     </h3>
                   </div>
                 </div>

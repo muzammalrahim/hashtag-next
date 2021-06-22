@@ -146,10 +146,10 @@ export default class Singlepost extends Component {
                       </ul>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents service-content-box pl-4">
-                        We are seeking brilliant minds to join our dynamic team
-                        and make it even better.
-                      </p>
+                      <h2 className="bold-contents service-content-box pl-4">
+                        Highly experienced digital solutions company provide best 
+                        professional Web Solutions
+                      </h2>
                     </div>
                   </div>
                 </div>

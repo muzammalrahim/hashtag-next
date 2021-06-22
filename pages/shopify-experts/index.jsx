@@ -84,9 +84,9 @@ export default class Shopify extends Component {
                 <div className="container ">
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <p className="sub-text-above-main-title title-white">
+                      <h1 className="sub-text-above-main-title title-white">
                         E-commerce platform{" "}
-                      </p>
+                      </h1>
                       <h1 className="main-title  title-white d-block">
                         Shopify
                       </h1>
@@ -104,11 +104,11 @@ export default class Shopify extends Component {
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents shopify-content-box pl-4">
+                      <h2 className="bold-contents shopify-content-box pl-4">
                         We Design & Set-Up Beautiful E-commerce Store in
                         Shopify. We are official Shopify Partners and Shopify
                         Experts.
-                      </p>
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -120,9 +120,9 @@ export default class Shopify extends Component {
             {/* section 2 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12">
-                <h1 className="main-title title-orange">
+                <h3 className="main-title title-orange">
                   Let us help you with
-                </h1>
+                </h3>
                 <span className="shopify-sub-title">
                   <span>
                     Theme Customization | Store Setup | Migration to Shopify
@@ -217,11 +217,11 @@ export default class Shopify extends Component {
 
                 <div className="row justify-content-center  pl-3 pr-3">
                   <div className="col-12 col-lg-5 col-xxl-5 col-md-12 content-four-section">
-                    <p className="text-above-main-title title-white">
+                    <h3 className="text-above-main-title title-white">
                       THE BEST E-COMMERCE PLATFORM
-                    </p>
+                    </h3>
 
-                    <h1 className="shopify-title">
+                    <h3 className="shopify-title">
                       <span className="main-title title-white d-block">
                         Why Shopify?
                         <br />
@@ -230,7 +230,7 @@ export default class Shopify extends Component {
                           alt="shopify quote"
                         />
                       </span>
-                    </h1>
+                    </h3>
 
                     <p class="hash-content-col title-white why-us-hash-content">
                       <p>
@@ -273,12 +273,12 @@ export default class Shopify extends Component {
           <div className="container shopify-benifits-section">
             <div className="row">
               <div class="col-12">
-                <p class="text-above-main-title text-center">
+                <h3 class="text-above-main-title text-center">
                   PERFECT SOLUTION FOR BUSINESS
-                </p>
-                <h1 class="main-title title-orange text-center">
+                </h3>
+                <h3 class="main-title title-orange text-center">
                   Shopify Benefits
-                </h1>
+                </h3>
               </div>
             </div>
             {/* section 1 */}

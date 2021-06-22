@@ -3,7 +3,21 @@
   background-image: url('/images/case-studies/easylevel/curved-head.svg');
   background-color: unset;
 }*/
+.main-title-custom
+{
+    color: white;
+}
+.case-easylevel-size{
+    display: inline-block;
 
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 0px;
+    padding: 5px;
+    border: 1px solid #ffb783;
+    border-radius: 4px;
+    color: #fff;
+}
 .project-about-blk-padding {
     background: #f5f5f5;
 }

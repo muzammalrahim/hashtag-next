@@ -74,15 +74,17 @@ export default class filemakerPage extends Component {
                 <div className="col-md-6 ">
                   <div className="common-title-wrap px-md-3">
                     <div className="common-head-blk">
-                      <h2 className="main-title title-white">
+                      <h1 className="main-title title-white">
                         Filemaker <br />
                         Development
-                      </h2>
-                      <p className="text-white">
+                      </h1>
+                      <p className="text-white s-file-maker">
                         <strong>
+                          <h2>
                           We are Filemaker development experts located in
                           California <br /> and serving customers worldwide on
                           various filemaker <br /> solutions and integrations
+                          </h2>
                         </strong>
                       </p>
                     </div>
@@ -150,9 +152,9 @@ export default class filemakerPage extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">
+                    <h3 className="text-above-main-title">
                       WE OFFER A WIDE RANGE OF
-                    </h6>
+                    </h3>
                     <h3 class="main-title title-orange">
                       FileMaker Development Services
                     </h3>
@@ -292,9 +294,9 @@ export default class filemakerPage extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title  title-white">
-                      WHAT CLIENTs SAY ABOUT US
-                    </h6>
+                    <h3 className="text-above-main-title  title-white">
+                      WHAT CLIENT SAY ABOUT US
+                    </h3>
                     <h3 class="main-title title-white">Testimonials</h3>
                     <p>
                       We have built several business process automation
@@ -399,9 +401,9 @@ export default class filemakerPage extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">
-                      proffessional team
-                    </h6>
+                    <h3 className="text-above-main-title">
+                      PROFFESSIONAL TEAM
+                    </h3>
                     <h3 class="main-title title-orange">Our Experts</h3>
                   </div>
                 </div>
