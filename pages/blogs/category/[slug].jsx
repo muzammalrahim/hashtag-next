@@ -456,6 +456,7 @@ class BlogCategory extends Component {
                                       "/blogs/category/" + cat.slug
                                     ),
                                       this.changeCat(cat.slug);
+                                      
                                   }}
                                 >
                                   {" "}

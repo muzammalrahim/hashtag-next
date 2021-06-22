@@ -140,7 +140,7 @@ export async function getServerSideProps() {
     }
 
     changeCat = (singlePost) => {
-      
+
       let postUrl = singlePost;
       this.setState({ postData: {} });
       Axios.get(config.myConfig.apiUrl + "blog/posts/single", {
@@ -309,7 +309,7 @@ export async function getServerSideProps() {
               onClick={() => {
                 this.navigate(
                   "/blogs/single/"+post.url
-                ),
+                )
                   this.changeCat(post.url);
               }}
 
