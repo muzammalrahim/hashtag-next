@@ -24,7 +24,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "sevices-filemaker",
       },
     })
     .then((response) => {
@@ -44,18 +44,7 @@ export default class filemakerPage extends Component {
     };
   }
   render() {
-    const meta = {
-      title:
-        "FileMaker Pro Development - FullStack Web Development| Bay area, California",
-
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
+    
 
     const settings = {
       infinite: true,
@@ -72,7 +61,6 @@ export default class filemakerPage extends Component {
     let { data } = this.state;
     return (
       <div className="case-study filemaker-service" id="filemaker-service">
-        <DocumentMeta {...meta} />
         <Header
           title={data.data.title}
           description={data.data.description}
@@ -82,19 +70,21 @@ export default class filemakerPage extends Component {
         <section className="content-container">
           <div className="common-title-blk">
             <div className="container">
-              <div className="row shopifyBg">
+              <div className="row">
                 <div className="col-md-6 ">
                   <div className="common-title-wrap px-md-3">
                     <div className="common-head-blk">
-                      <h2 className="main-title title-white">
+                      <h1 className="main-title title-white">
                         Filemaker <br />
                         Development
-                      </h2>
-                      <p className="text-white">
+                      </h1>
+                      <p className="text-white s-file-maker">
                         <strong>
+                          <h2>
                           We are Filemaker development experts located in
                           California <br /> and serving customers worldwide on
                           various filemaker <br /> solutions and integrations
+                          </h2>
                         </strong>
                       </p>
                     </div>
@@ -162,9 +152,9 @@ export default class filemakerPage extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">
+                    <h3 className="text-above-main-title">
                       WE OFFER A WIDE RANGE OF
-                    </h6>
+                    </h3>
                     <h3 class="main-title title-orange">
                       FileMaker Development Services
                     </h3>
@@ -179,7 +169,7 @@ export default class filemakerPage extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/file-maker/feature1.svg"
-                          alt="feature1"
+                          alt="FileMaker Database Conversions"
                         />
                         <h4 className="text-level-5 title-black">
                           FileMaker Database <br />
@@ -194,7 +184,7 @@ export default class filemakerPage extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/file-maker/feature2.svg"
-                          alt="feature2"
+                          alt="Migration to Filemaker Pro"
                         />
                         <h4 className="text-level-5 title-black">
                           Migration to <br />
@@ -209,7 +199,7 @@ export default class filemakerPage extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/file-maker/feature3.svg"
-                          alt="feature3"
+                          alt="FileMaker Go Mobile Development"
                         />
                         <h4 className="text-level-5 title-black">
                           FileMaker Go Mobile <br />
@@ -224,7 +214,7 @@ export default class filemakerPage extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/file-maker/feature4.svg"
-                          alt="feature4"
+                          alt="Build a new Filemaker Solution"
                         />
                         <h4 className="text-level-5 title-black">
                           Build a new <br />
@@ -244,7 +234,7 @@ export default class filemakerPage extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/file-maker/feature5.svg"
-                          alt="feature5"
+                          alt="Application Optimization"
                         />
                         <h4 className="text-level-5 title-black">
                           Application <br />
@@ -259,7 +249,7 @@ export default class filemakerPage extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/file-maker/feature6.svg"
-                          alt="feature6"
+                          alt="Update and Ongoing Support"
                         />
                         <h4 className="text-level-5 title-black">
                           Update & Ongoing <br />
@@ -274,7 +264,7 @@ export default class filemakerPage extends Component {
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/file-maker/feature7.svg"
-                          alt="feature7"
+                          alt="Third Party Solutions Integration"
                         />
                         <h4 className="text-level-5 title-black">
                           Third Party <br />
@@ -304,9 +294,9 @@ export default class filemakerPage extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title  title-white">
-                      WHAT CLIENTs SAY ABOUT US
-                    </h6>
+                    <h3 className="text-above-main-title  title-white">
+                      WHAT CLIENT SAY ABOUT US
+                    </h3>
                     <h3 class="main-title title-white">Testimonials</h3>
                     <p>
                       We have built several business process automation
@@ -392,7 +382,14 @@ export default class filemakerPage extends Component {
                       data-height="auto"
                       data-snippets="true"
                       data-clutchcompany-id="62314"
-                    ></div>
+                    >
+                      <iframe
+                        width="100%"
+                        src="https://widget.clutch.co/widgets/get/4?ref_domain=165.22.214.227&uid=62314&ref_path=/services/filemaker"
+                        height="700px"
+                        scrolling="no"
+                      ></iframe>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -404,9 +401,9 @@ export default class filemakerPage extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">
-                      proffessional team
-                    </h6>
+                    <h3 className="text-above-main-title">
+                      PROFFESSIONAL TEAM
+                    </h3>
                     <h3 class="main-title title-orange">Our Experts</h3>
                   </div>
                 </div>
@@ -420,7 +417,7 @@ export default class filemakerPage extends Component {
                     </h6>
                     <img
                       src="../images/file-maker/man-profile.svg"
-                      alt="expert1"
+                      alt="male profile"
                     />
                   </div>
                 </div>
@@ -429,7 +426,7 @@ export default class filemakerPage extends Component {
                     <h6>Selva V</h6>
                     <img
                       src="../images/file-maker/woman-profile.svg"
-                      alt="expert2"
+                      alt="female profile"
                     />
                   </div>
                 </div>

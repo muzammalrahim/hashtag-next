@@ -21,7 +21,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "sevices-blockchain",
       },
     })
     .then((response) => {
@@ -41,24 +41,11 @@ export default class BlockChain extends Component {
         }
     }
     render() {
-        const meta = {
-            title: 'Blockchain - FullStack Web Development| Bay area, California',
-
-
-            meta: {
-                charset: 'utf-8',
-                name: {
-                    keywords: 'Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california'
-                }
-
-
-            }
-        };
+       
         let {data} =this.state
         return (
 
             <div className="contact-main" id="Blcnbanner">
-                <DocumentMeta {...meta} />
                 <div className="wp-main" id="wp-main">
                     <Header title={data.data.title} description={data.data.description} keywords={data.data.keywords}></Header>
                 </div>
@@ -70,15 +57,15 @@ export default class BlockChain extends Component {
 
                                     <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                                         <div className="col-lg-6 col-md-12">
-                                            <p className="sub-text-above-main-title title-white">We offer Solutions for</p>
+                                            <h1 className="sub-text-above-main-title title-white">We offer Solutions for</h1>
                                             <h1 className="main-title  title-white d-block">Blockchain <br />development</h1>
 
 
                                         </div>
                                         <div className="col-lg-6 col-md-12 text-white  ">
-                                            <p className="bold-contents shopify-content-box pl-4">
+                                            <h2 className="bold-contents shopify-content-box pl-4">
                                                 With the introduction of the Bitcoin protocol, the internet has been obsessed with the technological marvel that is blockchain technology. We at hashtag being no stranger to advanced technology are among the forefront in blockchain adoption and implementation.
-                                            </p>
+                                            </h2>
                                         </div>
                                     </div>
                                 </div>
@@ -90,7 +77,7 @@ export default class BlockChain extends Component {
                         <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
 
                             <div className="col-lg-5 col-md-12 col-sm-12">
-                                <h1 className="main-title title-orange why-bc-sec-tt">Why Blockchain Technology?</h1>
+                                <h3 className="main-title title-orange why-bc-sec-tt">Why Blockchain Technology?</h3>
                                 <div className="shopify-content mt-4">
                                     <p className="mb-4">
                                         In this digital age where trust is hard to come by,
@@ -124,8 +111,8 @@ export default class BlockChain extends Component {
                         <div className="container">
                             <div className="row">
                                 <div class="col-12 wp-sec-3-content shopify-sec-3-content">
-                                    <p class="text-above-main-title text-above-main-title-c text-center mb-0">You Dream It: We Build It</p>
-                                    <h1 class="main-title title-orange text-center">What We Offer</h1>
+                                    <h3 class="text-above-main-title text-above-main-title-c text-center mb-0">You Dream It: We Build It</h3>
+                                    <h3 class="main-title title-orange text-center">What We Offer</h3>
                                 </div>
                             </div>
                             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3 sc-ip-pro">
@@ -238,8 +225,8 @@ export default class BlockChain extends Component {
                         <div className="row justify-content-center pt-5 section-2-row pl-3 pr-3">
 
                             <div className="col-lg-5 col-md-12 col-sm-12">
-                                <p class="text-above-main-title text-above-main-title-c mb-0">We Build Digital Solutions</p>
-                                <h1 className="main-title title-orange">Why Choose Hashtag?</h1>
+                                <h3 class="text-above-main-title text-above-main-title-c mb-0">We Build Digital Solutions</h3>
+                                <h3 className="main-title title-orange">Why Choose Hashtag?</h3>
                                 <div className="dp-on-sm">
                                     <img src="/images/blockchain/etherium 1.svg" alt="etherium_img" className="img-fluid shopify-image mobile-image-border storefront-img" />
                                 </div>

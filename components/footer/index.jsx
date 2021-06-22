@@ -42,7 +42,7 @@ class Footer extends Component {
           <div className="row">
             <div className="col-md-12 p-0">
               <div className="ns-back-to-top h-100 d-none d-md-none d-lg-block d-xl-block">
-                <div className="text-back-to-top ">
+                {/*<div className="text-back-to-top ">
                   back to the top{" "}
                   <span>
                     <a href="javascript:void(0);">
@@ -51,7 +51,7 @@ class Footer extends Component {
                       </button>
                     </a>
                   </span>
-                </div>
+                </div> */}
               </div>
               <div className="row footer-second-row">
                 <div className="col-lg-3 col-md-12">

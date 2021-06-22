@@ -31,7 +31,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "blog-home",
       },
     })
     .then((response) => {
@@ -127,10 +127,10 @@ export default class Blog extends Component {
             allPosts: allPosts,
             hasMoreItems: true,
             page: page + 1,
+            no_items:""
           });
         } else {
-          if (allPosts.length == 0) {
-            console.log("No posts found.");
+          if (allPosts.length === 0) {
             this.setState({
               hasMoreItems: false,
               no_items: "No posts found.",
@@ -138,28 +138,18 @@ export default class Blog extends Component {
           } else {
             this.setState({
               hasMoreItems: false,
+              no_items:""
             });
           }
         }
       })
       .catch((error) => {
-        // console.log(error.response);
-        console.log("API error.");
         toast.error("Something went wrong.");
       });
   }
 
   render() {
-    const meta = {
-      title: "Blogs - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
+    
     const loader = (
       <div className="loader">
         <div className="spinner">
@@ -180,16 +170,16 @@ export default class Blog extends Component {
           <div className="card" key={index}>
             <h5 className="card-title text-level-4 title-orange">
               <Link
-                href={"/blogs/single/[slug]"}
-                as={"/blogs/single/" + post.url}
+                href={"/blogs/[slug]"}
+                as={"/blogs/" + post.url}
               >
                 {post.title}
               </Link>
             </h5>
             <div className="blog-img">
               <Link
-                href={"/blogs/single/[slug]"}
-                as={"/blogs/single/" + post.url}
+                href={"/blogs/[slug]"}
+                as={"/blogs/" + post.url}
               >
                 <div
                   className="blog-thumb"
@@ -220,8 +210,8 @@ export default class Blog extends Component {
             <div className="card-body">
               <h4 className="card-title text-level-4 title-orange">
                 <Link
-                  href={"/blogs/single/[slug]"}
-                  as={"/blogs/single/" + post.url}
+                  href={"/blogs/[slug]"}
+                  as={"/blogs/" + post.url}
                 >
                   {post.title}
                 </Link>
@@ -233,8 +223,8 @@ export default class Blog extends Component {
               <p className="card-text">{post.excerpt}</p>
               <span className="cta-link">
                 <Link
-                  href={"/blogs/single/[slug]"}
-                  as={"/blogs/single/" + post.url}
+                  href={"/blogs/[slug]"}
+                  as={"/blogs/" + post.url}
                   className="shopify-sub-title"
                 >
                   <a className="shopify-sub-title">
@@ -252,7 +242,6 @@ export default class Blog extends Component {
     return (
       <div className="blog-main" id="blog-main">
         <ToastContainer transition={Slide} />
-        <DocumentMeta {...meta} />
         <Header
           title={data.data.title}
           description={data.data.description}
@@ -271,10 +260,10 @@ export default class Blog extends Component {
                       <h1 className="main-title title-white d-block">Blogs</h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents service-content-box pl-4">
-                        We are seeking brilliant minds to join our dynamic team
-                        and make it even better.
-                      </p>
+                      <h2 className="bold-contents service-content-box pl-4">
+                        Highly experienced digital solutions company provide best 
+                        professional Web Solutions.
+                      </h2>
                     </div>
                   </div>
                 </div>

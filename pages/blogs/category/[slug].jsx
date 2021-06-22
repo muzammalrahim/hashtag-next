@@ -1,25 +1,22 @@
-import React, { Component } from "react";
-import Header from "../../../components/header/index.jsx";
-import Footer from "../../../components/footer/index.jsx";
-import Underconstruction from "../../../components/under-construction/index.jsx";
-// import BlogCategories from '../../../components/post-category/index.jsx';
-import BlogRecentPosts from "../../../components/post-recent/index.jsx";
-import DocumentMeta from "react-document-meta";
-import { ToastContainer, toast, Slide } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import InfiniteScroll from "react-infinite-scroller";
-import $ from "jquery";
+import React, { Component } from 'react';
+import Header from '../../../components/header/index.jsx';
+import Footer from '../../../components/footer/index.jsx';
+import Underconstruction from '../../../components/under-construction/index.jsx';
+import BlogCategories from '../../../components/post-category/index.jsx';
+import BlogRecentPosts from '../../../components/post-recent/index.jsx';
+import DocumentMeta from 'react-document-meta';
+import { ToastContainer, toast, Slide } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import InfiniteScroll from 'react-infinite-scroller';
+import $ from 'jquery';
 import Axios from "axios";
 import https from "https";
-import * as config from "../../../config";
-import queryString from "query-string";
-import Flip from "react-reveal/Reveal";
-import Link from "next/link";
+import * as config from '../../../config';
+import queryString from 'query-string';
+import Flip from 'react-reveal/Reveal';
+import Link from 'next/link'
 
-import axios from "axios";
-import { withRouter } from "next/router";
-
-require("typeface-montserrat");
+require('typeface-montserrat')
 export async function getServerSideProps() {
   let data = [];
 
@@ -33,7 +30,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "blog-home",
       },
     })
     .then((response) => {
@@ -44,34 +41,36 @@ export async function getServerSideProps() {
   };
 }
 
-class BlogCategory extends Component {
+export default class BlogCategory extends Component {
+
+
   constructor(props) {
     super(props);
-    if (typeof window === "undefined") {
-      global.window = {};
+if (typeof window === "undefined") {
+  global.window = {};
     }
-    let response = this.props;
+    let response = this.props
     this.state = {
       allPosts: [],
       hasMoreItems: true,
-      page: 1,
-      no_items: "",
+      page:1,
+      no_items: '',
       category: this.props?.match?.params?.slug,
-      search_val: "",
-      keyword: "",
+      search_val: '',
+      keyword: '',
       data: response.data.data,
-      categories: [],
     };
+
 
     this.shiftContent = this.shiftContent.bind(this);
     this.get_allPosts = this.get_allPosts.bind(this);
+
     this.handleChange = this.handleChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
 
   componentDidMount() {
     this.shiftContent();
-    this.get_categories();
     if (typeof window !== undefined) {
       window.addEventListener("resize", this.shiftContent);
     }
@@ -83,12 +82,7 @@ class BlogCategory extends Component {
     }
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    // console.log('current state ', this.state.category);
-    // console.log('prevState ', prevState);
-  }
-
-  componentWillMount() {
+  componentWillMount(){
     if (this.props.location && this.props.location.search) {
       const values = queryString.parse(this.props.location.search);
       this.setState({
@@ -106,179 +100,98 @@ class BlogCategory extends Component {
 
   handleChange(e) {
     this.setState({
-      search_val: e.target.value,
+      search_val: e.target.value
     });
+
   }
 
   onSubmit(e) {
-    e.preventDefault();
-    const values = this.state.search_val;
-    this.setState({
-      keyword: values,
-      page: 1,
-      allPosts: [],
-      hasMoreItems: true,
-      no_items: "",
-    });
-    this.props.history.push(
-      "/blogs/category/" +
-        this.state.category +
-        "?keyword=" +
-        this.state.search_val
-    );
+      e.preventDefault();
+      const values = this.state.search_val;
+      this.setState({
+        keyword: values,
+        page: 1,
+        allPosts: [],
+        hasMoreItems: true,
+        no_items: ''
+      });
+      this.props.history.push('/blogs/category/'+this.state.category+'?keyword='+this.state.search_val);
+      
   }
 
   //Search div shift
-  shiftContent() {
-    if ($(".mob-visible").is(":visible")) {
-      $(".widget_search").insertBefore($(".blog-list"));
-    } else {
-      $(".widget_search").insertBefore($(".widget_recent_entries"));
+  shiftContent(){
+    if($(".mob-visible").is(":visible")) { 
+      $('.widget_search').insertBefore($('.blog-list'));
+    }
+    else {
+      $('.widget_search').insertBefore($('.widget_recent_entries'));
     }
   }
 
+
   //Get posts
-  get_allPosts(catSlug) {
-    var url = config.myConfig.apiUrl + "blog/posts";
+  get_allPosts(catSlug){
+    var url = config.myConfig.apiUrl+'blog/posts';
     var page = this.state.page;
     var category = catSlug;
     var keyword = this.state.keyword;
 
-    Axios.get(url, {
-      params: { page: page, category: category, keyword: keyword },
-    })
-      .then((response) => {
-        const allPosts = this.state.allPosts;
-        response.data.data.posts.map((data) => {
+    Axios.get(url, {params: {page: page, category: category, keyword: keyword}})
+    .then((response) => {
+      const allPosts = this.state.allPosts;
+      response.data.data.posts.map((data) => {
           allPosts.push(data);
-        });
-
-        if (response.data.data.more_exists == true) {
+      });
+      if(response.data.data.more_exists == true) {
           this.setState({
             allPosts: allPosts,
             hasMoreItems: true,
             page: page + 1,
+            no_items: ""
           });
-        } else {
-          console.log("lengtho", allPosts.length);
-          if (allPosts.length === 0) {
-            this.setState({
-              hasMoreItems: false,
-              no_items: "No posts found",
-            });
-          } else {
-            this.setState({
-              hasMoreItems: false,
-              no_items: "",
-            });
-          }
-        }
-      })
-      .catch((error) => {
-        toast.error("Something went wrong.");
-      });
-  }
-
-  //Get recent posts
-  get_categories() {
-    axios
-      .get(config.myConfig.apiUrl + "blog/categories")
-      .then((response) => {
-        const categories = response.data.data;
-        this.setState({
-          categories: categories,
-        });
-      })
-      .catch((error) => {
-        toast.error("Something went wrong.");
-      });
-  }
-
-  navigate = (id) => {
-    this.props.router.push({
-      pathname: id,
-      // query: { id }
-    });
-  };
-
-  changeCat = (value) => {
-    var url = config.myConfig.apiUrl + "blog/posts";
-    var page = this.state.page;
-    var category = value;
-    var keyword = this.state.keyword;
-    this.setState({ allPosts: [] });
-    Axios.get(url, {
-      params: { page: page, category: category, keyword: keyword },
-    }).then((response) => {
-      const allPosts = this.state.allPosts;
-      response.data.data.posts.map((data) => {
-        allPosts.push(data);
-      });
-
-      if (response.data.data.more_exists == true) {
-        this.setState({
-          allPosts: allPosts,
-          hasMoreItems: true,
-          page: page + 1,
-        });
       } else {
-        if (allPosts.length === 0) {
+        if (allPosts && allPosts.length === 0) {
           this.setState({
             hasMoreItems: false,
-            no_items: "No posts found",
+            no_items: "No posts found.",
           });
         } else {
           this.setState({
             hasMoreItems: false,
+            no_items:""
           });
         }
       }
-    });
 
-    this.setState({ category: value });
-  };
+    }).catch(error =>{
+      toast.error("Something went wrong.");
+    });
+  }
+
+
 
   render() {
-    const meta = {
-      title: "Blogs - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
-    const loader = (
-      <div className="loader">
-        <div className="spinner">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        Loading
-      </div>
-    );
+    const loader = <div className="loader"><div className="spinner"><div></div><div></div><div></div><div></div></div>Loading</div>;
 
     var post_lists = [];
     this.state.allPosts.map((post, index) => {
-      post.image = post.image.replace("http://", "https://");
+      post.image = post.image.replace('http://','https://');
       post_lists.push(
         <Flip bottom>
           <div className="card" key={index}>
             <h5 className="card-title text-level-4 title-orange">
               <Link
-                href={"/blogs/single/[slug]"}
-                as={"/blogs/single/" + post.url}
+                href={"/blogs/[slug]"}
+                as={"/blogs/" + post.url}
               >
                 {post.title}
               </Link>
             </h5>
             <div className="blog-img">
               <Link
-                href={"/blogs/single/[slug]"}
-                as={"/blogs/single/" + post.url}
+                href={"/blogs/[slug]"}
+                as={"/blogs/" + post.url}
               >
                 <div
                   className="blog-thumb"
@@ -288,9 +201,7 @@ class BlogCategory extends Component {
                         ? "/images/blogs/writing-good-blog.jpg"
                         : `url(${post.image})`,
                   }}
-                >
-                  {" "}
-                </div>
+                ></div>
               </Link>
               <div className="card-img-overlay">
                 {post.categories.map((cat, i) => {
@@ -310,8 +221,8 @@ class BlogCategory extends Component {
             <div className="card-body">
               <h4 className="card-title text-level-4 title-orange">
                 <Link
-                  href={"/blogs/single/[slug]"}
-                  as={"/blogs/single/" + post.url}
+                  href={"/blogs/[slug]"}
+                  as={"/blogs/" + post.url}
                 >
                   {post.title}
                 </Link>
@@ -323,8 +234,8 @@ class BlogCategory extends Component {
               <p className="card-text">{post.excerpt}</p>
               <span className="cta-link">
                 <Link
-                  href={"/blogs/single/[slug]"}
-                  as={"/blogs/single/" + post.url}
+                  href={"/blogs/[slug]"}
+                  as={"/blogs/" + post.url}
                   className="shopify-sub-title"
                 >
                   <a>
@@ -338,16 +249,11 @@ class BlogCategory extends Component {
         </Flip>
       );
     });
-    const { data } = this.state;
+const {data} = this.state
     return (
       <div className="blog-main" id="blog-main">
         <ToastContainer transition={Slide} />
-        <DocumentMeta {...meta} />
-        <Header
-          title={data.title}
-          description={data.description}
-          keywords={data.keywords}
-        ></Header>
+        <Header title={data.title} description={data.description} keywords={data.keywords}></Header>
         <section class="content-container">
           <div className="container-fluid service-bg p-0 m-0 ">
             <div className="service-bg-right">
@@ -428,45 +334,10 @@ class BlogCategory extends Component {
                           </div>
                         </form>
                       </div>
-
                       <BlogRecentPosts
                         category={this.state.category}
                       ></BlogRecentPosts>
-
-                      <div
-                        id="categories-3"
-                        className="widget widget_categories posts_holder"
-                      >
-                        <h5 className="title-level-6 text-left title-level-mobile b-categories">
-                          Categories
-                        </h5>
-                        <ul>
-                          {this.state.categories?.map((cat, index) => {
-                            return (
-                              <li
-                                className="cat-item cat-item-51 current-cat"
-                                key={index}
-                              >
-                                {/*    <a aria-current="page" href={"/blogs/category/"+cat.slug}>{cat.name}</a>*/}
-                                <a
-                                  href="#"
-                                  style={{ cursor: "pointer" }}
-                                  onClick={() => {
-                                    this.navigate(
-                                      "/blogs/category/" + cat.slug
-                                    ),
-                                      this.changeCat(cat.slug);
-                                      
-                                  }}
-                                >
-                                  {" "}
-                                  {cat.name}
-                                </a>
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </div>
+                      <BlogCategories></BlogCategories>
                     </aside>
                   </div>
                 </div>
@@ -480,5 +351,3 @@ class BlogCategory extends Component {
     );
   }
 }
-
-export default withRouter(BlogCategory);

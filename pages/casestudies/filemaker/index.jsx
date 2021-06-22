@@ -29,7 +29,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "casestudies-filemaker",
       },
     })
     .then((response) => {
@@ -51,17 +51,6 @@ export default class Filemaker extends Component {
   componentDidMount() {}
 
   render() {
-    const meta = {
-      title:
-        "Filemaker Case study - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
 const { data } = this.state;
     const settings = {
       infinite: true,
@@ -87,7 +76,6 @@ const { data } = this.state;
 
     return (
       <div className="case-study filemaker" id="filemaker-case-study">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}
@@ -98,25 +86,23 @@ const { data } = this.state;
             <div className="container">
               <div className="row">
                 <div className="col-md-10">
-                  <div className="common-title-wrap px-md-3">
-                    <div className="common-head-blk">
-                      <h6>Website development &amp; design</h6>
-                      <h2 className="main-title title-white">
+                  <div className="common-title-wrap c-heading px-md-3 ">
+                    <div className="case-filmmaker-size">
+                      <h1>Website development &amp; design</h1>
+                      </div>
+                      <h1 className="main-title title-white">
                         Filemaker in Action
-                      </h2>
-                      <div className="intro-desc title-white">
-                        <p>
-                          <b>
-                            The FileMaker Platform empowers problem solvers to
+                      </h1>
+                      <div className="intro-desc title-white filemaker-h2-size">
+                      <h2 >The FileMaker Platform empowers problem solvers to
                             <br />
                             create, share, and integrate custom apps to address
                             their
                             <br />
                             ever changing business challenges.
-                          </b>
-                        </p>
+                      </h2>
                       </div>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -132,7 +118,7 @@ const { data } = this.state;
                       <li>
                         <img
                           src="/images/case-studies/filemaker/intro-logo-1.svg"
-                          alt="filemaker"
+                          alt="File Maker"
                         />
                       </li>
                       <li>
@@ -166,7 +152,7 @@ const { data } = this.state;
                 <div className="col-md-5 offset-md-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">Description</h6>
+                      <h3 className="text-above-main-title">DESCRIPTION</h3>
                       <h3 className="main-title title-orange">Introduction</h3>
                     </div>
                     <p>
@@ -184,7 +170,7 @@ const { data } = this.state;
 
                   <div className="project-unique-wrap challenge-sec">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">Challenges</h6>
+                      <h3 className="text-above-main-title">CHALLENGES</h3>
                       <h3 className="main-title title-orange">
                         Business Challenge
                       </h3>
@@ -208,7 +194,7 @@ const { data } = this.state;
 
                   <div className="project-unique-wrap challenge-sec">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">What We Do</h6>
+                      <h3 className="text-above-main-title">WHAT WE DO</h3>
                       <h3 className="main-title title-orange">Solution</h3>
                     </div>
                     <p>
@@ -245,7 +231,7 @@ const { data } = this.state;
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-10">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">How It Works</h6>
+                    <h3 className="text-above-main-title">HOW IT WORKS</h3>
                     <h3 className="main-title title-orange">Architecture</h3>
                   </div>
                   <div className="workflow-wrap">
@@ -320,7 +306,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured1.svg"
-                          alt="featured1"
+                          alt="File Maker"
                         />
                         <h4 className="text-level-5 title-black">
                           Easy to <br />
@@ -335,7 +321,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured2.svg"
-                          alt="featured2"
+                          alt="File Maker"
                         />
                         <h4 className="text-level-5 title-black">
                           Redesigned <br />
@@ -350,7 +336,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured3.svg"
-                          alt="featured3"
+                          alt="File Maker"
                         />
                         <h4 className="text-level-5 title-black">
                           Automatic data synchronization
@@ -364,7 +350,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured4.svg"
-                          alt="featured4"
+                          alt="File Maker"
                         />
                         <h4 className="text-level-5 title-black">
                           Available offline
@@ -385,7 +371,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured5.svg"
-                          alt="featured5"
+                          alt="File Maker"
                         />
                         <h4 className="text-level-5 title-black">
                           Centralised
@@ -401,7 +387,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured6.svg"
-                          alt="featured6"
+                          alt="File Maker"
                         />
                         <h4 className="text-level-5 title-black">
                           Flexible for future requirements
@@ -420,9 +406,9 @@ const { data } = this.state;
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-8">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">Our Skillsets</h6>
+                    <h3 className="text-above-main-title">OUR SKILLSET</h3>
                     <h3 className="main-title title-orange">
-                      We are experts in
+                      We Are Experts In
                     </h3>
                   </div>
                 </div>

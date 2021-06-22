@@ -20,7 +20,7 @@ export default class Footer extends Component {
  	<div className="container-fluid no-padding-container">
 		<div className="row">
  			<div className="col-md-1 footer-first-row d-none d-sm-block">
- 			<p className="back-to-top rotate">back to the top <span><Link to="#main-section"><button className="btn-arrow"><img src="images/left-arrow.svg" /></button></Link></span></p>
+ 			{/*<p className="back-to-top rotate">back to the top <span><Link to="#main-section"><button className="btn-arrow"><img src="images/left-arrow.svg" /></button></Link></span></p> */}
 			</div>
  		<div className="col-md-10 footer-second-row">
 			<div className="row">

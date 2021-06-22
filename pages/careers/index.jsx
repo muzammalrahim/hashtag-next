@@ -25,7 +25,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "careers",
       },
     })
     .then((response) => {
@@ -44,21 +44,10 @@ export default class Careers extends Component {
     };
   }
   render() {
-    const meta = {
-      title: "Careers - FullStack Web Development| Bay area, California",
-
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
+   
     const { data } = this.state;
     return (
       <div className="careers-main" id="careers-main">
-        <DocumentMeta {...meta} />
 
         <Header
           title={data.title}
@@ -73,18 +62,18 @@ export default class Careers extends Component {
                 <div className="container ">
                   <div className="row justify-content-center service-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <p className="sub-text-above-main-title title-white">
+                      <h1 className="sub-text-above-main-title title-white">
                         Join Us
-                      </p>
+                      </h1>
                       <h1 className="main-title title-white d-block">
                         Careers
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents service-content-box pl-4">
+                      <h2 className="bold-contents service-content-box pl-4">
                         We're seeking brilliant minds to join our dynamic team
                         and make it even better.
-                      </p>
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -95,14 +84,14 @@ export default class Careers extends Component {
             {/* section 2 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div class="col-sm-10 text-center ipad-pro-only">
-                <h1 className="main-title title-orange">
+                <h3 className="main-title title-orange">
                   We are looking for future leaders!{" "}
-                </h1>
+                </h3>
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 ">
-                <h1 className="main-title title-orange ipad-pro-none">
+                <h3 className="main-title title-orange ipad-pro-none">
                   We are looking for future leaders!{" "}
-                </h1>
+                </h3>
                 <div className="shopify-content mt-4">
                   <p>
                     <span className="d-xxl-block">
@@ -131,9 +120,9 @@ export default class Careers extends Component {
               <div className="container">
                 <div className="row">
                   <div className="col-12 join-team-title-row">
-                    <p className="text-above-main-title text-center">
+                    <h3 className="text-above-main-title text-center">
                       ARE YOU READY TO STEP INTO THE LOUNGE?
-                    </p>
+                    </h3>
                     {/*<h1 className="main-title title-orange text-center">Join Team</h1>*/}
                   </div>
                 </div>
@@ -298,9 +287,9 @@ export default class Careers extends Component {
           <div className="container shopify-benifits-section">
             <div className="row">
               <div class="col-12">
-                <p class="text-above-main-title text-center">
+                <h3 class="text-above-main-title text-center">
                   THERE IS ALWAYS ROOM FOR MOTIVATED TECH ENTHUSIASTS
-                </p>
+                </h3>
                 <h1 class="main-title title-orange text-center">Coming Soon</h1>
               </div>
             </div>
@@ -341,9 +330,9 @@ export default class Careers extends Component {
               <div className="container">
                 <div className="row justify-content-center about-row pl-3 pr-3">
                   <div className="col-sm-10">
-                    <h1 className="main-title title-orange text-center">
+                    <h3 className="main-title title-orange text-center">
                       Equal Opportunities
-                    </h1>
+                    </h3>
 
                     <p className="nj-who-we-are-sub-content text-center">
                       <p class="font-normal">

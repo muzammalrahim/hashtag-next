@@ -24,7 +24,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "sevices-wordpress",
       },
     })
     .then((response) => {
@@ -46,55 +46,49 @@ export default class Shopify extends Component {
     };
   }
   render() {
-    const meta = {
-      title: "WordPress Development-BayArea, California",
-
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
+    
 	  let { data } = this.state;
 
 	  const recentWork = [
-        {
-          id: 1,
-          src: "../images/wordpress/67-baltimore.png",
-          alt: "slider1",
-        },{
-          id: 2,
-          src: "../images/wordpress/face-shield.png",
-          alt: "slider2",
-        },{
-          id: 3,
-          src: "../images/wordpress/stories-upon.png",
-          alt: "slider3",
-        },{
-          id: 4,
-          src: "../images/wordpress/global-moonshot.png",
-          alt: "slider4",
-        },{
-          id: 5,
-          src: "../images/wordpress/society-kitchella.png",
-          alt: "slider5",
-        },{
-          id: 6,
-          src: "../images/wordpress/sharon-get-organised.png",
-          alt: "slider6",
-        },{
-          id: 7,
-          src: "../images/wordpress/fameleon.png",
-          alt: "slider7",
-        }
-      ];
-	//   console.log(data)
+      {
+        id: 1,
+        src: "../images/wordpress/67-baltimore.png",
+        alt: "Wordpress Web Design",
+      },
+      {
+        id: 2,
+        src: "../images/wordpress/face-shield.png",
+        alt: "custom wordpress development",
+      },
+      {
+        id: 3,
+        src: "../images/wordpress/stories-upon.png",
+        alt: "wp theme development",
+      },
+      {
+        id: 4,
+        src: "../images/wordpress/global-moonshot.png",
+        alt: "wp plugin development",
+      },
+      {
+        id: 5,
+        src: "../images/wordpress/society-kitchella.png",
+        alt: "wordpress plugin development",
+      },
+      {
+        id: 6,
+        src: "../images/wordpress/sharon-get-organised.png",
+        alt: "wordpress design and development",
+      },
+      {
+        id: 7,
+        src: "../images/wordpress/fameleon.png",
+        alt: "wp theme development",
+      },
+    ];
     return (
 
       <div className="wp-main" id="wp-main">
-        <DocumentMeta {...meta} />
         <Header
           title={data.data.title}
           description={data.data.description}
@@ -107,19 +101,19 @@ export default class Shopify extends Component {
                 <div className="container ">
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <p className="sub-text-above-main-title title-white">
+                      <h1 className="sub-text-above-main-title title-white">
                         Custom Solutions for
-                      </p>
+                      </h1>
                       <h1 className="main-title  title-white d-block">
                         Wordpress <br />
                         development
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents shopify-content-box pl-4">
+                      <h2 className="bold-contents shopify-content-box pl-4">
                         We help agencies code custom Wordpress Solutions. A
                         Silicon Valley Company serving customers worldwide.
-                      </p>
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -130,12 +124,12 @@ export default class Shopify extends Component {
           <div className="container">
             <div className="row justify-content-center mt-5 section-2-row">
               <div className="col-12">
-                <p className="text-above-main-title text-center">
+                <h3 className="text-above-main-title text-center">
                   WE OFFER A WIDE RANGE OF
-                </p>
-                <h1 className="main-title title-orange text-center">
+                </h3>
+                <h3 className="main-title title-orange text-center">
                   Services On
-                </h1>
+                </h3>
               </div>
             </div>
 
@@ -238,10 +232,10 @@ export default class Shopify extends Component {
           <div className="container-fluid wordpress-section-3 top-index">
             <div className="row">
               <div class="col-12 wp-sec-3-content shopify-sec-3-content">
-                <p class="text-above-main-title text-center">OUR EXPERIENCE</p>
-                <h1 class="main-title title-orange text-center">
+                <h3 class="text-above-main-title text-center">OUR EXPERIENCE</h3>
+                <h3 class="main-title title-orange text-center">
                   Recent Works
-                </h1>
+                </h3>
               </div>
             </div>
             {/*section 3 */}
@@ -254,10 +248,10 @@ export default class Shopify extends Component {
               <div className="container">
                 <div className="row justify-content-center about-row pl-3 pr-3">
                   <div className="col-12 col-lg-5 col-sm-6 col-md-12">
-                    <p className="text-above-main-title">FREE CONSULTATIONS</p>
-                    <h1 className="main-title">
+                    <h3 className="text-above-main-title">FREE CONSULTATIONS</h3>
+                    <h3 className="main-title">
                       <span class="title-orange d-block">Ask Our Expert</span>
-                    </h1>
+                    </h3>
                     <p className="hash-content-col title-black why-us-hash-content">
                       <p>
                         Not sure if WordPress is the right solution for you?
@@ -334,13 +328,13 @@ export default class Shopify extends Component {
             <div className="container">
               <div class="row">
                 <div class="col-12 plugin-integration-section shopify-sec-3-content">
-                  <p class="text-above-main-title text-center">
+                  <h3 class="text-above-main-title text-center">
                     LET OUR EXPERTS SUGGEST THE BEST PLUGIN INTEGRATION FOR YOUR
                     WORDPRESS
-                  </p>
-                  <h1 class="main-title title-orange text-center">
+                  </h3>
+                  <h3 class="main-title title-orange text-center">
                     Plugin Integration
-                  </h1>
+                  </h3>
                 </div>
               </div>
 
@@ -521,12 +515,12 @@ export default class Shopify extends Component {
               <div className="container">
                 <div class="row">
                   <div class="col-12">
-                    <p class="text-above-main-title text-center testimonial-margin">
+                    <h3 class="text-above-main-title text-center testimonial-margin">
                       WHAT CLIENT SAY ABOUT US
-                    </p>
-                    <h1 class="main-title title-orange text-center">
+                    </h3>
+                    <h3 class="main-title title-orange text-center">
                       Testimonials
-                    </h1>
+                    </h3>
 
                     <Testimonial></Testimonial>
                   </div>{" "}

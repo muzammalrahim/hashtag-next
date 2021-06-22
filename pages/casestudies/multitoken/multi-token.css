@@ -1,6 +1,18 @@
 
 
 /*--------- Multi Token custom css ---------*/
+.case-multitoken-size
+{
+  display: inline-block;
+
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 0px;
+  padding: 5px;
+  border: 1px solid #ffb783;
+  border-radius: 4px;
+  color: #fff;
+}
 .multi-token .technology-custom .technology-wrap{
   margin-bottom: 110px;
 }

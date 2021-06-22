@@ -1,4 +1,16 @@
+.case-maikeinc-size
+{
+ 
+  
 
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 0px;
+  padding: 5px;
+  border: 1px solid #ffb783;
+  border-radius: 4px;
+  color: #fff;
+}
 .case-study.maikeinc .technology-blk{
   padding: 100px 0 40px;
 }

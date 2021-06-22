@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 // import { HashLink as Link } from 'react-router-hash-link';
 // import { NavHashLink as NavLink } from 'react-router-hash-link';
 // import uuidv4 from "uuid";
@@ -8,41 +8,41 @@ const { Carousel } = dynamic(() => import("3d-react-carousal"), { ssr: false });
 
 // import { config } from "react-spring";
 
-const Wpslider = () => {
-  //  const [state, setState] = useState({
-  //    goToSlide: 0,
-  //    offsetRadius: 2,
-  //    showNavigation: true,
-  //    config: config.gentle,
-  //  });
-  let slides = [
+ const Wpslider = ()=>{
+//  const [state, setState] = useState({
+//    goToSlide: 0,
+//    offsetRadius: 2,
+//    showNavigation: true,
+//    config: config.gentle,
+//  });
+    let slides = [
+     
+          <img src="../images/wordpress/67-baltimore.png" alt="catering" />,
+       
+          <img src="../images/wordpress/face-shield.png" alt="Face shield" />,
+     
+          <img src="../images/wordpress/stories-upon.png" alt="stories writing" />,
+     
+          <img src="../images/wordpress/global-moonshot.png" alt="global moonshot" />,
+     
+          <img src="../images/wordpress/society-kitchella.png" alt="society kitchen" />,
+      
+          <img
+            src="../images/wordpress/sharon-get-organised.png"
+            alt="online shopping"
+          />,
+         <img src="../images/wordpress/fameleon.png" alt="Fashion and lifestyle" />
+    ]
+ 
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1 className="App-title"></h1>
+        </header>
 
-    <img src="../images/wordpress/67-baltimore.png" alt="slider1" />,
+        <br />
 
-    <img src="../images/wordpress/face-shield.png" alt="slider2" />,
-
-    <img src="../images/wordpress/stories-upon.png" alt="slider3" />,
-
-    <img src="../images/wordpress/global-moonshot.png" alt="slider4" />,
-
-    <img src="../images/wordpress/society-kitchella.png" alt="slider5" />,
-
-    <img
-      src="../images/wordpress/sharon-get-organised.png"
-      alt="slider6"
-    />,
-    <img src="../images/wordpress/fameleon.png" alt="slider7" />
-  ]
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1 className="App-title"></h1>
-      </header>
-
-      <br />
-
-      {/* <Carousel
+        {/* <Carousel
           showIndicators={false}
           autoFocus={true}
           useKeyboardArrows={true}
@@ -57,11 +57,11 @@ const Wpslider = () => {
             );
           })}
         </Carousel> */}
-      <Carousel slides={slides} autoplay={true} interval={3000000} />
-      {/* Carousal.Carousal because of unpkg in developement use npm import and use only {Carousal}*/}
-    </div>
-  );
-
+        <Carousel slides={slides} autoplay={true} interval={3000000} />
+        {/* Carousal.Carousal because of unpkg in developement use npm import and use only {Carousal}*/}
+      </div>
+    );
+  
 }
 
 export default Wpslider

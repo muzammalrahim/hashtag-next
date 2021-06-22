@@ -1,3 +1,15 @@
+.case-megalot-size
+{
+  display: inline-block;
+
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 0px;
+  padding: 5px;
+  border: 1px solid #ffb783;
+  border-radius: 4px;
+  color: #fff;
+}
 .project-about-blk blockquote{
   font-size: 21px;
   font-weight: 700;

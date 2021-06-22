@@ -43,21 +43,10 @@ export default class Service extends Component {
   }
 
   render() {
-    const meta = {
-      title: "Services - FullStack Web Development| Bay area, California",
-
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
+    
     const { data } = this.state;
     return (
       <div className="service-main" id="service-main">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}
@@ -70,20 +59,20 @@ export default class Service extends Component {
                 <div className="container ">
                   <div className="row justify-content-center service-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <p className="sub-text-above-main-title title-white">
+                      <h1 className="sub-text-above-main-title title-white">
                         A Full stack development company
-                      </p>
+                      </h1>
                       <h1 className="main-title title-white d-block">
                         Our Services
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents service-content-box pl-4">
+                      <h2 className="bold-contents service-content-box pl-4">
                         Outsourcing excellent quality IT services and offering
                         our clients worldwide impeccable full-cycle customized
                         software development, support, and maintenance is our
                         area of expertise.
-                      </p>
+                      </h2>
                     </div>
                   </div>
                 </div>

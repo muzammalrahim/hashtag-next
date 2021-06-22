@@ -20,7 +20,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "sevices-design",
       },
     })
     .then((response) => {
@@ -40,22 +40,10 @@ export default class DesignPage extends Component {
     };
   }
   render() {
-    const meta = {
-      title:
-        "Design and Prototyping - FullStack Web Development| Bay area, California",
-
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
+    
     let { data } = this.state;
     return (
       <div className="contact-main" id="Dnpbanner">
-        <DocumentMeta {...meta} />
         <div className="wp-main" id="wp-main">
           <Header
             title={data.data.title}
@@ -70,9 +58,9 @@ export default class DesignPage extends Component {
                 <div className="container ">
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <p className="sub-text-above-main-title title-white">
-                        We offer Solutions for
-                      </p>
+                      <h1 className="sub-text-above-main-title title-white">
+                        We offer solutions for
+                      </h1>
                       <h1 className="main-title  title-white d-block">
                         Design and
                         <br />
@@ -80,12 +68,12 @@ export default class DesignPage extends Component {
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents shopify-content-box pl-4">
+                      <h2 className="bold-contents shopify-content-box pl-4">
                         Story telling, Branding, User Research, Prototyping -
                         you name it!. We do everything to visually feel the
                         website structure before making decisions on in-depth
                         development.
-                      </p>
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -96,9 +84,9 @@ export default class DesignPage extends Component {
           <div className="container">
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12">
-                <h1 className="main-title title-orange why-bc-sec-tt">
+                <h3 className="main-title title-orange why-bc-sec-tt">
                   Showcase Of Your Business
-                </h1>
+                </h3>
                 <div className="shopify-content mt-4">
                   <p className="mb-4">
                     Your website is the first storefront of your brand. Every
@@ -129,7 +117,7 @@ export default class DesignPage extends Component {
               <div className="col-lg-5 col-md-12 col-sm-12 text-center ">
                 <img
                   src="/images/design/showcase1.svg"
-                  alt="showcase1"
+                  alt="design prototyping"
                   className="img-fluid shopify-image mobile-image-border storefront-img"
                 />
               </div>
@@ -139,12 +127,12 @@ export default class DesignPage extends Component {
             <div className="container">
               <div className="row">
                 <div class="col-12 wp-sec-3-content shopify-sec-3-content">
-                  <p class="text-above-main-title text-above-main-title-c text-center mb-0">
+                  <h3 class="text-above-main-title text-above-main-title-c text-center mb-0">
                     OUR stack
-                  </p>
-                  <h1 class="main-title title-orange text-center">
+                  </h3>
+                  <h3 class="main-title title-orange text-center">
                     Our Expertise
-                  </h1>
+                  </h3>
                 </div>
               </div>
               <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3 sc-ip-pro">
@@ -153,7 +141,7 @@ export default class DesignPage extends Component {
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         src="../images/design/expertise-1.svg"
-                        alt="expertise1"
+                        alt="Research and Unique Strategy"
                       />
                       <h4 className="text-level-5 title-black">
                         Research & Unique Strategy
@@ -173,7 +161,7 @@ export default class DesignPage extends Component {
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         src="../images/design/expertise-2.svg"
-                        alt="expertise2"
+                        alt="Design Thinking"
                       />
                       <h4 className="text-level-5 title-black">
                         Design Thinking
@@ -193,7 +181,7 @@ export default class DesignPage extends Component {
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         src="../images/design/expertise-3.svg"
-                        alt="expertise3"
+                        alt="Architecture"
                       />
                       <h4 className="text-level-5 title-black">Architecture</h4>
                       <hr class="hashtag-underline ml-2"></hr>
@@ -211,7 +199,7 @@ export default class DesignPage extends Component {
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         src="../images/design/expertise-4.svg"
-                        alt="expertise4"
+                        alt="Wireframing"
                       />
                       <h4 className="text-level-5 title-black">Wireframing</h4>
                       <hr class="hashtag-underline ml-2"></hr>
@@ -229,7 +217,7 @@ export default class DesignPage extends Component {
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         src="../images/design/expertise7.svg"
-                        alt="expertise5"
+                        alt="Prototyping"
                       />
                       <h4 className="text-level-5 title-black">Prototyping</h4>
                       <hr class="hashtag-underline ml-2"></hr>
@@ -247,7 +235,7 @@ export default class DesignPage extends Component {
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         src="../images/design/expertise-5.svg"
-                        alt="expertise6"
+                        alt="Graphic Designing"
                       />
                       <h4 className="text-level-5 title-black">
                         Graphic Designing
@@ -271,14 +259,14 @@ export default class DesignPage extends Component {
           <div className="container top-index bg-white">
             <div className="row justify-content-center pt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12">
-                <p class="text-above-main-title text-above-main-title-c mb-0">
+                <h3 class="text-above-main-title text-above-main-title-c mb-0">
                   achieve the turning point of your business
-                </p>
-                <h1 className="main-title title-orange">Why Choose Hashtag</h1>
+                </h3>
+                <h3 className="main-title title-orange">Why Choose Hashtag</h3>
                 <div className="dp-on-sm">
                   <img
                     src="/images/design/showcase.svg"
-                    alt="showcase"
+                    alt="design prototyping"
                     className="img-fluid shopify-image mobile-image-border storefront-img"
                   />
                 </div>
@@ -328,7 +316,7 @@ export default class DesignPage extends Component {
               <div className="col-lg-5 col-md-12 col-sm-12 text-center hd-on-sm">
                 <img
                   src="/images/design/showcase.svg"
-                  alt="showcase"
+                  alt="website design"
                   className="img-fluid shopify-image mobile-image-border storefront-img"
                 />
               </div>

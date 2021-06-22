@@ -1,5 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet');
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet');*/
+@import "~typeface-montserrat/index.css";
+@import '../components/header/header.css';
+@import '../styles/globals.css';
+/*@import '../styles/Home.module.css';*/
 
+@import "../components/carousel/style.css";
+@import '../components/contacts/style.css';
+@import '../components/contactusPage/style.css';
+@import '../components/footer/style.css';
+
+@import "../components/testimonial/style.css";
+/*@import "../components/wordpress-slider/style.css";*/
+@import "../components/wp-carousel/style.css";
+
+@import '../pages/home/home.css';
+@import './casestudies/casestudy.css';
+@import './casestudies/easy-level/easy-level.css';
+@import './casestudies/filemaker/filemaker.css';
+@import './casestudies/filemaker/responsivness.css';
+@import './casestudies/maikeinc/maikeinc.css';
+@import './casestudies/megalot/megalot.css';
+@import './casestudies/multitoken/multi-token.css';
+@import './casestudies/speakinc/speakinc.css';
+@import './error/error.css';
+@import './mobile-app/style.css';
+@import './blogs/single/style.css';
+@import "./blogs/category/style.css";
+@import "./about-us/about.css";
+@import "./contact-us/contact-us.css";
+@import "./blogs/blog.css";
+@import "./shopify-experts/shopify.css";
+@import "./shopify-experts/layout.css";
+@import "./careers/career.css";
+/* @import "./error/index.css"; */
+
+@import "./sevices/services.css";
+@import "./sevices/wordpress-development/wordpress-development.css";
+@import "./sevices/blockchain-development/blockchain.css";
+@import "./sevices/database-and-backend/database-and-backend.css";
+@import "./sevices/design-and-prototyping/design-and-prototyping.css";
+@import "./sevices/filemaker/filemaker.css";
+@import "./sevices/ui-development/ui-development.css";
+@import 'font-awesome/css/font-awesome.min.css';
+
+/*slick slider*/
+@import "slick-carousel/slick/slick.css";
+@import './slick-slider.css';
+@import 'bootstrap-xxl/dist/css/bootstrap.css';
 html {
   scroll-behavior: smooth;
 }
@@ -28,7 +75,7 @@ a {
 .sub-text-above-main-title
 {
   font-size: 18px;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
  
@@ -201,7 +248,7 @@ color: #FFFFFF;
   }
 .title-level-6
 {
-      font-family: Montserrat;
+      font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -361,7 +408,7 @@ and (orientation : landscape) {
   -webkit-user-select: unset !important;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet');
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet');*/
 
 /*@media screen and (device-aspect-ratio: 2560/1440) {
 
@@ -420,7 +467,7 @@ hiding this for build
 }
 
 .main-title {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
     font-size: 56px;
@@ -437,7 +484,7 @@ hiding this for build
 }
 
 .text-above-main-title {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -572,7 +619,7 @@ hiding this for build
 }
 
 .title-orange {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
     letter-spacing: -0.05em;
@@ -584,7 +631,7 @@ hiding this for build
 }
 
 .hash-content-col {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
@@ -594,7 +641,7 @@ hiding this for build
 }
 
 .sub-content {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -605,7 +652,7 @@ hiding this for build
 }
 
 .nj-who-we-are-sub-content {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -615,7 +662,7 @@ hiding this for build
 }
 
 .nj-who-we-are-button {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -726,7 +773,7 @@ hiding this for build
 
 #tabs {
 
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -737,7 +784,7 @@ hiding this for build
 
 #tabs h6.section-title {
     color: #7F8284;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -750,7 +797,7 @@ hiding this for build
     background-color: transparent;
     border-color: transparent;
     border-bottom: 4px solid #FF6B00 !important;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -761,7 +808,7 @@ hiding this for build
     border: 0px solid transparent;
     border-bottom: 4px solid rgba(154, 164, 177, 0.2);
     color: #7F8284;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -789,7 +836,7 @@ hiding this for build
 }
 
 .address-content {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -831,7 +878,7 @@ hiding this for build
 }
 
 .form-title {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
     font-size: 45px;
@@ -843,7 +890,7 @@ hiding this for build
 }
 
 .hash-form-label {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -874,7 +921,7 @@ hiding this for build
 }
 
 .hash-input::placeholder {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     display: flex;
@@ -888,7 +935,7 @@ hiding this for build
 
 .hash-input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     display: flex;
@@ -898,7 +945,7 @@ hiding this for build
 
 .hash-input::-ms-input-placeholder {
     /* Microsoft Edge */
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     display: flex;
@@ -2130,7 +2177,7 @@ bottom: 186px;
 }
 
 .text-above-main-title-first-mob {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -2139,7 +2186,7 @@ bottom: 186px;
 }
 
 .main-title-first-mob {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -2149,7 +2196,7 @@ bottom: 186px;
 }
 
 .title-orange-first-mob {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
     letter-spacing: -0.05em;
@@ -2728,4 +2775,30 @@ a.sol-but-ab {
     .section-three-content {
         height: 2430px;
     }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1400px){
+    .container {
+        max-width: 1284px !important;
+    }
+}
+
+.Sitemap-main .divider {
+    height: 1px;
+    overflow: hidden;
+    background: #dee6f1;
+    width: 100%;
+    margin: 60px 0px;
+} 
+
+.Sitemap-main a {
+    text-decoration: none;
+    outline: none;
+    color: #666666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 34px;
+} 
+.Sitemap-main ul {
+    list-style-type: none;
 }

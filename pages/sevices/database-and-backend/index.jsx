@@ -20,7 +20,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "sevices-db-backend",
       },
     })
     .then((response) => {
@@ -41,23 +41,11 @@ export default class DatabasePage extends Component {
     };
   }
   render() {
-    const meta = {
-      title:
-        "DB and Backend Development - FullStack Web Development| Bay area, California",
-
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-      };
+   
       
         let { data } = this.state;
     return (
       <div className="contact-main" id="Dbdevbanner">
-        <DocumentMeta {...meta} />
         <div className="wp-main" id="wp-main">
           <Header
             title={data.data.title}
@@ -72,9 +60,9 @@ export default class DatabasePage extends Component {
                 <div className="container ">
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <p className="sub-text-above-main-title title-white">
-                        We offer Solutions for
-                      </p>
+                      <h1 className="sub-text-above-main-title title-white">
+                        We offer solutions for
+                      </h1>
                       <h1 className="main-title  title-white d-block">
                         DB & Backend
                         <br />
@@ -82,11 +70,11 @@ export default class DatabasePage extends Component {
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents shopify-content-box pl-4">
+                      <h2 className="bold-contents shopify-content-box pl-4">
                         We build feature-rich applications with the help of best
                         industry practices and agile principles and aim at
                         speed, performance and accuracy.
-                      </p>
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -179,9 +167,9 @@ export default class DatabasePage extends Component {
                   <p class="text-above-main-title text-above-main-title-c text-center mb-0">
                     YOU ARE IN GOOD TECH HANDS
                   </p>
-                  <h1 class="main-title title-orange text-center">
+                  <h3 class="main-title title-orange text-center">
                     Development Services
-                  </h1>
+                  </h3>
                   <div class="col-md-9 mx-auto sw-service-dev-sub">
                     <p>
                       Backend development is one of the vital components of the
@@ -323,9 +311,9 @@ export default class DatabasePage extends Component {
                   <p class="text-above-main-title text-above-main-title-c text-center mb-0">
                     BACK-END TECH STACK
                   </p>
-                  <h1 class="main-title title-orange text-center">
+                  <h3 class="main-title title-orange text-center">
                     Our Technology Expertise
-                  </h1>
+                  </h3>
                 </div>
               </div>
               <div className="pb-5 pt-0 d-none d-sm-block">
@@ -517,9 +505,9 @@ export default class DatabasePage extends Component {
                 <p class="text-above-main-title text-above-main-title-c text-left mb-0">
                   we are ready for the new challenges
                 </p>
-                <h1 className="main-title title-orange why-bc-sec-tt">
+                <h3 className="main-title title-orange why-bc-sec-tt">
                   Have an Idea?Let`s speak!
-                </h1>
+                </h3>
                 <div className="shopify-content mt-4">
                   <h1 class="main-title">
                     <img

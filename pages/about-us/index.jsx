@@ -41,25 +41,12 @@ export default class About extends Component {
     this.state = {
       data: response.data.data,
     };
-    console.log('props: ',props);
   }
 
   render() {
-    const meta = {
-      title: "About us - FullStack Web Development| Bay area, California",
-
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
     const { data } = this.state;
     return (
       <div className="about-main" id="about-main">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}
@@ -72,20 +59,20 @@ export default class About extends Component {
                 <div className="container ">
                   <div className="row justify-content-center service-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <p className="sub-text-above-main-title title-white">
+                      <h1 className="sub-text-above-main-title title-white">
                         Who we are
-                      </p>
+                      </h1>
                       <h1 className="main-title title-white d-block">
                         About us
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents service-content-box pl-4">
+                      <h2 className="bold-contents service-content-box pl-4">
                         Hashtag Systems Inc., is an international Web
                         development company, headquartered in California,
                         provides cutting edge engineering solutions for
                         world-class brands.
-                      </p>
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -97,10 +84,10 @@ export default class About extends Component {
             {/* section 2 */}
             <div className="row justify-content-center mt-5 section-2-row">
               <div class="col-12">
-                <p class="text-above-main-title text-center">
+                <h3 class="text-above-main-title text-center">
                   PERFECT SOLUTION FOR BUSINESS
-                </p>
-                <h1 class="main-title title-orange text-center">Our values</h1>
+                </h3>
+                <h3 class="main-title title-orange text-center">Our values</h3>
                 <div class="shopify-sub-title text-center">
                   Dedicated to provide best professional Web Solutions
                 </div>
@@ -111,7 +98,10 @@ export default class About extends Component {
               <div className="col-xxl-6 col-lg-6 col-md-12 col-sm-12">
                 <div className="about-section-2">
                   <div className="about-section-2-left">
-                    <img src="/images/about/web.svg" alt="values1" />
+                    <img
+                      src="/images/about/web.svg"
+                      alt="Full Stack Web Application Development"
+                    />
                   </div>
                   <div className="about-section-2-middle"></div>
                   <div className="about-section-2-content">
@@ -130,7 +120,10 @@ export default class About extends Component {
               <div className="col-xxl-6 col-lg-6 col-md-12 col-sm-12">
                 <div className="about-section-2">
                   <div className="about-section-2-left">
-                    <img src="/images/about/value.svg" alt="values2" />
+                    <img
+                      src="/images/about/value.svg"
+                      alt="Full Stack Development Company"
+                    />
                   </div>
                   <div className="about-section-2-middle"></div>
                   <div className="about-section-2-content">
@@ -150,7 +143,10 @@ export default class About extends Component {
               <div className=" col-xxl-6 col-lg-6 col-md-12 col-sm-12">
                 <div className="about-section-2 about-section-2-last">
                   <div className="about-section-2-left">
-                    <img src="/images/about/global.svg" alt="values3" />
+                    <img
+                      src="/images/about/global.svg"
+                      alt="Full Stack Application"
+                    />
                   </div>
                   <div className="about-section-2-middle"></div>
                   <div className="about-section-2-content">
@@ -172,12 +168,12 @@ export default class About extends Component {
               <div class="container">
                 <div className="row about-row justify-content-center  pl-3 pr-3">
                   <div className="col-12 col-lg-5 col-md-12 hash-team-content">
-                    <p className="text-above-main-title title-black">
+                    <h3 className="text-above-main-title title-black">
                       OUR DREAM TEAM
-                    </p>
-                    <h1 className="main-title">
+                    </h3>
+                    <h3 className="main-title">
                       <span class="title-orange d-block"># Team</span>
-                    </h1>
+                    </h3>
 
                     <p class="hash-content-col title-black why-us-hash-content">
                       <p className="font-normal">
@@ -216,7 +212,10 @@ export default class About extends Component {
                   <div className="col-12 col-lg-3 col-md-6 hash-team-first-right">
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
-                        <img src="/images/about/bas.svg" alt="architects" />
+                        <img
+                          src="/images/about/bas.svg"
+                          alt="About Our Company"
+                        />
                       </div>
                       <h6 className="title-level-6 title-level-mobile">
                         BAs &

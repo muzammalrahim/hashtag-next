@@ -28,7 +28,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "casestudies-speakinc",
       },
     })
     .then((response) => {
@@ -50,17 +50,6 @@ export default class Speakinc extends Component {
   componentDidMount() {}
 
   render() {
-    const meta = {
-      title:
-        "Speakinc Case study - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
 const { data } = this.state;
     const settings = {
       infinite: true,
@@ -86,7 +75,6 @@ const { data } = this.state;
 
     return (
       <div className="case-study" id="case-study">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}
@@ -98,9 +86,10 @@ const { data } = this.state;
               <div className="row">
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
-                    <div className="common-head-blk">
-                      <h6>Website development & design</h6>
-                      <h2 className="main-title title-white">SpeakInc</h2>
+                    <div className="case-speakinc-size">
+                      <h1>Website development & design</h1>
+                      </div>
+                      <h1 className="main-title title-white">SpeakInc</h1>
                       <ul className="project-info">
                         <li>
                           <strong>Industry:</strong>Event Management and
@@ -117,7 +106,7 @@ const { data } = this.state;
                           Filemaker, Hubspot
                         </li>
                       </ul>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -129,8 +118,8 @@ const { data } = this.state;
               <div className="row">
                 <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
                   <div className="project-blk-title">
-                    <h6 className="text-above-main-title">introduction</h6>
-                    <h3 class="main-title title-orange">About Speakinc</h3>
+                    <h2 className="text-above-main-title">INTRODUCTION</h2>
+                    <h2 class="main-title title-orange">About Speakinc</h2>
                   </div>
                   <p>
                     <strong>SpeakInc</strong> is a No 1 US based speakers
@@ -163,17 +152,17 @@ const { data } = this.state;
                 <div className="col-md-5 offset-md-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">
-                        product uniqueness
-                      </h6>
-                      <h3 class="main-title title-orange">What`s So Special</h3>
+                      <h2 className="text-above-main-title">
+                        PRODUCT UNIQUENESS
+                      </h2>
+                      <h2 class="main-title title-orange">What`s So Special</h2>
                     </div>
                     <div className="project-spec-grid">
                       <Slide bottom>
                         <div className="project-spec-col">
                           <img
                             src="/images/case-studies/speakinc/feature-icon1.svg"
-                            alt="feature-icon1"
+                            alt="Design"
                           />
                           <span>Easy navigation</span>
                         </div>
@@ -182,7 +171,7 @@ const { data } = this.state;
                         <div className="project-spec-col">
                           <img
                             src="/images/case-studies/speakinc/feature-icon2.svg"
-                            alt="feature-icon2"
+                            alt="Design"
                           />
                           <span>Dynamic Designs</span>
                         </div>
@@ -191,7 +180,7 @@ const { data } = this.state;
                         <div className="project-spec-col">
                           <img
                             src="/images/case-studies/speakinc/feature-icon3.svg"
-                            alt="feature-icon3"
+                            alt="Design"
                           />
                           <span>Responsive Design</span>
                         </div>
@@ -200,7 +189,7 @@ const { data } = this.state;
                         <div className="project-spec-col">
                           <img
                             src="/images/case-studies/speakinc/feature-icon4.svg"
-                            alt="feature-icon4"
+                            alt="Design"
                           />
                           <span>Trendy, intuitive design</span>
                         </div>
@@ -228,10 +217,10 @@ const { data } = this.state;
                 <div className="col-md-12">
                   <div className="project-slider-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">
-                        Design with user in mind
-                      </h6>
-                      <h3 class="main-title title-orange">User Interface</h3>
+                      <h2 className="text-above-main-title">
+                        DESIGN WITH USER IN MIND
+                      </h2>
+                      <h2 class="main-title title-orange">User Interface</h2>
                     </div>
 
                     <div className="ui-slider">
@@ -240,7 +229,7 @@ const { data } = this.state;
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/speakinc/speakinc-1.svg"
-                              alt="speakinc-1"
+                              alt="Design"
                             />
                           </div>
                         </div>
@@ -248,7 +237,7 @@ const { data } = this.state;
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/speakinc/speakinc-2.svg"
-                              alt="speakinc-2"
+                              alt="Design"
                             />
                           </div>
                         </div>
@@ -256,7 +245,7 @@ const { data } = this.state;
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/speakinc/speakinc-3.svg"
-                              alt="speakinc-3"
+                              alt="Design"
                             />
                           </div>
                         </div>
@@ -264,7 +253,7 @@ const { data } = this.state;
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/speakinc/speakinc-4.svg"
-                              alt="speakinc-4"
+                              alt="Design"
                             />
                           </div>
                         </div>
@@ -272,7 +261,7 @@ const { data } = this.state;
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/speakinc/speakinc-5.svg"
-                              alt="speakinc-5"
+                              alt="Design"
                             />
                           </div>
                         </div>
@@ -291,8 +280,8 @@ const { data } = this.state;
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h6 className="text-above-main-title">project stack</h6>
-                        <h3 class="main-title title-orange">Technogies Used</h3>
+                        <h2 className="text-above-main-title">PROJECT STACK</h2>
+                        <h2 class="main-title title-orange">Technogies Used</h2>
                       </div>
                       <div className="technology-list">
                         <div className="tech-item">
@@ -391,8 +380,8 @@ const { data } = this.state;
               <div className="row">
                 <div className="col-md-5 offset-md-1">
                   <div className="project-blk-title">
-                    <h6 className="text-above-main-title">how its built</h6>
-                    <h3 class="main-title title-orange">Systems</h3>
+                    <h2 className="text-above-main-title">HOW ITS BUILT</h2>
+                    <h2 class="main-title title-orange">Systems</h2>
                   </div>
                   <div className="cust-order-list">
                     <ol>
@@ -404,7 +393,7 @@ const { data } = this.state;
                       <li>
                         <strong>Filemaker application</strong> for the bureau
                         that enables the direct communication between the bureau
-                        and users interested in speakers, and speaker handling. 
+                        and users interested in speakers, and speaker handling.
                       </li>
                       <li>
                         <strong>SEO for ensuring the presence</strong> of the
@@ -434,8 +423,8 @@ const { data } = this.state;
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">WHAT`S INSIDE</h6>
-                    <h3 class="main-title title-orange">Features</h3>
+                    <h2 className="text-above-main-title">WHAT`S INSIDE</h2>
+                    <h2 class="main-title title-orange">Features</h2>
                   </div>
                 </div>
               </div>
@@ -447,7 +436,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/speakinc/feature1.svg"
-                          alt="feature1"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           User Friendly <br />
@@ -465,7 +454,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/speakinc/feature2.svg"
-                          alt="feature2"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           Easy <br />
@@ -483,7 +472,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/speakinc/feature3.svg"
-                          alt="feature3"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           Portfolio <br />
@@ -502,7 +491,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/speakinc/feature4.svg"
-                          alt="feature4"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">Blogs</h4>
                         <p>
@@ -523,7 +512,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/speakinc/feature5.svg"
-                          alt="feature5"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           Hubspot Form Integrations{" "}
@@ -540,7 +529,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/speakinc/feature6.svg"
-                          alt="feature6"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           Weekly Speakers and Slider Speakers
@@ -557,7 +546,7 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/speakinc/feature7.svg"
-                          alt="feature7"
+                          alt="feature"
                         />
                         <h4 className="text-level-5 title-black">
                           Social Media integrations

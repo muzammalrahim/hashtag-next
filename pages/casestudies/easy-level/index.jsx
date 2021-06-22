@@ -28,7 +28,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "casestudies-easy-level",
       },
     })
     .then((response) => {
@@ -58,16 +58,6 @@ export default class Easylevel extends Component {
 
 
   render() {
-    const meta = {
-      title: 'Easy level Case study - FullStack Web Development| Bay area, California',
-      meta: {
-        charset: 'utf-8',
-          name: {
-            keywords: 'Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california'
-        }
-      }
-    };
-
     const { data } = this.state;
     const settings = { 
       infinite: true,
@@ -93,7 +83,6 @@ export default class Easylevel extends Component {
 
     return (
       <div className="case-study easylevel" id="easylevel-case-study">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}
@@ -105,9 +94,9 @@ export default class Easylevel extends Component {
               <div className="row">
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
-                    <div className="common-head-blk">
-                      <h6>Full Stack Development</h6>
-                      <h2 className="main-title title-white">Easy-Level</h2>
+                    <div className="case-easylevel-size">
+                      <h1>Full Stack Development</h1></div>
+                      <h1 className="main-title title-white">Easy-Level</h1>
                       <ul className="project-info">
                         <li>
                           <strong>Industry:</strong>Decentralized P2P payment &
@@ -126,7 +115,7 @@ export default class Easylevel extends Component {
                           Linux, Git CI/CD pipeline with Docker
                         </li>
                       </ul>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -137,10 +126,10 @@ export default class Easylevel extends Component {
               <div className="row">
                 <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
                   <div className="project-blk-title">
-                    <h6 className="text-above-main-title">
-                      A Descentralized Platform
-                    </h6>
-                    <h3 class="main-title title-orange">Introduction</h3>
+                    <h2 className="text-above-main-title">
+                      A DESCENTRALIZED PLATFORM
+                    </h2>
+                    <h2 class="main-title title-orange">Introduction</h2>
                   </div>
                   <p>
                     In the current system of online advertising it is impossible
@@ -173,9 +162,9 @@ export default class Easylevel extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-10">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">How It Works</h6>
-                    <h3 className="main-title title-orange">Architecture</h3>
-                    <p className="title-black">P2P payment</p>
+                    <h2 className="text-above-main-title">HOW IT WORKS</h2>
+                    <h2 className="main-title title-orange">Architecture</h2>
+                    <h2 className="title-black">P2P payment</h2>
                   </div>
                   <div className="workflow-wrap">
                     <img
@@ -192,9 +181,9 @@ export default class Easylevel extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-10">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">How It Works</h6>
-                    <h3 className="main-title title-orange">Architecture</h3>
-                    <p className="title-black">Advertising platform</p>
+                    <h2 className="text-above-main-title">HOW IT WORKS</h2>
+                    <h2 className="main-title title-orange">Architecture</h2>
+                    <h2 className="title-black">Advertising platform</h2>
                   </div>
                   <div className="workflow-wrap">
                     <img
@@ -212,8 +201,8 @@ export default class Easylevel extends Component {
                 <div className="col-md-5 offset-md-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">product work</h6>
-                      <h3 className="main-title title-orange">How it works</h3>
+                      <h2 className="text-above-main-title">PRODUCT WORK</h2>
+                      <h2 className="main-title title-orange">How it works</h2>
                     </div>
                     <p>
                       EasyLevel works on 16 Advertising platforms, and gets its
@@ -257,8 +246,8 @@ export default class Easylevel extends Component {
 
                   <div className="project-unique-wrap challenge-sec">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">Process</h6>
-                      <h3 className="main-title title-orange">Use Case</h3>
+                      <h2 className="text-above-main-title">PROCESS</h2>
+                      <h2 className="main-title title-orange">Use Case</h2>
                     </div>
                     <p>
                       Founders buy drafts(like packages) and get ADV tokens.
@@ -297,10 +286,10 @@ export default class Easylevel extends Component {
                 <div className="col-md-12">
                   <div className="project-slider-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">
-                        Design with user in mind
-                      </h6>
-                      <h3 class="main-title title-orange">User Interface</h3>
+                      <h2 className="text-above-main-title">
+                      DESIGN WITH USER IN MIND
+                      </h2>
+                      <h2 class="main-title title-orange">User Interface</h2>
                     </div>
 
                     <div className="ui-slider">
@@ -309,7 +298,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider.svg"
-                              alt="easy-level1"
+                              alt="Easy Level"
                             />
                           </div>
                         </div>
@@ -317,7 +306,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider2.svg"
-                              alt="easy-level2"
+                              alt="Easy Level"
                             />
                           </div>
                         </div>
@@ -325,7 +314,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider3.svg"
-                              alt="easy-level3"
+                              alt="Easy Level"
                             />
                           </div>
                         </div>
@@ -333,7 +322,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider4.svg"
-                              alt="easy-level4"
+                              alt="Easy Level"
                             />
                           </div>
                         </div>
@@ -341,7 +330,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider5.svg"
-                              alt="easy-level5"
+                              alt="Easy Level"
                             />
                           </div>
                         </div>
@@ -349,7 +338,7 @@ export default class Easylevel extends Component {
                           <div className="slider-img">
                             <img
                               src="/images/case-studies/easylevel/easy-level-slider6.svg"
-                              alt="easy-level6"
+                              alt="Easy Level"
                             />
                           </div>
                         </div>
@@ -366,8 +355,8 @@ export default class Easylevel extends Component {
               <div className="row justify-content-left">
                 <div className="col-md-11 col-lg-11 col-xl-11 offset-md-1">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">SKILLS</h6>
-                    <h3 class="main-title title-orange">Our skillsets</h3>
+                    <h2 className="text-above-main-title">SKILLS</h2>
+                    <h2 class="main-title title-orange">Our skillsets</h2>
                   </div>
                   <div className="skillset-wrap text-left">
                     <ul className="skill-list">
@@ -396,10 +385,10 @@ export default class Easylevel extends Component {
                 <div className="col-lg-6 col-sm-12 offset-lg-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">project PROCESS</h6>
-                      <h3 class="main-title title-orange">
+                      <h2 className="text-above-main-title">PROJECT PROCESS</h2>
+                      <h2 class="main-title title-orange">
                         Agile development process
-                      </h3>
+                      </h2>
                     </div>
                     <div className="cust-order-list cust-order-list-no-count">
                       <ul>
@@ -503,10 +492,10 @@ export default class Easylevel extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-8">
                   <div className="project-blk-title">
-                    <h6 className="text-above-main-title">
-                      project achievements
-                    </h6>
-                    <h3 className="main-title mb-2">What We Achieved</h3>
+                    <h2 className="text-above-main-title">
+                    PROJECT ACHIEVEMENTS
+                    </h2>
+                    <h2  className="main-title-custom main-title mb-2">What We Achieved</h2>
                     <img
                       className="mb-2"
                       src="../images/shopify/shopify-quoute.svg"

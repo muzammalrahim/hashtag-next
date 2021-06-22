@@ -13,11 +13,12 @@ export default class Slider extends Component {
 
   render() {
     let slides = [
-      <img src="../images/shopify/together-home.jpg" alt="slider1" />,
-      <img src="../images/shopify/warped-table-s.jpg" alt="slider2" />,
-      <img src="../images/shopify/shopurbanalchemy.jpg" alt="slider3" />,
-      <img src="../images/shopify/berrybay.jpg" alt="slider4" />];
-
+      <img src="../images/shopify/together-home.jpg" alt="Home" />,
+      <img src="../images/shopify/warped-table-s.jpg" alt="warped table" />,
+      <img src="../images/shopify/shopurbanalchemy.jpg" alt="jewellery" />,
+      <img src="../images/shopify/berrybay.jpg" alt="blueberry android tv" />,
+    ];
+ 
     return (
       <div className="App">
         <header className="App-header">

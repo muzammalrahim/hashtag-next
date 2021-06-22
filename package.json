@@ -36,6 +36,7 @@
     "react-scripts": "^3.4.1",
     "react-slick": "^0.27.14",
     "react-toastify": "^6.0.9",
+    "sitemap": "^7.0.0",
     "slick-carousel": "^1.8.1",
     "typeface-montserrat": "^1.1.13"
   }

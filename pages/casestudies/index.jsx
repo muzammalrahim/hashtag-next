@@ -8,6 +8,7 @@ import DocumentMeta from "react-document-meta";
 import axios from "axios";
 import * as config from "../../config.js";
 import Slide from "react-reveal/Reveal";
+import Link from 'next/link'
 
 require("typeface-montserrat");
 // require('paroller.js');
@@ -27,7 +28,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "casestudies",
       },
     })
     .then((response) => {
@@ -95,26 +96,14 @@ export default class Speakinc extends Component {
   }
 
   render() {
-    const meta = {
-      title: "Case studies - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
     const { data } = this.state;
     return (
       <div className="case-study-list" id="case-study-list">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}
           keywords={data.keywords}
         ></Header>
-
         {/*<Underconstruction></Underconstruction>*/}
         <section className="content-container">
           <div className="listing-banner">
@@ -125,9 +114,10 @@ export default class Speakinc extends Component {
                     <div className="list-banner-text">
                       <h1>
                         <span className="title-orange">Case Studies</span>{" "}
+                      </h1>  
                         <br />
-                        We Let Our Portfolio Do The Talk!
-                      </h1>
+                        <h2>We Let Our Portfolio Do The Talk!</h2>
+                      
                       <div className="btn-comm">
                         <a href="#contact">Say Hello</a>
                       </div>
@@ -153,7 +143,7 @@ export default class Speakinc extends Component {
                     <Slide right>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/maikeinc">Maike Inc</a>
+                          <Link href="/casestudies/maikeinc">Maike Inc</Link>
                         </h3>
                         <span>Full Stack Development</span>
                         <p>
@@ -226,8 +216,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-speakinc-Background.png') center -17px / cover repeat"
-              
+                  "url('/images/case-studies/Parallax-speakinc-Background.png') center -17px / cover repeat",
               }}
             >
               <div className="container">
@@ -236,7 +225,7 @@ export default class Speakinc extends Component {
                     <Slide left>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/speakinc">Speakinc</a>
+                          <Link href="/casestudies/speakinc">Speakinc</Link>
                         </h3>
                         <span>Full Stack Development</span>
                         <p>
@@ -309,7 +298,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-megalot-background.png') center -25px / cover repeat"
+                  "url('/images/case-studies/Parallax-megalot-background.png') center -25px / cover repeat",
               }}
             >
               <div className="container">
@@ -318,7 +307,9 @@ export default class Speakinc extends Component {
                     <Slide right>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/megalot">Megalot</a>
+                          {/* <a> */}
+                            <Link href="/casestudies/megalot">Megalot</Link>
+                          {/* </a> */}
                         </h3>
                         <span>Full Stack Development</span>
                         <p>
@@ -412,7 +403,7 @@ export default class Speakinc extends Component {
                     <Slide left>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/filemaker">Filemaker</a>
+                          <Link href="/casestudies/filemaker">Filemaker</Link>
                         </h3>
                         <span>Full Stack Development</span>
                         <p>
@@ -479,7 +470,7 @@ export default class Speakinc extends Component {
                     <Slide right>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/easy-level">Easy-Level</a>
+                          <Link href="/casestudies/easy-level">Easy-Level</Link>
                         </h3>
                         <span>Full Stack Development</span>
                         <p>
@@ -547,9 +538,9 @@ export default class Speakinc extends Component {
                     <Slide left>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/multitoken">
+                          <Link href="/casestudies/multitoken">
                             Multi Token Wallet
-                          </a>
+                          </Link>
                         </h3>
                         <span>Full Stack Development</span>
                         <p>

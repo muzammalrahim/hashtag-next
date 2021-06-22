@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
-import Header from '../../../components/header/index.jsx';
-import Footer from '../../../components/footer/index.jsx';
-import Underconstruction from '../../../components/under-construction/index.jsx';
-import BlogCategories from '../../../components/post-category/index.jsx';
-import BlogRecentPosts from '../../../components/post-recent/index.jsx';
+import Header from '../../components/header';
+import Footer from "../../components/footer/index.jsx";
+import BlogCategories from "../../components/post-category/index.jsx";
+import BlogRecentPosts from "../../components/post-recent/index.jsx";
 import DocumentMeta from 'react-document-meta';
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import $ from 'jquery';
 import Axios from 'axios';
 import https from "https";
-import * as config from '../../../config';
+import * as config from '../../config';
 import Link from 'next/link'
-
-import axios from "axios";
-import { withRouter } from "next/router";
 
 require('typeface-montserrat')
 
@@ -42,7 +38,7 @@ export async function getServerSideProps() {
   };
 }
 
- class Singlepost extends Component {
+export default class Singlepost extends Component {
   constructor(props) {
     super(props);
     if (typeof window === "undefined") {
@@ -50,7 +46,6 @@ export async function getServerSideProps() {
     }
     let response = this.props;
     this.state = {
-      recentPosts: [],
       data: response.data.data,
       postData: {
         categories: [{ name: "", slug: "" }],
@@ -64,14 +59,12 @@ export async function getServerSideProps() {
 
   componentDidMount() {
     this.shiftContent();
-    this.get_recentPosts();
     if (typeof window !== undefined) {
       window.addEventListener("resize", this.shiftContent);
     }
     if (window.location.pathname) {
       let pathNames = window.location.pathname.split("/");
-      console.log("path", pathNames);
-      let singlePost = pathNames[3];
+      let singlePost = pathNames[2];
       this.setState({ postUrl: singlePost });
       this.get_postData(singlePost);
     }
@@ -100,7 +93,6 @@ export async function getServerSideProps() {
       params: { post_url: postUrl },
     })
       .then((response) => {
-        // console.log(response.data);
         const postData = response.data.data;
         this.setState({
           postData: postData,
@@ -108,58 +100,9 @@ export async function getServerSideProps() {
         });
       })
       .catch((error) => {
-        console.log(error.response);
         toast.error("Something went wrong.");
       });
   }
-
-  get_recentPosts(){
-    var category;
-    if(this.props.category != undefined){
-      category = this.props.category;
-    } else {
-      category = '';
-    }
-    axios.get(config.myConfig.apiUrl+'blog/posts/recent', {params: {category: category}})
-    .then((response) => {
-      // console.log(response.data);
-      const recentPosts = response.data.data.posts;
-      this.setState({ 
-        recentPosts: recentPosts
-      })
-    }).catch(error =>{
-      toast.error("Something went wrong.");
-    });
-  }
-
-  navigate = (id) => {
-    this.props.router.push({
-      pathname: id,
-      // query: { id }
-    });
-    }
-
-    changeCat = (singlePost) => {
-
-      let postUrl = singlePost;
-      this.setState({ postData: {} });
-      Axios.get(config.myConfig.apiUrl + "blog/posts/single", {
-        params: { post_url: postUrl },
-      })
-        .then((response) => {
-          // console.log(response.data);
-          const postData = response.data.data;
-          this.setState({
-            postData: postData,
-            loader: false,
-          });
-        })
-        .catch((error) => {
-          console.log(error.response);
-          toast.error("Something went wrong.");
-        });
-    };
-
 
   render() {
     
@@ -175,12 +118,11 @@ export async function getServerSideProps() {
         Loading
       </div>
     );
-    let { postData, data } = this.state;
+    let { postData, data, postUrl } = this.state;
     if(postData.image){
       postData.image = postData.image.replace('http://','https://');
     }
-
-    //console.log(data)
+  
     return (
       <div className="single-blog-main" id="single-blog-main">
         <Header
@@ -204,10 +146,10 @@ export async function getServerSideProps() {
                       </ul>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents service-content-box pl-4">
-                        We are seeking brilliant minds to join our dynamic team
-                        and make it even better.
-                      </p>
+                      <h2 className="bold-contents service-content-box pl-4">
+                        Highly experienced digital solutions company provide best 
+                        professional Web Solutions
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -227,7 +169,7 @@ export async function getServerSideProps() {
                         ) : (
                           <>
                             <h5 className="card-title text-level-4 title-orange">
-                              {postData.title}
+                              {postData?.title}
                             </h5>
                             <div className="blog-meta">
                               <ul>
@@ -296,30 +238,7 @@ export async function getServerSideProps() {
                 <div className="col-12 col-sm-12 col-md-4 col-lg-4">
                   <div className="blog-sidebar">
                     <aside>
-
-
-                    <div id="recent-posts-4" className="widget widget_recent_entries posts_holder">    
-        <h5 className="title-level-6 title-level-mobile text-left b-recent-posts">Recent Posts</h5>    
-        <ul>
-          {this.state.recentPosts.map((post, index) => { 
-            return(
-              <li key={index}>
-              <a href="#" style={{cursor:"pointer"}} 
-              
-              onClick={() => {
-                this.navigate(
-                  "/blogs/single/"+post.url
-                )
-                  this.changeCat(post.url);
-              }}
-
-              > {post.title}</a> 
-              </li>
-            )
-          })}
-        </ul>
-      </div>
-                    {/*<BlogRecentPosts></BlogRecentPosts>*/}  
+                      <BlogRecentPosts></BlogRecentPosts>
                       <BlogCategories></BlogCategories>
                     </aside>
                   </div>
@@ -334,5 +253,3 @@ export async function getServerSideProps() {
     );
   }
 }
-
-export default withRouter(Singlepost);

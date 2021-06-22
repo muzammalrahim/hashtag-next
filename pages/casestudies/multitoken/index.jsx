@@ -28,7 +28,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "casestudies-multitoken",
       },
     })
     .then((response) => {
@@ -50,17 +50,7 @@ export default class Multitoken extends Component {
   componentDidMount() {}
 
   render() {
-    const meta = {
-      title:
-        "Multi Token Case study - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
+
     const { data } = this.state;
     const settings = {
       infinite: true,
@@ -86,7 +76,6 @@ export default class Multitoken extends Component {
 
     return (
       <div className="case-study multi-token" id="case-study">
-        <DocumentMeta {...meta} />
         <Header
           title={data.title}
           description={data.description}
@@ -98,11 +87,12 @@ export default class Multitoken extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="common-title-wrap px-md-3">
-                    <div className="common-head-blk">
-                      <h6>Full Stack Development</h6>
-                      <h2 className="main-title title-white">
+                    <div className="case-multitoken-size">
+                      <h1>Full Stack Development</h1>
+                      </div>
+                      <h1 className="main-title title-white">
                         Multi Token Wallet In Gaming
-                      </h2>
+                      </h1>
                       <ul className="project-info">
                         <li>
                           <strong>Industry: </strong>Owning game assets/real
@@ -118,7 +108,7 @@ export default class Multitoken extends Component {
                           <strong>Smart Contracts: </strong>ERC20, ERC1155
                         </li>
                       </ul>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -132,8 +122,8 @@ export default class Multitoken extends Component {
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h6 className="text-above-main-title">introduction</h6>
-                        <h3 class="main-title title-orange">Summary</h3>
+                        <h2 className="text-above-main-title">INTRODUCTION</h2>
+                        <h2 class="main-title title-orange">Summary</h2>
                       </div>
                       <div className="technology-list">
                         <div className="tech-item">
@@ -199,8 +189,8 @@ export default class Multitoken extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-11">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">how It Works</h6>
-                    <h3 class="main-title title-orange">Architecture</h3>
+                    <h2 className="text-above-main-title">HOW IT WORKS</h2>
+                    <h2 class="main-title title-orange">Architecture</h2>
                   </div>
                   <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3 sc-ip-pro">
                     <img
@@ -221,8 +211,8 @@ export default class Multitoken extends Component {
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h6 className="text-above-main-title">description</h6>
-                        <h3 class="main-title title-orange">How it works</h3>
+                        <h2 className="text-above-main-title">DESCRIPTION</h2>
+                        <h2 class="main-title title-orange">How it works</h2>
                       </div>
                       <div className="technology-list">
                         <div className="tech-item">
@@ -254,8 +244,8 @@ export default class Multitoken extends Component {
 
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h6 className="text-above-main-title">Process</h6>
-                        <h3 class="main-title title-orange">Use Case</h3>
+                        <h2 className="text-above-main-title">PROCESS</h2>
+                        <h2 class="main-title title-orange">Use Case</h2>
                       </div>
                       <div className="technology-list">
                         <div className="tech-item">
@@ -284,7 +274,7 @@ export default class Multitoken extends Component {
 
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h6 className="text-above-main-title">Tagline</h6>
+                        <h2 className="text-above-main-title">TAGLINE</h2>
                         <h3 class="main-title title-orange">
                           Resolution/ Technology{" "}
                         </h3>
@@ -332,8 +322,8 @@ export default class Multitoken extends Component {
               <div className="row justify-content-left">
                 <div className="col-md-11 col-lg-11 col-xl-11 offset-md-1">
                   <div className="project-blk-title text-left">
-                    <h6 className="text-above-main-title">tagline here</h6>
-                    <h3 class="main-title title-orange">We Are Experts In</h3>
+                    <h2 className="text-above-main-title">TAGLINE HERE</h2>
+                    <h2 class="main-title title-orange">We Are Experts In</h2>
                   </div>
                   <div className="skillset-wrap text-left">
                     <ul className="skill-list">
