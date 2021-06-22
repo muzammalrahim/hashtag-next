@@ -4,7 +4,7 @@ import Footer from "../components/footer/index.jsx";
 
 require("typeface-montserrat");
 
-export default class Sitemap extends Component {
+export default class sitemap extends Component {
   render() {
     return (
       <div className="Sitemap-main">
