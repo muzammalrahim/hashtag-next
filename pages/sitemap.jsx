@@ -51,9 +51,6 @@ export default class sitemap extends Component {
                             <b>wordpress Development</b>
                           </a>
                         </li>
-                        <li>
-                          <a href="/contact-us">LET'S CONNECT</a>
-                        </li>
                       </ul>
                     </div>
                     <div class="col-md-3">
@@ -62,9 +59,6 @@ export default class sitemap extends Component {
                           <a href="/sevices/filemaker">
                             <b>FileMaker Pro Development</b>
                           </a>
-                        </li>
-                        <li>
-                          <a href="/contact-us">LET'S TALK</a>
                         </li>
                       </ul>
                     </div>
@@ -75,12 +69,6 @@ export default class sitemap extends Component {
                             <b>Blockchain Development</b>
                           </a>
                         </li>
-                        <li>
-                          <a href="/contact-us">LET'S TALK</a>
-                        </li>
-                        <li>
-                          <a href="/careers"> Careers</a>
-                        </li>
                       </ul>
                     </div>
                     <div class="col-md-3">
@@ -89,12 +77,6 @@ export default class sitemap extends Component {
                           <a href="/sevices/ui-development">
                             <b>Ui Development</b>
                           </a>
-                        </li>
-                        <li>
-                          <a href="/contact-us">LET'S TALK</a>
-                        </li>
-                        <li>
-                          <a href="/contact-us">Say heloo</a>
                         </li>
                       </ul>
                     </div>
@@ -105,9 +87,6 @@ export default class sitemap extends Component {
                             <b>Design and Prototyping</b>
                           </a>
                         </li>
-                        <li>
-                          <a href="/contact-us">Say heloo</a>
-                        </li>
                       </ul>
                     </div>
                     <div class="col-md-3">
@@ -116,12 +95,6 @@ export default class sitemap extends Component {
                           <a href="/sevices/database-and-backend">
                             <b>DB & Backend Development</b>
                           </a>
-                        </li>
-                        <li>
-                          <a href="/contact-us">GET IN TOUCH</a>
-                        </li>
-                        <li>
-                          <a href="/contact-us">LET’S START TALKING</a>
                         </li>
                       </ul>
                     </div>
@@ -140,16 +113,7 @@ export default class sitemap extends Component {
 
                   <div className="row">
                     <div class="col-md-3">
-                      <ul>
-                        <li>
-                          <a href="/sevices/wordpress-development">
-                            <b>Shopifys</b>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/contact-us">LET'S TALK</a>
-                        </li>
-                      </ul>
+                      <ul></ul>
                     </div>
                   </div>
 
@@ -168,11 +132,6 @@ export default class sitemap extends Component {
                   <div className="row">
                     <div class="col-md-3">
                       <ul>
-                        <li>
-                          <a href="/blogs">
-                            <b>Recent Posts</b>
-                          </a>
-                        </li>
                         <li>
                           <a href="/blogs/dos-and-donts-of-css-and-html">
                             Dos and Don'ts of CSS and HTML
@@ -202,67 +161,24 @@ export default class sitemap extends Component {
                         </li>
                       </ul>
                     </div>
+
                     <div class="col-md-3">
                       <ul>
                         <li>
-                          <a href="/blogs">
-                            <b>Categories</b>
+                          <a href="/blogs/how-to-upload-videos-to-your-wordpress-3-easy-ways-to-get-started">
+                            How to upload videos to your WordPress: 3 easy ways
+                            to get started
                           </a>
                         </li>
                         <li>
-                          <a href="/blogs/category/general">General</a>
-                        </li>
-                        <li>
-                          <a href="/blogs/category/CSS">CSS</a>
-                        </li>
-                        <li>
-                          <a href="/blogs/category/ecommerce">Ecommerce</a>
-                        </li>
-                        <li>
-                          <a href="/category/wordpress">wordpress</a>
-                        </li>
-                        <li>
-                          <a href="/blogs/category/seo,%20digital%20marketing">
-                            SEO
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-md-3">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <b>THIRD-PARTY SECURITY PLUGINS FOR WP</b>
+                          <a href="/blogs/how-to-hide-unavailable-variant-option-in-shopify-tip-for-a-shopify-developer">
+                            How to hide unavailable variant option in Shopify –
+                            Tip for a Shopify Developer
                           </a>
                         </li>
                         <li>
-                          <a href="https://wordpress.org/plugins/bulletproof-security/">
-                            BulletProof Security
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://wordpress.org/plugins/sucuri-scanner/">
-                            Sucuri Security
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://wordpress.org/plugins/better-wp-security/">
-                            iThemes Security
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/">
-                            All In One WP Security & Firewall
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://wordpress.org/plugins/wordfence/">
-                            Wordfence Security
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://wordpress.org/plugins/malcare-security/">
-                            MalCare Security
+                          <a href="/blogs/introduction-to-less">
+                            Introduction to LESS (CSS Framework)
                           </a>
                         </li>
                       </ul>
@@ -283,16 +199,7 @@ export default class sitemap extends Component {
 
                   <div className="row">
                     <div class="col-md-3">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <b>Careers</b>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/contact-us">Join us</a>
-                        </li>
-                      </ul>
+                      <ul></ul>
                     </div>
                   </div>
 
@@ -312,11 +219,6 @@ export default class sitemap extends Component {
                     <div class="col-md-3">
                       <ul>
                         <li>
-                          <a href="#">
-                            <b>WEBSITE DEVELOPMENT & DESIGN</b>
-                          </a>
-                        </li>
-                        <li>
                           <a href="/casestudies/maikeinc">Maike Inc</a>
                         </li>
                         <li>
@@ -326,37 +228,59 @@ export default class sitemap extends Component {
                           <a href="/casestudies/megalot">Megalot</a>
                         </li>
                         <li>
-                          <a href="/casestudies/filemaker">Filemaker in Action</a>
+                          <a href="/casestudies/filemaker">
+                            Filemaker in Action
+                          </a>
                         </li>
                       </ul>
                     </div>
                     <div class="col-md-3">
                       <ul>
-                        <li>
-                          <a href="#">
-                            <b>FULL STACK DEVELOPMENT</b>
-                          </a>
-                        </li>
                         <li>
                           <a href="/casestudies/easy-level">Easy-Level</a>
                         </li>
                         <li>
-                          <a href="/casestudies/multitoken">Multi Token Wallet In Gaming</a>
+                          <a href="/casestudies/multitoken">
+                            Multi Token Wallet In Gaming
+                          </a>
                         </li>
                       </ul>
                     </div>
+                  </div>
+
+                  <br />
+                </section>
+                <div className="divider">
+                  <br />
+                </div>
+
+                <section id="section6">
+                  <a href="/about-us">
+                    <h2>About us</h2>
+                  </a>
+                  <br />
+
+                  <div className="row">
                     <div class="col-md-3">
-                      <ul>
-                        <li>
-                          <a href="#">
-                            <b>Contact us</b>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/casestudies#contact">Say Hello</a>
-                        </li>
-                        
-                      </ul>
+                      <ul></ul>
+                    </div>
+                  </div>
+
+                  <br />
+                </section>
+                <div className="divider">
+                  <br />
+                </div>
+
+                <section id="section6">
+                  <a href="/contact-us">
+                    <h2>Contact us</h2>
+                  </a>
+                  <br />
+
+                  <div className="row">
+                    <div class="col-md-3">
+                      <ul></ul>
                     </div>
                   </div>
 
