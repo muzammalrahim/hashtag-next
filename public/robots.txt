@@ -2,11 +2,5 @@
 User-agent: *
 Allow: /
 
-Sitemap:  https://www.hashtag-ca.com/sitemap
+sitemap: https://www.hashtag-ca.com/sitemap.xml
  
-Sitemap on local server:  http://localhost:3000/sitemap
-
-
-# User agent "Googlebot" should not crawl the `http://example.com/nogooglebot/` folder or any of its subdirectories.
-User-agent: Googlebot
-Disallow: /nogooglebot/
