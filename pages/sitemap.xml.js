@@ -16,6 +16,10 @@ export const getServerSideProps = async ({ res }) => {
         "_document.js",
         "_error.js",
         "sitemap.xml.js",
+        "index.css",
+        "sitemap.html",
+        "slick-slider.css",
+        "section-two-bg.png",
       ].includes(staticPage);
     })
     .map((staticPagePath) => {
