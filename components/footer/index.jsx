@@ -315,8 +315,11 @@ class Footer extends Component {
                 {" "}
               </div>
               <div className="footer-copy-second-row">
-                <p className="copyright-text">              
-                  <a className="copyright-text" href="/sitemap.html"> sitemap</a>      
+                <p className="copyright-text">
+                  Copyright &copy; 2020 Hashtag Systems Inc. All Rights
+                  Reserved. 
+
+                  <a className="pl-5" href="/sitemap.html"> sitemap</a>  
                 </p>
               </div>
             </div>
