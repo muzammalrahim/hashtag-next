@@ -2783,7 +2783,7 @@ a.sol-but-ab {
     }
 }
 
-.Sitemap-main .divider {
+.Sitemaphtml-mainhtml .divider {
     height: 1px;
     overflow: hidden;
     background: #dee6f1;
@@ -2791,7 +2791,7 @@ a.sol-but-ab {
     margin: 60px 0px;
 } 
 
-.Sitemap-main a {
+.Sitemaphtml-mainhtml .main-container a {
     text-decoration: none;
     outline: none;
     color: #666666;
@@ -2799,6 +2799,6 @@ a.sol-but-ab {
     font-size: 16px;
     line-height: 34px;
 } 
-.Sitemap-main ul {
+.Sitemaphtml-mainhtml ul {
     list-style-type: none;
 }

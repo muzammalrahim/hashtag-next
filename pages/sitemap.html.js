@@ -5,7 +5,7 @@ require("typeface-montserrat");
 export default class sitemap extends Component {
   render() {
     return (
-      <div className="Sitemap-main">
+      <div className="Sitemaphtml-mainhtml">
         <Header></Header>
         <section class="content-container">
           <div className="container-fluid p-0 m-0 ">
