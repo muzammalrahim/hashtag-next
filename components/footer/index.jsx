@@ -319,7 +319,7 @@ class Footer extends Component {
                   Copyright &copy; 2020 Hashtag Systems Inc. All Rights
                   Reserved. 
 
-                  <a className="pl-5" href="/sitemap.html"> sitemap</a>  
+                  <a className="pl-3" href="/sitemap.html"> Sitemap</a>  
                 </p>
               </div>
             </div>
