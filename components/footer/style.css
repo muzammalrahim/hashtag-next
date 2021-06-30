@@ -52,11 +52,15 @@ footer {
     line-height: 18px;
     /*padding-top: 14px;*/
     margin: 0;
-    color: #818181;
+    color: #818181 !important;
 }
-.copyright-text :hover{
+
+.copyright-text a{
+    color: #818181 !important;
+}
+.copyright-text a:hover{
   
-    color: #818181;
+    color: #c4c1c1 !important;
 }
 
 .footer-badge {
