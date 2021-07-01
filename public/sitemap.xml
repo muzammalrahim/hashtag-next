@@ -54,7 +54,6 @@
 <priority>0.80</priority>
 </url>
 <url>
-<url>
 <loc>https://www.hashtag-ca.com/blogs/dos-and-donts-of-css-and-html</loc>
 <lastmod>2021-06-30T07:11:08+00:00</lastmod>
 <changefreq>weekly</changefreq>
@@ -102,6 +101,7 @@
 <changefreq>weekly</changefreq>
 <priority>0.80</priority>
 </url>
+<url>
 <loc>https://www.hashtag-ca.com/careers</loc>
 <lastmod>2021-06-30T07:11:08+00:00</lastmod>
 <changefreq>weekly</changefreq>
