@@ -236,7 +236,6 @@ export default class sitemap extends Component {
                       </ul>
                     </div>
                   </div>
-
                   <br />
                 </section>
                 <div className="divider">
