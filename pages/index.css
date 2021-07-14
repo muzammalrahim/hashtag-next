@@ -34,13 +34,13 @@
 @import "./careers/career.css";
 /* @import "./error/index.css"; */
 
-@import "./sevices/services.css";
-@import "./sevices/wordpress-development/wordpress-development.css";
-@import "./sevices/blockchain-development/blockchain.css";
-@import "./sevices/database-and-backend/database-and-backend.css";
-@import "./sevices/design-and-prototyping/design-and-prototyping.css";
-@import "./sevices/filemaker/filemaker.css";
-@import "./sevices/ui-development/ui-development.css";
+@import "./services/services.css";
+@import "./services/wordpress-development/wordpress-development.css";
+@import "./services/blockchain-development/blockchain.css";
+@import "./services/database-and-backend/database-and-backend.css";
+@import "./services/design-and-prototyping/design-and-prototyping.css";
+@import "./services/filemaker/filemaker.css";
+@import "./services/ui-development/ui-development.css";
 @import 'font-awesome/css/font-awesome.min.css';
 
 /*slick slider*/

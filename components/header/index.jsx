@@ -96,7 +96,7 @@ export default class Header extends Component {
     }
 
     ServicePage() {
-        this.props.history.push('/sevices');
+        this.props.history.push('/services');
     }
 
     WordpressPage() {
@@ -220,18 +220,18 @@ alt="logo"
                 >
                   <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li className="nav-item">
-                      <Link href="/sevices">
+                      <Link href="/services">
                         <a
                           className={`nav-link ${
-                            Activetabindex === "/sevices" ||
+                            Activetabindex === "/services" ||
                             Activetabindex ===
-                              "/sevices/wordpress-development" ||
+                              "/services/wordpress-development" ||
                             Activetabindex ===
-                              "/sevices/blockchain-development" ||
+                              "/services/blockchain-development" ||
                             Activetabindex ===
-                              "/sevices/design-and-prototyping" ||
-                            Activetabindex === "/sevices/filemaker" ||
-                            Activetabindex === "/sevices/ui-development"
+                              "/services/design-and-prototyping" ||
+                            Activetabindex === "/services/filemaker" ||
+                            Activetabindex === "/services/ui-development"
                               ? "active"
                               : ""
                           }`}
@@ -250,17 +250,17 @@ alt="logo"
                         <div className="row m-0">
                           <div className="col-md-6 p-0">
                             <li>
-                              <Link href="/sevices/wordpress-development">
+                              <Link href="/services/wordpress-development">
                                 <a>Wordpress Development</a>
                               </Link>
                             </li>
                             <li>
-                              <Link href="/sevices/blockchain-development">
+                              <Link href="/services/blockchain-development">
                                 Blockchain Development
                               </Link>
                             </li>
                             <li>
-                              <Link href="/sevices/design-and-prototyping">
+                              <Link href="/services/design-and-prototyping">
                                 Design and Prototyping
                               </Link>
                             </li>
@@ -268,17 +268,17 @@ alt="logo"
                           <div className="col-md-6 p-0">
                             {/*<li><NavLink to="/services/aws">AWS</NavLink></li>*/}
                             <li>
-                              <Link href="/sevices/filemaker">
+                              <Link href="/services/filemaker">
                                 FileMaker Pro Development
                               </Link>
                             </li>
                             <li>
-                              <Link href="/sevices/ui-development">
+                              <Link href="/services/ui-development">
                                 UI Development
                               </Link>
                             </li>
                             <li>
-                              <Link href="/sevices/database-and-backend">
+                              <Link href="/services/database-and-backend">
                                 DB & Backend Development
                               </Link>
                             </li>

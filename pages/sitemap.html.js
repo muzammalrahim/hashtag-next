@@ -35,7 +35,7 @@ export default class sitemap extends Component {
             <section className="main-container">
               <div className="container">
                 <section id="section1">
-                  <a href="/sevices">
+                  <a href="/services">
                     <h2>Services</h2>
                   </a>
                   <br />
@@ -43,7 +43,7 @@ export default class sitemap extends Component {
                     <div class="col-md-3">
                       <ul>
                         <li>
-                          <a href="/sevices/wordpress-development">
+                          <a href="/services/wordpress-development">
                             <b>wordpress Development</b>
                           </a>
                         </li>
@@ -52,7 +52,7 @@ export default class sitemap extends Component {
                     <div class="col-md-3">
                       <ul>
                         <li>
-                          <a href="/sevices/filemaker">
+                          <a href="/services/filemaker">
                             <b>FileMaker Pro Development</b>
                           </a>
                         </li>
@@ -61,7 +61,7 @@ export default class sitemap extends Component {
                     <div class="col-md-3">
                       <ul>
                         <li>
-                          <a href="/sevices/blockchain-development">
+                          <a href="/services/blockchain-development">
                             <b>Blockchain Development</b>
                           </a>
                         </li>
@@ -70,7 +70,7 @@ export default class sitemap extends Component {
                     <div class="col-md-3">
                       <ul>
                         <li>
-                          <a href="/sevices/ui-development">
+                          <a href="/services/ui-development">
                             <b>Ui Development</b>
                           </a>
                         </li>
@@ -79,7 +79,7 @@ export default class sitemap extends Component {
                     <div class="col-md-3">
                       <ul>
                         <li>
-                          <a href="/sevices/design-and-prototyping">
+                          <a href="/services/design-and-prototyping">
                             <b>Design and Prototyping</b>
                           </a>
                         </li>
@@ -88,7 +88,7 @@ export default class sitemap extends Component {
                     <div class="col-md-3">
                       <ul>
                         <li>
-                          <a href="/sevices/database-and-backend">
+                          <a href="/services/database-and-backend">
                             <b>DB & Backend Development</b>
                           </a>
                         </li>

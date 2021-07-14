@@ -102,7 +102,7 @@ export default class Service extends Component {
                   </p>
                 </div>
                 <a
-                  href="/sevices/database-and-backend"
+                  href="/services/database-and-backend"
                   className="nj-who-we-are-button float-right font-12 font-bold"
                 >
                   <a>
@@ -213,7 +213,7 @@ export default class Service extends Component {
                   </p>
                 </div>
                 <a
-                  href="/sevices/design-and-prototyping"
+                  href="/services/design-and-prototyping"
                   className="nj-who-we-are-button float-right font-12 font-bold"
                 >
                   <a>
@@ -254,7 +254,7 @@ export default class Service extends Component {
                   <p> We believe performance is the key!</p>
                 </div>
                 <a
-                  href="/sevices/ui-development"
+                  href="/services/ui-development"
                   className="nj-who-we-are-button float-right font-12 font-bold"
                 >
                   <a>
@@ -295,7 +295,7 @@ export default class Service extends Component {
                   </p>
                 </div>
                 <a
-                  href="/sevices/wordpress-development"
+                  href="/services/wordpress-development"
                   className="nj-who-we-are-button float-right font-12 font-bold"
                 >
                   <a>
@@ -429,7 +429,7 @@ export default class Service extends Component {
                   </p>
                 </div>
                 <a
-                  href="/sevices/blockchain-development"
+                  href="/services/blockchain-development"
                   className="nj-who-we-are-button float-right font-12 font-bold"
                 >
                   <a>

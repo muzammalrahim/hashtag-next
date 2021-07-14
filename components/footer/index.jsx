@@ -164,7 +164,7 @@ class Footer extends Component {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/sevices" className="footer-nav">
+                      <Link href="/services" className="footer-nav">
                         <a>Service </a>
                       </Link>
                     </li>
@@ -197,7 +197,7 @@ class Footer extends Component {
                     <li>
                       {" "}
                       <Link
-                        href="/sevices/database-and-backend"
+                        href="/services/database-and-backend"
                         className="footer-nav"
                       >
                         <a> DB & Backend Development </a>
@@ -206,7 +206,7 @@ class Footer extends Component {
                     <li>
                       {" "}
                       <Link
-                        href="/sevices/blockchain-development"
+                        href="/services/blockchain-development"
                         className="footer-nav"
                       >
                         <a> Blockchain Development </a>
@@ -216,7 +216,7 @@ class Footer extends Component {
                     {/*<li><Link to="/services#service-mob" className="footer-nav">Mobile App Development</Link> </li>*/}
                     <li>
                       <Link
-                        href="/sevices/design-and-prototyping"
+                        href="/services/design-and-prototyping"
                         className="footer-nav"
                       >
                         <a> Design & Prototyping </a>
@@ -224,7 +224,7 @@ class Footer extends Component {
                     </li>
                     <li>
                       <Link
-                        href="/sevices/ui-development"
+                        href="/services/ui-development"
                         className="footer-nav"
                       >
                         <a> UI Development </a>
@@ -232,7 +232,7 @@ class Footer extends Component {
                     </li>
                     <li>
                       <Link
-                        href="/sevices/wordpress-development"
+                        href="/services/wordpress-development"
                         className="footer-nav"
                       >
                         <a> CMS – WordPress </a>
@@ -244,7 +244,7 @@ class Footer extends Component {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/sevices/filemaker" className="footer-nav">
+                      <Link href="/services/filemaker" className="footer-nav">
                         <a> FileMaker Pro Development </a>
                       </Link>
                     </li>
