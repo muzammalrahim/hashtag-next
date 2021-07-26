@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-// import { HashLink as Link } from 'react-router-hash-link';
-// import { NavHashLink as Link } from 'react-router-hash-link';
+import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import Head from "next/head";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import Post from "./post.jsx"
+const Post = dynamic(()=> import("./post"))
+// import Post from "./post.jsx"
 import $ from 'jquery';
 
 export default class Header extends Component {
@@ -20,16 +20,6 @@ export default class Header extends Component {
             navonclick: false,
 
         }
-        this.HomePage = this.HomePage.bind(this);
-        this.AboutusPage = this.AboutusPage.bind(this);
-        this.ServicePage = this.ServicePage.bind(this);
-        this.WordpressPage = this.WordpressPage.bind(this);
-        this.ShopifyPage = this.ShopifyPage.bind(this);
-        this.Blog = this.Blog.bind(this);
-        this.CareersPage = this.CareersPage.bind(this);
-        this.ContactusPage = this.ContactusPage.bind(this);
-        this.filemakerPage = this.filemakerPage.bind(this);
-        this.ErrorPage = this.ErrorPage.bind(this);
     }
 
 
@@ -86,47 +76,47 @@ export default class Header extends Component {
     }
 
 
-    HomePage() {
+    HomePage=()=> {
         this.props.history.push('/');
     }
 
-    AboutusPage() {
+    AboutusPage=()=> {
         this.props.history.push('/about-us');
     }
 
-    ServicePage() {
+    ServicePage=()=> {
         this.props.history.push('/services');
     }
 
-    WordpressPage() {
+    WordpressPage=()=> {
         this.props.history.push('/wordpress');
     }
 
-    ShopifyPage() {
+    ShopifyPage=()=> {
         this.props.history.push('/shopify-experts');
     }
 
-    Blog() {
+    Blog=()=> {
         this.props.history.push('/blogs');
     }
 
-    CareersPage() {
+    CareersPage=()=> {
         this.props.history.push('careers');
     }
 
-    ContactusPage() {
+    ContactusPage=()=> {
         this.props.history.push('/contact-us');
     }
 
-    filemakerPage() {
+    filemakerPage=()=> {
         this.props.history.push('/filemaker');
     }
 
-    filemakerPage() {
+    filemakerPage=()=> {
         this.props.history.push('/case-studies/casestudy-list');
     }
 
-    ErrorPage() {
+    ErrorPage=()=> {
         this.props.history.push('/error');
     }
 
@@ -148,10 +138,6 @@ export default class Header extends Component {
               <meta property="twitter:creator" content="hashtag" />
               <meta property="twitter:title" content={title} />
               <meta property="twitter:description" content={description} />
-              <script
-                async
-                src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"
-              ></script>
               <script
                 dangerouslySetInnerHTML={{
                   __html: `
