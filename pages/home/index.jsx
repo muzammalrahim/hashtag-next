@@ -6,7 +6,6 @@ import Header from '../../components/header/index.jsx';
 import Footer from '../../components/footer/index.jsx';
 import Contact from '../../components/contacts/index.jsx';
 import Carousel from '../../components/carousel/index.jsx';
-import DocumentMeta from 'react-document-meta';
 import Slide from 'react-reveal/Reveal';
 
 require('typeface-montserrat')
@@ -16,7 +15,6 @@ require('typeface-montserrat')
 export default class Home extends Component {
 	constructor(props) {
 		super(props);
-		let response = this.props;
 		this.state = {
 			tabindex: 1,
 		  }
@@ -31,7 +29,7 @@ export default class Home extends Component {
 		title={this.props.title}
 		description={this.props.description}
 		keywords={this.props.keywords}
-	  ></Header>		
+	  />		
 		
 			<div className="section-one-bg">
 				<div className="section-one-bg-small-device m-0 d-none d-xl-block">
@@ -818,8 +816,8 @@ export default class Home extends Component {
 		  	</div>
 		  </div>
 		  	{/* contact form */}
-		<Contact></Contact>
- 		<Footer></Footer>
+		<Contact />
+ 		<Footer />
 
         </div>
     )

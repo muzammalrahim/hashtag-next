@@ -5,7 +5,6 @@ import Link from 'next/link'
 import Head from "next/head";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Post from "./post.jsx"
-import Dropdown from '../dropdown/index.jsx';
 import $ from 'jquery';
 
 export default class Header extends Component {
@@ -196,15 +195,6 @@ export default class Header extends Component {
                     />
                   </a>
                 </Link>
-
-                {/* <Link href="/" className="navbar-brand">
-<img
-id="logo"
-className="logo"
-src="/hashtag-new-logo-header.svg"
-alt="logo"
-/>
-</Link> */}
 
                 <div className="mob-top-email d-block d-sm-none">
                   <a href="mailto:info@hashtag-ca.com">
