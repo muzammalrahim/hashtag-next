@@ -48,11 +48,11 @@ export default class Careers extends Component {
     const { data } = this.state;
     return (
       <div className="careers-main" id="careers-main">
-
         <Header
           title={data.title}
           description={data.description}
           keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
 
         <section class="content-container">
@@ -155,16 +155,26 @@ export default class Careers extends Component {
                         fast-paced environment.
                       </p>
                       <div class="contact-form-link">
-                          <a href="/contact-us"> 
-                            <div class="btn-group form-btn">
-                              <button type="button" class="btn form-button font-12 font-bold">JOIN US</button>
-                              <button type="button" class="btn form-button-child px-3">
-                                <span class=""><span class="form-btn-arrow btn-right-arrow"></span></span>
-                                </button><div class="dropdown-menu">
-                              </div>
-                              </div>
-                            </a>
+                        <a href="/contact-us">
+                          <div class="btn-group form-btn">
+                            <button
+                              type="button"
+                              class="btn form-button font-12 font-bold"
+                            >
+                              JOIN US
+                            </button>
+                            <button
+                              type="button"
+                              class="btn form-button-child px-3"
+                            >
+                              <span class="">
+                                <span class="form-btn-arrow btn-right-arrow"></span>
+                              </span>
+                            </button>
+                            <div class="dropdown-menu"></div>
                           </div>
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -185,16 +195,26 @@ export default class Careers extends Component {
                         fast-paced environment.{" "}
                       </p>
                       <div class="contact-form-link">
-                          <a href="/contact-us"> 
-                            <div class="btn-group form-btn">
-                              <button type="button" class="btn form-button font-12 font-bold">JOIN US</button>
-                              <button type="button" class="btn form-button-child px-3">
-                                <span class=""><span class="form-btn-arrow btn-right-arrow"></span></span>
-                                </button><div class="dropdown-menu">
-                              </div>
-                              </div>
-                            </a>
+                        <a href="/contact-us">
+                          <div class="btn-group form-btn">
+                            <button
+                              type="button"
+                              class="btn form-button font-12 font-bold"
+                            >
+                              JOIN US
+                            </button>
+                            <button
+                              type="button"
+                              class="btn form-button-child px-3"
+                            >
+                              <span class="">
+                                <span class="form-btn-arrow btn-right-arrow"></span>
+                              </span>
+                            </button>
+                            <div class="dropdown-menu"></div>
                           </div>
+                        </a>
+                      </div>
                     </div>
                   </div>
 

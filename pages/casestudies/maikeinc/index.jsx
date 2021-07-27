@@ -79,6 +79,7 @@ export default class Maikeinc extends Component {
           title={data.title}
           description={data.description}
           keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
@@ -88,24 +89,23 @@ export default class Maikeinc extends Component {
                   <div className="common-title-wrap px-md-3">
                     <div className="case-maikeinc-size">
                       <h1>Website development & design</h1>
-                      </div>
-                      <h1 className="main-title title-white">Maike Inc</h1>
-                      <ul className="project-info">
-                        <li>
-                          <strong>Industry:</strong>Review and Shopping
-                        </li>
-                        <li>
-                          <strong>Location:</strong>San Jose, California
-                        </li>
-                        <li>
-                          <strong>Established:</strong>Since 2019
-                        </li>
-                        <li>
-                          <strong>Technologies:</strong>Python, Django,
-                          Wordpress, REST API, NLP
-                        </li>
-                      </ul>
-                    
+                    </div>
+                    <h1 className="main-title title-white">Maike Inc</h1>
+                    <ul className="project-info">
+                      <li>
+                        <strong>Industry:</strong>Review and Shopping
+                      </li>
+                      <li>
+                        <strong>Location:</strong>San Jose, California
+                      </li>
+                      <li>
+                        <strong>Established:</strong>Since 2019
+                      </li>
+                      <li>
+                        <strong>Technologies:</strong>Python, Django, Wordpress,
+                        REST API, NLP
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -160,7 +160,7 @@ export default class Maikeinc extends Component {
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
                       <h2 className="text-above-main-title">
-                      PRODUCT UNIQUENESS
+                        PRODUCT UNIQUENESS
                       </h2>
                       <h2 class="main-title title-orange">Our Solution ?</h2>
                     </div>

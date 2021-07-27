@@ -253,7 +253,12 @@ const {data} = this.state
     return (
       <div className="blog-main" id="blog-main">
         <ToastContainer transition={Slide} />
-        <Header title={data.title} description={data.description} keywords={data.keywords}></Header>
+        <Header
+          title={data.title}
+          description={data.description}
+          keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
+        ></Header>
         <section class="content-container">
           <div className="container-fluid service-bg p-0 m-0 ">
             <div className="service-bg-right">

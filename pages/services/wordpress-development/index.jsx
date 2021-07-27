@@ -87,12 +87,12 @@ export default class Shopify extends Component {
       },
     ];
     return (
-
       <div className="wp-main" id="wp-main">
         <Header
           title={data.data.title}
           description={data.data.description}
           keywords={data.data.keywords}
+          canonical_tags={data.data.canonical_tags}
         ></Header>
         <section class="content-container">
           <div className="container-fluid shopifyBg p-0 m-0">
@@ -232,7 +232,9 @@ export default class Shopify extends Component {
           <div className="container-fluid wordpress-section-3 top-index">
             <div className="row">
               <div class="col-12 wp-sec-3-content shopify-sec-3-content">
-                <h3 class="text-above-main-title text-center">OUR EXPERIENCE</h3>
+                <h3 class="text-above-main-title text-center">
+                  OUR EXPERIENCE
+                </h3>
                 <h3 class="main-title title-orange text-center">
                   Recent Works
                 </h3>
@@ -241,14 +243,16 @@ export default class Shopify extends Component {
             {/*section 3 */}
 
             {/* <Wpslider> </Wpslider> */}
-             <Wpsliderv2 images={recentWork}> </Wpsliderv2>
+            <Wpsliderv2 images={recentWork}> </Wpsliderv2>
           </div>
           <div className="container-fluid ask-expert-section">
             <div className="row">
               <div className="container">
                 <div className="row justify-content-center about-row pl-3 pr-3">
                   <div className="col-12 col-lg-5 col-sm-6 col-md-12">
-                    <h3 className="text-above-main-title">FREE CONSULTATIONS</h3>
+                    <h3 className="text-above-main-title">
+                      FREE CONSULTATIONS
+                    </h3>
                     <h3 className="main-title">
                       <span class="title-orange d-block">Ask Our Expert</span>
                     </h3>
@@ -338,8 +342,10 @@ export default class Shopify extends Component {
                 </div>
               </div>
 
-               <div className="d-block d-sm-none"><Wpcarousel> </Wpcarousel></div>
-               {/*<div className="d-block d-sm-none"><Wpsliderv2> </Wpsliderv2></div>*/}
+              <div className="d-block d-sm-none">
+                <Wpcarousel> </Wpcarousel>
+              </div>
+              {/*<div className="d-block d-sm-none"><Wpsliderv2> </Wpsliderv2></div>*/}
 
               <div class="desktop-only-expertise d-none d-sm-block">
                 <div className="row justify-content-center about-row pl-3 pr-3 pt-4">

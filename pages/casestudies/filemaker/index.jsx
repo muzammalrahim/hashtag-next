@@ -80,6 +80,7 @@ const { data } = this.state;
           title={data.title}
           description={data.description}
           keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
@@ -89,20 +90,20 @@ const { data } = this.state;
                   <div className="common-title-wrap c-heading px-md-3 ">
                     <div className="case-filmmaker-size">
                       <h1>Website development &amp; design</h1>
-                      </div>
-                      <h1 className="main-title title-white">
-                        Filemaker in Action
-                      </h1>
-                      <div className="intro-desc title-white filemaker-h2-size">
-                      <h2 >The FileMaker Platform empowers problem solvers to
-                            <br />
-                            create, share, and integrate custom apps to address
-                            their
-                            <br />
-                            ever changing business challenges.
+                    </div>
+                    <h1 className="main-title title-white">
+                      Filemaker in Action
+                    </h1>
+                    <div className="intro-desc title-white filemaker-h2-size">
+                      <h2>
+                        The FileMaker Platform empowers problem solvers to
+                        <br />
+                        create, share, and integrate custom apps to address
+                        their
+                        <br />
+                        ever changing business challenges.
                       </h2>
-                      </div>
-                    
+                    </div>
                   </div>
                 </div>
               </div>

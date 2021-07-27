@@ -29,6 +29,7 @@ export default class Home extends Component {
 		title={this.props.title}
 		description={this.props.description}
 		keywords={this.props.keywords}
+		canonical_tags={this.props.canonical}
 	  />		
 		
 			<div className="section-one-bg">

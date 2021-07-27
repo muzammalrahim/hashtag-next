@@ -80,6 +80,7 @@ export default class Multitoken extends Component {
           title={data.title}
           description={data.description}
           keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
@@ -89,26 +90,25 @@ export default class Multitoken extends Component {
                   <div className="common-title-wrap px-md-3">
                     <div className="case-multitoken-size">
                       <h1>Full Stack Development</h1>
-                      </div>
-                      <h1 className="main-title title-white">
-                        Multi Token Wallet In Gaming
-                      </h1>
-                      <ul className="project-info">
-                        <li>
-                          <strong>Industry: </strong>Owning game assets/real
-                          world assets on the blockchain
-                          <br /> with DEX to sell them and/or Staking/Betting
-                          contractng
-                        </li>
-                        <li>
-                          <strong>Technology: </strong>Ethereum/Solidity,
-                          Metamask, Web3, Truffle
-                        </li>
-                        <li>
-                          <strong>Smart Contracts: </strong>ERC20, ERC1155
-                        </li>
-                      </ul>
-                    
+                    </div>
+                    <h1 className="main-title title-white">
+                      Multi Token Wallet In Gaming
+                    </h1>
+                    <ul className="project-info">
+                      <li>
+                        <strong>Industry: </strong>Owning game assets/real world
+                        assets on the blockchain
+                        <br /> with DEX to sell them and/or Staking/Betting
+                        contractng
+                      </li>
+                      <li>
+                        <strong>Technology: </strong>Ethereum/Solidity,
+                        Metamask, Web3, Truffle
+                      </li>
+                      <li>
+                        <strong>Smart Contracts: </strong>ERC20, ERC1155
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>

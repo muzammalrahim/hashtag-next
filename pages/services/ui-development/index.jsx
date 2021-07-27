@@ -48,6 +48,7 @@ export default class UIPage extends Component {
             title={data.data.title}
             description={data.data.description}
             keywords={data.data.keywords}
+            canonical_tags={data.data.canonical_tags}
           ></Header>
         </div>
         <section class="content-container">

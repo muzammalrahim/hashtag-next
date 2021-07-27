@@ -103,6 +103,7 @@ export default class Speakinc extends Component {
           title={data.title}
           description={data.description}
           keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
         {/*<Underconstruction></Underconstruction>*/}
         <section className="content-container">
@@ -114,10 +115,10 @@ export default class Speakinc extends Component {
                     <div className="list-banner-text">
                       <h1>
                         <span className="title-orange">Case Studies</span>{" "}
-                      </h1>  
-                        <br />
-                        <h2>We Let Our Portfolio Do The Talk!</h2>
-                      
+                      </h1>
+                      <br />
+                      <h2>We Let Our Portfolio Do The Talk!</h2>
+
                       <div className="btn-comm">
                         <a href="#contact">Say Hello</a>
                       </div>
@@ -308,7 +309,7 @@ export default class Speakinc extends Component {
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
                           {/* <a> */}
-                            <Link href="/casestudies/megalot">Megalot</Link>
+                          <Link href="/casestudies/megalot">Megalot</Link>
                           {/* </a> */}
                         </h3>
                         <span>Full Stack Development</span>

@@ -55,11 +55,11 @@ export default class Contactus extends Component {
     const { data } = this.state;
     return (
       <div className="contact-main" id="contact-main">
-     
         <Header
           title={data.title}
           description={data.description}
           keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
         <section className="content-container">
           <div className="container-fluid service-bg p-0 m-0 ">
@@ -91,9 +91,6 @@ export default class Contactus extends Component {
           {/* tab section start */}
           <div className="container-fluid contact-section-two pt-3 pb-3">
             <div className="container">
-
-
-
               <div className="row justify-content-center mt-5 mb-5">
                 <div className="col-12" id="tabs">
                   <div className="col-lg-6 col-md-12 col-sm-12">
@@ -113,7 +110,9 @@ export default class Contactus extends Component {
                           role="tab"
                           aria-controls="nav-home"
                           aria-selected="true"
-                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 1 })}}
+                          onClick={(e) => {
+                            e.preventDefault(), this.setState({ tabindex: 1 });
+                          }}
                         >
                           Sunnyvale
                         </a>
@@ -127,7 +126,9 @@ export default class Contactus extends Component {
                           role="tab"
                           aria-controls="nav-sanjose"
                           aria-selected="true"
-                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 2 })}}
+                          onClick={(e) => {
+                            e.preventDefault(), this.setState({ tabindex: 2 });
+                          }}
                         >
                           San Jose
                         </a>
@@ -141,7 +142,9 @@ export default class Contactus extends Component {
                           role="tab"
                           aria-controls="nav-contact"
                           aria-selected="false"
-                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 3 })}}
+                          onClick={(e) => {
+                            e.preventDefault(), this.setState({ tabindex: 3 });
+                          }}
                         >
                           San Diego
                         </a>
@@ -155,7 +158,9 @@ export default class Contactus extends Component {
                           role="tab"
                           aria-controls="nav-profile"
                           aria-selected="false"
-                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 4 })}}
+                          onClick={(e) => {
+                            e.preventDefault(), this.setState({ tabindex: 4 });
+                          }}
                         >
                           Kochi
                         </a>
@@ -177,20 +182,19 @@ export default class Contactus extends Component {
                       <div className="row tab-content">
                         <div className="col-lg-6 col-md-12 col-sm-12">
                           <h3 className="address-content">
-                          <img
-                            src="images/home/location.svg"
-                            alt="location"
-                            className="address-icons"
-                          />{" "}
-                          <span className="address-content">Sunnyvale</span></h3>
+                            <img
+                              src="images/home/location.svg"
+                              alt="location"
+                              className="address-icons"
+                            />{" "}
+                            <span className="address-content">Sunnyvale</span>
+                          </h3>
                           <h3 className="address-text">
-                            
                             100 S. Murphy Ave. Suite 200
                             <br />
                             Sunnyvale, CA 94086
                             <br />
                             USA
-                        
                           </h3>
                           <img
                             src="images/home/phone.svg"
@@ -258,13 +262,14 @@ export default class Contactus extends Component {
                     >
                       <div className="row tab-content">
                         <div className="col-lg-6 col-md-12 col-sm-12">
-                        <h3 className="address-content"> 
-                          <img
-                            src="images/home/location.svg"
-                            alt="location"
-                            className="address-icons"
-                          />{" "}
-                          <span className="address-content">San Jose</span></h3>
+                          <h3 className="address-content">
+                            <img
+                              src="images/home/location.svg"
+                              alt="location"
+                              className="address-icons"
+                            />{" "}
+                            <span className="address-content">San Jose</span>
+                          </h3>
                           <h3 className="address-text">
                             99 S Almaden Blvd Suite
                             <br />
@@ -340,12 +345,13 @@ export default class Contactus extends Component {
                       <div className="row tab-content">
                         <div className="col-lg-6 col-md-12 col-sm-12">
                           <h3 className="address-content">
-                          <img
-                            src="images/home/location.svg"
-                            alt="location"
-                            className="address-icons"
-                          />{" "}
-                          <span className="address-content">San Diego</span></h3>
+                            <img
+                              src="images/home/location.svg"
+                              alt="location"
+                              className="address-icons"
+                            />{" "}
+                            <span className="address-content">San Diego</span>
+                          </h3>
                           <h3 className="address-text">
                             7770 Regents Rd. #113-385
                             <br />
@@ -409,12 +415,13 @@ export default class Contactus extends Component {
                       <div className="row tab-content">
                         <div className="col-lg-6 col-md-12 col-sm-12">
                           <h3 className="address-content">
-                          <img
-                            src="images/home/location.svg"
-                            alt="location"
-                            className="address-icons"
-                          />{" "}
-                          <span className="address-content">Kochi</span></h3>
+                            <img
+                              src="images/home/location.svg"
+                              alt="location"
+                              className="address-icons"
+                            />{" "}
+                            <span className="address-content">Kochi</span>
+                          </h3>
                           <h3 className="address-text">
                             Infopark Technology Business Center JNI Stadium,{" "}
                             <br />
@@ -480,8 +487,6 @@ export default class Contactus extends Component {
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
 

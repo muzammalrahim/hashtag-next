@@ -51,6 +51,7 @@ export default class Service extends Component {
           title={data.title}
           description={data.description}
           keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
         <section className="content-container">
           <div className="container-fluid service-bg p-0 m-0 ">

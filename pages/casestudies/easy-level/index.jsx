@@ -87,6 +87,7 @@ export default class Easylevel extends Component {
           title={data.title}
           description={data.description}
           keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
@@ -95,27 +96,27 @@ export default class Easylevel extends Component {
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
                     <div className="case-easylevel-size">
-                      <h1>Full Stack Development</h1></div>
-                      <h1 className="main-title title-white">Easy-Level</h1>
-                      <ul className="project-info">
-                        <li>
-                          <strong>Industry:</strong>Decentralized P2P payment &
-                          Advertising
-                        </li>
-                        <li>
-                          <strong>Location:</strong>Italy
-                        </li>
-                        <li>
-                          <strong>Technology/Blockchain:</strong>Solidity,
-                          Metamask, ETH Smart Contract/ERC20/ERC721
-                        </li>
-                        <li>
-                          <strong>Technology/DApp:</strong> React/Redux/Web3,
-                          Python/Django/Web3, NodeJS/Web3/SocketIO, MySQL,
-                          Linux, Git CI/CD pipeline with Docker
-                        </li>
-                      </ul>
-                    
+                      <h1>Full Stack Development</h1>
+                    </div>
+                    <h1 className="main-title title-white">Easy-Level</h1>
+                    <ul className="project-info">
+                      <li>
+                        <strong>Industry:</strong>Decentralized P2P payment &
+                        Advertising
+                      </li>
+                      <li>
+                        <strong>Location:</strong>Italy
+                      </li>
+                      <li>
+                        <strong>Technology/Blockchain:</strong>Solidity,
+                        Metamask, ETH Smart Contract/ERC20/ERC721
+                      </li>
+                      <li>
+                        <strong>Technology/DApp:</strong> React/Redux/Web3,
+                        Python/Django/Web3, NodeJS/Web3/SocketIO, MySQL, Linux,
+                        Git CI/CD pipeline with Docker
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -287,7 +288,7 @@ export default class Easylevel extends Component {
                   <div className="project-slider-wrap">
                     <div className="project-blk-title">
                       <h2 className="text-above-main-title">
-                      DESIGN WITH USER IN MIND
+                        DESIGN WITH USER IN MIND
                       </h2>
                       <h2 class="main-title title-orange">User Interface</h2>
                     </div>
@@ -493,9 +494,11 @@ export default class Easylevel extends Component {
                 <div className="col-md-8">
                   <div className="project-blk-title">
                     <h2 className="text-above-main-title">
-                    PROJECT ACHIEVEMENTS
+                      PROJECT ACHIEVEMENTS
                     </h2>
-                    <h2  className="main-title-custom main-title mb-2">What We Achieved</h2>
+                    <h2 className="main-title-custom main-title mb-2">
+                      What We Achieved
+                    </h2>
                     <img
                       className="mb-2"
                       src="../images/shopify/shopify-quoute.svg"

@@ -129,6 +129,7 @@ export default class Singlepost extends Component {
           title={data.title}
           description={data.description}
           keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
 
         <section class="content-container">
@@ -147,8 +148,8 @@ export default class Singlepost extends Component {
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
                       <h2 className="bold-contents service-content-box pl-4">
-                        Highly experienced digital solutions company provide best 
-                        professional Web Solutions
+                        Highly experienced digital solutions company provide
+                        best professional Web Solutions
                       </h2>
                     </div>
                   </div>

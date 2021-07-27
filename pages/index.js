@@ -1,5 +1,4 @@
 import React from "react"
-
 import Homes from './home/index'
 
 import Axios from "axios";
@@ -33,13 +32,12 @@ export async function getServerSideProps() {
 export default function Home(props) {
   let response = props
   const [data, setData] = React.useState(response.data.data)
-  
-    
   return (
  
        <Homes title={data.title}
-	   description={data.description}
-	   keywords={data.keywords}
+	   	  description={data.description}
+		  keywords={data.keywords}
+		  canonical={data?.canonical_tags}
 	   />
 	  
   )

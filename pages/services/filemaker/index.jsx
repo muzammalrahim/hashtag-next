@@ -65,6 +65,7 @@ export default class filemakerPage extends Component {
           title={data.data.title}
           description={data.data.description}
           keywords={data.data.keywords}
+          canonical_tags={data.data.canonical_tags}
         ></Header>
         {/*<Underconstruction></Underconstruction>*/}
         <section className="content-container">
@@ -81,9 +82,9 @@ export default class filemakerPage extends Component {
                       <p className="text-white s-file-maker">
                         <strong>
                           <h2>
-                          We are Filemaker development experts located in
-                          California <br /> and serving customers worldwide on
-                          various filemaker <br /> solutions and integrations
+                            We are Filemaker development experts located in
+                            California <br /> and serving customers worldwide on
+                            various filemaker <br /> solutions and integrations
                           </h2>
                         </strong>
                       </p>

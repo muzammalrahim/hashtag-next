@@ -71,11 +71,11 @@ export default class Shopify extends Component {
 
     return (
       <div className="shopify-main" id="shopify-main">
-
         <Header
           title={data.title}
           description={data.description}
           keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
         <section class="content-container">
           <div className="container-fluid shopifyBg p-0 m-0 ">
@@ -157,7 +157,6 @@ export default class Shopify extends Component {
                       of the way and grow your brand for the long-term.
                     </span>
                   </p>
-
 
                   <div className="contact-form-link">
                     <Link href="/contact-us">
@@ -241,22 +240,23 @@ export default class Shopify extends Component {
                       </p>
                     </p>
                     <div className="contact-form-link">
-                      <Link href="/contact-us" className="contact-form-link"><a>
-                        <div className="btn-group">
-                          <button
-                            type="button"
-                            className="btn btn-hashtag font-bold"
-                          >
-                            LET'S TALK{" "}
-                          </button>
-                          <button type="button" className="btn  px-3">
-                            <span className="">
-                              <span className="hashtag-arrow btn-right-arrow"></span>
-                            </span>
-                          </button>
-                          <div className="dropdown-menu"></div>
-                        </div>
-                      </a>
+                      <Link href="/contact-us" className="contact-form-link">
+                        <a>
+                          <div className="btn-group">
+                            <button
+                              type="button"
+                              className="btn btn-hashtag font-bold"
+                            >
+                              LET'S TALK{" "}
+                            </button>
+                            <button type="button" className="btn  px-3">
+                              <span className="">
+                                <span className="hashtag-arrow btn-right-arrow"></span>
+                              </span>
+                            </button>
+                            <div className="dropdown-menu"></div>
+                          </div>
+                        </a>
                       </Link>
                     </div>
                   </div>

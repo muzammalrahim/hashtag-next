@@ -79,6 +79,7 @@ export default class Megalot extends Component {
           title={data.title}
           description={data.description}
           keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
@@ -88,24 +89,23 @@ export default class Megalot extends Component {
                   <div className="common-title-wrap px-md-3">
                     <div className="case-megalot-size">
                       <h1>Website development & design</h1>
-                      </div>
-                      <h1 className="main-title title-white">Megalot</h1>
-                      <ul className="project-info">
-                        <li>
-                          <strong>Industry:</strong>Lottery & Gambling
-                        </li>
-                        <li>
-                          <strong>Location:</strong>California, US
-                        </li>
-                        <li>
-                          <strong>Service:</strong>Blockchain development
-                        </li>
-                        <li>
-                          <strong>Technologies:</strong>Blockchain, Solidity,
-                          Metamask, ETH Smart Contract, Web3
-                        </li>
-                      </ul>
-                    
+                    </div>
+                    <h1 className="main-title title-white">Megalot</h1>
+                    <ul className="project-info">
+                      <li>
+                        <strong>Industry:</strong>Lottery & Gambling
+                      </li>
+                      <li>
+                        <strong>Location:</strong>California, US
+                      </li>
+                      <li>
+                        <strong>Service:</strong>Blockchain development
+                      </li>
+                      <li>
+                        <strong>Technologies:</strong>Blockchain, Solidity,
+                        Metamask, ETH Smart Contract, Web3
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -117,9 +117,11 @@ export default class Megalot extends Component {
               <div className="row">
                 <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
                   <blockquote cite="https://www.hashtag-ca.com/">
-                    <h2>Our potential team has deep knowledge about Ethereum
-                    platform based applications to develop smart contracts and
-                    dApps.</h2>
+                    <h2>
+                      Our potential team has deep knowledge about Ethereum
+                      platform based applications to develop smart contracts and
+                      dApps.
+                    </h2>
                   </blockquote>
                   <div className="project-blk-title">
                     <h3 className="text-above-main-title">INTRODUCTION</h3>
@@ -170,7 +172,7 @@ export default class Megalot extends Component {
                 <div className="col-md-8">
                   <div className="project-blk-title">
                     <h3 className="text-above-main-title">
-                    CRACKING CHALLENGES WITH OUR TEAM OF BLOCKCHAIN EXPERTS{" "}
+                      CRACKING CHALLENGES WITH OUR TEAM OF BLOCKCHAIN EXPERTS{" "}
                     </h3>
                     <h3 class="main-title">Challenges</h3>
                   </div>
@@ -203,7 +205,7 @@ export default class Megalot extends Component {
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
                       <h3 className="text-above-main-title">
-                      PRODUCT UNIQUENESS
+                        PRODUCT UNIQUENESS
                       </h3>
                       <h3 class="main-title title-orange">Our Solution ?</h3>
                     </div>

@@ -79,6 +79,7 @@ const { data } = this.state;
           title={data.title}
           description={data.description}
           keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
@@ -88,25 +89,24 @@ const { data } = this.state;
                   <div className="common-title-wrap px-md-3">
                     <div className="case-speakinc-size">
                       <h1>Website development & design</h1>
-                      </div>
-                      <h1 className="main-title title-white">SpeakInc</h1>
-                      <ul className="project-info">
-                        <li>
-                          <strong>Industry:</strong>Event Management and
-                          Consulting
-                        </li>
-                        <li>
-                          <strong>Location:</strong>San Diego, California
-                        </li>
-                        <li>
-                          <strong>Established:</strong>Since 1989
-                        </li>
-                        <li>
-                          <strong>Technologies:</strong>Python, Django,
-                          Filemaker, Hubspot
-                        </li>
-                      </ul>
-                    
+                    </div>
+                    <h1 className="main-title title-white">SpeakInc</h1>
+                    <ul className="project-info">
+                      <li>
+                        <strong>Industry:</strong>Event Management and
+                        Consulting
+                      </li>
+                      <li>
+                        <strong>Location:</strong>San Diego, California
+                      </li>
+                      <li>
+                        <strong>Established:</strong>Since 1989
+                      </li>
+                      <li>
+                        <strong>Technologies:</strong>Python, Django, Filemaker,
+                        Hubspot
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
