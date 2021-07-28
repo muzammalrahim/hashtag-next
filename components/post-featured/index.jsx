@@ -54,7 +54,7 @@ class BlogFeaturePost extends Component {
             return (
               <li className="cat-item cat-item-51 current-cat" key={index}>
                 <a
-                  href={cat.url}
+                  href={"/blogs/"+cat.url}
                   style={{ cursor: "pointer" }}
                   onClick={() => {
                     this.navigate("/blogs/" + cat.url);
