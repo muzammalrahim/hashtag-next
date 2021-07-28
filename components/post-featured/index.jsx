@@ -47,7 +47,7 @@ class BlogFeaturePost extends Component {
     return (
       <div id="categories-3" className="widget widget_categories posts_holder">
             {this.state.features.length >0 &&<h4 className="title-level-6 text-left title-level-mobile b-categories">
-                Featured
+                Featured Posts
             </h4>}
         <ul>
           {this.state.features?.map((cat, index) => {
