@@ -168,14 +168,14 @@ export default class Blog extends Component {
       post_lists.push(
         <Flip bottom>
           <div className="card" key={index}>
-            <h5 className="card-title text-level-4 title-orange">
+            <p5 className="card-title text-level-4 title-orange">
               <Link
                 href={"/blogs/[slug]"}
                 as={"/blogs/" + post.url}
               >
                 {post.title}
               </Link>
-            </h5>
+            </p5>
             <div className="blog-img">
               <Link
                 href={"/blogs/[slug]"}
@@ -208,14 +208,14 @@ export default class Blog extends Component {
               </div>
             </div>
             <div className="card-body">
-              <h4 className="card-title text-level-4 title-orange">
+              <p4 className="card-title text-level-4 title-orange">
                 <Link
                   href={"/blogs/[slug]"}
                   as={"/blogs/" + post.url}
                 >
                   {post.title}
                 </Link>
-              </h4>
+              </p4><br/>
               <small className="text-muted cat text-above-main-title author-blk">
                 <i className="fa fa-hashtag" aria-hidden="true"></i>{" "}
                 {post.author}

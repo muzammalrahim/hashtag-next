@@ -101,9 +101,9 @@ export default class Shopify extends Component {
                 <div className="container ">
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <h1 className="sub-text-above-main-title title-white">
+                      <p className="sub-text-above-main-title title-white">
                         Custom Solutions for
-                      </h1>
+                      </p>
                       <h1 className="main-title  title-white d-block">
                         Wordpress <br />
                         development
@@ -124,9 +124,9 @@ export default class Shopify extends Component {
           <div className="container">
             <div className="row justify-content-center mt-5 section-2-row">
               <div className="col-12">
-                <h3 className="text-above-main-title text-center">
+                <p className="text-above-main-title text-center">
                   WE OFFER A WIDE RANGE OF
-                </h3>
+                </p>
                 <h3 className="main-title title-orange text-center">
                   Services On
                 </h3>
@@ -141,9 +141,9 @@ export default class Shopify extends Component {
                       src="../images/wordpress/web-programming.svg"
                       alt="wp_dev"
                     />
-                    <h4 className="text-level-5 title-black">
+                    <p className="text-level-5 title-black">
                       WordPress Development
-                    </h4>
+                    </p>
                     <hr className="hashtag-underline ml-2" />
                   </div>
                 </div>
@@ -152,9 +152,9 @@ export default class Shopify extends Component {
                 <div className="col-lg-3 col-sm-6 mob-padding">
                   <div className="what-we-do-border-style what-we-do-responsive">
                     <img src="../images/wordpress/group.svg" alt="wp_theme" />
-                    <h4 className="text-level-5 title-black">
+                    <p className="text-level-5 title-black">
                       WordPress Theme Customization
-                    </h4>
+                    </p>
                     <hr className="hashtag-underline ml-2" />
                   </div>
                 </div>
@@ -166,9 +166,9 @@ export default class Shopify extends Component {
                       src="../images/wordpress/puzzke.svg"
                       alt="plugin_dev"
                     />
-                    <h4 className="text-level-5 title-black">
+                    <p className="text-level-5 title-black">
                       WordPress Plugin Development
-                    </h4>
+                    </p>
                     <hr className="hashtag-underline ml-2" />
                   </div>
                 </div>
@@ -177,9 +177,9 @@ export default class Shopify extends Component {
                 <div className="col-lg-3 col-sm-6 mob-padding">
                   <div className="what-we-do-border-style what-we-do-responsive">
                     <img src="../images/wordpress/psd-wp.svg" alt="psd_to_wp" />
-                    <h4 className="text-level-5 title-black">
+                    <p className="text-level-5 title-black">
                       PSD to WordPress Conversion
-                    </h4>
+                    </p>
                     <hr className="hashtag-underline ml-2" />
                   </div>
                 </div>
@@ -194,9 +194,9 @@ export default class Shopify extends Component {
                       src="../images/wordpress/html-wp.svg"
                       alt="html_to_wp"
                     />
-                    <h4 className="text-level-5 title-black">
+                    <p className="text-level-5 title-black">
                       HTML to WordPress Conversion
-                    </h4>
+                    </p>
                     <hr className="hashtag-underline ml-2" />
                   </div>
                 </div>
@@ -205,9 +205,9 @@ export default class Shopify extends Component {
                 <div className="col-lg-3 col-sm-6 mob-padding">
                   <div className="what-we-do-border-style what-we-do-responsive">
                     <img src="../images/wordpress/development.svg" alt="hire" />
-                    <h4 className="text-level-5 title-black">
+                    <p className="text-level-5 title-black">
                       Hire WordPress Developer
-                    </h4>
+                    </p>
                     <hr className="hashtag-underline ml-2" />
                   </div>
                 </div>
@@ -219,9 +219,9 @@ export default class Shopify extends Component {
                       src="../images/wordpress/education.svg"
                       alt="training"
                     />
-                    <h4 className="text-level-5 title-black">
+                    <p className="text-level-5 title-black">
                       Corporate Traning WP Development
-                    </h4>
+                    </p>
                     <hr className="hashtag-underline ml-2" />
                   </div>
                 </div>
@@ -232,9 +232,7 @@ export default class Shopify extends Component {
           <div className="container-fluid wordpress-section-3 top-index">
             <div className="row">
               <div class="col-12 wp-sec-3-content shopify-sec-3-content">
-                <h3 class="text-above-main-title text-center">
-                  OUR EXPERIENCE
-                </h3>
+                <p class="text-above-main-title text-center">OUR EXPERIENCE</p>
                 <h3 class="main-title title-orange text-center">
                   Recent Works
                 </h3>
@@ -243,16 +241,14 @@ export default class Shopify extends Component {
             {/*section 3 */}
 
             {/* <Wpslider> </Wpslider> */}
-            <Wpsliderv2 images={recentWork}> </Wpsliderv2>
+             <Wpsliderv2 images={recentWork}> </Wpsliderv2>
           </div>
           <div className="container-fluid ask-expert-section">
             <div className="row">
               <div className="container">
                 <div className="row justify-content-center about-row pl-3 pr-3">
                   <div className="col-12 col-lg-5 col-sm-6 col-md-12">
-                    <h3 className="text-above-main-title">
-                      FREE CONSULTATIONS
-                    </h3>
+                    <p className="text-above-main-title">FREE CONSULTATIONS</p>
                     <h3 className="main-title">
                       <span class="title-orange d-block">Ask Our Expert</span>
                     </h3>
@@ -263,12 +259,12 @@ export default class Shopify extends Component {
                         Ask our WordPress expert
                       </p>
                     </p>
-                    <h1 className="main-title">
+                    <div className="main-title">
                       <img
                         src="../images/wordpress/wp-quoute.svg"
                         alt="quote"
                       />
-                    </h1>
+                    </div>
 
                     <p className="nj-who-we-are-sub-content">
                       <p className="font-normal">
@@ -311,9 +307,9 @@ export default class Shopify extends Component {
                       src="../images/wordpress/tony-hashtag-sys.png"
                       alt="tony-hashtag"
                     />
-                    <h1 className="shopify-title title-margin text-center text-level-4">
+                    <p className="shopify-title title-margin text-center text-level-4">
                       Tony Zeoli
-                    </h1>
+                    </p>
                     <p className="nj-who-we-are-sub-content text-center">
                       <p className="font-normal small-font font-italics">
                         Experienced product manager,
@@ -332,20 +328,18 @@ export default class Shopify extends Component {
             <div className="container">
               <div class="row">
                 <div class="col-12 plugin-integration-section shopify-sec-3-content">
-                  <h3 class="text-above-main-title text-center">
+                  <p class="text-above-main-title text-center">
                     LET OUR EXPERTS SUGGEST THE BEST PLUGIN INTEGRATION FOR YOUR
                     WORDPRESS
-                  </h3>
+                  </p>
                   <h3 class="main-title title-orange text-center">
                     Plugin Integration
                   </h3>
                 </div>
               </div>
 
-              <div className="d-block d-sm-none">
-                <Wpcarousel> </Wpcarousel>
-              </div>
-              {/*<div className="d-block d-sm-none"><Wpsliderv2> </Wpsliderv2></div>*/}
+               <div className="d-block d-sm-none"><Wpcarousel> </Wpcarousel></div>
+               {/*<div className="d-block d-sm-none"><Wpsliderv2> </Wpsliderv2></div>*/}
 
               <div class="desktop-only-expertise d-none d-sm-block">
                 <div className="row justify-content-center about-row pl-3 pr-3 pt-4">
@@ -521,9 +515,9 @@ export default class Shopify extends Component {
               <div className="container">
                 <div class="row">
                   <div class="col-12">
-                    <h3 class="text-above-main-title text-center testimonial-margin">
+                    <p class="text-above-main-title text-center testimonial-margin">
                       WHAT CLIENT SAY ABOUT US
-                    </h3>
+                    </p>
                     <h3 class="main-title title-orange text-center">
                       Testimonials
                     </h3>

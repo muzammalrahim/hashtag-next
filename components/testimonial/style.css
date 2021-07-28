@@ -26,6 +26,15 @@
         -o-transform: translateX(-50%);
         transform: translateX(-50%);*/
 }
+.testimonial_main .testimonialHead{
+    font-family: 'Montserrat' !important;
+    font-size: 21px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: 32px !important;
+    letter-spacing: -0.05em !important;
+    text-align: left !important;
+}
 
 .testim .wrap {
     /*position: relative;

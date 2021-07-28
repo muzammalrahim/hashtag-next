@@ -60,9 +60,9 @@ export default class About extends Component {
                 <div className="container ">
                   <div className="row justify-content-center service-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <h1 className="sub-text-above-main-title title-white">
+                      <p className="sub-text-above-main-title title-white">
                         Who we are
-                      </h1>
+                      </p>
                       <h1 className="main-title title-white d-block">
                         About us
                       </h1>
@@ -85,9 +85,9 @@ export default class About extends Component {
             {/* section 2 */}
             <div className="row justify-content-center mt-5 section-2-row">
               <div class="col-12">
-                <h3 class="text-above-main-title text-center">
+                <div class="text-above-main-title text-center">
                   PERFECT SOLUTION FOR BUSINESS
-                </h3>
+                </div>
                 <h3 class="main-title title-orange text-center">Our values</h3>
                 <div class="shopify-sub-title text-center">
                   Dedicated to provide best professional Web Solutions
@@ -106,7 +106,7 @@ export default class About extends Component {
                   </div>
                   <div className="about-section-2-middle"></div>
                   <div className="about-section-2-content">
-                    <h4 class="text-level-4 title-orange"># Does it all! </h4>
+                    <p class="text-level-4 title-orange"># Does it all! </p>
                     <hr class="hashtag-underline ml-2" />
                     <p>
                       If you’re looking for custom and complex web development
@@ -128,7 +128,7 @@ export default class About extends Component {
                   </div>
                   <div className="about-section-2-middle"></div>
                   <div className="about-section-2-content">
-                    <h4 class="text-level-4 title-orange">We value you! </h4>
+                    <p class="text-level-4 title-orange">We value you! </p>
                     <hr class="hashtag-underline ml-2" />
                     <p>
                       We do not classify our customers into various priority
@@ -151,7 +151,7 @@ export default class About extends Component {
                   </div>
                   <div className="about-section-2-middle"></div>
                   <div className="about-section-2-content">
-                    <h4 class="text-level-4 title-orange">Global presence</h4>
+                    <p class="text-level-4 title-orange">Global presence</p>
                     <hr class="hashtag-underline ml-2" />
                     <p>
                       We already have a presence in the United States(San
@@ -169,9 +169,9 @@ export default class About extends Component {
               <div class="container">
                 <div className="row about-row justify-content-center  pl-3 pr-3">
                   <div className="col-12 col-lg-5 col-md-12 hash-team-content">
-                    <h3 className="text-above-main-title title-black">
+                    <div className="text-above-main-title title-black">
                       OUR DREAM TEAM
-                    </h3>
+                    </div>
                     <h3 className="main-title">
                       <span class="title-orange d-block"># Team</span>
                     </h3>
@@ -218,35 +218,35 @@ export default class About extends Component {
                           alt="About Our Company"
                         />
                       </div>
-                      <h6 className="title-level-6 title-level-mobile">
+                      <p className="title-level-6 title-level-mobile">
                         BAs &
                         <br />
                         Architects
-                      </h6>
+                      </p>
                     </div>
 
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
                         <img src="/images/about/mobapp.svg" alt="mobile_app" />
                       </div>
-                      <h6 className="title-level-6 title-level-mobile">
+                      <p className="title-level-6 title-level-mobile">
                         {" "}
                         Mobile App
                         <br />
                         Developers
-                      </h6>
+                      </p>
                     </div>
 
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
                         <img src="/images/about/uiux.svg" alt="ui/ux" />
                       </div>
-                      <h6 className="title-level-6 title-level-mobile">
+                      <p className="title-level-6 title-level-mobile">
                         {" "}
                         UI \ UX
                         <br />
                         Designers
-                      </h6>
+                      </p>
                     </div>
                   </div>
 
@@ -255,23 +255,23 @@ export default class About extends Component {
                       <div className="why-us-icon why-icon-mobile">
                         <img src="/images/about/webapp.svg" alt="webapp" />
                       </div>
-                      <h6 className="title-level-6 title-level-mobile">
+                      <p className="title-level-6 title-level-mobile">
                         Web App
                         <br />
                         Developers
-                      </h6>
+                      </p>
                     </div>
 
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
                         <img src="/images/about/qa.svg" alt="qa" />
                       </div>
-                      <h6 className="title-level-6 title-level-mobile">
+                      <p className="title-level-6 title-level-mobile">
                         {" "}
                         QA
                         <br />
                         Engineers
-                      </h6>
+                      </p>
                     </div>
 
                     <div className="why-us-box">
@@ -281,22 +281,22 @@ export default class About extends Component {
                           alt="performance"
                         />
                       </div>
-                      <h6 className="title-level-6 title-level-mobile">
+                      <p className="title-level-6 title-level-mobile">
                         Performance
                         <br />
                         Engineers
-                      </h6>
+                      </p>
                     </div>
 
                     <div className="why-us-box last-why-us-box">
                       <div className="why-us-icon why-icon-mobile">
                         <img src="/images/about/support.svg" alt="support" />
                       </div>
-                      <h6 className="title-level-6 title-level-mobile">
+                      <p className="title-level-6 title-level-mobile">
                         Customer
                         <br />
                         Support Engineers
-                      </h6>
+                      </p>
                     </div>
                   </div>
                 </div>

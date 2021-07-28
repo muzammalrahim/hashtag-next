@@ -62,12 +62,12 @@ export default class Careers extends Component {
                 <div className="container ">
                   <div className="row justify-content-center service-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <h1 className="sub-text-above-main-title title-white">
+                    <h1><span className="sub-text-above-main-title title-white">
                         Join Us
-                      </h1>
-                      <h1 className="main-title title-white d-block">
+                      </span>
+                      <span className="main-title title-white d-block">
                         Careers
-                      </h1>
+                      </span> </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
                       <h2 className="bold-contents service-content-box pl-4">
@@ -84,14 +84,14 @@ export default class Careers extends Component {
             {/* section 2 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div class="col-sm-10 text-center ipad-pro-only">
-                <h3 className="main-title title-orange">
+                <p className="main-title title-orange">
                   We are looking for future leaders!{" "}
-                </h3>
+                </p>
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 ">
-                <h3 className="main-title title-orange ipad-pro-none">
+                <p className="main-title title-orange ipad-pro-none">
                   We are looking for future leaders!{" "}
-                </h3>
+                </p>
                 <div className="shopify-content mt-4">
                   <p>
                     <span className="d-xxl-block">
@@ -120,9 +120,9 @@ export default class Careers extends Component {
               <div className="container">
                 <div className="row">
                   <div className="col-12 join-team-title-row">
-                    <h3 className="text-above-main-title text-center">
+                    <p className="text-above-main-title text-center">
                       ARE YOU READY TO STEP INTO THE LOUNGE?
-                    </h3>
+                    </p>
                     {/*<h1 className="main-title title-orange text-center">Join Team</h1>*/}
                   </div>
                 </div>
@@ -145,9 +145,9 @@ export default class Careers extends Component {
                         alt="interview-image"
                         className="img-fluid vacancy-section-image"
                       />
-                      <h4 className=" title-black hashtag-careers-vacancies ">
+                      <p className=" title-black hashtag-careers-vacancies ">
                         EXPERIENCED PROFESSIONALS
-                      </h4>
+                      </p>
                       <hr className="hashtag-underline-new ml-2" />
                       <p className="pt-4 pb-4 first-para">
                         Are you a person with a creative approach to problem
@@ -185,9 +185,9 @@ export default class Careers extends Component {
                         alt="interview-image"
                         className="img-fluid vacancy-section-image"
                       />
-                      <h4 className=" title-black hashtag-careers-vacancies">
+                      <p className=" title-black hashtag-careers-vacancies">
                         FRESHERS AND ENTRY LEVEL PROFESSIONALS
-                      </h4>
+                      </p>
                       <hr className="hashtag-underline-new ml-2 " />
                       <p className="pt-2 pb-2 first-para">
                         Are you a person with a creative approach to problem
@@ -307,16 +307,16 @@ export default class Careers extends Component {
           <div className="container shopify-benifits-section">
             <div className="row">
               <div class="col-12">
-                <h3 class="text-above-main-title text-center">
+                <p class="text-above-main-title text-center">
                   THERE IS ALWAYS ROOM FOR MOTIVATED TECH ENTHUSIASTS
-                </h3>
-                <h1 class="main-title title-orange text-center">Coming Soon</h1>
+                </p>
+                <p class="main-title title-orange text-center">Coming Soon</p>
               </div>
             </div>
             {/* section 1 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12">
-                <h1 className="shopify-title text-level-4">Coding Club</h1>
+                <p className="shopify-title text-level-4">Coding Club</p>
                 <div className="shopify-content mt-4">
                   <p>
                     <ul className="shopify-benifits-list">
@@ -350,9 +350,9 @@ export default class Careers extends Component {
               <div className="container">
                 <div className="row justify-content-center about-row pl-3 pr-3">
                   <div className="col-sm-10">
-                    <h3 className="main-title title-orange text-center">
+                    <p className="main-title title-orange text-center">
                       Equal Opportunities
-                    </h3>
+                    </p>
 
                     <p className="nj-who-we-are-sub-content text-center">
                       <p class="font-normal">

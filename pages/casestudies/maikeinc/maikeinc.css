@@ -1,8 +1,5 @@
 .case-maikeinc-size
 {
- 
-  
-
   text-transform: uppercase;
   color: #fff;
   margin: 0 0 0px;
@@ -11,6 +8,16 @@
   border-radius: 4px;
   color: #fff;
 }
+
+.case-study .case_study_title{
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
 .case-study.maikeinc .technology-blk{
   padding: 100px 0 40px;
 }

@@ -61,9 +61,9 @@ export default class DatabasePage extends Component {
                 <div className="container ">
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <h1 className="sub-text-above-main-title title-white">
-                        We offer solutions for
-                      </h1>
+                      <p className="sub-text-above-main-title title-white">
+                        We offer solutions for 
+                      </p>
                       <h1 className="main-title  title-white d-block">
                         DB & Backend
                         <br />
@@ -104,9 +104,9 @@ export default class DatabasePage extends Component {
                     application that focuses on improving performance.
                   </p>
                 </div>
-                <h1 class="main-title">
+                <div class="main-title">
                   <img src="../images/wordpress/wp-quoute.svg" alt="quote" />
-                </h1>
+                </div>
                 <div class="wp-main">
                   <p class="hash-content-col title-black why-us-hash-content">
                     <p>Developing the core of any product.</p>
@@ -197,9 +197,9 @@ export default class DatabasePage extends Component {
                         src="../images/database/web-programming1.svg"
                         alt="web_app"
                       />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         Web Application Development
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                     </div>
                   </div>
@@ -211,9 +211,9 @@ export default class DatabasePage extends Component {
                         src="../images/database/mobileprogramming 1.svg"
                         alt="mobile_app"
                       />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         Mobile Application Development
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                     </div>
                   </div>
@@ -225,9 +225,9 @@ export default class DatabasePage extends Component {
                         src="../images/database/web-site1.svg"
                         alt="website_dev"
                       />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         Website Development
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                     </div>
                   </div>
@@ -239,9 +239,9 @@ export default class DatabasePage extends Component {
                         src="../images/database/web-site2.svg"
                         alt="Software_dev"
                       />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         Custom Software Development
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                     </div>
                   </div>
@@ -256,9 +256,9 @@ export default class DatabasePage extends Component {
                         src="../images/database/export1.svg"
                         alt="database_design"
                       />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         Database Design
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                     </div>
                   </div>
@@ -267,9 +267,9 @@ export default class DatabasePage extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img src="../images/database/api1.svg" alt="api_dev" />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         API Development
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                     </div>
                   </div>
@@ -281,9 +281,9 @@ export default class DatabasePage extends Component {
                         src="../images/database/web-programming2.svg"
                         alt="NLP"
                       />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         Natural Language Processing Solutions
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                     </div>
                   </div>
@@ -295,9 +295,9 @@ export default class DatabasePage extends Component {
                         src="../images/database/web-programming-anlys.svg"
                         alt="quality"
                       />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         Quality Analysis and Maintenance
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                     </div>
                   </div>
@@ -510,12 +510,12 @@ export default class DatabasePage extends Component {
                   Have an Idea?Let`s speak!
                 </h3>
                 <div className="shopify-content mt-4">
-                  <h1 class="main-title">
+                  <p class="main-title">
                     <img
                       src="../images/database/quote-black31.svg"
                       alt="quote"
                     />
-                  </h1>
+                  </p>
                   <div className="wp-main">
                     <p class="hash-content-col title-black why-us-hash-content">
                       <p>

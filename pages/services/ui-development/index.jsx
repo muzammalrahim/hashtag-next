@@ -58,9 +58,9 @@ export default class UIPage extends Component {
                 <div className="container ">
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <h1 className="sub-text-above-main-title title-white">
-                        We offer solutions for
-                      </h1>
+                      <p className="sub-text-above-main-title title-white">
+                        We offer solutions for 
+                      </p>
                       <h1 className="main-title  title-white d-block">
                         UI <br />
                         Development
@@ -100,9 +100,9 @@ export default class UIPage extends Component {
                     development to make sure we are providing you the best in
                     town in flexibility, scalability, quality and speed.
                   </p>
-                  <h1 class="main-title">
+                  <div class="main-title">
                     <img src="../images/wordpress/wp-quoute.svg" alt="quote" />
-                  </h1>
+                  </div>
                   <div className="wp-main">
                     <p class="hash-content-col title-black why-us-hash-content">
                       <p>
@@ -149,9 +149,9 @@ export default class UIPage extends Component {
             <div className="container">
               <div className="row">
                 <div class="col-12 wp-sec-3-content shopify-sec-3-content">
-                  <h3 class="text-above-main-title text-above-main-title-c text-center mb-0">
+                  <p class="text-above-main-title text-above-main-title-c text-center mb-0">
                     tackling frontend challenges with ease
-                  </h3>
+                  </p>
                   <h3 class="main-title title-orange text-center">
                     How Does It Work
                   </h3>
@@ -165,9 +165,9 @@ export default class UIPage extends Component {
                         src="../images/ui/interaction1.svg"
                         alt="user_experience"
                       />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         Interactive and User Experience
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                       <p>
                         We design websites that users can connect to. A
@@ -182,9 +182,9 @@ export default class UIPage extends Component {
                   <div className="col-lg-4 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img src="../images/ui/software1.svg" alt="cms_designs" />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         CMS Ready Designs
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                       <p>
                         If your business plays with creating content and
@@ -199,9 +199,9 @@ export default class UIPage extends Component {
                   <div className="col-lg-4 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img src="../images/ui/startup1.svg" alt="fast" />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         Fast and Lightweight
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                       <p>
                         When we focus on interactive websites, we've taken good
@@ -219,9 +219,9 @@ export default class UIPage extends Component {
                         src="../images/ui/internet1.svg"
                         alt="mobile_friendly"
                       />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         Crafted For Mobile
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                       <p>
                         Accessing websites through tablets and mobiles has
@@ -240,7 +240,7 @@ export default class UIPage extends Component {
                         src="../images/ui/search-engine1.svg"
                         alt="seo_friendly"
                       />
-                      <h4 className="text-level-5 title-black">SEO Friendly</h4>
+                      <p className="text-level-5 title-black">SEO Friendly</p>
                       <hr class="hashtag-underline ml-2"></hr>
                       <p>
                         SEO is the key for any website’s success rate. With
@@ -258,9 +258,9 @@ export default class UIPage extends Component {
                         src="../images/ui/backlink1.svg"
                         alt="cross_browser"
                       />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         Cross Browser Compliance
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                       <p>
                         While working with the latest coding standards, we
@@ -421,9 +421,9 @@ export default class UIPage extends Component {
             <div className="container">
               <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3 pt-5 pb-5">
                 <div className="col-lg-5 col-md-12 col-sm-12">
-                  <h3 class="text-above-main-title text-above-main-title-c mb-0">
+                  <p className="text-above-main-title text-above-main-title-c mb-0">
                     build better - every time
-                  </h3>
+                  </p>
                   <h3 className="main-title title-orange main-title-rd-gt">
                     Ready To Get Started ?
                   </h3>

@@ -120,7 +120,7 @@ export default class Testimonial extends Component {
 
     return (
 
-      <section id="testim" className="testim">
+      <section id="testim" className="testim  testimonial_main">
         {/*         <div class="testim-cover"> */}
         <div className="wrap">
           <span id="right-arrow" className="arrow right fa fa-chevron-right" />
@@ -141,7 +141,8 @@ export default class Testimonial extends Component {
                 <span class="fa fa-star checked"></span> </p>
               <p>Ultimately, the team knows what each one is best at and does it effectively without any hiccups.</p>
 
-              <h2>Macey deQuay</h2>
+              <p className="testimonialHead">Macey deQuay</p>
+        
               <p className="testi-position">VP of Production, New Media Agency Inc</p>
               <div className="img"><img src="../images/wordpress/clutch.svg" alt="clutch" /></div>
 
@@ -155,7 +156,7 @@ export default class Testimonial extends Component {
                 <span class="fa fa-star checked"></span> </p>
               <p>When we first met, I don't know how much business he had, but he didn't make me feel like I wasn't important.<br /></p>
 
-              <h2>Chris Brazelton</h2>
+              <p className="testimonialHead">Chris Brazelton</p>
               <p className="testi-position">CEO, BMG Basketball Academy</p>
               <div className="img"><img src="../images/wordpress/clutch.svg" alt="clutch" /></div>
             </div>
@@ -167,7 +168,7 @@ export default class Testimonial extends Component {
                 <span class="fa fa-star checked"></span> </p>
               <p>They’re definitely a group that takes direction and performs accordingly</p>
               <br />
-              <h2>Michael Barnett</h2>
+              <p className="testimonialHead">Michael Barnett</p>
               <p className="testi-position">Founder, UpperDeck Consulting</p>
 
               <div className="img"><img src="../images/wordpress/clutch.svg" alt="clutch" /></div>
@@ -180,7 +181,7 @@ export default class Testimonial extends Component {
                 <span class="fa fa-star checked"></span> </p>
               <p>I don't know much about web design so I trust them to suggest, create, and define everything.</p>
 
-              <h2>Abin Mathew</h2>
+              <p className="testimonialHead">Abin Mathew</p>
               <p className="testi-position">CEO, appOnstream</p>
               <div className="img"><img src="../images/wordpress/clutch.svg" alt="clutch" /></div>
             </div>
@@ -192,7 +193,7 @@ export default class Testimonial extends Component {
                 <span class="fa fa-star checked"></span> </p>
               <p>Every single person I've worked with from Hashtag Systems is very dedicated, hardworking, and ethical.</p>
 
-              <h2>Brandy Cooper</h2>
+              <p className="testimonialHead">Brandy Cooper</p>
               <p className="testi-position">Owner, Mint Design Agency</p>
               <div className="img"><img src="../images/wordpress/clutch.svg" alt="clutch" /></div>
             </div>

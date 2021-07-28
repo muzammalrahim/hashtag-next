@@ -138,8 +138,8 @@ constructor(props) {
                   {(this.state.hideForm == false) ? (
                     <div className="contact-form-wrap">
                       <p className="text-above-main-title ">LET'S SPEAK</p>
-                      <h1 className="title-level-3"><span className="title-orange form-title d-block"> 
-                      Get in touch</span></h1>
+                      <p className="title-level-3"><span className="title-orange form-title d-block"> 
+                      Get in touch</span></p>
                       <div className="col-lg-10 col-md-12 col-sm-12 mt-5 p-0 pb-4 form-no-margin">
                         <form id="contact-form" onSubmit={this.handleSubmit}>
                           <div className="form-row">

@@ -24,10 +24,10 @@ a{
   -moz-box-shadow:    0px 4px 15px rgba(113, 108, 108, 0.62);
   box-shadow:        0px 4px 15px rgba(113, 108, 108, 0.62);
 }
-.blog-list .card h5, .blog-list .card .card-body .cta-link{
+.blog-list .card p5, .blog-list .card .card-body .cta-link{
   display: none;
 }
-.blog-list .card h4{
+.blog-list .card p4{
   font-size: 34px;
   line-height: 44px;
 }
