@@ -69,7 +69,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         <meta property="twitter:creator" content="hashtag" />
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
-        <link role="canonical" href={canonical}></link>
+        <link rel="canonical" href={canonical}></link>
         <script
           dangerouslySetInnerHTML={{
             __html: `
