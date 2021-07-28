@@ -58,9 +58,9 @@ export default class DesignPage extends Component {
                 <div className="container ">
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <h1 className="sub-text-above-main-title title-white">
-                        We offer solutions for
-                      </h1>
+                      <p className="sub-text-above-main-title title-white">
+                        We offer solutions for 
+                      </p>
                       <h1 className="main-title  title-white d-block">
                         Design and
                         <br />
@@ -100,9 +100,9 @@ export default class DesignPage extends Component {
                     from your competitors. Refresh and boost your website look
                     and feel by bringing a new shiny design.
                   </p>
-                  <h1 class="main-title">
+                  <div class="main-title">
                     <img src="../images/wordpress/wp-quoute.svg" alt="quote" />
-                  </h1>
+                  </div>
                   <div className="wp-main">
                     <p class="hash-content-col title-black why-us-hash-content">
                       <p>
@@ -127,12 +127,13 @@ export default class DesignPage extends Component {
             <div className="container">
               <div className="row">
                 <div class="col-12 wp-sec-3-content shopify-sec-3-content">
-                  <h3 class="text-above-main-title text-above-main-title-c text-center mb-0">
+                  <p class="text-above-main-title text-above-main-title-c text-center mb-0">
                     OUR stack
+                  </p>
+                  <h3 className="main-title title-orange text-center">
+                  Our Expertise
                   </h3>
-                  <h3 class="main-title title-orange text-center">
-                    Our Expertise
-                  </h3>
+                
                 </div>
               </div>
               <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3 sc-ip-pro">
@@ -143,9 +144,9 @@ export default class DesignPage extends Component {
                         src="../images/design/expertise-1.svg"
                         alt="Research and Unique Strategy"
                       />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         Research & Unique Strategy
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                       <p>
                         Our creative minds will help you build a unique
@@ -163,9 +164,9 @@ export default class DesignPage extends Component {
                         src="../images/design/expertise-2.svg"
                         alt="Design Thinking"
                       />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         Design Thinking
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                       <p>
                         This allows us to understand your brand’s story and
@@ -183,7 +184,7 @@ export default class DesignPage extends Component {
                         src="../images/design/expertise-3.svg"
                         alt="Architecture"
                       />
-                      <h4 className="text-level-5 title-black">Architecture</h4>
+                      <p className="text-level-5 title-black">Architecture</p>
                       <hr class="hashtag-underline ml-2"></hr>
                       <p>
                         We can help you in building an architecture for your
@@ -201,7 +202,7 @@ export default class DesignPage extends Component {
                         src="../images/design/expertise-4.svg"
                         alt="Wireframing"
                       />
-                      <h4 className="text-level-5 title-black">Wireframing</h4>
+                      <p className="text-level-5 title-black">Wireframing</p>
                       <hr class="hashtag-underline ml-2"></hr>
                       <p>
                         Being a graphical skeleton, wireframe and storyboards
@@ -219,7 +220,7 @@ export default class DesignPage extends Component {
                         src="../images/design/expertise7.svg"
                         alt="Prototyping"
                       />
-                      <h4 className="text-level-5 title-black">Prototyping</h4>
+                      <p className="text-level-5 title-black">Prototyping</p>
                       <hr class="hashtag-underline ml-2"></hr>
                       <p>
                         Prototyping helps to develop an interactive and high
@@ -237,9 +238,9 @@ export default class DesignPage extends Component {
                         src="../images/design/expertise-5.svg"
                         alt="Graphic Designing"
                       />
-                      <h4 className="text-level-5 title-black">
+                      <p className="text-level-5 title-black">
                         Graphic Designing
-                      </h4>
+                      </p>
                       <hr class="hashtag-underline ml-2"></hr>
                       <p>
                         Our expert designers are technology conscious and can
@@ -259,9 +260,9 @@ export default class DesignPage extends Component {
           <div className="container top-index bg-white">
             <div className="row justify-content-center pt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12">
-                <h3 class="text-above-main-title text-above-main-title-c mb-0">
+                <p class="text-above-main-title text-above-main-title-c mb-0">
                   achieve the turning point of your business
-                </h3>
+                </p>
                 <h3 className="main-title title-orange">Why Choose Hashtag</h3>
                 <div className="dp-on-sm">
                   <img

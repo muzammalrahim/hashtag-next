@@ -81,14 +81,14 @@ export default class Multitoken extends Component {
           description={data.description}
           keywords={data.keywords}
         ></Header>
-        <section className="content-container case-study">
+        <section className="multi_token content-container case-study">
           <div className="common-title-blk">
             <div className="container">
               <div className="row">
                 <div className="col-md-12">
                   <div className="common-title-wrap px-md-3">
                     <div className="case-multitoken-size">
-                      <h1>Full Stack Development</h1>
+                      <p className="multi_token_title">Full Stack Development</p>
                       </div>
                       <h1 className="main-title title-white">
                         Multi Token Wallet In Gaming
@@ -122,7 +122,7 @@ export default class Multitoken extends Component {
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h2 className="text-above-main-title">INTRODUCTION</h2>
+                        <div className="text-above-main-title">INTRODUCTION</div>
                         <h2 class="main-title title-orange">Summary</h2>
                       </div>
                       <div className="technology-list">
@@ -211,7 +211,7 @@ export default class Multitoken extends Component {
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h2 className="text-above-main-title">DESCRIPTION</h2>
+                        <div className="text-above-main-title">DESCRIPTION</div>
                         <h2 class="main-title title-orange">How it works</h2>
                       </div>
                       <div className="technology-list">
@@ -244,7 +244,7 @@ export default class Multitoken extends Component {
 
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h2 className="text-above-main-title">PROCESS</h2>
+                        <div className="text-above-main-title">PROCESS</div>
                         <h2 class="main-title title-orange">Use Case</h2>
                       </div>
                       <div className="technology-list">
@@ -274,10 +274,10 @@ export default class Multitoken extends Component {
 
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h2 className="text-above-main-title">TAGLINE</h2>
-                        <h3 class="main-title title-orange">
+                        <div className="text-above-main-title">TAGLINE</div>
+                        <h2 class="main-title title-orange">
                           Resolution/ Technology{" "}
-                        </h3>
+                        </h2>
                       </div>
                       <div className="technology-list">
                         <div className="tech-item">
@@ -322,7 +322,7 @@ export default class Multitoken extends Component {
               <div className="row justify-content-left">
                 <div className="col-md-11 col-lg-11 col-xl-11 offset-md-1">
                   <div className="project-blk-title text-left">
-                    <h2 className="text-above-main-title">TAGLINE HERE</h2>
+                    <div className="text-above-main-title">TAGLINE HERE</div>
                     <h2 class="main-title title-orange">We Are Experts In</h2>
                   </div>
                   <div className="skillset-wrap text-left">
@@ -371,9 +371,9 @@ export default class Multitoken extends Component {
                 <div className="col-md-8">
                   <Slide bottom>
                     <div className="project-blk-title">
-                      <h3 class="main-title title-white">
+                      <p class="main-title title-white multi-token_margin_bottom">
                         Try Us. Take a Minute{" "}
-                      </h3>
+                      </p>
                       <div class="learn-more home-lm-link-vs">
                         <div className="btn-comm">
                           <a href="/contact-us">SAY HELLO</a>

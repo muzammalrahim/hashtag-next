@@ -286,7 +286,7 @@
 	height: 100%;
 	position: relative;
 }
-.expert-col h6{
+.expert-col p{
 	position: absolute;
 	left: 20px;
 	bottom: 65px;
@@ -298,7 +298,13 @@
 	float: right;
 }
 
+.maintitle_two{
+	font-weight: bold !important;
+	margin-bottom: 2rem;
+	letter-spacing: 0ch !important;
 
+	
+}
 
 
 

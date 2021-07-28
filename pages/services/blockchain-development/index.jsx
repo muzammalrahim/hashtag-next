@@ -57,7 +57,7 @@ export default class BlockChain extends Component {
 
                                     <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                                         <div className="col-lg-6 col-md-12">
-                                            <h1 className="sub-text-above-main-title title-white">We offer Solutions for</h1>
+                                            <p className="sub-text-above-main-title title-white">We offer Solutions for</p>
                                             <h1 className="main-title  title-white d-block">Blockchain <br />development</h1>
 
 
@@ -111,7 +111,7 @@ export default class BlockChain extends Component {
                         <div className="container">
                             <div className="row">
                                 <div class="col-12 wp-sec-3-content shopify-sec-3-content">
-                                    <h3 class="text-above-main-title text-above-main-title-c text-center mb-0">You Dream It: We Build It</h3>
+                                    <p class="text-above-main-title text-above-main-title-c text-center mb-0">You Dream It: We Build It</p>
                                     <h3 class="main-title title-orange text-center">What We Offer</h3>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@ export default class BlockChain extends Component {
                                     <div className="col-lg-3 col-sm-6 mob-padding">
                                         <div className="what-we-do-border-style what-we-do-responsive">
                                             <img src="../images/blockchain/blockchainconsult1.svg" alt="consulting" />
-                                            <h4 className="text-level-5 title-black">Blockchain Consulting</h4>
+                                            <p className="text-level-5 title-black">Blockchain Consulting</p>
                                             <hr class="hashtag-underline ml-2"></hr>
                                             <p>
                                                 We sit down with you and discuss your objectives,
@@ -134,7 +134,7 @@ export default class BlockChain extends Component {
                                     <div className="col-lg-3 col-sm-6 mob-padding">
                                         <div className="what-we-do-border-style what-we-do-responsive">
                                             <img src="../images/blockchain/contract1.svg" alt="smart_contract" />
-                                            <h4 className="text-level-5 title-black">Smart Contract Development</h4>
+                                            <p className="text-level-5 title-black">Smart Contract Development</p>
                                             <hr class="hashtag-underline ml-2"></hr>
                                             <p>
                                                 We build smart contracts that can once deployed, exist on the chain
@@ -147,7 +147,7 @@ export default class BlockChain extends Component {
                                     <div className="col-lg-3 col-sm-6 mob-padding">
                                         <div className="what-we-do-border-style what-we-do-responsive">
                                             <img src="../images/blockchain/ethereum1.svg" alt="ethereum_dev" />
-                                            <h4 className="text-level-5 title-black">Ethereum Development</h4>
+                                            <p className="text-level-5 title-black">Ethereum Development</p>
                                             <hr class="hashtag-underline ml-2"></hr>
                                             <p>
                                                 We at hashtag are experts on ethereum development and can help you
@@ -161,7 +161,7 @@ export default class BlockChain extends Component {
                                     <div className="col-lg-3 col-sm-6 mob-padding">
                                         <div className="what-we-do-border-style what-we-do-responsive">
                                             <img src="../images/blockchain/blockchainphone1.svg" alt="dapp_dev" />
-                                            <h4 className="text-level-5 title-black">Dapp Development</h4>
+                                            <p className="text-level-5 title-black">Dapp Development</p>
                                             <hr class="hashtag-underline ml-2"></hr>
                                             <p>
                                                 We at hashtag are experts on ethereum development and
@@ -178,7 +178,7 @@ export default class BlockChain extends Component {
                                     <div className="col-lg-3 col-sm-6 mob-padding">
                                         <div className="what-we-do-border-style what-we-do-responsive">
                                             <img src="../images/blockchain/api1.svg" alt="api_integration" />
-                                            <h4 className="text-level-5 title-black">API Integration</h4>
+                                            <p className="text-level-5 title-black">API Integration</p>
                                             <hr class="hashtag-underline ml-2"></hr>
                                             <p>
                                                 We offer services which enable us to incorporate advanced blockchain
@@ -192,7 +192,7 @@ export default class BlockChain extends Component {
                                     <div className="col-lg-3 col-sm-6 mob-padding">
                                         <div className="what-we-do-border-style what-we-do-responsive">
                                             <img src="../images/blockchain/blockchain1.svg" alt="private_blockchain_dev" />
-                                            <h4 className="text-level-5 title-black">Private Blockchain Development</h4>
+                                            <p className="text-level-5 title-black">Private Blockchain Development</p>
                                             <hr class="hashtag-underline ml-2"></hr>
                                             <p>
                                                 Setting up a private blockchain network both locally and on the cloud
@@ -207,7 +207,7 @@ export default class BlockChain extends Component {
                                     <div className="col-lg-3 col-sm-6 mob-padding">
                                         <div className="what-we-do-border-style what-we-do-responsive">
                                             <img src="../images/blockchain/concept1.svg" alt="proof" />
-                                            <h4 className="text-level-5 title-black">Proof of Concept</h4>
+                                            <p className="text-level-5 title-black">Proof of Concept</p>
                                             <hr class="hashtag-underline ml-2"></hr>
                                             <p>
                                                 We understand your needs and help you realise and verify your
@@ -225,7 +225,7 @@ export default class BlockChain extends Component {
                         <div className="row justify-content-center pt-5 section-2-row pl-3 pr-3">
 
                             <div className="col-lg-5 col-md-12 col-sm-12">
-                                <h3 class="text-above-main-title text-above-main-title-c mb-0">We Build Digital Solutions</h3>
+                                <p class="text-above-main-title text-above-main-title-c mb-0">We Build Digital Solutions</p>
                                 <h3 className="main-title title-orange">Why Choose Hashtag?</h3>
                                 <div className="dp-on-sm">
                                     <img src="/images/blockchain/etherium 1.svg" alt="etherium_img" className="img-fluid shopify-image mobile-image-border storefront-img" />
@@ -252,7 +252,7 @@ export default class BlockChain extends Component {
                     <div className="container-fluid ask-expert-section expert-resume-container why-choose-bc-sec">
                         <div className="row m-0">
                             <div className="col-12 col-lg-10 col-sm-10 col-md-12 expert-resume-section text-center">
-                                <h1 class="main-title title-white text-center main-title-bc-sec-h"><div className="main-title-sub-bc">Come Join Our</div>BLOCKCHAIN HACKATHON</h1>
+                                <p class="main-title title-white text-center main-title-bc-sec-h"><div className="main-title-sub-bc">Come Join Our</div>BLOCKCHAIN HACKATHON</p>
                                 <div className="contact-form-link">
                                     <a href="/careers">
                                         <div className="btn-group form-btn why-choose-bc-sec-btn">

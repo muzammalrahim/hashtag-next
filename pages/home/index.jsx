@@ -37,12 +37,12 @@ export default class Home extends Component {
 					<div className="row justify-content-center  pl-3 pr-3">
 
 									<div className="col-12 section-one-text">
-										<p className="sub-text-above-main-title">A Full stack development company</p>
-										<h1 className="banner-main-title">
+										<h1 className="sub-text-above-main-title">A Full stack development company</h1>
+										<p className="banner-main-title">
 											<span className="mobile-white title-orange d-block" id="banner" >Solutions on</span>
 			                          		<span className="title-black"> Web, Mobile &amp; Cloud</span>
 			                          		<p className="home-dev sub-text-above-main-title title-orange"><span className="fullstack-dev"># Full Stack Development</span><span className="blockchain-dev"># Blockchain Development</span><span className="filemaker-dev"># FileMaker Development</span>   </p>
-			                          	</h1>
+			                          	</p>
 			                          	
 										<div className="learn-more home-lm-link-vs">
 											<Link href="/services" className="sol-but-ab" >
@@ -68,12 +68,12 @@ export default class Home extends Component {
 				<div className="container-fluid mobile-banner">
 				<div className="row justify-content-center">
 						<div className="col-12 section-one-text">
-							<p className="text-above-main-title-first-mob text-center">Full stack development company</p>
-							<h1 className="main-title-first-mob text-center">
+							<h1 className="text-above-main-title-first-mob text-center">A Full stack development company</h1>
+							<p className="main-title-first-mob text-center">
 								<span className="mobile-white title-orange-first-mob d-block" id="banner" >Solutions on</span>
                           		<span className="title-black-first-mob"> Web, Mobile &amp; Cloud</span>
 
-                          	</h1>
+                          	</p>
 							<div className="text-center">
 							<a className="sol-but-ab" href="/services">
 								<div className="btn-group text-center">
@@ -147,7 +147,7 @@ export default class Home extends Component {
 							<div className="col-lg-4 col-sm-12 mob-padding">
 									<div className="what-we-do-border-style what-we-do-responsive">
 							          <img src="images/business-process-automation.svg" alt="business-process-automation" />
-								      <h4 className="text-level-4">Business process automation</h4>
+								      <p className="text-level-4">Business process automation</p>
 								      <hr className="hashtag-underline ml-2"/>
 											<p>We'll automate your business processes means that you will no longer have to deal with them. You just let the software take care of it.  
 											</p>
@@ -156,7 +156,7 @@ export default class Home extends Component {
 							<div className="col-lg-4 col-sm-12 mob-padding" >
 								<div className="what-we-do-border-style what-we-do-responsive">
 									<img src="images/web-application.svg" alt="web-application" />
-									<h4 className="text-level-4">Web applications</h4>
+									<p className="text-level-4">Web applications</p>
 									<hr className="hashtag-underline ml-2"/>
 										<p>We'll create and deploy mission-critical, Robust Web apps that scale with your business needs.
 										</p>
@@ -165,7 +165,7 @@ export default class Home extends Component {
 						<div className="col-lg-4 col-sm-12 mob-padding">
 							<div className="what-we-do-border-style ">
 									<img src="images/e-commerce.svg" alt="e-commerce" />
-									<h4 className="text-level-4">E-commerce</h4>
+									<p className="text-level-4">E-commerce</p>
 									<hr className="hashtag-underline ml-2"/>
 									<p>Turn your products into money by selling them on your own online store. We'll help you become a leading eCommerce player in your industry.
 									</p>
@@ -176,7 +176,7 @@ export default class Home extends Component {
 					<div className="col-offset-lg-2 col-lg-4 col-sm-12 mob-padding">
 						<div className="what-we-do-border-style what-we-do-responsive">
 							<img src="images/Monitoring.svg" alt="monitoring" />
-							<h4 className="text-level-4">Monitoring <br/>& support</h4>
+							<p className="text-level-4">Monitoring <br/>& support</p>
 							<hr className="hashtag-underline ml-2"/>
 							<p>We run a dedicated IT infrastructure monitoring to ensure that applications, devices, and infrastructure are performing as they should be.
 							</p>
@@ -185,7 +185,7 @@ export default class Home extends Component {
 					<div className="col-offset-lg-2 col-lg-4 col-sm-12  mob-padding">
 						<div className="what-we-do-border-style what-we-do-responsive">
 							<img src="images/Creative conceptual.svg" alt="creative_design" />
-							<h4 className="text-level-4">Creative & conceptual design</h4>
+							<p className="text-level-4">Creative & conceptual design</p>
 							<hr className="hashtag-underline ml-2"/>
 							<p>Our creative designers will turn the spark of an idea into an innovative new design concept. Let's collaborate.
 							</p>
@@ -232,10 +232,10 @@ export default class Home extends Component {
 								      <div className="why-us-icon why-icon-mobile">
 								      <img src="images/home/why-us/team.svg" alt="team" /> 
 								      </div>
-								      <h6 className="title-level-6 title-level-mobile">
+								      <p className="title-level-6 title-level-mobile">
 								        Dedicated<br/>
 								        teams!
-								      </h6>
+								      </p>
 	    					  	</div>
 	    					</Slide>
 							<Slide bottom>
@@ -243,10 +243,10 @@ export default class Home extends Component {
 								      <div className="why-us-icon why-icon-mobile">
 								         <img src="images/home/why-us/chat.svg" alt="communication" /> 
 								      </div>
-								      <h6 className="title-level-6 title-level-mobile">
+								      <p className="title-level-6 title-level-mobile">
 								        Effective <br/>
 								        communication!
-								      </h6>
+								      </p>
 	    						</div>
 	    					</Slide>
 							<Slide bottom>
@@ -254,10 +254,10 @@ export default class Home extends Component {
 								      <div className="why-us-icon why-icon-mobile">
 								        <img src="images/home/why-us/group.svg" alt="agile" /> 
 								      </div>
-								      <h6 className="title-level-6 title-level-mobile">
+								    <p className="title-level-6 title-level-mobile">
 								        Agile - watch your<br/>
 								        dreams grow!
-								      </h6>
+								      </p>
 	    						</div>
 	    					</Slide>
 						</div>
@@ -267,10 +267,10 @@ export default class Home extends Component {
 								      <div className="why-us-icon why-icon-mobile">
 								         <img className="equality-image" src="images/home/why-us/equality.svg" alt="quality" /> 
 								      </div>
-								      <h6 className="title-level-6 title-level-mobile">
+								      <p className="title-level-6 title-level-mobile">
 								        Quality in <br/>
 								        every stride!
-								      </h6>
+								      </p>
 	    						</div>
 	    					</Slide>
 							<Slide bottom>
@@ -278,10 +278,10 @@ export default class Home extends Component {
 								      <div className="why-us-icon why-icon-mobile">
 								      <img src="images/home/why-us/process.svg" alt="process" /> 
 								      </div>
-								       <h6 className="title-level-6 title-level-mobile">
+								       <p className="title-level-6 title-level-mobile">
 								        Impeccably<br/>
 								        process oriented!
-								      </h6>
+								      </p>
 	    						</div>
 	    					</Slide>
 							<Slide bottom>
@@ -289,10 +289,10 @@ export default class Home extends Component {
 								      <div className="why-us-icon why-icon-mobile">
 								        <img src="images/home/why-us/support.svg" alt="support" /> 
 								      </div>
-								       <h6 className="title-level-6 title-level-mobile">
+								       <p className="title-level-6 title-level-mobile">
 								        Constant<br/>
 								        support!
-								      </h6>
+								      </p>
 	    						</div>
 	    					</Slide>
 						</div>
@@ -309,8 +309,8 @@ export default class Home extends Component {
 		  		<div className="row justify-content-center pt-5 pl-3 pr-3">
 		  			<div className="col-12">
 		  				<p className="text-above-main-title text-center">WE ARE PROFESSIONALS</p>
-		  				<h1 className="main-title"><span className="title-orange d-block text-center"> 
-							Our Expertise</span></h1>
+		  				<p className="main-title"><span className="title-orange d-block text-center"> 
+							Our Expertise</span></p>
 
 		  			</div>
 		  			<div className="horizontal-line-middle"></div>
@@ -412,8 +412,8 @@ export default class Home extends Component {
 		  		<div className="row justify-content-center pl-3 pr-3">
 		  			<div className="col-12">
 		  				<p className="text-above-main-title mob-left text-center">WE ARE PROFESSIONALS</p>
-		  				<h1 className="main-title"><span className="title-orange d-block mob-left text-center"> 
-							Contacts</span></h1>
+		  				<p className="main-title"><span className="title-orange d-block mob-left text-center"> 
+							Contacts</span></p>
 		  			</div>
 		  			<div className="horizontal-line-middle mob-left mob-line-margin"></div>
 		  		</div>

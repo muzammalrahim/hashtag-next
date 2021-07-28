@@ -99,9 +99,9 @@ export default class filemakerPage extends Component {
               <div className="row">
                 <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
                   <div className="project-blk-title">
-                    <h6 className="text-above-main-title">
+                    <p className="text-above-main-title">
                       DETERMINE THE OPTIMAL SOLUTION FOR YOUR UNIQUE NEEDS
-                    </h6>
+                    </p>
                     <h3 class="main-title title-orange">Introduction</h3>
                   </div>
                   <p>
@@ -133,10 +133,10 @@ export default class filemakerPage extends Component {
                 <div className="row justify-content-center">
                   <div className="col-md-8">
                     <div className="project-blk-title">
-                      <h3 class="main-title">
+                      <p   className="main-title maintitle_two">
                         Committed to creating solutions that provide value for
                         customers.
-                      </h3>
+                      </p>
                       <div className="btn-comm">
                         <a href="/contact-us">LET'S TALK</a>
                       </div>
@@ -152,9 +152,9 @@ export default class filemakerPage extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h3 className="text-above-main-title">
+                    <p className="text-above-main-title">
                       WE OFFER A WIDE RANGE OF
-                    </h3>
+                    </p>
                     <h3 class="main-title title-orange">
                       FileMaker Development Services
                     </h3>
@@ -171,10 +171,10 @@ export default class filemakerPage extends Component {
                           src="/images/file-maker/feature1.svg"
                           alt="FileMaker Database Conversions"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           FileMaker Database <br />
                           Conversions
-                        </h4>
+                        </p>
                         <hr class="hashtag-underline" />
                       </div>
                     </div>
@@ -186,10 +186,10 @@ export default class filemakerPage extends Component {
                           src="/images/file-maker/feature2.svg"
                           alt="Migration to Filemaker Pro"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Migration to <br />
                           Filemaker Pro
-                        </h4>
+                        </p>
                         <hr class="hashtag-underline" />
                       </div>
                     </div>
@@ -201,10 +201,10 @@ export default class filemakerPage extends Component {
                           src="/images/file-maker/feature3.svg"
                           alt="FileMaker Go Mobile Development"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           FileMaker Go Mobile <br />
                           Development
-                        </h4>
+                        </p>
                         <hr class="hashtag-underline" />
                       </div>
                     </div>
@@ -216,10 +216,10 @@ export default class filemakerPage extends Component {
                           src="/images/file-maker/feature4.svg"
                           alt="Build a new Filemaker Solution"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Build a new <br />
                           Filemaker Solution
-                        </h4>
+                        </p>
                         <hr class="hashtag-underline" />
                       </div>
                     </div>
@@ -236,10 +236,10 @@ export default class filemakerPage extends Component {
                           src="/images/file-maker/feature5.svg"
                           alt="Application Optimization"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Application <br />
                           Optimization
-                        </h4>
+                        </p>
                         <hr class="hashtag-underline" />
                       </div>
                     </div>
@@ -251,10 +251,10 @@ export default class filemakerPage extends Component {
                           src="/images/file-maker/feature6.svg"
                           alt="Update and Ongoing Support"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Update & Ongoing <br />
                           Support
-                        </h4>
+                        </p>
                         <hr class="hashtag-underline" />
                       </div>
                     </div>
@@ -266,10 +266,10 @@ export default class filemakerPage extends Component {
                           src="/images/file-maker/feature7.svg"
                           alt="Third Party Solutions Integration"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Third Party <br />
                           Solutions Integration
-                        </h4>
+                        </p>
                         <hr class="hashtag-underline" />
                       </div>
                     </div>
@@ -294,9 +294,9 @@ export default class filemakerPage extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h3 className="text-above-main-title  title-white">
+                    <div className="text-above-main-title  title-white">
                       WHAT CLIENT SAY ABOUT US
-                    </h3>
+                    </div>
                     <h3 class="main-title title-white">Testimonials</h3>
                     <p>
                       We have built several business process automation
@@ -401,9 +401,9 @@ export default class filemakerPage extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h3 className="text-above-main-title">
+                    <div className="text-above-main-title">
                       PROFFESSIONAL TEAM
-                    </h3>
+                    </div>
                     <h3 class="main-title title-orange">Our Experts</h3>
                   </div>
                 </div>
@@ -411,10 +411,10 @@ export default class filemakerPage extends Component {
               <div className="row justify-content-around pt-4">
                 <div className="col-md-3">
                   <div className="expert-col">
-                    <h6>
+                    <p>
                       Carlos <br />
                       Machado
-                    </h6>
+                    </p>
                     <img
                       src="../images/file-maker/man-profile.svg"
                       alt="male profile"
@@ -423,7 +423,7 @@ export default class filemakerPage extends Component {
                 </div>
                 <div className="col-md-3">
                   <div className="expert-col">
-                    <h6>Selva V</h6>
+                    <p>Selva V</p>
                     <img
                       src="../images/file-maker/woman-profile.svg"
                       alt="female profile"

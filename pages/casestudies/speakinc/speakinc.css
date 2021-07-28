@@ -14,6 +14,16 @@
   width: 100%;
   padding-bottom: 40px;
 }
+
+.speakinc .speak_inc{
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
 /*--------- Top banner block ---------*/
 .common-title-blk{
   width: 100%;
@@ -355,7 +365,7 @@ ul.project-info li:first-child{
   width: 120px;
   margin-bottom: 12px;
 }
-.tech-item h5{
+.tech-item p5{
   font-weight: bold;
   font-size: 21px;
   line-height: 32px;
@@ -363,7 +373,7 @@ ul.project-info li:first-child{
   color: #FF6B00;
   margin-bottom: 15px;
 }
-.tech-item h5 span{
+.tech-item p5 span{
   color: #434343;
 }
 .sticky-img{

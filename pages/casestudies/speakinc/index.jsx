@@ -74,7 +74,7 @@ const { data } = this.state;
     };
 
     return (
-      <div className="case-study" id="case-study">
+      <div className="case-study speakinc" id="case-study">
         <Header
           title={data.title}
           description={data.description}
@@ -87,7 +87,7 @@ const { data } = this.state;
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
                     <div className="case-speakinc-size">
-                      <h1>Website development & design</h1>
+                      <p className="speak_inc">Website development & design</p>
                       </div>
                       <h1 className="main-title title-white">SpeakInc</h1>
                       <ul className="project-info">
@@ -118,7 +118,7 @@ const { data } = this.state;
               <div className="row">
                 <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
                   <div className="project-blk-title">
-                    <h2 className="text-above-main-title">INTRODUCTION</h2>
+                    <div className="text-above-main-title">INTRODUCTION</div>
                     <h2 class="main-title title-orange">About Speakinc</h2>
                   </div>
                   <p>
@@ -152,9 +152,9 @@ const { data } = this.state;
                 <div className="col-md-5 offset-md-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h2 className="text-above-main-title">
+                      <div className="text-above-main-title">
                         PRODUCT UNIQUENESS
-                      </h2>
+                      </div>
                       <h2 class="main-title title-orange">What`s So Special</h2>
                     </div>
                     <div className="project-spec-grid">
@@ -217,9 +217,9 @@ const { data } = this.state;
                 <div className="col-md-12">
                   <div className="project-slider-wrap">
                     <div className="project-blk-title">
-                      <h2 className="text-above-main-title">
+                      <div className="text-above-main-title">
                         DESIGN WITH USER IN MIND
-                      </h2>
+                      </div>
                       <h2 class="main-title title-orange">User Interface</h2>
                     </div>
 
@@ -280,7 +280,7 @@ const { data } = this.state;
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h2 className="text-above-main-title">PROJECT STACK</h2>
+                        <div className="text-above-main-title">PROJECT STACK</div>
                         <h2 class="main-title title-orange">Technogies Used</h2>
                       </div>
                       <div className="technology-list">
@@ -289,9 +289,9 @@ const { data } = this.state;
                             src="/images/case-studies/speakinc/tech-icon1.svg"
                             alt="Django"
                           />
-                          <h5>
+                          <p5>
                             Framework: <span>Django 2.0</span>
-                          </h5>
+                          </p5>
                           <p>
                             Django is a Python-based free and open-source web
                             framework, which follows the model-template-view
@@ -303,12 +303,12 @@ const { data } = this.state;
                             src="/images/case-studies/speakinc/tech-icon2.svg"
                             alt="MySQL"
                           />
-                          <h5>
+                          <p5>
                             Database:{" "}
                             <span>
                               MySQL 8 ( Managed Databases By Digital Ocean )
                             </span>
-                          </h5>
+                          </p5>
                           <p>
                             DigitalOcean’s Managed Databases are a fully
                             managed, high performance database cluster service.
@@ -322,9 +322,9 @@ const { data } = this.state;
                             src="/images/case-studies/speakinc/tech-icon3.svg"
                             alt="Nginx"
                           />
-                          <h5>
+                          <p5>
                             Web Server: <span>Nginx </span>
-                          </h5>
+                          </p5>
                           <p>
                             Nginx, is an open-source web server that, since its
                             initial success as a web server, is now also used as
@@ -336,9 +336,9 @@ const { data } = this.state;
                             src="/images/case-studies/speakinc/tech-icon4.svg"
                             alt="Filemaker Pro"
                           />
-                          <h5>
+                          <p5>
                             Filemaker <span>Pro</span>
-                          </h5>
+                          </p5>
                           <p>
                             FileMaker is a cross-platform relational database
                             application which integrates a database engine with
@@ -352,9 +352,9 @@ const { data } = this.state;
                             src="/images/case-studies/speakinc/tech-icon5.svg"
                             alt="Ubuntu"
                           />
-                          <h5>
+                          <p5>
                             Operating System: <span>Ubuntu 18.04 </span>
-                          </h5>
+                          </p5>
                           <p>
                             Ubuntu is an open source software operating system
                             that runs from the desktop, to the cloud, to all
@@ -380,7 +380,7 @@ const { data } = this.state;
               <div className="row">
                 <div className="col-md-5 offset-md-1">
                   <div className="project-blk-title">
-                    <h2 className="text-above-main-title">HOW ITS BUILT</h2>
+                    <div className="text-above-main-title">HOW ITS BUILT</div>
                     <h2 class="main-title title-orange">Systems</h2>
                   </div>
                   <div className="cust-order-list">
@@ -423,7 +423,7 @@ const { data } = this.state;
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h2 className="text-above-main-title">WHAT`S INSIDE</h2>
+                    <div className="text-above-main-title">WHAT`S INSIDE</div>
                     <h2 class="main-title title-orange">Features</h2>
                   </div>
                 </div>
@@ -438,10 +438,10 @@ const { data } = this.state;
                           src="/images/case-studies/speakinc/feature1.svg"
                           alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           User Friendly <br />
                           Dashboard
-                        </h4>
+                        </p>
                         <p>
                           Less complex dashboard, that can be easily handled by
                           anybody, for controlling the web application features.
@@ -456,10 +456,10 @@ const { data } = this.state;
                           src="/images/case-studies/speakinc/feature2.svg"
                           alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Easy <br />
                           Search{" "}
-                        </h4>
+                        </p>
                         <p>
                           Users can easily do quick searches which shows exactly
                           what they want from the site.
@@ -474,10 +474,10 @@ const { data } = this.state;
                           src="/images/case-studies/speakinc/feature3.svg"
                           alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Portfolio <br />
                           Option
-                        </h4>
+                        </p>
                         <p>
                           Users can inquire about multiple speakers at the same
                           time by adding them into a portfolio and submitting
@@ -493,7 +493,7 @@ const { data } = this.state;
                           src="/images/case-studies/speakinc/feature4.svg"
                           alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">Blogs</h4>
+                        <p className="text-level-5 title-black">Blogs</p>
                         <p>
                           Blogs that are managed through hubspot are integrated
                           to web applications through application program
@@ -514,9 +514,9 @@ const { data } = this.state;
                           src="/images/case-studies/speakinc/feature5.svg"
                           alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Hubspot Form Integrations{" "}
-                        </h4>
+                        </p>
                         <p>
                           Different forms configured in hubspot are integrated
                           with scripts and apis.
@@ -531,9 +531,9 @@ const { data } = this.state;
                           src="/images/case-studies/speakinc/feature6.svg"
                           alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Weekly Speakers and Slider Speakers
-                        </h4>
+                        </p>
                         <p>
                           Top quality speakers are assigned as weekly speakers
                           based on their rankings and priority.
@@ -548,9 +548,9 @@ const { data } = this.state;
                           src="/images/case-studies/speakinc/feature7.svg"
                           alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Social Media integrations
-                        </h4>
+                        </p>
                         <p>
                           Playlist from youtube integrated and other social
                           media plugins added to the website.

@@ -84,9 +84,9 @@ export default class Shopify extends Component {
                 <div className="container ">
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <h1 className="sub-text-above-main-title title-white">
+                      <div className="sub-text-above-main-title title-white">
                         E-commerce platform{" "}
-                      </h1>
+                      </div>
                       <h1 className="main-title  title-white d-block">
                         Shopify
                       </h1>
@@ -199,9 +199,9 @@ export default class Shopify extends Component {
             <div className="row">
               <div class="col-12 shopify-sec-3-content">
                 <p class="text-above-main-title text-center">OUR EXPERIENCE</p>
-                <h1 class="main-title title-orange text-center">
+                <h3 class="main-title title-orange text-center">
                   Latest Works
-                </h1>
+                </h3>
               </div>
             </div>
             {/*section 3 */}
@@ -217,9 +217,9 @@ export default class Shopify extends Component {
 
                 <div className="row justify-content-center  pl-3 pr-3">
                   <div className="col-12 col-lg-5 col-xxl-5 col-md-12 content-four-section">
-                    <h3 className="text-above-main-title title-white">
+                    <div className="text-above-main-title title-white">
                       THE BEST E-COMMERCE PLATFORM
-                    </h3>
+                    </div>
 
                     <h3 className="shopify-title">
                       <span className="main-title title-white d-block">
@@ -273,9 +273,9 @@ export default class Shopify extends Component {
           <div className="container shopify-benifits-section">
             <div className="row">
               <div class="col-12">
-                <h3 class="text-above-main-title text-center">
+                <div class="text-above-main-title text-center">
                   PERFECT SOLUTION FOR BUSINESS
-                </h3>
+                </div>
                 <h3 class="main-title title-orange text-center">
                   Shopify Benefits
                 </h3>
@@ -284,9 +284,9 @@ export default class Shopify extends Component {
             {/* section 1 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12">
-                <h1 className="shopify-title text-level-4">
+                <p className="shopify-title text-level-4">
                   Beautiful Storefront
-                </h1>
+                </p>
                 <div className="shopify-content mt-4">
                   <p>
                     <ul className="shopify-benifits-list">
@@ -309,9 +309,9 @@ export default class Shopify extends Component {
             {/* section 2 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12  order-2 order-lg-12 order-md-2 order-sm-2">
-                <h1 className="shopify-title text-level-4">
+                <p className="shopify-title text-level-4">
                   Great Shopping Experience
-                </h1>
+                </p>
                 <div className="shopify-content mt-4">
                   <p>
                     <ul className="shopify-benifits-list">
@@ -336,10 +336,10 @@ export default class Shopify extends Component {
             {/* section 3 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12">
-                <h1 className="shopify-title text-level-4">
+                <p className="shopify-title text-level-4">
                   Professional
                   <br /> Admin Dashboard
-                </h1>
+                </p>
                 <div className="shopify-content mt-4">
                   <p>
                     <ul className="shopify-benifits-list">
@@ -364,9 +364,9 @@ export default class Shopify extends Component {
             {/* section 4 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12  order-2 order-lg-12 order-md-2 order-sm-2">
-                <h1 className="shopify-title text-level-4">
+                <p className="shopify-title text-level-4">
                   Sales and Marketing
-                </h1>
+                </p>
                 <div className="shopify-content mt-4">
                   <p>
                     <ul className="shopify-benifits-list">
@@ -390,7 +390,7 @@ export default class Shopify extends Component {
             {/* section 5 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12">
-                <h1 className="shopify-title text-level-4">High Performance</h1>
+                <p className="shopify-title text-level-4">High Performance</p>
                 <div className="shopify-content mt-4">
                   <p>
                     <ul className="shopify-benifits-list">
@@ -415,9 +415,9 @@ export default class Shopify extends Component {
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               {/* <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12"> */}
               <div className="col-lg-5 col-md-12 col-sm-12  order-2 order-lg-12 order-md-2 order-sm-2">
-                <h1 className="shopify-title text-level-4">
+                <p className="shopify-title text-level-4">
                   Enjoy the FREE Admin App
-                </h1>
+                </p>
                 <div className="shopify-content mt-4">
                   <p>
                     <ul className="shopify-benifits-list">

@@ -68,9 +68,9 @@ export default class Contactus extends Component {
                 <div className="container ">
                   <div className="row justify-content-center service-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <h1 className="sub-text-above-main-title title-white">
+                      <div className="sub-text-above-main-title title-white">
                         Get in touch we'd love to help{" "}
-                      </h1>
+                      </div>
                       <h1 className="main-title title-white d-block">
                         Contact us
                       </h1>
@@ -500,11 +500,11 @@ export default class Contactus extends Component {
                         TELL US ABOUT YOUR BIG IDEAS AND WE'LL TELL YOU HOW WE
                         CAN HELP
                       </p>
-                      <h1 className="main-title">
+                      <h2 className="main-title">
                         <span className="title-orange d-block mob-left">
                           Have an idea? Lets discuss
                         </span>
-                      </h1>
+                      </h2>
                     </div>
                     <Contactusform
                       handleFormHide={this.handleFormHide}
@@ -549,11 +549,11 @@ export default class Contactus extends Component {
                   />
                 </div>
                 <div className="col-lg-5 col-md-12 col-sm-12 my-auto">
-                  <h1 className="main-title">
+                  <h2 className="main-title">
                     <span className="title-orange d-block mob-left">
                       Join the Team
                     </span>
-                  </h1>
+                  </h2>
                   <div className="contact-content mt-4">
                     <p>
                       We’re always looking for bright and driven individuals to

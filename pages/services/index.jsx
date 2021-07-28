@@ -59,10 +59,10 @@ export default class Service extends Component {
                 <div className="container ">
                   <div className="row justify-content-center service-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <h1 className="sub-text-above-main-title title-white">
+                     <p className="sub-text-above-main-title title-white">
                         A Full stack development company
-                      </h1>
-                      <h1 className="main-title title-white d-block">
+                      </p>
+                     <h1 className="main-title title-white d-block">
                         Our Services
                       </h1>
                     </div>
@@ -83,9 +83,9 @@ export default class Service extends Component {
             {/* section 1 */}
             <div className="row justify-content-center mt-3" id="service-db">
               <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12">
-                <h1 className="service-title">
+               <p className="service-title">
                   Database & Backend Development
-                </h1>
+                </p>
                 <div className="service-sub-title">
                   Database design & Migration Backend development | Python |
                   Django
@@ -126,10 +126,10 @@ export default class Service extends Component {
               <div className="col-lg-12 mt-5 mb-5"> </div>
 
               <div className="col-lg-6 col-md-12 col-sm-12">
-                <h1 className="service-title">
+               <p className="service-title">
                   Infrastructure – <br />
                   Built on AWS
-                </h1>
+                </p>
                 <div className="service-sub-title">
                   AWS | Database storage | Cloud consulting & Development
                 </div>
@@ -159,7 +159,7 @@ export default class Service extends Component {
               <div className="col-lg-12 mt-5 mb-5"> </div>
 
               <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12">
-                <h1 className="service-title">Mobile App Development</h1>
+               <p className="service-title">Mobile App Development</p>
                 <div className="service-sub-title">
                   Mobile apps | iOS app | Android Apps{" "}
                 </div>
@@ -194,7 +194,7 @@ export default class Service extends Component {
               <div className="col-lg-12 mt-5 mb-5"> </div>
 
               <div className="col-lg-6 col-md-12 col-sm-12">
-                <h1 className="service-title">Design & Prototyping</h1>
+               <p className="service-title">Design & Prototyping</p>
                 <div className="service-sub-title">
                   Style guide | Wireframe | PSD MOCKUP
                 </div>
@@ -237,7 +237,7 @@ export default class Service extends Component {
               <div className="col-lg-12 mt-5 mb-5"> </div>
 
               <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12">
-                <h1 className="service-title">UI Development </h1>
+               <p className="service-title">UI Development </p>
                 <div className="service-sub-title">
                   Clean Code | Responsive | Light weight
                 </div>
@@ -278,7 +278,7 @@ export default class Service extends Component {
               <div className="col-lg-12 mt-5 mb-5"> </div>
 
               <div className="col-lg-6 col-md-12 col-sm-12">
-                <h1 className="service-title">CMS – WordPress </h1>
+               <p className="service-title">CMS – WordPress </p>
                 <div className="service-sub-title">
                   PSD to WP | Custom WP | Plugins | Integrations
                 </div>
@@ -322,7 +322,7 @@ export default class Service extends Component {
               <div className="col-lg-12 mt-5 mb-5"> </div>
 
               <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12">
-                <h1 className="service-title">Shopify Experts</h1>
+               <p className="service-title">Shopify Experts</p>
                 <div className="mt-4 mb-4">
                   <img
                     src="images/service/shopify-partner.svg"
@@ -379,7 +379,7 @@ export default class Service extends Component {
               <div className="col-lg-12 mt-5 mb-5"> </div>
 
               <div className="col-lg-6 col-md-12 col-sm-12 ">
-                <h1 className="service-title">FileMaker Pro Development</h1>
+               <p className="service-title">FileMaker Pro Development</p>
                 <div className="service-sub-title">
                   Filemaker development | Multi-platform apps Filemaker Database
                   design
@@ -411,7 +411,7 @@ export default class Service extends Component {
               <div className="col-lg-12 mt-5 mb-5"> </div>
 
               <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12">
-                <h1 className="service-title">Blockchain Development</h1>
+               <p className="service-title">Blockchain Development</p>
                 <div className="service-sub-title">
                   Smart contract |Ethereum | Dapp
                 </div>

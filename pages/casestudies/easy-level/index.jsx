@@ -88,14 +88,14 @@ export default class Easylevel extends Component {
           description={data.description}
           keywords={data.keywords}
         ></Header>
-        <section className="content-container case-study">
+        <section className="content-container case-study easy_level">
           <div className="common-title-blk">
             <div className="container">
               <div className="row">
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
                     <div className="case-easylevel-size">
-                      <h1>Full Stack Development</h1></div>
+                      <p className="easy_level_title">Full Stack Development</p></div>
                       <h1 className="main-title title-white">Easy-Level</h1>
                       <ul className="project-info">
                         <li>
@@ -126,9 +126,9 @@ export default class Easylevel extends Component {
               <div className="row">
                 <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
                   <div className="project-blk-title">
-                    <h2 className="text-above-main-title">
+                    <div className="text-above-main-title">
                       A DESCENTRALIZED PLATFORM
-                    </h2>
+                    </div>
                     <h2 class="main-title title-orange">Introduction</h2>
                   </div>
                   <p>
@@ -162,9 +162,9 @@ export default class Easylevel extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-10">
                   <div className="project-blk-title text-center">
-                    <h2 className="text-above-main-title">HOW IT WORKS</h2>
-                    <h2 className="main-title title-orange">Architecture</h2>
-                    <h2 className="title-black">P2P payment</h2>
+                    <div className="text-above-main-title">HOW IT WORKS</div>
+                   <h2> <div className="main-title title-orange">Architecture</div>
+                    <div className="title-black">P2P payment</div></h2>
                   </div>
                   <div className="workflow-wrap">
                     <img
@@ -182,8 +182,8 @@ export default class Easylevel extends Component {
                 <div className="col-md-12 col-lg-10 col-xl-10">
                   <div className="project-blk-title text-center">
                     <h2 className="text-above-main-title">HOW IT WORKS</h2>
-                    <h2 className="main-title title-orange">Architecture</h2>
-                    <h2 className="title-black">Advertising platform</h2>
+                   <h2><div className="main-title title-orange">Architecture</div>
+                    <div className="title-black">Advertising platform</div></h2> 
                   </div>
                   <div className="workflow-wrap">
                     <img
@@ -201,7 +201,7 @@ export default class Easylevel extends Component {
                 <div className="col-md-5 offset-md-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h2 className="text-above-main-title">PRODUCT WORK</h2>
+                      <div className="text-above-main-title">PRODUCT WORK</div>
                       <h2 className="main-title title-orange">How it works</h2>
                     </div>
                     <p>
@@ -246,7 +246,7 @@ export default class Easylevel extends Component {
 
                   <div className="project-unique-wrap challenge-sec">
                     <div className="project-blk-title">
-                      <h2 className="text-above-main-title">PROCESS</h2>
+                      <div className="text-above-main-title">PROCESS</div>
                       <h2 className="main-title title-orange">Use Case</h2>
                     </div>
                     <p>
@@ -286,9 +286,9 @@ export default class Easylevel extends Component {
                 <div className="col-md-12">
                   <div className="project-slider-wrap">
                     <div className="project-blk-title">
-                      <h2 className="text-above-main-title">
+                      <div className="text-above-main-title">
                       DESIGN WITH USER IN MIND
-                      </h2>
+                      </div>
                       <h2 class="main-title title-orange">User Interface</h2>
                     </div>
 
@@ -355,7 +355,7 @@ export default class Easylevel extends Component {
               <div className="row justify-content-left">
                 <div className="col-md-11 col-lg-11 col-xl-11 offset-md-1">
                   <div className="project-blk-title text-center">
-                    <h2 className="text-above-main-title">SKILLS</h2>
+                    <div className="text-above-main-title">SKILLS</div>
                     <h2 class="main-title title-orange">Our skillsets</h2>
                   </div>
                   <div className="skillset-wrap text-left">
@@ -385,7 +385,7 @@ export default class Easylevel extends Component {
                 <div className="col-lg-6 col-sm-12 offset-lg-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h2 className="text-above-main-title">PROJECT PROCESS</h2>
+                      <div className="text-above-main-title">PROJECT PROCESS</div>
                       <h2 class="main-title title-orange">
                         Agile development process
                       </h2>

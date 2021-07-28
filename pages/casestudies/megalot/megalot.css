@@ -10,6 +10,27 @@
   border-radius: 4px;
   color: #fff;
 }
+.text-above-main-title_margin_bottom{
+  margin-bottom: 35px !important; 
+}
+.megalot .megalot_title{
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+.megalot .margin_bottom{
+  margin-bottom: 2rem;
+}
+.heading5{
+  font-size: 24px;
+  font-weight: 500;
+  color: #434343;
+  margin-bottom: 30px;
+}
+
 .project-about-blk blockquote{
   font-size: 21px;
   font-weight: 700;
@@ -106,10 +127,13 @@
 }
 .orange-strip-blk.white-centered .project-blk-title h3,
 .orange-strip-blk.white-centered .project-blk-title h6,
+.orange-strip-blk.white-centered .project-blk-title p3,
 .orange-strip-blk.white-centered p{
   color: #fff;
 }
-.orange-strip-blk.white-centered .project-blk-title h3{
+.orange-strip-blk.white-centered .project-blk-title h3,
+.orange-strip-blk.white-centered .project-blk-title p3
+{
   margin-bottom: 35px;
 }
 .orange-strip-blk.white-centered p{

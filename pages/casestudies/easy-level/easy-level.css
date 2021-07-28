@@ -7,6 +7,15 @@
 {
     color: white;
 }
+
+.easy_level .easy_level_title{
+    font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
 .case-easylevel-size{
     display: inline-block;
 

@@ -80,14 +80,14 @@ export default class Megalot extends Component {
           description={data.description}
           keywords={data.keywords}
         ></Header>
-        <section className="content-container case-study">
+        <section className="content-container case-study megalot">
           <div className="common-title-blk">
             <div className="container">
               <div className="row">
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
                     <div className="case-megalot-size">
-                      <h1>Website development & design</h1>
+                      <p className="megalot_title">Website development & design</p>
                       </div>
                       <h1 className="main-title title-white">Megalot</h1>
                       <ul className="project-info">
@@ -122,7 +122,7 @@ export default class Megalot extends Component {
                     dApps.</h2>
                   </blockquote>
                   <div className="project-blk-title">
-                    <h3 className="text-above-main-title">INTRODUCTION</h3>
+                    <div className="text-above-main-title">INTRODUCTION</div>
                     <h3 class="main-title title-orange">About Megalot</h3>
                   </div>
                   <p>
@@ -150,7 +150,7 @@ export default class Megalot extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title">
-                    <h3 className="text-above-main-title">WORKFLOW</h3>
+                    <div className="text-above-main-title">WORKFLOW</div>
                     <h3 class="main-title title-orange">Architecture</h3>
                   </div>
                   <div className="workflow-wrap">
@@ -169,9 +169,9 @@ export default class Megalot extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-8">
                   <div className="project-blk-title">
-                    <h3 className="text-above-main-title">
+                    <p className="text-above-main-title text-above-main-title_margin_bottom">
                     CRACKING CHALLENGES WITH OUR TEAM OF BLOCKCHAIN EXPERTS{" "}
-                    </h3>
+                    </p>
                     <h3 class="main-title">Challenges</h3>
                   </div>
                   <p>
@@ -202,9 +202,9 @@ export default class Megalot extends Component {
                 <div className="col-md-5 offset-md-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h3 className="text-above-main-title">
+                      <div className="text-above-main-title">
                       PRODUCT UNIQUENESS
-                      </h3>
+                      </div>
                       <h3 class="main-title title-orange">Our Solution ?</h3>
                     </div>
                     <div className="cust-order-list">
@@ -267,9 +267,9 @@ export default class Megalot extends Component {
                 <div className="col-md-12">
                   <div className="project-slider-wrap">
                     <div className="project-blk-title">
-                      <h3 className="text-above-main-title">
+                      <div className="text-above-main-title">
                         DESIGN WITH USER IN MIND
-                      </h3>
+                      </div>
                       <h3 class="main-title title-orange">User Interface</h3>
                     </div>
 
@@ -330,11 +330,11 @@ export default class Megalot extends Component {
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h3 className="text-above-main-title">PROJECT STACK</h3>
+                        <div className="text-above-main-title">PROJECT STACK</div>
                         <h3 class="main-title title-orange">Technogies Used</h3>
                       </div>
                       <div className="tech-desc">
-                        <h5>Solidity language on Ethereum :</h5>
+                        <p className="heading5">Solidity language on Ethereum :</p>
                         <p>
                           The smart contracts used in this project are built
                           using solidity language on ethereum. The front end is
@@ -395,7 +395,7 @@ export default class Megalot extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h3 className="text-above-main-title">WHAT`S INSIDE</h3>
+                    <p className="text-above-main-title">WHAT`S INSIDE</p>
                     <h3 class="main-title title-orange">Features</h3>
                   </div>
                 </div>
@@ -410,10 +410,10 @@ export default class Megalot extends Component {
                           src="/images/case-studies/megalot/feature1.svg"
                           alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Ease <br />
                           Registration
-                        </h4>
+                        </p>
                         <p>
                           The use of metamask as the user account removes any
                           unwanted steps in the registration process and
@@ -429,10 +429,10 @@ export default class Megalot extends Component {
                           src="/images/case-studies/maikeinc/feature2.svg"
                           alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Secure <br />
                           Control Panel{" "}
-                        </h4>
+                        </p>
                         <p>
                           High level security features in the control panel of
                           the management.
@@ -447,10 +447,10 @@ export default class Megalot extends Component {
                           src="/images/case-studies/maikeinc/feature3.svg"
                           alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Multi User <br />
                           Unlock System
-                        </h4>
+                        </p>
                         <p>
                           Multi user unlock system which involves 2 out of the 3
                           owners agreeing to access the system.{" "}
@@ -466,10 +466,10 @@ export default class Megalot extends Component {
                           src="/images/case-studies/maikeinc/feature4.svg"
                           alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Secure <br />
                           Admin Panel{" "}
-                        </h4>
+                        </p>
                         <p>
                           Access to the admin panel is provided only based on
                           the account signed in currently in metamask.
@@ -484,10 +484,10 @@ export default class Megalot extends Component {
                           src="/images/case-studies/maikeinc/feature6.svg"
                           alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Fair <br />
                           Selection
-                        </h4>
+                        </p>
                         <p>
                           Use of an external unbiased oracle to provide the
                           unique random number in order to select the winners
@@ -506,7 +506,7 @@ export default class Megalot extends Component {
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img src="/images/case-studies/maikeinc/feature4.svg" alt="" />
-                        <h4 className="text-level-5 title-black">Secure <br/>Admin Panel </h4>
+                        <p className="text-level-5 title-black">Secure <br/>Admin Panel </p>
                         <p>Access to the admin panel is provided only based on the account signed in currently in metamask.</p>
                       </div>
                     </div>
@@ -515,7 +515,7 @@ export default class Megalot extends Component {
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img src="/images/case-studies/maikeinc/feature6.svg" alt="" />
-                        <h4 className="text-level-5 title-black">Fair <br/>Selection</h4>
+                        <p className="text-level-5 title-black">Fair <br/>Selection</p>
                         <p>Use of an external unbiased oracle to provide the unique random number in order to select the winners based on the provables library previously known as oraclize.</p>
                       </div>
                     </div>
@@ -530,7 +530,7 @@ export default class Megalot extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-10 col-lg-8 col-xl-8">
                   <div className="project-blk-title text-center">
-                    <h3 className="text-above-main-title">SKILLS</h3>
+                    <div className="text-above-main-title">SKILLS</div>
                     <h3 class="main-title title-orange">Our Skillset</h3>
                   </div>
                   <div className="skillset-wrap">
@@ -567,9 +567,9 @@ export default class Megalot extends Component {
                 <div className="col-md-8">
                   <Slide bottom>
                     <div className="project-blk-title">
-                      <h3 class="main-title title-white">
+                      <p className="main-title title-white margin_bottom">
                         Are You In Search For A Technology Partner?
-                      </h3>
+                      </p>
                       <div class="learn-more home-lm-link-vs">
                         <div className="btn-comm">
                           <a href="/contact-us">LET'S WORK TOGETHER</a>
