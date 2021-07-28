@@ -20,7 +20,6 @@ const PrevArrow = ({ onClick }) => {
  const Wpsliderv2 = ({ images }) => {
 // 3.
   const [imageIndex, setImageIndex] = useState(0);
-// console.log('images: ',images);
   // 4.
   const settings = {
     centerMode: true,

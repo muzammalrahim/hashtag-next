@@ -11,6 +11,7 @@ import Axios from 'axios';
 import https from "https";
 import * as config from '../../config';
 import Link from 'next/link'
+import BlogPostFeatured from "../../components/post-featured";
 
 require('typeface-montserrat')
 
@@ -239,8 +240,9 @@ export default class Singlepost extends Component {
                 <div className="col-12 col-sm-12 col-md-4 col-lg-4">
                   <div className="blog-sidebar">
                     <aside>
-                      <BlogRecentPosts></BlogRecentPosts>
-                      <BlogCategories></BlogCategories>
+                      <BlogRecentPosts />
+                      <BlogCategories />
+                      <BlogPostFeatured />
                     </aside>
                   </div>
                 </div>

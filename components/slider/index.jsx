@@ -25,7 +25,6 @@ export default class Slider extends Component {
           <h1 className="App-title"></h1>
         </header>
         <br />
-        {console.log("______________________________________________________________________slides", slides)}
         { slides ? <Carousel slides={[<img src="../images/shopify/together-home.jpg" alt="slider1" />]} autoplay={true} interval={3000000} /> : <h1>hi</h1>}
         {/* Carousal.Carousal because of unpkg in developement use npm import and use only {Carousal}*/}
       </div>

@@ -15,6 +15,7 @@ import * as config from '../../../config';
 import queryString from 'query-string';
 import Flip from 'react-reveal/Reveal';
 import Link from 'next/link'
+import BlogPostFeatured from "../../../components/post-featured";
 
 require('typeface-montserrat')
 export async function getServerSideProps() {
@@ -343,6 +344,7 @@ const {data} = this.state
                         category={this.state.category}
                       ></BlogRecentPosts>
                       <BlogCategories></BlogCategories>
+                      <BlogPostFeatured />
                     </aside>
                   </div>
                 </div>

@@ -35,7 +35,6 @@ export default class BlogRecentPosts extends Component {
     }
     axios.get(config.myConfig.apiUrl+'blog/posts/recent', {params: {category: category}})
     .then((response) => {
-      // console.log(response.data);
       const recentPosts = response.data.data.posts;
       this.setState({ 
         recentPosts: recentPosts

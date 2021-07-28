@@ -9,8 +9,6 @@ const Post = dynamic(()=> import("./post"))
 import $ from 'jquery';
 
 const Header = ({ title, description, keywords, canonical_tags }) => {
-  // console.log("header props", props);
-  // const { title, description, keywords, canonical_tags, data } = props;
 
   const [tabindex, setTabindex] = useState(true);
   const [Activetabindex, setActiveTabIndex] = useState(1);
@@ -18,9 +16,6 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
   const getindex = () => {
     if (localStorage.getItem("Activetabindex2")) {
       setActiveTabIndex(localStorage.getItem("Activetabindex2"));
-      // this.setState({
-      //   Activetabindex: localStorage.getItem("Activetabindex2"),
-      // });
     }
   };
 
@@ -28,7 +23,6 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
     getindex();
     menuToggle();
     setTabindex(false);
-    // this.setState({ tabindex: false });
     if (typeof window !== undefined) {
       $(window).scroll(function () {
         var scroll = $(window).scrollTop();
@@ -60,7 +54,6 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
   };
   let router = useRouter()
   let canonicalUrl = "https://www.hashtag-ca.com" + router.pathname
-  console.log("canonical", canonical_tags);
   let canonical = canonical_tags === null ? canonicalUrl : canonical_tags;
   return (
     <header className="header-container">

@@ -100,11 +100,7 @@ export default class Testimonial extends Component {
         testim.addEventListener("touchend", function (e) {
           touchEndPos = e.changedTouches[0].clientX;
 
-          touchPosDiff = touchStartPos - touchEndPos;
-
-          // console.log(touchPosDiff);
-          // console.log(touchStartPos);    
-          // console.log(touchEndPos);    
+          touchPosDiff = touchStartPos - touchEndPos;    
 
 
           if (touchPosDiff > 0 + ignoreTouch) {

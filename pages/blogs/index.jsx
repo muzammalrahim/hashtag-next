@@ -13,7 +13,7 @@ import * as config from "../../config.js";
 import queryString from "query-string";
 import Flip from "react-reveal/Reveal";
 import Link from 'next/link'
-
+import BlogPostFeatured from '../../components/post-featured'
 require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
@@ -325,6 +325,7 @@ export default class Blog extends Component {
                       </div>
                       <BlogRecentPosts></BlogRecentPosts>
                       <BlogCategories></BlogCategories>
+                      <BlogPostFeatured />
                     </aside>
                   </div>
                 </div>

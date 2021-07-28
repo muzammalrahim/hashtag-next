@@ -30,7 +30,6 @@ class BlogCategories extends Component {
   get_categories(){
     axios.get(config.myConfig.apiUrl+'blog/categories')
     .then((response) => {
-      // console.log(response.data);
       const categories = response.data.data;
       this.setState({ 
         categories: categories
