@@ -15,7 +15,7 @@ import BlogPostFeatured from "../../components/post-featured";
 
 require('typeface-montserrat')
 
-export async function getServerSideProps() {
+export async function getServerSideProps(ctx) {
   let data = [];
 
   const instance = Axios.create({
@@ -23,12 +23,12 @@ export async function getServerSideProps() {
       rejectUnauthorized: false,
     }),
   });
-
+ console.log('ctx',ctx?.req?.url.split('/')[2])
   await instance
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
-        page_type: "static",
-        slug: "blog-home",
+        page_type: "post",
+        slug: ctx?.req?.url.split("/")[2],
       },
     })
     .then((response) => {
