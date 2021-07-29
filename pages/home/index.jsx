@@ -68,7 +68,7 @@ export default class Home extends Component {
 				<div className="container-fluid mobile-banner">
 				<div className="row justify-content-center">
 						<div className="col-12 section-one-text">
-							<h1 className="text-above-main-title-first-mob text-center">A Full stack development company</h1>
+							<div className="text-above-main-title-first-mob text-center">A Full stack development company</div>
 							<p className="main-title-first-mob text-center">
 								<span className="mobile-white title-orange-first-mob d-block" id="banner" >Solutions on</span>
                           		<span className="title-black-first-mob"> Web, Mobile &amp; Cloud</span>

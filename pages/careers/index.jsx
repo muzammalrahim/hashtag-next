@@ -84,9 +84,9 @@ export default class Careers extends Component {
             {/* section 2 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div class="col-sm-10 text-center ipad-pro-only">
-                <p className="main-title title-orange">
+                <h3 className="main-title title-orange">
                   We are looking for future leaders!{" "}
-                </p>
+                </h3>
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 ">
                 <p className="main-title title-orange ipad-pro-none">
@@ -290,7 +290,7 @@ export default class Careers extends Component {
                 <p class="text-above-main-title text-center">
                   THERE IS ALWAYS ROOM FOR MOTIVATED TECH ENTHUSIASTS
                 </p>
-                <p class="main-title title-orange text-center">Coming Soon</p>
+                <h3 class="main-title title-orange text-center">Coming Soon</h3>
               </div>
             </div>
             {/* section 1 */}
@@ -330,9 +330,9 @@ export default class Careers extends Component {
               <div className="container">
                 <div className="row justify-content-center about-row pl-3 pr-3">
                   <div className="col-sm-10">
-                    <p className="main-title title-orange text-center">
+                    <h3 className="main-title title-orange text-center">
                       Equal Opportunities
-                    </p>
+                    </h3>
 
                     <p className="nj-who-we-are-sub-content text-center">
                       <p class="font-normal">
