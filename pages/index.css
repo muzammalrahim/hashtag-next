@@ -2496,7 +2496,7 @@ bottom: 186px;
     .section-five-bg,
     .section-six-bg {
         position: relative;
-        bottom: 1107px;
+        /* bottom: 1107px; */
 
     }
 
