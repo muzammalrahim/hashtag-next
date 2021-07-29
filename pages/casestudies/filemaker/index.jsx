@@ -231,7 +231,7 @@ const { data } = this.state;
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-10">
                   <div className="project-blk-title text-center">
-                    <h3 className="text-above-main-title">HOW IT WORKS</h3>
+                    <div className="text-above-main-title">HOW IT WORKS</div>
                     <h3 className="main-title title-orange">Architecture</h3>
                   </div>
                   <div className="workflow-wrap">
