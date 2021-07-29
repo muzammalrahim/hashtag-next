@@ -10,6 +10,7 @@ import Slide from 'react-reveal/Reveal';
 
 require('typeface-montserrat')
 
+export const  config = { unstable_runtimeJS : false}
 
 
 export default class Home extends Component {
