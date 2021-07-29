@@ -53,8 +53,12 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
     }
   };
   let router = useRouter()
-  let canonicalUrl = "https://www.hashtag-ca.com" + router.pathname
+  console.log('router', router)
+  let canonicalUrl = "https://www.hashtag-ca.com" + router.asPath
   let canonical = canonical_tags === null ? canonicalUrl : canonical_tags;
+  console.log("local url", canonicalUrl)
+  console.log("backend url", canonical_tags)
+  console.log("original web url", canonical)
   return (
     <header className="header-container">
       <Head>
