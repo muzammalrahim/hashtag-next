@@ -182,7 +182,7 @@ export default class Easylevel extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-10">
                   <div className="project-blk-title text-center">
-                    <h2 className="text-above-main-title">HOW IT WORKS</h2>
+                    <div className="text-above-main-title">HOW IT WORKS</div>
                    <h2><div className="main-title title-orange">Architecture</div>
                     <div className="title-black">Advertising platform</div></h2>
                   </div>
@@ -493,9 +493,9 @@ export default class Easylevel extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-8">
                   <div className="project-blk-title">
-                    <h2 className="text-above-main-title">
+                    <div className="text-above-main-title">
                     PROJECT ACHIEVEMENTS
-                    </h2>
+                    </div>
                     <h2  className="main-title-custom main-title mb-2">What We Achieved</h2>
                     <img
                       className="mb-2"
