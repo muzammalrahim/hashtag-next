@@ -53,14 +53,7 @@ class BlogFeaturePost extends Component {
           {this.state.features?.map((cat, index) => {
             return (
               <li className="cat-item cat-item-51 current-cat" key={index}>
-                <a
-                  href={"/blogs/"+cat.url}
-                  style={{ cursor: "pointer" }}
-                  onClick={() => {
-                    this.navigate("/blogs/" + cat.url);
-                  }}
-                >
-                  {" "}
+                <a href={"/blogs/"+cat.url}>
                   {cat.title}
                 </a>
               </li>

@@ -57,12 +57,7 @@ class BlogCategories extends Component {
               <li className="cat-item cat-item-51 current-cat" key={index}>
                 <a
                   href={"/blogs/category/" + cat.slug}
-                  style={{ cursor: "pointer" }}
-                  onClick={() => {
-                    this.navigate("/blogs/category/" + cat.slug);
-                  }}
                 >
-                  {" "}
                   {cat.name}
                 </a>
               </li>
