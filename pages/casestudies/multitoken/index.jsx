@@ -189,7 +189,7 @@ export default class Multitoken extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-11">
                   <div className="project-blk-title text-center">
-                    <h2 className="text-above-main-title">HOW IT WORKS</h2>
+                    <div className="text-above-main-title">HOW IT WORKS</div>
                     <h2 class="main-title title-orange">Architecture</h2>
                   </div>
                   <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3 sc-ip-pro">
