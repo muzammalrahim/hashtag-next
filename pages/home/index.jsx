@@ -10,6 +10,8 @@ import Slide from 'react-reveal/Reveal';
 
 require('typeface-montserrat')
 
+
+
 export default class Home extends Component {
 	constructor(props) {
 		super(props);
@@ -67,7 +69,7 @@ export default class Home extends Component {
 				<div className="container-fluid mobile-banner">
 				<div className="row justify-content-center">
 						<div className="col-12 section-one-text">
-							<div className="text-above-main-title-first-mob text-center">A Full stack development company</div>
+							<h1 className="text-above-main-title-first-mob text-center">A Full stack development company</h1>
 							<p className="main-title-first-mob text-center">
 								<span className="mobile-white title-orange-first-mob d-block" id="banner" >Solutions on</span>
                           		<span className="title-black-first-mob"> Web, Mobile &amp; Cloud</span>
@@ -300,16 +302,13 @@ export default class Home extends Component {
 		    </div>
         </div>
 
-
-
-
 		  <div className="container-fluid section-five-bg  pb-5">
 		  	<div className="container">
 		  		<div className="row justify-content-center pt-5 pl-3 pr-3">
 		  			<div className="col-12">
-		  				<p className="text-above-main-title text-center">WE ARE PROFESSIONALS</p>
-		  				<p className="main-title"><span className="title-orange d-block text-center"> 
-							Our Expertise</span></p>
+		  				<div className="text-above-main-title text-center">WE ARE PROFESSIONALS</div>
+		  				<div className="main-title"><span className="title-orange d-block text-center"> 
+							Our Expertise</span></div>
 
 		  			</div>
 		  			<div className="horizontal-line-middle"></div>
