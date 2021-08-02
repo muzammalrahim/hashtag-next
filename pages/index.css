@@ -13,7 +13,7 @@
 /*@import "../components/wordpress-slider/style.css";*/
 @import "../components/wp-carousel/style.css";
 
-@import '../pages/home/home.css';
+/* @import '../pages/home/home.css'; */
 @import './casestudies/casestudy.css';
 @import './casestudies/easy-level/easy-level.css';
 @import './casestudies/filemaker/filemaker.css';
@@ -2139,7 +2139,7 @@ bottom: 186px;
 
 .who-we-left-bg {
     background-color: transparent;
-    background-image: url(/images/home/who-we-are/who-we-are-left.svg);
+    background-image: url(/images/home/who-we-are/who-we-are-left.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: left top;
