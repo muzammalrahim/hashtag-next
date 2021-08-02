@@ -38,7 +38,7 @@ hiding this for build
 }
 
 #home-main  .section-one-bg {
-    background-image: url("/images/home/section-one-bg.svg");
+    background-image: url("/images/home/section.png");
     background-color: #fff;
     background-position: top right;
     background-repeat: no-repeat;
@@ -1743,7 +1743,7 @@ bottom: 186px;
 
 .who-we-left-bg {
     background-color: transparent;
-    background-image: url(/images/home/who-we-are/who-we-are-left.svg);
+    background-image: url(/images/home/who-we-are/who-we-are-left.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: left top;
