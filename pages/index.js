@@ -33,12 +33,12 @@ export default function Home(props) {
   let response = props
   const [data, setData] = React.useState(response.data.data)
   return (
- 
+	  <>
        <Homes title={data.title}
 	   	  description={data.description}
 		  keywords={data.keywords}
 		  canonical={data?.canonical_tags}
 	   />
-	  
+	  </>
   )
 }
