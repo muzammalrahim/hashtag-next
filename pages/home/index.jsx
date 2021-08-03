@@ -1,12 +1,37 @@
 import React, { Component } from 'react';
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
-import Header from '../../components/header/index.jsx';
-import Footer from '../../components/footer/index.jsx';
-import Contact from '../../components/contacts/index.jsx';
-import Carousel from '../../components/carousel/index.jsx';
-import Slide from 'react-reveal/Reveal';
+
+// import Header from '../../components/header/index.jsx';
+// import Footer from '../../components/footer/index.jsx';
+// import Contact from '../../components/contacts/index.jsx';
+// import Carousel from '../../components/carousel/index.jsx';
+// import Slide from 'react-reveal/Reveal';
+
+
+const Header = dynamic(
+	() => import('../../components/header/index.jsx'),
+	{ ssr : false }
+  )
+const Footer = dynamic(
+	() => import('../../components/footer/index.jsx'),
+	{ ssr : false }
+  )
+const Contact = dynamic(
+	() => import('../../components/contacts/index.jsx'),
+	{ ssr : false }
+  )
+const Carousel = dynamic(
+	() => import('../../components/contacts/index.jsx'),
+	{ ssr : false }
+  )
+const Slide  = dynamic(
+	() => import('react-reveal/Reveal'),
+	{ ssr : false }
+  )
+
 
 require('typeface-montserrat')
 
