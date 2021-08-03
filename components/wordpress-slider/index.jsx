@@ -1,20 +1,8 @@
 import React, {useState} from 'react';
-// import { HashLink as Link } from 'react-router-hash-link';
-// import { NavHashLink as NavLink } from 'react-router-hash-link';
-// import uuidv4 from "uuid";
 import dynamic from "next/dynamic";
 const { Carousel } = dynamic(() => import("3d-react-carousal"), { ssr: false });
-// import { Carousel } from "react-responsive-carousel";
-
-// import { config } from "react-spring";
 
  const Wpslider = ()=>{
-//  const [state, setState] = useState({
-//    goToSlide: 0,
-//    offsetRadius: 2,
-//    showNavigation: true,
-//    config: config.gentle,
-//  });
     let slides = [
      
           <img src="../images/wordpress/67-baltimore.png" alt="catering" />,
@@ -39,26 +27,8 @@ const { Carousel } = dynamic(() => import("3d-react-carousal"), { ssr: false });
         <header className="App-header">
           <h1 className="App-title"></h1>
         </header>
-
         <br />
-
-        {/* <Carousel
-          showIndicators={false}
-          autoFocus={true}
-          useKeyboardArrows={true}
-          autoPlay={true}
-          infiniteLoop={true}
-        >
-          {slides.map((media, index) => {
-            return (
-              <figure key={index} className="w-lightbox-figure">
-                {media}
-              </figure>
-            );
-          })}
-        </Carousel> */}
         <Carousel slides={slides} autoplay={true} interval={3000000} />
-        {/* Carousal.Carousal because of unpkg in developement use npm import and use only {Carousal}*/}
       </div>
     );
   

@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-// import { HashLink as Link } from 'react-router-hash-link';
-// import { NavHashLink as NavLink } from 'react-router-hash-link';
-// import './style.css';
 import dynamic from "next/dynamic";
 const { Carousel } = dynamic(() => import("3d-react-carousal"), { ssr: false });
 
@@ -26,7 +23,6 @@ export default class Slider extends Component {
         </header>
         <br />
         { slides ? <Carousel slides={[<img src="../images/shopify/together-home.jpg" alt="slider1" />]} autoplay={true} interval={3000000} /> : <h1>hi</h1>}
-        {/* Carousal.Carousal because of unpkg in developement use npm import and use only {Carousal}*/}
       </div>
     );
   }

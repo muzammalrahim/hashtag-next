@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { ToastContainer, toast, Slide } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import $ from 'jquery';
 import axios from 'axios';
 import * as config from '../../config.js';
-import a from 'next/link'
 
 require('typeface-montserrat')
 

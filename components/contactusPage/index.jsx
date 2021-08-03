@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import './style.css';
 import axios from 'axios';
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css';
@@ -54,10 +53,6 @@ class Contactusform extends React.Component{
 
       axios.post(config.myConfig.apiUrl+'contact',{ name, email, phone, message})
       .then((response) => {
-  
-         //errors["sucesss"] = response.data.message;
-         // errors["sucesss"] = "Thanks for contacting us! We will be in touch with you shortly.";
-
         this.state.fields.firstname = " ";
         this.state.fields.secondname = " ";
         this.state.fields.email = " ";
