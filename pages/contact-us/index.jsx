@@ -555,6 +555,8 @@ export default class Contactus extends Component {
                     src="images/contacts/puzzles.svg"
                     className="img-fluid"
                     alt="join-team"
+                    height="auto"
+                    width="100%"
                   />
                 </div>
                 <div className="col-lg-5 col-md-12 col-sm-12 my-auto">
