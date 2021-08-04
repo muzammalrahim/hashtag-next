@@ -31,6 +31,22 @@ const Slide  = dynamic(
 	() => import('react-reveal/Reveal'),
 	{ ssr : false }
   )
+const Sunnyvalemap  = dynamic(
+	() => import('./Sunnyvalemap'),
+	{ ssr : false }
+  )
+const Sanjosemap  = dynamic(
+	() => import('./Sanjosemap'),
+	{ ssr : false }
+  )
+const Sandiegomap  = dynamic(
+	() => import('./Sandiegomap'),
+	{ ssr : false }
+  )
+const Kochi  = dynamic(
+	() => import('./Kochi'),
+	{ ssr : false }
+  )
 
 
 require('typeface-montserrat')
@@ -340,21 +356,21 @@ export default class Home extends Component {
 		  		</div>
 		  	<div className="d-block d-sm-none">	<Carousel> </Carousel></div>
 
-		  	<div className="desktop-only-expertise d-none d-sm-block">	<div className="row justify-content-center mt-2">
+		  	<div className="desktop-only-expertise d-none d-sm-block">	<div className="row justify-content-center mt-2 homePageImgs">
 			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/html5.svg" alt="html5" className="img-fluid mx-auto my-auto "/> 
+			  				<img src="images/home/html5.svg" alt="html5" className="img-fluid mx-auto my-auto homePageImgs "/> 
 			  			</div>
 			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/mysql.svg" alt="mysql" className="img-fluid mx-auto my-auto"/>
+			  				<img src="images/home/mysql.svg" alt="mysql" className="img-fluid mx-auto my-auto homePageImgs"/>
 			  			</div>
 			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/amazon.svg" alt="amazon" className="img-fluid mx-auto my-auto"/>
+			  				<img src="images/home/amazon.svg" alt="amazon" className="img-fluid mx-auto my-auto homePageImgs"/>
 			  			</div>
 			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/shopify.svg" alt="shopify" className="img-fluid mx-auto my-auto"/>
+			  				<img src="images/home/shopify.svg" alt="shopify" className="img-fluid mx-auto my-auto homePageImgs"/>
 			  			</div>
 			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/php.svg" alt="php" className="img-fluid mx-auto my-auto"/>
+			  				<img src="images/home/php.svg" alt="php" className="img-fluid mx-auto my-auto homePageImgs"/>
 			  			</div>
 
                     </div>
@@ -364,41 +380,19 @@ export default class Home extends Component {
 		  			<div className="row justify-content-center  mt-2">
 
 			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/bootstrap.svg" alt="bootstrap" className="img-fluid mx-auto my-auto"/> 
+			  				<img src="images/home/bootstrap.svg" alt="bootstrap" className="img-fluid mx-auto my-auto homePageImgs"/> 
 			  			</div>
 			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/node-js.svg" alt="node_js" className="img-fluid mx-auto my-auto"/>
+			  				<img src="images/home/node-js.svg" alt="node_js" className="img-fluid mx-auto my-auto homePageImgs"/>
 			  			</div>
 			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/angular-js.svg" alt="angular_js" className="img-fluid mx-auto my-auto"/>
+			  				<img src="images/home/angular-js.svg" alt="angular_js" className="img-fluid mx-auto my-auto homePageImgs"/>
 			  			</div>
 			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/ethereum.svg" alt="ethereum" className="img-fluid mx-auto my-auto"/>
+			  				<img src="images/home/ethereum.svg" alt="ethereum" className="img-fluid mx-auto my-auto homePageImgs"/>
 			  			</div>
 			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/react-js.svg" alt="react_js" className="img-fluid mx-auto my-auto"/>
-			  			</div>
-
-		  		</div>
-
-		  		{/* next set images */}
-
-		  			<div className="row justify-content-center  mt-2">
-
-			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/wordpress.svg" alt="wordpress" className="img-fluid mx-auto my-auto"/> 
-			  			</div>
-			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/jquery.svg" alt="jquery" className="img-fluid mx-auto my-auto"/>
-			  			</div>
-			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/codeigniter.svg" alt="codeigniter" className="img-fluid mx-auto my-auto"/>
-			  			</div>
-			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/django.svg" alt="django" className="img-fluid mx-auto my-auto"/>
-			  			</div>
-			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/python.svg" alt="python" className="img-fluid mx-auto my-auto"/>
+			  				<img src="images/home/react-js.svg" alt="react_js" className="img-fluid mx-auto my-auto homePageImgs"/>
 			  			</div>
 
 		  		</div>
@@ -408,19 +402,41 @@ export default class Home extends Component {
 		  			<div className="row justify-content-center  mt-2">
 
 			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/mongodb.svg" alt="mongodb" className="img-fluid mx-auto my-auto"/> 
+			  				<img src="images/home/wordpress.svg" alt="wordpress" className="img-fluid mx-auto my-auto homePageImgs"/> 
+			  			</div>
+			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
+			  				<img src="images/home/jquery.svg" alt="jquery" className="img-fluid mx-auto my-auto homePageImgs"/>
+			  			</div>
+			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
+			  				<img src="images/home/codeigniter.svg" alt="codeigniter" className="img-fluid mx-auto my-auto homePageImgs"/>
+			  			</div>
+			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
+			  				<img src="images/home/django.svg" alt="django" className="img-fluid mx-auto my-auto homePageImgs"/>
+			  			</div>
+			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
+			  				<img src="images/home/python.svg" alt="python" className="img-fluid mx-auto my-auto homePageImgs"/>
+			  			</div>
+
+		  		</div>
+
+		  		{/* next set images */}
+
+		  			<div className="row justify-content-center  mt-2">
+
+			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
+			  				<img src="images/home/mongodb.svg" alt="mongodb" className="img-fluid mx-auto my-auto homePageImgs"/> 
 			  			</div>
 			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5 ">
-			  				<img src="images/home/truffle.svg" alt="truffle" className="img-fluid mx-auto my-auto"/>
+			  				<img src="images/home/truffle.svg" alt="truffle" className="img-fluid mx-auto my-auto homePageImgs"/>
 			  			</div>
 			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/solidity.svg" alt="solidity" className="img-fluid mx-auto my-auto"/>
+			  				<img src="images/home/solidity.svg" alt="solidity" className="img-fluid mx-auto my-auto homePageImgs"/>
 			  			</div>
 			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/docker.svg" alt="docker" className="img-fluid mx-auto my-auto"/>
+			  				<img src="images/home/docker.svg" alt="docker" className="img-fluid mx-auto my-auto homePageImgs"/>
 			  			</div>
 			  			<div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
-			  				<img src="images/home/ionic.svg" alt="ionic" className="img-fluid mx-auto my-auto"/> 
+			  				<img src="images/home/ionic.svg" alt="ionic" className="img-fluid mx-auto my-auto homePageImgs"/> 
 			  			</div>
 			  			
 
@@ -588,13 +604,7 @@ export default class Home extends Component {
 					   </a>
 					 </div>
 					 <div className="col-lg-6 col-md-12 col-sm-12">
-					   <div className="hash-map h-100">
-						 <iframe
-						   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.5289063403397!2d-122.03185048529588!3d37.37732237983374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb65cf6471b75%3A0x8a1d78f6bdfb3110!2sHashtag%20Systems%20Inc%20-%20Web%20development%20company!5e0!3m2!1sen!2sin!4v1599470282095!5m2!1sen!2sin"
-						   className="map-image"
-					 	   loading="lazy"
-						 ></iframe>
-					   </div>
+					    <Sunnyvalemap />
 					 </div>
 				   </div>
 				 </div>
@@ -671,13 +681,7 @@ export default class Home extends Component {
 					   </a>
 					 </div>
 					 <div className="col-lg-6 col-md-12 col-sm-12">
-					   <div className="hash-map h-100">
-						 <iframe
-						   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.428428473099!2d-121.89654558515603!3d37.332364645262906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcca46fe2751d%3A0xac22cd23368a6885!2s99%20S%20Almaden%20Blvd%20%23600%2C%20San%20Jose%2C%20CA%2095113%2C%20USA!5e0!3m2!1sen!2sin!4v1604491251986!5m2!1sen!2sin"
-						   className="map-image"
-						   loading="lazy"
-						 ></iframe>
-					   </div>
+					   <Sanjosemap />
 					 </div>
 				   </div>
 				 </div>
@@ -742,13 +746,7 @@ export default class Home extends Component {
 					   </a>
 					 </div>
 					 <div className="col-lg-6 col-md-12 col-sm-12">
-					   <div className="hash-map h-100">
-						 <iframe
-						   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.3362449183883!2d-117.22655108533353!3d32.8628218869136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc012bd2a9e523%3A0x9bf6efa5cf00201d!2s7770%20Regents%20Rd%2C%20San%20Diego%2C%20CA%2092122%2C%20USA!5e0!3m2!1sen!2sin!4v1599480789688!5m2!1sen!2sin"
-						   className="map-image"
-						   loading="lazy"
-						 ></iframe>
-					   </div>
+					  <Sandiegomap />
 					 </div>
 				   </div>
 				 </div>
@@ -824,13 +822,7 @@ export default class Home extends Component {
 					   </a>
 					 </div>
 					 <div className="col-lg-6 col-md-12 col-sm-12">
-					   <div className="hash-map h-100">
-						 <iframe
-						   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.262837900139!2d76.29727491404789!3d9.995134242854492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d1642da3df1%3A0xbe327fe6330aebf3!2sHashtag%20Systems%20India%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1599470444577!5m2!1sen!2sin"
-						   className="map-image"
-						   loading="lazy"
-						 ></iframe>
-					   </div>
+					   <Kochi />
 					 </div>
 				   </div>
 				 </div>
