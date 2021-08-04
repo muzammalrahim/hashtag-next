@@ -107,7 +107,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
 
           <div id="menu-container"></div>
           <Link href="/">
-            <a aria-current="page" class="navbar-brand active">
+            <a aria-current="page" className="active">
               <img
                 id="logo"
                 class="logo"
