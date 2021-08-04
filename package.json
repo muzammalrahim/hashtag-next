@@ -38,6 +38,7 @@
     "react-toastify": "^6.0.9",
     "sitemap": "^7.0.0",
     "slick-carousel": "^1.8.1",
-    "typeface-montserrat": "^1.1.13"
+    "typeface-montserrat": "^1.1.13",
+    "workbox-google-analytics": "^4.3.1"
   }
 }
