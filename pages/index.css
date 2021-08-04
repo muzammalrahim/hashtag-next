@@ -1,4 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet');*/
 @import "~typeface-montserrat/index.css";
 @import '../components/header/header.css';
 @import '../styles/globals.css';
@@ -71,8 +70,6 @@ a {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-
-
 
 .sub-text-above-main-title
 {
@@ -410,17 +407,6 @@ and (orientation : landscape) {
   -webkit-user-select: unset !important;
 }
 
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet');*/
-
-/*@media screen and (device-aspect-ratio: 2560/1440) {
-
-hiding this for build
-
-  .home-main .section-one-content{
-   min-height: 1500px !important;
- }} */
-
-/*style by sherin */
 .blockchain-dev,
 .filemaker-dev {
     margin-left: 12px;
