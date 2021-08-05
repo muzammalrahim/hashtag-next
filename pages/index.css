@@ -45,7 +45,7 @@
 /*slick slider*/
 @import "slick-carousel/slick/slick.css";
 @import './slick-slider.css';
-@import 'bootstrap-xxl/dist/css/bootstrap.css';
+@import 'bootstrap-xxl/dist/css/bootstrap.min.css';
 html {
   scroll-behavior: smooth;
 }

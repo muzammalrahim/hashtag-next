@@ -18,7 +18,7 @@
     "bootstrap-xxl": "^4.1.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.6.0",
-    "next": "^10.2.0",
+    "next": "^11.0.1",
     "next-cookies": "^2.0.3",
     "next-useragent": "^2.4.1",
     "node-forge": "^0.10.0",
