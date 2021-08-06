@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link'
 import Head from "next/head";
 // import "@fortawesome/fontawesome-free/css/all.min.css";
-dynamic(()=> import("@fortawesome/fontawesome-free/css/all.min.css"))
+// dynamic(()=> import("@fortawesome/fontawesome-free/css/all.min.css"))
 const Post = dynamic(()=> import("./post"))
 // import Post from "./post.jsx"
 import $ from 'jquery';
