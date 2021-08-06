@@ -1,4 +1,5 @@
 import './index.css';
+
 export function reportWebVitals(metric) {
   switch (metric.name) {
     case "FCP":
