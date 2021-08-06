@@ -387,8 +387,7 @@ export default class Home extends Component {
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
                         <img
-                          class="lazyload"
-                          className="equality-image"
+                          className="equality-image lazyload"
                           data-src="images/home/why-us/equality.svg"
                           alt="quality"
                         />
