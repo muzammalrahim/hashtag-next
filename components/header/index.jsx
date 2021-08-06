@@ -11,7 +11,7 @@ import $ from 'jquery';
 
 const Header = ({ title, description, keywords, canonical_tags }) => {
 
-  const [tabindex, setTabindex] = useState(true);
+  const [tabindex, setTabindex] = useState(false);
   const [Activetabindex, setActiveTabIndex] = useState(1);
 
   const getindex = () => {
@@ -39,9 +39,9 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
     }
   }, []);
 
-  useEffect(() => {
-    setTabindex(false);
-  },[tabindex])
+  // useEffect(() => {
+  //   setTabindex(!tabindex);
+  // },[tabindex])
 
   
 
@@ -56,9 +56,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
   let router = useRouter()
   let canonicalUrl = "https://www.hashtag-ca.com" + router.asPath
   let canonical = canonical_tags === null || canonical_tags === undefined ? canonicalUrl : canonical_tags;
-  console.log("local url", canonicalUrl)
-  console.log("backend url", canonical_tags)
-  console.log("original web url", canonical)
+  console.log("local url", tabindex)
   return (
     <header className="header-container">
       <Head>
@@ -100,7 +98,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
             aria-expanded="false"
             aria-label="Toggle navigation"
             onClick={(e) => {
-              e.preventDefault(), this.setState({ tabindex: !tabindex });
+               e.preventDefault(),setTabindex( !tabindex );
             }}
           >
             <span className="navbar-toggler-icon"></span>
