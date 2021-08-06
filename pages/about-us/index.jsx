@@ -5,7 +5,8 @@ import Footer from "../../components/footer/index.jsx";
 import Contact from "../../components/contacts/index.jsx";
 import DocumentMeta from "react-document-meta";
 require("typeface-montserrat");
-
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 import Axios from "axios";
 import https from "https";
@@ -102,6 +103,7 @@ export default class About extends Component {
                     <img
                       src="/images/about/web.svg"
                       alt="Full Stack Web Application Development"
+                      className="lazyload"
                     />
                   </div>
                   <div className="about-section-2-middle"></div>
@@ -124,6 +126,7 @@ export default class About extends Component {
                     <img
                       src="/images/about/value.svg"
                       alt="Full Stack Development Company"
+                      className="lazyload"
                     />
                   </div>
                   <div className="about-section-2-middle"></div>
@@ -147,6 +150,7 @@ export default class About extends Component {
                     <img
                       src="/images/about/global.svg"
                       alt="Full Stack Application"
+                      className="lazyload"
                     />
                   </div>
                   <div className="about-section-2-middle"></div>
@@ -216,6 +220,7 @@ export default class About extends Component {
                         <img
                           src="/images/about/bas.svg"
                           alt="About Our Company"
+                          className="lazyload"
                         />
                       </div>
                       <p className="title-level-6 title-level-mobile">
@@ -227,7 +232,11 @@ export default class About extends Component {
 
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
-                        <img src="/images/about/mobapp.svg" alt="mobile_app" />
+                        <img
+                          src="/images/about/mobapp.svg"
+                          alt="mobile_app"
+                          className="lazyload"
+                        />
                       </div>
                       <p className="title-level-6 title-level-mobile">
                         {" "}
@@ -239,7 +248,11 @@ export default class About extends Component {
 
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
-                        <img src="/images/about/uiux.svg" alt="ui/ux" />
+                        <img
+                          src="/images/about/uiux.svg"
+                          alt="ui/ux"
+                          className="lazyload"
+                        />
                       </div>
                       <p className="title-level-6 title-level-mobile">
                         {" "}
@@ -253,7 +266,11 @@ export default class About extends Component {
                   <div className="col-12 col-lg-3 col-md-6 hash-team-second-right">
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
-                        <img src="/images/about/webapp.svg" alt="webapp" />
+                        <img
+                          src="/images/about/webapp.svg"
+                          alt="webapp"
+                          className="lazyload"
+                        />
                       </div>
                       <p className="title-level-6 title-level-mobile">
                         Web App
@@ -264,7 +281,11 @@ export default class About extends Component {
 
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
-                        <img src="/images/about/qa.svg" alt="qa" />
+                        <img
+                          src="/images/about/qa.svg"
+                          alt="qa"
+                          className="lazyload"
+                        />
                       </div>
                       <p className="title-level-6 title-level-mobile">
                         {" "}
@@ -279,6 +300,7 @@ export default class About extends Component {
                         <img
                           src="/images/about/performance.svg"
                           alt="performance"
+                          className="lazyload"
                         />
                       </div>
                       <p className="title-level-6 title-level-mobile">
@@ -290,7 +312,11 @@ export default class About extends Component {
 
                     <div className="why-us-box last-why-us-box">
                       <div className="why-us-icon why-icon-mobile">
-                        <img src="/images/about/support.svg" alt="support" />
+                        <img
+                          src="/images/about/support.svg"
+                          alt="support"
+                          className="lazyload"
+                        />
                       </div>
                       <p className="title-level-6 title-level-mobile">
                         Customer
