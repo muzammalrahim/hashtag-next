@@ -2,12 +2,8 @@ import React, { Component } from "react";
 import Header from "../../components/header/index.jsx";
 import Footer from "../../components/footer/index.jsx";
 import Contact from "../../components/contacts/index.jsx";
-import DocumentMeta from "react-document-meta";
-import Link from "next/link";
-
-
-
-
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
@@ -62,12 +58,14 @@ export default class Careers extends Component {
                 <div className="container ">
                   <div className="row justify-content-center service-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                    <h1><span className="sub-text-above-main-title title-white">
-                        Join Us
-                      </span>
-                      <span className="main-title title-white d-block">
-                        Careers
-                      </span> </h1>
+                      <h1>
+                        <span className="sub-text-above-main-title title-white">
+                          Join Us
+                        </span>
+                        <span className="main-title title-white d-block">
+                          Careers
+                        </span>{" "}
+                      </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
                       <h2 className="bold-contents service-content-box pl-4">
@@ -109,7 +107,7 @@ export default class Careers extends Component {
                 <img
                   src="images/careers/job-interview-conversation.svg"
                   alt="interview-image"
-                  className="img-fluid shopify-image mobile-image-border storefront-img"
+                  className="img-fluid shopify-image mobile-image-border storefront-img lazyload"
                 />
               </div>
             </div>
@@ -143,7 +141,7 @@ export default class Careers extends Component {
                       <img
                         src="images/careers/software-engineers-d.svg"
                         alt="interview-image"
-                        className="img-fluid vacancy-section-image"
+                        className="img-fluid vacancy-section-image lazyload"
                       />
                       <p className=" title-black hashtag-careers-vacancies ">
                         EXPERIENCED PROFESSIONALS
@@ -183,7 +181,7 @@ export default class Careers extends Component {
                       <img
                         src="images/careers/fresher-developer.svg"
                         alt="interview-image"
-                        className="img-fluid vacancy-section-image"
+                        className="img-fluid vacancy-section-image lazyload"
                       />
                       <p className=" title-black hashtag-careers-vacancies">
                         FRESHERS AND ENTRY LEVEL PROFESSIONALS
@@ -217,87 +215,7 @@ export default class Careers extends Component {
                       </div>
                     </div>
                   </div>
-
-                  {/* <div className="col-lg-4 col-sm-6 mob-padding">
-                    <div className="what-we-do-border-style what-we-do-responsive">
-                        
-                        <h4 className="text-level-5 title-black"> Shopify Developer(Liquid)</h4>
-                         <p className="job-location"><img src="images/home/location.svg" alt="location" class="address-icons"/>Kochi, KL </p>
-                        <hr className="hashtag-underline ml-2"/>
-                        <p>Full-time </p>
-                    </div>
-                </div>*/}
-                  {/*<div className="d-none d-lg-none d-sm-block col-sm-6 mob-padding">
-                    <div className="what-we-do-border-style what-we-do-responsive">
-                        
-                        <h4 className="text-level-5 title-black">Snr. Wordpress Developer</h4>
-                         <p className="job-location"><img src="images/home/location.svg" alt="location" class="address-icons"/>Kochi, KL </p>
-                        <hr className="hashtag-underline ml-2"/>
-                        <p>Full-time </p>
-                    </div>
-                </div>*/}
                 </div>
-
-                {/* <div className="row second-row mt-5 section-2-row pl-3 pr-3">
-        <div className="d-block d-lg-block d-sm-none col-lg-4 col-sm-6 mob-padding">
-                    <div className="what-we-do-border-style what-we-do-responsive">
-                        
-                        <h4 className="text-level-5 title-black">Snr. Wordpress Developer</h4>
-                         <p className="job-location"><img src="images/home/location.svg" alt="location" class="address-icons"/>Kochi, KL </p>
-                        <hr className="hashtag-underline ml-2"/>
-                        <p>Full-time </p>
-                    </div>
-                </div>
-                <div className="col-lg-4 col-sm-6 mob-padding">
-                    <div className="what-we-do-border-style what-we-do-responsive">
-                         
-                        <h4 className="text-level-5 title-black"> Web UI Designer</h4>
-                         <p className="job-location"><img src="images/home/location.svg" alt="location" class="address-icons"/>CA, USA </p>
-                        <hr className="hashtag-underline ml-2"/>
-                        <p>Part-time </p>
-                    </div>
-                </div>
-                <div className="col-lg-4 col-sm-6 mob-padding">
-                    <div className="what-we-do-border-style what-we-do-responsive">
-                      
-                        <h4 className="text-level-5 title-black">PHP/Django Developer</h4>
-      <p className="job-location"><img src="images/home/location.svg" alt="location" class="address-icons"/>CA, USA </p>
-                        <hr className="hashtag-underline ml-2"/>
-                        
-                    </div>
-                </div>
-               <div className="d-none d-lg-none d-sm-block col-lg-4 col-sm-6 mob-padding">
-                    <div className="what-we-do-border-style what-we-do-responsive">
-                         
-                        <h4 className="text-level-5 title-black">Blockchain Developer</h4>
-                          <p className="job-location"><img src="images/home/location.svg" alt="location" class="address-icons"/>CA, USA </p>
-
-                        <hr className="hashtag-underline ml-2"/>
-                        
-                    </div>
-                </div>
-
-                  </div>*/}
-
-                {/* <div className="d-block d-lg-block d-sm-none row third-row mt-5 section-2-row pl-3 pr-3">
-        <div className="col-lg-4 col-sm-12 mob-padding">
-
-                     <div className="what-we-do-border-style what-we-do-responsive">
-
-                    <div className="what-we-do-border-style what-we-do-responsive">
-                         
-                        <h4 className="text-level-5 title-black">Blockchain Developer</h4>
-                          <p className="job-location"><img src="images/home/location.svg" alt="location" class="address-icons"/>CA, USA </p>
-
-                        <hr className="hashtag-underline ml-2"/>
-
-                        
-                 <h4 className="text-level-5 title-black">Quality Analyst</h4>
-                      <p className="job-location"><img src="images/home/location.svg" class="address-icons"/>Kochi, KL </p>
-                        <hr className="hashtag-underline ml-2"/>
-                        <p>2+ Year experience </p>
-                    </div>
-                </div></div>*/}
               </div>
             </div>
           </div>
@@ -337,7 +255,7 @@ export default class Careers extends Component {
                 <img
                   src="images/careers/coding-club.svg"
                   alt="coding-club"
-                  className="img-fluid shopify-image mobile-image-border"
+                  className="img-fluid shopify-image mobile-image-border lazyload"
                 />
               </div>
             </div>
@@ -367,6 +285,7 @@ export default class Careers extends Component {
                         <img
                           src="images/careers/orange-arrow.png"
                           alt="arrow"
+                          className="lazyload"
                         />
                       </p>
                     </p>
