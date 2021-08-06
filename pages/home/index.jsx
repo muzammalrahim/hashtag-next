@@ -7,9 +7,12 @@ import "slick-carousel/slick/slick.css";
 // import Header from '../../components/header/index.jsx';
 // import Footer from '../../components/footer/index.jsx';
 // import Contact from '../../components/contacts/index.jsx';
- import Carousel from '../../components/carousel/index.jsx';
+//  import Carousel from '../../components/carousel/index.jsx';
 // import Slide from 'react-reveal/Reveal';
 
+const Carousel = dynamic(() => import('../../components/carousel/index.jsx'), {
+  ssr: false,
+});
 const Header = dynamic(() => import("../../components/header/index.jsx"), {
   ssr: false,
 });
