@@ -6,7 +6,9 @@
 	color: #434343;
 }*/
 
-
+.filemaker-service .boxesHeight{
+    height: 8rem;
+}
 
 .s-file-maker h2{
 	font-size: 1.5rem;

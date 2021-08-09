@@ -311,7 +311,9 @@ and (orientation : landscape) {
    height: 245px !important;
 }
 .text-level-5 {
-    
     font-size: 42px;}
 
+    .boxesHeight{
+        height: 13rem !important;
+    }
 }

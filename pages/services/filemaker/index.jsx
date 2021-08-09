@@ -181,7 +181,7 @@ export default class filemakerPage extends Component {
                           data-src="/images/file-maker/feature1.svg"
                           alt="FileMaker Database Conversions"
                         />
-                        <p className="text-level-5 title-black">
+                        <p className="text-level-5 title-black boxesHeight">
                           FileMaker Database <br />
                           Conversions
                         </p>
@@ -196,7 +196,7 @@ export default class filemakerPage extends Component {
                           data-src="/images/file-maker/feature2.svg"
                           alt="Migration to Filemaker Pro"
                         />
-                        <p className="text-level-5 title-black">
+                        <p className="text-level-5 title-black boxesHeight">
                           Migration <br />to <br />
                           Filemaker Pro
                         </p>
@@ -211,7 +211,7 @@ export default class filemakerPage extends Component {
                           data-src="/images/file-maker/feature3.svg"
                           alt="FileMaker Go Mobile Development"
                         />
-                        <p className="text-level-5 title-black">
+                        <p className="text-level-5 title-black boxesHeight">
                           FileMaker Go Mobile <br />
                           Development
                         </p>
@@ -226,7 +226,7 @@ export default class filemakerPage extends Component {
                           data-src="/images/file-maker/feature4.svg"
                           alt="Build a new Filemaker Solution"
                         />
-                        <p className="text-level-5 title-black">
+                        <p className="text-level-5 title-black boxesHeight">
                           Build a new <br />
                           Filemaker <br />Solution
                         </p>
@@ -246,7 +246,7 @@ export default class filemakerPage extends Component {
                           data-src="/images/file-maker/feature5.svg"
                           alt="Application Optimization"
                         />
-                        <p className="text-level-5 title-black">
+                        <p className="text-level-5 title-black boxesHeight">
                         Application <br />
                           Optimization<br /><br /> 
                         </p>
@@ -261,7 +261,7 @@ export default class filemakerPage extends Component {
                           data-src="/images/file-maker/feature6.svg"
                           alt="Update and Ongoing Support"
                         />
-                        <p className="text-level-5 title-black">
+                        <p className="text-level-5 title-black boxesHeight">
                           Update & Ongoing <br />
                           Support<br /><br />
                         </p>
@@ -276,7 +276,7 @@ export default class filemakerPage extends Component {
                           data-src="/images/file-maker/feature7.svg"
                           alt="Third Party Solutions Integration"
                         />
-                        <p className="text-level-5 title-black">
+                        <p className="text-level-5 title-black boxesHeight">
                           Third Party <br />
                           Solutions Integration
                         </p>
@@ -459,4 +459,7 @@ export default class filemakerPage extends Component {
     );
   }
 }
+
+
+
 
