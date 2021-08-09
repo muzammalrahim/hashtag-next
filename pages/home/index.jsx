@@ -208,7 +208,7 @@ export default class Home extends Component {
                   <div className="col-lg-4 col-sm-12 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        className="lazyload"
+                        class="lazyload"
                         data-src="images/business-process-automation.svg"
                         alt="business-process-automation"
                       />
@@ -226,7 +226,7 @@ export default class Home extends Component {
                   <div className="col-lg-4 col-sm-12 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        className="lazyload"
+                        class="lazyload"
                         data-src="images/web-application.svg"
                         alt="web-application"
                       />
@@ -241,7 +241,7 @@ export default class Home extends Component {
                   <div className="col-lg-4 col-sm-12 mob-padding">
                     <div className="what-we-do-border-style ">
                       <img
-                        className="lazyload"
+                        class="lazyload"
                         data-src="images/e-commerce.svg"
                         alt="e-commerce"
                       />
@@ -259,7 +259,7 @@ export default class Home extends Component {
                   <div className="col-offset-lg-2 col-lg-4 col-sm-12 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        className="lazyload"
+                        class="lazyload"
                         data-src="images/Monitoring.svg"
                         alt="monitoring"
                       />
@@ -277,7 +277,7 @@ export default class Home extends Component {
                   <div className="col-offset-lg-2 col-lg-4 col-sm-12  mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        className="lazyload"
+                        class="lazyload"
                         data-src="images/Creative conceptual.svg"
                         alt="creative_design"
                       />
@@ -332,7 +332,7 @@ export default class Home extends Component {
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
                         <img
-                          className="lazyload"
+                          class="lazyload"
                           data-src="images/home/why-us/team.svg"
                           alt="team"
                         />
@@ -348,7 +348,7 @@ export default class Home extends Component {
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
                         <img
-                          className="lazyload"
+                          class="lazyload"
                           data-src="images/home/why-us/chat.svg"
                           alt="communication"
                         />
@@ -363,7 +363,7 @@ export default class Home extends Component {
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
                         <img
-                          className="lazyload"
+                          class="lazyload"
                           data-src="images/home/why-us/group.svg"
                           alt="agile"
                         />
@@ -396,7 +396,7 @@ export default class Home extends Component {
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
                         <img
-                          className="lazyload"
+                          class="lazyload"
                           data-src="images/home/why-us/process.svg"
                           alt="process"
                         />
@@ -412,7 +412,7 @@ export default class Home extends Component {
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
                         <img
-                          className="lazyload"
+                          class="lazyload"
                           data-src="images/home/why-us/support.svg"
                           alt="support"
                         />
