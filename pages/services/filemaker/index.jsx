@@ -1,15 +1,29 @@
-import React, { Component } from 'react';
-import Header from '../../../components/header/index.jsx';
-import Footer from '../../../components/footer/index.jsx';
-import Contact from '../../../components/contacts/index.jsx';
-import DocumentMeta from 'react-document-meta';
-import Underconstruction from '../../../components/under-construction';
-import Testimonial from '../../../components/testimonial/index.jsx';
-import Slide from 'react-reveal/Reveal';
+import React, { Component } from "react";
+
+import DocumentMeta from "react-document-meta";
+import Underconstruction from "../../../components/under-construction";
+import Testimonial from "../../../components/testimonial/index.jsx";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import Axios from "axios";
 import https from "https";
+
+import dynamic from "next/dynamic";
+import "lazysizes";
+// import a plugin
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
+
+const Contact = dynamic(
+  () => import("../../../components/contacts/index.jsx"),
+  { ssr: false }
+);
+const Header = dynamic(() => import("../../../components/header/index.jsx"), {
+  ssr: false,
+});
+const Footer = dynamic(() => import("../../../components/footer/index.jsx"), {
+  ssr: false,
+});
+const Slide = dynamic(() => import("react-reveal/Reveal"), { ssr: false });
 
 export async function getServerSideProps() {
   let data = [];
@@ -44,8 +58,6 @@ export default class filemakerPage extends Component {
     };
   }
   render() {
-    
-
     const settings = {
       infinite: true,
       slidesToShow: 1,
@@ -119,7 +131,8 @@ export default class filemakerPage extends Component {
                 <div className="col-md-12 col-lg-6">
                   <div className="img-blk">
                     <img
-                      src="/images/file-maker/about-img.svg"
+                      className="lazyload"
+                      data-src="/images/file-maker/about-img.svg"
                       alt="filemaker_img"
                     />
                   </div>
@@ -134,7 +147,7 @@ export default class filemakerPage extends Component {
                 <div className="row justify-content-center">
                   <div className="col-md-8">
                     <div className="project-blk-title">
-                      <p   className="main-title maintitle_two">
+                      <p className="main-title maintitle_two">
                         Committed to creating solutions that provide value for
                         customers.
                       </p>
@@ -169,7 +182,8 @@ export default class filemakerPage extends Component {
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/file-maker/feature1.svg"
+                          className="lazyload"
+                          data-src="/images/file-maker/feature1.svg"
                           alt="FileMaker Database Conversions"
                         />
                         <p className="text-level-5 title-black">
@@ -184,7 +198,8 @@ export default class filemakerPage extends Component {
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/file-maker/feature2.svg"
+                          className="lazyload"
+                          data-src="/images/file-maker/feature2.svg"
                           alt="Migration to Filemaker Pro"
                         />
                         <p className="text-level-5 title-black">
@@ -199,7 +214,8 @@ export default class filemakerPage extends Component {
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/file-maker/feature3.svg"
+                          className="lazyload"
+                          data-src="/images/file-maker/feature3.svg"
                           alt="FileMaker Go Mobile Development"
                         />
                         <p className="text-level-5 title-black">
@@ -214,7 +230,8 @@ export default class filemakerPage extends Component {
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/file-maker/feature4.svg"
+                          className="lazyload"
+                          data-src="/images/file-maker/feature4.svg"
                           alt="Build a new Filemaker Solution"
                         />
                         <p className="text-level-5 title-black">
@@ -234,7 +251,8 @@ export default class filemakerPage extends Component {
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/file-maker/feature5.svg"
+                          className="lazyload"
+                          data-src="/images/file-maker/feature5.svg"
                           alt="Application Optimization"
                         />
                         <p className="text-level-5 title-black">
@@ -249,7 +267,8 @@ export default class filemakerPage extends Component {
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/file-maker/feature6.svg"
+                          className="lazyload"
+                          data-src="/images/file-maker/feature6.svg"
                           alt="Update and Ongoing Support"
                         />
                         <p className="text-level-5 title-black">
@@ -264,7 +283,8 @@ export default class filemakerPage extends Component {
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/file-maker/feature7.svg"
+                          className="lazyload"
+                          data-src="/images/file-maker/feature7.svg"
                           alt="Third Party Solutions Integration"
                         />
                         <p className="text-level-5 title-black">
@@ -326,7 +346,7 @@ export default class filemakerPage extends Component {
                                               </div>
                                               <div className="logo-col">
                                                   <span>read more on</span>
-                                                  <a href="https://clutch.co/profile/hashtag-systems#review-607452" target="_blank"><img src="../images/wordpress/clutch.svg" alt="" /></a>
+                                                  <a href="https://clutch.co/profile/hashtag-systems#review-607452" target="_blank"><img data-src="../images/wordpress/clutch.svg" alt="" /></a>
                                               </div>
                                           </div>
                                         </div>
@@ -348,7 +368,7 @@ export default class filemakerPage extends Component {
                                               </div>
                                               <div className="logo-col">
                                                   <span>read more on</span>
-                                                  <a href="https://clutch.co/profile/hashtag-systems#review-1399788" target="_blank"><img src="../images/wordpress/clutch.svg" alt="" /></a>
+                                                  <a href="https://clutch.co/profile/hashtag-systems#review-1399788" target="_blank"><img data-src="../images/wordpress/clutch.svg" alt="" /></a>
                                               </div>
                                           </div>
                                         </div>
@@ -370,7 +390,7 @@ export default class filemakerPage extends Component {
                                               </div>
                                               <div className="logo-col">
                                                   <span>read more on</span>
-                                                  <a href="https://clutch.co/profile/hashtag-systems#review-819638" target="_blank"><img src="../images/wordpress/clutch.svg" alt="" /></a>
+                                                  <a href="https://clutch.co/profile/hashtag-systems#review-819638" target="_blank"><img data-src="../images/wordpress/clutch.svg" alt="" /></a>
                                               </div>
                                           </div>
                                         </div>
@@ -385,8 +405,9 @@ export default class filemakerPage extends Component {
                       data-clutchcompany-id="62314"
                     >
                       <iframe
+                        className="lazyload"
                         width="100%"
-                        src="https://widget.clutch.co/widgets/get/4?ref_domain=165.22.214.227&uid=62314&ref_path=/services/filemaker"
+                        data-src="https://widget.clutch.co/widgets/get/4?ref_domain=165.22.214.227&uid=62314&ref_path=/services/filemaker"
                         height="700px"
                         scrolling="no"
                       ></iframe>
@@ -417,7 +438,8 @@ export default class filemakerPage extends Component {
                       Machado
                     </p>
                     <img
-                      src="../images/file-maker/man-profile.svg"
+                      className="lazyload"
+                      data-src="../images/file-maker/man-profile.svg"
                       alt="male profile"
                     />
                   </div>
@@ -426,7 +448,8 @@ export default class filemakerPage extends Component {
                   <div className="expert-col">
                     <p>Selva V</p>
                     <img
-                      src="../images/file-maker/woman-profile.svg"
+                      className="lazyload"
+                      data-src="../images/file-maker/woman-profile.svg"
                       alt="female profile"
                     />
                   </div>
@@ -449,4 +472,3 @@ export default class filemakerPage extends Component {
     );
   }
 }
-

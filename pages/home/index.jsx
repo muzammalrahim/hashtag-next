@@ -2,13 +2,6 @@ import React, { Component } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-
-// import Header from '../../components/header/index.jsx';
-// import Footer from '../../components/footer/index.jsx';
-// import Contact from '../../components/contacts/index.jsx';
-//  import Carousel from '../../components/carousel/index.jsx';
-// import Slide from 'react-reveal/Reveal';
 
 const Carousel = dynamic(() => import('../../components/carousel/index.jsx'), {
   ssr: false,
@@ -215,7 +208,7 @@ export default class Home extends Component {
                   <div className="col-lg-4 col-sm-12 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        class="lazyload"
+                        className="lazyload"
                         data-src="images/business-process-automation.svg"
                         alt="business-process-automation"
                       />
@@ -233,7 +226,7 @@ export default class Home extends Component {
                   <div className="col-lg-4 col-sm-12 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        class="lazyload"
+                        className="lazyload"
                         data-src="images/web-application.svg"
                         alt="web-application"
                       />
@@ -248,7 +241,7 @@ export default class Home extends Component {
                   <div className="col-lg-4 col-sm-12 mob-padding">
                     <div className="what-we-do-border-style ">
                       <img
-                        class="lazyload"
+                        className="lazyload"
                         data-src="images/e-commerce.svg"
                         alt="e-commerce"
                       />
@@ -266,7 +259,7 @@ export default class Home extends Component {
                   <div className="col-offset-lg-2 col-lg-4 col-sm-12 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        class="lazyload"
+                        className="lazyload"
                         data-src="images/Monitoring.svg"
                         alt="monitoring"
                       />
@@ -284,7 +277,7 @@ export default class Home extends Component {
                   <div className="col-offset-lg-2 col-lg-4 col-sm-12  mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        class="lazyload"
+                        className="lazyload"
                         data-src="images/Creative conceptual.svg"
                         alt="creative_design"
                       />
@@ -339,7 +332,7 @@ export default class Home extends Component {
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
                         <img
-                          class="lazyload"
+                          className="lazyload"
                           data-src="images/home/why-us/team.svg"
                           alt="team"
                         />
@@ -355,7 +348,7 @@ export default class Home extends Component {
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
                         <img
-                          class="lazyload"
+                          className="lazyload"
                           data-src="images/home/why-us/chat.svg"
                           alt="communication"
                         />
@@ -370,7 +363,7 @@ export default class Home extends Component {
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
                         <img
-                          class="lazyload"
+                          className="lazyload"
                           data-src="images/home/why-us/group.svg"
                           alt="agile"
                         />
@@ -403,7 +396,7 @@ export default class Home extends Component {
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
                         <img
-                          class="lazyload"
+                          className="lazyload"
                           data-src="images/home/why-us/process.svg"
                           alt="process"
                         />
@@ -419,7 +412,7 @@ export default class Home extends Component {
                     <div className="why-us-box">
                       <div className="why-us-icon why-icon-mobile">
                         <img
-                          class="lazyload"
+                          className="lazyload"
                           data-src="images/home/why-us/support.svg"
                           alt="support"
                         />
@@ -462,42 +455,42 @@ export default class Home extends Component {
               <div className="row justify-content-center mt-2">
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+              
                     data-src="images/home/html5.svg"
                     alt="html5"
-                    className="img-fluid mx-auto my-auto "
+                    className="img-fluid mx-auto my-auto  lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+             
                     data-src="images/home/mysql.svg"
                     alt="mysql"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+                
                     data-src="images/home/amazon.svg"
                     alt="amazon"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+               
                     data-src="images/home/shopify.svg"
                     alt="shopify"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+              
                     data-src="images/home/php.svg"
                     alt="php"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
               </div>
@@ -505,42 +498,42 @@ export default class Home extends Component {
               <div className="row justify-content-center  mt-2">
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+                
                     data-src="images/home/bootstrap.svg"
                     alt="bootstrap"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+                
                     data-src="images/home/node-js.svg"
                     alt="node_js"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+            
                     data-src="images/home/angular-js.svg"
                     alt="angular_js"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload" 
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+                
                     data-src="images/home/ethereum.svg"
                     alt="ethereum"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+              
                     data-src="images/home/react-js.svg"
                     alt="react_js"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
               </div>
@@ -548,42 +541,42 @@ export default class Home extends Component {
               <div className="row justify-content-center  mt-2">
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+            
                     data-src="images/home/wordpress.svg"
                     alt="wordpress"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+                
                     data-src="images/home/jquery.svg"
                     alt="jquery"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+        
                     data-src="images/home/codeigniter.svg"
                     alt="codeigniter"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+              
                     data-src="images/home/django.svg"
                     alt="django"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+             
                     data-src="images/home/python.svg"
                     alt="python"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
               </div>
@@ -591,42 +584,41 @@ export default class Home extends Component {
               <div className="row justify-content-center  mt-2">
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+           
                     data-src="images/home/mongodb.svg"
                     alt="mongodb"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5 ">
                   <img
-                    class="lazyload"
+          
                     data-src="images/home/truffle.svg"
                     alt="truffle"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
                     data-src="images/home/solidity.svg"
                     alt="solidity"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+            
                     data-src="images/home/docker.svg"
                     alt="docker"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                    class="lazyload"
+           
                     data-src="images/home/ionic.svg"
                     alt="ionic"
-                    className="img-fluid mx-auto my-auto"
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
               </div>
@@ -742,10 +734,10 @@ export default class Home extends Component {
                       <div className="col-lg-6 col-md-12 col-sm-12">
                         <h5 className="address-content">
                           <img
-                            class="lazyload"
+                      
                             data-src="images/home/location.svg"
                             alt="location"
-                            className="address-icons"
+                            className="address-icons lazyload"
                           />{" "}
                           <span className="address-content">Sunnyvale</span>
                         </h5>
@@ -759,20 +751,20 @@ export default class Home extends Component {
                           </address>
                         </h5>
                         <img
-                          class="lazyload"
+                   
                           data-src="images/home/phone.svg"
                           alt="phone"
-                          className="address-icons"
+                          className="address-icons lazyload"
                         />{" "}
                         <span className="address-content">PHONE</span>
                         <p className="address-text">
                           <a href="tel:+1-408-596-2525">+1 408 596 2525</a>
                         </p>
                         <img
-                          class="lazyload"
+          
                           data-src="images/home/email.svg"
                           alt="email"
-                          className="address-icons"
+                          className="address-icons lazyload"
                         />{" "}
                         <span className="address-content">EMAIL</span>
                         <p className="address-text">
@@ -790,10 +782,9 @@ export default class Home extends Component {
                           target="_blank"
                         >
                           <img
-                            class="lazyload"
                             data-src="images/home/linkedin.svg"
                             alt="linkedin"
-                            className="pl-2 pr-2 contact-linkedin"
+                            className="pl-2 pr-2 contact-linkedin lazyload"
                           />
                         </a>
                         <a
@@ -801,9 +792,8 @@ export default class Home extends Component {
                           target="_blank"
                         >
                           <img
-                            class="lazyload"
                             data-src="images/home/facebook-logo.svg"
-                            className="conatct-fb"
+                            className="conatct-fb lazyload"
                             alt="facebook"
                           />
                         </a>
@@ -830,10 +820,9 @@ export default class Home extends Component {
                       <div className="col-lg-6 col-md-12 col-sm-12">
                         <h5 className="address-content">
                           <img
-                            class="lazyload"
                             data-src="images/home/location.svg"
                             alt="location"
-                            className="address-icons"
+                            className="address-icons lazyload"
                           />{" "}
                           <span className="address-content">San Jose</span>
                         </h5>
@@ -846,20 +835,18 @@ export default class Home extends Component {
                           <br />
                         </h5>
                         <img
-                          class="lazyload"
                           data-src="images/home/phone.svg"
                           alt="phone"
-                          className="address-icons"
+                          className="address-icons lazyload"
                         />{" "}
                         <span className="address-content">PHONE</span>
                         <p className="address-text">
                           <a href="tel:+1-408-404-7323">+1 408 404 7323</a>
                         </p>
                         <img
-                          class="lazyload"
                           data-src="images/home/email.svg"
                           alt="email"
-                          className="address-icons"
+                          className="address-icons lazyload"
                         />{" "}
                         <span className="address-content">EMAIL</span>
                         <p className="address-text">
@@ -876,9 +863,8 @@ export default class Home extends Component {
                           target="_blank"
                         >
                           <img
-                            class="lazyload"
                             data-src="images/home/linkedin.svg"
-                            className="pl-2 pr-2 contact-linkedin"
+                            className="pl-2 pr-2 contact-linkedin lazyload"
                             alt="linkedin"
                           />
                         </a>
@@ -887,9 +873,8 @@ export default class Home extends Component {
                           target="_blank"
                         >
                           <img
-                            class="lazyload"
                             data-src="images/home/facebook-logo.svg"
-                            className="conatct-fb"
+                            className="conatct-fb lazyload"
                             alt="facebook"
                           />
                         </a>
@@ -917,10 +902,9 @@ export default class Home extends Component {
                       <div className="col-lg-6 col-md-12 col-sm-12">
                         <h5 className="class-content">
                           <img
-                            class="lazyload"
                             data-src="images/home/location.svg"
                             alt="location"
-                            className="address-icons"
+                            className="address-icons lazyload"
                           />{" "}
                           <span className="address-content">San Diego</span>
                         </h5>
@@ -931,10 +915,9 @@ export default class Home extends Component {
                           USA
                         </h5>
                         <img
-                          class="lazyload"
                           data-src="images/home/email.svg"
                           alt="email"
-                          className="address-icons"
+                          className="address-icons lazyload"
                         />{" "}
                         <span className="address-content">EMAIL</span>
                         <p className="address-text">
@@ -951,10 +934,9 @@ export default class Home extends Component {
                           target="_blank"
                         >
                           <img
-                            class="lazyload"
                             data-src="images/home/linkedin.svg"
                             alt="linkedin"
-                            className="pl-2 pr-2 contact-linkedin"
+                            className="pl-2 pr-2 contact-linkedin lazyload"
                           />
                         </a>
                         <a
@@ -962,9 +944,8 @@ export default class Home extends Component {
                           target="_blank"
                         >
                           <img
-                            class="lazyload"
                             data-src="images/home/facebook-logo.svg"
-                            className="conatct-fb"
+                            className="conatct-fb lazyload"
                             alt="facebook"
                           />
                         </a>
@@ -991,10 +972,9 @@ export default class Home extends Component {
                       <div className="col-lg-6 col-md-12 col-sm-12">
                         <h5 className="address-content">
                           <img
-                            class="lazyload"
                             data-src="images/home/location.svg"
                             alt="location"
-                            className="address-icons"
+                            className="address-icons lazyload"
                           />{" "}
                           <span className="address-content">Kochi</span>
                         </h5>
@@ -1006,10 +986,9 @@ export default class Home extends Component {
                           <br />
                         </h5>
                         <img
-                          class="lazyload"
                           data-src="images/home/phone.svg"
                           alt="phone"
-                          className="address-icons"
+                          className="address-icons lazyload"
                         />{" "}
                         <span className="address-content">PHONE</span>
                         <p className="address-text">
@@ -1036,9 +1015,8 @@ export default class Home extends Component {
                           target="_blank"
                         >
                           <img
-                            class="lazyload"
                             data-src="images/home/linkedin.svg"
-                            className="pl-2 pr-2 contact-linkedin"
+                            className="pl-2 pr-2 contact-linkedin lazyload"
                             alt="linkedin"
                           />
                         </a>
@@ -1047,9 +1025,9 @@ export default class Home extends Component {
                           target="_blank"
                         >
                           <img
-                            class="lazyload"
+                            
                             data-src="images/home/facebook-logo.svg"
-                            className="conatct-fb"
+                            className="conatct-fb lazyload"
                             alt="facebook"
                           />
                         </a>
