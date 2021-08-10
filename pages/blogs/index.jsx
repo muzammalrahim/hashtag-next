@@ -290,7 +290,18 @@ export default class Blog extends Component {
                         id="search-4"
                         className="widget widget_search posts_holder"
                       >
-                        <form
+                     
+                      </div>
+                      <BlogRecentPosts></BlogRecentPosts>
+                      <BlogCategories></BlogCategories>
+                      <BlogPostFeatured />
+                    </aside>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form
                           role="search"
                           id="searchform"
                           className="searchform"
@@ -309,7 +320,7 @@ export default class Blog extends Component {
                             />
 
 
-                        <InputCom />
+                     
                             <button type="submit" name="search-submit">
                               <i
                                 className="fa fa-search"
@@ -319,17 +330,6 @@ export default class Blog extends Component {
                           </div>
             
                         </form>
-                      </div>
-                      <BlogRecentPosts></BlogRecentPosts>
-                      <BlogCategories></BlogCategories>
-                      <BlogPostFeatured />
-                    </aside>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
         </section>
         <div className="mob-visible"></div>
         <Footer></Footer>
