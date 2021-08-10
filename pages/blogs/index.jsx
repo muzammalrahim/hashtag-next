@@ -308,6 +308,8 @@ export default class Blog extends Component {
                               onChange={this.handleChange}
                             />
 
+
+
                             <button type="submit" name="search-submit">
                               <i
                                 className="fa fa-search"
@@ -315,6 +317,8 @@ export default class Blog extends Component {
                               ></i>
                             </button>
                           </div>
+                          <input id="name" type="text" placeholder="sss" autocomplete="name" required />
+                          <input id="name" type="text" placeholder="handlerr search" autocomplete="name" required  onChange={this.handleChange} />
                         </form>
                       </div>
                       <BlogRecentPosts></BlogRecentPosts>
