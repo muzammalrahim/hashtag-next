@@ -319,6 +319,32 @@ export default class Blog extends Component {
                       <BlogRecentPosts></BlogRecentPosts>
                       <BlogCategories></BlogCategories>
                       <BlogPostFeatured />
+                      <form
+                          role="search"
+                          id="searchform"
+                          className="searchform"
+                          onSubmit={this.onSubmit}
+                        >
+                          <div>
+                            <input
+                              type="text"
+                              name="s"
+                              id="blog-search"
+                              placeholder="Search"
+                              className=""
+                              placeholder="Search for..."
+                              value={this.state.search_val}
+                              onChange={this.handleChange}
+                            />
+                            <button type="submit" name="search-submit">
+                              <i
+                                className="fa fa-search"
+                                aria-hidden="true"
+                              ></i>
+                            </button>
+                          </div>
+            
+                        </form>
                     </aside>
                   </div>
                 </div>
