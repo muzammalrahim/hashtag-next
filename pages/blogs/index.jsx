@@ -17,7 +17,7 @@ import BlogPostFeatured from "../../components/post-featured";
 require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
-
+import Input from "./Input"
 export async function getServerSideProps() {
   let data = [];
 
@@ -317,8 +317,7 @@ export default class Blog extends Component {
                               ></i>
                             </button>
                           </div>
-                          <input id="name" type="text" placeholder="sss" autocomplete="name" required />
-                          <input id="name" type="text" placeholder="handlerr search" autocomplete="name" required  onChange={this.handleChange} />
+                <Input />
                         </form>
                       </div>
                       <BlogRecentPosts></BlogRecentPosts>
