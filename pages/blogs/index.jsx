@@ -17,7 +17,7 @@ import BlogPostFeatured from "../../components/post-featured";
 require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
-import Input from "./Input"
+import InputCom from "./InputCom"
 export async function getServerSideProps() {
   let data = [];
 
@@ -317,7 +317,7 @@ export default class Blog extends Component {
                               ></i>
                             </button>
                           </div>
-                <Input />
+            
                         </form>
                       </div>
                       <BlogRecentPosts></BlogRecentPosts>
@@ -329,6 +329,7 @@ export default class Blog extends Component {
               </div>
             </div>
           </div>
+          <InputCom />
         </section>
         <div className="mob-visible"></div>
         <Footer></Footer>
