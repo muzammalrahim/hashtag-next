@@ -17,7 +17,6 @@ import BlogPostFeatured from "../../components/post-featured";
 require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
-import InputCom from "./InputCom"
 export async function getServerSideProps() {
   let data = [];
 
@@ -299,7 +298,7 @@ export default class Blog extends Component {
                           <div>
                             <input
                               type="text"
-                              name="Search"
+                              name="s"
                               id="blog-search"
                               placeholder="Search"
                               className=""
@@ -307,9 +306,6 @@ export default class Blog extends Component {
                               value={this.state.search_val}
                               onChange={this.handleChange}
                             />
-
-
-                        <InputCom />
                             <button type="submit" name="search-submit">
                               <i
                                 className="fa fa-search"
