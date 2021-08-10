@@ -45,7 +45,7 @@ export default class DatabasePage extends Component {
       
         let { data } = this.state;
     return (
-      <div className="contact-main" id="Dbdevbanner">
+      <div className="contact-main DatabaseAndDev" id="Dbdevbanner">
         <div className="wp-main" id="wp-main">
           <Header
             title={data.data.title}
