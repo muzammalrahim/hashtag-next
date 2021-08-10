@@ -1,6 +1,6 @@
 import React, { Component, useEffect } from "react";
-import Header from "../../components/header/index.jsx";
-import Footer from "../../components/footer/index.jsx";
+
+
 // import Underconstruction from '../../../components/under-construction/index.jsx';
 import Contact from "../../components/contacts/index.jsx";
 import DocumentMeta from "react-document-meta";
@@ -9,11 +9,24 @@ import axios from "axios";
 import * as config from "../../config.js";
 import Slide from "react-reveal/Reveal";
 import Link from 'next/link'
-
+import dynamic from "next/dynamic";
 require("typeface-montserrat");
 // require('paroller.js');
 import Axios from "axios";
 import https from "https";
+
+import "lazysizes";
+// import a plugin
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
+
+
+
+const Header = dynamic(() => import("../../components/header/index.jsx"), {
+  ssr: false,
+});
+const Footer = dynamic(() => import("../../components/footer/index.jsx"), {
+  ssr: false,
+});
 
 export async function getServerSideProps() {
   let data = [];
@@ -134,7 +147,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-maikeinc-background.png') center -32px / cover repeat",
+                  "url('/images/case-studies/Parallax-maikeinc-background.webp') center -32px / cover repeat",
                 backgroundSize: "cover",
               }}
             >
@@ -157,40 +170,41 @@ export default class Speakinc extends Component {
                           <ul>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/maikeinc/tech-icon7.svg"
+                                <img  class="lazyload"
+                                  
+                                  data-src="/images/case-studies/maikeinc/tech-icon7.svg"
                                   alt="Python"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/maikeinc/tech-icon1.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/maikeinc/tech-icon1.svg"
                                   alt="Django"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/maikeinc/tech-icon3.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/maikeinc/tech-icon3.svg"
                                   alt="Angular"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/maikeinc/tech-icon4.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/maikeinc/tech-icon4.svg"
                                   alt="Bootstrap"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/speakinc/tech-icon2.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/speakinc/tech-icon2.svg"
                                   alt="MySQL"
                                 />
                               </div>
@@ -217,7 +231,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-speakinc-Background.png') center -17px / cover repeat",
+                  "url('/images/case-studies/Parallax-speakinc-Background.webp') center -17px / cover repeat",
               }}
             >
               <div className="container">
@@ -239,40 +253,40 @@ export default class Speakinc extends Component {
                           <ul>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/speakinc/tech-icon7.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/speakinc/tech-icon7.svg"
                                   alt="Python"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/speakinc/tech-icon1.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/speakinc/tech-icon1.svg"
                                   alt="Django"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/speakinc/tech-icon4.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/speakinc/tech-icon4.svg"
                                   alt="Filemaker"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/speakinc/tech-icon2.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/speakinc/tech-icon2.svg"
                                   alt="MySQL"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/speakinc/tech-icon6.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/speakinc/tech-icon6.svg"
                                   alt="Hubspot"
                                 />
                               </div>
@@ -299,7 +313,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-megalot-background.png') center -25px / cover repeat",
+                  "url('/images/case-studies/Parallax-megalot-background.webp') center -25px / cover repeat",
               }}
             >
               <div className="container">
@@ -326,48 +340,48 @@ export default class Speakinc extends Component {
                           <ul>
                             <li>
                               <div className="ico-blk small">
-                                <img
-                                  src="/images/case-studies/megalot/tech-icon1.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/megalot/tech-icon1.svg"
                                   alt="Web3"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk small">
-                                <img
-                                  src="/images/case-studies/megalot/tech-icon2.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/megalot/tech-icon2.svg"
                                   alt="HTML"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk small">
-                                <img
-                                  src="/images/case-studies/megalot/tech-icon3.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/megalot/tech-icon3.svg"
                                   alt="JS"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk small">
-                                <img
-                                  src="/images/case-studies/megalot/tech-icon4.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/megalot/tech-icon4.svg"
                                   alt="Metamask"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/megalot/tech-icon5.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/megalot/tech-icon5.svg"
                                   alt="Solidity"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/megalot/tech-icon6.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/megalot/tech-icon6.svg"
                                   alt="Ethereum"
                                 />
                               </div>
@@ -394,7 +408,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-filemaker-Background.jpg') center -21px / cover repeat",
+                  "url('/images/case-studies/Parallax-filemaker-Background.webp') center -21px / cover repeat",
                 backgroundSize: "cover",
               }}
             >
@@ -417,24 +431,24 @@ export default class Speakinc extends Component {
                           <ul>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/filemaker/intro-logo-1.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/filemaker/intro-logo-1.svg"
                                   alt="FileMaker"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/filemaker/intro-logo-2.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/filemaker/intro-logo-2.svg"
                                   alt="MySQL"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/filemaker/intro-logo-4.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/filemaker/intro-logo-4.svg"
                                   alt="Hubspot"
                                 />
                               </div>
@@ -461,7 +475,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-easylevel-background.jpg') center -19px / cover repeat",
+                  "url('/images/case-studies/Parallax-easylevel-background.webp') center -19px / cover repeat",
                 backgroundSize: "cover",
               }}
             >
@@ -485,24 +499,24 @@ export default class Speakinc extends Component {
                           <ul>
                             <li>
                               <div className="ico-blk small">
-                                <img
-                                  src="/images/case-studies/easylevel/tech-icon1.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/easylevel/tech-icon1.svg"
                                   alt="Web3"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/easylevel/tech-icon2.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/easylevel/tech-icon2.svg"
                                   alt="Ethereum"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/easylevel/tech-icon5.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/easylevel/tech-icon5.svg"
                                   alt="Solidity"
                                 />
                               </div>
@@ -529,7 +543,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-multi-token-Background.jpg') center -40px / cover repeat",
+                  "url('/images/case-studies/Parallax-multi-token-Background.webp') center -40px / cover repeat",
                 backgroundSize: "cover",
               }}
             >
@@ -556,24 +570,24 @@ export default class Speakinc extends Component {
                           <ul>
                             <li>
                               <div className="ico-blk small">
-                                <img
-                                  src="/images/case-studies/multitoken/tech-icon1.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/multitoken/tech-icon1.svg"
                                   alt="Web3"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/multitoken/tech-icon2.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/multitoken/tech-icon2.svg"
                                   alt="Ethereum"
                                 />
                               </div>
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img
-                                  src="/images/case-studies/multitoken/tech-icon5.svg"
+                                <img  class="lazyload"
+                                  data-src="/images/case-studies/multitoken/tech-icon5.svg"
                                   alt="Solidity"
                                 />
                               </div>
