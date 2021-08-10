@@ -309,7 +309,7 @@ export default class Blog extends Component {
                             />
 
 
-
+                        <InputCom />
                             <button type="submit" name="search-submit">
                               <i
                                 className="fa fa-search"
@@ -329,7 +329,7 @@ export default class Blog extends Component {
               </div>
             </div>
           </div>
-          <InputCom />
+          
         </section>
         <div className="mob-visible"></div>
         <Footer></Footer>
