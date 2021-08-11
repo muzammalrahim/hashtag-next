@@ -3,16 +3,15 @@ import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router';
 import Link from 'next/link'
 import Head from "next/head";
-import Script from 'next/script'
 // import "@fortawesome/fontawesome-free/css/all.min.css";
-// dynamic(()=> import("@fortawesome/fontawesome-free/css/all.min.css"))
+dynamic(()=> import("@fortawesome/fontawesome-free/css/all.min.css"))
 const Post = dynamic(()=> import("./post"))
 // import Post from "./post.jsx"
 import $ from 'jquery';
 
 const Header = ({ title, description, keywords, canonical_tags }) => {
 
-  const [tabindex, setTabindex] = useState(false);
+  const [tabindex, setTabindex] = useState(true);
   const [Activetabindex, setActiveTabIndex] = useState(1);
 
   const getindex = () => {
@@ -40,9 +39,9 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
     }
   }, []);
 
-  // useEffect(() => {
-  //   setTabindex(!tabindex);
-  // },[tabindex])
+  useEffect(() => {
+    setTabindex(false);
+  },[tabindex])
 
   
 
@@ -57,7 +56,9 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
   let router = useRouter()
   let canonicalUrl = "https://www.hashtag-ca.com" + router.asPath
   let canonical = canonical_tags === null || canonical_tags === undefined ? canonicalUrl : canonical_tags;
-  console.log("local url", tabindex)
+  console.log("local url", canonicalUrl)
+  console.log("backend url", canonical_tags)
+  console.log("original web url", canonical)
   return (
     <header className="header-container">
       <Head>
@@ -73,20 +74,6 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <link rel="canonical" href={canonical}></link>
-        {/* <Script
-         dangerouslySetInnerHTML={{
-          __html: `
-                              window.dataLayer = window.dataLayer || [];
-                              function gtag(){dataLayer.push(arguments);}
-                              gtag('js', new Date());
-                              gtag('config', 'UA-78643548-1', {
-                              page_path: window.location.pathname,
-                              });
-                           `,
-        }}
-       
-        strategy="lazyOnload"
-      /> */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -113,7 +100,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
             aria-expanded="false"
             aria-label="Toggle navigation"
             onClick={(e) => {
-               e.preventDefault(),setTabindex( !tabindex );
+              e.preventDefault(), this.setState({ tabindex: !tabindex });
             }}
           >
             <span className="navbar-toggler-icon"></span>
