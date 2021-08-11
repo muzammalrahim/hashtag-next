@@ -235,6 +235,9 @@
     #Dbdevbanner .contact-db-ovrlp .contact-db-ovrlp-btn {
         width: 225px;
     }
+    .DatabaseAndDev .form-button{
+        padding-left: 23px!important;
+    }
 }
 
 @media (min-width: 1024px) {
