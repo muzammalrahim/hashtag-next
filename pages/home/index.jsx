@@ -7,7 +7,7 @@ const Carousel = dynamic(() => import('../../components/carousel/index.jsx'), {
   ssr: false,
 });
 const Header = dynamic(() => import("../../components/header/index.jsx"), {
- 
+  // ssr: true,
 });
 const Footer = dynamic(() => import("../../components/footer/index.jsx"), {
   ssr: false,
@@ -33,7 +33,7 @@ export default class Home extends Component {
   }
   render() {
     let { tabindex } = this.state;
-
+     console.log('header properties', this.props.title)
     return (
       <div className="home-main" id="home-main">
         {/*<div className="container-fluid section-one-bg p-0">*/}

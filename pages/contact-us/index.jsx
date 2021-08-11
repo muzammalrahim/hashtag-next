@@ -13,7 +13,7 @@ import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 
 const Contactusform = dynamic(() => import('../../components/contactusPage/index.jsx'), { ssr: false,});
-const Header = dynamic(() => import("../../components/header/index.jsx"), {ssr: false});
+const Header = dynamic(() => import("../../components/header/index.jsx"));
 const Footer = dynamic(() => import("../../components/footer/index.jsx"), { ssr: false});
 
 
