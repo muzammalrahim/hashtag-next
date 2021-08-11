@@ -309,7 +309,18 @@
 }
 
 
+.filemaker-service .giveHeightToTestimonial{
+	height: 700px;
+}
 
+/* .testimonial-wrap iframe.giveHeightToTestimonial div#tns1-ow {
+    height: 1135px !important;
+} */
+
+.filemaker-service .mainSection
+{
+	width: fit-content;
+}
 
 @media(min-width: 2500px) {
 	.case-study.filemaker-service .common-title-blk{min-height: 700px !important;}
@@ -379,6 +390,8 @@
 	.expert-col img{width: 100%;}
 	.expert-col h6{left: -35px;bottom: 40px;font-size:20px;}
 	.testimonial-wrap::after{right: 0px;}
+	
+
 }
 
 @media(max-width: 767px) {
@@ -410,3 +423,65 @@
 	.testimonial-blk{height: 1570px;}
 }
 	
+
+@media(max-width: 900px)
+{
+	.filemaker-service .giveHeightToTestimonial{
+
+		height: 770px;
+	}
+}
+
+@media(max-width: 800px)
+{
+	.filemaker-service .giveHeightToTestimonial{
+
+		height: 950px;
+	}
+}
+@media(max-width: 700px)
+{
+	.filemaker-service .giveHeightToTestimonial{
+
+		height: 1000px;
+	}
+}
+@media(max-width: 500px)
+{
+	.filemaker-service .giveHeightToTestimonial{
+
+		height: 1100px;
+	}
+}
+
+@media(max-width: 420px)
+{
+	.testimonial-blk {
+		height: 1534px;
+	}
+	.filemaker-service .giveHeightToTestimonial{
+
+		height: 74rem;
+	}
+}
+@media(max-width: 380px)
+{
+	.testimonial-blk {
+		height: 1634px;
+	}
+	.filemaker-service .giveHeightToTestimonial{
+
+		height: 78rem;
+	}
+}
+@media(max-width: 350px)
+{
+	.testimonial-blk {
+		height: 1734px;
+	}
+	.filemaker-service .giveHeightToTestimonial{
+
+		height: 86.5rem;
+	}
+	
+}
