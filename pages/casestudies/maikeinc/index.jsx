@@ -1,25 +1,30 @@
-import React, { Component } from 'react';
-import Header from '../../../components/header/index.jsx';
+import React, { Component } from "react";
+import Header from "../../../components/header/index.jsx";
 
-import Underconstruction from '../../../components/under-construction/index.jsx';
+import Underconstruction from "../../../components/under-construction/index.jsx";
 
-import DocumentMeta from 'react-document-meta';
-import $ from 'jquery';
+import DocumentMeta from "react-document-meta";
+import $ from "jquery";
 import dynamic from "next/dynamic";
-import axios from 'axios';
-import * as config from '../../../config.js';
+import axios from "axios";
+import * as config from "../../../config.js";
 
 const Slider = dynamic(() => import("react-slick"), {});
 const Slide = dynamic(() => import("react-reveal/Reveal"), {});
-const Footer = dynamic(() => import("../../../components/footer/index.jsx"), {});
-const Contact = dynamic(() => import("../../../components/contacts/index.jsx"), {});
+const Footer = dynamic(
+  () => import("../../../components/footer/index.jsx"),
+  {}
+);
+const Contact = dynamic(
+  () => import("../../../components/contacts/index.jsx"),
+  {}
+);
 
 import "slick-carousel/slick/slick.css";
-
 import "lazysizes";
 // import a plugin
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
-require('typeface-montserrat')
+require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
 
@@ -95,25 +100,26 @@ export default class Maikeinc extends Component {
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
                     <div className="case-maikeinc-size">
-                      <p className="case_study_title">Website development & design</p>
-                      </div>
-                      <h1 className="main-title title-white">Maike Inc</h1>
-                      <ul className="project-info">
-                        <li>
-                          <strong>Industry:</strong>Review and Shopping
-                        </li>
-                        <li>
-                          <strong>Location:</strong>San Jose, California
-                        </li>
-                        <li>
-                          <strong>Established:</strong>Since 2019
-                        </li>
-                        <li>
-                          <strong>Technologies:</strong>Python, Django,
-                          Wordpress, REST API, NLP
-                        </li>
-                      </ul>
-                    
+                      <p className="case_study_title">
+                        Website development & design
+                      </p>
+                    </div>
+                    <h1 className="main-title title-white">Maike Inc</h1>
+                    <ul className="project-info">
+                      <li>
+                        <strong>Industry:</strong>Review and Shopping
+                      </li>
+                      <li>
+                        <strong>Location:</strong>San Jose, California
+                      </li>
+                      <li>
+                        <strong>Established:</strong>Since 2019
+                      </li>
+                      <li>
+                        <strong>Technologies:</strong>Python, Django, Wordpress,
+                        REST API, NLP
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -152,7 +158,8 @@ export default class Maikeinc extends Component {
                   </p>
                 </div>
                 <div className="img-blk">
-                  <img class="lazyload"
+                  <img
+                    class="lazyload"
                     data-src="/images/case-studies/maikeinc/maikeinc-laptop.svg"
                     alt="maikeinc-laptop"
                   />
@@ -168,7 +175,7 @@ export default class Maikeinc extends Component {
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
                       <div className="text-above-main-title">
-                      PRODUCT UNIQUENESS
+                        PRODUCT UNIQUENESS
                       </div>
                       <h2 class="main-title title-orange">Our Solution ?</h2>
                     </div>
@@ -207,7 +214,8 @@ export default class Maikeinc extends Component {
                 <div className="col-md-6 align-self-end">
                   <Slide bottom>
                     <div className="hand-img-blk">
-                      <img class="lazyload"
+                      <img
+                        class="lazyload"
                         data-src="/images/case-studies/maikeinc/maikeinc-mobile-mockup.svg"
                         alt="maikeinc-mobile-mockup"
                       />
@@ -234,7 +242,8 @@ export default class Maikeinc extends Component {
                       <Slider {...settings} className="slide-outer">
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/maikeinc/maikeinc-1.svg"
                               alt="Design"
                             />
@@ -242,7 +251,8 @@ export default class Maikeinc extends Component {
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/maikeinc/maikeinc-2.svg"
                               alt="Design"
                             />
@@ -250,7 +260,8 @@ export default class Maikeinc extends Component {
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/maikeinc/maikeinc-3.svg"
                               alt="Design"
                             />
@@ -258,7 +269,8 @@ export default class Maikeinc extends Component {
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/maikeinc/maikeinc-4.svg"
                               alt="Design"
                             />
@@ -279,43 +291,51 @@ export default class Maikeinc extends Component {
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <div className="text-above-main-title">PROJECT STACK</div>
+                        <div className="text-above-main-title">
+                          PROJECT STACK
+                        </div>
                         <h2 class="main-title title-orange">Technogies Used</h2>
                       </div>
                       <div className="technology-list-center">
                         <ul>
                           <li>
-                            <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/maikeinc/tech-icon1.svg"
                               alt="Django"
                             />
                           </li>
                           <li>
-                            <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/maikeinc/tech-icon2.svg"
                               alt="REST"
                             />
                           </li>
                           <li>
-                            <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/maikeinc/tech-icon3.svg"
                               alt="Angular"
                             />
                           </li>
                           <li>
-                            <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/maikeinc/tech-icon4.svg"
                               alt="Bootstrap"
                             />
                           </li>
                           <li>
-                            <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/maikeinc/tech-icon5.svg"
                               alt="Wordpress"
                             />
                           </li>
                           <li>
-                            <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/maikeinc/tech-icon6.svg"
                               alt="NLP"
                             />
@@ -345,7 +365,8 @@ export default class Maikeinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/maikeinc/feature1.svg"
                           alt="requirement analysis"
                         />
@@ -359,7 +380,8 @@ export default class Maikeinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/maikeinc/feature2.svg"
                           alt="responsive design"
                         />
@@ -373,7 +395,8 @@ export default class Maikeinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/maikeinc/feature3.svg"
                           alt="user experience"
                         />
@@ -387,7 +410,8 @@ export default class Maikeinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/maikeinc/feature4.svg"
                           alt="smart work"
                         />
@@ -406,7 +430,8 @@ export default class Maikeinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/maikeinc/feature5.svg"
                           alt="seo"
                         />
@@ -421,7 +446,8 @@ export default class Maikeinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/maikeinc/feature6.svg"
                           alt="dashboard"
                         />
@@ -444,7 +470,10 @@ export default class Maikeinc extends Component {
                 <div className="col-md-8">
                   <Slide bottom>
                     <div className="project-blk-title">
-                      <p style={{marginBottom:"2rem"}} className="main-title title-white">
+                      <p
+                        style={{ marginBottom: "2rem" }}
+                        className="main-title title-white"
+                      >
                         Are You In Search For A Technology Partner?
                       </p>
                       <div class="learn-more home-lm-link-vs">
