@@ -15,7 +15,7 @@ import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 
 const Contact = dynamic(() => import('../../../components/contacts/index.jsx'), { ssr: false,});
-const Header = dynamic(() => import("../../../components/header/index.jsx"), {ssr: false});
+const Header = dynamic(() => import("../../../components/header/index.jsx"), {});
 const Footer = dynamic(() => import("../../../components/footer/index.jsx"), { ssr: false});
 const Slide = dynamic(() => import("react-reveal/Reveal"), { ssr: false });
 

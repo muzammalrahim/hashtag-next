@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
 import Header from '../../../components/header/index.jsx';
-import Footer from '../../../components/footer/index.jsx';
+
 import Underconstruction from '../../../components/under-construction/index.jsx';
-import Contact from '../../../components/contacts/index.jsx';
+
 import DocumentMeta from 'react-document-meta';
 import $ from 'jquery';
+import dynamic from "next/dynamic";
 import axios from 'axios';
 import * as config from '../../../config.js';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import Slide from 'react-reveal/Reveal';
 
+const Slider = dynamic(() => import("react-slick"), {});
+const Slide = dynamic(() => import("react-reveal/Reveal"), {});
+const Footer = dynamic(() => import("../../../components/footer/index.jsx"), {});
+const Contact = dynamic(() => import("../../../components/contacts/index.jsx"), {});
+
+import "slick-carousel/slick/slick.css";
+
+import "lazysizes";
+// import a plugin
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 require('typeface-montserrat')
 import Axios from "axios";
 import https from "https";
@@ -144,8 +152,8 @@ export default class Maikeinc extends Component {
                   </p>
                 </div>
                 <div className="img-blk">
-                  <img
-                    src="/images/case-studies/maikeinc/maikeinc-laptop.svg"
+                  <img class="lazyload"
+                    data-src="/images/case-studies/maikeinc/maikeinc-laptop.svg"
                     alt="maikeinc-laptop"
                   />
                 </div>
@@ -199,8 +207,8 @@ export default class Maikeinc extends Component {
                 <div className="col-md-6 align-self-end">
                   <Slide bottom>
                     <div className="hand-img-blk">
-                      <img
-                        src="/images/case-studies/maikeinc/maikeinc-mobile-mockup.svg"
+                      <img class="lazyload"
+                        data-src="/images/case-studies/maikeinc/maikeinc-mobile-mockup.svg"
                         alt="maikeinc-mobile-mockup"
                       />
                     </div>
@@ -226,32 +234,32 @@ export default class Maikeinc extends Component {
                       <Slider {...settings} className="slide-outer">
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img
-                              src="/images/case-studies/maikeinc/maikeinc-1.svg"
+                            <img class="lazyload"
+                              data-src="/images/case-studies/maikeinc/maikeinc-1.svg"
                               alt="Design"
                             />
                           </div>
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img
-                              src="/images/case-studies/maikeinc/maikeinc-2.svg"
+                            <img class="lazyload"
+                              data-src="/images/case-studies/maikeinc/maikeinc-2.svg"
                               alt="Design"
                             />
                           </div>
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img
-                              src="/images/case-studies/maikeinc/maikeinc-3.svg"
+                            <img class="lazyload"
+                              data-src="/images/case-studies/maikeinc/maikeinc-3.svg"
                               alt="Design"
                             />
                           </div>
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img
-                              src="/images/case-studies/maikeinc/maikeinc-4.svg"
+                            <img class="lazyload"
+                              data-src="/images/case-studies/maikeinc/maikeinc-4.svg"
                               alt="Design"
                             />
                           </div>
@@ -277,38 +285,38 @@ export default class Maikeinc extends Component {
                       <div className="technology-list-center">
                         <ul>
                           <li>
-                            <img
-                              src="/images/case-studies/maikeinc/tech-icon1.svg"
+                            <img class="lazyload"
+                              data-src="/images/case-studies/maikeinc/tech-icon1.svg"
                               alt="Django"
                             />
                           </li>
                           <li>
-                            <img
-                              src="/images/case-studies/maikeinc/tech-icon2.svg"
+                            <img class="lazyload"
+                              data-src="/images/case-studies/maikeinc/tech-icon2.svg"
                               alt="REST"
                             />
                           </li>
                           <li>
-                            <img
-                              src="/images/case-studies/maikeinc/tech-icon3.svg"
+                            <img class="lazyload"
+                              data-src="/images/case-studies/maikeinc/tech-icon3.svg"
                               alt="Angular"
                             />
                           </li>
                           <li>
-                            <img
-                              src="/images/case-studies/maikeinc/tech-icon4.svg"
+                            <img class="lazyload"
+                              data-src="/images/case-studies/maikeinc/tech-icon4.svg"
                               alt="Bootstrap"
                             />
                           </li>
                           <li>
-                            <img
-                              src="/images/case-studies/maikeinc/tech-icon5.svg"
+                            <img class="lazyload"
+                              data-src="/images/case-studies/maikeinc/tech-icon5.svg"
                               alt="Wordpress"
                             />
                           </li>
                           <li>
-                            <img
-                              src="/images/case-studies/maikeinc/tech-icon6.svg"
+                            <img class="lazyload"
+                              data-src="/images/case-studies/maikeinc/tech-icon6.svg"
                               alt="NLP"
                             />
                           </li>
@@ -337,8 +345,8 @@ export default class Maikeinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img
-                          src="/images/case-studies/maikeinc/feature1.svg"
+                        <img class="lazyload"
+                          data-src="/images/case-studies/maikeinc/feature1.svg"
                           alt="requirement analysis"
                         />
                         <p className="text-level-5 title-black">
@@ -351,8 +359,8 @@ export default class Maikeinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img
-                          src="/images/case-studies/maikeinc/feature2.svg"
+                        <img class="lazyload"
+                          data-src="/images/case-studies/maikeinc/feature2.svg"
                           alt="responsive design"
                         />
                         <p className="text-level-5 title-black">
@@ -365,8 +373,8 @@ export default class Maikeinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img
-                          src="/images/case-studies/maikeinc/feature3.svg"
+                        <img class="lazyload"
+                          data-src="/images/case-studies/maikeinc/feature3.svg"
                           alt="user experience"
                         />
                         <p className="text-level-5 title-black">
@@ -379,8 +387,8 @@ export default class Maikeinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img
-                          src="/images/case-studies/maikeinc/feature4.svg"
+                        <img class="lazyload"
+                          data-src="/images/case-studies/maikeinc/feature4.svg"
                           alt="smart work"
                         />
                         <p className="text-level-5 title-black">
@@ -398,8 +406,8 @@ export default class Maikeinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img
-                          src="/images/case-studies/maikeinc/feature5.svg"
+                        <img class="lazyload"
+                          data-src="/images/case-studies/maikeinc/feature5.svg"
                           alt="seo"
                         />
                         <p className="text-level-5 title-black">
@@ -413,8 +421,8 @@ export default class Maikeinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img
-                          src="/images/case-studies/maikeinc/feature6.svg"
+                        <img class="lazyload"
+                          data-src="/images/case-studies/maikeinc/feature6.svg"
                           alt="dashboard"
                         />
                         <p className="text-level-5 title-black">

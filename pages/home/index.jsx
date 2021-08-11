@@ -7,7 +7,7 @@ const Carousel = dynamic(() => import('../../components/carousel/index.jsx'), {
   ssr: false,
 });
 const Header = dynamic(() => import("../../components/header/index.jsx"), {
-  ssr: false,
+ 
 });
 const Footer = dynamic(() => import("../../components/footer/index.jsx"), {
   ssr: false,
