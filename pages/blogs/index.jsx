@@ -12,12 +12,11 @@ import $ from "jquery";
 import * as config from "../../config.js";
 import queryString from "query-string";
 import Flip from "react-reveal/Reveal";
-import Link from 'next/link'
-import BlogPostFeatured from '../../components/post-featured'
+import Link from "next/link";
+import BlogPostFeatured from "../../components/post-featured";
 require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
-
 export async function getServerSideProps() {
   let data = [];
 
@@ -113,8 +112,7 @@ export default class Blog extends Component {
     var page = this.state.page;
     var keyword = this.state.keyword;
 
-    Axios
-      .get(url, { params: { page: page, keyword: keyword } })
+    Axios.get(url, { params: { page: page, keyword: keyword } })
       .then((response) => {
         const allPosts = this.state.allPosts;
 
@@ -127,7 +125,7 @@ export default class Blog extends Component {
             allPosts: allPosts,
             hasMoreItems: true,
             page: page + 1,
-            no_items:""
+            no_items: "",
           });
         } else {
           if (allPosts.length === 0) {
@@ -138,7 +136,7 @@ export default class Blog extends Component {
           } else {
             this.setState({
               hasMoreItems: false,
-              no_items:""
+              no_items: "",
             });
           }
         }
@@ -149,7 +147,6 @@ export default class Blog extends Component {
   }
 
   render() {
-    
     const loader = (
       <div className="loader">
         <div className="spinner">
@@ -164,23 +161,17 @@ export default class Blog extends Component {
 
     var post_lists = [];
     this.state.allPosts.map((post, index) => {
-      post.image = post.image.replace('http://','https://');
+      post.image = post.image.replace("http://", "https://");
       post_lists.push(
         <Flip bottom>
           <div className="card" key={index}>
             <p5 className="card-title text-level-4 title-orange">
-              <Link
-                href={"/blogs/[slug]"}
-                as={"/blogs/" + post.url}
-              >
+              <Link href={"/blogs/[slug]"} as={"/blogs/" + post.url}>
                 {post.title}
               </Link>
             </p5>
             <div className="blog-img">
-              <Link
-                href={"/blogs/[slug]"}
-                as={"/blogs/" + post.url}
-              >
+              <Link href={"/blogs/[slug]"} as={"/blogs/" + post.url}>
                 <div
                   className="blog-thumb"
                   style={{
@@ -195,8 +186,10 @@ export default class Blog extends Component {
               <div className="card-img-overlay">
                 {post.categories.map((cat, i) => {
                   return (
-                    <Link className="btn btn-light btn-sm"
-                      href={"/blogs/category/[slug]"} className="btn btn-light btn-sm"
+                    <Link
+                      className="btn btn-light btn-sm"
+                      href={"/blogs/category/[slug]"}
+                      className="btn btn-light btn-sm"
                       href={"/blogs/category/" + cat.slug}
                       className="btn btn-light btn-sm"
                       key={i}
@@ -209,13 +202,11 @@ export default class Blog extends Component {
             </div>
             <div className="card-body">
               <p4 className="card-title text-level-4 title-orange">
-                <Link
-                  href={"/blogs/[slug]"}
-                  as={"/blogs/" + post.url}
-                >
+                <Link href={"/blogs/[slug]"} as={"/blogs/" + post.url}>
                   {post.title}
                 </Link>
-              </p4><br/>
+              </p4>
+              <br />
               <small className="text-muted cat text-above-main-title author-blk">
                 <i className="fa fa-hashtag" aria-hidden="true"></i>{" "}
                 {post.author}
@@ -310,7 +301,8 @@ export default class Blog extends Component {
                               name="s"
                               id="blog-search"
                               placeholder="Search"
-                              className="placeholder"
+                              className=""
+                              placeholder="Search for..."
                               value={this.state.search_val}
                               onChange={this.handleChange}
                             />
@@ -321,17 +313,45 @@ export default class Blog extends Component {
                               ></i>
                             </button>
                           </div>
+            
                         </form>
                       </div>
                       <BlogRecentPosts></BlogRecentPosts>
                       <BlogCategories></BlogCategories>
                       <BlogPostFeatured />
+                      <form
+                          role="search"
+                          id="searchform"
+                          className="searchform"
+                          onSubmit={this.onSubmit}
+                        >
+                          <div>
+                            <input
+                              type="text"
+                              name="s"
+                              id="blog-search"
+                              placeholder="Search"
+                              className=""
+                              placeholder="Search for..."
+                              value={this.state.search_val}
+                              onChange={this.handleChange}
+                            />
+                            <button type="submit" name="search-submit">
+                              <i
+                                className="fa fa-search"
+                                aria-hidden="true"
+                              ></i>
+                            </button>
+                          </div>
+            
+                        </form>
                     </aside>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          
         </section>
         <div className="mob-visible"></div>
         <Footer></Footer>
