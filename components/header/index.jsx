@@ -11,7 +11,7 @@ import $ from 'jquery';
 
 const Header = ({ title, description, keywords, canonical_tags }) => {
 
-  const [tabindex, setTabindex] = useState(true);
+  const [tabindex, setTabindex] = useState(false);
   const [Activetabindex, setActiveTabIndex] = useState(1);
 
   const getindex = () => {
@@ -39,11 +39,6 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
     }
   }, []);
 
-  useEffect(() => {
-    setTabindex(false);
-  },[tabindex])
-
-  
 
   //menu toggle on mobile
   const menuToggle = () => {

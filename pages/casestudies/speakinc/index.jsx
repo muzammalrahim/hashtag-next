@@ -5,8 +5,8 @@ import DocumentMeta from 'react-document-meta';
 import $ from 'jquery';
 import axios from 'axios';
 import * as config from '../../../config.js';
-import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
+import dynamic from "next/dynamic";
 const Header  = dynamic(() => import("../../../components/header/index.jsx"),{});
 const Slider = dynamic(() => import("react-slick"),{});
 const Slide = dynamic(() => import("react-reveal/Reveal"),{});
@@ -142,9 +142,9 @@ const { data } = this.state;
                     speakers to client events{" "}
                   </p>
                 </div>
-                <div className="img-blk">
-                  <img
-                    src="/images/case-studies/speakinc/speakin_laptop.svg"
+                <div className="img-blk speakinLaptopHeight">
+                  <img class="lazyload"
+                    data-src="/images/case-studies/speakinc/speakin_laptop.webp"
                     alt="speakin_laptop"
                   />
                 </div>
@@ -166,8 +166,8 @@ const { data } = this.state;
                     <div className="project-spec-grid">
                       <Slide bottom>
                         <div className="project-spec-col">
-                          <img
-                            src="/images/case-studies/speakinc/feature-icon1.svg"
+                          <img class="lazyload"
+                            data-src="/images/case-studies/speakinc/feature-icon1.svg"
                             alt="Design"
                           />
                           <span>Easy navigation</span>
@@ -175,8 +175,8 @@ const { data } = this.state;
                       </Slide>
                       <Slide bottom>
                         <div className="project-spec-col">
-                          <img
-                            src="/images/case-studies/speakinc/feature-icon2.svg"
+                          <img class="lazyload"
+                            data-src="/images/case-studies/speakinc/feature-icon2.svg"
                             alt="Design"
                           />
                           <span>Dynamic Designs</span>
@@ -184,8 +184,8 @@ const { data } = this.state;
                       </Slide>
                       <Slide bottom>
                         <div className="project-spec-col">
-                          <img
-                            src="/images/case-studies/speakinc/feature-icon3.svg"
+                          <img class="lazyload"
+                            data-src="/images/case-studies/speakinc/feature-icon3.svg"
                             alt="Design"
                           />
                           <span>Responsive Design</span>
@@ -193,8 +193,8 @@ const { data } = this.state;
                       </Slide>
                       <Slide bottom>
                         <div className="project-spec-col">
-                          <img
-                            src="/images/case-studies/speakinc/feature-icon4.svg"
+                          <img class="lazyload"
+                            data-src="/images/case-studies/speakinc/feature-icon4.svg"
                             alt="Design"
                           />
                           <span>Trendy, intuitive design</span>
@@ -206,8 +206,8 @@ const { data } = this.state;
                 <div className="col-md-6 ">
                   <Slide bottom>
                     <div className="hand-img-blk">
-                      <img
-                        src="/images/case-studies/speakinc/spekinc-phone-mockup.svg"
+                      <img class="lazyload"
+                        data-src="/images/case-studies/speakinc/spekinc-phone-mockup.webp"
                         alt="spekinc-phone-mockup"
                       />
                     </div>
@@ -233,40 +233,40 @@ const { data } = this.state;
                       <Slider {...settings} className="slide-outer">
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img
-                              src="/images/case-studies/speakinc/speakinc-1.svg"
+                            <img class="lazyload"
+                              data-src="/images/case-studies/speakinc/speakinc-1.webp"
                               alt="Design"
                             />
                           </div>
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img
-                              src="/images/case-studies/speakinc/speakinc-2.svg"
+                            <img class="lazyload"
+                              data-src="/images/case-studies/speakinc/speakinc-2.webp"
                               alt="Design"
                             />
                           </div>
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img
-                              src="/images/case-studies/speakinc/speakinc-3.svg"
+                            <img class="lazyload"
+                              data-src="/images/case-studies/speakinc/speakinc-3.webp"
                               alt="Design"
                             />
                           </div>
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img
-                              src="/images/case-studies/speakinc/speakinc-4.svg"
+                            <img class="lazyload"
+                              data-src="/images/case-studies/speakinc/speakinc-4.webp"
                               alt="Design"
                             />
                           </div>
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img
-                              src="/images/case-studies/speakinc/speakinc-5.svg"
+                            <img class="lazyload"
+                              data-src="/images/case-studies/speakinc/speakinc-5.webp"
                               alt="Design"
                             />
                           </div>
@@ -291,8 +291,8 @@ const { data } = this.state;
                       </div>
                       <div className="technology-list">
                         <div className="tech-item">
-                          <img
-                            src="/images/case-studies/speakinc/tech-icon1.svg"
+                          <img class="lazyload"
+                            data-src="/images/case-studies/speakinc/tech-icon1.svg"
                             alt="Django"
                           />
                           <p5>
@@ -305,8 +305,8 @@ const { data } = this.state;
                           </p>
                         </div>
                         <div className="tech-item">
-                          <img
-                            src="/images/case-studies/speakinc/tech-icon2.svg"
+                          <img class="lazyload"
+                            data-src="/images/case-studies/speakinc/tech-icon2.svg"
                             alt="MySQL"
                           />
                           <p5>
@@ -324,8 +324,8 @@ const { data } = this.state;
                           </p>
                         </div>
                         <div className="tech-item">
-                          <img
-                            src="/images/case-studies/speakinc/tech-icon3.svg"
+                          <img class="lazyload"
+                            data-src="/images/case-studies/speakinc/tech-icon3.svg"
                             alt="Nginx"
                           />
                           <p5>
@@ -338,8 +338,8 @@ const { data } = this.state;
                           </p>
                         </div>
                         <div className="tech-item">
-                          <img
-                            src="/images/case-studies/speakinc/tech-icon4.svg"
+                          <img class="lazyload"
+                            data-src="/images/case-studies/speakinc/tech-icon4.svg"
                             alt="Filemaker Pro"
                           />
                           <p5>
@@ -354,8 +354,8 @@ const { data } = this.state;
                           </p>
                         </div>
                         <div className="tech-item">
-                          <img
-                            src="/images/case-studies/speakinc/tech-icon5.svg"
+                          <img class="lazyload"
+                            data-src="/images/case-studies/speakinc/tech-icon5.svg"
                             alt="Ubuntu"
                           />
                           <p5>
@@ -371,9 +371,9 @@ const { data } = this.state;
                     </div>
                   </Slide>
                 </div>
-                <div className="sticky-img">
-                  <img
-                    src="/images/case-studies/speakinc/speakin_laptop.svg"
+                <div className="sticky-img speakinLaptopHeight">
+                  <img class="lazyload"
+                    data-src="/images/case-studies/speakinc/speakin_laptop.webp"
                     alt="speakin_laptop"
                   />
                 </div>
@@ -414,8 +414,8 @@ const { data } = this.state;
                 </div>
                 <div className="col-md-6">
                   <div className="dfd-blk">
-                    <img
-                      src="/images/case-studies/speakinc/workflow.svg"
+                    <img class="lazyload"
+                      data-src="/images/case-studies/speakinc/workflow.svg"
                       alt="workflow"
                     />
                   </div>
@@ -440,8 +440,8 @@ const { data } = this.state;
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img
-                          src="/images/case-studies/speakinc/feature1.svg"
+                        <img class="lazyload"
+                          data-src="/images/case-studies/speakinc/feature1.svg"
                           alt="feature"
                         />
                         <p className="text-level-5 title-black">
@@ -458,8 +458,8 @@ const { data } = this.state;
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img
-                          src="/images/case-studies/speakinc/feature2.svg"
+                        <img class="lazyload"
+                          data-src="/images/case-studies/speakinc/feature2.svg"
                           alt="feature"
                         />
                         <p className="text-level-5 title-black">
@@ -476,8 +476,8 @@ const { data } = this.state;
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img
-                          src="/images/case-studies/speakinc/feature3.svg"
+                        <img class="lazyload"
+                          data-src="/images/case-studies/speakinc/feature3.svg"
                           alt="feature"
                         />
                         <p className="text-level-5 title-black">
@@ -495,8 +495,8 @@ const { data } = this.state;
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img
-                          src="/images/case-studies/speakinc/feature4.svg"
+                        <img class="lazyload"
+                          data-src="/images/case-studies/speakinc/feature4.svg"
                           alt="feature"
                         />
                         <p className="text-level-5 title-black">Blogs</p>
@@ -516,8 +516,8 @@ const { data } = this.state;
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img
-                          src="/images/case-studies/speakinc/feature5.svg"
+                        <img class="lazyload"
+                          data-src="/images/case-studies/speakinc/feature5.svg"
                           alt="feature"
                         />
                         <p className="text-level-5 title-black">
@@ -533,8 +533,8 @@ const { data } = this.state;
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img
-                          src="/images/case-studies/speakinc/feature6.svg"
+                        <img class="lazyload"
+                          data-src="/images/case-studies/speakinc/feature6.svg"
                           alt="feature"
                         />
                         <p className="text-level-5 title-black">
@@ -550,8 +550,8 @@ const { data } = this.state;
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img
-                          src="/images/case-studies/speakinc/feature7.svg"
+                        <img class="lazyload"
+                          data-src="/images/case-studies/speakinc/feature7.svg"
                           alt="feature"
                         />
                         <p className="text-level-5 title-black">
