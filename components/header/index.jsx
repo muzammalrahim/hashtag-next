@@ -73,6 +73,10 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <link rel="canonical" href={canonical}></link>
+
+        <script
+          async src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -99,7 +103,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
             aria-expanded="false"
             aria-label="Toggle navigation"
             onClick={(e) => {
-               e.preventDefault(),setTabindex( !tabindex );
+              e.preventDefault(), setTabindex(!tabindex);
             }}
           >
             <span className="navbar-toggler-icon"></span>
