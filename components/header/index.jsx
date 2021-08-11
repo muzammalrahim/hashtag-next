@@ -73,7 +73,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <link rel="canonical" href={canonical}></link>
-        {/* <Script
+        <Script
          dangerouslySetInnerHTML={{
           __html: `
                               window.dataLayer = window.dataLayer || [];
@@ -86,7 +86,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         }}
        
         strategy="lazyOnload"
-      /> */}
+      />
         <script
           dangerouslySetInnerHTML={{
             __html: `
