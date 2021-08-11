@@ -142,7 +142,7 @@ export default class Megalot extends Component {
                 </div>
                 <div className="img-blk">
                     <img class="lazyload"
-                    data-src="/images/case-studies/megalot/megalot-laptop.svg"
+                    data-src="/images/case-studies/megalot/megalot-laptop.webp"
                     alt="megalot-laptop"
                   />
                 </div>

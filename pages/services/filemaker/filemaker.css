@@ -319,7 +319,7 @@
 
 .filemaker-service .mainSection
 {
-	width: fit-content;
+	width: 100%;
 }
 
 @media(min-width: 2500px) {
@@ -476,6 +476,10 @@
 }
 @media(max-width: 350px)
 {
+	.filemaker-service .mainSection
+{
+	width: fit-content;
+}
 	.testimonial-blk {
 		height: 1734px;
 	}
