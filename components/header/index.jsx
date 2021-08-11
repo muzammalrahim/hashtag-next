@@ -57,7 +57,6 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
   let router = useRouter()
   let canonicalUrl = "https://www.hashtag-ca.com" + router.asPath
   let canonical = canonical_tags === null || canonical_tags === undefined ? canonicalUrl : canonical_tags;
-  console.log("local url", tabindex)
   return (
     <header className="header-container">
       <Head>
@@ -73,7 +72,6 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <link rel="canonical" href={canonical}></link>
-
         <script
           async src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"
         ></script>

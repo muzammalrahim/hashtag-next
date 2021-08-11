@@ -22,7 +22,7 @@ import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 
 const Header = dynamic(() => import("../../components/header/index.jsx"), {
-  ssr: false,
+  // ssr: false,
 });
 const Footer = dynamic(() => import("../../components/footer/index.jsx"), {
   ssr: false,
