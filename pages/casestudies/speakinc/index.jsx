@@ -205,7 +205,7 @@ const { data } = this.state;
                 </div>
                 <div className="col-md-6 ">
                   <Slide bottom>
-                    <div className="hand-img-blk">
+                    <div className="hand-img-blk speakinMobileMargin">
                       <img class="lazyload"
                         data-src="/images/case-studies/speakinc/spekinc-phone-mockup.webp"
                         alt="spekinc-phone-mockup"
