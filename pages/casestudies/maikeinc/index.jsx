@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Header from "../../../components/header/index.jsx";
+
 
 import Underconstruction from "../../../components/under-construction/index.jsx";
 
@@ -8,17 +8,11 @@ import $ from "jquery";
 import dynamic from "next/dynamic";
 import axios from "axios";
 import * as config from "../../../config.js";
-
-const Slider = dynamic(() => import("react-slick"), {});
-const Slide = dynamic(() => import("react-reveal/Reveal"), {});
-const Footer = dynamic(
-  () => import("../../../components/footer/index.jsx"),
-  {}
-);
-const Contact = dynamic(
-  () => import("../../../components/contacts/index.jsx"),
-  {}
-);
+const Header  = dynamic(() => import("../../../components/header/index.jsx"));
+const Slider = dynamic(() => import("react-slick"));
+const Slide = dynamic(() => import("react-reveal/Reveal"));
+const Footer = dynamic(() => import("../../../components/footer/index.jsx"));
+const Contact = dynamic(() => import("../../../components/contacts/index.jsx"));
 
 import "slick-carousel/slick/slick.css";
 import "lazysizes";
