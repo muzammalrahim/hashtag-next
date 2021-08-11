@@ -73,20 +73,6 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <link rel="canonical" href={canonical}></link>
-        <Script
-         dangerouslySetInnerHTML={{
-          __html: `
-                              window.dataLayer = window.dataLayer || [];
-                              function gtag(){dataLayer.push(arguments);}
-                              gtag('js', new Date());
-                              gtag('config', 'UA-78643548-1', {
-                              page_path: window.location.pathname,
-                              });
-                           `,
-        }}
-       
-        strategy="lazyOnload"
-      />
         <script
           dangerouslySetInnerHTML={{
             __html: `
