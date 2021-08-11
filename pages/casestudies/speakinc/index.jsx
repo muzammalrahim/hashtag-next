@@ -5,7 +5,7 @@ import DocumentMeta from 'react-document-meta';
 import $ from 'jquery';
 import axios from 'axios';
 import * as config from '../../../config.js';
-
+import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
 const Header  = dynamic(() => import("../../../components/header/index.jsx"),{});
 const Slider = dynamic(() => import("react-slick"),{});
