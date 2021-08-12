@@ -284,7 +284,7 @@ const { data } = this.state;
                 <div className="col-md-6 col-lg-6">
                   <div className="img-blk">
                     <img
-                      src="/images/case-studies/filemaker/benefits-img.svg"
+                      src="/images/case-studies/filemaker/benefits-img.png"
                       alt="Architecture"
                     />
                   </div>
