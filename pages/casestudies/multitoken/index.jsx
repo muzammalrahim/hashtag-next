@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import Header from '../../../components/header/index.jsx';
-import Footer from '../../../components/footer/index.jsx';
-import Underconstruction from '../../../components/under-construction/index.jsx';
-import Contact from '../../../components/contacts/index.jsx';
-import DocumentMeta from 'react-document-meta';
-import $ from 'jquery';
-import axios from 'axios';
-import * as config from '../../../config.js';
+import React, { Component } from "react";
+import Header from "../../../components/header/index.jsx";
+import Footer from "../../../components/footer/index.jsx";
+import Underconstruction from "../../../components/under-construction/index.jsx";
+import Contact from "../../../components/contacts/index.jsx";
+import DocumentMeta from "react-document-meta";
+import $ from "jquery";
+import axios from "axios";
+import * as config from "../../../config.js";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import Slide from 'react-reveal/Reveal';
+import Slide from "react-reveal/Reveal";
 
-require('typeface-montserrat')
+require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
 
@@ -50,7 +50,6 @@ export default class Multitoken extends Component {
   componentDidMount() {}
 
   render() {
-
     const { data } = this.state;
     const settings = {
       infinite: true,
@@ -89,27 +88,28 @@ export default class Multitoken extends Component {
                 <div className="col-md-12">
                   <div className="common-title-wrap px-md-3">
                     <div className="case-multitoken-size">
-                      <p className="multi_token_title">Full Stack Development</p>
-                      </div>
-                      <h1 className="main-title title-white">
-                        Multi Token Wallet In Gaming
-                      </h1>
-                      <ul className="project-info">
-                        <li>
-                          <strong>Industry: </strong>Owning game assets/real
-                          world assets on the blockchain
-                          <br /> with DEX to sell them and/or Staking/Betting
-                          contractng
-                        </li>
-                        <li>
-                          <strong>Technology: </strong>Ethereum/Solidity,
-                          Metamask, Web3, Truffle
-                        </li>
-                        <li>
-                          <strong>Smart Contracts: </strong>ERC20, ERC1155
-                        </li>
-                      </ul>
-                    
+                      <p className="multi_token_title">
+                        Full Stack Development
+                      </p>
+                    </div>
+                    <h1 className="main-title title-white">
+                      Multi Token Wallet In Gaming
+                    </h1>
+                    <ul className="project-info">
+                      <li className="text-justify">
+                        <strong>Industry: </strong>Owning game assets/real world
+                        assets on the blockchain
+                        <br /> with DEX to sell them and/or Staking/Betting
+                        contractng
+                      </li>
+                      <li className="text-justify">
+                        <strong>Technology: </strong>Ethereum/Solidity,
+                        Metamask, Web3, Truffle
+                      </li>
+                      <li className="text-justify">
+                        <strong>Smart Contracts: </strong>ERC20, ERC1155
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -123,12 +123,14 @@ export default class Multitoken extends Component {
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <div className="text-above-main-title">INTRODUCTION</div>
+                        <div className="text-above-main-title">
+                          INTRODUCTION
+                        </div>
                         <h2 class="main-title title-orange">Summary</h2>
                       </div>
                       <div className="technology-list">
                         <div className="tech-item">
-                          <p>
+                          <p className="text-justify">
                             This project allows a variety of uses in practice.
                             Real world assets like cars can be tokenized and
                             added to the blockchain. We employ the ERC1155
@@ -136,7 +138,7 @@ export default class Multitoken extends Component {
                             id and is similar to ERC20 but does not have a way
                             to store a symbol to represent the tokens.
                           </p>
-                          <p>
+                          <p className="text-justify">
                             ERC1155 standard can create NFT tokens similar to
                             ERC721 but has lower fees to deploy due to the fact
                             that the non-fungible item is a token and not
@@ -144,7 +146,7 @@ export default class Multitoken extends Component {
                             redundancy of the code and saving deploying and
                             minting cost.
                           </p>
-                          <p>
+                          <p className="text-justify">
                             Thereby when a realworld asset like a car is
                             tokenized using an ERC1155 token standard, we can
                             create a corresponding non fungible or fungible
@@ -153,13 +155,13 @@ export default class Multitoken extends Component {
                             seen in gaming where lets say a game asset like a
                             trading card is non fungible and unique.
                           </p>
-                          <p>
+                          <p className="text-justify">
                             But it has its own value or cost depending upon how
                             rare it is. This project can capture both those
                             aspects of that card or any other item the developer
                             chooses.
                           </p>
-                          <p>
+                          <p className="text-justify">
                             If we used an ERC20 and ERC721 standard separately
                             then it would add a lot of redundant code to the
                             chain and hence we substitute it with the
@@ -217,7 +219,7 @@ export default class Multitoken extends Component {
                       </div>
                       <div className="technology-list">
                         <div className="tech-item">
-                          <p>
+                          <p className="text-justify">
                             Every gaming asset or real world asset is tokenized
                             and added to the blockchain. Every token is fungible
                             so you can own increments of each asset. Assets are
@@ -227,7 +229,7 @@ export default class Multitoken extends Component {
                             assets. Each tokenized asset can have metadata to
                             specify special attributes on the front end.
                           </p>
-                          <p>
+                          <p className="text-justify">
                             Only the owner can create additional assets. All
                             assets can be minted and sold directly on to the DEX
                             provided.<br></br>
@@ -250,7 +252,7 @@ export default class Multitoken extends Component {
                       </div>
                       <div className="technology-list">
                         <div className="tech-item">
-                          <p>
+                          <p className="text-justify">
                             Game/Asset companies will receive contracts that
                             will allow for tokenization of their assets and
                             track every item all in one wallet. And also
@@ -262,7 +264,7 @@ export default class Multitoken extends Component {
                             tokens. Companies can sell tokens for a steady
                             source of revenue.
                           </p>
-                          <p>
+                          <p className="text-justify">
                             A staking contract can be implemented alongside this
                             ecosystem to allow users to stake ERC1155 tokens and
                             earn rewards for participating. We can also alter
@@ -282,7 +284,7 @@ export default class Multitoken extends Component {
                       </div>
                       <div className="technology-list">
                         <div className="tech-item">
-                          <p>
+                          <p className="text-justify">
                             ERC1155 mixed with ERC20 will make for a secure
                             asset minting contract rewards/betting system that
                             will allow for tokenization of assets on the
@@ -291,7 +293,7 @@ export default class Multitoken extends Component {
                             cheating; besides it offers a fast and secure
                             payment method without additional fees.
                           </p>
-                          <p>
+                          <p className="text-justify">
                             The security is in the well-tested contracts on the
                             Ethereum network and every token has a special id
                             that can be identified and verified allowing for
@@ -353,7 +355,10 @@ export default class Multitoken extends Component {
             <div class="container">
               <div class="row">
                 <div class="col-md-11 offset-md-1 col-lg-7 offset-lg-1 mx-auto text-center">
-                  <blockquote cite="https://www.hashtag-ca.com/">
+                  <blockquote
+                    cite="https://www.hashtag-ca.com/"
+                    className="text-justify"
+                  >
                     Blockchain tech will usher in a cleaner, more transparent
                     era in the gambling industry. Due to the security, inherent
                     fairness and benefits that come from the deployment of such

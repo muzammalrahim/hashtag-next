@@ -1,6 +1,5 @@
 import React, { Component, useEffect } from "react";
 
-
 // import Underconstruction from '../../../components/under-construction/index.jsx';
 import Contact from "../../components/contacts/index.jsx";
 import DocumentMeta from "react-document-meta";
@@ -8,7 +7,7 @@ import DocumentMeta from "react-document-meta";
 import axios from "axios";
 import * as config from "../../config.js";
 import Slide from "react-reveal/Reveal";
-import Link from 'next/link'
+import Link from "next/link";
 import dynamic from "next/dynamic";
 require("typeface-montserrat");
 // require('paroller.js');
@@ -18,8 +17,6 @@ import https from "https";
 import "lazysizes";
 // import a plugin
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
-
-
 
 const Header = dynamic(() => import("../../components/header/index.jsx"), {
   // ssr: false,
@@ -89,16 +86,16 @@ export default class Speakinc extends Component {
   }
 
   componentDidMount() {
-      window.jQuery = require('jquery');
-      window.paroller = require('paroller.js');
+    window.jQuery = require("jquery");
+    window.paroller = require("paroller.js");
 
-      window.jQuery(".parallax-block").paroller({
-          factor: 0.2,
-          factorMd: 0.2,
-          factorSm: 0.2,
-          type: 'background',
-          direction: 'vertical'
-      });
+    window.jQuery(".parallax-block").paroller({
+      factor: 0.2,
+      factorMd: 0.2,
+      factorSm: 0.2,
+      type: "background",
+      direction: "vertical",
+    });
     // $('.parallax-block').paroller({
     // factor: 0.2,
     // factorMd: 0.2,
@@ -127,11 +124,15 @@ export default class Speakinc extends Component {
                   <Slide bottom>
                     <div className="list-banner-text">
                       <h1>
-                        <span className="title-orange case_Studies">Case Studies</span>{" "}
+                        <span className="title-orange case_Studies">
+                          Case Studies
+                        </span>{" "}
                       </h1>
-                        <br />
-                        <h2 className="case_para">We Let Our Portfolio Do The Talk!</h2>
-                      
+                      <br />
+                      <h2 className="case_para">
+                        We Let Our Portfolio Do The Talk!
+                      </h2>
+
                       <div className="btn-comm">
                         <a href="#contact">Say Hello</a>
                       </div>
@@ -160,7 +161,7 @@ export default class Speakinc extends Component {
                           <Link href="/casestudies/maikeinc">Maike Inc</Link>
                         </h3>
                         <span>Full Stack Development</span>
-                        <p>
+                        <p className="text-justify">
                           Maike inc takes the pain out of product research by
                           providing the consumer with the results of hundreds of
                           products and thousands of customer reviews in one easy
@@ -170,8 +171,8 @@ export default class Speakinc extends Component {
                           <ul>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
-                                  
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/maikeinc/tech-icon7.svg"
                                   alt="Python"
                                 />
@@ -179,7 +180,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/maikeinc/tech-icon1.svg"
                                   alt="Django"
                                 />
@@ -187,7 +189,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/maikeinc/tech-icon3.svg"
                                   alt="Angular"
                                 />
@@ -195,7 +198,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/maikeinc/tech-icon4.svg"
                                   alt="Bootstrap"
                                 />
@@ -203,7 +207,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/speakinc/tech-icon2.svg"
                                   alt="MySQL"
                                 />
@@ -214,7 +219,7 @@ export default class Speakinc extends Component {
                         <a href="/casestudies/maikeinc">
                           Learn more{""}
                           <i
-                            className="fa fa-chevron-right"
+                            className="fa fa-chevron-right ml-1"
                             aria-hidden="true"
                           ></i>
                         </a>
@@ -243,7 +248,7 @@ export default class Speakinc extends Component {
                           <Link href="/casestudies/speakinc">Speakinc</Link>
                         </h3>
                         <span>Full Stack Development</span>
-                        <p>
+                        <p className="text-justify">
                           SpeakInc is a No 1 US based speakers booking platform,
                           which helps in searching and booking keynote speakers
                           or entertainers for different conventions, conferences
@@ -253,7 +258,8 @@ export default class Speakinc extends Component {
                           <ul>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/speakinc/tech-icon7.svg"
                                   alt="Python"
                                 />
@@ -261,7 +267,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/speakinc/tech-icon1.svg"
                                   alt="Django"
                                 />
@@ -269,7 +276,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/speakinc/tech-icon4.svg"
                                   alt="Filemaker"
                                 />
@@ -277,7 +285,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/speakinc/tech-icon2.svg"
                                   alt="MySQL"
                                 />
@@ -285,7 +294,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/speakinc/tech-icon6.svg"
                                   alt="Hubspot"
                                 />
@@ -323,11 +333,11 @@ export default class Speakinc extends Component {
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
                           {/* <a> */}
-                            <Link href="/casestudies/megalot">Megalot</Link>
+                          <Link href="/casestudies/megalot">Megalot</Link>
                           {/* </a> */}
                         </h3>
                         <span>Full Stack Development</span>
-                        <p>
+                        <p className="text-justify">
                           In the world of crypto and decentralized finance,
                           gambling has always been one of the ideal use cases.
                           Crypto facilitates gambling in the form of easy to use
@@ -340,7 +350,8 @@ export default class Speakinc extends Component {
                           <ul>
                             <li>
                               <div className="ico-blk small">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/megalot/tech-icon1.svg"
                                   alt="Web3"
                                 />
@@ -348,7 +359,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk small">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/megalot/tech-icon2.svg"
                                   alt="HTML"
                                 />
@@ -356,7 +368,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk small">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/megalot/tech-icon3.svg"
                                   alt="JS"
                                 />
@@ -364,7 +377,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk small">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/megalot/tech-icon4.svg"
                                   alt="Metamask"
                                 />
@@ -372,7 +386,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/megalot/tech-icon5.svg"
                                   alt="Solidity"
                                 />
@@ -380,7 +395,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/megalot/tech-icon6.svg"
                                   alt="Ethereum"
                                 />
@@ -421,7 +437,7 @@ export default class Speakinc extends Component {
                           <Link href="/casestudies/filemaker">Filemaker</Link>
                         </h3>
                         <span>Full Stack Development</span>
-                        <p>
+                        <p className="text-justify">
                           It helps in searching and booking keynote speakers or
                           entertainers for different conventions, conferences or
                           events. Speakinc has exceptional expertise matching
@@ -431,7 +447,8 @@ export default class Speakinc extends Component {
                           <ul>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/filemaker/intro-logo-1.svg"
                                   alt="FileMaker"
                                 />
@@ -439,7 +456,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/filemaker/intro-logo-2.svg"
                                   alt="MySQL"
                                 />
@@ -447,7 +465,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/filemaker/intro-logo-4.svg"
                                   alt="Hubspot"
                                 />
@@ -488,7 +507,7 @@ export default class Speakinc extends Component {
                           <Link href="/casestudies/easy-level">Easy-Level</Link>
                         </h3>
                         <span>Full Stack Development</span>
-                        <p>
+                        <p className="text-justify">
                           We offer a p2p decentralized system in which all
                           participants are rewarded based on the degree of
                           participation in the system with the native ADV token
@@ -499,7 +518,8 @@ export default class Speakinc extends Component {
                           <ul>
                             <li>
                               <div className="ico-blk small">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/easylevel/tech-icon1.svg"
                                   alt="Web3"
                                 />
@@ -507,7 +527,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/easylevel/tech-icon2.svg"
                                   alt="Ethereum"
                                 />
@@ -515,7 +536,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/easylevel/tech-icon5.svg"
                                   alt="Solidity"
                                 />
@@ -558,7 +580,7 @@ export default class Speakinc extends Component {
                           </Link>
                         </h3>
                         <span>Full Stack Development</span>
-                        <p>
+                        <p className="text-justify">
                           This project allows a variety of uses in practice.
                           Real world assets like cars can be tokenized and added
                           to the blockchain. We employ the ERC1155 standard
@@ -570,7 +592,8 @@ export default class Speakinc extends Component {
                           <ul>
                             <li>
                               <div className="ico-blk small">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/multitoken/tech-icon1.svg"
                                   alt="Web3"
                                 />
@@ -578,7 +601,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/multitoken/tech-icon2.svg"
                                   alt="Ethereum"
                                 />
@@ -586,7 +610,8 @@ export default class Speakinc extends Component {
                             </li>
                             <li>
                               <div className="ico-blk">
-                                <img  class="lazyload"
+                                <img
+                                  class="lazyload"
                                   data-src="/images/case-studies/multitoken/tech-icon5.svg"
                                   alt="Solidity"
                                 />

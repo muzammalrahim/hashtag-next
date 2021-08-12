@@ -4,22 +4,19 @@ require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
 
-
-
 import dynamic from "next/dynamic";
 import "lazysizes";
 // import a plugin
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
-
-const Contactusform = dynamic(() => import('../../components/contactusPage/index.jsx'), { ssr: false,});
+const Contactusform = dynamic(
+  () => import("../../components/contactusPage/index.jsx"),
+  { ssr: false }
+);
 const Header = dynamic(() => import("../../components/header/index.jsx"));
-const Footer = dynamic(() => import("../../components/footer/index.jsx"), { ssr: false});
-
-
-
-
-
+const Footer = dynamic(() => import("../../components/footer/index.jsx"), {
+  ssr: false,
+});
 
 export async function getServerSideProps() {
   let data = [];
@@ -65,7 +62,7 @@ export default class Contactus extends Component {
 
   render() {
     let { tabindex } = this.state;
-   
+
     const { data } = this.state;
     return (
       <div className="contact-main" id="contact-main">
@@ -90,7 +87,7 @@ export default class Contactus extends Component {
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <h2 className="bold-contents service-content-box pl-4">
+                      <h2 className="bold-contents service-content-box pl-4 text-justify">
                         We always love to hear from potential clients. Get in
                         touch, start the conversation, and we’ll take it from
                         there.
@@ -366,7 +363,7 @@ export default class Contactus extends Component {
                             />{" "}
                             <span className="address-content">San Diego</span>
                           </h3>
-                          <h3 className="address-text">
+                          <h3 className="address-text ">
                             7770 Regents Rd. #113-385
                             <br />
                             San Diego, CA 92122, <br />
@@ -436,7 +433,7 @@ export default class Contactus extends Component {
                             />{" "}
                             <span className="address-content">Kochi</span>
                           </h3>
-                          <h3 className="address-text">
+                          <h3 className="address-text text-justify">
                             Infopark Technology Business Center JNI Stadium,{" "}
                             <br />
                             Kaloor,
@@ -515,7 +512,7 @@ export default class Contactus extends Component {
                   <div>
                     {" "}
                     <div className="col-12">
-                      <p className="text-above-main-title w-100">
+                      <p className="text-above-main-title w-100 text-justify">
                         TELL US ABOUT YOUR BIG IDEAS AND WE'LL TELL YOU HOW WE
                         CAN HELP
                       </p>
@@ -536,7 +533,7 @@ export default class Contactus extends Component {
                         <h3 className="title-orange form-title">
                           Thank you for contacting us
                         </h3>
-                        <p>
+                        <p className="text-justify">
                           We appreciate that you've taken time to write us. We
                           will get back to you soon.
                         </p>
@@ -577,7 +574,7 @@ export default class Contactus extends Component {
                     </span>
                   </h2>
                   <div className="contact-content mt-4">
-                    <p>
+                    <p className="text-justify">
                       We’re always looking for bright and driven individuals to
                       be part of our great team.
                     </p>

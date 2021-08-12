@@ -1,22 +1,31 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Underconstruction from '../../../components/under-construction/index.jsx';
-import DocumentMeta from 'react-document-meta';
-import $ from 'jquery';
-import axios from 'axios';
-import * as config from '../../../config.js';
+import Underconstruction from "../../../components/under-construction/index.jsx";
+import DocumentMeta from "react-document-meta";
+import $ from "jquery";
+import axios from "axios";
+import * as config from "../../../config.js";
 import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
-const Header  = dynamic(() => import("../../../components/header/index.jsx"),{});
-const Slider = dynamic(() => import("react-slick"),{});
-const Slide = dynamic(() => import("react-reveal/Reveal"),{});
-const Footer = dynamic(() => import("../../../components/footer/index.jsx"),{});
-const Contact = dynamic(() => import("../../../components/contacts/index.jsx"),{});
+const Header = dynamic(
+  () => import("../../../components/header/index.jsx"),
+  {}
+);
+const Slider = dynamic(() => import("react-slick"), {});
+const Slide = dynamic(() => import("react-reveal/Reveal"), {});
+const Footer = dynamic(
+  () => import("../../../components/footer/index.jsx"),
+  {}
+);
+const Contact = dynamic(
+  () => import("../../../components/contacts/index.jsx"),
+  {}
+);
 
 import "slick-carousel/slick/slick.css";
 import "lazysizes";
 
-require('typeface-montserrat')
+require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
 
@@ -55,7 +64,7 @@ export default class Speakinc extends Component {
   componentDidMount() {}
 
   render() {
-const { data } = this.state;
+    const { data } = this.state;
     const settings = {
       infinite: true,
       slidesToShow: 1,
@@ -94,25 +103,24 @@ const { data } = this.state;
                   <div className="common-title-wrap px-md-3">
                     <div className="case-speakinc-size">
                       <p className="speak_inc">Website development & design</p>
-                      </div>
-                      <h1 className="main-title title-white">SpeakInc</h1>
-                      <ul className="project-info">
-                        <li>
-                          <strong>Industry:</strong>Event Management and
-                          Consulting
-                        </li>
-                        <li>
-                          <strong>Location:</strong>San Diego, California
-                        </li>
-                        <li>
-                          <strong>Established:</strong>Since 1989
-                        </li>
-                        <li>
-                          <strong>Technologies:</strong>Python, Django,
-                          Filemaker, Hubspot
-                        </li>
-                      </ul>
-                    
+                    </div>
+                    <h1 className="main-title title-white">SpeakInc</h1>
+                    <ul className="project-info">
+                      <li>
+                        <strong>Industry:</strong>Event Management and
+                        Consulting
+                      </li>
+                      <li>
+                        <strong>Location:</strong>San Diego, California
+                      </li>
+                      <li>
+                        <strong>Established:</strong>Since 1989
+                      </li>
+                      <li>
+                        <strong>Technologies:</strong>Python, Django, Filemaker,
+                        Hubspot
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -127,17 +135,17 @@ const { data } = this.state;
                     <div className="text-above-main-title">INTRODUCTION</div>
                     <h2 class="main-title title-orange">About Speakinc</h2>
                   </div>
-                  <p>
+                  <p className="text-justify">
                     <strong>SpeakInc</strong> is a No 1 US based speakers
                     booking platform, which helps in searching and booking
                     keynote speakers or entertainers for different conventions,
                     conferences or events.
                   </p>
-                  <p>
+                  <p className="text-justify">
                     They are an employee-owned and operated company, and the
                     largest speakers bureau in the western United States.
                   </p>
-                  <p>
+                  <p className="text-justify">
                     Speakinc has an exceptional expertise matching keynote
                     speakers to client events{" "}
                   </p>
@@ -286,7 +294,9 @@ const { data } = this.state;
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <div className="text-above-main-title">PROJECT STACK</div>
+                        <div className="text-above-main-title">
+                          PROJECT STACK
+                        </div>
                         <h2 class="main-title title-orange">Technogies Used</h2>
                       </div>
                       <div className="technology-list">
@@ -298,7 +308,7 @@ const { data } = this.state;
                           <p5>
                             Framework: <span>Django 2.0</span>
                           </p5>
-                          <p>
+                          <p className="text-justify">
                             Django is a Python-based free and open-source web
                             framework, which follows the model-template-view
                             architectural pattern.{" "}
@@ -315,7 +325,7 @@ const { data } = this.state;
                               MySQL 8 ( Managed Databases By Digital Ocean )
                             </span>
                           </p5>
-                          <p>
+                          <p className="text-justify">
                             DigitalOcean’s Managed Databases are a fully
                             managed, high performance database cluster service.
                             Using managed databases is a powerful alternative to
@@ -331,7 +341,7 @@ const { data } = this.state;
                           <p5>
                             Web Server: <span>Nginx </span>
                           </p5>
-                          <p>
+                          <p className="text-justify">
                             Nginx, is an open-source web server that, since its
                             initial success as a web server, is now also used as
                             a reverse proxy, HTTP cache, and load balancer.
@@ -345,7 +355,7 @@ const { data } = this.state;
                           <p5>
                             Filemaker <span>Pro</span>
                           </p5>
-                          <p>
+                          <p className="text-justify">
                             FileMaker is a cross-platform relational database
                             application which integrates a database engine with
                             a graphical user interface and security features,
@@ -361,7 +371,7 @@ const { data } = this.state;
                           <p5>
                             Operating System: <span>Ubuntu 18.04 </span>
                           </p5>
-                          <p>
+                          <p className="text-justify">
                             Ubuntu is an open source software operating system
                             that runs from the desktop, to the cloud, to all
                             your internet connected things.
@@ -391,21 +401,21 @@ const { data } = this.state;
                   </div>
                   <div className="cust-order-list">
                     <ol>
-                      <li>
+                      <li className="text-justify">
                         <strong>Web application</strong> through which web users
                         can find speakers and inquire about them to the bureau
                         through inquiry forms,which are integrated to hubspot.
                       </li>
-                      <li>
+                      <li className="text-justify">
                         <strong>Filemaker application</strong> for the bureau
                         that enables the direct communication between the bureau
                         and users interested in speakers, and speaker handling.
                       </li>
-                      <li>
+                      <li className="text-justify">
                         <strong>SEO for ensuring the presence</strong> of the
                         web application on search engines and all social media.
                       </li>
-                      <li>
+                      <li className="text-justify">
                         <strong>Hubspot for content management</strong>, lead
                         management,sales management.
                       </li>
@@ -448,7 +458,7 @@ const { data } = this.state;
                           User Friendly <br />
                           Dashboard
                         </p>
-                        <p>
+                        <p className="text-justify">
                           Less complex dashboard, that can be easily handled by
                           anybody, for controlling the web application features.
                         </p>
@@ -466,7 +476,7 @@ const { data } = this.state;
                           Easy <br />
                           Search{" "}
                         </p>
-                        <p>
+                        <p className="text-justify">
                           Users can easily do quick searches which shows exactly
                           what they want from the site.
                         </p>
@@ -484,7 +494,7 @@ const { data } = this.state;
                           Portfolio <br />
                           Option
                         </p>
-                        <p>
+                        <p className="text-justify">
                           Users can inquire about multiple speakers at the same
                           time by adding them into a portfolio and submitting
                           them together.
@@ -500,7 +510,7 @@ const { data } = this.state;
                           alt="feature"
                         />
                         <p className="text-level-5 title-black">Blogs</p>
-                        <p>
+                        <p className="text-justify">
                           Blogs that are managed through hubspot are integrated
                           to web applications through application program
                           interfaces.
@@ -523,7 +533,7 @@ const { data } = this.state;
                         <p className="text-level-5 title-black">
                           Hubspot Form Integrations{" "}
                         </p>
-                        <p>
+                        <p className="text-justify">
                           Different forms configured in hubspot are integrated
                           with scripts and apis.
                         </p>
@@ -540,7 +550,7 @@ const { data } = this.state;
                         <p className="text-level-5 title-black">
                           Weekly Speakers and Slider Speakers
                         </p>
-                        <p>
+                        <p className="text-justify">
                           Top quality speakers are assigned as weekly speakers
                           based on their rankings and priority.
                         </p>
@@ -557,7 +567,7 @@ const { data } = this.state;
                         <p className="text-level-5 title-black">
                           Social Media integrations
                         </p>
-                        <p>
+                        <p className="text-justify">
                           Playlist from youtube integrated and other social
                           media plugins added to the website.
                         </p>

@@ -47,7 +47,7 @@ export default class sitemap extends Component {
                             <b>wordpress Development</b>
                           </a>
                         </li>
-                        </ul>
+                      </ul>
                     </div>
                     <div class="col-md-3">
                       <ul>
@@ -56,7 +56,7 @@ export default class sitemap extends Component {
                             <b>FileMaker Pro Development</b>
                           </a>
                         </li>
-                        </ul>
+                      </ul>
                     </div>
                     <div class="col-md-3">
                       <ul>
@@ -65,7 +65,7 @@ export default class sitemap extends Component {
                             <b>Blockchain Development</b>
                           </a>
                         </li>
-                        </ul>
+                      </ul>
                     </div>
                     <div class="col-md-3">
                       <ul>
@@ -74,7 +74,7 @@ export default class sitemap extends Component {
                             <b>Ui Development</b>
                           </a>
                         </li>
-                        </ul>
+                      </ul>
                     </div>
                     <div class="col-md-3">
                       <ul>
@@ -83,7 +83,7 @@ export default class sitemap extends Component {
                             <b>Design and Prototyping</b>
                           </a>
                         </li>
-                        </ul>
+                      </ul>
                     </div>
                     <div class="col-md-3">
                       <ul>
@@ -92,7 +92,7 @@ export default class sitemap extends Component {
                             <b>DB & Backend Development</b>
                           </a>
                         </li>
-                        </ul>
+                      </ul>
                     </div>
                   </div>
                   <br />
@@ -108,7 +108,7 @@ export default class sitemap extends Component {
 
                   <div className="row">
                     <div class="col-md-3">
-                    <ul></ul>
+                      <ul></ul>
                     </div>
                   </div>
 
@@ -125,12 +125,12 @@ export default class sitemap extends Component {
                   <div className="row">
                     <div class="col-md-3">
                       <ul>
-                      <li>
+                        <li>
                           <a href="/blogs/dos-and-donts-of-css-and-html">
                             Dos and Don'ts of CSS and HTML
                           </a>
                         </li>
-                        <li>
+                        <li className="text-justify">
                           <a href="/blogs/third-party-security-plugins-for-wp-websites-hosted-in-wp-engine">
                             Third-party security plugins for WP websites hosted
                             in WP Engine
@@ -141,13 +141,13 @@ export default class sitemap extends Component {
                             How to Add an XML Sitemap to your website
                           </a>
                         </li>
-                        <li>
+                        <li className="text-justify">
                           <a href="/blogs/importance-of-image-optimization-for-better-page-load">
                             Importance of Image Optimization for better page
                             load
                           </a>
                         </li>
-                        <li>
+                        <li className="text-justify">
                           <a href="/how-to-create-and-schedule-cron-jobs-in-wordpress">
                             How to create and Schedule Cron jobs in WordPress
                           </a>
@@ -157,20 +157,20 @@ export default class sitemap extends Component {
 
                     <div class="col-md-3">
                       <ul>
-                        <li>
-                        <a href="/blogs/how-to-upload-videos-to-your-wordpress-3-easy-ways-to-get-started">
+                        <li className="text-justify">
+                          <a href="/blogs/how-to-upload-videos-to-your-wordpress-3-easy-ways-to-get-started">
                             How to upload videos to your WordPress: 3 easy ways
                             to get started
                           </a>
                         </li>
-                        <li>
-                        <a href="/blogs/how-to-hide-unavailable-variant-option-in-shopify-tip-for-a-shopify-developer">
+                        <li className="text-justify">
+                          <a href="/blogs/how-to-hide-unavailable-variant-option-in-shopify-tip-for-a-shopify-developer">
                             How to hide unavailable variant option in Shopify –
                             Tip for a Shopify Developer
                           </a>
                         </li>
                         <li>
-                        <a href="/blogs/introduction-to-less">
+                          <a href="/blogs/introduction-to-less">
                             Introduction to LESS (CSS Framework)
                           </a>
                         </li>
@@ -190,7 +190,7 @@ export default class sitemap extends Component {
 
                   <div className="row">
                     <div class="col-md-3">
-                    <ul></ul>
+                      <ul></ul>
                     </div>
                   </div>
 
@@ -207,7 +207,7 @@ export default class sitemap extends Component {
                   <div className="row">
                     <div class="col-md-3">
                       <ul>
-                      <li>
+                        <li>
                           <a href="/casestudies/maikeinc">Maike Inc</a>
                         </li>
                         <li>
@@ -217,7 +217,7 @@ export default class sitemap extends Component {
                           <a href="/casestudies/megalot">Megalot</a>
                         </li>
                         <li>
-                        <a href="/casestudies/filemaker">
+                          <a href="/casestudies/filemaker">
                             Filemaker in Action
                           </a>
                         </li>
@@ -225,11 +225,11 @@ export default class sitemap extends Component {
                     </div>
                     <div class="col-md-3">
                       <ul>
-                      <li>
+                        <li>
                           <a href="/casestudies/easy-level">Easy-Level</a>
                         </li>
                         <li>
-                        <a href="/casestudies/multitoken">
+                          <a href="/casestudies/multitoken">
                             Multi Token Wallet In Gaming
                           </a>
                         </li>
@@ -268,7 +268,7 @@ export default class sitemap extends Component {
 
                   <div className="row">
                     <div class="col-md-3">
-                    <ul></ul>
+                      <ul></ul>
                     </div>
                   </div>
 

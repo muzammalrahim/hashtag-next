@@ -3,7 +3,7 @@ import Header from "../../components/header/index.jsx";
 import Footer from "../../components/footer/index.jsx";
 import Contact from "../../components/contacts/index.jsx";
 // import Slider from "../../components/slider/index.jsx";
-import Wpsliderv2 from '../../components/wordpress-sliderv2/index.jsx';
+import Wpsliderv2 from "../../components/wordpress-sliderv2/index.jsx";
 import DocumentMeta from "react-document-meta";
 import Link from "next/link";
 
@@ -43,7 +43,6 @@ export default class Shopify extends Component {
     };
   }
   render() {
-   
     const { data } = this.state;
 
     const latestWork = [
@@ -104,7 +103,7 @@ export default class Shopify extends Component {
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <h2 className="bold-contents shopify-content-box pl-4">
+                      <h2 className="bold-contents shopify-content-box pl-4 text-justify">
                         We Design & Set-Up Beautiful E-commerce Store in
                         Shopify. We are official Shopify Partners and Shopify
                         Experts.
@@ -133,26 +132,26 @@ export default class Shopify extends Component {
                   </span>
                 </span>
                 <div className="shopify-content mt-4">
-                  <p>
+                  <p className="text-justify">
                     <span className="d-xxl-block">
                       We are official Shopify setup experts and Shopify Partners
                       from
                     </span>
 
-                    <span className="d-xxl-block">
+                    <span className="d-xxl-block text-justify">
                       California. We specialize in the design & development of
                       custom{" "}
                     </span>
-                    <span className="d-xxl-block">
+                    <span className="d-xxl-block text-justify">
                       e-commerce experiences. Our team can partner with you to
                       build a
                     </span>
-                    <span className="d-xxl-block">
+                    <span className="d-xxl-block text-justify">
                       {" "}
                       beautiful online store for your business. Let us assist
                       you every step
                     </span>
-                    <span className="d-xxl-block">
+                    <span className="d-xxl-block text-justify">
                       {" "}
                       of the way and grow your brand for the long-term.
                     </span>
@@ -209,13 +208,13 @@ export default class Shopify extends Component {
             <Wpsliderv2 images={latestWork}> </Wpsliderv2>
           </div>
 
-          <div className="shopify-section-4-main">
-            <div className="container-fluid shopify-section-4">
+          <div className="shopify-section-4-main ">
+            <div className="container-fluid shopify-section-4 ">
               <div className="container">
                 {/*section 4 */}
 
-                <div className="row justify-content-center  pl-3 pr-3">
-                  <div className="col-12 col-lg-5 col-xxl-5 col-md-12 content-four-section">
+                <div className="row justify-content-center  pl-3 pr-3 pb-5 ">
+                  <div className="col-12 col-lg-5 col-xxl-5 col-md-12 content-four-section pb-5 mb-5">
                     <div className="text-above-main-title title-white">
                       THE BEST E-COMMERCE PLATFORM
                     </div>
@@ -232,7 +231,7 @@ export default class Shopify extends Component {
                     </h3>
 
                     <p class="hash-content-col title-white why-us-hash-content">
-                      <p>
+                      <p className="text-justify">
                         We recommend Shopify because its world leading
                         E-Commerce platform that's great in performance and easy
                         to manage. We are official Shopify setup experts and
@@ -314,7 +313,7 @@ export default class Shopify extends Component {
                 </p>
                 <div className="shopify-content mt-4">
                   <p>
-                    <ul className="shopify-benifits-list">
+                    <ul className="shopify-benifits-list text-justify">
                       <li>Highly secure transactions</li>
                       <li>Integrated shipping rates</li>
                       <li>Multiple payment options</li>
@@ -342,7 +341,7 @@ export default class Shopify extends Component {
                 </p>
                 <div className="shopify-content mt-4">
                   <p>
-                    <ul className="shopify-benifits-list">
+                    <ul className="shopify-benifits-list text-justify">
                       <li>Easy product management</li>
                       <li>Customer database</li>
                       <li>Easy order management and refunds</li>
@@ -369,7 +368,7 @@ export default class Shopify extends Component {
                 </p>
                 <div className="shopify-content mt-4">
                   <p>
-                    <ul className="shopify-benifits-list">
+                    <ul className="shopify-benifits-list text-justify">
                       <li>Highly optimized and Google-Ready</li>
                       <li>Discounts and gift card features</li>
                       <li>Sell on social media</li>
@@ -393,7 +392,7 @@ export default class Shopify extends Component {
                 <p className="shopify-title text-level-4">High Performance</p>
                 <div className="shopify-content mt-4">
                   <p>
-                    <ul className="shopify-benifits-list">
+                    <ul className="shopify-benifits-list text-justify">
                       <li>Faster than any other E-Commerce store</li>
                       <li>Unlimited data bandwidth</li>
                       <li>99.98% uptime guaranteed</li>
@@ -420,7 +419,7 @@ export default class Shopify extends Component {
                 </p>
                 <div className="shopify-content mt-4">
                   <p>
-                    <ul className="shopify-benifits-list">
+                    <ul className="shopify-benifits-list text-justify">
                       <li>Run business on the go</li>
                       <li>Manage orders</li>
                       <li>Manage inventory</li>

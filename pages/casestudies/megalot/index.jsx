@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import Header from '../../../components/header/index.jsx';
-import Footer from '../../../components/footer/index.jsx';
-import Underconstruction from '../../../components/under-construction/index.jsx';
-import Contact from '../../../components/contacts/index.jsx';
-import DocumentMeta from 'react-document-meta';
-import $ from 'jquery';
-import axios from 'axios';
-import * as config from '../../../config.js';
+import React, { Component } from "react";
+import Header from "../../../components/header/index.jsx";
+import Footer from "../../../components/footer/index.jsx";
+import Underconstruction from "../../../components/under-construction/index.jsx";
+import Contact from "../../../components/contacts/index.jsx";
+import DocumentMeta from "react-document-meta";
+import $ from "jquery";
+import axios from "axios";
+import * as config from "../../../config.js";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import Slide from 'react-reveal/Reveal';
+import Slide from "react-reveal/Reveal";
 
-require('typeface-montserrat')
+require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
 
@@ -50,7 +50,7 @@ export default class Megalot extends Component {
   componentDidMount() {}
 
   render() {
- const { data } = this.state;
+    const { data } = this.state;
     const settings = {
       infinite: true,
       slidesToShow: 1,
@@ -88,25 +88,26 @@ export default class Megalot extends Component {
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
                     <div className="case-megalot-size">
-                      <p className="megalot_title">Website development & design</p>
-                      </div>
-                      <h1 className="main-title title-white">Megalot</h1>
-                      <ul className="project-info">
-                        <li>
-                          <strong>Industry:</strong>Lottery & Gambling
-                        </li>
-                        <li>
-                          <strong>Location:</strong>California, US
-                        </li>
-                        <li>
-                          <strong>Service:</strong>Blockchain development
-                        </li>
-                        <li>
-                          <strong>Technologies:</strong>Blockchain, Solidity,
-                          Metamask, ETH Smart Contract, Web3
-                        </li>
-                      </ul>
-                    
+                      <p className="megalot_title">
+                        Website development & design
+                      </p>
+                    </div>
+                    <h1 className="main-title title-white">Megalot</h1>
+                    <ul className="project-info text-justify">
+                      <li>
+                        <strong>Industry:</strong>Lottery & Gambling
+                      </li>
+                      <li>
+                        <strong>Location:</strong>California, US
+                      </li>
+                      <li>
+                        <strong>Service:</strong>Blockchain development
+                      </li>
+                      <li>
+                        <strong>Technologies:</strong>Blockchain, Solidity,
+                        Metamask, ETH Smart Contract, Web3
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -118,15 +119,17 @@ export default class Megalot extends Component {
               <div className="row">
                 <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
                   <blockquote cite="https://www.hashtag-ca.com/">
-                    <h2>Our potential team has deep knowledge about Ethereum
-                    platform based applications to develop smart contracts and
-                    dApps.</h2>
+                    <h2 className="text-justify">
+                      Our potential team has deep knowledge about Ethereum
+                      platform based applications to develop smart contracts and
+                      dApps.
+                    </h2>
                   </blockquote>
                   <div className="project-blk-title">
                     <div className="text-above-main-title">INTRODUCTION</div>
                     <h3 class="main-title title-orange">About Megalot</h3>
                   </div>
-                  <p>
+                  <p className="text-justify">
                     In the world of crypto and decentralized finance, gambling
                     has always been one of the ideal use cases. Crypto
                     facilitates gambling in the form of easy to use
@@ -171,23 +174,23 @@ export default class Megalot extends Component {
                 <div className="col-md-8">
                   <div className="project-blk-title">
                     <p className="text-above-main-title text-above-main-title_margin_bottom">
-                    CRACKING CHALLENGES WITH OUR TEAM OF BLOCKCHAIN EXPERTS{" "}
+                      CRACKING CHALLENGES WITH OUR TEAM OF BLOCKCHAIN EXPERTS{" "}
                     </p>
                     <h3 class="main-title">Challenges</h3>
                   </div>
-                  <p>
+                  <p className="text-justify">
                     One of the main benefits of using crypto is the security
                     features which go hand in hand with it. Traditional online
                     gambling sites require the users credit card details and
                     other personal information in order to grant entry.
                   </p>
-                  <p>
+                  <p className="text-justify">
                     While this might be ok to some, there would be others who
                     value privacy especially in this age where security is
                     lacking and credit fraud and other security breaches are
                     common.
                   </p>
-                  <p>
+                  <p className="text-justify">
                     Not to mention in traditional gambling we have to trust the
                     authority to decide the winner and there is little to no
                     transparency in the selection process.
@@ -204,19 +207,19 @@ export default class Megalot extends Component {
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
                       <div className="text-above-main-title">
-                      PRODUCT UNIQUENESS
+                        PRODUCT UNIQUENESS
                       </div>
                       <h3 class="main-title title-orange">Our Solution ?</h3>
                     </div>
                     <div className="cust-order-list">
-                      <ol>
-                        <li>
+                      <ol className="text-justify">
+                        <li className="text-justify">
                           <strong>We tackled the privacy </strong>issue and
                           barrier of entry in one simple solution by
                           implementing betting using Metamask, which is an
                           ethereum based waller used by most Dapps.{" "}
                         </li>
-                        <li>
+                        <li className="text-justify">
                           <strong>The beauty of this feature </strong>is that
                           anyone with ethereum in their metamask account can
                           participate in the game with the click of a button,
@@ -224,19 +227,19 @@ export default class Megalot extends Component {
                           remaining both anonymous and not having to enter their
                           credit details .{" "}
                         </li>
-                        <li>
+                        <li className="text-justify">
                           <strong>By using Ethereum </strong>as our currency and
                           smart contracts based on it we provide the users of
                           our Dapp with 100% transparency as all the
                           transactions and code is public on the blockchain.{" "}
                         </li>
-                        <li>
+                        <li className="text-justify">
                           <strong>
                             Even the selection of winners is done on chain{" "}
                           </strong>
                           and is easy for anyone to see.{" "}
                         </li>
-                        <li>
+                        <li className="text-justify">
                           <strong>
                             We have also implemented a simple payout{" "}
                           </strong>
@@ -331,12 +334,16 @@ export default class Megalot extends Component {
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <div className="text-above-main-title">PROJECT STACK</div>
+                        <div className="text-above-main-title">
+                          PROJECT STACK
+                        </div>
                         <h3 class="main-title title-orange">Technogies Used</h3>
                       </div>
                       <div className="tech-desc">
-                        <p className="heading5">Solidity language on Ethereum :</p>
-                        <p>
+                        <p className="heading5">
+                          Solidity language on Ethereum :
+                        </p>
+                        <p className="text-justify">
                           The smart contracts used in this project are built
                           using solidity language on ethereum. The front end is
                           built using HTML and JS. Web3 integration is achieved
@@ -415,7 +422,7 @@ export default class Megalot extends Component {
                           Ease <br />
                           Registration
                         </p>
-                        <p>
+                        <p className="text-justify">
                           The use of metamask as the user account removes any
                           unwanted steps in the registration process and
                           provides security and ease of access to users.
@@ -434,7 +441,7 @@ export default class Megalot extends Component {
                           Secure <br />
                           Control Panel{" "}
                         </p>
-                        <p>
+                        <p className="text-justify">
                           High level security features in the control panel of
                           the management.
                         </p>
@@ -452,7 +459,7 @@ export default class Megalot extends Component {
                           Multi User <br />
                           Unlock System
                         </p>
-                        <p>
+                        <p className="text-justify">
                           Multi user unlock system which involves 2 out of the 3
                           owners agreeing to access the system.{" "}
                         </p>
@@ -471,7 +478,7 @@ export default class Megalot extends Component {
                           Secure <br />
                           Admin Panel{" "}
                         </p>
-                        <p>
+                        <p className="text-justify">
                           Access to the admin panel is provided only based on
                           the account signed in currently in metamask.
                         </p>
@@ -489,7 +496,7 @@ export default class Megalot extends Component {
                           Fair <br />
                           Selection
                         </p>
-                        <p>
+                        <p className="text-justify">
                           Use of an external unbiased oracle to provide the
                           unique random number in order to select the winners
                           based on the provables library previously known as
@@ -535,7 +542,7 @@ export default class Megalot extends Component {
                     <h3 class="main-title title-orange">Our Skillset</h3>
                   </div>
                   <div className="skillset-wrap">
-                    <p>
+                    <p className="text-justify">
                       At Hashtag Systems, We are specialized in Full-stack
                       development of blockchain based web applications. Boost
                       your efficiency, security and service with our custom

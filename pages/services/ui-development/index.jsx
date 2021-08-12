@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import Header from '../../../components/header/index.jsx';
-import Footer from '../../../components/footer/index.jsx';
-import Contact from '../../../components/contacts/index.jsx';
-import DocumentMeta from 'react-document-meta';
-import Slide from 'react-reveal/Reveal';
+import React, { Component } from "react";
+import Header from "../../../components/header/index.jsx";
+import Footer from "../../../components/footer/index.jsx";
+import Contact from "../../../components/contacts/index.jsx";
+import DocumentMeta from "react-document-meta";
+import Slide from "react-reveal/Reveal";
 import Axios from "axios";
 import https from "https";
 
@@ -39,7 +39,6 @@ export default class UIPage extends Component {
     };
   }
   render() {
-   
     let { data } = this.state;
     return (
       <div className="contact-main" id="Uidevbanner">
@@ -59,7 +58,7 @@ export default class UIPage extends Component {
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
                       <p className="sub-text-above-main-title title-white">
-                        We offer solutions for 
+                        We offer solutions for
                       </p>
                       <h1 className="main-title  title-white d-block">
                         UI <br />
@@ -67,7 +66,7 @@ export default class UIPage extends Component {
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <h2 className="bold-contents shopify-content-box pl-4">
+                      <h2 className="bold-contents shopify-content-box pl-4 text-justify">
                         A complete front-end makeover for your digital business
                         solutions with immersive visual effects and latest
                         technology trends.
@@ -86,13 +85,13 @@ export default class UIPage extends Component {
                   Why Us?
                 </h3>
                 <div className="shopify-content mt-4">
-                  <p className="mb-4">
+                  <p className="mb-4 text-justify">
                     We work on certain ethics and our UI development is a
                     reflection of the same. Which brings you unparalleled
                     quality and user experience for your fully functional
                     websites.
                   </p>
-                  <p>
+                  <p className="text-justify">
                     With concern for your futuristic needs and by holding latest
                     design trends, we make stunningly beautiful yet responsive
                     applications and websites with solid foundations that
@@ -105,7 +104,7 @@ export default class UIPage extends Component {
                   </div>
                   <div className="wp-main">
                     <p class="hash-content-col title-black why-us-hash-content">
-                      <p>
+                      <p className="text-justify">
                         Give Your Business The Extra Edge With Smart UI/UX That
                         Will Engage Your Audience & Boost Your Brand.
                       </p>
@@ -169,7 +168,7 @@ export default class UIPage extends Component {
                         Interactive and User Experience
                       </p>
                       <hr class="hashtag-underline ml-2"></hr>
-                      <p>
+                      <p className="text-justify">
                         We design websites that users can connect to. A
                         real-time interaction of a site, guides users towards
                         the information they are looking for. People will get to
@@ -186,7 +185,7 @@ export default class UIPage extends Component {
                         CMS Ready Designs
                       </p>
                       <hr class="hashtag-underline ml-2"></hr>
-                      <p>
+                      <p className="text-justify">
                         If your business plays with creating content and
                         publishing it frequently, it needs a strong content
                         management system. Our designs will be featured in this
@@ -203,7 +202,7 @@ export default class UIPage extends Component {
                         Fast and Lightweight
                       </p>
                       <hr class="hashtag-underline ml-2"></hr>
-                      <p>
+                      <p className="text-justify">
                         When we focus on interactive websites, we've taken good
                         care to keep our page speed lightening fast. We save
                         time and deliver a quality product. We keep our code
@@ -223,7 +222,7 @@ export default class UIPage extends Component {
                         Crafted For Mobile
                       </p>
                       <hr class="hashtag-underline ml-2"></hr>
-                      <p>
+                      <p className="text-justify">
                         Accessing websites through tablets and mobiles has
                         become trendy. Usability and mobile friendliness should
                         be at the heart of any website. If your website does not
@@ -242,7 +241,7 @@ export default class UIPage extends Component {
                       />
                       <p className="text-level-5 title-black">SEO Friendly</p>
                       <hr class="hashtag-underline ml-2"></hr>
-                      <p>
+                      <p className="text-justify">
                         SEO is the key for any website’s success rate. With
                         better SEO strategies and web design process, we will
                         make your website super search-engine friendly, and help
@@ -262,7 +261,7 @@ export default class UIPage extends Component {
                         Cross Browser Compliance
                       </p>
                       <hr class="hashtag-underline ml-2"></hr>
-                      <p>
+                      <p className="text-justify">
                         While working with the latest coding standards, we
                         ensure your websites will be accessible through any
                         browsers and any platforms and functions flawlessly. We
@@ -435,7 +434,7 @@ export default class UIPage extends Component {
                     />
                   </div>
                   <div className="shopify-content mt-4">
-                    <p>
+                    <p className="text-justify">
                       We are so excited to build you a perfect stunning and
                       mobile ready interactive website for you. We have a good
                       track record and extend high resourceful results to our

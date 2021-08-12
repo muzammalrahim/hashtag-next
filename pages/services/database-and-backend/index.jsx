@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Header from '../../../components/header/index.jsx';
-import Footer from '../../../components/footer/index.jsx';
-import Contact from '../../../components/contacts/index.jsx';
-import DocumentMeta from 'react-document-meta';
+import React, { Component } from "react";
+import Header from "../../../components/header/index.jsx";
+import Footer from "../../../components/footer/index.jsx";
+import Contact from "../../../components/contacts/index.jsx";
+import DocumentMeta from "react-document-meta";
 import Slide from "react-reveal/Reveal";
 import Axios from "axios";
 import https from "https";
@@ -31,7 +31,6 @@ export async function getServerSideProps() {
   };
 }
 
-
 export default class DatabasePage extends Component {
   constructor(props) {
     super(props);
@@ -41,9 +40,7 @@ export default class DatabasePage extends Component {
     };
   }
   render() {
-   
-      
-        let { data } = this.state;
+    let { data } = this.state;
     return (
       <div className="contact-main DatabaseAndDev" id="Dbdevbanner">
         <div className="wp-main" id="wp-main">
@@ -62,7 +59,7 @@ export default class DatabasePage extends Component {
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
                       <p className="sub-text-above-main-title title-white">
-                        We offer solutions for 
+                        We offer solutions for
                       </p>
                       <h1 className="main-title  title-white d-block">
                         DB & Backend
@@ -71,7 +68,7 @@ export default class DatabasePage extends Component {
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <h2 className="bold-contents shopify-content-box pl-4">
+                      <h2 className="bold-contents shopify-content-box pl-4 text-justify">
                         We build feature-rich applications with the help of best
                         industry practices and agile principles and aim at
                         speed, performance and accuracy.
@@ -87,7 +84,7 @@ export default class DatabasePage extends Component {
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12">
                 <div className="shopify-content mt-4">
-                  <p className="mb-4">
+                  <p className="mb-4 text-justify">
                     The Internet is going through changes every second. When we
                     think about an application or website running on the
                     internet, its backbone is still a database built years back
@@ -95,7 +92,7 @@ export default class DatabasePage extends Component {
                     of its appearance but also of high performance. For a user,
                     raw data stored in a database doesn't make any sense.
                   </p>
-                  <p>
+                  <p className="text-justify">
                     Our customer-oriented approach drives us to work only by the
                     latest methodologies. We have to process, protect, present
                     the data in a way that is convenient for an end user. This
@@ -172,13 +169,13 @@ export default class DatabasePage extends Component {
                     Development Services
                   </h3>
                   <div class="col-md-9 mx-auto sw-service-dev-sub">
-                    <p>
+                    <p className="text-justify">
                       Backend development is one of the vital components of the
                       application. We at Hashtag Systems, provide 80 % of our
                       backend development solutions in python and related
                       frameworks.
                     </p>
-                    <p>
+                    <p className="text-justify">
                       We are using django along with rest framework to build
                       sustainable apis for web and mobile applications. Through
                       AI-driven NLP services, we build systems that recognize
@@ -511,14 +508,11 @@ export default class DatabasePage extends Component {
                 </h3>
                 <div className="shopify-content mt-4">
                   <p class="main-title">
-                    <img
-                      src="../images/database/quote-black31.svg"
-                      alt="quote"
-                    />
+                    <img src="../images/wordpress/wp-quoute.svg" alt="quote" />
                   </p>
                   <div className="wp-main">
                     <p class="hash-content-col title-black why-us-hash-content">
-                      <p>
+                      <p className="text-justify">
                         Our experienced and highly versatile team of
                         professionals are able to build applications even faster
                         and establish long-lasting relationships with pleased
