@@ -13,8 +13,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
 
   const [tabindex, setTabindex] = useState(false);
   const [Activetabindex, setActiveTabIndex] = useState(1);
-  const [loadScript, setloadScript] = useState("");
-
+  
   const getindex = () => {
     if (localStorage.getItem("Activetabindex2")) {
       setActiveTabIndex(localStorage.getItem("Activetabindex2"));
@@ -39,10 +38,6 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       });
     }
     
-{setTimeout(() => {
-  setloadScript(true)
-}, 2000)}
-  
   }, []);
 
 
@@ -72,10 +67,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <link rel="canonical" href={canonical}></link>
-        <script src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1" async defer></script> 
-
-
-        {console.log("chk:",loadScript)}
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"></script> 
 
         <script
           dangerouslySetInnerHTML={{
@@ -88,7 +80,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                                 });
                              `,
           }}
-          async defer />
+         />
      
       <div className="container" id="main-section">
         <Post />
