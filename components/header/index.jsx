@@ -13,7 +13,8 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
 
   const [tabindex, setTabindex] = useState(false);
   const [Activetabindex, setActiveTabIndex] = useState(1);
-  
+
+
   const getindex = () => {
     if (localStorage.getItem("Activetabindex2")) {
       setActiveTabIndex(localStorage.getItem("Activetabindex2"));
@@ -37,7 +38,30 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         }
       });
     }
-    
+  
+  }, []);
+  useEffect(() => {
+  const script = document.createElement('script');
+  script.src = "vendor/js/jquery.min.js";
+	script.type = 'text/javascript';
+	script.async = true;
+  script.onload = () => {'DOMContentLoaded' } 
+  $(document).ready(function(e){
+    ('.elem', {
+        wrap_class: 'lcl_fade_oc',
+        gallery : true, 
+        thumb_attr: 'data-lcl-thumb', 
+        slideshow_time  : "0",
+        skip: 'mALL',
+        js_: "max",
+        js_r: 0,
+        js_p : 0,
+        js_w: 0,
+        async : "true",
+        dom:"true"
+    }); 
+});
+  
   }, []);
 
 
@@ -67,7 +91,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <link rel="canonical" href={canonical}></link>
-        <script src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"></script> 
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1" async defer></script> 
 
         <script
           dangerouslySetInnerHTML={{
@@ -80,7 +104,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                                 });
                              `,
           }}
-         />
+          async defer />
      
       <div className="container" id="main-section">
         <Post />

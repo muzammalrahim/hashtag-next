@@ -8,11 +8,13 @@ import * as config from '../../../config.js';
 import "slick-carousel/slick/slick.css";
 
 import dynamic from "next/dynamic";
-const Header  = dynamic(() => import("../../../components/header/index.jsx"),{});
-const Footer = dynamic(() => import("../../../components/footer/index.jsx"),{});
+const Header  = dynamic(() => import("../../../components/header/index.jsx"));
+const Footer = dynamic(() => import("../../../components/footer/index.jsx"));
 const Slider = dynamic(() => import("react-slick"),{});
 const Slide = dynamic(() => import("react-reveal/Reveal"),{});
 const Contact = dynamic(() => import("../../../components/contacts/index.jsx"),{});
+import "slick-carousel/slick/slick.css";
+import "lazysizes";
 
 require('typeface-montserrat')
 import Axios from "axios";
@@ -154,7 +156,7 @@ export default class Easylevel extends Component {
                 </div>
                 <div className="img-blk">
                    <img class="lazyload"
-                    data-src="/images/case-studies/easylevel/easy-level-banner.svg"
+                    data-src="/images/case-studies/easylevel/easy-level-banner.webp"
                     alt="easy-level-banner"
                   />
                 </div>
@@ -172,7 +174,7 @@ export default class Easylevel extends Component {
                   </div>
                   <div className="workflow-wrap">
                      <img class="lazyload"
-                      data-src="/images/case-studies/easylevel/archi1.svg"
+                      data-src="/images/case-studies/easylevel/archi1.webp"
                       alt="Architecture"
                     />
                   </div>
@@ -275,7 +277,7 @@ export default class Easylevel extends Component {
                 <div className="col-md-6 sticky-image-section">
                   <div className="speakinc-img sticky-img">
                      <img class="lazyload"
-                      data-src="/images/case-studies/easylevel/easy-level-sticky.svg"
+                      data-src="/images/case-studies/easylevel/easy-level-sticky.webp"
                       alt="easy-level-sticky"
                     />
                   </div>
@@ -301,7 +303,7 @@ export default class Easylevel extends Component {
                         <div className="slide-div">
                           <div className="slider-img">
                              <img class="lazyload"
-                              data-src="/images/case-studies/easylevel/easy-level-slider.svg"
+                              data-src="/images/case-studies/easylevel/easy-level-slider.webp"
                               alt="Easy Level"
                             />
                           </div>
@@ -309,7 +311,7 @@ export default class Easylevel extends Component {
                         <div className="slide-div">
                           <div className="slider-img">
                              <img class="lazyload"
-                              data-src="/images/case-studies/easylevel/easy-level-slider2.svg"
+                              data-src="/images/case-studies/easylevel/easy-level-slider2.webp"
                               alt="Easy Level"
                             />
                           </div>
@@ -317,7 +319,7 @@ export default class Easylevel extends Component {
                         <div className="slide-div">
                           <div className="slider-img">
                              <img class="lazyload"
-                              data-src="/images/case-studies/easylevel/easy-level-slider3.svg"
+                              data-src="/images/case-studies/easylevel/easy-level-slider3.webp"
                               alt="Easy Level"
                             />
                           </div>
@@ -325,7 +327,7 @@ export default class Easylevel extends Component {
                         <div className="slide-div">
                           <div className="slider-img">
                              <img class="lazyload"
-                              data-src="/images/case-studies/easylevel/easy-level-slider4.svg"
+                              data-src="/images/case-studies/easylevel/easy-level-slider4.webp"
                               alt="Easy Level"
                             />
                           </div>
@@ -333,7 +335,7 @@ export default class Easylevel extends Component {
                         <div className="slide-div">
                           <div className="slider-img">
                              <img class="lazyload"
-                              data-src="/images/case-studies/easylevel/easy-level-slider5.svg"
+                              data-src="/images/case-studies/easylevel/easy-level-slider5.webp"
                               alt="Easy Level"
                             />
                           </div>
@@ -341,7 +343,7 @@ export default class Easylevel extends Component {
                         <div className="slide-div">
                           <div className="slider-img">
                              <img class="lazyload"
-                              data-src="/images/case-studies/easylevel/easy-level-slider6.svg"
+                              data-src="/images/case-studies/easylevel/easy-level-slider6.webp"
                               alt="Easy Level"
                             />
                           </div>
@@ -482,7 +484,7 @@ export default class Easylevel extends Component {
                   <Slide bottom>
                     <div className="hand-img-blk">
                        <img class="lazyload"
-                        data-src="/images/case-studies/easylevel/easy-level-phone-mockup.svg"
+                        data-src="/images/case-studies/easylevel/easy-level-phone-mockup.png"
                         alt="easy-level-phone"
                       />
                     </div>
