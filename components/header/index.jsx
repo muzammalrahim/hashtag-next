@@ -88,7 +88,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                                 });
                              `,
           }}
-        />
+          async defer />
      
       <div className="container" id="main-section">
         <Post />
