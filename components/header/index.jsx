@@ -1,25 +1,35 @@
-import React, { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic'
-import { useRouter } from 'next/router';
-import Link from 'next/link'
+import React, { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
+import Link from "next/link";
 import Head from "next/head";
 // import "@fortawesome/fontawesome-free/css/all.min.css";
-dynamic(()=> import("@fortawesome/fontawesome-free/css/all.min.css"))
-const Post = dynamic(()=> import("./post"))
+dynamic(() => import("@fortawesome/fontawesome-free/css/all.min.css"));
+const Post = dynamic(() => import("./post"));
 // import Post from "./post.jsx"
-import $ from 'jquery';
+import $ from "jquery";
 
 const Header = ({ title, description, keywords, canonical_tags }) => {
-
   const [tabindex, setTabindex] = useState(false);
   const [Activetabindex, setActiveTabIndex] = useState(1);
-  const [loadScript, setloadScript] = useState("");
+  const [loadScript, setloadScript] = useState(false);
 
   const getindex = () => {
     if (localStorage.getItem("Activetabindex2")) {
       setActiveTabIndex(localStorage.getItem("Activetabindex2"));
     }
   };
+
+  useEffect(() => {
+    window.onload = function () {
+      setTimeout(function () {
+        var scriptElement = document.createElement("script");
+        scriptElement.type = "text/javascript";
+        scriptElement.src = "https://www.googletagmanager.com/gtag/js?id=UA-78643548-1";
+        document.head.appendChild(scriptElement);
+      }, 150);
+    };
+  }, []);
 
   useEffect(() => {
     getindex();
@@ -38,13 +48,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         }
       });
     }
-    
-{setTimeout(() => {
-  setloadScript(true)
-}, 2000)}
-  
   }, []);
-
 
   //menu toggle on mobile
   const menuToggle = () => {
@@ -54,12 +58,15 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       });
     }
   };
-  let router = useRouter()
-  let canonicalUrl = "https://www.hashtag-ca.com" + router.asPath
-  let canonical = canonical_tags === null || canonical_tags === undefined ? canonicalUrl : canonical_tags;
+  let router = useRouter();
+  let canonicalUrl = "https://www.hashtag-ca.com" + router.asPath;
+  let canonical =
+    canonical_tags === null || canonical_tags === undefined
+      ? canonicalUrl
+      : canonical_tags;
   return (
     <header className="header-container">
-      
+      <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
@@ -72,10 +79,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <link rel="canonical" href={canonical}></link>
-        <script src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1" async defer></script> 
-
-
-        {console.log("chk:",loadScript)}
+     <script src="https://www.googletagmanager.com/gtag/js?id=UA-78" async defer></script> 
 
         <script
           dangerouslySetInnerHTML={{
@@ -83,13 +87,13 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                                 window.dataLayer = window.dataLayer || [];
                                 function gtag(){dataLayer.push(arguments);}
                                 gtag('js', new Date());
-                                gtag('config', 'UA-78643548-1', {
+                                gtag('config', 'UA-78', {
                                 page_path: window.location.pathname,
                                 });
                              `,
           }}
-          async defer />
-     
+        />
+      </Head>
       <div className="container" id="main-section">
         <Post />
 
@@ -103,9 +107,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
             aria-expanded="false"
             aria-label="Toggle navigation"
             onClick={(e) => {
-
               e.preventDefault(), setTabindex(!tabindex);
-
             }}
           >
             <span className="navbar-toggler-icon"></span>
@@ -310,4 +312,4 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
   );
 };
 
-export default Header
+export default Header;
