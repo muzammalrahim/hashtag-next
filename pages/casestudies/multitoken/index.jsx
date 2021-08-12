@@ -197,7 +197,7 @@ export default class Multitoken extends Component {
                   </div>
                   <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3 sc-ip-pro">
                     <img
-                      src="/images/case-studies/multitoken/summary-2.svg"
+                      src="/images/case-studies/multitoken/summary-2.png"
                       alt="architecture"
                       className="img-fluid shopify-image mobile-image-border storefront-img"
                     />

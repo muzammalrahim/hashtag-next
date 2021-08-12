@@ -1029,6 +1029,10 @@ button.btn.form-button-child.px-3:hover {
     bottom: 695px;
     z-index: 2;
 }
+
+
+
+
 .section-five-bg {
     position: relative;
     bottom: 735px;
@@ -1050,7 +1054,15 @@ button.btn.form-button-child.px-3:hover {
 .title-level-6 {
     margin-top: 18px;
 }
-}@media(max-width:1022px) {
+}
+
+@media (max-width:1285px) {
+    .section-four-bg {
+        bottom: 608px;
+ 
+}}
+
+@media(max-width:1022px) {
     .section-two-bg {
     background-image: none;
 }

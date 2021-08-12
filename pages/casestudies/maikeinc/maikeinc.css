@@ -59,7 +59,7 @@
   position: relative;
   z-index: 9;
 }
-.case-study.maikeinc .features-blk .what-we-do-border-style{
+.case-study.maikeinc .features-blk {
   height: auto !important;
 }
 

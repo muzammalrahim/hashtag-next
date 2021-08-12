@@ -11,8 +11,9 @@ import $ from 'jquery';
 
 const Header = ({ title, description, keywords, canonical_tags }) => {
 
-  const [tabindex, setTabindex] = useState(true);
+  const [tabindex, setTabindex] = useState(false);
   const [Activetabindex, setActiveTabIndex] = useState(1);
+  const [loadScript, setloadScript] = useState("");
 
   const getindex = () => {
     if (localStorage.getItem("Activetabindex2")) {
@@ -37,13 +38,13 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         }
       });
     }
+    
+{setTimeout(() => {
+  setloadScript(true)
+}, 2000)}
+  
   }, []);
 
-  useEffect(() => {
-    setTabindex(false);
-  },[tabindex])
-
-  
 
   //menu toggle on mobile
   const menuToggle = () => {
@@ -58,7 +59,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
   let canonical = canonical_tags === null || canonical_tags === undefined ? canonicalUrl : canonical_tags;
   return (
     <header className="header-container">
-      <Head>
+      
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
@@ -71,9 +72,10 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <link rel="canonical" href={canonical}></link>
-        <script
-          async src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"
-        ></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1" async defer></script> 
+
+
+        {console.log("chk:",loadScript)}
 
         <script
           dangerouslySetInnerHTML={{
@@ -86,8 +88,8 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                                 });
                              `,
           }}
-        />
-      </Head>
+          async defer />
+     
       <div className="container" id="main-section">
         <Post />
 
