@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
+import Script from 'next/script'
 // import "@fortawesome/fontawesome-free/css/all.min.css";
 dynamic(() => import("@fortawesome/fontawesome-free/css/all.min.css"));
 const Post = dynamic(() => import("./post"));
@@ -27,7 +28,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         scriptElement.type = "text/javascript";
         scriptElement.src = "https://www.googletagmanager.com/gtag/js?id=UA-78643548-1";
         document.head.appendChild(scriptElement);
-      }, 150);
+      },10);
     };
   }, []);
 
@@ -66,7 +67,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       : canonical_tags;
   return (
     <header className="header-container">
-      <Head>
+   
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
@@ -79,7 +80,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <link rel="canonical" href={canonical}></link>
-     <script src="https://www.googletagmanager.com/gtag/js?id=UA-78" async defer></script> 
+     <script src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"/>
 
         <script
           dangerouslySetInnerHTML={{
@@ -93,7 +94,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                              `,
           }}
         />
-      </Head>
+
       <div className="container" id="main-section">
         <Post />
 
