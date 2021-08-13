@@ -1,13 +1,13 @@
 import React, { Component, useEffect } from "react";
 
 // import Underconstruction from '../../../components/under-construction/index.jsx';
-import Contact from "../../components/contacts/index.jsx";
 import DocumentMeta from "react-document-meta";
 // import $ from "jquery";
 import axios from "axios";
 import * as config from "../../config.js";
-import Slide from "react-reveal/Reveal";
-import Link from "next/link";
+
+import Link from 'next/link'
+
 import dynamic from "next/dynamic";
 require("typeface-montserrat");
 // require('paroller.js');
@@ -17,6 +17,12 @@ import https from "https";
 import "lazysizes";
 // import a plugin
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
+
+
+
+
+const Slide = dynamic(() => import("react-reveal/Reveal"));
+const Contact = dynamic(() => import("../../components/contacts/index.jsx"));
 
 const Header = dynamic(() => import("../../components/header/index.jsx"), {
   // ssr: false,
