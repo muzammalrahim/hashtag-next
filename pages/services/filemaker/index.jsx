@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-import DocumentMeta from "react-document-meta";
-import Underconstruction from "../../../components/under-construction";
-import Testimonial from "../../../components/testimonial/index.jsx";
-import Slider from "react-slick";
+// import DocumentMeta from "react-document-meta";
+// import Underconstruction from "../../../components/under-construction";
+// import Testimonial from "../../../components/testimonial/index.jsx";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import Axios from "axios";
 import https from "https";
@@ -13,10 +13,7 @@ import "lazysizes";
 // import a plugin
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
-const Contact = dynamic(
-  () => import("../../../components/contacts/index.jsx"),
-  { ssr: false }
-);
+const Contact = dynamic( () => import("../../../components/contacts/index.jsx"), { ssr: false });
 const Header = dynamic(() => import("../../../components/header/index.jsx"));
 const Footer = dynamic(() => import("../../../components/footer/index.jsx"), {
   ssr: false,
@@ -334,74 +331,6 @@ export default class filemakerPage extends Component {
                     </p>
                   </div>
                   <div className="testimonial-wrap">
-                    {/*<Slider {...settings} className="testi-slide-outer">
-                                        <div className="slide-content">
-                                          <div className="cont-top">
-                                              <ul className="rtg">
-                                                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                              </ul>
-                                              <p>The solution satisfied end-user requirements, thanks to Hashtag Systems Inc’s top-notch deliverables. Despite some pacing issues, their cost-effective approach and seamless collaboration set them apart from other vendors.</p>
-                                          </div>
-                                          <div className="cont-btm">
-                                              <div className="author-col">
-                                                  <h6>Duleep Pillai</h6>
-                                                  <span><em>CEO, Veltec Networks, Inc</em></span>
-                                              </div>
-                                              <div className="logo-col">
-                                                  <span>read more on</span>
-                                                  <a href="https://clutch.co/profile/hashtag-systems#review-607452" target="_blank"><img data-src="../images/wordpress/clutch.svg" alt="" /></a>
-                                              </div>
-                                          </div>
-                                        </div>
-                                        <div className="slide-content">
-                                          <div className="cont-top">
-                                              <ul className="rtg">
-                                                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                              </ul>
-                                              <p>Phase one is almost completed, and it has resulted in a functional software. While there is a ramp-up period, the team at Hashtag Systems Inc has made the experience effortless. Their accommodating customer service is noteworthy. They're a knowledgable and dedicated team.</p>
-                                          </div>
-                                          <div className="cont-btm">
-                                              <div className="author-col">
-                                                  <h6>Aron Bastuba</h6>
-                                                  <span><em>Lab Supervisor, Fertility Center of California</em></span>
-                                              </div>
-                                              <div className="logo-col">
-                                                  <span>read more on</span>
-                                                  <a href="https://clutch.co/profile/hashtag-systems#review-1399788" target="_blank"><img data-src="../images/wordpress/clutch.svg" alt="" /></a>
-                                              </div>
-                                          </div>
-                                        </div>
-                                        <div className="slide-content">
-                                          <div className="cont-top">
-                                              <ul className="rtg">
-                                                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                  <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                              </ul>
-                                              <p>The website's sophisticated design has been well-received. Hashtag Systems Inc - California’s expert team inspires confidence throughout the project by communicating clearly from the start. Even though there are time-zone differences, the team responds quickly to any technical concerns that arise.</p>
-                                          </div>
-                                          <div className="cont-btm">
-                                              <div className="author-col">
-                                                  <h6>Abin Mathew</h6>
-                                                  <span><em>CEO, appOnstream</em></span>
-                                              </div>
-                                              <div className="logo-col">
-                                                  <span>read more on</span>
-                                                  <a href="https://clutch.co/profile/hashtag-systems#review-819638" target="_blank"><img data-src="../images/wordpress/clutch.svg" alt="" /></a>
-                                              </div>
-                                          </div>
-                                        </div>
-                                    </Slider>*/}
                     <div
                       class="clutch-widget"
                       data-url="https://widget.clutch.co"
