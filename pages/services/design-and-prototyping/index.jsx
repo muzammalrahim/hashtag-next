@@ -1,11 +1,17 @@
 import React, { Component } from "react";
-import Header from "../../../components/header/index.jsx";
-import Footer from "../../../components/footer/index.jsx";
-import Contact from "../../../components/contacts/index.jsx";
 import DocumentMeta from "react-document-meta";
-import Slide from "react-reveal/Reveal";
 import Axios from "axios";
 import https from "https";
+
+
+
+import dynamic from "next/dynamic";
+
+const Slide = dynamic(() => import("react-reveal/Reveal"));
+const Header = dynamic(() => import("../../../components/header/index.jsx"));
+const Footer = dynamic(() => import("../../../components/footer/index.jsx"));
+const Contact = dynamic(() => import("../../../components/contacts/index.jsx"));
+
 
 export async function getServerSideProps() {
   let data = [];
