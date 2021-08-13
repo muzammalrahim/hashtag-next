@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
-import Script from 'next/script'
+import Script from "next/script";
 // import "@fortawesome/fontawesome-free/css/all.min.css";
 dynamic(() => import("@fortawesome/fontawesome-free/css/all.min.css"));
 const Post = dynamic(() => import("./post"));
@@ -26,9 +26,10 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       setTimeout(function () {
         var scriptElement = document.createElement("script");
         scriptElement.type = "text/javascript";
-        scriptElement.src = "https://www.googletagmanager.com/gtag/js?id=UA-78643548-1";
+        scriptElement.src =
+          "https://www.googletagmanager.com/gtag/js?id=UA-78643548-1";
         document.head.appendChild(scriptElement);
-      },10);
+      }, 10);
     };
   }, []);
 
@@ -67,24 +68,23 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       : canonical_tags;
   return (
     <header className="header-container">
-   
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <meta name="keywords" content={keywords} />
-        <meta name="head title" content={title} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:site_name" content="hashtag" />
-        <meta property="twitter:card" content="hashtag" />
-        <meta property="twitter:creator" content="hashtag" />
-        <meta property="twitter:title" content={title} />
-        <meta property="twitter:description" content={description} />
-        <link rel="canonical" href={canonical}></link>
-     <script src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"/>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
+      <meta name="head title" content={title} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:site_name" content="hashtag" />
+      <meta property="twitter:card" content="hashtag" />
+      <meta property="twitter:creator" content="hashtag" />
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:description" content={description} />
+      <link rel="canonical" href={canonical}></link>
+      <script src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1" />
 
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
                                 window.dataLayer = window.dataLayer || [];
                                 function gtag(){dataLayer.push(arguments);}
                                 gtag('js', new Date());
@@ -92,8 +92,8 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                                 page_path: window.location.pathname,
                                 });
                              `,
-          }}
-        />
+        }}
+      />
 
       <div className="container" id="main-section">
         <Post />
@@ -156,10 +156,11 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                   >
                     {" "}
                     Services{" "}
-                    <i className="fa fa-angle-down" aria-hidden="true"></i>
+                    {/* <i className="fa fa-angle-down" aria-hidden="true"></i> */}
                   </a>
                 </Link>
                 <i className="fa fa-angle-down" aria-hidden="true"></i>
+
                 <ul className="submenu">
                   <div className="row m-0">
                     <div className="col-md-6 p-0">

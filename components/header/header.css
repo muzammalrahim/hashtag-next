@@ -382,6 +382,30 @@
     font-size: 15px !important;
     /* color: #434343 !important; */
 }
+@media(max-width:440px){
+    .fa-angle-down {
+       margin-right: 30px;
+        /* color: #434343 !important; */
+    }
+}
+@media(max-width:400px){
+    .fa-angle-down {
+       margin-right: 60px;
+        /* color: #434343 !important; */
+    }
+}
+@media(max-width:370px){
+    .fa-angle-down {
+       margin-right: 90px;
+        /* color: #434343 !important; */
+    }
+}
+@media(max-width:340px){
+    .fa-angle-down {
+       margin-right: 120px;
+        /* color: #434343 !important; */
+    }
+}
 /* .fa-angle-down:hover {
     color: #FF6B00 !important;
 } */
