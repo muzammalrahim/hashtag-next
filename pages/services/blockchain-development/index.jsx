@@ -1,12 +1,20 @@
 import React, { Component } from "react";
-import Header from "../../../components/header/index.jsx";
-import Footer from "../../../components/footer/index.jsx";
-import Contact from "../../../components/contacts/index.jsx";
 import DocumentMeta from "react-document-meta";
-import Slide from "react-reveal/Reveal";
 
 import Axios from "axios";
 import https from "https";
+
+
+import dynamic from "next/dynamic";
+require("typeface-montserrat");
+import "lazysizes";
+// import a plugin
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
+const Slide = dynamic(() => import("react-reveal/Reveal"));
+const Header = dynamic(() => import("../../../components/header/index.jsx"));
+const Footer = dynamic(() => import("../../../components/footer/index.jsx"));
+const Contact = dynamic(() => import("../../../components/contacts/index.jsx"));
+
 
 export async function getServerSideProps() {
   let data = [];
@@ -115,9 +123,9 @@ export default class BlockChain extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 text-center ">
                 <img
-                  src="/images/blockchain/blockchain.svg"
+                  data-src="/images/blockchain/blockchain.svg"
                   alt="blockchain"
-                  className="img-fluid shopify-image mobile-image-border storefront-img"
+                  className="lazyload img-fluid shopify-image mobile-image-border storefront-img"
                 />
               </div>
             </div>
@@ -139,8 +147,9 @@ export default class BlockChain extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/blockchain/blockchainconsult1.svg"
+                        data-src="../images/blockchain/blockchainconsult1.svg"
                         alt="consulting"
+                        className="lazyload"
                       />
                       <p className="text-level-5 title-black">
                         Blockchain Consulting
@@ -158,8 +167,8 @@ export default class BlockChain extends Component {
                 <Slide bottom>
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
-                      <img
-                        src="../images/blockchain/contract1.svg"
+                      <img  class="lazyload"
+                        data-src="../images/blockchain/contract1.svg"
                         alt="smart_contract"
                       />
                       <p className="text-level-5 title-black">
@@ -177,8 +186,8 @@ export default class BlockChain extends Component {
                 <Slide bottom>
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
-                      <img
-                        src="../images/blockchain/ethereum1.svg"
+                      <img  class="lazyload"
+                        data-src="../images/blockchain/ethereum1.svg"
                         alt="ethereum_dev"
                       />
                       <p className="text-level-5 title-black">
@@ -197,8 +206,8 @@ export default class BlockChain extends Component {
                 <Slide bottom>
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
-                      <img
-                        src="../images/blockchain/blockchainphone1.svg"
+                      <img  class="lazyload"
+                        data-src="../images/blockchain/blockchainphone1.svg"
                         alt="dapp_dev"
                       />
                       <p className="text-level-5 title-black">
@@ -220,8 +229,8 @@ export default class BlockChain extends Component {
                 <Slide bottom>
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
-                      <img
-                        src="../images/blockchain/api1.svg"
+                      <img  class="lazyload"
+                        data-src="../images/blockchain/api1.svg"
                         alt="api_integration"
                       />
                       <p className="text-level-5 title-black">
@@ -239,8 +248,8 @@ export default class BlockChain extends Component {
                 <Slide bottom>
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
-                      <img
-                        src="../images/blockchain/blockchain1.svg"
+                      <img  class="lazyload"
+                        data-src="../images/blockchain/blockchain1.svg"
                         alt="private_blockchain_dev"
                       />
                       <p className="text-level-5 title-black">
@@ -260,8 +269,8 @@ export default class BlockChain extends Component {
                 <Slide bottom>
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
-                      <img
-                        src="../images/blockchain/concept1.svg"
+                      <img  class="lazyload"
+                        data-src="../images/blockchain/concept1.svg"
                         alt="proof"
                       />
                       <p className="text-level-5 title-black">
@@ -290,9 +299,9 @@ export default class BlockChain extends Component {
                 <h3 className="main-title title-orange">Why Choose Hashtag?</h3>
                 <div className="dp-on-sm">
                   <img
-                    src="/images/blockchain/etherium 1.svg"
+                    data-src="/images/blockchain/etherium 1.svg"
                     alt="etherium_img"
-                    className="img-fluid shopify-image mobile-image-border storefront-img"
+                    className="lazyload img-fluid shopify-image mobile-image-border storefront-img"
                   />
                 </div>
                 <div className="shopify-content mt-4">
@@ -327,10 +336,10 @@ export default class BlockChain extends Component {
                 </div>
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 text-center hd-on-sm">
-                <img
-                  src="/images/blockchain/etherium 1.svg"
+                <img 
+                  data-src="/images/blockchain/etherium 1.svg"
                   alt="etherium_img"
-                  className="img-fluid shopify-image mobile-image-border storefront-img"
+                  className="lazyload img-fluid shopify-image mobile-image-border storefront-img"
                 />
               </div>
             </div>

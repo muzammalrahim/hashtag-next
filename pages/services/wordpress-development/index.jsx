@@ -7,15 +7,9 @@ import https from "https";
 
 import dynamic from "next/dynamic";
 require("typeface-montserrat");
-
-
 import "lazysizes";
 // import a plugin
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
-
-
-
-
 const Slide = dynamic(() => import("react-reveal/Reveal"));
 const Header = dynamic(() => import("../../../components/header/index.jsx"));
 const Footer = dynamic(() => import("../../../components/footer/index.jsx"));
