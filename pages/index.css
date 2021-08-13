@@ -357,7 +357,7 @@ a {
     text-decoration: unset!important;
 }
 .section-one-bg {
-    background-image: url(/images/home/section-one-bg.svg);
+    background-image: url(/images/home/section-one-bg.jpg);
     background-color: #fff;
     background-position: top right;
     background-repeat: no-repeat;
@@ -1582,7 +1582,7 @@ button.btn.form-button-child.px-3:hover {
 
 .who-we-left-bg {
     background-color: transparent;
-    background-image: url(/images/home/who-we-are/section-2-bg.png);
+    background-image: url(/images/home/who-we-are/section-2-bg.jpg);
     background-size: auto 80%;
     background-repeat: no-repeat;
     background-position: left top;

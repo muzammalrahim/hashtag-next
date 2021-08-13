@@ -39,6 +39,7 @@
 }
 .list-banner-text h1 .title-orange{
 	letter-spacing: -0.01em;
+	
 }
 .list-banner-text .btn-comm a{
 	border: 1px solid #eee;
@@ -163,6 +164,11 @@
 
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   
+}
+@media(max-width:500px){
+	.parallax-inner-blk h3 a  {
+		font-size: 40px;
+	}
 }
 
 
