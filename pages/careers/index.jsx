@@ -40,7 +40,6 @@ export default class Careers extends Component {
     };
   }
   render() {
-   
     const { data } = this.state;
     return (
       <div className="careers-main" id="careers-main">
@@ -87,12 +86,12 @@ export default class Careers extends Component {
                 </h3>
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 ">
-                <p className="main-title title-orange ipad-pro-none">
+                <p className="main-title title-orange ipad-pro-none text-justify">
                   We are looking for future leaders!{" "}
                 </p>
                 <div className="shopify-content mt-4">
-                  <p>
-                    <span className="d-xxl-block">
+                  <p className="text-justify">
+                    <span className="d-xxl-block text-justify">
                       Are you a person with a creative approach to problem
                       solving? Do you have the ability to thrive in a fast-paced
                       environment, a desire to learn and be passionate about
@@ -147,7 +146,7 @@ export default class Careers extends Component {
                         EXPERIENCED PROFESSIONALS
                       </p>
                       <hr className="hashtag-underline-new ml-2" />
-                      <p className="pt-4 pb-4 first-para">
+                      <p className="pt-4 pb-4 first-para text-justify">
                         Are you a person with a creative approach to problem
                         solving? Do you have the ability to thrive in a
                         fast-paced environment.
@@ -187,7 +186,7 @@ export default class Careers extends Component {
                         FRESHERS AND ENTRY LEVEL PROFESSIONALS
                       </p>
                       <hr className="hashtag-underline-new ml-2 " />
-                      <p className="pt-2 pb-2 first-para">
+                      <p className="pt-2 pb-2 first-para text-justify">
                         Are you a person with a creative approach to problem
                         solving? Do you have the ability to thrive in a
                         fast-paced environment.{" "}
@@ -237,7 +236,7 @@ export default class Careers extends Component {
                 <p className="shopify-title text-level-4">Coding Club</p>
                 <div className="shopify-content mt-4">
                   <p>
-                    <ul className="shopify-benifits-list">
+                    <ul className="shopify-benifits-list text-justify">
                       <li>A channel for people who want to get into coding.</li>
                       <li>
                         A 360 degree learning experience for anyone who is
@@ -273,7 +272,7 @@ export default class Careers extends Component {
                     </h3>
 
                     <p className="nj-who-we-are-sub-content text-center">
-                      <p class="font-normal">
+                      <p class="font-normal text-justify">
                         We are an equal opportunities employer and do not
                         discriminate on the basis of race, religion, color,
                         national origin, gender, sexual orientation, age,

@@ -6,7 +6,6 @@ import Contact from "../../components/contacts/index.jsx";
 import DocumentMeta from "react-document-meta";
 require("typeface-montserrat");
 
-
 import Axios from "axios";
 import https from "https";
 
@@ -68,7 +67,7 @@ export default class About extends Component {
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <h2 className="bold-contents service-content-box pl-4">
+                      <h2 className="bold-contents service-content-box pl-4 text-justify">
                         Hashtag Systems Inc., is an international Web
                         development company, headquartered in California,
                         provides cutting edge engineering solutions for
@@ -107,8 +106,8 @@ export default class About extends Component {
                   <div className="about-section-2-middle"></div>
                   <div className="about-section-2-content">
                     <p class="text-level-4 title-orange"># Does it all! </p>
-                    <hr class="hashtag-underline ml-2" />
-                    <p>
+                    <hr class="hashtag-underline ml-2 " />
+                    <p className="text-justify">
                       If you’re looking for custom and complex web development
                       ideas, you have come to the right place. Our talented team
                       with proven figure out the best way to take your business
@@ -130,7 +129,7 @@ export default class About extends Component {
                   <div className="about-section-2-content">
                     <p class="text-level-4 title-orange">We value you! </p>
                     <hr class="hashtag-underline ml-2" />
-                    <p>
+                    <p className="text-justify">
                       We do not classify our customers into various priority
                       list! We respect our customer’s dream and we believe its
                       importance is immeasurable and incomparable!
@@ -153,7 +152,7 @@ export default class About extends Component {
                   <div className="about-section-2-content">
                     <p class="text-level-4 title-orange">Global presence</p>
                     <hr class="hashtag-underline ml-2" />
-                    <p>
+                    <p className="text-justify">
                       We already have a presence in the United States(San
                       Jose,California) and India (Kochi) and we are happily
                       serving our customers worldwide!
@@ -177,7 +176,7 @@ export default class About extends Component {
                     </h3>
 
                     <p class="hash-content-col title-black why-us-hash-content">
-                      <p className="font-normal">
+                      <p className="font-normal text-justify">
                         From designers, developers to UX specialists, our
                         talented team of experts work together to build
                         beautiful digital presences for your business. We always

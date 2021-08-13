@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+import React, { Component } from "react";
+import Header from "../../../components/header/index.jsx";
+import Footer from "../../../components/footer/index.jsx";
+import Underconstruction from "../../../components/under-construction/index.jsx";
+import Contact from "../../../components/contacts/index.jsx";
+import DocumentMeta from "react-document-meta";
+import $ from "jquery";
+import axios from "axios";
+import * as config from "../../../config.js";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import Slide from "react-reveal/Reveal";
+=======
 import React, { Component } from 'react';
 import Underconstruction from '../../../components/under-construction/index.jsx';
 import DocumentMeta from 'react-document-meta';
@@ -8,13 +22,16 @@ import * as config from '../../../config.js';
 import "slick-carousel/slick/slick.css";
 
 import dynamic from "next/dynamic";
-const Header  = dynamic(() => import("../../../components/header/index.jsx"),{});
-const Footer = dynamic(() => import("../../../components/footer/index.jsx"),{});
+const Header  = dynamic(() => import("../../../components/header/index.jsx"));
+const Footer = dynamic(() => import("../../../components/footer/index.jsx"));
 const Slider = dynamic(() => import("react-slick"),{});
 const Slide = dynamic(() => import("react-reveal/Reveal"),{});
 const Contact = dynamic(() => import("../../../components/contacts/index.jsx"),{});
+import "slick-carousel/slick/slick.css";
+import "lazysizes";
+>>>>>>> 7f031462605c216b8686584277ef38c73d51a9ca
 
-require('typeface-montserrat')
+require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
 
@@ -43,8 +60,6 @@ export async function getServerSideProps() {
 }
 
 export default class Easylevel extends Component {
-
-
   constructor(props) {
     super(props);
     let response = this.props;
@@ -53,16 +68,11 @@ export default class Easylevel extends Component {
     };
   }
 
-  componentDidMount() {
-    
-  }
-
-  
-
+  componentDidMount() {}
 
   render() {
     const { data } = this.state;
-    const settings = { 
+    const settings = {
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -73,15 +83,15 @@ export default class Easylevel extends Component {
       autoplay: true,
       autoplaySpeed: 4000,
       centerPadding: "23.5%",
-      cssEase:'ease-in-out',
+      cssEase: "ease-in-out",
       responsive: [
         {
           breakpoint: 768,
           settings: {
             centerPadding: "12%",
-          }
-        }
-      ]
+          },
+        },
+      ],
     };
 
     return (
@@ -99,27 +109,27 @@ export default class Easylevel extends Component {
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
                     <div className="case-easylevel-size">
-                      <p className="easy_level_title">Full Stack Development</p></div>
-                      <h1 className="main-title title-white">Easy-Level</h1>
-                      <ul className="project-info">
-                        <li>
-                          <strong>Industry:</strong>Decentralized P2P payment &
-                          Advertising
-                        </li>
-                        <li>
-                          <strong>Location:</strong>Italy
-                        </li>
-                        <li>
-                          <strong>Technology/Blockchain:</strong>Solidity,
-                          Metamask, ETH Smart Contract/ERC20/ERC721
-                        </li>
-                        <li>
-                          <strong>Technology/DApp:</strong> React/Redux/Web3,
-                          Python/Django/Web3, NodeJS/Web3/SocketIO, MySQL,
-                          Linux, Git CI/CD pipeline with Docker
-                        </li>
-                      </ul>
-                    
+                      <p className="easy_level_title">Full Stack Development</p>
+                    </div>
+                    <h1 className="main-title title-white">Easy-Level</h1>
+                    <ul className="project-info">
+                      <li>
+                        <strong>Industry:</strong>Decentralized P2P payment &
+                        Advertising
+                      </li>
+                      <li>
+                        <strong>Location:</strong>Italy
+                      </li>
+                      <li>
+                        <strong>Technology/Blockchain:</strong>Solidity,
+                        Metamask, ETH Smart Contract/ERC20/ERC721
+                      </li>
+                      <li>
+                        <strong>Technology/DApp:</strong> React/Redux/Web3,
+                        Python/Django/Web3, NodeJS/Web3/SocketIO, MySQL, Linux,
+                        Git CI/CD pipeline with Docker
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -135,18 +145,18 @@ export default class Easylevel extends Component {
                     </div>
                     <h2 class="main-title title-orange">Introduction</h2>
                   </div>
-                  <p>
+                  <p className="text-justify">
                     In the current system of online advertising it is impossible
                     for viewers to make any revenue though they generate the
                     bulk of it.{" "}
                   </p>
-                  <p>
+                  <p className="text-justify">
                     We offer a p2p decentralized system in which all
                     participants are rewarded based on the degree of
                     participation in the system with the native ADV token which
                     can be redeemed for ETH which can be converted to USD.{" "}
                   </p>
-                  <p>
+                  <p className="text-justify">
                     This incentivises viewers to participate and promote the
                     system which offers them a reward for their views and
                     clicks.
@@ -154,7 +164,7 @@ export default class Easylevel extends Component {
                 </div>
                 <div className="img-blk">
                    <img class="lazyload"
-                    data-src="/images/case-studies/easylevel/easy-level-banner.svg"
+                    data-src="/images/case-studies/easylevel/easy-level-banner.webp"
                     alt="easy-level-banner"
                   />
                 </div>
@@ -167,12 +177,17 @@ export default class Easylevel extends Component {
                 <div className="col-md-12 col-lg-10 col-xl-10">
                   <div className="project-blk-title text-center">
                     <div className="text-above-main-title">HOW IT WORKS</div>
-                   <h2> <div className="main-title title-orange">Architecture</div>
-                    <div className="title-black">P2P payment</div></h2>
+                    <h2>
+                      {" "}
+                      <div className="main-title title-orange">
+                        Architecture
+                      </div>
+                      <div className="title-black">P2P payment</div>
+                    </h2>
                   </div>
                   <div className="workflow-wrap">
                      <img class="lazyload"
-                      data-src="/images/case-studies/easylevel/archi1.svg"
+                      data-src="/images/case-studies/easylevel/archi1.webp"
                       alt="Architecture"
                     />
                   </div>
@@ -186,8 +201,12 @@ export default class Easylevel extends Component {
                 <div className="col-md-12 col-lg-10 col-xl-10">
                   <div className="project-blk-title text-center">
                     <div className="text-above-main-title">HOW IT WORKS</div>
-                   <h2><div className="main-title title-orange">Architecture</div>
-                    <div className="title-black">Advertising platform</div></h2>
+                    <h2>
+                      <div className="main-title title-orange">
+                        Architecture
+                      </div>
+                      <div className="title-black">Advertising platform</div>
+                    </h2>
                   </div>
                   <div className="workflow-wrap">
                      <img class="lazyload"
@@ -208,7 +227,7 @@ export default class Easylevel extends Component {
                       <div className="text-above-main-title">PRODUCT WORK</div>
                       <h2 className="main-title title-orange">How it works</h2>
                     </div>
-                    <p>
+                    <p className="text-justify">
                       EasyLevel works on 16 Advertising platforms, and gets its
                       profits from the spread generated between Publisher and
                       Advertiser, and from all views and clicks performed by
@@ -253,7 +272,7 @@ export default class Easylevel extends Component {
                       <div className="text-above-main-title">PROCESS</div>
                       <h2 className="main-title title-orange">Use Case</h2>
                     </div>
-                    <p>
+                    <p className="text-justify">
                       Founders buy drafts(like packages) and get ADV tokens.
                       Moderators buy ADV tokens directly.
                       <br />
@@ -275,7 +294,7 @@ export default class Easylevel extends Component {
                 <div className="col-md-6 sticky-image-section">
                   <div className="speakinc-img sticky-img">
                      <img class="lazyload"
-                      data-src="/images/case-studies/easylevel/easy-level-sticky.svg"
+                      data-src="/images/case-studies/easylevel/easy-level-sticky.webp"
                       alt="easy-level-sticky"
                     />
                   </div>
@@ -291,7 +310,7 @@ export default class Easylevel extends Component {
                   <div className="project-slider-wrap">
                     <div className="project-blk-title">
                       <div className="text-above-main-title">
-                      DESIGN WITH USER IN MIND
+                        DESIGN WITH USER IN MIND
                       </div>
                       <h2 class="main-title title-orange">User Interface</h2>
                     </div>
@@ -301,7 +320,7 @@ export default class Easylevel extends Component {
                         <div className="slide-div">
                           <div className="slider-img">
                              <img class="lazyload"
-                              data-src="/images/case-studies/easylevel/easy-level-slider.svg"
+                              data-src="/images/case-studies/easylevel/easy-level-slider.webp"
                               alt="Easy Level"
                             />
                           </div>
@@ -309,7 +328,7 @@ export default class Easylevel extends Component {
                         <div className="slide-div">
                           <div className="slider-img">
                              <img class="lazyload"
-                              data-src="/images/case-studies/easylevel/easy-level-slider2.svg"
+                              data-src="/images/case-studies/easylevel/easy-level-slider2.webp"
                               alt="Easy Level"
                             />
                           </div>
@@ -317,7 +336,7 @@ export default class Easylevel extends Component {
                         <div className="slide-div">
                           <div className="slider-img">
                              <img class="lazyload"
-                              data-src="/images/case-studies/easylevel/easy-level-slider3.svg"
+                              data-src="/images/case-studies/easylevel/easy-level-slider3.webp"
                               alt="Easy Level"
                             />
                           </div>
@@ -325,7 +344,7 @@ export default class Easylevel extends Component {
                         <div className="slide-div">
                           <div className="slider-img">
                              <img class="lazyload"
-                              data-src="/images/case-studies/easylevel/easy-level-slider4.svg"
+                              data-src="/images/case-studies/easylevel/easy-level-slider4.webp"
                               alt="Easy Level"
                             />
                           </div>
@@ -333,7 +352,7 @@ export default class Easylevel extends Component {
                         <div className="slide-div">
                           <div className="slider-img">
                              <img class="lazyload"
-                              data-src="/images/case-studies/easylevel/easy-level-slider5.svg"
+                              data-src="/images/case-studies/easylevel/easy-level-slider5.webp"
                               alt="Easy Level"
                             />
                           </div>
@@ -341,7 +360,7 @@ export default class Easylevel extends Component {
                         <div className="slide-div">
                           <div className="slider-img">
                              <img class="lazyload"
-                              data-src="/images/case-studies/easylevel/easy-level-slider6.svg"
+                              data-src="/images/case-studies/easylevel/easy-level-slider6.webp"
                               alt="Easy Level"
                             />
                           </div>
@@ -389,7 +408,9 @@ export default class Easylevel extends Component {
                 <div className="col-lg-6 col-sm-12 offset-lg-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <div className="text-above-main-title">PROJECT PROCESS</div>
+                      <div className="text-above-main-title">
+                        PROJECT PROCESS
+                      </div>
                       <h2 class="main-title title-orange">
                         Agile development process
                       </h2>
@@ -411,7 +432,7 @@ export default class Easylevel extends Component {
                             <span className="title-orange">Back-end</span>{" "}
                             Python/Django, Web3{" "}
                           </strong>
-                          <p className="mt-2">
+                          <p className="mt-2 text-justify">
                             Back-end with Python/Django, Web3(integration
                             between the smart contracts and the private keys
                             from users)
@@ -423,7 +444,7 @@ export default class Easylevel extends Component {
                             <span className="title-orange">Back-end</span>{" "}
                             NodeJS/SocketIO
                           </strong>
-                          <p className="mt-2">
+                          <p className="mt-2 text-justify">
                             Easy-Level updates transaction info real time.
                             SocketIO is being broadcasted to the UI whenever
                             there is an update on Easy-Level.
@@ -433,7 +454,7 @@ export default class Easylevel extends Component {
                           <strong>
                             <span className="title-orange">Database</span> MySQL
                           </strong>
-                          <p className="mt-2">
+                          <p className="mt-2 text-justify">
                             Transaction history, activities from viewers and
                             clickers and registered users are being managed by
                             DB.{" "}
@@ -444,7 +465,7 @@ export default class Easylevel extends Component {
                             <span className="title-orange">DevOps</span> Git
                             CI/CD pipeline and Docker
                           </strong>
-                          <p className="mt-2">
+                          <p className="mt-2 text-justify">
                             On gitlab, I have built a CI/CD pipeline based on
                             Docker repositories. DevOps works automatically
                             passing `dev` and `test` stages to update
@@ -458,7 +479,7 @@ export default class Easylevel extends Component {
                             </span>{" "}
                             Solidity
                           </strong>
-                          <p className="mt-2">
+                          <p className="mt-2 text-justify">
                             We have used Provable and Oracle to integrate 3rd
                             party API to fetch data like price rate, allowance
                             from Easy-Level, and so on.
@@ -468,7 +489,7 @@ export default class Easylevel extends Component {
                           <strong>
                             <span className="title-orange">Audit</span> Zeppelin{" "}
                           </strong>
-                          <p className="mt-2">
+                          <p className="mt-2 text-justify">
                             We also have used Zeppelin to audit Smart Contracts.
                             I have implemented test cases on it and always ran
                             them to audit Smart Contracts.
@@ -482,7 +503,7 @@ export default class Easylevel extends Component {
                   <Slide bottom>
                     <div className="hand-img-blk">
                        <img class="lazyload"
-                        data-src="/images/case-studies/easylevel/easy-level-phone-mockup.svg"
+                        data-src="/images/case-studies/easylevel/easy-level-phone-mockup.png"
                         alt="easy-level-phone"
                       />
                     </div>
@@ -497,16 +518,23 @@ export default class Easylevel extends Component {
                 <div className="col-md-8">
                   <div className="project-blk-title">
                     <div className="text-above-main-title">
-                    PROJECT ACHIEVEMENTS
+                      PROJECT ACHIEVEMENTS
                     </div>
+<<<<<<< HEAD
+                    <h2 className="main-title-custom main-title mb-2">
+                      What We Achieved
+                    </h2>
+                    <img
+=======
                     <h2  className="main-title-custom main-title mb-2">What We Achieved</h2>
                      <img class="lazyload"
+>>>>>>> 7f031462605c216b8686584277ef38c73d51a9ca
                       className="mb-2"
                       data-src="../images/shopify/shopify-quoute.svg"
                       alt="quote"
                     />
                   </div>
-                  <p>
+                  <p className="text-justify">
                     By leveraging smart contracts and the ethereum blockchain,
                     we have successfully implemented a system of decentralized
                     p2p advertising that is capable of sharing the revenue

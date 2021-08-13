@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import Header from '../../../components/header/index.jsx';
-import Footer from '../../../components/footer/index.jsx';
-import Contact from '../../../components/contacts/index.jsx';
-import DocumentMeta from 'react-document-meta';
-import Slide from 'react-reveal/Reveal';
+import React, { Component } from "react";
+import Header from "../../../components/header/index.jsx";
+import Footer from "../../../components/footer/index.jsx";
+import Contact from "../../../components/contacts/index.jsx";
+import DocumentMeta from "react-document-meta";
+import Slide from "react-reveal/Reveal";
 import Axios from "axios";
 import https from "https";
 
@@ -40,7 +40,6 @@ export default class DesignPage extends Component {
     };
   }
   render() {
-    
     let { data } = this.state;
     return (
       <div className="contact-main" id="Dnpbanner">
@@ -60,7 +59,7 @@ export default class DesignPage extends Component {
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
                       <p className="sub-text-above-main-title title-white">
-                        We offer solutions for 
+                        We offer solutions for
                       </p>
                       <h1 className="main-title  title-white d-block">
                         Design and
@@ -69,7 +68,7 @@ export default class DesignPage extends Component {
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <h2 className="bold-contents shopify-content-box pl-4">
+                      <h2 className="bold-contents shopify-content-box pl-4 text-justify">
                         Story telling, Branding, User Research, Prototyping -
                         you name it!. We do everything to visually feel the
                         website structure before making decisions on in-depth
@@ -89,13 +88,13 @@ export default class DesignPage extends Component {
                   Showcase Of Your Business
                 </h3>
                 <div className="shopify-content mt-4">
-                  <p className="mb-4">
+                  <p className="mb-4 text-justify">
                     Your website is the first storefront of your brand. Every
                     business needs a custom website and that should be
                     user-friendly and attractive which represents your business
                     identity and style.
                   </p>
-                  <p>
+                  <p className="text-justify">
                     We are passionate about crafting an engaging and unique
                     online presence that we can provide that will set you apart
                     from your competitors. Refresh and boost your website look
@@ -132,9 +131,8 @@ export default class DesignPage extends Component {
                     OUR stack
                   </p>
                   <h3 className="main-title title-orange text-center">
-                  Our Expertise
+                    Our Expertise
                   </h3>
-                
                 </div>
               </div>
               <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3 sc-ip-pro">
@@ -149,7 +147,7 @@ export default class DesignPage extends Component {
                         Research & Unique Strategy
                       </p>
                       <hr class="hashtag-underline ml-2"></hr>
-                      <p>
+                      <p className="text-justify">
                         Our creative minds will help you build a unique
                         strategic direction for both your business objective and
                         your target audience. We’ll help to transform your idea
@@ -169,7 +167,7 @@ export default class DesignPage extends Component {
                         Design Thinking
                       </p>
                       <hr class="hashtag-underline ml-2"></hr>
-                      <p>
+                      <p className="text-justify">
                         This allows us to understand your brand’s story and
                         identifies the message that your business wants to
                         broadcast through the online presence. We architect your
@@ -187,7 +185,7 @@ export default class DesignPage extends Component {
                       />
                       <p className="text-level-5 title-black">Architecture</p>
                       <hr class="hashtag-underline ml-2"></hr>
-                      <p>
+                      <p className="text-justify">
                         We can help you in building an architecture for your
                         brand and organise your content, navigation structure
                         which will influence your audience to meet their goals
@@ -205,7 +203,7 @@ export default class DesignPage extends Component {
                       />
                       <p className="text-level-5 title-black">Wireframing</p>
                       <hr class="hashtag-underline ml-2"></hr>
-                      <p>
+                      <p className="text-justify">
                         Being a graphical skeleton, wireframe and storyboards
                         guides the content and concepts of a page. With the help
                         of it, we’ll lead you to visualize and finalize the
@@ -223,7 +221,7 @@ export default class DesignPage extends Component {
                       />
                       <p className="text-level-5 title-black">Prototyping</p>
                       <hr class="hashtag-underline ml-2"></hr>
-                      <p>
+                      <p className="text-justify">
                         Prototyping helps to develop an interactive and high
                         fidelity design which works and looks exactly like your
                         website/app. Now we are so close to building your
@@ -243,7 +241,7 @@ export default class DesignPage extends Component {
                         Graphic Designing
                       </p>
                       <hr class="hashtag-underline ml-2"></hr>
-                      <p>
+                      <p className="text-justify">
                         Our expert designers are technology conscious and can
                         take care of your website and your entire brand story in
                         a visually appealing way. Our desire to create something
@@ -273,7 +271,7 @@ export default class DesignPage extends Component {
                   />
                 </div>
                 <div className="shopify-content mt-4">
-                  <p>
+                  <p className="text-justify">
                     We have a passion for innovation and bright ideas. We have
                     the knack of conveying the essence of your brand in the
                     design. It doesn't matter if you don't have one. We can even

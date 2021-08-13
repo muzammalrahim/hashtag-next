@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Header from '../../../components/header/index.jsx';
-import Footer from '../../../components/footer/index.jsx';
-import Underconstruction from '../../../components/under-construction/index.jsx';
-import Contact from '../../../components/contacts/index.jsx';
-import DocumentMeta from 'react-document-meta';
-import $ from 'jquery';
-import axios from 'axios';
-import * as config from '../../../config.js';
+import Header from "../../../components/header/index.jsx";
+import Footer from "../../../components/footer/index.jsx";
+import Underconstruction from "../../../components/under-construction/index.jsx";
+import Contact from "../../../components/contacts/index.jsx";
+import DocumentMeta from "react-document-meta";
+import $ from "jquery";
+import axios from "axios";
+import * as config from "../../../config.js";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import Slide from 'react-reveal/Reveal';
+import Slide from "react-reveal/Reveal";
 
-require('typeface-montserrat')
+require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
 
@@ -51,7 +51,7 @@ export default class Filemaker extends Component {
   componentDidMount() {}
 
   render() {
-const { data } = this.state;
+    const { data } = this.state;
     const settings = {
       infinite: true,
       slidesToShow: 1,
@@ -89,18 +89,21 @@ const { data } = this.state;
                 <div className="col-md-10">
                   <div className="common-title-wrap c-heading px-md-3 ">
                     <div className="case-filmmaker-size">
-                      <p className="filemaker_title">Website development &amp; design</p>
-                      </div>
-                      <h1 className="main-title title-white">
-                        Filemaker in Action
-                      </h1>
-                      <div className="intro-desc title-white filemaker-h2-size">
-                      <h2 >The FileMaker Platform empowers problem solvers to
-                            <br />
-                            create, share, and integrate custom apps to address
-                            their
-                            <br />
-                            ever changing business challenges.
+                      <p className="filemaker_title">
+                        Website development &amp; design
+                      </p>
+                    </div>
+                    <h1 className="main-title title-white">
+                      Filemaker in Action
+                    </h1>
+                    <div className="intro-desc title-white filemaker-h2-size">
+                      <h2 className="text-justify">
+                        The FileMaker Platform empowers problem solvers to
+                        <br />
+                        create, share, and integrate custom apps to address
+                        their
+                        <br />
+                        ever changing business challenges.
                       </h2>
                     </div>
                   </div>
@@ -160,7 +163,7 @@ const { data } = this.state;
                         SpeakInc is a No 1 US based speakers booking platform
                       </strong>
                     </p>
-                    <p>
+                    <p className="text-justify">
                       It helps in searching and booking keynote speakers or
                       entertainers for different conventions, conferences or
                       events. Speakinc has exceptional expertise matching
@@ -175,7 +178,7 @@ const { data } = this.state;
                         Business Challenge
                       </h3>
                     </div>
-                    <p>
+                    <p className="text-justify">
                       Processing client queries and keeping track of it manually
                       in
                       <br /> <b>Hubspot</b> and <b>Filemaker</b> was literally a
@@ -183,7 +186,7 @@ const { data } = this.state;
                       They needed a secure and user friendly way to sync the
                       queries and manage marketing leads and proposals.
                     </p>
-                    <p>
+                    <p className="text-justify">
                       <b>FileMaker DB</b> has huge client records and it has
                       been used for many years. Another challenge was to upload
                       only active clients on this Web application. So we created
@@ -197,13 +200,13 @@ const { data } = this.state;
                       <div className="text-above-main-title">WHAT WE DO</div>
                       <h3 className="main-title title-orange">Solution</h3>
                     </div>
-                    <p>
+                    <p className="text-justify">
                       <b>The solution</b> was to upgrade the database to the
                       current version of FileMaker systems and deploy a new
                       simple interface that could better support their marketing
                       department’s workflow.
                     </p>
-                    <p>
+                    <p className="text-justify">
                       <b>We built</b> a modern solution with REST API for
                       syncing leads in Filemaker to Hubspot CRM. Hubspot plays a
                       role in managing leads and clients. These leads, client
@@ -265,7 +268,7 @@ const { data } = this.state;
                     <h3 className="main-title title-white">Benefits</h3>
                   </div>
                   <div className="benefit-para">
-                    <p>
+                    <p className="text-justify">
                       <b>
                         With the new Filemake now in the place they have <br />a
                         modern dahsboard that makes it a easy for access and
@@ -273,7 +276,7 @@ const { data } = this.state;
                         manage data in different databases, third party apis.
                       </b>
                     </p>
-                    <p>
+                    <p className="text-justify">
                       This system uses Filemaker to communicate with a mysql
                       database that is connected with multiple web based
                       applications. Primary call was to centralise a UI for
@@ -284,7 +287,7 @@ const { data } = this.state;
                 <div className="col-md-6 col-lg-6">
                   <div className="img-blk">
                     <img
-                      src="/images/case-studies/filemaker/benefits-img.svg"
+                      src="/images/case-studies/filemaker/benefits-img.png"
                       alt="Architecture"
                     />
                   </div>
