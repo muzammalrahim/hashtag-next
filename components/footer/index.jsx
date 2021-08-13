@@ -21,8 +21,8 @@ class Footer extends Component {
         } else {
           $(".text-back-to-top").removeClass("sticky");
         }
-      })
-    };
+      });
+    }
 
     $(".text-back-to-top a").click(function () {
       $("html, body").animate(
@@ -68,7 +68,14 @@ class Footer extends Component {
                 </div>
                 <div className="col-lg-4 col-md-12 footer-second-row3">
                   <div className="form-inline form-inline-bottom my-2 my-lg-0">
-                    <button style={{ border: "2px solid white", background: "#2f383c", borderRadius: "10px" }} className="btn-transparent btn btn-outline-success my-2 my-sm-0">
+                    <button
+                      style={{
+                        border: "2px solid white",
+                        background: "#2f383c",
+                        borderRadius: "10px",
+                      }}
+                      className="btn-transparent btn btn-outline-success my-2 my-sm-0"
+                    >
                       <Link href="/">
                         <a> En </a>
                       </Link>
@@ -155,7 +162,7 @@ class Footer extends Component {
                   <ul className="footer-links">
                     <li>
                       <Link href="/" className="footer-nav">
-                        <a > Home </a>
+                        <a> Home </a>
                       </Link>
                     </li>
                     <li>
@@ -317,9 +324,11 @@ class Footer extends Component {
               <div className="footer-copy-second-row">
                 <p className="copyright-text">
                   Copyright &copy; 2020 Hashtag Systems Inc. All Rights
-                  Reserved. 
-
-                  <a className="pl-3" href="/sitemap.html"> Sitemap</a>  
+                  Reserved.
+                  <a className="pl-3" href="/sitemap.html">
+                    {" "}
+                    Sitemap
+                  </a>
                 </p>
               </div>
             </div>

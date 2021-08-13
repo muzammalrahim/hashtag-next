@@ -9,6 +9,7 @@
     #shopify-main .content-four-section {
 
         margin-top: 600px !important;
+        
     }
 
     .shopify-banner-content {
@@ -58,6 +59,7 @@
 
     .shopify-section-4 {
         min-height: 1021px;
+        
 
     }
 
@@ -65,7 +67,7 @@
 
         margin-top: 312px !important;
     }
-
+   
     .shopify-main-title {
         font-family: Montserrat;
         font-style: normal;
@@ -100,7 +102,7 @@
     }
 
     #shopify-main .content-four-section {
-        margin-top: 270px;
+        /* margin-top: 270px; */
     }
 }
 
@@ -486,6 +488,7 @@
 
     .shopify-section-4-main {
         margin-top: -100px;
+      
     }
 
     .padding-letus {

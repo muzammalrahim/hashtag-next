@@ -3,7 +3,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
 
-const Carousel = dynamic(() => import('../../components/carousel/index.jsx'), {
+const Carousel = dynamic(() => import("../../components/carousel/index.jsx"), {
   ssr: false,
 });
 const Header = dynamic(() => import("../../components/header/index.jsx"));
@@ -31,7 +31,7 @@ export default class Home extends Component {
   }
   render() {
     let { tabindex } = this.state;
-     console.log('header properties', this.props.title)
+    console.log("header properties", this.props.title);
     return (
       <div className="home-main" id="home-main">
         {/*<div className="container-fluid section-one-bg p-0">*/}
@@ -158,13 +158,16 @@ export default class Home extends Component {
               <hr className="hashtag-underline" />
             </div>
             <div className="col-12 col-sm-12 col-lg-4 col-xxl-3 who-we-are-middle-text-2">
-              <p className="hash-content-col">
+              <p className="hash-content-col text-justify">
                 Hashtag Systems Inc, an international Software development and
                 outsourcing company with its headquarters in Sunnyvale,
                 California and development centers in San Diego, California &
                 Kochi
               </p>
-              <p className="nj-who-we-are-sub-content mt-5">
+              <p
+                className="nj-who-we-are-sub-content mt-5 text-justify
+              "
+              >
                 Our team is set to chase innovation in every stride and
                 revolutionize the world of software in order to deliver the best
                 to our clients worldwide. <br />
@@ -186,7 +189,7 @@ export default class Home extends Component {
           </div>
         </div>
 
-        <div className="container-fluid section-three-bg">
+        <div className="container-fluid section-three-bg mb-5">
           <div className="container section-three-content ">
             <div className="row justify-content-center  pl-3 pr-3 mob-padding">
               <div className="col-12  section-three-text">
@@ -197,7 +200,7 @@ export default class Home extends Component {
                   <div className="horizontal-line-middle mob-left mob-line-margin"></div>
                 </h3>
 
-                <p className="hash-content-col mob-left  text-center mt-3">
+                <p className="hash-content-col mob-left  text-center mt-3 text-justify">
                   We work with businesses of all sizes in a wide range of
                   industries and niches.
                 </p>
@@ -214,7 +217,7 @@ export default class Home extends Component {
                         Business process automation
                       </p>
                       <hr className="hashtag-underline ml-2" />
-                      <p>
+                      <p className="text-justify">
                         We'll automate your business processes means that you
                         will no longer have to deal with them. You just let the
                         software take care of it.
@@ -230,7 +233,7 @@ export default class Home extends Component {
                       />
                       <p className="text-level-4">Web applications</p>
                       <hr className="hashtag-underline ml-2" />
-                      <p>
+                      <p className="text-justify">
                         We'll create and deploy mission-critical, Robust Web
                         apps that scale with your business needs.
                       </p>
@@ -245,7 +248,7 @@ export default class Home extends Component {
                       />
                       <p className="text-level-4">E-commerce</p>
                       <hr className="hashtag-underline ml-2" />
-                      <p>
+                      <p className="text-justify">
                         Turn your products into money by selling them on your
                         own online store. We'll help you become a leading
                         eCommerce player in your industry.
@@ -253,7 +256,7 @@ export default class Home extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="row justify-content-center mt-5 mob-padding">
+                <div className="row justify-content-center mt-5 mob-padding res-bottom-margin ">
                   <div className="col-offset-lg-2 col-lg-4 col-sm-12 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
@@ -265,7 +268,7 @@ export default class Home extends Component {
                         Monitoring <br />& support
                       </p>
                       <hr className="hashtag-underline ml-2" />
-                      <p>
+                      <p className="text-justify">
                         We run a dedicated IT infrastructure monitoring to
                         ensure that applications, devices, and infrastructure
                         are performing as they should be.
@@ -283,7 +286,7 @@ export default class Home extends Component {
                         Creative & conceptual design
                       </p>
                       <hr className="hashtag-underline ml-2" />
-                      <p>
+                      <p className="text-justify">
                         Our creative designers will turn the spark of an idea
                         into an innovative new design concept. Let's
                         collaborate.
@@ -313,11 +316,11 @@ export default class Home extends Component {
                       We believe our customers deserve the best and quality is
                       something we dare not to compromise!{" "}
                     </p>
-                    <p className="pt-2">
+                    <p className="pt-2 text-justify">
                       We ensure impeccable service right from the second we
                       receive the demand from our valuable customer.{" "}
                     </p>
-                    <p className="pt-2">
+                    <p className="pt-2 text-justify">
                       {" "}
                       Our maintenance and support team would ensure the same
                       even after we deliver the product.{" "}
@@ -453,7 +456,6 @@ export default class Home extends Component {
               <div className="row justify-content-center mt-2">
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-              
                     data-src="images/home/html5.svg"
                     alt="html5"
                     className="img-fluid mx-auto my-auto  lazyload"
@@ -461,7 +463,6 @@ export default class Home extends Component {
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-             
                     data-src="images/home/mysql.svg"
                     alt="mysql"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -469,7 +470,6 @@ export default class Home extends Component {
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                
                     data-src="images/home/amazon.svg"
                     alt="amazon"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -477,7 +477,6 @@ export default class Home extends Component {
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-               
                     data-src="images/home/shopify.svg"
                     alt="shopify"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -485,7 +484,6 @@ export default class Home extends Component {
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-              
                     data-src="images/home/php.svg"
                     alt="php"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -496,7 +494,6 @@ export default class Home extends Component {
               <div className="row justify-content-center  mt-2">
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                
                     data-src="images/home/bootstrap.svg"
                     alt="bootstrap"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -504,7 +501,6 @@ export default class Home extends Component {
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                
                     data-src="images/home/node-js.svg"
                     alt="node_js"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -512,15 +508,13 @@ export default class Home extends Component {
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-            
                     data-src="images/home/angular-js.svg"
                     alt="angular_js"
-                    className="img-fluid mx-auto my-auto lazyload" 
+                    className="img-fluid mx-auto my-auto lazyload"
                   />
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                
                     data-src="images/home/ethereum.svg"
                     alt="ethereum"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -528,7 +522,6 @@ export default class Home extends Component {
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-              
                     data-src="images/home/react-js.svg"
                     alt="react_js"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -539,7 +532,6 @@ export default class Home extends Component {
               <div className="row justify-content-center  mt-2">
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-            
                     data-src="images/home/wordpress.svg"
                     alt="wordpress"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -547,7 +539,6 @@ export default class Home extends Component {
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-                
                     data-src="images/home/jquery.svg"
                     alt="jquery"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -555,7 +546,6 @@ export default class Home extends Component {
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-        
                     data-src="images/home/codeigniter.svg"
                     alt="codeigniter"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -563,7 +553,6 @@ export default class Home extends Component {
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-              
                     data-src="images/home/django.svg"
                     alt="django"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -571,7 +560,6 @@ export default class Home extends Component {
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-             
                     data-src="images/home/python.svg"
                     alt="python"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -582,7 +570,6 @@ export default class Home extends Component {
               <div className="row justify-content-center  mt-2">
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-           
                     data-src="images/home/mongodb.svg"
                     alt="mongodb"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -590,7 +577,6 @@ export default class Home extends Component {
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5 ">
                   <img
-          
                     data-src="images/home/truffle.svg"
                     alt="truffle"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -605,7 +591,6 @@ export default class Home extends Component {
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-            
                     data-src="images/home/docker.svg"
                     alt="docker"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -613,7 +598,6 @@ export default class Home extends Component {
                 </div>
                 <div className="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                   <img
-           
                     data-src="images/home/ionic.svg"
                     alt="ionic"
                     className="img-fluid mx-auto my-auto lazyload"
@@ -732,7 +716,6 @@ export default class Home extends Component {
                       <div className="col-lg-6 col-md-12 col-sm-12">
                         <h5 className="address-content">
                           <img
-                      
                             data-src="images/home/location.svg"
                             alt="location"
                             className="address-icons lazyload"
@@ -749,7 +732,6 @@ export default class Home extends Component {
                           </address>
                         </h5>
                         <img
-                   
                           data-src="images/home/phone.svg"
                           alt="phone"
                           className="address-icons lazyload"
@@ -759,7 +741,6 @@ export default class Home extends Component {
                           <a href="tel:+1-408-596-2525">+1 408 596 2525</a>
                         </p>
                         <img
-          
                           data-src="images/home/email.svg"
                           alt="email"
                           className="address-icons lazyload"
@@ -976,7 +957,7 @@ export default class Home extends Component {
                           />{" "}
                           <span className="address-content">Kochi</span>
                         </h5>
-                        <h5 className="address-text">
+                        <h5 className="address-text ">
                           Infopark Technology Business Center JNI Stadium,{" "}
                           <br />
                           Kaloor,
@@ -1023,7 +1004,6 @@ export default class Home extends Component {
                           target="_blank"
                         >
                           <img
-                            
                             data-src="images/home/facebook-logo.svg"
                             className="conatct-fb lazyload"
                             alt="facebook"

@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import Header from '../../../components/header/index.jsx';
-import Footer from '../../../components/footer/index.jsx';
-import Contact from '../../../components/contacts/index.jsx';
-import Wpslider from '../../../components/wordpress-slider/index.jsx';
-import Wpcarousel from '../../../components/wp-carousel/index.jsx';
-import Wpsliderv2 from '../../../components/wordpress-sliderv2/index.jsx';
-import Testimonial from '../../../components/testimonial/index.jsx';
-import DocumentMeta from 'react-document-meta';
+import React, { Component } from "react";
+import Header from "../../../components/header/index.jsx";
+import Footer from "../../../components/footer/index.jsx";
+import Contact from "../../../components/contacts/index.jsx";
+import Wpslider from "../../../components/wordpress-slider/index.jsx";
+import Wpcarousel from "../../../components/wp-carousel/index.jsx";
+import Wpsliderv2 from "../../../components/wordpress-sliderv2/index.jsx";
+import Testimonial from "../../../components/testimonial/index.jsx";
+import DocumentMeta from "react-document-meta";
 import Slide from "react-reveal/Reveal";
 import Axios from "axios";
 import https from "https";
@@ -35,7 +35,7 @@ export async function getServerSideProps() {
   };
 }
 
-require('typeface-montserrat')
+require("typeface-montserrat");
 
 export default class Shopify extends Component {
   constructor(props) {
@@ -46,10 +46,9 @@ export default class Shopify extends Component {
     };
   }
   render() {
-    
-	  let { data } = this.state;
+    let { data } = this.state;
 
-	  const recentWork = [
+    const recentWork = [
       {
         id: 1,
         src: "../images/wordpress/67-baltimore.png",
@@ -110,7 +109,7 @@ export default class Shopify extends Component {
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <h2 className="bold-contents shopify-content-box pl-4">
+                      <h2 className="bold-contents shopify-content-box pl-4 text-justify">
                         We help agencies code custom Wordpress Solutions. A
                         Silicon Valley Company serving customers worldwide.
                       </h2>
@@ -241,7 +240,7 @@ export default class Shopify extends Component {
             {/*section 3 */}
 
             {/* <Wpslider> </Wpslider> */}
-             <Wpsliderv2 images={recentWork}> </Wpsliderv2>
+            <Wpsliderv2 images={recentWork}> </Wpsliderv2>
           </div>
           <div className="container-fluid ask-expert-section">
             <div className="row">
@@ -253,7 +252,7 @@ export default class Shopify extends Component {
                       <span class="title-orange d-block">Ask Our Expert</span>
                     </h3>
                     <p className="hash-content-col title-black why-us-hash-content">
-                      <p>
+                      <p className="text-justify">
                         Not sure if WordPress is the right solution for you?
                         <br />
                         Ask our WordPress expert
@@ -267,7 +266,7 @@ export default class Shopify extends Component {
                     </div>
 
                     <p className="nj-who-we-are-sub-content">
-                      <p className="font-normal">
+                      <p className="font-normal text-justify">
                         When they say experts, they mean it!
                         <br />
                         From the beginning the team helped to structure every
@@ -338,8 +337,10 @@ export default class Shopify extends Component {
                 </div>
               </div>
 
-               <div className="d-block d-sm-none"><Wpcarousel> </Wpcarousel></div>
-               {/*<div className="d-block d-sm-none"><Wpsliderv2> </Wpsliderv2></div>*/}
+              <div className="d-block d-sm-none">
+                <Wpcarousel> </Wpcarousel>
+              </div>
+              {/*<div className="d-block d-sm-none"><Wpsliderv2> </Wpsliderv2></div>*/}
 
               <div class="desktop-only-expertise d-none d-sm-block">
                 <div className="row justify-content-center about-row pl-3 pr-3 pt-4">

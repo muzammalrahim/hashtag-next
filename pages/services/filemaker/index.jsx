@@ -91,7 +91,7 @@ export default class filemakerPage extends Component {
                       </h1>
                       <p className="text-white s-file-maker">
                         <strong>
-                          <h2>
+                          <h2 className="text-justify">
                             We are Filemaker development experts located in
                             California <br /> and serving customers worldwide on
                             various filemaker <br /> solutions and integrations
@@ -115,7 +115,7 @@ export default class filemakerPage extends Component {
                     </p>
                     <h3 class="main-title title-orange">Introduction</h3>
                   </div>
-                  <p>
+                  <p className="text-justify">
                     We have been in the business of custom software development
                     solutions for several years. We’ve been serving customers
                     worldwide on various filemaker solutions and integrations
@@ -304,7 +304,10 @@ export default class filemakerPage extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-9">
                   <div className="quote-centered">
-                    <blockquote cite="https://www.hashtag-ca.com/">
+                    <blockquote
+                      cite="https://www.hashtag-ca.com/"
+                      className="text-justify"
+                    >
                       “We can help you implement the solutions that bring
                       immediate improvements in your business workflows”
                     </blockquote>
@@ -323,7 +326,7 @@ export default class filemakerPage extends Component {
                       WHAT CLIENT SAY ABOUT US
                     </div>
                     <h3 class="main-title title-white">Testimonials</h3>
-                    <p>
+                    <p className="text-justify">
                       We have built several business process automation
                       solutions that improved the
                       <br /> operational efficiency and effectiveness of several
