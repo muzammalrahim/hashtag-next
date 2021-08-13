@@ -1538,7 +1538,14 @@ button.btn.form-button-child.px-3:hover {
 .section-one-content {
     min-height: 600px;
 }
-}@media (max-width:360px) {
+}
+
+@media(max-width:1285px){
+    .main-title {
+        margin-top: 20px;
+    }
+}
+@media (max-width:360px) {
     .text-level-4 {
     font-size: 25px;
 }

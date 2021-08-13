@@ -298,7 +298,7 @@ export default class Home extends Component {
             </div>
           </div>
         </div>
-        <div className="container-fluid section-four-bg">
+        <div className="container-fluid section-four-bg mb-5">
           <div classname="section-four-left-bg">
             <div className="container section-four-content">
               <div className="row justify-content-center pl-3 pr-3">
@@ -974,10 +974,9 @@ export default class Home extends Component {
                           <a href="tel:+91-9207749168">+91 9207749168</a>
                         </p>
                         <img
-                          class="lazyload"
                           data-src="images/home/email.svg"
                           alt="email"
-                          className="address-icons"
+                          className="address-icons lazyload"
                         />{" "}
                         <span className="address-content">EMAIL</span>
                         <p className="address-text">
