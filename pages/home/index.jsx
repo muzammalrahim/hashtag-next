@@ -327,7 +327,7 @@ export default class Home extends Component {
                     </p>
                   </p>
                 </div>
-                <div className="col-12 col-lg-1 col-md-12"></div>
+                {/* <div className="col-12 col-lg-1 col-md-12"></div> */}
                 <div className="col-12 col-lg-3 col-md-6 why-us-first-section">
                   <Slide bottom>
                     <div className="why-us-box">
