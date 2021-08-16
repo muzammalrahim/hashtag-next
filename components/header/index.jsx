@@ -156,7 +156,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                   >
                     {" "}
                     Services{" "}
-                    {/* <i className="fa fa-angle-down" aria-hidden="true"></i> */}
+                    <i className="fa fa-angle-down" aria-hidden="true"></i>
                   </a>
                 </Link>
                 <i className="fa fa-angle-down" aria-hidden="true"></i>
