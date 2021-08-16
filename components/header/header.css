@@ -675,6 +675,19 @@ li a:active{
     display: none;
 }
 
+
+@media(max-width:1025px){
+    .case__Studies{
+        width:110px;
+    }
+    .about__us{
+        width:80px
+    }
+    .contact__us{
+        width: 90px;
+    }
+}
+
 /*------------ Sticky header --------------------*/
 
 @media(min-width: 1920px) {

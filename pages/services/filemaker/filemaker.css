@@ -288,15 +288,22 @@
 	height: 100%;
 	position: relative;
 }
+
 .expert-col p{
 	position: absolute;
 	/* left: 20px; */
-	right: 162px;
+	right: 200px;
 	bottom: 65px;
 	font-size: 32px;
 	font-weight: 700;
 	color: #434343;
 }
+/* @media(max-width:1025px){
+	.expert-col-right p{
+		position: absolute;
+		right: 202px;
+	}
+} */
 .expert-col img{
 	float: right;
 }
