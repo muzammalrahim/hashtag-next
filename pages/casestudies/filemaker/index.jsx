@@ -270,7 +270,7 @@ export default class Filemaker extends Component {
                   <div className="benefit-para">
                     <p className="text-justify">
                       <b>
-                        With the new Filemake now in the place they have <br />a
+                        With the new Filemaker now in the place they have <br />a
                         modern dahsboard that makes it a easy for access and
                         <br />
                         manage data in different databases, third party apis.
