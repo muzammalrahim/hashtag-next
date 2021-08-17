@@ -290,7 +290,7 @@
 }
 .expert-col p{
 	position: absolute;
-	/* left: 20px; */
+	left: 20px;
 	right: 162px;
 	bottom: 65px;
 	font-size: 32px;

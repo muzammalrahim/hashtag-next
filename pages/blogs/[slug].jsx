@@ -209,7 +209,7 @@ export default class Singlepost extends Component {
                                     postData.image == null
                                       ? "/images/blogs/writing-good-blog.jpg"
                                       : `url(${postData.image})`,
-                                  backgroundSize: "cover",
+                                  // backgroundSize: "cover",
                                 }}
                               ></div>
                               {/*{ (postData.image == null) ? <img src="/images/blogs/writing-good-blog.jpg" alt={postData.image_alt} /> : <img src={postData.image} alt={postData.image_alt} /> }*/}

@@ -323,7 +323,7 @@ export default class filemakerPage extends Component {
                       WHAT CLIENT SAY ABOUT US
                     </div>
                     <h3 class="main-title title-white">Testimonials</h3>
-                    <p className="text-justify">
+                    <p>
                       We have built several business process automation
                       solutions that improved the
                       <br /> operational efficiency and effectiveness of several
