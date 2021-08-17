@@ -245,7 +245,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                   </a>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item case__Studies">
                 <Link href="/casestudies">
                   <a
                     className={`nav-link ${
@@ -266,7 +266,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                   </a>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item about__us">
                 <Link href="/about-us">
                   <a
                     className={`nav-link ${
@@ -281,7 +281,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                   </a>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item contact__us">
                 <Link href="/contact-us">
                   <a
                     className={`nav-link ${

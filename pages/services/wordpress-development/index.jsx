@@ -11,12 +11,15 @@ const Slide = dynamic(() => import("react-reveal/Reveal"));
 const Header = dynamic(() => import("../../../components/header/index.jsx"));
 const Footer = dynamic(() => import("../../../components/footer/index.jsx"));
 const Contact = dynamic(() => import("../../../components/contacts/index.jsx"));
-const Wpcarousel = dynamic(() => import("../../../components/wp-carousel/index.jsx"));
-const Wpsliderv2 = dynamic(() => import("../../../components/wordpress-sliderv2/index.jsx"));
-const Testimonial = dynamic(() => import("../../../components/testimonial/index.jsx"));
-
-
-
+const Wpcarousel = dynamic(() =>
+  import("../../../components/wp-carousel/index.jsx")
+);
+const Wpsliderv2 = dynamic(() =>
+  import("../../../components/wordpress-sliderv2/index.jsx")
+);
+const Testimonial = dynamic(() =>
+  import("../../../components/testimonial/index.jsx")
+);
 
 export async function getServerSideProps() {
   let data = [];
@@ -69,7 +72,7 @@ export default class Shopify extends Component {
       {
         id: 3,
         src: "../images/wordpress/stories-upon.png",
-        alt: "wp theme development"
+        alt: "wp theme development",
       },
       {
         id: 4,
@@ -100,8 +103,8 @@ export default class Shopify extends Component {
           keywords={data.data.keywords}
           canonical_tags={data.data.canonical_tags}
         ></Header>
-        <section class="content-container">
-          <div className="container-fluid shopifyBg p-0 m-0">
+        <section class="content-container ">
+          <div className="container-fluid shopify__banner shopifyBg p-0 m-0">
             <div className="shopify-bg-right">
               <div className="shopify-banner-frame">
                 <div className="container ">
@@ -143,7 +146,7 @@ export default class Shopify extends Component {
               <Slide bottom>
                 <div className="col-lg-3 col-sm-6 mob-padding">
                   <div className="what-we-do-border-style what-we-do-responsive">
-                    <img   
+                    <img
                       src="../images/wordpress/web-programming.svg"
                       alt="wp_dev"
                     />
@@ -157,7 +160,7 @@ export default class Shopify extends Component {
               <Slide bottom>
                 <div className="col-lg-3 col-sm-6 mob-padding">
                   <div className="what-we-do-border-style what-we-do-responsive">
-                    <img    src="../images/wordpress/group.svg" alt="wp_theme" />
+                    <img src="../images/wordpress/group.svg" alt="wp_theme" />
                     <p className="text-level-5 title-black">
                       WordPress Theme Customization
                     </p>
@@ -168,7 +171,7 @@ export default class Shopify extends Component {
               <Slide bottom>
                 <div className="col-lg-3 col-sm-6 mob-padding">
                   <div className="what-we-do-border-style what-we-do-responsive">
-                    <img   
+                    <img
                       src="../images/wordpress/puzzke.svg"
                       alt="plugin_dev"
                     />
@@ -182,7 +185,7 @@ export default class Shopify extends Component {
               <Slide bottom>
                 <div className="col-lg-3 col-sm-6 mob-padding">
                   <div className="what-we-do-border-style what-we-do-responsive">
-                    <img    src="../images/wordpress/psd-wp.svg" alt="psd_to_wp" />
+                    <img src="../images/wordpress/psd-wp.svg" alt="psd_to_wp" />
                     <p className="text-level-5 title-black">
                       PSD to WordPress Conversion
                     </p>
@@ -196,7 +199,7 @@ export default class Shopify extends Component {
               <Slide bottom>
                 <div className="col-lg-3 col-sm-6 mob-padding">
                   <div className="what-we-do-border-style what-we-do-responsive">
-                    <img   
+                    <img
                       src="../images/wordpress/html-wp.svg"
                       alt="html_to_wp"
                     />
@@ -210,7 +213,7 @@ export default class Shopify extends Component {
               <Slide bottom>
                 <div className="col-lg-3 col-sm-6 mob-padding">
                   <div className="what-we-do-border-style what-we-do-responsive">
-                    <img    src="../images/wordpress/development.svg" alt="hire" />
+                    <img src="../images/wordpress/development.svg" alt="hire" />
                     <p className="text-level-5 title-black">
                       Hire WordPress Developer
                     </p>
@@ -221,7 +224,7 @@ export default class Shopify extends Component {
               <Slide bottom>
                 <div className="col-lg-3 col-sm-6 mob-padding">
                   <div className="what-we-do-border-style what-we-do-responsive">
-                    <img   
+                    <img
                       src="../images/wordpress/education.svg"
                       alt="training"
                     />
@@ -266,7 +269,7 @@ export default class Shopify extends Component {
                       </p>
                     </p>
                     <div className="main-title">
-                      <img   
+                      <img
                         src="../images/wordpress/wp-quoute.svg"
                         alt="quote"
                       />
@@ -308,7 +311,7 @@ export default class Shopify extends Component {
                   </div>
 
                   <div className="col-12 col-lg-5 col-sm-6 col-md-12 expert-img-section">
-                    <img   
+                    <img
                       className="experts-img"
                       src="../images/wordpress/tony-hashtag-sys.png"
                       alt="tony-hashtag"
@@ -352,58 +355,58 @@ export default class Shopify extends Component {
               <div class="desktop-only-expertise d-none d-sm-block">
                 <div className="row justify-content-center about-row pl-3 pr-3 pt-4">
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/acf-plugin.svg"
                       alt="acf-plugin"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/all-in-one-seo.svg"
                       alt="all-in-one-seo"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/autoptimize.svg"
                       alt="autoptimize"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img    src="../images/wordpress/bbpres.svg" alt="bbpres" />{" "}
+                    <img src="../images/wordpress/bbpres.svg" alt="bbpres" />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/buddy-press.svg"
                       alt="buddy-press"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/classic-editor.svg"
                       alt="classic-editor"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/cloudfare.svg"
                       alt="cloudfare"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/disable-comment.svg"
                       alt="disable-comment"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/event-manager.svg"
                       alt="event-manager"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/acf-plugin.svg"
                       alt="acf-plugin"
                     />{" "}
@@ -412,58 +415,58 @@ export default class Shopify extends Component {
 
                 <div className="row justify-content-center about-row pl-3 pr-3 pt-4">
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/featured-video.svg"
                       alt="featured-video"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/filemanager.svg"
                       alt="filemanager"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/google-map.svg"
                       alt="google-map"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/gravity-form.svg"
                       alt="gravity-form"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img    src="../images/wordpress/jetpack.svg" alt="jetpack" />{" "}
+                    <img src="../images/wordpress/jetpack.svg" alt="jetpack" />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/layer-slider.svg"
                       alt="layer-slider"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/learnpress.svg"
                       alt="learnpress"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/mailichimp.svg"
                       alt="mailchimp"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/openmenu.svg"
                       alt="openmenu"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/paid-member-pro.svg"
                       alt="paid-member-pro"
                     />{" "}
@@ -471,46 +474,46 @@ export default class Shopify extends Component {
                 </div>
                 <div className="row justify-content-center about-row pl-3 pr-3 pt-4">
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/pdf-plugin.svg"
                       alt="pdf-plugin"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/slider-revolution.svg"
                       alt="slider-revolution"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img    src="../images/wordpress/smush.svg" alt="smush" />{" "}
+                    <img src="../images/wordpress/smush.svg" alt="smush" />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img    src="../images/wordpress/ssl.svg" alt="ssl" />{" "}
+                    <img src="../images/wordpress/ssl.svg" alt="ssl" />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/woocommerce.svg"
                       alt="woocommerce"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/woocommerce-service.svg"
                       alt="woocommerce-service"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img   
+                    <img
                       src="../images/wordpress/word-defence.svg"
                       alt="word-defence"
                     />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img    src="../images/wordpress/wp-page.svg" alt="wp-page" />{" "}
+                    <img src="../images/wordpress/wp-page.svg" alt="wp-page" />{" "}
                   </div>
                   <div class="col-lg-1 col-md-1">
-                    <img    src="../images/wordpress/yoast.svg" alt="yoast" />{" "}
+                    <img src="../images/wordpress/yoast.svg" alt="yoast" />{" "}
                   </div>
                 </div>
               </div>

@@ -13,7 +13,10 @@ import "lazysizes";
 // import a plugin
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
-const Contact = dynamic( () => import("../../../components/contacts/index.jsx"), { ssr: false });
+const Contact = dynamic(
+  () => import("../../../components/contacts/index.jsx"),
+  { ssr: false }
+);
 const Header = dynamic(() => import("../../../components/header/index.jsx"));
 const Footer = dynamic(() => import("../../../components/footer/index.jsx"), {
   ssr: false,
@@ -382,7 +385,7 @@ export default class filemakerPage extends Component {
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="expert-col">
+                  <div className=" expert-col">
                     <p>Selva V</p>
                     <img
                       className="lazyload"
