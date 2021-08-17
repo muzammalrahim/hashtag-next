@@ -87,11 +87,11 @@ export default class Multitoken extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="common-title-wrap px-md-3">
-                    <div className="case-multitoken-size">
+                    {/* <div className="case-multitoken-size">
                       <p className="multi_token_title">
                         Full Stack Development
                       </p>
-                    </div>
+                    </div> */}
                     <h1 className="main-title title-white">
                       Multi Token Wallet In Gaming
                     </h1>

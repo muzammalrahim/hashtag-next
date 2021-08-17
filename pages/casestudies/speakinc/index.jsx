@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 
-<<<<<<< HEAD
 import Underconstruction from "../../../components/under-construction/index.jsx";
 import DocumentMeta from "react-document-meta";
 import $ from "jquery";
 import axios from "axios";
 import * as config from "../../../config.js";
-import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
+import dynamic from "next/dynamic";
 const Header = dynamic(
   () => import("../../../components/header/index.jsx"),
   {}
@@ -22,20 +21,6 @@ const Contact = dynamic(
   () => import("../../../components/contacts/index.jsx"),
   {}
 );
-=======
-import Underconstruction from '../../../components/under-construction/index.jsx';
-import DocumentMeta from 'react-document-meta';
-import $ from 'jquery';
-import axios from 'axios';
-import * as config from '../../../config.js';
-import "slick-carousel/slick/slick.css";
-import dynamic from "next/dynamic";
-const Header  = dynamic(() => import("../../../components/header/index.jsx"),{});
-const Slider = dynamic(() => import("react-slick"),{});
-const Slide = dynamic(() => import("react-reveal/Reveal"),{});
-const Footer = dynamic(() => import("../../../components/footer/index.jsx"),{});
-const Contact = dynamic(() => import("../../../components/contacts/index.jsx"),{});
->>>>>>> 7f031462605c216b8686584277ef38c73d51a9ca
 
 import "slick-carousel/slick/slick.css";
 import "lazysizes";
@@ -116,9 +101,9 @@ export default class Speakinc extends Component {
               <div className="row">
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
-                    <div className="case-speakinc-size">
+                    {/* <div className="case-speakinc-size">
                       <p className="speak_inc">Website development & design</p>
-                    </div>
+                    </div> */}
                     <h1 className="main-title title-white">SpeakInc</h1>
                     <ul className="project-info">
                       <li>
@@ -166,7 +151,8 @@ export default class Speakinc extends Component {
                   </p>
                 </div>
                 <div className="img-blk speakinLaptopHeight">
-                  <img class="lazyload"
+                  <img
+                    class="lazyload"
                     data-src="/images/case-studies/speakinc/speakin_laptop.webp"
                     alt="speakin_laptop"
                   />
@@ -189,7 +175,8 @@ export default class Speakinc extends Component {
                     <div className="project-spec-grid">
                       <Slide bottom>
                         <div className="project-spec-col">
-                          <img class="lazyload"
+                          <img
+                            class="lazyload"
                             data-src="/images/case-studies/speakinc/feature-icon1.svg"
                             alt="Design"
                           />
@@ -198,7 +185,8 @@ export default class Speakinc extends Component {
                       </Slide>
                       <Slide bottom>
                         <div className="project-spec-col">
-                          <img class="lazyload"
+                          <img
+                            class="lazyload"
                             data-src="/images/case-studies/speakinc/feature-icon2.svg"
                             alt="Design"
                           />
@@ -207,7 +195,8 @@ export default class Speakinc extends Component {
                       </Slide>
                       <Slide bottom>
                         <div className="project-spec-col">
-                          <img class="lazyload"
+                          <img
+                            class="lazyload"
                             data-src="/images/case-studies/speakinc/feature-icon3.svg"
                             alt="Design"
                           />
@@ -216,7 +205,8 @@ export default class Speakinc extends Component {
                       </Slide>
                       <Slide bottom>
                         <div className="project-spec-col">
-                          <img class="lazyload"
+                          <img
+                            class="lazyload"
                             data-src="/images/case-studies/speakinc/feature-icon4.svg"
                             alt="Design"
                           />
@@ -229,7 +219,8 @@ export default class Speakinc extends Component {
                 <div className="col-md-6 ">
                   <Slide bottom>
                     <div className="hand-img-blk speakinMobileMargin">
-                      <img class="lazyload"
+                      <img
+                        class="lazyload"
                         data-src="/images/case-studies/speakinc/spekinc-phone-mockup.webp"
                         alt="spekinc-phone-mockup"
                       />
@@ -256,7 +247,8 @@ export default class Speakinc extends Component {
                       <Slider {...settings} className="slide-outer">
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/speakinc/speakinc-1.webp"
                               alt="Design"
                             />
@@ -264,7 +256,8 @@ export default class Speakinc extends Component {
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/speakinc/speakinc-2.webp"
                               alt="Design"
                             />
@@ -272,7 +265,8 @@ export default class Speakinc extends Component {
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/speakinc/speakinc-3.webp"
                               alt="Design"
                             />
@@ -280,7 +274,8 @@ export default class Speakinc extends Component {
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/speakinc/speakinc-4.webp"
                               alt="Design"
                             />
@@ -288,7 +283,8 @@ export default class Speakinc extends Component {
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                            <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/speakinc/speakinc-5.webp"
                               alt="Design"
                             />
@@ -316,7 +312,8 @@ export default class Speakinc extends Component {
                       </div>
                       <div className="technology-list">
                         <div className="tech-item">
-                          <img class="lazyload"
+                          <img
+                            class="lazyload"
                             data-src="/images/case-studies/speakinc/tech-icon1.svg"
                             alt="Django"
                           />
@@ -330,7 +327,8 @@ export default class Speakinc extends Component {
                           </p>
                         </div>
                         <div className="tech-item">
-                          <img class="lazyload"
+                          <img
+                            class="lazyload"
                             data-src="/images/case-studies/speakinc/tech-icon2.svg"
                             alt="MySQL"
                           />
@@ -349,7 +347,8 @@ export default class Speakinc extends Component {
                           </p>
                         </div>
                         <div className="tech-item">
-                          <img class="lazyload"
+                          <img
+                            class="lazyload"
                             data-src="/images/case-studies/speakinc/tech-icon3.svg"
                             alt="Nginx"
                           />
@@ -363,7 +362,8 @@ export default class Speakinc extends Component {
                           </p>
                         </div>
                         <div className="tech-item">
-                          <img class="lazyload"
+                          <img
+                            class="lazyload"
                             data-src="/images/case-studies/speakinc/tech-icon4.svg"
                             alt="Filemaker Pro"
                           />
@@ -379,7 +379,8 @@ export default class Speakinc extends Component {
                           </p>
                         </div>
                         <div className="tech-item">
-                          <img class="lazyload"
+                          <img
+                            class="lazyload"
                             data-src="/images/case-studies/speakinc/tech-icon5.svg"
                             alt="Ubuntu"
                           />
@@ -397,7 +398,8 @@ export default class Speakinc extends Component {
                   </Slide>
                 </div>
                 <div className="sticky-img speakinLaptopHeight">
-                  <img class="lazyload"
+                  <img
+                    class="lazyload"
                     data-src="/images/case-studies/speakinc/speakin_laptop.webp"
                     alt="speakin_laptop"
                   />
@@ -439,7 +441,8 @@ export default class Speakinc extends Component {
                 </div>
                 <div className="col-md-6">
                   <div className="dfd-blk">
-                    <img class="lazyload"
+                    <img
+                      class="lazyload"
                       data-src="/images/case-studies/speakinc/workflow.svg"
                       alt="workflow"
                     />
@@ -465,7 +468,8 @@ export default class Speakinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/speakinc/feature1.svg"
                           alt="feature"
                         />
@@ -483,7 +487,8 @@ export default class Speakinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/speakinc/feature2.svg"
                           alt="feature"
                         />
@@ -501,7 +506,8 @@ export default class Speakinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/speakinc/feature3.svg"
                           alt="feature"
                         />
@@ -520,7 +526,8 @@ export default class Speakinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/speakinc/feature4.svg"
                           alt="feature"
                         />
@@ -541,7 +548,8 @@ export default class Speakinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/speakinc/feature5.svg"
                           alt="feature"
                         />
@@ -558,7 +566,8 @@ export default class Speakinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/speakinc/feature6.svg"
                           alt="feature"
                         />
@@ -575,7 +584,8 @@ export default class Speakinc extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/speakinc/feature7.svg"
                           alt="feature"
                         />

@@ -92,11 +92,11 @@ export default class Maikeinc extends Component {
               <div className="row">
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
-                    <div className="case-maikeinc-size">
+                    {/* <div className="case-maikeinc-size">
                       <p className="case_study_title">
                         Website development & design
                       </p>
-                    </div>
+                    </div> */}
                     <h1 className="main-title title-white">Maike Inc</h1>
                     <ul className="project-info">
                       <li>

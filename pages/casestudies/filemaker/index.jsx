@@ -88,11 +88,11 @@ export default class Filemaker extends Component {
               <div className="row">
                 <div className="col-md-10">
                   <div className="common-title-wrap c-heading px-md-3 ">
-                    <div className="case-filmmaker-size">
+                    {/* <div className="case-filmmaker-size">
                       <p className="filemaker_title">
                         Website development &amp; design
                       </p>
-                    </div>
+                    </div> */}
                     <h1 className="main-title title-white">
                       Filemaker in Action
                     </h1>
@@ -270,17 +270,20 @@ export default class Filemaker extends Component {
                   <div className="benefit-para">
                     <p className="text-justify">
                       <b>
-                        With the new Filemaker now in the place they have <br />a
-                        modern dahsboard that makes it a easy for access and
+                        With the new Filemaker now in the place they have <br />
+                        a modern dashboard that makes it a easy for access and
                         <br />
                         manage data in different databases, third party apis.
                       </b>
                     </p>
                     <p className="text-justify">
-                      This system uses Filemaker to communicate with a mysql
-                      database that is connected with multiple web based
-                      applications. Primary call was to centralise a UI for
-                      accessing all different modules.
+                      <b>
+                        {" "}
+                        This system uses Filemaker to communicate with a mysql
+                        database that is connected with multiple web based
+                        applications. Primary call was to centralise a UI for
+                        accessing all different modules.
+                      </b>
                     </p>
                   </div>
                 </div>
