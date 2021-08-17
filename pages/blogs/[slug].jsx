@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
-import Header from '../../components/header';
+import React, { Component } from "react";
+import Header from "../../components/header";
 import Footer from "../../components/footer/index.jsx";
 import BlogCategories from "../../components/post-category/index.jsx";
 import BlogRecentPosts from "../../components/post-recent/index.jsx";
-import DocumentMeta from 'react-document-meta';
-import { ToastContainer, toast, Slide } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import $ from 'jquery';
-import Axios from 'axios';
+import DocumentMeta from "react-document-meta";
+import { ToastContainer, toast, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import $ from "jquery";
+import Axios from "axios";
 import https from "https";
-import * as config from '../../config';
-import Link from 'next/link'
+import * as config from "../../config";
+import Link from "next/link";
 import BlogPostFeatured from "../../components/post-featured";
 
-require('typeface-montserrat')
+require("typeface-montserrat");
 
 export async function getServerSideProps(ctx) {
   let data = [];
@@ -23,7 +23,7 @@ export async function getServerSideProps(ctx) {
       rejectUnauthorized: false,
     }),
   });
- console.log('ctx',ctx?.req?.url.split('/')[2])
+  console.log("ctx", ctx?.req?.url.split("/")[2]);
   await instance
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
@@ -69,7 +69,6 @@ export default class Singlepost extends Component {
       this.setState({ postUrl: singlePost });
       this.get_postData(singlePost);
     }
-    
   }
 
   componentWillUnmount() {
@@ -106,8 +105,6 @@ export default class Singlepost extends Component {
   }
 
   render() {
-    
-
     const loader = (
       <div className="loader">
         <div className="spinner">
@@ -120,10 +117,10 @@ export default class Singlepost extends Component {
       </div>
     );
     let { postData, data, postUrl } = this.state;
-    if(postData.image){
-      postData.image = postData.image.replace('http://','https://');
+    if (postData.image) {
+      postData.image = postData.image.replace("http://", "https://");
     }
-  
+
     return (
       <div className="single-blog-main" id="single-blog-main">
         <Header
@@ -206,10 +203,13 @@ export default class Singlepost extends Component {
                               <div
                                 className="blog-thumb"
                                 style={{
+                                  width: "100%",
+
                                   backgroundImage:
                                     postData.image == null
                                       ? "/images/blogs/writing-good-blog.jpg"
                                       : `url(${postData.image})`,
+                                  // backgroundSize: "cover",
                                 }}
                               ></div>
                               {/*{ (postData.image == null) ? <img src="/images/blogs/writing-good-blog.jpg" alt={postData.image_alt} /> : <img src={postData.image} alt={postData.image_alt} /> }*/}

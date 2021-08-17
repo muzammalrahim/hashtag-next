@@ -104,7 +104,7 @@ a{
   height: auto;
 }*/
 .blog-list .card:first-child .blog-thumb{
-  height: 650px;
+  height: 700px;
 }
 
 .blog-img{
@@ -392,6 +392,11 @@ position: relative;
 @media(min-width: 1921px) {
   /*.blog-img img{height: 400px;}*/
   .blog-list .card:first-child .blog-thumb{height: 700px;}
+  .blog-thumb{height: 440px;}
+}
+@media(min-width: 2500px) {
+  /*.blog-img img{height: 400px;}*/
+  .blog-list .card:first-child .blog-thumb{height: 1050px;}
   .blog-thumb{height: 440px;}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {

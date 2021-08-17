@@ -11,7 +11,7 @@
 }
 
 .s-file-maker h2{
-	font-size: 1.5rem;
+	font-size: 20px;
 	line-height: inherit;
 }
 .case-study.filemaker-service .project-about-blk{
@@ -288,15 +288,22 @@
 	height: 100%;
 	position: relative;
 }
+
 .expert-col p{
 	position: absolute;
-	/* left: 20px; */
-	right: 162px;
+	left: 20px;
+	right: 200px;
 	bottom: 65px;
 	font-size: 32px;
 	font-weight: 700;
 	color: #434343;
 }
+/* @media(max-width:1025px){
+	.expert-col-right p{
+		position: absolute;
+		right: 202px;
+	}
+} */
 .expert-col img{
 	float: right;
 }
@@ -311,7 +318,7 @@
 
 
 .filemaker-service .giveHeightToTestimonial{
-	height: 700px;
+	height:700px;
 }
 
 /* .testimonial-wrap iframe.giveHeightToTestimonial div#tns1-ow {
@@ -475,7 +482,7 @@
 		height: 78rem;
 	}
 }
-@media(max-width: 350px)
+@media(max-width: 375px)
 {
 	
 	.filemaker-service .mainSection

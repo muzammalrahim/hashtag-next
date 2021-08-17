@@ -1,4 +1,4 @@
-@import "~typeface-montserrat/index.css";
+/* @import "~typeface-montserrat/index.css"; */
     
 @import '../components/header/header.css';
     
@@ -956,6 +956,7 @@ button.btn.form-button-child.px-3:hover {
 .why-us-first-section {
     margin-top: 100px;
 }
+
 .section-one-text {
     top: 378px!important;
 }
@@ -1349,7 +1350,7 @@ button.btn.form-button-child.px-3:hover {
     min-height: 610px;
 }
 .home-main .why-us-second-section {
-    margin-top: 90px;
+    margin-top: 0px;
 }
 .main-title-first-mob {
     font-size: 50px!important;
@@ -1396,7 +1397,7 @@ button.btn.form-button-child.px-3:hover {
     margin-top: 293px;
 }
 .why-us-first-section {
-    margin-top: 90px;
+    margin-top: 0px;
 }
 .why-us-second-section {
     margin-top: 200px;
@@ -1430,7 +1431,8 @@ button.btn.form-button-child.px-3:hover {
     background-image: none;
 }
 .section-three-bg {
-    top: -100px;
+  margin-bottom: 150px !important;
+  
 }
 .section-one-bg-small-device {
     background: 0 0!important;
@@ -1536,7 +1538,14 @@ button.btn.form-button-child.px-3:hover {
 .section-one-content {
     min-height: 600px;
 }
-}@media (max-width:360px) {
+}
+
+@media(max-width:1285px){
+    .main-title {
+        margin-top: 20px;
+    }
+}
+@media (max-width:360px) {
     .text-level-4 {
     font-size: 25px;
 }

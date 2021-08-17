@@ -6,7 +6,7 @@ import Head from "next/head";
 import Script from 'next/script'
 
 // import "@fortawesome/fontawesome-free/css/all.min.css";
-//  dynamic(() => import("@fortawesome/fontawesome-free/css/all.min.css"));
+  // dynamic(() => import("@fortawesome/fontawesome-free/css/all.min.css"));
 
 
 const Post = dynamic(() => import("./post"));
@@ -28,9 +28,10 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       setTimeout(function () {
         var scriptElement = document.createElement("script");
         scriptElement.type = "text/javascript";
-        scriptElement.src = "https://www.googletagmanager.com/gtag/js?id=UA-78643548-1";
+        scriptElement.src =
+          "https://www.googletagmanager.com/gtag/js?id=UA-78643548-1";
         document.head.appendChild(scriptElement);
-      },10);
+      }, 10);
     };
   }, []);
 
@@ -69,7 +70,8 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       : canonical_tags;
   return (
     <header className="header-container">
-   
+
+
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
@@ -96,6 +98,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                      `,
   }}
   async defer />
+
 
       <div className="container" id="main-section">
         <Post />
@@ -162,6 +165,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                   </a>
                 </Link>
                 <i className="fa fa-angle-down" aria-hidden="true"></i>
+
                 <ul className="submenu">
                   <div className="row m-0">
                     <div className="col-md-6 p-0">
@@ -246,7 +250,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                   </a>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item case__Studies">
                 <Link href="/casestudies">
                   <a
                     className={`nav-link ${
@@ -267,7 +271,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                   </a>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item about__us">
                 <Link href="/about-us">
                   <a
                     className={`nav-link ${
@@ -282,7 +286,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                   </a>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item contact__us">
                 <Link href="/contact-us">
                   <a
                     className={`nav-link ${

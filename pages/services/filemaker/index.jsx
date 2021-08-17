@@ -13,7 +13,10 @@ import "lazysizes";
 // import a plugin
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
-const Contact = dynamic( () => import("../../../components/contacts/index.jsx"), { ssr: false });
+const Contact = dynamic(
+  () => import("../../../components/contacts/index.jsx"),
+  { ssr: false }
+);
 const Header = dynamic(() => import("../../../components/header/index.jsx"));
 const Footer = dynamic(() => import("../../../components/footer/index.jsx"), {
   ssr: false,
@@ -323,7 +326,7 @@ export default class filemakerPage extends Component {
                       WHAT CLIENT SAY ABOUT US
                     </div>
                     <h3 class="main-title title-white">Testimonials</h3>
-                    <p className="text-justify">
+                    <p>
                       We have built several business process automation
                       solutions that improved the
                       <br /> operational efficiency and effectiveness of several
@@ -343,9 +346,10 @@ export default class filemakerPage extends Component {
                       <iframe
                         className="lazyload giveHeightToTestimonial"
                         width="100%"
+                        height="100%"
                         data-src="https://widget.clutch.co/widgets/get/4?ref_domain=165.22.214.227&uid=62314&ref_path=/services/filemaker"
-                        // height="700px"
-                        scrolling="no"
+                        // height="2700px"
+                        scrolling="yes"
                       ></iframe>
                     </div>
                   </div>
@@ -381,7 +385,7 @@ export default class filemakerPage extends Component {
                   </div>
                 </div>
                 <div className="col-md-3">
-                  <div className="expert-col">
+                  <div className=" expert-col">
                     <p>Selva V</p>
                     <img
                       className="lazyload"
