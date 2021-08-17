@@ -68,32 +68,35 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       : canonical_tags;
   return (
     <header className="header-container">
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      <meta name="head title" content={title} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:site_name" content="hashtag" />
-      <meta property="twitter:card" content="hashtag" />
-      <meta property="twitter:creator" content="hashtag" />
-      <meta property="twitter:title" content={title} />
-      <meta property="twitter:description" content={description} />
-      <link rel="canonical" href={canonical}></link>
-      <script src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1" />
 
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-                                window.dataLayer = window.dataLayer || [];
-                                function gtag(){dataLayer.push(arguments);}
-                                gtag('js', new Date());
-                                gtag('config', 'UA-78', {
-                                page_path: window.location.pathname,
-                                });
-                             `,
-        }}
-      />
+
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="keywords" content={keywords} />
+        <meta name="head title" content={title} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:site_name" content="hashtag" />
+        <meta property="twitter:card" content="hashtag" />
+        <meta property="twitter:creator" content="hashtag" />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={description} />
+        <link rel="canonical" href={canonical}></link>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1" async defer></script> 
+
+<script
+  dangerouslySetInnerHTML={{
+    __html: `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'UA-78643548-1', {
+                        page_path: window.location.pathname,
+                        });
+                     `,
+  }}
+  async defer />
+
 
       <div className="container" id="main-section">
         <Post />
