@@ -132,7 +132,12 @@
 }
 
 
-
+@media screen and (max-width:1024) {
+    .content-four-section .text-above-main-title .shopify-title{
+       
+    }
+    
+}
 
 @media only screen and (min-width:1679px) and (max-width:1699px) {
     #shopify-main .shopify-section-4 .content-four-section {
@@ -401,7 +406,7 @@
     }
 }
 
-@media only screen and (min-width:2500px) {
+@media (min-width:2500px) {
     .shopify-content-box {
         font-size: 40px !important;
     }
@@ -543,6 +548,9 @@
 
     #shopify-main .content-four-section {
         margin-top: 95px !important;
+        padding-top: 130px !important;
+        padding-bottom: 130px !important;
+      
 
     }
 

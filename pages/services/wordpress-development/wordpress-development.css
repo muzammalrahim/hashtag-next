@@ -99,7 +99,11 @@
 }
 
 }
-
+@media(max-width:3300px) and (min-width:2500px){
+    .shopify__banner{
+        height: 500px;
+    }
+}
 @media screen and (device-aspect-ratio: 40/71)
 
 
