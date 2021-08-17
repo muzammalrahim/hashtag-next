@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-import React, { Component } from "react";
-import Header from "../../../components/header/index.jsx";
-import Footer from "../../../components/footer/index.jsx";
-import Underconstruction from "../../../components/under-construction/index.jsx";
-import Contact from "../../../components/contacts/index.jsx";
-import DocumentMeta from "react-document-meta";
-import $ from "jquery";
-import axios from "axios";
-import * as config from "../../../config.js";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import Slide from "react-reveal/Reveal";
-=======
 import React, { Component } from 'react';
 import Underconstruction from '../../../components/under-construction/index.jsx';
 import DocumentMeta from 'react-document-meta';
@@ -29,7 +15,6 @@ const Slide = dynamic(() => import("react-reveal/Reveal"),{});
 const Contact = dynamic(() => import("../../../components/contacts/index.jsx"),{});
 import "slick-carousel/slick/slick.css";
 import "lazysizes";
->>>>>>> 7f031462605c216b8686584277ef38c73d51a9ca
 
 require("typeface-montserrat");
 import Axios from "axios";
@@ -520,15 +505,8 @@ export default class Easylevel extends Component {
                     <div className="text-above-main-title">
                       PROJECT ACHIEVEMENTS
                     </div>
-<<<<<<< HEAD
-                    <h2 className="main-title-custom main-title mb-2">
-                      What We Achieved
-                    </h2>
-                    <img
-=======
                     <h2  className="main-title-custom main-title mb-2">What We Achieved</h2>
                      <img class="lazyload"
->>>>>>> 7f031462605c216b8686584277ef38c73d51a9ca
                       className="mb-2"
                       data-src="../images/shopify/shopify-quoute.svg"
                       alt="quote"

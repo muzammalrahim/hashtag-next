@@ -1,28 +1,5 @@
 import React, { Component } from "react";
 
-<<<<<<< HEAD
-import Underconstruction from "../../../components/under-construction/index.jsx";
-import DocumentMeta from "react-document-meta";
-import $ from "jquery";
-import axios from "axios";
-import * as config from "../../../config.js";
-import dynamic from "next/dynamic";
-import "slick-carousel/slick/slick.css";
-const Header = dynamic(
-  () => import("../../../components/header/index.jsx"),
-  {}
-);
-const Slider = dynamic(() => import("react-slick"), {});
-const Slide = dynamic(() => import("react-reveal/Reveal"), {});
-const Footer = dynamic(
-  () => import("../../../components/footer/index.jsx"),
-  {}
-);
-const Contact = dynamic(
-  () => import("../../../components/contacts/index.jsx"),
-  {}
-);
-=======
 import Underconstruction from '../../../components/under-construction/index.jsx';
 import DocumentMeta from 'react-document-meta';
 import $ from 'jquery';
@@ -35,7 +12,6 @@ const Slider = dynamic(() => import("react-slick"),{});
 const Slide = dynamic(() => import("react-reveal/Reveal"),{});
 const Footer = dynamic(() => import("../../../components/footer/index.jsx"),{});
 const Contact = dynamic(() => import("../../../components/contacts/index.jsx"),{});
->>>>>>> 7f031462605c216b8686584277ef38c73d51a9ca
 
 import "slick-carousel/slick/slick.css";
 import "lazysizes";
