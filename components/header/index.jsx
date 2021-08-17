@@ -3,9 +3,12 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
-import Script from "next/script";
+import Script from 'next/script'
+
 // import "@fortawesome/fontawesome-free/css/all.min.css";
-dynamic(() => import("@fortawesome/fontawesome-free/css/all.min.css"));
+  // dynamic(() => import("@fortawesome/fontawesome-free/css/all.min.css"));
+
+
 const Post = dynamic(() => import("./post"));
 // import Post from "./post.jsx"
 import $ from "jquery";
@@ -13,8 +16,7 @@ import $ from "jquery";
 const Header = ({ title, description, keywords, canonical_tags }) => {
   const [tabindex, setTabindex] = useState(false);
   const [Activetabindex, setActiveTabIndex] = useState(1);
-  const [loadScript, setloadScript] = useState(false);
-
+ 
   const getindex = () => {
     if (localStorage.getItem("Activetabindex2")) {
       setActiveTabIndex(localStorage.getItem("Activetabindex2"));
