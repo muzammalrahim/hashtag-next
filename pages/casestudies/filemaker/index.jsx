@@ -88,11 +88,11 @@ export default class Filemaker extends Component {
               <div className="row">
                 <div className="col-md-10">
                   <div className="common-title-wrap c-heading px-md-3 ">
-                    {/* <div className="case-filmmaker-size">
+                    <div className="case-filmmaker-size">
                       <p className="filemaker_title">
-                        Website development &amp; design
+                        Custom Software Development
                       </p>
-                    </div> */}
+                    </div>
                     <h1 className="main-title title-white">
                       Filemaker in Action
                     </h1>
