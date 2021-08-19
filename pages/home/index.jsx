@@ -7,7 +7,6 @@ const Carousel = dynamic(() => import("../../components/carousel/index.jsx"), { 
 const Header = dynamic(() => import("../../components/header/index.jsx"));
 const Footer = dynamic(() => import("../../components/footer/index.jsx"), {ssr: false,});
 const Contact = dynamic(() => import("../../components/contacts/index.jsx"), {ssr: false,});
-
 const Slide = dynamic(() => import("react-reveal/Reveal"), { ssr: false });
 
 import "lazysizes";
