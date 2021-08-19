@@ -4,11 +4,6 @@ import React, { Component } from "react";
 import Link from "next/link";
 import $ from "jquery";
 // import './style.css';
-
-import "lazysizes";
-// import a plugin
-import "lazysizes/plugins/parent-fit/ls.parent-fit";
-
 class Footer extends Component {
   constructor(props) {
     super(props);
@@ -61,9 +56,8 @@ class Footer extends Component {
                 <div className="col-lg-3 col-md-12">
                   <img
                     id="logo"
-                    data-src="/images/hashtag-footer-logo.svg"
+                    src="/images/hashtag-footer-logo.svg"
                     alt="logo"
-                    class="lazyload"
                   />
                 </div>
                 <div className="col-lg-5 col-md-12 footer-second-row2">
@@ -132,9 +126,8 @@ class Footer extends Component {
                   >
                     <img
                       id="footer-linkedin"
-                      data-src="/images/Footer/linkedin.svg"
+                      src="/images/Footer/linkedin.svg"
                       alt="linkedin"
-                      class="lazyload"
                     />
                   </a>
                   <a
@@ -143,9 +136,8 @@ class Footer extends Component {
                   >
                     <img
                       id="footer-fb"
-                      data-src="/images/Footer/facebook-icon.svg"
+                      src="/images/Footer/facebook-icon.svg"
                       alt="facebook"
-                      class="lazyload"
                     />
                   </a>
 
@@ -155,14 +147,14 @@ class Footer extends Component {
                       target="_blank"
                     >
                       <img
-                         src="https://topwebdevelopmentcompanies.com/badges/top-web-development-companies.png"
-                        // data-src="/images/Footer/top-web-development-companies.png"
+                        src="https://topwebdevelopmentcompanies.com/badges/top-web-development-companies.png"
+                        // src="/images/Footer/top-web-development-companies.png"
                         alt="web development companies sunnyvale"
                         title="Web Development Companies Sunnyvale"
                         style={{ height: "100px", width: "100px" }}
-                        class="lazyload"
                       />
-                    </a>Y
+                    </a>
+                    Y
                   </div>
                 </div>
 
@@ -272,9 +264,8 @@ class Footer extends Component {
                     <div className="">
                       <img
                         id="footer-location"
-                        data-src="/images/Footer/location.svg"
+                        src="/images/Footer/location.svg"
                         alt="location"
-                        class="lazyload"
                       />
                       <p className="loaction-para">
                         <span>100 S. Murphy Ave. Suite 200</span>Sunnyvale, CA
@@ -285,9 +276,8 @@ class Footer extends Component {
                     <div>
                       <img
                         id="footer-phone"
-                        data-src="/images/Footer/phone.svg"
+                        src="/images/Footer/phone.svg"
                         alt="phone"
-                        class="lazyload"
                       />
                       <p className="contact-links">
                         <a href="tel:+1-408-596-2525">+1 408 596 2525 </a>
@@ -297,9 +287,8 @@ class Footer extends Component {
                     <div>
                       <img
                         id="footer-email"
-                        data-src="/images/Footer/email.svg"
+                        src="/images/Footer/email.svg"
                         alt="email"
-                        class="lazyload"
                       />
                       <p className="contact-links footer-email-link">
                         <a href="mailto:info@hashtag-ca.com">
