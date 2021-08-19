@@ -148,12 +148,13 @@ class Footer extends Component {
                       target="_blank"
                     >
                       <img
-                        src="https://topwebdevelopmentcompanies.com/badges/top-web-development-companies.png"
+                        // src="https://topwebdevelopmentcompanies.com/badges/top-web-development-companies.png"
+                        src="/images/Footer/top-web-development-companies.png"
                         alt="web development companies sunnyvale"
                         title="Web Development Companies Sunnyvale"
                         style={{ height: "100px", width: "100px" }}
                       />
-                    </a>
+                    </a>Y
                   </div>
                 </div>
 
