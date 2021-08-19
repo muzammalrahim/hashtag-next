@@ -1019,7 +1019,16 @@ button.btn.form-button-child.px-3:hover {
 #home-main .ct-mb-bottom {
     margin-bottom: 0!important;
 }
-}@media (min-width:768px) {
+}
+@media(max-width:800px){
+  .section-three-bg{
+      margin-bottom: 1800px !important;
+  }
+}
+.why-us-first-section{
+    margin-top: 60px !important;
+}
+@media (min-width:768px) {
     .section-four-bg {
     background-image: url(/images/home/section-orange-bg.svg);
     background-color: #fdfdfd;
@@ -1086,6 +1095,7 @@ button.btn.form-button-child.px-3:hover {
        height: 1500px;
     }
 }
+
 @media (min-width:2500px) {
     .container {
     max-width: 2412px!important;
@@ -1380,7 +1390,13 @@ button.btn.form-button-child.px-3:hover {
 .text-above-main-title-first-mob {
     font-size: 20px!important;
 }
-}@media (min-width:768px) {
+}
+@media(min-width:768px) and (max-width:991px){
+    .why-us-first-section {
+        margin-top: 0px !important;
+    }
+}
+@media (min-width:768px) {
     .container {
     max-width: 1622px!important;
 }
@@ -1396,9 +1412,7 @@ button.btn.form-button-child.px-3:hover {
 .content-four-section {
     margin-top: 293px;
 }
-.why-us-first-section {
-    margin-top: 0px;
-}
+
 .why-us-second-section {
     margin-top: 200px;
 }
@@ -1726,7 +1740,7 @@ button.btn.form-button-child.px-3:hover {
 }
 }@media only screen and (min-width:1280px) and (max-width:1499px) {
     .what-we-do-border-style {
-    height: 380px!important;
+    height: 420px!important;
 }
 }@media only screen and (-webkit-min-device-pixel-ratio:1.5) and (max-height:1024px) and (min-width:768px) and (orientation:portrait) {
     .what-we-do-border-style {
@@ -1762,7 +1776,10 @@ button.btn.form-button-child.px-3:hover {
     .who-we-right-bg {
     bottom: 245px!important;
 }
-}@media only screen and (min-width:1680px) and (max-width:1700px) {
+}
+
+
+@media only screen and (min-width:1680px) and (max-width:1700px) {
     .container {
     max-width: 1438px;
 }

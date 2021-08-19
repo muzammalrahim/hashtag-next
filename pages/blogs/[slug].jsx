@@ -33,6 +33,7 @@ export async function getServerSideProps(ctx) {
     })
     .then((response) => {
       data = response.data;
+      console.log(data);
     });
   return {
     props: { data },

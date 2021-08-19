@@ -6,7 +6,7 @@ import DocumentMeta from "react-document-meta";
 import axios from "axios";
 import * as config from "../../config.js";
 
-import Link from 'next/link'
+import Link from "next/link";
 
 import dynamic from "next/dynamic";
 require("typeface-montserrat");
@@ -17,9 +17,6 @@ import https from "https";
 import "lazysizes";
 // import a plugin
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
-
-
-
 
 const Slide = dynamic(() => import("react-reveal/Reveal"));
 const Contact = dynamic(() => import("../../components/contacts/index.jsx"));

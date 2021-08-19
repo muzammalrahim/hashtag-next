@@ -207,7 +207,7 @@ export default class Home extends Component {
 
                 <div className="row mt-5">
                   <div className="col-lg-4 col-sm-12 mob-padding">
-                    <div className="what-we-do-border-style what-we-do-responsive">
+                    <div className="what-we-do-border-style home__card what-we-do-responsive">
                       <img
                         class="lazyload"
                         data-src="images/business-process-automation.svg"
@@ -225,7 +225,7 @@ export default class Home extends Component {
                     </div>
                   </div>
                   <div className="col-lg-4 col-sm-12 mob-padding">
-                    <div className="what-we-do-border-style what-we-do-responsive">
+                    <div className="what-we-do-border-style home__card what-we-do-responsive">
                       <img
                         class="lazyload"
                         data-src="images/web-application.svg"
@@ -240,7 +240,7 @@ export default class Home extends Component {
                     </div>
                   </div>
                   <div className="col-lg-4 col-sm-12 mob-padding">
-                    <div className="what-we-do-border-style ">
+                    <div className="what-we-do-border-style home__card ">
                       <img
                         class="lazyload"
                         data-src="images/e-commerce.svg"
@@ -258,7 +258,7 @@ export default class Home extends Component {
                 </div>
                 <div className="row justify-content-center mt-5 mob-padding res-bottom-margin ">
                   <div className="col-offset-lg-2 col-lg-4 col-sm-12 mob-padding">
-                    <div className="what-we-do-border-style what-we-do-responsive">
+                    <div className="what-we-do-border-style home__card what-we-do-responsive">
                       <img
                         class="lazyload"
                         data-src="images/Monitoring.svg"
@@ -276,7 +276,7 @@ export default class Home extends Component {
                     </div>
                   </div>
                   <div className="col-offset-lg-2 col-lg-4 col-sm-12  mob-padding">
-                    <div className="what-we-do-border-style what-we-do-responsive">
+                    <div className="what-we-do-border-style home__card what-we-do-responsive">
                       <img
                         class="lazyload"
                         data-src="images/Creative conceptual.svg"

@@ -105,7 +105,12 @@ export default class About extends Component {
                   </div>
                   <div className="about-section-2-middle"></div>
                   <div className="about-section-2-content">
-                    <p class="text-level-4 title-orange"># Does it all! </p>
+                    <p
+                      class="text-level-4 title-orange "
+                      style={{ marginTop: "20px" }}
+                    >
+                      # Does it all!{" "}
+                    </p>
                     <hr class="hashtag-underline ml-2 " />
                     <p className="text-justify">
                       If you’re looking for custom and complex web development

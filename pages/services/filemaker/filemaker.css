@@ -329,6 +329,11 @@
 {
 	width: 100%;
 }
+@media(max-width:1499px){
+	.expert-col{
+		width: 400px !important;
+	}
+}
 
 @media(min-width: 2500px) {
 	.case-study.filemaker-service .common-title-blk{min-height: 700px !important;}
