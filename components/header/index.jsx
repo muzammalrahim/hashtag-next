@@ -83,7 +83,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         <meta property="twitter:creator" content="hashtag" />
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
-        <link rel="canonical" href={canonical}></link>
+        <link rel="preload canonical" href={canonical} crossorigin></link>
         <script src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1" async defer></script> 
 
 <script
