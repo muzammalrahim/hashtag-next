@@ -3,23 +3,16 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
 
-const Carousel = dynamic(() => import("../../components/carousel/index.jsx"), {
-  ssr: false,
-});
+const Carousel = dynamic(() => import("../../components/carousel/index.jsx"), { ssr: false,});
 const Header = dynamic(() => import("../../components/header/index.jsx"));
-const Footer = dynamic(() => import("../../components/footer/index.jsx"), {
-  ssr: false,
-});
-const Contact = dynamic(() => import("../../components/contacts/index.jsx"), {
-  ssr: false,
-});
+const Footer = dynamic(() => import("../../components/footer/index.jsx"), {ssr: false,});
+const Contact = dynamic(() => import("../../components/contacts/index.jsx"), {ssr: false,});
 
 const Slide = dynamic(() => import("react-reveal/Reveal"), { ssr: false });
 
 import "lazysizes";
 // import a plugin
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
-
 require("typeface-montserrat");
 
 export default class Home extends Component {
@@ -27,19 +20,10 @@ export default class Home extends Component {
     super(props);
     this.state = {
       tabindex: 1,
-      loadCom : false
     };
   }
-
-componentWillMount ()
-{
-  this.setState({loadCom:true})
-}
-
-
   render() {
     let { tabindex } = this.state;
-    console.log("header properties", this.props.title);
     return (
       <div className="home-main" id="home-main">
         {/*<div className="container-fluid section-one-bg p-0">*/}
@@ -49,7 +33,8 @@ componentWillMount ()
           keywords={this.props.keywords}
           canonical_tags={this.props.canonical}
         />
-        <div className={`${this.state.loadCom ? "section-one-bg" : ""}`}>
+
+        <div className="section-one-bg">
           <div className="section-one-bg-small-device m-0 d-none d-xl-block">
             <div className="container section-one-content ">
               <div className="row justify-content-center  pl-3 pr-3">
@@ -150,10 +135,10 @@ componentWillMount ()
         {/*</div>*/}
         <div className="container-fluid who-we-section">
           <div className="row who-we-section-content">
-           {this.state.loadCom ? <div
+            <div
               className="col-12 col-sm-12 col-lg-4 col-xxl-3 who-we-left-bg d-none d-md-none d-lg-block"
               id="who-we-section"
-            ></div> : <p>loading</p> }
+            ></div>
             <div className="col-12 col-sm-12 col-lg-2 col-xxl-3 who-we-are-middle-text-1">
               <p className="text-above-main-title" id="section02">
                 SHORTLY ABOUT US
@@ -214,7 +199,7 @@ componentWillMount ()
 
                 <div className="row mt-5">
                   <div className="col-lg-4 col-sm-12 mob-padding">
-                    <div className="what-we-do-border-style home__card what-we-do-responsive">
+                    <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         class="lazyload"
                         data-src="images/business-process-automation.svg"
@@ -232,7 +217,7 @@ componentWillMount ()
                     </div>
                   </div>
                   <div className="col-lg-4 col-sm-12 mob-padding">
-                    <div className="what-we-do-border-style home__card what-we-do-responsive">
+                    <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         class="lazyload"
                         data-src="images/web-application.svg"
@@ -247,7 +232,7 @@ componentWillMount ()
                     </div>
                   </div>
                   <div className="col-lg-4 col-sm-12 mob-padding">
-                    <div className="what-we-do-border-style home__card ">
+                    <div className="what-we-do-border-style ">
                       <img
                         class="lazyload"
                         data-src="images/e-commerce.svg"
@@ -265,7 +250,7 @@ componentWillMount ()
                 </div>
                 <div className="row justify-content-center mt-5 mob-padding res-bottom-margin ">
                   <div className="col-offset-lg-2 col-lg-4 col-sm-12 mob-padding">
-                    <div className="what-we-do-border-style home__card what-we-do-responsive">
+                    <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         class="lazyload"
                         data-src="images/Monitoring.svg"
@@ -283,7 +268,7 @@ componentWillMount ()
                     </div>
                   </div>
                   <div className="col-offset-lg-2 col-lg-4 col-sm-12  mob-padding">
-                    <div className="what-we-do-border-style home__card what-we-do-responsive">
+                    <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         class="lazyload"
                         data-src="images/Creative conceptual.svg"
