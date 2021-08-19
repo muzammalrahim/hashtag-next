@@ -9,6 +9,9 @@ const Footer = dynamic(() => import("../../components/footer/index.jsx"), {ssr: 
 const Contact = dynamic(() => import("../../components/contacts/index.jsx"), {ssr: false,});
 const Slide = dynamic(() => import("react-reveal/Reveal"), { ssr: false });
 
+import whoWeAreBg from "./section-2-bg.jpg";
+
+
 import "lazysizes";
 // import a plugin
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
@@ -26,6 +29,8 @@ export default class Home extends Component {
     return (
       <div className="home-main" id="home-main">
         {/*<div className="container-fluid section-one-bg p-0">*/}
+
+      {console.log("asdaskl;jk",whoWeAreBg.src )}
         <Header
           title={this.props.title}
           description={this.props.description}
@@ -134,10 +139,11 @@ export default class Home extends Component {
         {/*</div>*/}
         <div className="container-fluid who-we-section">
           <div className="row who-we-section-content">
-            <div
+            <div style={{ backgroundImage: `url(${whoWeAreBg.src})` }}
               className="col-12 col-sm-12 col-lg-4 col-xxl-3 who-we-left-bg d-none d-md-none d-lg-block"
               id="who-we-section"
-            ></div>
+            >
+            </div>
             <div className="col-12 col-sm-12 col-lg-2 col-xxl-3 who-we-are-middle-text-1">
               <p className="text-above-main-title" id="section02">
                 SHORTLY ABOUT US
