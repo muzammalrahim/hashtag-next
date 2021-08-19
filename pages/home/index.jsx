@@ -27,8 +27,16 @@ export default class Home extends Component {
     super(props);
     this.state = {
       tabindex: 1,
+      loadCom : false
     };
   }
+
+componentDidMount ()
+{
+  this.setState({loadCom:true})
+}
+
+
   render() {
     let { tabindex } = this.state;
     console.log("header properties", this.props.title);
@@ -41,8 +49,7 @@ export default class Home extends Component {
           keywords={this.props.keywords}
           canonical_tags={this.props.canonical}
         />
-
-        <div className="section-one-bg">
+        <div className={`${this.state.loadCom ? "section-one-bg" : ""}`}>
           <div className="section-one-bg-small-device m-0 d-none d-xl-block">
             <div className="container section-one-content ">
               <div className="row justify-content-center  pl-3 pr-3">
@@ -143,10 +150,10 @@ export default class Home extends Component {
         {/*</div>*/}
         <div className="container-fluid who-we-section">
           <div className="row who-we-section-content">
-            <div
+           {this.state.loadCom ? <div
               className="col-12 col-sm-12 col-lg-4 col-xxl-3 who-we-left-bg d-none d-md-none d-lg-block"
               id="who-we-section"
-            ></div>
+            ></div> : <p>loading</p> }
             <div className="col-12 col-sm-12 col-lg-2 col-xxl-3 who-we-are-middle-text-1">
               <p className="text-above-main-title" id="section02">
                 SHORTLY ABOUT US
