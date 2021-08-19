@@ -676,7 +676,7 @@ li a:active{
 }
 
 
-@media(max-width:1025px){
+@media(max-width:1026px){
     .case__Studies{
         width:110px;
     }
@@ -684,7 +684,10 @@ li a:active{
         width:80px
     }
     .contact__us{
-        width: 90px;
+        width: 100px;
+    }
+    .services{
+        width:90px
     }
 }
 

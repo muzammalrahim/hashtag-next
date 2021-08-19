@@ -3,15 +3,12 @@ import DocumentMeta from "react-document-meta";
 import Axios from "axios";
 import https from "https";
 
-
-
 import dynamic from "next/dynamic";
 
 const Slide = dynamic(() => import("react-reveal/Reveal"));
 const Header = dynamic(() => import("../../../components/header/index.jsx"));
 const Footer = dynamic(() => import("../../../components/footer/index.jsx"));
 const Contact = dynamic(() => import("../../../components/contacts/index.jsx"));
-
 
 export async function getServerSideProps() {
   let data = [];

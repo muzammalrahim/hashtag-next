@@ -1,23 +1,23 @@
-import React, { Component } from 'react';
-import Header from '../../../components/header/index.jsx';
-import Footer from '../../../components/footer/index.jsx';
-import Underconstruction from '../../../components/under-construction/index.jsx';
-import BlogCategories from '../../../components/post-category/index.jsx';
-import BlogRecentPosts from '../../../components/post-recent/index.jsx';
-import DocumentMeta from 'react-document-meta';
-import { ToastContainer, toast, Slide } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import InfiniteScroll from 'react-infinite-scroller';
-import $ from 'jquery';
+import React, { Component } from "react";
+import Header from "../../../components/header/index.jsx";
+import Footer from "../../../components/footer/index.jsx";
+import Underconstruction from "../../../components/under-construction/index.jsx";
+import BlogCategories from "../../../components/post-category/index.jsx";
+import BlogRecentPosts from "../../../components/post-recent/index.jsx";
+import DocumentMeta from "react-document-meta";
+import { ToastContainer, toast, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import InfiniteScroll from "react-infinite-scroller";
+import $ from "jquery";
 import Axios from "axios";
 import https from "https";
-import * as config from '../../../config';
-import queryString from 'query-string';
-import Flip from 'react-reveal/Reveal';
-import Link from 'next/link'
+import * as config from "../../../config";
+import queryString from "query-string";
+import Flip from "react-reveal/Reveal";
+import Link from "next/link";
 import BlogPostFeatured from "../../../components/post-featured";
 
-require('typeface-montserrat')
+require("typeface-montserrat");
 export async function getServerSideProps() {
   let data = [];
 
@@ -43,25 +43,22 @@ export async function getServerSideProps() {
 }
 
 export default class BlogCategory extends Component {
-
-
   constructor(props) {
     super(props);
-if (typeof window === "undefined") {
-  global.window = {};
+    if (typeof window === "undefined") {
+      global.window = {};
     }
-    let response = this.props
+    let response = this.props;
     this.state = {
       allPosts: [],
       hasMoreItems: true,
-      page:1,
-      no_items: '',
+      page: 1,
+      no_items: "",
       category: this.props?.match?.params?.slug,
-      search_val: '',
-      keyword: '',
+      search_val: "",
+      keyword: "",
       data: response.data.data,
     };
-
 
     this.shiftContent = this.shiftContent.bind(this);
     this.get_allPosts = this.get_allPosts.bind(this);
@@ -83,7 +80,7 @@ if (typeof window === "undefined") {
     }
   }
 
-  componentWillMount(){
+  componentWillMount() {
     if (this.props.location && this.props.location.search) {
       const values = queryString.parse(this.props.location.search);
       this.setState({
@@ -101,99 +98,104 @@ if (typeof window === "undefined") {
 
   handleChange(e) {
     this.setState({
-      search_val: e.target.value
+      search_val: e.target.value,
     });
-
   }
 
   onSubmit(e) {
-      e.preventDefault();
-      const values = this.state.search_val;
-      this.setState({
-        keyword: values,
-        page: 1,
-        allPosts: [],
-        hasMoreItems: true,
-        no_items: ''
-      });
-      this.props.history.push('/blogs/category/'+this.state.category+'?keyword='+this.state.search_val);
-      
+    e.preventDefault();
+    const values = this.state.search_val;
+    this.setState({
+      keyword: values,
+      page: 1,
+      allPosts: [],
+      hasMoreItems: true,
+      no_items: "",
+    });
+    this.props.history.push(
+      "/blogs/category/" +
+        this.state.category +
+        "?keyword=" +
+        this.state.search_val
+    );
   }
 
   //Search div shift
-  shiftContent(){
-    if($(".mob-visible").is(":visible")) { 
-      $('.widget_search').insertBefore($('.blog-list'));
-    }
-    else {
-      $('.widget_search').insertBefore($('.widget_recent_entries'));
+  shiftContent() {
+    if ($(".mob-visible").is(":visible")) {
+      $(".widget_search").insertBefore($(".blog-list"));
+    } else {
+      $(".widget_search").insertBefore($(".widget_recent_entries"));
     }
   }
 
-
   //Get posts
-  get_allPosts(catSlug){
-    var url = config.myConfig.apiUrl+'blog/posts';
+  get_allPosts(catSlug) {
+    var url = config.myConfig.apiUrl + "blog/posts";
     var page = this.state.page;
     var category = catSlug;
     var keyword = this.state.keyword;
 
-    Axios.get(url, {params: {page: page, category: category, keyword: keyword}})
-    .then((response) => {
-      const allPosts = this.state.allPosts;
-      response.data.data.posts.map((data) => {
+    Axios.get(url, {
+      params: { page: page, category: category, keyword: keyword },
+    })
+      .then((response) => {
+        const allPosts = this.state.allPosts;
+        response.data.data.posts.map((data) => {
           allPosts.push(data);
-      });
-      if(response.data.data.more_exists == true) {
+        });
+        if (response.data.data.more_exists == true) {
           this.setState({
             allPosts: allPosts,
             hasMoreItems: true,
             page: page + 1,
-            no_items: ""
-          });
-      } else {
-        if (allPosts && allPosts.length === 0) {
-          this.setState({
-            hasMoreItems: false,
-            no_items: "No posts found.",
+            no_items: "",
           });
         } else {
-          this.setState({
-            hasMoreItems: false,
-            no_items:""
-          });
+          if (!allPosts && allPosts.length === 0) {
+            this.setState({
+              hasMoreItems: false,
+              no_items: "No Post available",
+            });
+          } else {
+            this.setState({
+              hasMoreItems: false,
+              no_items: "",
+            });
+          }
         }
-      }
-
-    }).catch(error =>{
-      toast.error("Something went wrong.");
-    });
+      })
+      .catch((error) => {
+        toast.error("Something went wrong.");
+      });
   }
 
-
-
   render() {
-    const loader = <div className="loader"><div className="spinner"><div></div><div></div><div></div><div></div></div>Loading</div>;
+    const loader = (
+      <div className="loader">
+        <div className="spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        Loading
+      </div>
+    );
 
     var post_lists = [];
     this.state.allPosts.map((post, index) => {
-      post.image = post.image.replace('http://','https://');
+      post.image = post.image.replace("http://", "https://");
       post_lists.push(
         <Flip bottom>
           <div className="card" key={index}>
             <h5 className="card-title text-level-4 title-orange">
-              <Link
-                href={"/blogs/[slug]"}
-                as={"/blogs/" + post.url}
-              >
+              <Link href={"/blogs/[slug]"} as={"/blogs/" + post.url}>
                 {post.title}
               </Link>
             </h5>
             <div className="blog-img">
-              <Link
-                href={"/blogs/[slug]"}
-                as={"/blogs/" + post.url}
-              >
+              <Link href={"/blogs/[slug]"} as={"/blogs/" + post.url}>
                 <div
                   className="blog-thumb"
                   style={{
@@ -221,10 +223,7 @@ if (typeof window === "undefined") {
             </div>
             <div className="card-body">
               <h4 className="card-title text-level-4 title-orange">
-                <Link
-                  href={"/blogs/[slug]"}
-                  as={"/blogs/" + post.url}
-                >
+                <Link href={"/blogs/[slug]"} as={"/blogs/" + post.url}>
                   {post.title}
                 </Link>
               </h4>
@@ -250,7 +249,7 @@ if (typeof window === "undefined") {
         </Flip>
       );
     });
-const {data} = this.state
+    const { data } = this.state;
     return (
       <div className="blog-main" id="blog-main">
         <ToastContainer transition={Slide} />

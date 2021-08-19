@@ -81,12 +81,12 @@ export default class Careers extends Component {
             {/* section 2 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div class="col-sm-10 text-center ipad-pro-only">
-                <h3 className="main-title title-orange">
-                  We are looking for future leaders!{" "}
+                <h3 className="main-title  title-orange">
+                  Weare looking for future leaders!
                 </h3>
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 ">
-                <p className="main-title title-orange ipad-pro-none text-justify">
+                <p className="main-title title-orange ipad-pro-none ">
                   We are looking for future leaders!{" "}
                 </p>
                 <div className="shopify-content mt-4">
@@ -223,7 +223,7 @@ export default class Careers extends Component {
 
           <div className="container shopify-benifits-section">
             <div className="row">
-              <div class="col-12">
+              <div class="col-12 coming__soon">
                 <p class="text-above-main-title text-center">
                   THERE IS ALWAYS ROOM FOR MOTIVATED TECH ENTHUSIASTS
                 </p>
@@ -282,7 +282,7 @@ export default class Careers extends Component {
                         any people in any country across the world
                         <br />
                         <img
-                          src="images/careers/orange-arrow.png"
+                          src="images/careers/orange-arrow-1.png"
                           alt="arrow"
                           className="lazyload"
                         />

@@ -1,17 +1,27 @@
-import React, { Component } from 'react';
-import Underconstruction from '../../../components/under-construction/index.jsx';
-import DocumentMeta from 'react-document-meta';
-import $ from 'jquery';
-import axios from 'axios';
-import * as config from '../../../config.js';
+
+import React, { Component } from "react";
+import Underconstruction from "../../../components/under-construction/index.jsx";
+import DocumentMeta from "react-document-meta";
+import $ from "jquery";
+import axios from "axios";
+import * as config from "../../../config.js";
 import "slick-carousel/slick/slick.css";
 import dynamic from "next/dynamic";
-import Header from "../../../components/header/index.jsx";
-// const Header  = dynamic(() => import("../../../components/header/index.jsx"),{});
-const Footer = dynamic(() => import("../../../components/footer/index.jsx"),{});
-const Slider = dynamic(() => import("react-slick"),{});
-const Slide = dynamic(() => import("react-reveal/Reveal"),{});
-const Contact = dynamic(() => import("../../../components/contacts/index.jsx"),{});
+const Header = dynamic(
+  () => import("../../../components/header/index.jsx"),
+  {}
+);
+const Footer = dynamic(
+  () => import("../../../components/footer/index.jsx"),
+  {}
+);
+const Slider = dynamic(() => import("react-slick"), {});
+const Slide = dynamic(() => import("react-reveal/Reveal"), {});
+const Contact = dynamic(
+  () => import("../../../components/contacts/index.jsx"),
+  {}
+);
+
 
 import "slick-carousel/slick/slick.css";
 import "lazysizes";
@@ -92,11 +102,11 @@ export default class Megalot extends Component {
               <div className="row">
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
-                    <div className="case-megalot-size">
+                    {/* <div className="case-megalot-size">
                       <p className="megalot_title">
                         Website development & design
                       </p>
-                    </div>
+                    </div> */}
                     <h1 className="main-title title-white">Megalot</h1>
                     <ul className="project-info text-justify">
                       <li>
@@ -124,11 +134,11 @@ export default class Megalot extends Component {
               <div className="row">
                 <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
                   <blockquote cite="https://www.hashtag-ca.com/">
-                    <h2 className="text-justify">
+                    <p className="text-justify ">
                       Our potential team has deep knowledge about Ethereum
                       platform based applications to develop smart contracts and
                       dApps.
-                    </h2>
+                    </p>
                   </blockquote>
                   <div className="project-blk-title">
                     <div className="text-above-main-title">INTRODUCTION</div>
@@ -145,7 +155,8 @@ export default class Megalot extends Component {
                   </p>
                 </div>
                 <div className="img-blk">
-                    <img class="lazyload"
+                  <img
+                    class="lazyload"
                     data-src="/images/case-studies/megalot/megalot-laptop.webp"
                     alt="megalot-laptop"
                   />
@@ -163,7 +174,8 @@ export default class Megalot extends Component {
                     <h3 class="main-title title-orange">Architecture</h3>
                   </div>
                   <div className="workflow-wrap">
-                      <img class="lazyload"
+                    <img
+                      class="lazyload"
                       data-src="/images/case-studies/megalot/workflow.svg"
                       alt="Architecture"
                     />
@@ -259,7 +271,8 @@ export default class Megalot extends Component {
                 <div className="col-md-6 align-self-end">
                   <Slide bottom>
                     <div className="hand-img-blk">
-                        <img class="lazyload"
+                      <img
+                        class="lazyload"
                         data-src="/images/case-studies/megalot/megalot-hand.svg"
                         alt="megalot-mobile"
                       />
@@ -286,7 +299,8 @@ export default class Megalot extends Component {
                       <Slider {...settings} className="slide-outer">
                         <div className="slide-div">
                           <div className="slider-img">
-                              <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/megalot/megalot-1.jpg"
                               alt="design"
                             />
@@ -294,7 +308,8 @@ export default class Megalot extends Component {
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                              <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/megalot/megalot-2.jpg"
                               alt="design"
                             />
@@ -302,7 +317,8 @@ export default class Megalot extends Component {
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                              <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/megalot/megalot-3.jpg"
                               alt="design"
                             />
@@ -310,7 +326,8 @@ export default class Megalot extends Component {
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                              <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/megalot/megalot-4.jpg"
                               alt="design"
                             />
@@ -318,7 +335,8 @@ export default class Megalot extends Component {
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
-                              <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/megalot/megalot-5.jpg"
                               alt="design"
                             />
@@ -359,37 +377,43 @@ export default class Megalot extends Component {
                       <div className="technology-list-center">
                         <ul>
                           <li>
-                              <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/megalot/tech-icon1.svg"
                               alt="Django"
                             />
                           </li>
                           <li>
-                              <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/megalot/tech-icon2.svg"
                               alt="REST"
                             />
                           </li>
                           <li>
-                              <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/megalot/tech-icon3.svg"
                               alt="Angular"
                             />
                           </li>
                           <li>
-                              <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/megalot/tech-icon4.svg"
                               alt="Bootstrap"
                             />
                           </li>
                           <li>
-                              <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/megalot/tech-icon5.svg"
                               alt="Wordpress"
                             />
                           </li>
                           <li>
-                              <img class="lazyload"
+                            <img
+                              class="lazyload"
                               data-src="/images/case-studies/megalot/tech-icon6.svg"
                               alt="NLP"
                             />
@@ -419,7 +443,8 @@ export default class Megalot extends Component {
                   <Slide bottom>
                     <div className="col-lg-4 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                          <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/megalot/feature1.svg"
                           alt="feature"
                         />
@@ -438,7 +463,8 @@ export default class Megalot extends Component {
                   <Slide bottom>
                     <div className="col-lg-4 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                          <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/maikeinc/feature2.svg"
                           alt="feature"
                         />
@@ -456,7 +482,8 @@ export default class Megalot extends Component {
                   <Slide bottom>
                     <div className="col-lg-4 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                          <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/maikeinc/feature3.svg"
                           alt="feature"
                         />
@@ -475,7 +502,8 @@ export default class Megalot extends Component {
                   <Slide bottom>
                     <div className="col-lg-4 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                          <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/maikeinc/feature4.svg"
                           alt="feature"
                         />
@@ -493,7 +521,8 @@ export default class Megalot extends Component {
                   <Slide bottom>
                     <div className="col-lg-4 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                          <img class="lazyload"
+                        <img
+                          class="lazyload"
                           data-src="/images/case-studies/maikeinc/feature6.svg"
                           alt="feature"
                         />

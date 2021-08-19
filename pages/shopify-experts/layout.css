@@ -391,7 +391,11 @@
         font-size: 20px !important;
     }
 }
-
+@media(min-width:2560px) and (max-width:2880px){
+    .shopify-banner-frame{
+        height: 550px !important;
+    }
+}
 @media only screen and (min-width:1921px) and (max-width:2499px) {
     .shopify-content-box {
         font-size: 30px !important;
