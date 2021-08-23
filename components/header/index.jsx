@@ -81,13 +81,15 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <link rel="canonical" href={canonical}></link>
-      <script
+
+      <link rel="preload" as="script" href="gtm.js?id=UA-78643548-1"></link>
+      {/* <script
       //  src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"
         // local gtm
         src="gtm?id=UA-78643548-1"
         async
         defer
-      ></script>
+      ></script> */}
 <script
   dangerouslySetInnerHTML={{
     __html: `
