@@ -2,15 +2,12 @@ import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Head from "next/head";
-import Script from "next/script";
-
+const Post = dynamic(() => import("./post"));
+import $ from "jquery";
+// import Post from "./post.jsx"
 // import "@fortawesome/fontawesome-free/css/all.min.css";
 // dynamic(() => import("@fortawesome/fontawesome-free/css/all.min.css"));
 
-const Post = dynamic(() => import("./post"));
-// import Post from "./post.jsx"
-import $ from "jquery";
 
 const Header = ({ title, description, keywords, canonical_tags }) => {
   const [tabindex, setTabindex] = useState(false);
@@ -22,17 +19,17 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
     }
   };
 
-  useEffect(() => {
-    window.onload = function () {
-      setTimeout(function () {
-        var scriptElement = document.createElement("script");
-        scriptElement.type = "text/javascript";
-        // scriptElement.src =
-        //   "https://www.googletagmanager.com/gtag/js?id=UA-78643548-1";
-        document.head.appendChild(scriptElement);
-      }, 10);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.onload = function () {
+  //     setTimeout(function () {
+  //       var scriptElement = document.createElement("script");
+  //       scriptElement.type = "text/javascript";
+  //       // scriptElement.src =
+  //       //   "https://www.googletagmanager.com/gtag/js?id=UA-78643548-1";
+  //       document.head.appendChild(scriptElement);
+  //     }, 10);
+  //   };
+  // }, []);
 
   useEffect(() => {
     getindex();
@@ -82,13 +79,8 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       <meta property="twitter:description" content={description} />
       <link rel="canonical" href={canonical}></link>
 
-      <script
-      //  src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"
-        // local gtm
-        src="gtm?id=UA-78643548-1"
-        async
-        defer
-      ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"></script>
+      
 <script
   dangerouslySetInnerHTML={{
     __html: `
@@ -176,17 +168,50 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                     <div className="col-md-6 p-0">
                       <li>
                         <Link href="/services/wordpress-development">
-                          <a>Wordpress Development</a>
+                          <a
+                            className={`nav-link ${
+                              Activetabindex ===
+                              "/services/wordpress-development"
+                                ? "active"
+                                : ""
+                            }`}
+                            activeclassName="active"
+                          >
+                            Wordpress Development{" "}
+                            <span className="sr-only">(current)</span>
+                          </a>
                         </Link>
                       </li>
                       <li>
                         <Link href="/services/blockchain-development">
-                          Blockchain Development
+                          <a
+                            className={`nav-link ${
+                              Activetabindex ===
+                              "/services/blockchain-development"
+                                ? "active"
+                                : ""
+                            }`}
+                            activeclassName="active"
+                          >
+                            Blockchain Development
+                            <span className="sr-only">(current)</span>
+                          </a>
                         </Link>
                       </li>
                       <li>
                         <Link href="/services/design-and-prototyping">
-                          Design and Prototyping
+                          <a
+                            className={`nav-link ${
+                              Activetabindex ===
+                              "/services/design-and-prototyping"
+                                ? "active"
+                                : ""
+                            }`}
+                            activeclassName="active"
+                          >
+                            Design and Prototyping
+                            <span className="sr-only">(current)</span>
+                          </a>
                         </Link>
                       </li>
                     </div>
@@ -194,17 +219,48 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                       {/*<li><NavLink to="/services/aws">AWS</NavLink></li>*/}
                       <li>
                         <Link href="/services/filemaker">
-                          FileMaker Pro Development
+                          <a
+                            className={`nav-link ${
+                              Activetabindex === "/services/filemaker"
+                                ? "active"
+                                : ""
+                            }`}
+                            activeclassName="active"
+                          >
+                            FileMaker Pro Development
+                            <span className="sr-only">(current)</span>
+                          </a>
                         </Link>
                       </li>
                       <li>
                         <Link href="/services/ui-development">
-                          UI Development
+                          <a
+                            className={`nav-link ${
+                              Activetabindex === "/services/ui-development"
+                                ? "active"
+                                : ""
+                            }`}
+                            activeclassName="active"
+                          >
+                            UI Development
+                            <span className="sr-only">(current)</span>
+                          </a>
                         </Link>
                       </li>
                       <li>
                         <Link href="/services/database-and-backend">
-                          DB & Backend Development
+                          <a
+                            className={`nav-link ${
+                              Activetabindex ===
+                              "/services/database-and-backend"
+                                ? "active"
+                                : ""
+                            }`}
+                            activeclassName="active"
+                          >
+                            DB & Backend Development
+                            <span className="sr-only">(current)</span>
+                          </a>
                         </Link>
                       </li>
                       {/*<li><NavLink to="/services/mobile-app">Mobile App Development</NavLink></li>*/}
