@@ -86,7 +86,8 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         async
         defer
       ></script> */}
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-205601286-1"></script>
+{/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-205601286-1"></script> */}
+<script async src="gtm?id=UA-78643548-1"></script>
       
 <script
   dangerouslySetInnerHTML={{
