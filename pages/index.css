@@ -588,6 +588,12 @@ a {
 .section-three-content {
     height: 1130px;
 }
+/* @media screen and (max-width:1026px){
+    .content-four-section{
+        margin-bottom: 100px !important;
+    }
+    
+} */
 .text-level-4 {
     font-style: normal;
     font-weight: 700;
@@ -1992,7 +1998,7 @@ p.hash-content-col.mob-left.text-center {
 }
 }@media (min-width:768px) {
     .content-four-section {
-    margin-top: 293px!important;
+    margin-top: 220px!important;
 }
 .content-four-section {
     margin-top: 30px;

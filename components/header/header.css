@@ -678,16 +678,19 @@ li a:active{
 
 @media(max-width:1026px){
     .case__Studies{
-        width:110px;
+        width:130px;
     }
     .about__us{
-        width:80px
+        width:97px
     }
     .contact__us{
-        width: 100px;
+        width: 120px;
     }
     .services{
-        width:90px
+        width:108px
+    }
+    .logo{
+        width: 115px !important;  
     }
 }
 
