@@ -27,8 +27,8 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       setTimeout(function () {
         var scriptElement = document.createElement("script");
         scriptElement.type = "text/javascript";
-        scriptElement.src =
-          "https://www.googletagmanager.com/gtag/js?id=UA-78643548-1";
+        // scriptElement.src =
+        //   "https://www.googletagmanager.com/gtag/js?id=UA-78643548-1";
         document.head.appendChild(scriptElement);
       }, 10);
     };
