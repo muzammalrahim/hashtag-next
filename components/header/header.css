@@ -70,7 +70,7 @@
         width: auto;
     }
     .services{
-        width:auto
+        width:auto !important
     }
 }
 
