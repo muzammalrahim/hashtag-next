@@ -2,15 +2,12 @@ import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Head from "next/head";
-import Script from "next/script";
-
+const Post = dynamic(() => import("./post"));
+import $ from "jquery";
+// import Post from "./post.jsx"
 // import "@fortawesome/fontawesome-free/css/all.min.css";
 // dynamic(() => import("@fortawesome/fontawesome-free/css/all.min.css"));
 
-const Post = dynamic(() => import("./post"));
-// import Post from "./post.jsx"
-import $ from "jquery";
 
 const Header = ({ title, description, keywords, canonical_tags }) => {
   const [tabindex, setTabindex] = useState(false);
@@ -22,17 +19,17 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
     }
   };
 
-  useEffect(() => {
-    window.onload = function () {
-      setTimeout(function () {
-        var scriptElement = document.createElement("script");
-        scriptElement.type = "text/javascript";
-        // scriptElement.src =
-        //   "https://www.googletagmanager.com/gtag/js?id=UA-78643548-1";
-        document.head.appendChild(scriptElement);
-      }, 10);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.onload = function () {
+  //     setTimeout(function () {
+  //       var scriptElement = document.createElement("script");
+  //       scriptElement.type = "text/javascript";
+  //       // scriptElement.src =
+  //       //   "https://www.googletagmanager.com/gtag/js?id=UA-78643548-1";
+  //       document.head.appendChild(scriptElement);
+  //     }, 10);
+  //   };
+  // }, []);
 
   useEffect(() => {
     getindex();
@@ -82,13 +79,8 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       <meta property="twitter:description" content={description} />
       <link rel="canonical" href={canonical}></link>
 
-      <script
-      //  src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"
-        // local gtm
-        src="gtm?id=UA-78643548-1"
-        async
-        defer
-      ></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"></script>
+      
 <script
   dangerouslySetInnerHTML={{
     __html: `
