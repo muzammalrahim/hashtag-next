@@ -10,6 +10,9 @@
 }
 
 @media(max-width: 280px) {
+    .navbar-light .navbar-nav .nav-item>i {
+    right: 20px !important;
+}
 
     .mob-top-email {
         background: #FF6B00;
@@ -19,6 +22,18 @@
 
     .navbar-brand #logo {
         width: 100px;
+    }
+     .case__Studies{
+        width:auto;
+    }
+    .about__us{
+        width:auto
+    }
+    .contact__us{
+        width: auto;
+    }
+    .services{
+        width:auto
     }
 }
 
@@ -44,6 +59,18 @@
 
     .footer-desc {
         font-size: 14px !important;
+    }
+      .case__Studies{
+        width:auto;
+    }
+    .about__us{
+        width:auto
+    }
+    .contact__us{
+        width: auto;
+    }
+    .services{
+        width:auto
     }
 }
 
@@ -676,7 +703,7 @@ li a:active{
 }
 
 
-@media(max-width:1026px){
+@media(max-width:1020px){
     .case__Studies{
         width:110px;
     }
@@ -688,6 +715,20 @@ li a:active{
     }
     .services{
         width:90px
+    }
+}
+@media(max-width:1025px){
+    .case__Studies{
+        width:-webkit-fill-available;
+    }
+    .about__us{
+        width:-webkit-fill-available
+    }
+    .contact__us{
+        width: -webkit-fill-available;
+    }
+    .services{
+        width:-webkit-fill-available
     }
 }
 

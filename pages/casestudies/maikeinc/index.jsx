@@ -287,7 +287,7 @@ export default class Maikeinc extends Component {
                         <div className="text-above-main-title">
                           PROJECT STACK
                         </div>
-                        <h2 class="main-title title-orange">Technogies Used</h2>
+                        <h2 class="main-title title-orange">Technologies Used</h2>
                       </div>
                       <div className="technology-list-center">
                         <ul>
