@@ -79,15 +79,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       <meta property="twitter:description" content={description} />
       <link rel="canonical" href={canonical}></link>
 
-      {/* <script
-      //  src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"
-        // local gtm
-        src="gtm?id=UA-78643548-1"
-        async
-        defer
-      ></script> */}
-{/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-205601286-1"></script> */}
-<script async src="gtm?id=UA-78643548-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"></script>
       
 <script
   dangerouslySetInnerHTML={{
@@ -96,7 +88,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
                         gtag('js', new Date());
-                        gtag('config', 'UA-205601286-1', {
+                        gtag('config', 'UA-78643548-1', {
                         page_path: window.location.pathname,
                         });
                      `,
