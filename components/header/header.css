@@ -703,9 +703,9 @@ li a:active{
 }
 
 
-@media(max-width:1020px){
+@media(max-width:1025px){
     .case__Studies{
-        width:130px;
+        width:130px !important;
     }
     .about__us{
         width:97px
@@ -720,7 +720,7 @@ li a:active{
         width: 115px !important;  
     }
 }
-@media(max-width:1025px){
+/* @media(max-width:1025px){
     .case__Studies{
         width:-webkit-fill-available;
     }
@@ -733,7 +733,7 @@ li a:active{
     .services{
         width:-webkit-fill-available
     }
-}
+} */
 
 /*------------ Sticky header --------------------*/
 
