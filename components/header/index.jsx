@@ -27,8 +27,8 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       setTimeout(function () {
         var scriptElement = document.createElement("script");
         scriptElement.type = "text/javascript";
-        scriptElement.src =
-          "https://www.googletagmanager.com/gtag/js?id=UA-78643548-1";
+        // scriptElement.src =
+        //   "https://www.googletagmanager.com/gtag/js?id=UA-78643548-1";
         document.head.appendChild(scriptElement);
       }, 10);
     };
@@ -81,15 +81,18 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
       <link rel="canonical" href={canonical}></link>
+
       <script
-        src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"
+      //  src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"
+        // local gtm
+        src="gtm?id=UA-78643548-1"
         async
         defer
       ></script>
+<script
+  dangerouslySetInnerHTML={{
+    __html: `
 
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
                         gtag('js', new Date());

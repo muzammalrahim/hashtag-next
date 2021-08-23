@@ -4,7 +4,6 @@ import React, { Component } from "react";
 import Link from "next/link";
 import $ from "jquery";
 // import './style.css';
-
 class Footer extends Component {
   constructor(props) {
     super(props);
@@ -148,12 +147,14 @@ class Footer extends Component {
                       target="_blank"
                     >
                       <img
-                        src="https://topwebdevelopmentcompanies.com/badges/top-web-development-companies.png"
+                        // src="https://topwebdevelopmentcompanies.com/badges/top-web-development-companies.png"
+                        src="/images/Footer/top-web-development-companies.png"
                         alt="web development companies sunnyvale"
                         title="Web Development Companies Sunnyvale"
                         style={{ height: "100px", width: "100px" }}
                       />
                     </a>
+                    Y
                   </div>
                 </div>
 

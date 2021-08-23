@@ -3,23 +3,18 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
 
-const Carousel = dynamic(() => import("../../components/carousel/index.jsx"), {
-  ssr: false,
-});
+const Carousel = dynamic(() => import("../../components/carousel/index.jsx"), { ssr: false,});
 const Header = dynamic(() => import("../../components/header/index.jsx"));
-const Footer = dynamic(() => import("../../components/footer/index.jsx"), {
-  ssr: false,
-});
-const Contact = dynamic(() => import("../../components/contacts/index.jsx"), {
-  ssr: false,
-});
-
+const Footer = dynamic(() => import("../../components/footer/index.jsx"), {ssr: false,});
+const Contact = dynamic(() => import("../../components/contacts/index.jsx"), {ssr: false,});
 const Slide = dynamic(() => import("react-reveal/Reveal"), { ssr: false });
+
+import whoWeAreBg from "./section-2-bg.jpg";
+
 
 import "lazysizes";
 // import a plugin
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
-
 require("typeface-montserrat");
 
 export default class Home extends Component {
@@ -31,10 +26,11 @@ export default class Home extends Component {
   }
   render() {
     let { tabindex } = this.state;
-    console.log("header properties", this.props.title);
     return (
       <div className="home-main" id="home-main">
         {/*<div className="container-fluid section-one-bg p-0">*/}
+
+      {console.log("asdaskl;jk",whoWeAreBg.src )}
         <Header
           title={this.props.title}
           description={this.props.description}
@@ -143,10 +139,11 @@ export default class Home extends Component {
         {/*</div>*/}
         <div className="container-fluid who-we-section">
           <div className="row who-we-section-content">
-            <div
+            <div style={{ backgroundImage: `url(${whoWeAreBg.src})` }}
               className="col-12 col-sm-12 col-lg-4 col-xxl-3 who-we-left-bg d-none d-md-none d-lg-block"
               id="who-we-section"
-            ></div>
+            >
+            </div>
             <div className="col-12 col-sm-12 col-lg-2 col-xxl-3 who-we-are-middle-text-1">
               <p className="text-above-main-title" id="section02">
                 SHORTLY ABOUT US
@@ -207,7 +204,7 @@ export default class Home extends Component {
 
                 <div className="row mt-5">
                   <div className="col-lg-4 col-sm-12 mob-padding">
-                    <div className="what-we-do-border-style home__card what-we-do-responsive">
+                    <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         class="lazyload"
                         data-src="images/business-process-automation.svg"
@@ -225,7 +222,7 @@ export default class Home extends Component {
                     </div>
                   </div>
                   <div className="col-lg-4 col-sm-12 mob-padding">
-                    <div className="what-we-do-border-style home__card what-we-do-responsive">
+                    <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         class="lazyload"
                         data-src="images/web-application.svg"
@@ -240,7 +237,7 @@ export default class Home extends Component {
                     </div>
                   </div>
                   <div className="col-lg-4 col-sm-12 mob-padding">
-                    <div className="what-we-do-border-style home__card ">
+                    <div className="what-we-do-border-style ">
                       <img
                         class="lazyload"
                         data-src="images/e-commerce.svg"
@@ -258,7 +255,7 @@ export default class Home extends Component {
                 </div>
                 <div className="row justify-content-center mt-5 mob-padding res-bottom-margin ">
                   <div className="col-offset-lg-2 col-lg-4 col-sm-12 mob-padding">
-                    <div className="what-we-do-border-style home__card what-we-do-responsive">
+                    <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         class="lazyload"
                         data-src="images/Monitoring.svg"
@@ -276,7 +273,7 @@ export default class Home extends Component {
                     </div>
                   </div>
                   <div className="col-offset-lg-2 col-lg-4 col-sm-12  mob-padding">
-                    <div className="what-we-do-border-style home__card what-we-do-responsive">
+                    <div className="what-we-do-border-style what-we-do-responsive">
                       <img
                         class="lazyload"
                         data-src="images/Creative conceptual.svg"
