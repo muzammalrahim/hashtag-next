@@ -1609,7 +1609,9 @@ button.btn.form-button-child.px-3:hover {
     background-size: auto 80%;
     background-repeat: no-repeat;
     background-position: left top;
-    height: 1157px;
+    /* height: 1157px; */
+    height: 100px !important;
+    width: 100px;
     position: relative;
     bottom: 380px;
     z-index: 999;
