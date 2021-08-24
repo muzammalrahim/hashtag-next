@@ -1609,6 +1609,17 @@ button.btn.form-button-child.px-3:hover {
     background-size: auto 80%;
     background-repeat: no-repeat;
     background-position: left top;
+     height: 1157px; 
+    position: relative;
+    bottom: 380px;
+    z-index: 999;
+}
+.who-we-left-bg2 {
+    background-color: transparent;
+     background-image: url(/images/home/who-we-are/section-2-bg.webp);
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+    background-position: left top;
     /* height: 1157px; */
     height: 100px !important;
     width: 100px;
