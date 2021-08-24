@@ -135,7 +135,7 @@ export default class Home extends Component {
 
         {/*</div>*/}
         <div className="container-fluid who-we-section">
-        <p style={{fontSize:"300px",position:"relative"}}>taim</p>
+        <p style={{fontSize:"300px",position:"relative"}}>t</p>
           <div className="row who-we-section-content">
             <div
               className="col-12 col-sm-12 col-lg-4 col-xxl-3 who-we-left-bg d-none d-md-none d-lg-block"
