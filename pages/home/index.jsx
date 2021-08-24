@@ -23,10 +23,6 @@ export default class Home extends Component {
     };
   }
 
-componentDidMount(){
-  this.setState({photoFullwidth:true})
-}
-
   render() {
     let { tabindex } = this.state;
     return (
@@ -39,7 +35,6 @@ componentDidMount(){
           keywords={this.props.keywords}
           canonical_tags={this.props.canonical}
         />
-
         <div className="section-one-bg">
           <div className="section-one-bg-small-device m-0 d-none d-xl-block">
             <div className="container section-one-content ">
@@ -140,9 +135,10 @@ componentDidMount(){
 
         {/*</div>*/}
         <div className="container-fluid who-we-section">
+        <p style={{fontSize:"300px",position:"relative"}}>taim</p>
           <div className="row who-we-section-content">
             <div
-              className={`col-12 col-sm-12 col-lg-4 col-xxl-3  d-none d-md-none d-lg-block ${this.state.photoFullwidth ? "who-we-left-bg ":"who-we-left-bg2"} `}
+              className="col-12 col-sm-12 col-lg-4 col-xxl-3 who-we-left-bg d-none d-md-none d-lg-block"
               id="who-we-section"
             >
             </div>
