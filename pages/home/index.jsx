@@ -30,7 +30,6 @@ export default class Home extends Component {
       <div className="home-main" id="home-main">
         {/*<div className="container-fluid section-one-bg p-0">*/}
 
-      {console.log("asdaskl;jk",whoWeAreBg.src )}
         <Header
           title={this.props.title}
           description={this.props.description}

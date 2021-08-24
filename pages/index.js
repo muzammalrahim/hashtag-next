@@ -4,7 +4,8 @@ import Homes from './home/index'
 import Axios from "axios";
 import https from "https";
 
-export async function getServerSideProps() {
+// export async function getServerSideProps() {
+export async function getStaticProps() {
 
 	let data = [];
   
@@ -25,7 +26,7 @@ export async function getServerSideProps() {
 		data = response.data;
 	  });
 	return {
-	  props: { data },
+	  props: { data },revalidate:10
 	};
   }
 
