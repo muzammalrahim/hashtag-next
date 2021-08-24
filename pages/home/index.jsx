@@ -19,8 +19,14 @@ export default class Home extends Component {
     super(props);
     this.state = {
       tabindex: 1,
+      photoFullwidth :false
     };
   }
+
+componentDidMount(){
+  this.setState({photoFullwidth:true})
+}
+
   render() {
     let { tabindex } = this.state;
     return (
@@ -136,7 +142,7 @@ export default class Home extends Component {
         <div className="container-fluid who-we-section">
           <div className="row who-we-section-content">
             <div
-              className="col-12 col-sm-12 col-lg-4 col-xxl-3 who-we-left-bg d-none d-md-none d-lg-block"
+              className={`col-12 col-sm-12 col-lg-4 col-xxl-3  d-none d-md-none d-lg-block ${this.state.photoFullwidth ? "who-we-left-bg ":"who-we-left-bg2"} `}
               id="who-we-section"
             >
             </div>
