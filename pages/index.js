@@ -4,11 +4,8 @@ import Homes from './home/index'
 import Axios from "axios";
 import https from "https";
 
-// export async function getServerSideProps() {
-export async function getStaticProps() {
-
+export async function getServerSideProps() {
 	let data = [];
-  
 	const instance = Axios.create({
 	  httpsAgent: new https.Agent({
 		rejectUnauthorized: false,
