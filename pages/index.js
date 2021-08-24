@@ -26,7 +26,7 @@ export async function getStaticProps() {
 		data = response.data;
 	  });
 	return {
-	  props: { data },revalidate:10
+	  props: { data },
 	};
   }
 
