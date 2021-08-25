@@ -82,7 +82,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
 
 {/* <script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"></script> */}
       
-<script
+{/* <script
   dangerouslySetInnerHTML={{
     __html: `
 
@@ -96,7 +96,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         }}
         async
         defer
-      />
+      /> */}
 
       <div className="container" id="main-section">
         <Post />
