@@ -25,7 +25,11 @@ export default class Home extends Component {
 
   componentDidMount()
   {
-      this.setState({timePassed: true})
+    
+
+      setTimeout(() => {
+        this.setState({timePassed: true})
+      }, 500);
   }
 
   render() {
@@ -35,7 +39,7 @@ export default class Home extends Component {
         {/*<div className="container-fluid section-one-bg p-0">*/}
         { !(this.state.timePassed) && 
   
-      <div style={{textAlign:"center",marginTop:"15%",fontSize:"5.5rem",height:"1200px"}}>
+      <div style={{textAlign:"center",marginTop:"30%",fontSize:"7.5rem",height:"1200px"}}>
           <p>loading <br/>your<br/> page</p>
         </div> 
       }
