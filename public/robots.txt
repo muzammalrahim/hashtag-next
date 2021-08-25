@@ -3,4 +3,24 @@ User-agent: *
 Allow: /
 
 sitemap: https://www.hashtag-ca.com/sitemap.xml
- 
+
+Disallow: /sevices/ui-development/
+Disallow: /sevices/design-and-prototyping/
+Disallow: /sevices/database-and-backend/
+Disallow: https://hashtag-ca.in/services/
+Disallow: https://hashtag-ca.in/sitemap/
+Disallow: /sitemap/
+Disallow: /us/
+Disallow: https://www.hashtag-ca.in/us/
+Disallow: /us/
+Disallow: /us
+Disallow: /author/admin/feed/
+Disallow: https://hashtag-ca.in/hello-world/
+Disallow: https://www.hashtag-ca.in/about-us/
+Disallow: https://hashtag-ca.com.siteindices.com/
+Disallow: http://hashtag-ca.com.cutercounter.com/
+Disallow: https://www.hashtag-ca.in/about-us/
+Disallow: https://www.hashtag-ca.in/feed/
+Disallow: https://hashtag-ca.in/feed/
+Disallow: https://www.hashtag-ca.com/blogs/5-things-to-consider-when-designing-an-ecommerce-website/
+Disallow: https://www.hashtag-ca.com/blogs/
