@@ -37,9 +37,9 @@ export default class Home extends Component {
     return (
       <div className="home-main" id="home-main">
         {/*<div className="container-fluid section-one-bg p-0">*/}
-        { !(this.state.timePassed) && 
+        { (this.state.timePassed) && 
   
-      <div style={{textAlign:"center",marginTop:"30%",fontSize:"3.5rem",height:"1200px"}}>
+      <div style={{textAlign:"center",marginTop:"30%",fontSize:"3.5rem",height:"873px"}}>
           <p>loading <br/>your<br/> page</p>
         </div> 
       }
