@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import ReactDOM from 'react-dom';
 const Post = dynamic(() => import("./post"));
 import $ from "jquery";
 // import Post from "./post.jsx"
@@ -80,9 +79,9 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       <meta property="twitter:description" content={description} />
       <link rel="canonical" href={canonical}></link>
 
-{/* <script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"></script> */}
+<script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"></script>
       
-{/* <script
+  <script
   dangerouslySetInnerHTML={{
     __html: `
 
@@ -96,7 +95,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
         }}
         async
         defer
-      /> */}
+      />
 
       <div className="container" id="main-section">
         <Post />
