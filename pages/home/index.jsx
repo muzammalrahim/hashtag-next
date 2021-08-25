@@ -27,9 +27,9 @@ export default class Home extends Component {
   {
     
 
-      setTimeout(() => {
+      // setTimeout(() => {
         this.setState({timePassed: true})
-      }, 100);
+      // }, 100);
   }
 
   render() {
