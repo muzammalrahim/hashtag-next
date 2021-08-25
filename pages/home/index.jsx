@@ -135,7 +135,6 @@ export default class Home extends Component {
 
         {/*</div>*/}
         <div className="container-fluid who-we-section">
-        <p style={{fontSize:"1300px",position: "absolute"}}>hashtag</p>
           <div className="row who-we-section-content">
             <div
               className="col-12 col-sm-12 col-lg-4 col-xxl-3 who-we-left-bg d-none d-md-none d-lg-block"
