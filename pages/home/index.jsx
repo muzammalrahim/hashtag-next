@@ -19,8 +19,13 @@ export default class Home extends Component {
     super(props);
     this.state = {
       tabindex: 1,
-      photoFullwidth :false
+      timePassed : false
     };
+  }
+
+  componentDidMount()
+  {
+      setTimeout(() => {this.setState({timePassed: true})}, 3700) 
   }
 
   render() {
@@ -36,6 +41,16 @@ export default class Home extends Component {
           canonical_tags={this.props.canonical}
         />
         <div className="section-one-bg">
+
+      
+    { !(this.state.timePassed) && 
+  
+        <div style={{textAlign:"center",marginTop:"15%",fontSize:"5.5rem"}}>
+       <p>M E A N I N G <br/>O F<br/> C O D E</p>
+       </div> 
+  }
+
+    
           <div className="section-one-bg-small-device m-0 d-none d-xl-block">
             <div className="container section-one-content ">
               <div className="row justify-content-center  pl-3 pr-3">
@@ -66,7 +81,6 @@ export default class Home extends Component {
                       </span>{" "}
                     </p>
                   </p>
-
                   <div className="learn-more home-lm-link-vs">
                     <Link href="/services" className="sol-but-ab">
                       <div className="btn-group">
