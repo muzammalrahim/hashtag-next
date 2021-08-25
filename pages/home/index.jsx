@@ -25,7 +25,7 @@ export default class Home extends Component {
 
   componentDidMount()
   {
-      setTimeout(() => {this.setState({timePassed: true})}, 3700) 
+      this.setState({timePassed: true})
   }
 
   render() {
