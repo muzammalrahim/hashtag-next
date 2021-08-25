@@ -37,7 +37,12 @@ export default class Home extends Component {
     return (
       <div className="home-main" id="home-main">
         {/*<div className="container-fluid section-one-bg p-0">*/}
-     
+        { !(this.state.timePassed) && 
+
+<div style={{textAlign:"center",marginTop:"30%",fontSize:"5.5rem"}}>
+    <p>loading <br/>your<br/> page</p>
+  </div> 
+}
         <Header
           title={this.props.title}
           description={this.props.description}
@@ -45,12 +50,7 @@ export default class Home extends Component {
           canonical_tags={this.props.canonical}
         />
         <div className="section-one-bg">
-        { (this.state.timePassed) && 
-  
-  <div style={{textAlign:"center",marginTop:"3%",fontSize:"5.5rem"}}>
-      <p>Loading <br/> .<br/>. <br/>your<br/>page<br/></p>
-    </div> 
-  }
+   
           <div className="section-one-bg-small-device m-0 d-none d-xl-block">
             <div className="container section-one-content ">
               <div className="row justify-content-center  pl-3 pr-3">
