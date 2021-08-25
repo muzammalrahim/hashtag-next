@@ -35,7 +35,7 @@ export default class Home extends Component {
         {/*<div className="container-fluid section-one-bg p-0">*/}
         { !(this.state.timePassed) && 
   
-      <div style={{textAlign:"center",marginTop:"60%",fontSize:"5.5rem",height:"1400px"}}>
+      <div style={{textAlign:"center",marginTop:"30%",fontSize:"5.5rem",height:"1200px"}}>
           <p>loading <br/>your<br/> page</p>
         </div> 
       }
