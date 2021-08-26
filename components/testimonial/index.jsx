@@ -135,31 +135,31 @@ export default function Testimonial() {
       " Ultimately, the team knows what each one is best at and does it effectively without any hiccups.";
     testHead = "Macey deQuay";
     testBelow = " VP of Production, New Media Agency Inc";
-    testImage = "../images/wordpress/clutch.svg";
+    testImage = "/images/wordpress/clutch.svg";
   } else if (content == 1) {
     testTitle =
       " When we first met, I don't know how much business he had, but he didn't make me feel like I wasn't important.";
     testHead = "Chris Brazelton";
     testBelow = " CEO, BMG Basketball Academy";
-    testImage = "../images/wordpress/clutch.svg";
+    testImage = "/images/wordpress/clutch.svg";
   } else if (content == 2) {
     testTitle =
       "  They’re definitely a group that takes direction and performs accordingly";
     testHead = "Michael Barnett";
     testBelow = " Founder, UpperDeck Consulting";
-    testImage = "../images/wordpress/clutch.svg";
+    testImage = "/images/wordpress/clutch.svg";
   } else if (content == 3) {
     testTitle =
       "   I don't know much about web design so I trust them to suggest, create, and define everything.";
     testHead = "Abin Mathew";
     testBelow = " CEO, appOnstream";
-    testImage = "../images/wordpress/clutch.svg";
+    testImage = "/images/wordpress/clutch.svg";
   } else if (content == 4) {
     testTitle =
       "  Every single person I've worked with from Hashtag Systems is very dedicated, hardworking, and ethical.";
     testHead = "Brandy Cooper";
     testBelow = " Owner, Mint Design Agency";
-    testImage = "../images/wordpress/clutch.svg";
+    testImage = "/images/wordpress/clutch.svg";
   }
 
   return (
