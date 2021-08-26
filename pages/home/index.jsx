@@ -118,11 +118,11 @@ export default class Home extends Component {
                       >
                         LEARN MORE
                       </button>
-                      <button type="button" className="btn  px-3">
+                      {/* <button type="button" className="btn  px-3">
                         <span className="">
                           <span className="hashtag-arrow btn-down-arrow"></span>
                         </span>
-                      </button>
+                      </button> */}
                       <div className="dropdown-menu"></div>
                     </div>
                   </a>
