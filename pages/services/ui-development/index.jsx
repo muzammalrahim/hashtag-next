@@ -477,9 +477,9 @@ export default class UIPage extends Component {
             </div>
           </div>
 
-          <Contact></Contact>
+         <div className="uid_contact"> <Contact></Contact></div>
         </section>
-        <Footer></Footer>
+        <div className="uid_footer"><Footer></Footer></div>
       </div>
     );
   }

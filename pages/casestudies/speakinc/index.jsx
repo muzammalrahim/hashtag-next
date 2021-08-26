@@ -130,7 +130,7 @@ export default class Speakinc extends Component {
           <div className="project-about-blk">
             <div className="container">
               <div className="row">
-                <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
+                <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1 speakinc_bottom">
                   <div className="project-blk-title">
                     <div className="text-above-main-title">INTRODUCTION</div>
                     <h2 class="main-title title-orange">About Speakinc</h2>

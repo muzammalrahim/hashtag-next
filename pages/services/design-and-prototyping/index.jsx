@@ -326,9 +326,13 @@ export default class DesignPage extends Component {
             </div>
           </div>
 
-          <Contact></Contact>
+         <div className="dap_contact">
+         <Contact></Contact>
+         </div>
         </section>
+        <div className="dap_footer">
         <Footer></Footer>
+        </div>
       </div>
     );
   }

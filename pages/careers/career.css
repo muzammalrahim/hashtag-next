@@ -48,6 +48,9 @@
     width: 40px;
     margin-left: 0 !important;
 }
+.career_image{
+    text-align: center;
+}
 
 /* media queries */
 @media screen and (min-width: 360px) and (-webkit-device-pixel-ratio: 3) {
@@ -62,7 +65,7 @@
     }
 
     #careers-main .service-bg {
-        height: 480px !important;
+        height: 470px !important;
     }
 
     #careers-main .service-bg-right {
@@ -76,6 +79,10 @@
     body #careers-main .main-title {
         font-size: 31px !important;
     }
+  .service-bg , .career-join-bg , .career_contact , .career_footer{
+        width: 350px !important;
+    }
+    
 }
 
 @media screen and (device-aspect-ratio: 40/71) {

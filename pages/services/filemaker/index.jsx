@@ -405,9 +405,9 @@ export default class filemakerPage extends Component {
             </div>
           </div>
 
-          <Contact></Contact>
+          <div className="contact_blk"><Contact></Contact></div>
         </section>
-        <Footer></Footer>
+       <div className="footer_blk"> <Footer></Footer></div>
       </div>
     );
   }

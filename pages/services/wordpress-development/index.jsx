@@ -523,7 +523,7 @@ export default class Shopify extends Component {
 
           <div className="container-fluid testimonial-section">
             <div className="row">
-              <div className="container">
+              <div className="container testimonial-section-content ">
                 <div class="row">
                   <div class="col-12">
                     <p class="text-above-main-title text-center testimonial-margin">
@@ -533,7 +533,7 @@ export default class Shopify extends Component {
                       Testimonials
                     </h3>
 
-                    <Testimonial></Testimonial>
+                    <Testimonial ></Testimonial>
                   </div>{" "}
                 </div>{" "}
               </div>{" "}
@@ -544,7 +544,9 @@ export default class Shopify extends Component {
 
           <Contact></Contact>
         </section>
+        <div className="wp__footer">
         <Footer></Footer>
+        </div>
       </div>
     );
   }

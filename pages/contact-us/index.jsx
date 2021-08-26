@@ -607,7 +607,7 @@ export default class Contactus extends Component {
 
         {/* two clm section  end */}
 
-        <Footer></Footer>
+       <div className="contact_footer"> <Footer></Footer></div>
       </div>
     );
   }

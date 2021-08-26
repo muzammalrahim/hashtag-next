@@ -281,11 +281,11 @@ export default class Careers extends Component {
                         feels proud to be part of, and welcome applications from
                         any people in any country across the world
                         <br />
-                        <img
-                          src="images/careers/orange-arrow-1.png"
+                        <div className="career_image"><img
+                          src="images/careers/orange-arrow.png"
                           alt="arrow"
                           className="lazyload"
-                        />
+                        /></div>
                       </p>
                     </p>
                   </div>
@@ -296,9 +296,10 @@ export default class Careers extends Component {
 
           {/* contact form */}
 
-          <Contact page="careers"></Contact>
+          <div className="career_contact"><Contact page="careers"></Contact></div>
         </section>
-        <Footer></Footer>
+        <div className="career_footer">
+        <Footer></Footer></div>
       </div>
     );
   }

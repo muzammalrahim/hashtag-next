@@ -143,6 +143,29 @@
 
 /* media query */
 
+@media(max-width:290px){
+  .maikeinc_above{
+   margin-bottom: 100px
+  }
+  .project-unique-blk{
+    width: 400px !important;
+  }
+  .project-slider-section{
+    width: 400px !important;
+  }
+  .technology-blk {
+    
+    width: 400px !important;
+  }
+  .orange-strip-blk{
+    width: 415px !important;
+  }
+  .maikeinc__contact__footer{
+    width: 415px;
+  }
+  
+}
+
 @media(min-width: 1920px) {
   
 }

@@ -369,9 +369,13 @@ export default class BlockChain extends Component {
               </div>
             </div>
           </div>
+          <div className="bc_contact">
           <Contact></Contact>
+          </div>
         </section>
+        <div className="bc_footer">
         <Footer></Footer>
+        </div>
       </div>
     );
   }

@@ -153,6 +153,14 @@
 }
 
 /* media query */
+@media(max-width:290px){
+	.list-banner-text h1 .title-orange{
+		font-size: 50px !important;
+	}
+	.cs_contact{
+		width: 300px !important;
+	}
+}
 
 @media(min-width: 1920px) {
   

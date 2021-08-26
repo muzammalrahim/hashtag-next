@@ -122,7 +122,7 @@ export default class Maikeinc extends Component {
           <div className="project-about-blk">
             <div className="container">
               <div className="row">
-                <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
+                <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1 maikeinc_above">
                   <div className="project-blk-title">
                     <div className="text-above-main-title">INTRODUCTION</div>
                     <h2 class="main-title title-orange">About Maike</h2>
@@ -152,7 +152,7 @@ export default class Maikeinc extends Component {
                 </div>
                 <div className="img-blk">
                   <img
-                    class="lazyload"
+                    className="lazyload"
                     data-src="/images/case-studies/maikeinc/maikeinc-laptop.svg"
                     alt="maikeinc-laptop"
                   />
@@ -499,9 +499,12 @@ export default class Maikeinc extends Component {
             </div>
           </div>
 
-          <Contact></Contact>
+        <div className="maikeinc__contact__footer">  <Contact></Contact></div>
         </section>
+        <div className="maikeinc__contact__footer">
+
         <Footer></Footer>
+        </div>
       </div>
     );
   }

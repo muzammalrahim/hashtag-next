@@ -161,13 +161,15 @@ export default class DatabasePage extends Component {
           <div class="mt-3">
             <div className="container">
               <div className="row">
-                <div class="col-12 wp-sec-3-content shopify-sec-3-content">
-                  <p class="text-above-main-title text-above-main-title-c text-center mb-0">
+                <div class="col-12 wp-sec-3-content shopify-sec-3-content ">
+                 <div className="db_sec3_head">
+                 <p class="text-above-main-title text-above-main-title-c text-center mb-0">
                     YOU ARE IN GOOD TECH HANDS
                   </p>
                   <h3 class="main-title title-orange text-center">
                     Development Services
                   </h3>
+                 </div>
                   <div class="col-md-9 mx-auto sw-service-dev-sub">
                     <p className="text-justify">
                       Backend development is one of the vital components of the
@@ -554,9 +556,9 @@ export default class DatabasePage extends Component {
             </div>
           </div>
 
-          <Contact></Contact>
+        <div className="db_contact">  <Contact></Contact></div>
         </section>
-        <Footer></Footer>
+   <div className="db_footer">     <Footer></Footer></div>
       </div>
     );
   }

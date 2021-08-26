@@ -441,9 +441,9 @@ export default class Shopify extends Component {
 
           {/* contact form */}
 
-          <Contact></Contact>
+         <div className="shopify_contact"> <Contact></Contact></div>
         </section>
-        <Footer></Footer>
+        <div className="shopify_footer"><Footer></Footer></div>
       </div>
     );
   }

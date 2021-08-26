@@ -1,4 +1,19 @@
 /*  media query */
+@media(max-width:290px){
+    .shopifyBg{
+        width: 350px !important;
+    }
+    .shopify-section-3{
+        width: 350px !important;
+        margin-bottom: 332px;
+    }
+    .shopify-section-4-main {
+        width: 350px !important;
+    }
+    .shopify-benifits-section , .shopify_contact , .shopify_footer{
+        width: 350px !important;
+    }
+}
 
 @media (min-width: 2800px) {
     #shopify-main .shopify-section-4 {
