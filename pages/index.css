@@ -1666,6 +1666,15 @@ button.btn.form-button-child.px-3:hover {
     background-position: center;
     color: #fff!important;
 }
+.tempara{
+    font-family: Garamond, serif;
+    font-size: 103px;
+    color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    text-align: center;
+    font-weight: bolder;
+}
+
 .text-above-main-title-first-mob {
     font-family: Montserrat;
     font-style: normal;

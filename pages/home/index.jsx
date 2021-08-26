@@ -22,9 +22,6 @@ export default class Home extends Component {
       componentLoad : false
     };
   }
-  componentDidMount(){ setTimeout(() => {
-    this.setState({componentLoad:true}) 
-  }, 100);    }
 
   render() {
     let { tabindex } = this.state;
@@ -93,7 +90,7 @@ export default class Home extends Component {
         </div>
 
         <div className="d-block d-xl-none">
-         {!this.state.componentLoad && <p style={{fontSize:"100px",textAlign:"center"}}>your <br/> page <br/> are <br/> loading  <br/>........ </p>}
+      <p className="tempara"> your <br/> page <br/> are <br/> loading  <br/>........ </p>
           <div className="container-fluid mobile-banner">
             {/* <img src="/images/home/home-mobile-banner.webp" /> */}
             <div className="row justify-content-center">
