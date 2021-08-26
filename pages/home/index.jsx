@@ -139,7 +139,7 @@ export default class Home extends Component {
               id="who-we-section"
             >
 
-            <img src="/images/home/who-we-are/section-2-bg.webp"/>
+            {/* <img src="/images/home/who-we-are/section-2-bg.webp"/> */}
 
             </div>
             <div className="col-12 col-sm-12 col-lg-2 col-xxl-3 who-we-are-middle-text-1">
