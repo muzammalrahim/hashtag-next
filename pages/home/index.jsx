@@ -22,26 +22,11 @@ export default class Home extends Component {
       timePassed : false
     };
   }
-
-  componentDidMount()
-  { 
-    setTimeout(() => {
-      this.setState({timePassed: true})
-    }, 40);
-   
-  }
-
+  
   render() {
     let { tabindex } = this.state;
     return (
       <div className="home-main" id="home-main">
-        {/*<div className="container-fluid section-one-bg p-0">*/}
-        { !(this.state.timePassed) && 
-
-              <div style={{textAlign:"center",marginTop:"30%",fontSize:"5.5rem",height:"1200px"}}>
-                    <p>loading <br/>your<br/> page</p>
-              </div> }
-
         <Header
           title={this.props.title}
           description={this.props.description}
