@@ -25,7 +25,10 @@ export default class Home extends Component {
 
   componentDidMount()
   { 
-    this.setState({timePassed: true})
+    setTimeout(() => {
+      this.setState({timePassed: true})
+    }, 100);
+   
   }
 
   render() {
@@ -38,7 +41,7 @@ export default class Home extends Component {
               <div style={{textAlign:"center",marginTop:"30%",fontSize:"5.5rem",height:"1200px"}}>
                     <p>loading <br/>your<br/> page</p>
               </div> }
-              
+
         <Header
           title={this.props.title}
           description={this.props.description}
