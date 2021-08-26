@@ -3,6 +3,10 @@
     .speakinc_bottom{
         margin-bottom: 100px;
     }
+    .diagram-blk , .speakinc__contact , .speakinc_footer{
+        width: 420px !important;
+    }
+
 }
 
 

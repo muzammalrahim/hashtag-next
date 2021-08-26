@@ -624,9 +624,9 @@ export default class Megalot extends Component {
             </div>
           </div>
 
-          <Contact></Contact>
+          <div className="megalot_contact"><Contact></Contact></div>
         </section>
-        <Footer></Footer>
+        <div className="megalot_footer"><Footer></Footer></div>
       </div>
     );
   }

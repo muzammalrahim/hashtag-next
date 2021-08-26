@@ -239,7 +239,14 @@
     -o-animation: testim-content-out .5s ease-in-out forwards;
     animation: testim-content-out .5s ease-in-out forwards;
 }
-
+@media(max-width:801px) and (min-width:768px){
+    .testim .arrow.right{
+       right: -35px;
+    }
+    .testim .arrow.left{
+        left:-35px
+    }
+}
 @-webkit-keyframes testim-scale {
     0% {
         -webkit-box-shadow: 0px 0px 0px 0px #eee;
