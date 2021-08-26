@@ -1659,7 +1659,7 @@ button.btn.form-button-child.px-3:hover {
     bottom: 213px;
 }
 .mobile-banner {
-    background-image: url(/images/home/home-mobile-banner.webp)!important;
+   /* background-image: url(/images/home/home-mobile-banner.webp);  */
     background-repeat: no-repeat;
     background-size: cover;
     height: 722px;
