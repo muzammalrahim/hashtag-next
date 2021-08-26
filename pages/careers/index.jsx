@@ -280,13 +280,12 @@ export default class Careers extends Component {
                         to creating a diverse environment that every team member
                         feels proud to be part of, and welcome applications from
                         any people in any country across the world
-                        <br />
-                        <div className="career_image"><img
-                          src="images/careers/orange-arrow.png"
-                          alt="arrow"
-                          className="lazyload"
-                        /></div>
                       </p>
+                      <img
+                        src="images/careers/orange-arrow.png"
+                        alt="arrow"
+                        className="lazyload"
+                      />
                     </p>
                   </div>
                 </div>

@@ -9,9 +9,6 @@ const Footer = dynamic(() => import("../../components/footer/index.jsx"), {ssr: 
 const Contact = dynamic(() => import("../../components/contacts/index.jsx"), {ssr: false,});
 const Slide = dynamic(() => import("react-reveal/Reveal"), { ssr: false });
 
-import whoWeAreBg from "./section-2-bg.jpg";
-
-
 import "lazysizes";
 // import a plugin
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
@@ -22,23 +19,35 @@ export default class Home extends Component {
     super(props);
     this.state = {
       tabindex: 1,
+      timePassed : false
     };
   }
+
+  componentDidMount()
+  {
+    
+    this.setState({timePassed: true})
+  }
+
   render() {
     let { tabindex } = this.state;
     return (
       <div className="home-main" id="home-main">
         {/*<div className="container-fluid section-one-bg p-0">*/}
+        { !(this.state.timePassed) && 
 
-      {console.log("asdaskl;jk",whoWeAreBg.src )}
+<div style={{textAlign:"center",marginTop:"30%",fontSize:"5.5rem",height:"1200px"}}>
+    <p>loading <br/>your<br/> page</p>
+  </div> 
+}
         <Header
           title={this.props.title}
           description={this.props.description}
           keywords={this.props.keywords}
           canonical_tags={this.props.canonical}
         />
-
         <div className="section-one-bg">
+   
           <div className="section-one-bg-small-device m-0 d-none d-xl-block">
             <div className="container section-one-content ">
               <div className="row justify-content-center  pl-3 pr-3">
@@ -69,7 +78,6 @@ export default class Home extends Component {
                       </span>{" "}
                     </p>
                   </p>
-
                   <div className="learn-more home-lm-link-vs">
                     <Link href="/services" className="sol-but-ab">
                       <div className="btn-group">
@@ -139,7 +147,7 @@ export default class Home extends Component {
         {/*</div>*/}
         <div className="container-fluid who-we-section">
           <div className="row who-we-section-content">
-            <div style={{ backgroundImage: `url(${whoWeAreBg.src})` }}
+            <div
               className="col-12 col-sm-12 col-lg-4 col-xxl-3 who-we-left-bg d-none d-md-none d-lg-block"
               id="who-we-section"
             >
