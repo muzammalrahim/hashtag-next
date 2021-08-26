@@ -90,7 +90,7 @@ export default class Home extends Component {
         </div>
 
         <div className="d-block d-xl-none">
-      <p className="tempara"> your <br/> page <br/> are <br/> loading  <br/>........ </p>
+      {/* <p className="tempara"> your <br/> page <br/> are <br/> loading  <br/>........ </p> */}
           <div className="container-fluid mobile-banner">
             {/* <img src="/images/home/home-mobile-banner.webp" /> */}
             <div className="row justify-content-center">
