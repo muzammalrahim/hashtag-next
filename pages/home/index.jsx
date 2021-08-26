@@ -22,7 +22,7 @@ export default class Home extends Component {
       timePassed : false
     };
   }
-  
+
   render() {
     let { tabindex } = this.state;
     return (
@@ -138,6 +138,9 @@ export default class Home extends Component {
               className="col-12 col-sm-12 col-lg-4 col-xxl-3 who-we-left-bg d-none d-md-none d-lg-block"
               id="who-we-section"
             >
+
+            <img src="/images/home/who-we-are/section-2-bg.webp"/>
+
             </div>
             <div className="col-12 col-sm-12 col-lg-2 col-xxl-3 who-we-are-middle-text-1">
               <p className="text-above-main-title" id="section02">
