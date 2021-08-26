@@ -22,7 +22,9 @@ export default class Home extends Component {
       componentLoad : false
     };
   }
-  componentDidMount(){ this.setState({componentLoad:true}) }
+  componentDidMount(){ setTimeout(() => {
+    this.setState({componentLoad:true}) 
+  }, 100);    }
 
   render() {
     let { tabindex } = this.state;
