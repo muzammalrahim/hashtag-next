@@ -135,11 +135,11 @@ export default class Home extends Component {
         <div className="container-fluid who-we-section">
           <div className="row who-we-section-content">
             <div
-              className="col-12 col-sm-12 col-lg-4 col-xxl-3 who-we-left-bg d-none d-md-none d-lg-block"
+              className="col-12 col-sm-12 col-lg-4 col-xxl-3 who-we-left-bg d-none d-md-none d-lg-block pl-0 pt-2"
               id="who-we-section"
             >
 
-            {/* <img src="/images/home/who-we-are/section-2-bg.webp"/> */}
+          <img src="/images/home/who-we-are/section-2-bg.webp"/> 
 
             </div>
             <div className="col-12 col-sm-12 col-lg-2 col-xxl-3 who-we-are-middle-text-1">
