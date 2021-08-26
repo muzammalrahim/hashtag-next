@@ -91,7 +91,7 @@ export default class Home extends Component {
 
         <div className="d-block d-xl-none">
           <div className="container-fluid mobile-banner">
-            <img src="/images/home/home-mobile-banner.webp" />
+            {/* <img src="/images/home/home-mobile-banner.webp" /> */}
             <div className="row justify-content-center">
               <div className="col-12 section-one-text">
                 <h1 className="text-above-main-title-first-mob text-center">
