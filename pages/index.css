@@ -1191,7 +1191,8 @@ button.btn.form-button-child.px-3:hover {
     background: 0 0!important;
 }
 .who-we-left-bg {
-    height: 1238px!important;
+    /* height: 1238px!important; */
+  height: 938px!important; 
     position: relative;
     bottom: 636px!important;
 }
@@ -1623,7 +1624,7 @@ button.btn.form-button-child.px-3:hover {
 
 .who-we-left-bg {
     background-color: transparent;
-     /* background-image: url(/images/home/who-we-are/section-2-bg.webp); */
+     background-image: url(/images/home/who-we-are/section-2-bg.webp);
     background-size: auto 80%;
     background-repeat: no-repeat;
     background-position: left top;
@@ -1634,7 +1635,7 @@ button.btn.form-button-child.px-3:hover {
 }
 .who-we-left-bg2 {
     background-color: transparent;
-    background-image: url(/images/home/who-we-are/section-2-bg.webp); 
+     background-image: url(/images/home/who-we-are/section-2-bg.webp);
     background-size: auto 80%;
     background-repeat: no-repeat;
     background-position: left top;
@@ -1659,7 +1660,7 @@ button.btn.form-button-child.px-3:hover {
     bottom: 213px;
 }
 .mobile-banner {
-    /* background-image: url(/images/home/home-mobile-banner.webp)!important; */
+    background-image: url(/images/home/home-mobile-banner.webp)!important;
     background-repeat: no-repeat;
     background-size: cover;
     height: 722px;
