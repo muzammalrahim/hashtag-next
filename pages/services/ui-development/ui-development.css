@@ -30,6 +30,11 @@
 .bg-white {
     background: #fff;
 }
+@media(max-width:290px){
+    .ui-dev-ico , .ready-to-get-sec , .uid_footer , .uid_contact{
+        width: 350px;
+    }
+}
 
 @media only screen and (min-width: 2500px) {
     #Uidevbanner .what-we-do-border-style {

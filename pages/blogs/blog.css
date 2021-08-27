@@ -136,6 +136,15 @@ a{
   display: inline-block;
   margin-right: 5px;
 }
+@media(max-width:290px){
+  .blog-section{
+    width:350px !important; 
+  }
+  .blog__footer{
+    width:350px !important; 
+    
+  }
+}
 
 
 

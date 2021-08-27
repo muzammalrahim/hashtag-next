@@ -104,7 +104,7 @@ export default class DesignPage extends Component {
                     and feel by bringing a new shiny design.
                   </p>
                   <div class="main-title">
-                    <img src="../images/wordpress/wp-quoute.svg" alt="quote" />
+                    <img src="/images/wordpress/wp-quoute.svg" alt="quote" />
                   </div>
                   <div className="wp-main">
                     <p class="hash-content-col title-black why-us-hash-content">
@@ -143,7 +143,7 @@ export default class DesignPage extends Component {
                   <div className="col-lg-4 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/design/expertise-1.svg"
+                        src="/images/design/expertise-1.svg"
                         alt="Research and Unique Strategy"
                       />
                       <p className="text-level-5 title-black">
@@ -163,7 +163,7 @@ export default class DesignPage extends Component {
                   <div className="col-lg-4 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/design/expertise-2.svg"
+                        src="/images/design/expertise-2.svg"
                         alt="Design Thinking"
                       />
                       <p className="text-level-5 title-black">
@@ -183,7 +183,7 @@ export default class DesignPage extends Component {
                   <div className="col-lg-4 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/design/expertise-3.svg"
+                        src="/images/design/expertise-3.svg"
                         alt="Architecture"
                       />
                       <p className="text-level-5 title-black">Architecture</p>
@@ -201,7 +201,7 @@ export default class DesignPage extends Component {
                   <div className="col-lg-4 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/design/expertise-4.svg"
+                        src="/images/design/expertise-4.svg"
                         alt="Wireframing"
                       />
                       <p className="text-level-5 title-black">Wireframing</p>
@@ -219,7 +219,7 @@ export default class DesignPage extends Component {
                   <div className="col-lg-4 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/design/expertise7.svg"
+                        src="/images/design/expertise7.svg"
                         alt="Prototyping"
                       />
                       <p className="text-level-5 title-black">Prototyping</p>
@@ -237,7 +237,7 @@ export default class DesignPage extends Component {
                   <div className="col-lg-4 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/design/expertise-5.svg"
+                        src="/images/design/expertise-5.svg"
                         alt="Graphic Designing"
                       />
                       <p className="text-level-5 title-black">
@@ -326,9 +326,13 @@ export default class DesignPage extends Component {
             </div>
           </div>
 
-          <Contact></Contact>
+         <div className="dap_contact">
+         <Contact></Contact>
+         </div>
         </section>
+        <div className="dap_footer">
         <Footer></Footer>
+        </div>
       </div>
     );
   }

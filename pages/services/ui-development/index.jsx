@@ -100,7 +100,7 @@ export default class UIPage extends Component {
                     town in flexibility, scalability, quality and speed.
                   </p>
                   <div class="main-title">
-                    <img src="../images/wordpress/wp-quoute.svg" alt="quote" />
+                    <img src="/images/wordpress/wp-quoute.svg" alt="quote" />
                   </div>
                   <div className="wp-main">
                     <p class="hash-content-col title-black why-us-hash-content">
@@ -161,7 +161,7 @@ export default class UIPage extends Component {
                   <div className="col-lg-4 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/ui/interaction1.svg"
+                        src="/images/ui/interaction1.svg"
                         alt="user_experience"
                       />
                       <p className="text-level-5 title-black">
@@ -180,7 +180,7 @@ export default class UIPage extends Component {
                 <Slide bottom>
                   <div className="col-lg-4 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
-                      <img src="../images/ui/software1.svg" alt="cms_designs" />
+                      <img src="/images/ui/software1.svg" alt="cms_designs" />
                       <p className="text-level-5 title-black">
                         CMS Ready Designs
                       </p>
@@ -197,7 +197,7 @@ export default class UIPage extends Component {
                 <Slide bottom>
                   <div className="col-lg-4 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
-                      <img src="../images/ui/startup1.svg" alt="fast" />
+                      <img src="/images/ui/startup1.svg" alt="fast" />
                       <p className="text-level-5 title-black">
                         Fast and Lightweight
                       </p>
@@ -215,7 +215,7 @@ export default class UIPage extends Component {
                   <div className="col-lg-4 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/ui/internet1.svg"
+                        src="/images/ui/internet1.svg"
                         alt="mobile_friendly"
                       />
                       <p className="text-level-5 title-black">
@@ -236,7 +236,7 @@ export default class UIPage extends Component {
                   <div className="col-lg-4 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/ui/search-engine1.svg"
+                        src="/images/ui/search-engine1.svg"
                         alt="seo_friendly"
                       />
                       <p className="text-level-5 title-black">SEO Friendly</p>
@@ -254,7 +254,7 @@ export default class UIPage extends Component {
                   <div className="col-lg-4 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/ui/backlink1.svg"
+                        src="/images/ui/backlink1.svg"
                         alt="cross_browser"
                       />
                       <p className="text-level-5 title-black">
@@ -281,35 +281,35 @@ export default class UIPage extends Component {
                 <div className="row justify-content-center mt-2">
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/reactJS.svg"
+                      src="/images/ui/reactJS.svg"
                       alt="react_js"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/Bootstrap_logo.svg"
+                      src="/images/ui/Bootstrap_logo.svg"
                       alt="bootstrap"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/JavaScript_logo.svg"
+                      src="/images/ui/JavaScript_logo.svg"
                       alt="javascript"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/css.svg"
+                      src="/images/ui/css.svg"
                       alt="css"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/html-5.svg"
+                      src="/images/ui/html-5.svg"
                       alt="html5"
                       class="img-fluid mx-auto my-auto "
                     />
@@ -318,28 +318,28 @@ export default class UIPage extends Component {
                 <div className="row justify-content-center mt-2">
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/AJAX_logo.svg"
+                      src="/images/ui/AJAX_logo.svg"
                       alt="ajax"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/AngularJS_logo.svg"
+                      src="/images/ui/AngularJS_logo.svg"
                       alt="angular_js"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/jquery-1.svg"
+                      src="/images/ui/jquery-1.svg"
                       alt="jquery"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/foundation.svg"
+                      src="/images/ui/foundation.svg"
                       alt="foundation"
                       class="img-fluid mx-auto my-auto "
                     />
@@ -350,63 +350,63 @@ export default class UIPage extends Component {
                 <div className="row justify-content-center mt-2">
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/reactJS.svg"
+                      src="/images/ui/reactJS.svg"
                       alt="react_js"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/Bootstrap_logo.svg"
+                      src="/images/ui/Bootstrap_logo.svg"
                       alt="bootstrap"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/JavaScript_logo.svg"
+                      src="/images/ui/JavaScript_logo.svg"
                       alt="javascript"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/css.svg"
+                      src="/images/ui/css.svg"
                       alt="css"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/html-5.svg"
+                      src="/images/ui/html-5.svg"
                       alt="html5"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/AJAX_logo.svg"
+                      src="/images/ui/AJAX_logo.svg"
                       alt="ajax"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/AngularJS_logo.svg"
+                      src="/images/ui/AngularJS_logo.svg"
                       alt="angular_js"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/jquery-1.svg"
+                      src="/images/ui/jquery-1.svg"
                       alt="jquery"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/ui/foundation.svg"
+                      src="/images/ui/foundation.svg"
                       alt="foundation"
                       class="img-fluid mx-auto my-auto "
                     />
@@ -477,9 +477,9 @@ export default class UIPage extends Component {
             </div>
           </div>
 
-          <Contact></Contact>
+         <div className="uid_contact"> <Contact></Contact></div>
         </section>
-        <Footer></Footer>
+        <div className="uid_footer"><Footer></Footer></div>
       </div>
     );
   }

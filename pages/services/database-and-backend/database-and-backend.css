@@ -48,6 +48,12 @@
 #Dbdevbanner .ui-dev-ico.min-height-auto {
     min-height: auto;
 }
+@media(max-width:290px){
+    .full-cycle-sec , .db_contact , .db_footer , .sw-service-dev-sub , .db_sec3_head{
+        width: 350px !important;
+    }
+    
+}
 
 @media only screen and (min-width: 2500px) {
     #Dbdevbanner .what-we-do-border-style {

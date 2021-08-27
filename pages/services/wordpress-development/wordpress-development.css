@@ -99,10 +99,46 @@
 }
 
 }
+@media(max-width:290px){
+   .content-container{
+        width: 100vw !important;
+    }
+}
 @media(max-width:3300px) and (min-width:2500px){
     .shopify__banner{
         height: 500px;
     }
+}
+@media(max-width:290px){
+    .shopify__banner{
+        width: 350px !important;
+    }
+    .section-2-row{
+        width: 350px !important;
+    }
+    .wordpress-section-3{
+        width: 350px !important;
+    }
+ .ask-expert-section{
+    width: 350px !important;
+ }
+ .plugin-dev-section{
+    width: 350px !important;
+ }
+ .plugin-integration-section h3{
+     font-size: 35px !important;
+ }
+ .testimonial-section{
+    width: 350px !important;
+ }
+ .testimonial-section .testimonial-section-content h3{
+   font-size: 35px !important;
+ }
+ .wp__footer{
+    width: 350px !important;
+ }
+ 
+    
 }
 @media screen and (device-aspect-ratio: 40/71)
 
@@ -253,7 +289,7 @@ and (orientation : landscape) {
 	.testim .arrow
 	{
         margin-left: 117px;
-    margin-right: 117px;
+    margin-right: 90px;
     margin-top: 93px !important;
         padding: 8px 10px !important;
     border-radius: 4px;

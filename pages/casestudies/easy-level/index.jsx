@@ -525,7 +525,7 @@ export default class Easylevel extends Component {
                     <img
                       class="lazyload"
                       className="mb-2"
-                      data-src="../images/shopify/shopify-quoute.svg"
+                      data-src="/images/shopify/shopify-quoute.svg"
                       alt="quote"
                     />
                   </div>
