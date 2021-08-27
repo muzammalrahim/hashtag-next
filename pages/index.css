@@ -1684,14 +1684,13 @@ button.btn.form-button-child.px-3:hover {
     bottom: 213px;
 }
 .mobile-banner {
-   /* background-image: url(/images/home/home-mobile-banner.webp);  */
+     background-image: url(/images/home/home-mobile-banner.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 722px; */
     height: 375px;
     background-position: center;
     color: #fff!important;
-    background-color: #fd6b00!important;
+    /* background-color: #fd6b00!important; */
 }
 /* .tempara{
     font-family: Garamond, serif;
