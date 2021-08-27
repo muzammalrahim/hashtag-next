@@ -28,6 +28,7 @@
 }
 .testimonial_main .testimonialHead{
     font-family: 'Montserrat' !important;
+    font-display: swap;
     font-size: 21px !important;
     font-style: normal !important;
     font-weight: 700 !important;
@@ -171,6 +172,7 @@
 
 .testim .cont div h2 {
     font-family: 'Montserrat';
+    font-display: swap;
     font-size: 21px;
     font-style: normal;
     font-weight: 700;
@@ -182,6 +184,7 @@
 
 .testim .cont div p {
     font-family: 'Montserrat';
+    font-display: swap;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -666,6 +669,7 @@
     line-height: 1;
     z-index: 1;
     font-family: sans-serif;
+    font-display: swap;
 }
 
 .testi-position {

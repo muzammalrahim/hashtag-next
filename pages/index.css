@@ -96,11 +96,13 @@ html {
 body {
     margin: 0;
     font-family: Montserrat, sans-serif!important;
+    font-display: swap;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 code {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+font-display: swap;
 }
 a {
     outline: 0;
@@ -111,6 +113,7 @@ a {
 .sub-text-above-main-title {
     font-size: 18px;
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 600;
     line-height: 22px;
@@ -125,7 +128,8 @@ a {
     font-weight: 700;
     font-size: 46px;
     line-height: 70px;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+font-display: swap;
 }
 .black {
     font-style: normal;
@@ -133,7 +137,8 @@ a {
     font-size: 46px;
     line-height: 70px;
     letter-spacing: -.05em;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+font-display: swap;
 }
 .btn-arrow {
     background: #ff6b00;
@@ -172,7 +177,8 @@ a {
     letter-spacing: .1em;
     text-transform: uppercase;
     color: #ff6b00;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+font-display: swap;
     text-decoration: none!important;
 }
 .btn-transparent {
@@ -209,7 +215,8 @@ a {
     text-decoration: none;
     border-radius: 8px;
     color: #fff!important;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+font-display: swap;
 }
 .btn-orange {
     width: 180px;
@@ -253,6 +260,7 @@ a {
 }
 .title-level-6 {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
@@ -374,6 +382,7 @@ a {
 }
 .main-title {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 700;
     font-size: 56px;
@@ -389,6 +398,7 @@ a {
 }
 .text-above-main-title {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -495,6 +505,7 @@ a {
 }
 .title-orange {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 700;
     letter-spacing: -.05em;
@@ -506,6 +517,7 @@ a {
 }
 .hash-content-col {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 700;
     font-size: 21px;
@@ -515,6 +527,7 @@ a {
 }
 .sub-content {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -525,6 +538,7 @@ a {
 }
 .nj-who-we-are-sub-content {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -533,6 +547,7 @@ a {
 }
 .nj-who-we-are-button {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -613,6 +628,7 @@ a {
 }
 #tabs {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -623,6 +639,7 @@ a {
 #tabs h6.section-title {
     color: #7f8284;
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -634,6 +651,7 @@ a {
     border-color: transparent;
     border-bottom: 4px solid #ff6b00!important;
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -644,6 +662,7 @@ a {
     border-bottom: 4px solid rgba(154, 164, 177, .2);
     color: #7f8284;
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -664,6 +683,7 @@ a {
 }
 .address-content {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -696,6 +716,7 @@ a {
 }
 .form-title {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -704,6 +725,7 @@ a {
 }
 .hash-form-label {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -728,6 +750,7 @@ a {
 }
 .hash-input::placeholder {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 500;
     display: flex;
@@ -739,6 +762,7 @@ a {
 }
 .hash-input:-ms-input-placeholder {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 500;
     display: flex;
@@ -747,6 +771,7 @@ a {
 }
 .hash-input::-ms-input-placeholder {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 500;
     display: flex;
@@ -1641,12 +1666,13 @@ button.btn.form-button-child.px-3:hover {
     bottom: 213px;
 }
 .mobile-banner {
-   background-image: url(/images/home/home-mobile-banner.webp); 
+   /* background-image: url(/images/home/home-mobile-banner.webp);  */
     background-repeat: no-repeat;
     background-size: cover;
     height: 722px;
     background-position: center;
     color: #fff!important;
+    background-color: #fd6b00!important;
 }
 /* .tempara{
     font-family: Garamond, serif;
@@ -1659,6 +1685,7 @@ button.btn.form-button-child.px-3:hover {
 
 .text-above-main-title-first-mob {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -1667,6 +1694,7 @@ button.btn.form-button-child.px-3:hover {
 }
 .main-title-first-mob {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -1676,6 +1704,7 @@ button.btn.form-button-child.px-3:hover {
 }
 .title-orange-first-mob {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 700;
     letter-spacing: -.05em;
@@ -2064,6 +2093,8 @@ p.hash-content-col.mob-left.text-center {
     font-family: Poppins, sans-serif;
     font-size: 16px;
     line-height: 34px;
+    font-display: swap;
+
 }
 .Sitemaphtml-mainhtml ul {
     list-style-type: none;

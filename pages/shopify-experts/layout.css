@@ -70,6 +70,7 @@
    
     .shopify-main-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
 
@@ -178,6 +179,7 @@
 @media(max-width: 1022px) {
     .shopify-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
 
@@ -188,6 +190,7 @@
 
     .shopify-sub-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: 500;
         font-size: 24px;
@@ -221,6 +224,7 @@
 
     .shopify-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
         line-height: 100%;
@@ -230,6 +234,7 @@
 
     .shopify-sub-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -318,6 +323,7 @@
 @media(max-width: 479px) {
     .shopify-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
         line-height: 100%;
@@ -327,6 +333,7 @@
 
     .shopify-sub-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -353,6 +360,7 @@
 @media(max-width: 319px) {
     .shopify-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
 
@@ -363,6 +371,7 @@
 
     .shopify-sub-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;

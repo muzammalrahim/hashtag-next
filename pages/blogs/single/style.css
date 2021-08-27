@@ -66,6 +66,7 @@
   left: 15px;
   top: 0;
   font-family: fontAwesome;
+  font-display: swap;
 }
 .breadcrumbs li a{
   text-decoration: none;
@@ -98,6 +99,7 @@
 .blog-detail-page ol, li{
   font-family: Montserrat !important;
   color: #434343 !important;
+  font-display: swap;
 }
 .blog-detail-page h2,
 .blog-detail-page h3,
