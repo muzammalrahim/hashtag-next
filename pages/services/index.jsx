@@ -112,7 +112,7 @@ export default class Service extends Component {
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12 order-3  text-center ">
                 <img
-                  src="images/service/database.svg"
+                  src="/images/service/database.svg"
                   alt="db_backend"
                   className="img-fluid service-image mobile-image-border"
                 />
@@ -145,7 +145,7 @@ export default class Service extends Component {
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12 text-center">
                 <img
-                  src="images/service/aws.svg"
+                  src="/images/service/aws.svg"
                   alt="aws"
                   className="img-fluid service-image "
                 />
@@ -177,7 +177,7 @@ export default class Service extends Component {
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12 order-3 text-center">
                 <img
-                  src="images/service/mobile-app.svg"
+                  src="/images/service/mobile-app.svg"
                   alt="mobile_app"
                   className="img-fluid service-image"
                 />
@@ -223,7 +223,7 @@ export default class Service extends Component {
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12 text-center ">
                 <img
-                  src="images/service/prototype.svg"
+                  src="/images/service/prototype.svg"
                   alt="design_prototype"
                   className="img-fluid service-image"
                 />
@@ -264,7 +264,7 @@ export default class Service extends Component {
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12 order-3 text-center">
                 <img
-                  src="images/service/ui-development.svg"
+                  src="/images/service/ui-development.svg"
                   alt="ui"
                   className="img-fluid service-image"
                 />
@@ -305,7 +305,7 @@ export default class Service extends Component {
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12 text-center ">
                 <img
-                  src="images/service/wp.svg"
+                  src="/images/service/wp.svg"
                   alt="wp"
                   className="img-fluid service-image"
                 />
@@ -322,12 +322,12 @@ export default class Service extends Component {
                 <p className="service-title">Shopify Experts</p>
                 <div className="mt-4 mb-4">
                   <img
-                    src="images/service/shopify-partner.svg"
+                    src="/images/service/shopify-partner.svg"
                     alt="shopify-partner"
                     className="img-fluid mx-auto my-auto pr-4"
                   />
                   <img
-                    src="images/service/shopify-experts.svg"
+                    src="/images/service/shopify-experts.svg"
                     alt="shopify-experts"
                     className="img-fluid mx-auto my-auto"
                   />
@@ -362,7 +362,7 @@ export default class Service extends Component {
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12 order-3 text-center">
                 <img
-                  src="images/service/shopify.svg"
+                  src="/images/service/shopify.svg"
                   alt="shopify"
                   className="img-fluid service-image"
                 />
@@ -396,7 +396,7 @@ export default class Service extends Component {
               </div>
               <div className="col-lg-4 col-md-12 col-sm-12 text-center">
                 <img
-                  src="images/service/file-maker.svg"
+                  src="/images/service/file-maker.svg"
                   alt="filemaker"
                   className="img-fluid service-image"
                 />
@@ -448,9 +448,9 @@ export default class Service extends Component {
           </div>
           {/* contact form */}
 
-          <Contact></Contact>
+         <div className="services_contact"> <Contact></Contact></div>
         </section>
-        <Footer></Footer>
+        <div className="services_footer"><Footer></Footer></div>
       </div>
     );
   }

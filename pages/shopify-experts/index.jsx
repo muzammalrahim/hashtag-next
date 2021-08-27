@@ -48,22 +48,22 @@ export default class Shopify extends Component {
     const latestWork = [
       {
         id: 1,
-        src: "../images/shopify/together-home.jpg",
+        src: "/images/shopify/together-home.jpg",
         alt: "shopify themes",
       },
       {
         id: 2,
-        src: "../images/shopify/warped-table-s.jpg",
+        src: "/images/shopify/warped-table-s.jpg",
         alt: "shopify themes",
       },
       {
         id: 3,
-        src: "../images/shopify/shopurbanalchemy.jpg",
+        src: "/images/shopify/shopurbanalchemy.jpg",
         alt: "shopify e-commerce",
       },
       {
         id: 4,
-        src: "../images/shopify/berrybay.jpg",
+        src: "/images/shopify/berrybay.jpg",
         alt: "shopify website",
       },
     ];
@@ -92,12 +92,12 @@ export default class Shopify extends Component {
                       <div>
                         <img
                           id="shopify-page-experts-logo"
-                          src="images/shopify/shopify-experts.svg"
+                          src="/images/shopify/shopify-experts.svg"
                           alt="shopify-experts"
                         />
                         <img
                           id="shopify-page-partner-logo shopify-logo-left"
-                          src="images/shopify/shopify-partner.svg"
+                          src="/images/shopify/shopify-partner.svg"
                           alt="shopify-partner"
                         />
                       </div>
@@ -185,7 +185,7 @@ export default class Shopify extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 text-center ">
                 <img
-                  src="images/shopify/shopify-buy-now-banner.svg"
+                  src="/images/shopify/shopify-buy-now-banner.svg"
                   alt="shopify-image"
                   className="img-fluid shopify-image mobile-image-border storefront-img"
                 />
@@ -224,7 +224,7 @@ export default class Shopify extends Component {
                         Why Shopify?
                         <br />
                         <img
-                          src="images/shopify/shopify-quoute.svg"
+                          src="/images/shopify/shopify-quoute.svg"
                           alt="shopify quote"
                         />
                       </span>
@@ -298,7 +298,7 @@ export default class Shopify extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 text-center ">
                 <img
-                  src="images/shopify/storefront.svg"
+                  src="/images/shopify/storefront.svg"
                   alt="storefront"
                   className="img-fluid shopify-image mobile-image-border"
                 />
@@ -325,7 +325,7 @@ export default class Shopify extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 order-3 text-center ">
                 <img
-                  src="images/shopify/experience.svg"
+                  src="/images/shopify/experience.svg"
                   alt="shopping-experience"
                   className="img-fluid shopify-image mobile-image-border"
                 />
@@ -353,7 +353,7 @@ export default class Shopify extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 text-center ">
                 <img
-                  src="images/shopify/dashboard.svg"
+                  src="/images/shopify/dashboard.svg"
                   alt="dashboard"
                   className="img-fluid shopify-image mobile-image-border"
                 />
@@ -379,7 +379,7 @@ export default class Shopify extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 order-3 text-center">
                 <img
-                  src="images/shopify/marketing.svg"
+                  src="/images/shopify/marketing.svg"
                   alt="sales"
                   className="img-fluid shopify-image mobile-image-border"
                 />
@@ -403,7 +403,7 @@ export default class Shopify extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 text-center ">
                 <img
-                  src="images/shopify/perfomance.svg"
+                  src="/images/shopify/perfomance.svg"
                   alt="performance"
                   className="img-fluid shopify-image mobile-image-border"
                 />
@@ -431,7 +431,7 @@ export default class Shopify extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 order-3 text-center ">
                 <img
-                  src="images/shopify/admin-app.svg"
+                  src="/images/shopify/admin-app.svg"
                   alt="admin_app"
                   className="img-fluid shopify-image mobile-image-border"
                 />
@@ -441,9 +441,9 @@ export default class Shopify extends Component {
 
           {/* contact form */}
 
-          <Contact></Contact>
+         <div className="shopify_contact"> <Contact></Contact></div>
         </section>
-        <Footer></Footer>
+        <div className="shopify_footer"><Footer></Footer></div>
       </div>
     );
   }

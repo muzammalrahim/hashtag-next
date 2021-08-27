@@ -141,7 +141,7 @@ export default class BlockChain extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/blockchain/blockchainconsult1.svg"
+                        src="/images/blockchain/blockchainconsult1.svg"
                         alt="consulting"
                       />
                       <p className="text-level-5 title-black">
@@ -161,7 +161,7 @@ export default class BlockChain extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/blockchain/contract1.svg"
+                        src="/images/blockchain/contract1.svg"
                         alt="smart_contract"
                       />
                       <p className="text-level-5 title-black">
@@ -180,7 +180,7 @@ export default class BlockChain extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/blockchain/ethereum1.svg"
+                        src="/images/blockchain/ethereum1.svg"
                         alt="ethereum_dev"
                       />
                       <p className="text-level-5 title-black">
@@ -200,7 +200,7 @@ export default class BlockChain extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/blockchain/blockchainphone1.svg"
+                        src="/images/blockchain/blockchainphone1.svg"
                         alt="dapp_dev"
                       />
                       <p className="text-level-5 title-black">
@@ -223,7 +223,7 @@ export default class BlockChain extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/blockchain/api1.svg"
+                        src="/images/blockchain/api1.svg"
                         alt="api_integration"
                       />
                       <p className="text-level-5 title-black">
@@ -242,7 +242,7 @@ export default class BlockChain extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/blockchain/blockchain1.svg"
+                        src="/images/blockchain/blockchain1.svg"
                         alt="private_blockchain_dev"
                       />
                       <p className="text-level-5 title-black">
@@ -263,7 +263,7 @@ export default class BlockChain extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/blockchain/concept1.svg"
+                        src="/images/blockchain/concept1.svg"
                         alt="proof"
                       />
                       <p className="text-level-5 title-black">
@@ -369,9 +369,13 @@ export default class BlockChain extends Component {
               </div>
             </div>
           </div>
+          <div className="bc_contact">
           <Contact></Contact>
+          </div>
         </section>
+        <div className="bc_footer">
         <Footer></Footer>
+        </div>
       </div>
     );
   }

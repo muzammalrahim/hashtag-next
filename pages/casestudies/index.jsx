@@ -637,7 +637,7 @@ export default class Speakinc extends Component {
             </div>
           </div>
 
-          <div id="contact">
+          <div id="contact" className='cs_contact'>
             <Contact></Contact>
           </div>
         </section>

@@ -312,7 +312,9 @@ export default class About extends Component {
 
           <Contact></Contact>
         </section>
-        <Footer></Footer>
+       <div className="about__footer">
+       <Footer></Footer>
+       </div>
       </div>
     );
   }

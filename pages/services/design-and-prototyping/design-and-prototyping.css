@@ -28,7 +28,14 @@
     }
 
 }
-
+@media(max-width:290px){
+    .dap_contact{
+        width: 350px;
+    }
+    .dap_footer{
+        width:350px
+    }
+}
 @media only screen and (max-width: 2499px) and (min-width: 2000px) {
     #Dnpbanner .what-we-do-border-style {
         height: 320px !important;
