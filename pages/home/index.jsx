@@ -94,9 +94,6 @@ export default class Home extends Component {
         <div className="d-block d-xl-none">
       {/* <p className="tempara"> your <br/> page <br/> are <br/> loading  <br/>........ </p> */}
           <div className="container-fluid mobile-banner">
-          <p style={{fontSize:"60px", width:"50%",fontWeight:"700"}}>
-                It is often considered synonymous with a story or a paper or an article. Essays can be formal as well as informal. Formal essays are generally academic in nature and tackle serious topics
-                </p>
             {/* <img src="/images/home/home-mobile-banner.webp" /> */}
             <div className="row justify-content-center">
               <div className="col-12 section-one-text">
