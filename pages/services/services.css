@@ -36,6 +36,7 @@
 
 .service-main-title {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: bold;
     font-size: 56px;
@@ -45,6 +46,7 @@
 
 .service-title {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -55,6 +57,7 @@
 
 .service-sub-title {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -67,12 +70,14 @@
 
 .service-content p {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: normal;
 }
 
 .service-content {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -129,6 +134,7 @@
 
     .service-main-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
         font-size: 108px;
@@ -168,6 +174,7 @@
 @media(max-width: 1022px) {
     .service-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
         font-size: 48px;
@@ -178,6 +185,7 @@
 
     .service-sub-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: 500;
         font-size: 24px;
@@ -192,6 +200,7 @@
 @media(max-width: 767px) {
     .service-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
         font-size: 28px;
@@ -202,6 +211,7 @@
 
     .service-sub-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -242,6 +252,7 @@
 
     .service-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
         font-size: 28px;
@@ -252,6 +263,7 @@
 
     .service-sub-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -322,6 +334,7 @@
 
     .service-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
         font-size: 28px;
@@ -332,6 +345,7 @@
 
     .service-sub-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -401,6 +415,7 @@
 
     .service-main-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
         font-size: 106px;

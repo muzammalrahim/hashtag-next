@@ -35,6 +35,7 @@ align-items: center;
 
 .shopify-main-title{
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: bold;
     font-size: 56px;
@@ -50,6 +51,7 @@ align-items: center;
 
 .shopify-title {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: bold;
     line-height: 100%;
@@ -59,6 +61,7 @@ align-items: center;
 
 .shopify-sub-title {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -73,6 +76,7 @@ align-items: center;
 
 .shopify-content {
     font-family: Montserrat;
+font-display: swap;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;

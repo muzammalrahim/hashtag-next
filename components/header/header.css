@@ -119,6 +119,7 @@
   text-transform: uppercase;
   color: #FF6B00;
   font-family: 'Montserrat', sans-serif;
+font-display: swap;
   text-decoration: none !important;
   
 }
@@ -380,6 +381,7 @@
     line-height: 20px;
     color: #43484C !important;
     font-family: 'Montserrat', sans-serif;
+font-display: swap;
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
@@ -531,6 +533,7 @@
     line-height: 20px;
     color: #43484C;
     font-family: 'Montserrat', sans-serif;
+font-display: swap;
 }
 
 .btn.focus,
@@ -1137,6 +1140,7 @@ li a:active{
     font-size: 20px;
     color: #43484C !important;
     font-family: 'Montserrat', sans-serif;
+font-display: swap;
 }
 /* @media (min-width: 768px){
     .container {

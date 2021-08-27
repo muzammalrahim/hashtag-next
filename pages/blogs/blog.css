@@ -174,12 +174,15 @@ a{
 {
 	    font-family: fontAwesome;
 	        color: #FF6B00;
+          font-display: swap;
+
 }
 .fa-arrow-right:before
 {
 	font-family: fontAwesome;
 	        color: #000;
 	        content: "\f178";
+          font-display: swap;
 }
 
 .blog-sidebar{
@@ -221,6 +224,7 @@ a{
     background-color: transparent;
     font-size: 14px;
     font-family: inherit;
+    font-display: swap;
     margin: 0;
     padding: 0px 40px 0 15px;
     width: 100% !important;
@@ -304,6 +308,7 @@ aside ul li
 aside ul li a
 {
 	    font-family: Montserrat;
+      font-display: swap;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
