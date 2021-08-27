@@ -194,7 +194,7 @@ export default class Contactus extends Component {
                         <div className="col-lg-6 col-md-12 col-sm-12">
                           <h3 className="address-content">
                             <img
-                              data-src="images/home/location.svg"
+                              data-src="/images/home/location.svg"
                               alt="location"
                               className="address-icons lazyload "
                             />{" "}
@@ -208,7 +208,7 @@ export default class Contactus extends Component {
                             USA
                           </h3>
                           <img
-                            data-src="images/home/phone.svg"
+                            data-src="/images/home/phone.svg"
                             alt="phone"
                             className="address-icons lazyload "
                           />{" "}
@@ -217,7 +217,7 @@ export default class Contactus extends Component {
                             <a href="tel:+1-408-596-2525">+1 408 596 2525</a>
                           </p>
                           <img
-                            data-src="images/home/email.svg"
+                            data-src="/images/home/email.svg"
                             alt="email"
                             className="address-icons lazyload "
                           />{" "}
@@ -237,7 +237,7 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              data-src="images/home/linkedin.svg"
+                              data-src="/images/home/linkedin.svg"
                               alt="linkedin"
                               className="pl-2 pr-2 contact-linkedin lazyload"
                             />
@@ -247,7 +247,7 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              data-src="images/home/facebook-logo.svg"
+                              data-src="/images/home/facebook-logo.svg"
                               alt="facebook"
                               className="conatct-fb lazyload"
                             />
@@ -275,7 +275,7 @@ export default class Contactus extends Component {
                         <div className="col-lg-6 col-md-12 col-sm-12">
                           <h3 className="address-content">
                             <img
-                              data-src="images/home/location.svg"
+                              data-src="/images/home/location.svg"
                               alt="location"
                               className="address-icons lazyload "
                             />{" "}
@@ -290,7 +290,7 @@ export default class Contactus extends Component {
                             <br />
                           </h3>
                           <img
-                            data-src="images/home/phone.svg"
+                            data-src="/images/home/phone.svg"
                             alt="phone"
                             className="address-icons lazyload "
                           />{" "}
@@ -299,7 +299,7 @@ export default class Contactus extends Component {
                             <a href="tel:+1-408-404-7323">+1 408 404 7323</a>
                           </p>
                           <img
-                            data-src="images/home/email.svg"
+                            data-src="/images/home/email.svg"
                             alt="email"
                             className="address-icons lazyload "
                           />{" "}
@@ -318,7 +318,7 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              data-src="images/home/linkedin.svg"
+                              data-src="/images/home/linkedin.svg"
                               alt="linkedin"
                               className="pl-2 pr-2 contact-linkedin lazyload"
                             />
@@ -328,7 +328,7 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              data-src="images/home/facebook-logo.svg"
+                              data-src="/images/home/facebook-logo.svg"
                               alt="facebook"
                               className="conatct-fb lazyload"
                             />
@@ -357,7 +357,7 @@ export default class Contactus extends Component {
                         <div className="col-lg-6 col-md-12 col-sm-12">
                           <h3 className="address-content">
                             <img
-                              data-src="images/home/location.svg"
+                              data-src="/images/home/location.svg"
                               alt="location"
                               className="address-icons lazyload "
                             />{" "}
@@ -370,7 +370,7 @@ export default class Contactus extends Component {
                             USA
                           </h3>
                           <img
-                            data-src="images/home/email.svg"
+                            data-src="/images/home/email.svg"
                             alt="email"
                             className="address-icons lazyload "
                           />{" "}
@@ -389,7 +389,7 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              data-src="images/home/linkedin.svg"
+                              data-src="/images/home/linkedin.svg"
                               alt="linkedin"
                               className="pl-2 pr-2 contact-linkedin lazyload"
                             />
@@ -399,7 +399,7 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              data-src="images/home/facebook-logo.svg"
+                              data-src="/images/home/facebook-logo.svg"
                               alt="facebook"
                               className="conatct-fb lazyload"
                             />
@@ -427,7 +427,7 @@ export default class Contactus extends Component {
                         <div className="col-lg-6 col-md-12 col-sm-12">
                           <h3 className="address-content">
                             <img
-                              data-src="images/home/location.svg"
+                              data-src="/images/home/location.svg"
                               alt="location"
                               className="address-icons lazyload "
                             />{" "}
@@ -441,7 +441,7 @@ export default class Contactus extends Component {
                             <br />
                           </h3>
                           <img
-                            data-src="images/home/phone.svg"
+                            data-src="/images/home/phone.svg"
                             alt="phone"
                             className="address-icons lazyload"
                           />{" "}
@@ -450,7 +450,7 @@ export default class Contactus extends Component {
                             <a href="tel:+91-9207749168">+91 9207749168</a>
                           </p>
                           <img
-                            data-src="images/home/email.svg"
+                            data-src="/images/home/email.svg"
                             alt="email"
                             className="address-icons lazyload "
                           />{" "}
@@ -469,7 +469,7 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              data-src="images/home/linkedin.svg"
+                              data-src="/images/home/linkedin.svg"
                               className="pl-2 pr-2 contact-linkedin lazyload"
                               alt="linkedin"
                             />
@@ -479,7 +479,7 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              data-src="images/home/facebook-logo.svg"
+                              data-src="/images/home/facebook-logo.svg"
                               className="conatct-fb lazyload"
                               alt="facebook"
                             />
@@ -560,7 +560,7 @@ export default class Contactus extends Component {
               <div className="row justify-content-center pl-3 pr-3 ">
                 <div className="col-lg-5 col-md-12 col-sm-12">
                   <img
-                    data-src="images/contacts/puzzles.svg"
+                    data-src="/images/contacts/puzzles.svg"
                     className="img-fluid lazyload"
                     alt="join-team"
                     height="auto"

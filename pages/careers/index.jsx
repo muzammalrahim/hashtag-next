@@ -104,7 +104,7 @@ export default class Careers extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 text-center ">
                 <img
-                  src="images/careers/job-interview-conversation.svg"
+                  src="/images/careers/job-interview-conversation.svg"
                   alt="interview-image"
                   className="img-fluid shopify-image mobile-image-border storefront-img lazyload"
                 />
@@ -129,7 +129,7 @@ export default class Careers extends Component {
                     <div className="what-we-do-border-style what-we-do-responsive">
                        
                         <h4 className="text-level-5 title-black">Snr. Visual Designer</h4>
-                        <p className="job-location"><img src="images/home/location.svg" alt="location" class="address-icons"/>Kochi, KL </p>
+                        <p className="job-location"><img src="/images/home/location.svg" alt="location" class="address-icons"/>Kochi, KL </p>
                         <hr className="hashtag-underline ml-2"/>
                          <p>Contract</p>
                         
@@ -138,7 +138,7 @@ export default class Careers extends Component {
                   <div className="col-lg-4 col-sm-6 mob-padding c-height">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="images/careers/software-engineers-d.svg"
+                        src="/images/careers/software-engineers-d.svg"
                         alt="interview-image"
                         className="img-fluid vacancy-section-image lazyload"
                       />
@@ -178,7 +178,7 @@ export default class Careers extends Component {
                   <div className="col-lg-4 col-sm-6 mob-padding ">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="images/careers/fresher-developer.svg"
+                        src="/images/careers/fresher-developer.svg"
                         alt="interview-image"
                         className="img-fluid vacancy-section-image lazyload"
                       />
@@ -252,7 +252,7 @@ export default class Careers extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 text-center ">
                 <img
-                  src="images/careers/coding-club.svg"
+                  src="/images/careers/coding-club.svg"
                   alt="coding-club"
                   className="img-fluid shopify-image mobile-image-border lazyload"
                 />
@@ -282,7 +282,7 @@ export default class Careers extends Component {
                         any people in any country across the world
                       </p>
                       <img
-                        src="images/careers/orange-arrow.png"
+                        src="/images/careers/orange-arrow.png"
                         alt="arrow"
                         className="lazyload"
                       />

@@ -379,7 +379,7 @@ export default class filemakerPage extends Component {
                     </p>
                     <img
                       className="lazyload"
-                      data-src="../images/file-maker/man-profile.svg"
+                      data-src="/images/file-maker/man-profile.svg"
                       alt="male profile"
                     />
                   </div>
@@ -389,7 +389,7 @@ export default class filemakerPage extends Component {
                     <p>Selva V</p>
                     <img
                       className="lazyload"
-                      data-src="../images/file-maker/woman-profile.svg"
+                      data-src="/images/file-maker/woman-profile.svg"
                       alt="female profile"
                     />
                   </div>

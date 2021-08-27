@@ -43,28 +43,28 @@ export default class Carousel extends Component {
         <div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/html5.svg"
+              data-src="/images/home/html5.svg"
               alt="html5"
               className="img-fluid lazyload  mx-auto my-auto "
             />
           </div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/mysql.svg"
+              data-src="/images/home/mysql.svg"
               alt="mysql"
               className="img-fluid lazyload  mx-auto my-auto"
             />
           </div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/amazon.svg"
+              data-src="/images/home/amazon.svg"
               alt="amazon"
               className="img-fluid lazyload  mx-auto my-auto"
             />
           </div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/node-js.svg"
+              data-src="/images/home/node-js.svg"
               alt="node_js"
               className="img-fluid lazyload  mx-auto my-auto"
             />
@@ -74,7 +74,7 @@ export default class Carousel extends Component {
         <div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/bootstrap.svg"
+              data-src="/images/home/bootstrap.svg"
               alt="bootstrap"
               className="img-fluid lazyload  mx-auto my-auto"
             />
@@ -82,14 +82,14 @@ export default class Carousel extends Component {
 
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/shopify.svg"
+              data-src="/images/home/shopify.svg"
               alt="shopify"
               className="img-fluid lazyload  mx-auto my-auto"
             />
           </div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/php.svg"
+              data-src="/images/home/php.svg"
               alt="php"
               className="img-fluid lazyload  mx-auto my-auto"
             />
@@ -97,7 +97,7 @@ export default class Carousel extends Component {
 
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/angular-js.svg"
+              data-src="/images/home/angular-js.svg"
               alt="angular_js"
               className="img-fluid lazyload  mx-auto my-auto"
             />
@@ -107,28 +107,28 @@ export default class Carousel extends Component {
         <div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/ethereum.svg"
+              data-src="/images/home/ethereum.svg"
               alt="ethereum"
               className="img-fluid lazyload  mx-auto my-auto"
             />
           </div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/react-js.svg"
+              data-src="/images/home/react-js.svg"
               alt="react_js"
               className="img-fluid lazyload  mx-auto my-auto"
             />
           </div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/wordpress.svg"
+              data-src="/images/home/wordpress.svg"
               alt="wordpress"
               className="img-fluid lazyload  mx-auto my-auto"
             />
           </div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/jquery.svg"
+              data-src="/images/home/jquery.svg"
               alt="jquery"
               className="img-fluid lazyload  mx-auto my-auto"
             />
@@ -138,28 +138,28 @@ export default class Carousel extends Component {
         <div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/codeigniter.svg"
+              data-src="/images/home/codeigniter.svg"
               alt="codeigniter"
               className="img-fluid lazyload  mx-auto my-auto"
             />
           </div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/django.svg"
+              data-src="/images/home/django.svg"
               alt="django"
               className="img-fluid lazyload  mx-auto my-auto"
             />
           </div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/python.svg"
+              data-src="/images/home/python.svg"
               alt="python"
               className="img-fluid lazyload  mx-auto my-auto"
             />
           </div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/mongodb.svg"
+              data-src="/images/home/mongodb.svg"
               alt="mongodb"
               className="img-fluid lazyload  mx-auto my-auto"
             />
@@ -169,28 +169,28 @@ export default class Carousel extends Component {
         <div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/truffle.svg"
+              data-src="/images/home/truffle.svg"
               alt="truffle"
               className="img-fluid lazyload  mx-auto my-auto"
             />
           </div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/solidity.svg"
+              data-src="/images/home/solidity.svg"
               alt="solidity"
               className="img-fluid lazyload  mx-auto my-auto"
             />
           </div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/docker.svg"
+              data-src="/images/home/docker.svg"
               alt="docker"
               className="img-fluid lazyload  mx-auto my-auto"
             />
           </div>
           <div className="text-center my-auto d-flex pt-5">
             <img
-              data-src="images/home/ionic.svg"
+              data-src="/images/home/ionic.svg"
               alt="ionic"
               className="img-fluid lazyload  mx-auto my-auto"
             />

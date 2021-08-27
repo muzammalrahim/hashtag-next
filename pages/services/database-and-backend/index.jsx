@@ -102,7 +102,7 @@ export default class DatabasePage extends Component {
                   </p>
                 </div>
                 <div class="main-title">
-                  <img src="../images/wordpress/wp-quoute.svg" alt="quote" />
+                  <img src="/images/wordpress/wp-quoute.svg" alt="quote" />
                 </div>
                 <div class="wp-main">
                   <p class="hash-content-col title-black why-us-hash-content">
@@ -193,7 +193,7 @@ export default class DatabasePage extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/database/web-programming1.svg"
+                        src="/images/database/web-programming1.svg"
                         alt="web_app"
                       />
                       <p className="text-level-5 title-black">
@@ -207,7 +207,7 @@ export default class DatabasePage extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/database/mobileprogramming 1.svg"
+                        src="/images/database/mobileprogramming 1.svg"
                         alt="mobile_app"
                       />
                       <p className="text-level-5 title-black">
@@ -221,7 +221,7 @@ export default class DatabasePage extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/database/web-site1.svg"
+                        src="/images/database/web-site1.svg"
                         alt="website_dev"
                       />
                       <p className="text-level-5 title-black">
@@ -235,7 +235,7 @@ export default class DatabasePage extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/database/web-site2.svg"
+                        src="/images/database/web-site2.svg"
                         alt="Software_dev"
                       />
                       <p className="text-level-5 title-black">
@@ -252,7 +252,7 @@ export default class DatabasePage extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/database/export1.svg"
+                        src="/images/database/export1.svg"
                         alt="database_design"
                       />
                       <p className="text-level-5 title-black">
@@ -265,7 +265,7 @@ export default class DatabasePage extends Component {
                 <Slide bottom>
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
-                      <img src="../images/database/api1.svg" alt="api_dev" />
+                      <img src="/images/database/api1.svg" alt="api_dev" />
                       <p className="text-level-5 title-black">
                         API Development
                       </p>
@@ -277,7 +277,7 @@ export default class DatabasePage extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/database/web-programming2.svg"
+                        src="/images/database/web-programming2.svg"
                         alt="NLP"
                       />
                       <p className="text-level-5 title-black">
@@ -291,7 +291,7 @@ export default class DatabasePage extends Component {
                   <div className="col-lg-3 col-sm-6 mob-padding">
                     <div className="what-we-do-border-style what-we-do-responsive">
                       <img
-                        src="../images/database/web-programming-anlys.svg"
+                        src="/images/database/web-programming-anlys.svg"
                         alt="quality"
                       />
                       <p className="text-level-5 title-black">
@@ -320,28 +320,28 @@ export default class DatabasePage extends Component {
                 <div className="row justify-content-center mt-2">
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/mysql-2.svg"
+                      src="/images/database/mysql-2.svg"
                       alt="mysql"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/Group-rest1.svg"
+                      src="/images/database/Group-rest1.svg"
                       alt="rest"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/Vector-larave.svg"
+                      src="/images/database/Vector-larave.svg"
                       alt="laravel"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/php-1.svg"
+                      src="/images/database/php-1.svg"
                       alt="php"
                       class="img-fluid mx-auto my-auto "
                     />
@@ -350,28 +350,28 @@ export default class DatabasePage extends Component {
                 <div className="row justify-content-center mt-2">
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/Node.js_logo.svg"
+                      src="/images/database/Node.js_logo.svg"
                       alt="node"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/AmazonWebservices1.svg"
+                      src="/images/database/AmazonWebservices1.svg"
                       alt="amazon"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/selenium-logo1.svg"
+                      src="/images/database/selenium-logo1.svg"
                       alt="selenium"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/selenium-logo 2.svg"
+                      src="/images/database/selenium-logo 2.svg"
                       alt="git"
                       class="img-fluid mx-auto my-auto "
                     />
@@ -380,28 +380,28 @@ export default class DatabasePage extends Component {
                 <div className="row justify-content-center mt-2">
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/MongoDB_Logo.svg"
+                      src="/images/database/MongoDB_Logo.svg"
                       alt="mongo_db"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/Group389.svg"
+                      src="/images/database/Group389.svg"
                       alt="codeigniter"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/Frame400.svg"
+                      src="/images/database/Frame400.svg"
                       alt="django"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-sm-12 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/python-3.svg"
+                      src="/images/database/python-3.svg"
                       alt="python"
                       class="img-fluid mx-auto my-auto "
                     />
@@ -412,84 +412,84 @@ export default class DatabasePage extends Component {
                 <div className="row justify-content-center mt-2">
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/mysql-2.svg"
+                      src="3/images/database/mysql-2.svg"
                       alt="mysql"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/Group-rest1.svg"
+                      src="/images/database/Group-rest1.svg"
                       alt="rest"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/Vector-larave.svg"
+                      src="/images/database/Vector-larave.svg"
                       alt="laravel"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/php-1.svg"
+                      src="/images/database/php-1.svg"
                       alt="php"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/Node.js_logo.svg"
+                      src="/images/database/Node.js_logo.svg"
                       alt="node"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/AmazonWebservices1.svg"
+                      src="/images/database/AmazonWebservices1.svg"
                       alt="amazon"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/selenium-logo1.svg"
+                      src="/images/database/selenium-logo1.svg"
                       alt="selenium"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/selenium-logo 2.svg"
+                      src="/images/database/selenium-logo 2.svg"
                       alt="git"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/MongoDB_Logo.svg"
+                      src="/images/database/MongoDB_Logo.svg"
                       alt="mongo_db"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/Group389.svg"
+                      src="/images/database/Group389.svg"
                       alt="codeigniter"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/Frame400.svg"
+                      src="/images/database/Frame400.svg"
                       alt="django"
                       class="img-fluid mx-auto my-auto "
                     />
                   </div>
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="../images/database/python-3.svg"
+                      src="/images/database/python-3.svg"
                       alt="python"
                       class="img-fluid mx-auto my-auto "
                     />
@@ -510,7 +510,7 @@ export default class DatabasePage extends Component {
                 </h3>
                 <div className="shopify-content mt-4">
                   <p class="main-title">
-                    <img src="../images/wordpress/wp-quoute.svg" alt="quote" />
+                    <img src="/images/wordpress/wp-quoute.svg" alt="quote" />
                   </p>
                   <div className="wp-main">
                     <p class="hash-content-col title-black why-us-hash-content">
