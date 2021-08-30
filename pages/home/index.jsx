@@ -94,12 +94,12 @@ export default class Home extends Component {
         <div className="d-block d-xl-none">
       {/* <p className="tempara"> your <br/> page <br/> are <br/> loading  <br/>........ </p> */}
           <div className="container-fluid mobile-banner">
-            {/* <img src="/images/home/home-mobile-banner.webp" /> */}
             <div className="row justify-content-center">
               <div className="col-12 section-one-text">
                 <h1 className="text-above-main-title-first-mob text-center">
                   A Full stack development company
                 </h1>
+               
                 <p className="main-title-first-mob text-center">
                   <span
                     className="mobile-white title-orange-first-mob d-block"
@@ -131,6 +131,7 @@ export default class Home extends Component {
                   </a>
                 </div> */}
               </div>
+              <img src="/images/home/home-mobile-banner.webp" /> 
             </div>
           </div>
         </div>
