@@ -122,7 +122,7 @@ export default class About extends Component {
               </div>
 
               <div className="col-xxl-6 col-lg-6 col-md-12 col-sm-12">
-                <div className="about-section-2">
+                <div className="about-section-2 ab-v-right">
                   <div className="about-section-2-left">
                     <img
                       src="/images/about/value.svg"
@@ -144,7 +144,7 @@ export default class About extends Component {
             </div>
 
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
-              <div className=" col-xxl-6 col-lg-6 col-md-12 col-sm-12 ab-v-right">
+              <div className=" col-xxl-6 col-lg-6 col-md-12 col-sm-12">
                 <div className="about-section-2 about-section-2-last">
                   <div className="about-section-2-left">
                     <img
