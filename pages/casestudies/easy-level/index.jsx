@@ -91,7 +91,11 @@ export default class Easylevel extends Component {
           canonical_tags={data.canonical_tags}
         ></Header>
         <section className="content-container case-study easy_level">
-          <div className="common-title-blk">
+          {/* <div className="common-title-blk"> */}
+
+          <div className="container-fluid easy-level-bg  p-0 m-0">
+          <div className="service-bg-right">
+          <div className="easy-level-banner-frame">
             <div className="container">
               <div className="row">
                 <div className="col-md-6">
@@ -122,6 +126,8 @@ export default class Easylevel extends Component {
                 </div>
               </div>
             </div>
+          </div>
+          </div>
           </div>
           <div className="project-about-blk project-about-blk-padding">
             <div className="container">
@@ -373,12 +379,14 @@ export default class Easylevel extends Component {
 
           <div className="multi-token skillset-blk">
             <div className="container">
+            
               <div className="row justify-content-left">
-                <div className="col-md-11 col-lg-11 col-xl-11 offset-md-1">
-                  <div className="project-blk-title text-center">
+              <div className="project-blk-title text-center">
                     <div className="text-above-main-title">SKILLS</div>
                     <h2 class="main-title title-orange">Our skillsets</h2>
                   </div>
+                <div className="col-md-11 col-lg-11 col-xl-11 offset-md-1">
+                  
                   <div className="skillset-wrap text-left">
                     <ul className="skill-list">
                       <li>Ethereum</li>
@@ -516,16 +524,15 @@ export default class Easylevel extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-8">
                   <div className="project-blk-title">
-                    <div className="text-above-main-title">
+                    <div className="text-above-main-title text-white">
                       PROJECT ACHIEVEMENTS
                     </div>
                     <h2 className="main-title-custom main-title mb-2">
                       What We Achieved
                     </h2>
                     <img
-                      class="lazyload"
                       className="mb-2"
-                      data-src="/images/shopify/shopify-quoute.svg"
+                      src="/images/shopify/shopify-quoute.svg"
                       alt="quote"
                     />
                   </div>
