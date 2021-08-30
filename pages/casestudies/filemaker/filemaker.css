@@ -73,6 +73,9 @@ commented by sherin since main title css is already called in main css file
   background-image: url(/images/service/vector.svg);
   background-size: contain;
 }
+
+
+
 @media(min-width:1024px){
   .common-title-blk p{
     font-size: 30px !important;

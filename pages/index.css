@@ -365,7 +365,7 @@ font-display: swap;
     text-decoration: unset!important;
 }
 .section-one-bg {
-    background-image: url(/images/home/section-one-bg.jpg);
+    background-image: url(/images/home/section-one-bg.webp);
     background-color: #fff;
     background-position: top right;
     background-repeat: no-repeat;
@@ -1361,7 +1361,7 @@ button.btn.form-button-child.px-3:hover {
     background-image: none;
 }
 .section-one-bg-small-device {
-    background-image: url(/images/home/mob-banner.png)!important;
+    background-image: url(/images/home/mob-banner.webp)!important;
     background-repeat: no-repeat!important;
     background-size: cover!important;
 }
@@ -1383,7 +1383,7 @@ button.btn.form-button-child.px-3:hover {
     background-image: none;
 }
 .section-one-bg-small-device {
-    background-image: url(/images/home/mob-banner.png)!important;
+    background-image: url(/images/home/mob-banner.webp)!important;
     background-repeat: no-repeat!important;
     background-size: cover!important;
 }
@@ -1567,7 +1567,7 @@ button.btn.form-button-child.px-3:hover {
     background-image: none;
 }
 .section-one-bg-small-device {
-    background-image: url(/images/home/mob-banner.png)!important;
+    background-image: url(/images/home/mob-banner.webp)!important;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1628,7 +1628,7 @@ button.btn.form-button-child.px-3:hover {
     background-image: none;
 }
 .section-one-bg-small-device {
-    background-image: url(/images/home/mob-banner.png)!important;
+    background-image: url(/images/home/mob-banner.webp)!important;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1685,18 +1685,18 @@ button.btn.form-button-child.px-3:hover {
 }
 .mobile-banner {
      /* background-image: url(/images/home/home-mobile-banner.webp);   */
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 722px;
-    background-position: center;
-    color: #fff!important;
-    background-color: #fd6b00!important;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 520px;
+     background-position: center;
+     color: #fff!important;
+     background-color: #fd6b00!important;
+     margin-bottom: 250px;
 }
 .mobile-banner img{
      /* background-image: url(/images/home/home-mobile-banner.webp);   */
-     height: 222px;
      width: 100%;
-     margin-top: 280px;
+     margin-top: 58px;
 }
 /* .tempara{
     font-family: Garamond, serif;
