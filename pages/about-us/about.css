@@ -8,10 +8,10 @@
 }
 @media(max-width:290px){
     .section-2-row{
-        width: 350px !important;
+        /* width: 350px !important; */
     }
     .about-third-section , .about__footer{
-        width: 350px !important;
+        /* width: 350px !important; */
     }
 }
 @media(max-width: 767px) {

@@ -63,7 +63,7 @@
     .first-career-row .text-level-5 {
         font-size: 23px;
     }
-
+    
     #careers-main .service-bg {
         height: 470px !important;
     }
@@ -75,12 +75,15 @@
     #careers-main .service-banner-frame {
         height: 480px !important;
     }
+    .join_us_career{
+        right: 30px;
+    }
 
     body #careers-main .main-title {
         font-size: 31px !important;
     }
   .service-bg , .career-join-bg , .career_contact , .career_footer{
-        width: 350px !important;
+        /* width: 350px !important; */
     }
     
 }

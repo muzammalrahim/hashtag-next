@@ -111,31 +111,31 @@
 }
 @media(max-width:290px){
     .shopify__banner{
-        width: 350px !important;
+        /* width: 350px !important; */
     }
     .section-2-row{
-        width: 350px !important;
+        /* width: 350px !important; */
     }
     .wordpress-section-3{
-        width: 350px !important;
+        /* width: 350px !important; */
     }
  .ask-expert-section{
-    width: 350px !important;
+    /* width: 350px !important; */
  }
  .plugin-dev-section{
-    width: 350px !important;
+    /* width: 350px !important; */
  }
  .plugin-integration-section h3{
      font-size: 35px !important;
  }
  .testimonial-section{
-    width: 350px !important;
+    /* width: 350px !important; */
  }
  .testimonial-section .testimonial-section-content h3{
    font-size: 35px !important;
  }
  .wp__footer{
-    width: 350px !important;
+    /* width: 350px !important; */
  }
  
     

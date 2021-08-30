@@ -3,13 +3,13 @@
 @media(max-width:280px)
 {
     .contact-section-two{
-        width: 350px !important;
+        /* width: 350px !important; */
     }
      .contact-section-three{
-         width: 350px !important;
+         /* width: 350px !important; */
      }
      .contact_footer{
-                width: 350px !important;
+                /* width: 350px !important; */
      }
 }
 

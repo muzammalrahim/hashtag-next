@@ -153,7 +153,7 @@ export default class Careers extends Component {
                       </p>
                       <div class="contact-form-link">
                         <a href="/contact-us">
-                          <div class="btn-group form-btn">
+                          <div class="btn-group form-btn join_us_career">
                             <button
                               type="button"
                               class="btn form-button font-12 font-bold"
@@ -193,7 +193,7 @@ export default class Careers extends Component {
                       </p>
                       <div class="contact-form-link">
                         <a href="/contact-us">
-                          <div class="btn-group form-btn">
+                          <div class="btn-group form-btn join_us_career">
                             <button
                               type="button"
                               class="btn form-button font-12 font-bold"

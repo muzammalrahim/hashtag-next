@@ -66,7 +66,7 @@ export default class Service extends Component {
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <h2 className="bold-contents service-content-box pl-4 text-justify">
+                      <h2 className="bold-contents service-content-box pl-4">
                         Outsourcing excellent quality IT services and offering
                         our clients worldwide impeccable full-cycle customized
                         software development, support, and maintenance is our
