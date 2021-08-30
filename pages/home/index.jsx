@@ -434,10 +434,10 @@ export default class Home extends Component {
         <div className="container-fluid section-five-bg  pb-5">
           <div className="container">
             <div className="row justify-content-center pt-5 pl-3 pr-3">
-              <div className="col-12">
-                <div className="text-above-main-title text-center">
+              <div className=" col-md-12 col-lg-12 col-xl-12 w-auto">
+                <p className="text-above-main-title text-center">
                   WE ARE PROFESSIONALS
-                </div>
+                </p>
                 <div className="main-title">
                   <span className="title-orange d-block text-center">
                     Our Expertise

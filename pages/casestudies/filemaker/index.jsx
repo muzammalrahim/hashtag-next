@@ -163,7 +163,7 @@ export default class Filemaker extends Component {
                         SpeakInc is a No 1 US based speakers booking platform
                       </strong>
                     </p>
-                    <p className="text-justify">
+                    <p className="text-start">
                       It helps in searching and booking keynote speakers or
                       entertainers for different conventions, conferences or
                       events. Speakinc has exceptional expertise matching
@@ -290,7 +290,7 @@ export default class Filemaker extends Component {
                 <div className="col-md-6 col-lg-6">
                   <div className="img-blk">
                     <img
-                      src="/images/case-studies/filemaker/benefits-img.png"
+                      src="/images/case-studies/filemaker/benefits-img.webp"
                       alt="Architecture"
                     />
                   </div>
@@ -452,7 +452,7 @@ export default class Filemaker extends Component {
                       </p>
                       <div className="learn-more home-lm-link-vs">
                         <div className="btn-comm">
-                          <a href="/contact-us">LET'S TALK</a>
+                          <a className="text-center" href="/contact-us">LET'S TALK</a>
                         </div>
                       </div>
                     </div>
