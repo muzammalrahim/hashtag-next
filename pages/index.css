@@ -365,7 +365,7 @@ font-display: swap;
     text-decoration: unset!important;
 }
 .section-one-bg {
-    background-image: url(/images/home/section-one-bg.jpg);
+    background-image: url(/images/home/section-one-bg.webp);
     background-color: #fff;
     background-position: top right;
     background-repeat: no-repeat;
@@ -1017,9 +1017,9 @@ button.btn.form-button-child.px-3:hover {
 .section-two-bg {
     background-image: none;
 }
-.section-three-bg {
+/* .section-three-bg {
     top: -100px;
-}
+} */
 .section-two-text {
     top: 240px;
 }
@@ -1361,7 +1361,7 @@ button.btn.form-button-child.px-3:hover {
     background-image: none;
 }
 .section-one-bg-small-device {
-    background-image: url(/images/home/mob-banner.png)!important;
+    background-image: url(/images/home/mob-banner.webp)!important;
     background-repeat: no-repeat!important;
     background-size: cover!important;
 }
@@ -1383,7 +1383,7 @@ button.btn.form-button-child.px-3:hover {
     background-image: none;
 }
 .section-one-bg-small-device {
-    background-image: url(/images/home/mob-banner.png)!important;
+    background-image: url(/images/home/mob-banner.webp)!important;
     background-repeat: no-repeat!important;
     background-size: cover!important;
 }
@@ -1431,6 +1431,7 @@ button.btn.form-button-child.px-3:hover {
     .container {
     max-width: 1622px!important;
 }
+
 .section-four-bg {
     background-image: url(/images/home/section-orange-bg2.svg);
     height: 1000px;
@@ -1447,7 +1448,23 @@ button.btn.form-button-child.px-3:hover {
 .why-us-second-section {
     margin-top: 200px;
 }
-}@media (max-width:767px) {
+}
+
+
+@media (min-width:540px) and (max-width:540px) {
+    .em-align .s-head{
+         text-align: center!important;
+     }
+     .section-one-text {
+        top: -4px;
+    }
+    .who-we-section-content{
+        position: relative;
+        top: 100px;
+    }
+ }
+
+@media (max-width:767px) {
     .mob-padding {
     padding: unset!important;
 }
@@ -1501,11 +1518,11 @@ button.btn.form-button-child.px-3:hover {
 }
 .section-five-bg .text-above-main-title {
     font-size: 12px;
-    text-align: left!important;
+    text-align: left;
     margin-top: 30px;
 }
 .section-five-bg .title-orange {
-    text-align: left!important;
+    text-align: left;
     font-size: 36px;
     line-height: 38px!important;
 }
@@ -1567,7 +1584,7 @@ button.btn.form-button-child.px-3:hover {
     background-image: none;
 }
 .section-one-bg-small-device {
-    background-image: url(/images/home/mob-banner.png)!important;
+    background-image: url(/images/home/mob-banner.webp)!important;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1590,6 +1607,16 @@ button.btn.form-button-child.px-3:hover {
         margin-top: 20px;
     }
 }
+
+@media(max-width:1024px){
+    .section-one-text {
+        top: 35px;
+    }
+    .main-title {
+        margin-top: 150px;
+    }
+}
+
 @media(max-width:290px){
     .text-level-4{
         font-size: 25px !important;
@@ -1628,7 +1655,7 @@ button.btn.form-button-child.px-3:hover {
     background-image: none;
 }
 .section-one-bg-small-device {
-    background-image: url(/images/home/mob-banner.png)!important;
+    background-image: url(/images/home/mob-banner.webp)!important;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1685,18 +1712,18 @@ button.btn.form-button-child.px-3:hover {
 }
 .mobile-banner {
      /* background-image: url(/images/home/home-mobile-banner.webp);   */
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 722px;
-    background-position: center;
-    color: #fff!important;
-    background-color: #fd6b00!important;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 520px;
+     background-position: center;
+     color: #fff!important;
+     background-color: #fd6b00!important;
+     margin-bottom: 250px;
 }
 .mobile-banner img{
      /* background-image: url(/images/home/home-mobile-banner.webp);   */
-     height: 222px;
      width: 100%;
-     margin-top: 280px;
+     margin-top: 58px;
 }
 /* .tempara{
     font-family: Garamond, serif;

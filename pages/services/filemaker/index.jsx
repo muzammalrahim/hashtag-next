@@ -307,7 +307,7 @@ export default class filemakerPage extends Component {
                   <div className="quote-centered">
                     <blockquote
                       cite="https://www.hashtag-ca.com/"
-                      className="text-justify"
+                      className=""
                     >
                       “We can help you implement the solutions that bring
                       immediate improvements in your business workflows”

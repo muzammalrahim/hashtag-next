@@ -290,7 +290,7 @@ export default class Filemaker extends Component {
                 <div className="col-md-6 col-lg-6">
                   <div className="img-blk">
                     <img
-                      src="/images/case-studies/filemaker/benefits-img.png"
+                      src="/images/case-studies/filemaker/benefits-img.svg"
                       alt="Architecture"
                     />
                   </div>
@@ -452,7 +452,7 @@ export default class Filemaker extends Component {
                       </p>
                       <div className="learn-more home-lm-link-vs">
                         <div className="btn-comm">
-                          <a href="/contact-us">LET'S TALK</a>
+                          <a className="d-flex justify-content-center" href="/contact-us">LET'S TALK</a>
                         </div>
                       </div>
                     </div>
