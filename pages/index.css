@@ -365,7 +365,7 @@ font-display: swap;
     text-decoration: unset!important;
 }
 .section-one-bg {
-    background-image: url(/images/home/section-one-bg.jpg);
+    background-image: url(/images/home/section-one-bg.webp);
     background-color: #fff;
     background-position: top right;
     background-repeat: no-repeat;
@@ -1361,7 +1361,7 @@ button.btn.form-button-child.px-3:hover {
     background-image: none;
 }
 .section-one-bg-small-device {
-    background-image: url(/images/home/mob-banner.png)!important;
+    background-image: url(/images/home/mob-banner.webp)!important;
     background-repeat: no-repeat!important;
     background-size: cover!important;
 }
@@ -1383,7 +1383,7 @@ button.btn.form-button-child.px-3:hover {
     background-image: none;
 }
 .section-one-bg-small-device {
-    background-image: url(/images/home/mob-banner.png)!important;
+    background-image: url(/images/home/mob-banner.webp)!important;
     background-repeat: no-repeat!important;
     background-size: cover!important;
 }
@@ -1567,7 +1567,7 @@ button.btn.form-button-child.px-3:hover {
     background-image: none;
 }
 .section-one-bg-small-device {
-    background-image: url(/images/home/mob-banner.png)!important;
+    background-image: url(/images/home/mob-banner.webp)!important;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1628,7 +1628,7 @@ button.btn.form-button-child.px-3:hover {
     background-image: none;
 }
 .section-one-bg-small-device {
-    background-image: url(/images/home/mob-banner.png)!important;
+    background-image: url(/images/home/mob-banner.webp)!important;
     background-repeat: no-repeat;
     background-size: cover;
 }
