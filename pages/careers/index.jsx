@@ -297,8 +297,7 @@ export default class Careers extends Component {
 
           <div className="career_contact"><Contact page="careers"></Contact></div>
         </section>
-        <div className="career_footer">
-        <Footer></Footer></div>
+        <Footer></Footer>
       </div>
     );
   }

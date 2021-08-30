@@ -166,10 +166,17 @@
             width: 100% !important;
     }
 
-	.testim .arrow
-	{
-display:none !important;
+	.testim .arrow{
+     /* display:none !important; */
+
 	}
+    .testim .arrow.left{
+        left: 31px;
+        top: 320px;
+    }
+    .testim .arrow.right{
+        top: 320px;
+    }
 
 .expert-img-section
 {

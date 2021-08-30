@@ -1,6 +1,6 @@
                                                                                                                                                                                                                             #contact-main .service-bg{background-image:url(/images/service/service-banner.svg),url(/images/service/vector.svg);background-repeat:no-repeat,no-repeat;background-position:top center,top right;height:434px;background:#ff6b00}
 
-@media(max-width:290px)
+@media(max-width:280px)
 {
     .contact-section-two{
         width: 350px !important;

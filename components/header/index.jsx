@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 const Post = dynamic(() => import("./post"));
 import $ from "jquery";
+require("typeface-montserrat");
 
 
 const Header = ({ title, description, keywords, canonical_tags }) => {

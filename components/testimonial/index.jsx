@@ -176,7 +176,7 @@ export default function Testimonial() {
           className="arrow left fa fa-chevron-left "
           onClick={prevHandler}
         />
-        <ul id="testim-dots" className="dots">
+        <ul id="testim-dots" className="dots" onChange={nextHandler}>
           <li className={`dot ${content == 0 && "active"}`} />
           {/*
            */}

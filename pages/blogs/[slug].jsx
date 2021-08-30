@@ -23,7 +23,6 @@ export async function getServerSideProps(ctx) {
       rejectUnauthorized: false,
     }),
   });
-  console.log("ctx", ctx?.req?.url.split("/")[2]);
   await instance
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {

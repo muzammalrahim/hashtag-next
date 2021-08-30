@@ -113,7 +113,7 @@ font-display: swap;
 @media(max-width:290px){
    
     #service-ui , #service-cms , #service-shopify , #service-filemaker , .services_contact , .services_footer ,#service-design , #service-mob ,  #service-aws ,#service-db {
-        width: 350px !important;
+        width: 290px !important;
     }
 }
 

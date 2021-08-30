@@ -328,7 +328,7 @@ export default class Blog extends Component {
           
         </section>
         <div className="mob-visible"></div>
-        <div className="blog__footer"><Footer></Footer></div>
+        <Footer></Footer>
       </div>
     );
   }

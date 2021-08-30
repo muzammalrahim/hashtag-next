@@ -448,9 +448,16 @@ export default class Service extends Component {
           </div>
           {/* contact form */}
 
-         <div className="services_contact"> <Contact></Contact></div>
+          {/* <div className="services_contact">
+            {" "}
+            <Contact></Contact>
+          </div> */}
+
+          <Contact />
         </section>
-        <div className="services_footer"><Footer></Footer></div>
+        {/* <div className="services_footer"><Footer></Footer></div> */}
+
+        <Footer />
       </div>
     );
   }
