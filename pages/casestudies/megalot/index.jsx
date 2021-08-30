@@ -360,7 +360,7 @@ export default class Megalot extends Component {
                         <div className="text-above-main-title">
                           PROJECT STACK
                         </div>
-                        <h3 class="main-title title-orange">Technogies Used</h3>
+                        <h3 class="main-title title-orange">Technologies Used</h3>
                       </div>
                       <div className="tech-desc">
                         <p className="heading5">
