@@ -1,17 +1,32 @@
-import React, { Component } from 'react';
-import Header from '../../../components/header/index.jsx';
-import Footer from '../../../components/footer/index.jsx';
-import Underconstruction from '../../../components/under-construction/index.jsx';
-import Contact from '../../../components/contacts/index.jsx';
-import DocumentMeta from 'react-document-meta';
-import $ from 'jquery';
-import axios from 'axios';
-import * as config from '../../../config.js';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import Slide from 'react-reveal/Reveal';
 
-require('typeface-montserrat')
+import React, { Component } from "react";
+import Underconstruction from "../../../components/under-construction/index.jsx";
+import DocumentMeta from "react-document-meta";
+import $ from "jquery";
+import axios from "axios";
+import * as config from "../../../config.js";
+import "slick-carousel/slick/slick.css";
+import dynamic from "next/dynamic";
+const Header = dynamic(
+  () => import("../../../components/header/index.jsx"),
+  {}
+);
+const Footer = dynamic(
+  () => import("../../../components/footer/index.jsx"),
+  {}
+);
+const Slider = dynamic(() => import("react-slick"), {});
+const Slide = dynamic(() => import("react-reveal/Reveal"), {});
+const Contact = dynamic(
+  () => import("../../../components/contacts/index.jsx"),
+  {}
+);
+
+
+import "slick-carousel/slick/slick.css";
+import "lazysizes";
+
+require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
 
@@ -28,7 +43,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "casestudies-megalot",
       },
     })
     .then((response) => {
@@ -50,18 +65,7 @@ export default class Megalot extends Component {
   componentDidMount() {}
 
   render() {
-    const meta = {
-      title:
-        "Megalot Case study - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
- const { data } = this.state;
+    const { data } = this.state;
     const settings = {
       infinite: true,
       slidesToShow: 1,
@@ -86,32 +90,39 @@ export default class Megalot extends Component {
 
     return (
       <div className="case-study megalot" id="megalot-case-study">
-        <Header title={meta?.title} keywords={meta?.name?.keywords}></Header>
-        <section className="content-container case-study">
+        <Header
+          title={data.title}
+          description={data.description}
+          keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
+        ></Header>
+        <section className="content-container case-study megalot">
           <div className="common-title-blk">
             <div className="container">
               <div className="row">
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
-                    <div className="common-head-blk">
-                      <h6>Website development & design</h6>
-                      <h2 className="main-title title-white">Megalot</h2>
-                      <ul className="project-info">
-                        <li>
-                          <strong>Industry:</strong>Lottery & Gambling
-                        </li>
-                        <li>
-                          <strong>Location:</strong>California, US
-                        </li>
-                        <li>
-                          <strong>Service:</strong>Blockchain development
-                        </li>
-                        <li>
-                          <strong>Technologies:</strong>Blockchain, Solidity,
-                          Metamask, ETH Smart Contract, Web3
-                        </li>
-                      </ul>
-                    </div>
+                    {/* <div className="case-megalot-size">
+                      <p className="megalot_title">
+                        Website development & design
+                      </p>
+                    </div> */}
+                    <h1 className="main-title title-white">Megalot</h1>
+                    <ul className="project-info text-justify">
+                      <li>
+                        <strong>Industry:</strong>Lottery & Gambling
+                      </li>
+                      <li>
+                        <strong>Location:</strong>California, US
+                      </li>
+                      <li>
+                        <strong>Service:</strong>Blockchain development
+                      </li>
+                      <li>
+                        <strong>Technologies:</strong>Blockchain, Solidity,
+                        Metamask, ETH Smart Contract, Web3
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -123,15 +134,17 @@ export default class Megalot extends Component {
               <div className="row">
                 <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
                   <blockquote cite="https://www.hashtag-ca.com/">
-                    Our potential team has deep knowledge about Ethereum
-                    platform based applications to develop smart contracts and
-                    dApps.
+                    <p className="text-justify ">
+                      Our potential team has deep knowledge about Ethereum
+                      platform based applications to develop smart contracts and
+                      dApps.
+                    </p>
                   </blockquote>
                   <div className="project-blk-title">
-                    <h6 className="text-above-main-title">introduction</h6>
+                    <div className="text-above-main-title">INTRODUCTION</div>
                     <h3 class="main-title title-orange">About Megalot</h3>
                   </div>
-                  <p>
+                  <p className="text-justify">
                     In the world of crypto and decentralized finance, gambling
                     has always been one of the ideal use cases. Crypto
                     facilitates gambling in the form of easy to use
@@ -143,7 +156,8 @@ export default class Megalot extends Component {
                 </div>
                 <div className="img-blk">
                   <img
-                    src="/images/case-studies/megalot/megalot-laptop.svg"
+                    class="lazyload"
+                    data-src="/images/case-studies/megalot/megalot-laptop.webp"
                     alt="megalot-laptop"
                   />
                 </div>
@@ -156,12 +170,13 @@ export default class Megalot extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title">
-                    <h6 className="text-above-main-title">workflow</h6>
+                    <div className="text-above-main-title">WORKFLOW</div>
                     <h3 class="main-title title-orange">Architecture</h3>
                   </div>
                   <div className="workflow-wrap">
                     <img
-                      src="/images/case-studies/megalot/workflow.svg"
+                      class="lazyload"
+                      data-src="/images/case-studies/megalot/workflow.svg"
                       alt="Architecture"
                     />
                   </div>
@@ -175,24 +190,24 @@ export default class Megalot extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-8">
                   <div className="project-blk-title">
-                    <h6 className="text-above-main-title">
-                      Cracking challenges with our team of Blockchain experts{" "}
-                    </h6>
+                    <p className="text-above-main-title text-above-main-title_margin_bottom">
+                      CRACKING CHALLENGES WITH OUR TEAM OF BLOCKCHAIN EXPERTS{" "}
+                    </p>
                     <h3 class="main-title">Challenges</h3>
                   </div>
-                  <p>
+                  <p className="text-justify">
                     One of the main benefits of using crypto is the security
                     features which go hand in hand with it. Traditional online
                     gambling sites require the users credit card details and
                     other personal information in order to grant entry.
                   </p>
-                  <p>
+                  <p className="text-justify">
                     While this might be ok to some, there would be others who
                     value privacy especially in this age where security is
                     lacking and credit fraud and other security breaches are
                     common.
                   </p>
-                  <p>
+                  <p className="text-justify">
                     Not to mention in traditional gambling we have to trust the
                     authority to decide the winner and there is little to no
                     transparency in the selection process.
@@ -208,20 +223,20 @@ export default class Megalot extends Component {
                 <div className="col-md-5 offset-md-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">
-                        product uniqueness
-                      </h6>
+                      <div className="text-above-main-title">
+                        PRODUCT UNIQUENESS
+                      </div>
                       <h3 class="main-title title-orange">Our Solution ?</h3>
                     </div>
                     <div className="cust-order-list">
-                      <ol>
-                        <li>
+                      <ol className="text-justify">
+                        <li className="text-justify">
                           <strong>We tackled the privacy </strong>issue and
                           barrier of entry in one simple solution by
                           implementing betting using Metamask, which is an
                           ethereum based waller used by most Dapps.{" "}
                         </li>
-                        <li>
+                        <li className="text-justify">
                           <strong>The beauty of this feature </strong>is that
                           anyone with ethereum in their metamask account can
                           participate in the game with the click of a button,
@@ -229,19 +244,19 @@ export default class Megalot extends Component {
                           remaining both anonymous and not having to enter their
                           credit details .{" "}
                         </li>
-                        <li>
+                        <li className="text-justify">
                           <strong>By using Ethereum </strong>as our currency and
                           smart contracts based on it we provide the users of
                           our Dapp with 100% transparency as all the
                           transactions and code is public on the blockchain.{" "}
                         </li>
-                        <li>
+                        <li className="text-justify">
                           <strong>
                             Even the selection of winners is done on chain{" "}
                           </strong>
                           and is easy for anyone to see.{" "}
                         </li>
-                        <li>
+                        <li className="text-justify">
                           <strong>
                             We have also implemented a simple payout{" "}
                           </strong>
@@ -257,7 +272,8 @@ export default class Megalot extends Component {
                   <Slide bottom>
                     <div className="hand-img-blk">
                       <img
-                        src="/images/case-studies/megalot/megalot-hand.svg"
+                        class="lazyload"
+                        data-src="/images/case-studies/megalot/megalot-hand.svg"
                         alt="megalot-mobile"
                       />
                     </div>
@@ -273,9 +289,9 @@ export default class Megalot extends Component {
                 <div className="col-md-12">
                   <div className="project-slider-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">
-                        Design with user in mind
-                      </h6>
+                      <div className="text-above-main-title">
+                        DESIGN WITH USER IN MIND
+                      </div>
                       <h3 class="main-title title-orange">User Interface</h3>
                     </div>
 
@@ -284,40 +300,45 @@ export default class Megalot extends Component {
                         <div className="slide-div">
                           <div className="slider-img">
                             <img
-                              src="/images/case-studies/megalot/megalot-1.jpg"
-                              alt="megalot-1"
+                              class="lazyload"
+                              data-src="/images/case-studies/megalot/megalot-1.jpg"
+                              alt="design"
                             />
                           </div>
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
                             <img
-                              src="/images/case-studies/megalot/megalot-2.jpg"
-                              alt="megalot-2"
+                              class="lazyload"
+                              data-src="/images/case-studies/megalot/megalot-2.jpg"
+                              alt="design"
                             />
                           </div>
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
                             <img
-                              src="/images/case-studies/megalot/megalot-3.jpg"
-                              alt="megalot-3"
+                              class="lazyload"
+                              data-src="/images/case-studies/megalot/megalot-3.jpg"
+                              alt="design"
                             />
                           </div>
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
                             <img
-                              src="/images/case-studies/megalot/megalot-4.jpg"
-                              alt="megalot-4"
+                              class="lazyload"
+                              data-src="/images/case-studies/megalot/megalot-4.jpg"
+                              alt="design"
                             />
                           </div>
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
                             <img
-                              src="/images/case-studies/megalot/megalot-5.jpg"
-                              alt="megalot-5"
+                              class="lazyload"
+                              data-src="/images/case-studies/megalot/megalot-5.jpg"
+                              alt="design"
                             />
                           </div>
                         </div>
@@ -336,12 +357,16 @@ export default class Megalot extends Component {
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h6 className="text-above-main-title">project stack</h6>
-                        <h3 class="main-title title-orange">Technogies Used</h3>
+                        <div className="text-above-main-title">
+                          PROJECT STACK
+                        </div>
+                        <h3 class="main-title title-orange">Technologies Used</h3>
                       </div>
                       <div className="tech-desc">
-                        <h5>Solidity language on Ethereum :</h5>
-                        <p>
+                        <p className="heading5">
+                          Solidity language on Ethereum :
+                        </p>
+                        <p className="text-justify">
                           The smart contracts used in this project are built
                           using solidity language on ethereum. The front end is
                           built using HTML and JS. Web3 integration is achieved
@@ -353,37 +378,43 @@ export default class Megalot extends Component {
                         <ul>
                           <li>
                             <img
-                              src="/images/case-studies/megalot/tech-icon1.svg"
+                              class="lazyload"
+                              data-src="/images/case-studies/megalot/tech-icon1.svg"
                               alt="Django"
                             />
                           </li>
                           <li>
                             <img
-                              src="/images/case-studies/megalot/tech-icon2.svg"
+                              class="lazyload"
+                              data-src="/images/case-studies/megalot/tech-icon2.svg"
                               alt="REST"
                             />
                           </li>
                           <li>
                             <img
-                              src="/images/case-studies/megalot/tech-icon3.svg"
+                              class="lazyload"
+                              data-src="/images/case-studies/megalot/tech-icon3.svg"
                               alt="Angular"
                             />
                           </li>
                           <li>
                             <img
-                              src="/images/case-studies/megalot/tech-icon4.svg"
+                              class="lazyload"
+                              data-src="/images/case-studies/megalot/tech-icon4.svg"
                               alt="Bootstrap"
                             />
                           </li>
                           <li>
                             <img
-                              src="/images/case-studies/megalot/tech-icon5.svg"
+                              class="lazyload"
+                              data-src="/images/case-studies/megalot/tech-icon5.svg"
                               alt="Wordpress"
                             />
                           </li>
                           <li>
                             <img
-                              src="/images/case-studies/megalot/tech-icon6.svg"
+                              class="lazyload"
+                              data-src="/images/case-studies/megalot/tech-icon6.svg"
                               alt="NLP"
                             />
                           </li>
@@ -401,7 +432,7 @@ export default class Megalot extends Component {
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">WHAT`S INSIDE</h6>
+                    <p className="text-above-main-title">WHAT`S INSIDE</p>
                     <h3 class="main-title title-orange">Features</h3>
                   </div>
                 </div>
@@ -413,14 +444,15 @@ export default class Megalot extends Component {
                     <div className="col-lg-4 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/case-studies/megalot/feature1.svg"
-                          alt="feature1"
+                          class="lazyload"
+                          data-src="/images/case-studies/megalot/feature1.svg"
+                          alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Ease <br />
                           Registration
-                        </h4>
-                        <p>
+                        </p>
+                        <p className="text-justify">
                           The use of metamask as the user account removes any
                           unwanted steps in the registration process and
                           provides security and ease of access to users.
@@ -432,14 +464,15 @@ export default class Megalot extends Component {
                     <div className="col-lg-4 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/case-studies/maikeinc/feature2.svg"
-                          alt="feature2"
+                          class="lazyload"
+                          data-src="/images/case-studies/maikeinc/feature2.svg"
+                          alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Secure <br />
                           Control Panel{" "}
-                        </h4>
-                        <p>
+                        </p>
+                        <p className="text-justify">
                           High level security features in the control panel of
                           the management.
                         </p>
@@ -450,14 +483,15 @@ export default class Megalot extends Component {
                     <div className="col-lg-4 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/case-studies/maikeinc/feature3.svg"
-                          alt="feature3"
+                          class="lazyload"
+                          data-src="/images/case-studies/maikeinc/feature3.svg"
+                          alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Multi User <br />
                           Unlock System
-                        </h4>
-                        <p>
+                        </p>
+                        <p className="text-justify">
                           Multi user unlock system which involves 2 out of the 3
                           owners agreeing to access the system.{" "}
                         </p>
@@ -469,14 +503,15 @@ export default class Megalot extends Component {
                     <div className="col-lg-4 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/case-studies/maikeinc/feature4.svg"
-                          alt="feature4"
+                          class="lazyload"
+                          data-src="/images/case-studies/maikeinc/feature4.svg"
+                          alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Secure <br />
                           Admin Panel{" "}
-                        </h4>
-                        <p>
+                        </p>
+                        <p className="text-justify">
                           Access to the admin panel is provided only based on
                           the account signed in currently in metamask.
                         </p>
@@ -487,14 +522,15 @@ export default class Megalot extends Component {
                     <div className="col-lg-4 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/case-studies/maikeinc/feature6.svg"
-                          alt="feature5"
+                          class="lazyload"
+                          data-src="/images/case-studies/maikeinc/feature6.svg"
+                          alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Fair <br />
                           Selection
-                        </h4>
-                        <p>
+                        </p>
+                        <p className="text-justify">
                           Use of an external unbiased oracle to provide the
                           unique random number in order to select the winners
                           based on the provables library previously known as
@@ -511,8 +547,8 @@ export default class Megalot extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img src="/images/case-studies/maikeinc/feature4.svg" alt="" />
-                        <h4 className="text-level-5 title-black">Secure <br/>Admin Panel </h4>
+                          <img class="lazyload" data-src="/images/case-studies/maikeinc/feature4.svg" alt="" />
+                        <p className="text-level-5 title-black">Secure <br/>Admin Panel </p>
                         <p>Access to the admin panel is provided only based on the account signed in currently in metamask.</p>
                       </div>
                     </div>
@@ -520,8 +556,8 @@ export default class Megalot extends Component {
                   <Slide bottom>
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
-                        <img src="/images/case-studies/maikeinc/feature6.svg" alt="" />
-                        <h4 className="text-level-5 title-black">Fair <br/>Selection</h4>
+                          <img class="lazyload" data-src="/images/case-studies/maikeinc/feature6.svg" alt="" />
+                        <p className="text-level-5 title-black">Fair <br/>Selection</p>
                         <p>Use of an external unbiased oracle to provide the unique random number in order to select the winners based on the provables library previously known as oraclize.</p>
                       </div>
                     </div>
@@ -536,11 +572,11 @@ export default class Megalot extends Component {
               <div className="row justify-content-center">
                 <div className="col-md-10 col-lg-8 col-xl-8">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">SKILLS</h6>
+                    <div className="text-above-main-title">SKILLS</div>
                     <h3 class="main-title title-orange">Our Skillset</h3>
                   </div>
                   <div className="skillset-wrap">
-                    <p>
+                    <p className="text-justify">
                       At Hashtag Systems, We are specialized in Full-stack
                       development of blockchain based web applications. Boost
                       your efficiency, security and service with our custom
@@ -573,9 +609,9 @@ export default class Megalot extends Component {
                 <div className="col-md-8">
                   <Slide bottom>
                     <div className="project-blk-title">
-                      <h3 class="main-title title-white">
+                      <p className="main-title title-white margin_bottom">
                         Are You In Search For A Technology Partner?
-                      </h3>
+                      </p>
                       <div class="learn-more home-lm-link-vs">
                         <div className="btn-comm">
                           <a href="/contact-us">LET'S WORK TOGETHER</a>
@@ -588,9 +624,9 @@ export default class Megalot extends Component {
             </div>
           </div>
 
-          <Contact></Contact>
+          <div className="megalot_contact"><Contact></Contact></div>
         </section>
-        <Footer></Footer>
+        <div className="megalot_footer"><Footer></Footer></div>
       </div>
     );
   }

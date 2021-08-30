@@ -4,7 +4,6 @@ import React, { Component } from "react";
 import Link from "next/link";
 import $ from "jquery";
 // import './style.css';
-
 class Footer extends Component {
   constructor(props) {
     super(props);
@@ -21,8 +20,8 @@ class Footer extends Component {
         } else {
           $(".text-back-to-top").removeClass("sticky");
         }
-      })
-    };
+      });
+    }
 
     $(".text-back-to-top a").click(function () {
       $("html, body").animate(
@@ -42,7 +41,7 @@ class Footer extends Component {
           <div className="row">
             <div className="col-md-12 p-0">
               <div className="ns-back-to-top h-100 d-none d-md-none d-lg-block d-xl-block">
-                <div className="text-back-to-top ">
+                {/*<div className="text-back-to-top ">
                   back to the top{" "}
                   <span>
                     <a href="javascript:void(0);">
@@ -51,7 +50,7 @@ class Footer extends Component {
                       </button>
                     </a>
                   </span>
-                </div>
+                </div> */}
               </div>
               <div className="row footer-second-row">
                 <div className="col-lg-3 col-md-12">
@@ -68,7 +67,14 @@ class Footer extends Component {
                 </div>
                 <div className="col-lg-4 col-md-12 footer-second-row3">
                   <div className="form-inline form-inline-bottom my-2 my-lg-0">
-                    <button style={{border:"2px solid white",background: "#2f383c" , borderRadius:"10px"}} className="btn-transparent btn btn-outline-success my-2 my-sm-0">
+                    <button
+                      style={{
+                        border: "2px solid white",
+                        background: "#2f383c",
+                        borderRadius: "10px",
+                      }}
+                      className="btn-transparent btn btn-outline-success my-2 my-sm-0"
+                    >
                       <Link href="/">
                         <a> En </a>
                       </Link>
@@ -141,12 +147,14 @@ class Footer extends Component {
                       target="_blank"
                     >
                       <img
-                        src="https://topwebdevelopmentcompanies.com/badges/top-web-development-companies.png"
+                        // src="https://topwebdevelopmentcompanies.com/badges/top-web-development-companies.png"
+                        src="/images/Footer/top-web-development-companies.png"
                         alt="web development companies sunnyvale"
                         title="Web Development Companies Sunnyvale"
                         style={{ height: "100px", width: "100px" }}
                       />
                     </a>
+                    Y
                   </div>
                 </div>
 
@@ -155,7 +163,7 @@ class Footer extends Component {
                   <ul className="footer-links">
                     <li>
                       <Link href="/" className="footer-nav">
-                        <a > Home </a>
+                        <a> Home </a>
                       </Link>
                     </li>
                     <li>
@@ -164,7 +172,7 @@ class Footer extends Component {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/sevices" className="footer-nav">
+                      <Link href="/services" className="footer-nav">
                         <a>Service </a>
                       </Link>
                     </li>
@@ -197,7 +205,7 @@ class Footer extends Component {
                     <li>
                       {" "}
                       <Link
-                        href="/sevices/database-and-backend"
+                        href="/services/database-and-backend"
                         className="footer-nav"
                       >
                         <a> DB & Backend Development </a>
@@ -206,7 +214,7 @@ class Footer extends Component {
                     <li>
                       {" "}
                       <Link
-                        href="/sevices/blockchain-development"
+                        href="/services/blockchain-development"
                         className="footer-nav"
                       >
                         <a> Blockchain Development </a>
@@ -216,7 +224,7 @@ class Footer extends Component {
                     {/*<li><Link to="/services#service-mob" className="footer-nav">Mobile App Development</Link> </li>*/}
                     <li>
                       <Link
-                        href="/sevices/design-and-prototyping"
+                        href="/services/design-and-prototyping"
                         className="footer-nav"
                       >
                         <a> Design & Prototyping </a>
@@ -224,7 +232,7 @@ class Footer extends Component {
                     </li>
                     <li>
                       <Link
-                        href="/sevices/ui-development"
+                        href="/services/ui-development"
                         className="footer-nav"
                       >
                         <a> UI Development </a>
@@ -232,7 +240,7 @@ class Footer extends Component {
                     </li>
                     <li>
                       <Link
-                        href="/sevices/wordpress-development"
+                        href="/services/wordpress-development"
                         className="footer-nav"
                       >
                         <a> CMS – WordPress </a>
@@ -244,7 +252,7 @@ class Footer extends Component {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/sevices/filemaker" className="footer-nav">
+                      <Link href="/services/filemaker" className="footer-nav">
                         <a> FileMaker Pro Development </a>
                       </Link>
                     </li>
@@ -318,6 +326,10 @@ class Footer extends Component {
                 <p className="copyright-text">
                   Copyright &copy; 2020 Hashtag Systems Inc. All Rights
                   Reserved.
+                  <a className="pl-3" href="/sitemap.html">
+                    {" "}
+                    Sitemap
+                  </a>
                 </p>
               </div>
             </div>

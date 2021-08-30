@@ -6,7 +6,14 @@
     }
 
 }
-
+@media(max-width:290px){
+    .section-2-row{
+        width: 350px !important;
+    }
+    .about-third-section , .about__footer{
+        width: 350px !important;
+    }
+}
 @media(max-width: 767px) {
     .about-third-section {
         background: #F2F2F2 !important;
@@ -114,7 +121,7 @@
 }
 
 .about-third-section {
-    background-image: url(/images/about/teambg.svg);
+    /* background-image: url(/images/about/teambg.png); */
     min-height: 895px;
     background-color: #fff;
     background-repeat: no-repeat;
@@ -151,4 +158,8 @@
 
 
 
+}
+.ab-v-right{
+    position: relative;
+    bottom: 20px;
 }

@@ -1,4 +1,19 @@
 /*  media query */
+@media(max-width:290px){
+    .shopifyBg{
+        width: 350px !important;
+    }
+    .shopify-section-3{
+        width: 350px !important;
+        margin-bottom: 332px;
+    }
+    .shopify-section-4-main {
+        width: 350px !important;
+    }
+    .shopify-benifits-section , .shopify_contact , .shopify_footer{
+        width: 350px !important;
+    }
+}
 
 @media (min-width: 2800px) {
     #shopify-main .shopify-section-4 {
@@ -9,6 +24,7 @@
     #shopify-main .content-four-section {
 
         margin-top: 600px !important;
+        
     }
 
     .shopify-banner-content {
@@ -58,6 +74,7 @@
 
     .shopify-section-4 {
         min-height: 1021px;
+        
 
     }
 
@@ -65,9 +82,10 @@
 
         margin-top: 312px !important;
     }
-
+   
     .shopify-main-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
 
@@ -100,7 +118,7 @@
     }
 
     #shopify-main .content-four-section {
-        margin-top: 270px;
+        /* margin-top: 270px; */
     }
 }
 
@@ -130,7 +148,12 @@
 }
 
 
-
+@media screen and (max-width:1024) {
+    .content-four-section .text-above-main-title .shopify-title{
+       
+    }
+    
+}
 
 @media only screen and (min-width:1679px) and (max-width:1699px) {
     #shopify-main .shopify-section-4 .content-four-section {
@@ -171,6 +194,7 @@
 @media(max-width: 1022px) {
     .shopify-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
 
@@ -181,6 +205,7 @@
 
     .shopify-sub-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: 500;
         font-size: 24px;
@@ -214,6 +239,7 @@
 
     .shopify-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
         line-height: 100%;
@@ -223,6 +249,7 @@
 
     .shopify-sub-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -311,6 +338,7 @@
 @media(max-width: 479px) {
     .shopify-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
         line-height: 100%;
@@ -320,6 +348,7 @@
 
     .shopify-sub-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -346,6 +375,7 @@
 @media(max-width: 319px) {
     .shopify-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: bold;
 
@@ -356,6 +386,7 @@
 
     .shopify-sub-title {
         font-family: Montserrat;
+font-display: swap;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -384,7 +415,11 @@
         font-size: 20px !important;
     }
 }
-
+@media(min-width:2560px) and (max-width:2880px){
+    .shopify-banner-frame{
+        height: 550px !important;
+    }
+}
 @media only screen and (min-width:1921px) and (max-width:2499px) {
     .shopify-content-box {
         font-size: 30px !important;
@@ -399,7 +434,7 @@
     }
 }
 
-@media only screen and (min-width:2500px) {
+@media (min-width:2500px) {
     .shopify-content-box {
         font-size: 40px !important;
     }
@@ -486,6 +521,7 @@
 
     .shopify-section-4-main {
         margin-top: -100px;
+      
     }
 
     .padding-letus {
@@ -540,6 +576,9 @@
 
     #shopify-main .content-four-section {
         margin-top: 95px !important;
+        padding-top: 130px !important;
+        padding-bottom: 130px !important;
+      
 
     }
 

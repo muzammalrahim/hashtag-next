@@ -12,12 +12,11 @@ import $ from "jquery";
 import * as config from "../../config.js";
 import queryString from "query-string";
 import Flip from "react-reveal/Reveal";
-import Link from 'next/link'
-
+import Link from "next/link";
+import BlogPostFeatured from "../../components/post-featured";
 require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
-
 export async function getServerSideProps() {
   let data = [];
 
@@ -113,8 +112,7 @@ export default class Blog extends Component {
     var page = this.state.page;
     var keyword = this.state.keyword;
 
-    Axios
-      .get(url, { params: { page: page, keyword: keyword } })
+    Axios.get(url, { params: { page: page, keyword: keyword } })
       .then((response) => {
         const allPosts = this.state.allPosts;
 
@@ -127,10 +125,10 @@ export default class Blog extends Component {
             allPosts: allPosts,
             hasMoreItems: true,
             page: page + 1,
+            no_items: "",
           });
         } else {
-          if (allPosts.length == 0) {
-            console.log("No posts found.");
+          if (allPosts.length === 0) {
             this.setState({
               hasMoreItems: false,
               no_items: "No posts found.",
@@ -138,19 +136,17 @@ export default class Blog extends Component {
           } else {
             this.setState({
               hasMoreItems: false,
+              no_items: "",
             });
           }
         }
       })
       .catch((error) => {
-        // console.log(error.response);
-        console.log("API error.");
         toast.error("Something went wrong.");
       });
   }
 
   render() {
-    
     const loader = (
       <div className="loader">
         <div className="spinner">
@@ -165,23 +161,17 @@ export default class Blog extends Component {
 
     var post_lists = [];
     this.state.allPosts.map((post, index) => {
-      post.image = post.image.replace('http://','https://');
+      post.image = post.image.replace("http://", "https://");
       post_lists.push(
         <Flip bottom>
           <div className="card" key={index}>
-            <h5 className="card-title text-level-4 title-orange">
-              <Link
-                href={"/blogs/single/[slug]"}
-                as={"/blogs/single/" + post.url}
-              >
+            <p5 className="card-title text-level-4 title-orange">
+              <Link href={"/blogs/[slug]"} as={"/blogs/" + post.url}>
                 {post.title}
               </Link>
-            </h5>
+            </p5>
             <div className="blog-img">
-              <Link
-                href={"/blogs/single/[slug]"}
-                as={"/blogs/single/" + post.url}
-              >
+              <Link href={"/blogs/[slug]"} as={"/blogs/" + post.url}>
                 <div
                   className="blog-thumb"
                   style={{
@@ -196,8 +186,10 @@ export default class Blog extends Component {
               <div className="card-img-overlay">
                 {post.categories.map((cat, i) => {
                   return (
-                    <Link className="btn btn-light btn-sm"
-                      href={"/blogs/category/[slug]"} className="btn btn-light btn-sm"
+                    <Link
+                      className="btn btn-light btn-sm"
+                      href={"/blogs/category/[slug]"}
+                      className="btn btn-light btn-sm"
                       href={"/blogs/category/" + cat.slug}
                       className="btn btn-light btn-sm"
                       key={i}
@@ -209,14 +201,12 @@ export default class Blog extends Component {
               </div>
             </div>
             <div className="card-body">
-              <h4 className="card-title text-level-4 title-orange">
-                <Link
-                  href={"/blogs/single/[slug]"}
-                  as={"/blogs/single/" + post.url}
-                >
+              <p4 className="card-title text-level-4 title-orange">
+                <Link href={"/blogs/[slug]"} as={"/blogs/" + post.url}>
                   {post.title}
                 </Link>
-              </h4>
+              </p4>
+              <br />
               <small className="text-muted cat text-above-main-title author-blk">
                 <i className="fa fa-hashtag" aria-hidden="true"></i>{" "}
                 {post.author}
@@ -224,8 +214,8 @@ export default class Blog extends Component {
               <p className="card-text">{post.excerpt}</p>
               <span className="cta-link">
                 <Link
-                  href={"/blogs/single/[slug]"}
-                  as={"/blogs/single/" + post.url}
+                  href={"/blogs/[slug]"}
+                  as={"/blogs/" + post.url}
                   className="shopify-sub-title"
                 >
                   <a className="shopify-sub-title">
@@ -247,6 +237,7 @@ export default class Blog extends Component {
           title={data.data.title}
           description={data.data.description}
           keywords={data.data.keywords}
+          canonical_tags={data.data.canonical_tags}
         ></Header>
         <section class="content-container">
           <div className="container-fluid service-bg p-0 m-0 ">
@@ -261,10 +252,10 @@ export default class Blog extends Component {
                       <h1 className="main-title title-white d-block">Blogs</h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents service-content-box pl-4">
-                        We are seeking brilliant minds to join our dynamic team
-                        and make it even better.
-                      </p>
+                      <h2 className="bold-contents service-content-box pl-4">
+                        Highly experienced digital solutions company provide
+                        best professional Web Solutions.
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -310,7 +301,8 @@ export default class Blog extends Component {
                               name="s"
                               id="blog-search"
                               placeholder="Search"
-                              className="placeholder"
+                              className=""
+                              placeholder="Search for..."
                               value={this.state.search_val}
                               onChange={this.handleChange}
                             />
@@ -321,19 +313,22 @@ export default class Blog extends Component {
                               ></i>
                             </button>
                           </div>
+            
                         </form>
                       </div>
                       <BlogRecentPosts></BlogRecentPosts>
                       <BlogCategories></BlogCategories>
+                      <BlogPostFeatured />
                     </aside>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          
         </section>
         <div className="mob-visible"></div>
-        <Footer></Footer>
+        <div className="blog__footer"><Footer></Footer></div>
       </div>
     );
   }

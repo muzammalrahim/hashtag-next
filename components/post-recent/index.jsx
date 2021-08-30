@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { ToastContainer, toast, Slide } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import $ from 'jquery';
 import axios from 'axios';
 import * as config from '../../config.js';
 
@@ -34,7 +33,6 @@ export default class BlogRecentPosts extends Component {
     }
     axios.get(config.myConfig.apiUrl+'blog/posts/recent', {params: {category: category}})
     .then((response) => {
-      // console.log(response.data);
       const recentPosts = response.data.data.posts;
       this.setState({ 
         recentPosts: recentPosts
@@ -50,12 +48,12 @@ export default class BlogRecentPosts extends Component {
   render() {
     return (
       <div id="recent-posts-4" className="widget widget_recent_entries posts_holder">    
-        <h5 className="title-level-6 title-level-mobile text-left b-recent-posts">Recent Posts</h5>    
+        <h3 className="title-level-6 title-level-mobile text-left b-recent-posts">Recent Posts</h3>    
         <ul>
           {this.state.recentPosts.map((post, index) => { 
             return(
               <li key={index}>
-                <a href={"/blogs/single/"+post.url}>{post.title}</a>
+                <a href={"/blogs/"+post.url}>{post.title}</a>
               </li>
             )
           })}

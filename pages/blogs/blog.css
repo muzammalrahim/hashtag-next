@@ -24,10 +24,10 @@ a{
   -moz-box-shadow:    0px 4px 15px rgba(113, 108, 108, 0.62);
   box-shadow:        0px 4px 15px rgba(113, 108, 108, 0.62);
 }
-.blog-list .card h5, .blog-list .card .card-body .cta-link{
+.blog-list .card p5, .blog-list .card .card-body .cta-link{
   display: none;
 }
-.blog-list .card h4{
+.blog-list .card p4{
   font-size: 34px;
   line-height: 44px;
 }
@@ -104,7 +104,7 @@ a{
   height: auto;
 }*/
 .blog-list .card:first-child .blog-thumb{
-  height: 650px;
+  height: 700px;
 }
 
 .blog-img{
@@ -120,8 +120,8 @@ a{
 .blog-thumb{
   width: 100%;
   height: 370px;
-  background-size: cover;
-  background-position: center center;
+  background-size: contain;
+  background-position: top center;
   background-repeat: no-repeat;
 }
 
@@ -135,6 +135,15 @@ a{
 .blog-img .card-img-overlay a{
   display: inline-block;
   margin-right: 5px;
+}
+@media(max-width:290px){
+  .blog-section{
+    width:350px !important; 
+  }
+  .blog__footer{
+    width:350px !important; 
+    
+  }
 }
 
 
@@ -165,19 +174,22 @@ a{
 {
 	    font-family: fontAwesome;
 	        color: #FF6B00;
+          font-display: swap;
+
 }
 .fa-arrow-right:before
 {
 	font-family: fontAwesome;
 	        color: #000;
 	        content: "\f178";
+          font-display: swap;
 }
 
 .blog-sidebar{
   float: left;
   width: 100%;
   padding-left: 15%;
-  position: sticky;
+  /* position: sticky; */
   top: 70px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -212,6 +224,7 @@ a{
     background-color: transparent;
     font-size: 14px;
     font-family: inherit;
+    font-display: swap;
     margin: 0;
     padding: 0px 40px 0 15px;
     width: 100% !important;
@@ -295,6 +308,7 @@ aside ul li
 aside ul li a
 {
 	    font-family: Montserrat;
+      font-display: swap;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -392,6 +406,11 @@ position: relative;
 @media(min-width: 1921px) {
   /*.blog-img img{height: 400px;}*/
   .blog-list .card:first-child .blog-thumb{height: 700px;}
+  .blog-thumb{height: 440px;}
+}
+@media(min-width: 2500px) {
+  /*.blog-img img{height: 400px;}*/
+  .blog-list .card:first-child .blog-thumb{height: 1050px;}
   .blog-thumb{height: 440px;}
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {

@@ -3,7 +3,7 @@ import Header from "../../components/header/index.jsx";
 import Footer from "../../components/footer/index.jsx";
 import Contact from "../../components/contacts/index.jsx";
 // import Slider from "../../components/slider/index.jsx";
-import Wpsliderv2 from '../../components/wordpress-sliderv2/index.jsx';
+import Wpsliderv2 from "../../components/wordpress-sliderv2/index.jsx";
 import DocumentMeta from "react-document-meta";
 import Link from "next/link";
 
@@ -43,36 +43,38 @@ export default class Shopify extends Component {
     };
   }
   render() {
-   
     const { data } = this.state;
 
     const latestWork = [
-        {
-          id: 1,
-          src: "../images/shopify/together-home.jpg",
-          alt: "slider1",
-        },{
-          id: 2,
-          src: "../images/shopify/warped-table-s.jpg",
-          alt: "slider2",
-        },{
-          id: 3,
-          src: "../images/shopify/shopurbanalchemy.jpg",
-          alt: "slider3",
-        },{
-          id: 4,
-          src: "../images/shopify/berrybay.jpg",
-          alt: "slider4",
-        }
-      ];
+      {
+        id: 1,
+        src: "/images/shopify/together-home.jpg",
+        alt: "shopify themes",
+      },
+      {
+        id: 2,
+        src: "/images/shopify/warped-table-s.jpg",
+        alt: "shopify themes",
+      },
+      {
+        id: 3,
+        src: "/images/shopify/shopurbanalchemy.jpg",
+        alt: "shopify e-commerce",
+      },
+      {
+        id: 4,
+        src: "/images/shopify/berrybay.jpg",
+        alt: "shopify website",
+      },
+    ];
 
     return (
       <div className="shopify-main" id="shopify-main">
-
         <Header
           title={data.title}
           description={data.description}
           keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
         <section class="content-container">
           <div className="container-fluid shopifyBg p-0 m-0 ">
@@ -81,31 +83,31 @@ export default class Shopify extends Component {
                 <div className="container ">
                   <div className="row justify-content-center shopify-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <p className="sub-text-above-main-title title-white">
+                      <div className="sub-text-above-main-title title-white">
                         E-commerce platform{" "}
-                      </p>
+                      </div>
                       <h1 className="main-title  title-white d-block">
                         Shopify
                       </h1>
                       <div>
                         <img
                           id="shopify-page-experts-logo"
-                          src="images/shopify/shopify-experts.svg"
+                          src="/images/shopify/shopify-experts.svg"
                           alt="shopify-experts"
                         />
                         <img
                           id="shopify-page-partner-logo shopify-logo-left"
-                          src="images/shopify/shopify-partner.svg"
+                          src="/images/shopify/shopify-partner.svg"
                           alt="shopify-partner"
                         />
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents shopify-content-box pl-4">
+                      <h2 className="bold-contents shopify-content-box pl-4 text-justify">
                         We Design & Set-Up Beautiful E-commerce Store in
                         Shopify. We are official Shopify Partners and Shopify
                         Experts.
-                      </p>
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -117,9 +119,9 @@ export default class Shopify extends Component {
             {/* section 2 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12">
-                <h1 className="main-title title-orange">
+                <h3 className="main-title title-orange">
                   Let us help you with
-                </h1>
+                </h3>
                 <span className="shopify-sub-title">
                   <span>
                     Theme Customization | Store Setup | Migration to Shopify
@@ -130,61 +132,60 @@ export default class Shopify extends Component {
                   </span>
                 </span>
                 <div className="shopify-content mt-4">
-                  <p>
+                  <p className="text-justify">
                     <span className="d-xxl-block">
                       We are official Shopify setup experts and Shopify Partners
                       from
                     </span>
 
-                    <span className="d-xxl-block">
+                    <span className="d-xxl-block text-justify">
                       California. We specialize in the design & development of
                       custom{" "}
                     </span>
-                    <span className="d-xxl-block">
+                    <span className="d-xxl-block text-justify">
                       e-commerce experiences. Our team can partner with you to
                       build a
                     </span>
-                    <span className="d-xxl-block">
+                    <span className="d-xxl-block text-justify">
                       {" "}
                       beautiful online store for your business. Let us assist
                       you every step
                     </span>
-                    <span className="d-xxl-block">
+                    <span className="d-xxl-block text-justify">
                       {" "}
                       of the way and grow your brand for the long-term.
                     </span>
                   </p>
 
-                 
                   <div className="contact-form-link">
                     <Link href="/contact-us">
                       <a className="nav-link p-0">
-                      {" "}
-                      <div className="btn-group form-btn">
-                        <button
-                          type="button"
-                          className="btn form-button font-12 font-bold"
-                        >
-                           LET'S TALK{" "}
-                        </button>
-                        <button
-                          type="button"
-                          className="btn form-button-child px-3"
-                        >
-                          <span className="">
-                            <span className="form-btn-arrow btn-right-arrow"></span>
-                          </span>
-                        </button>
-                        <div className="dropdown-menu"></div>
-                      </div>
-					  </a>
-            </Link>
+                        {" "}
+                        <div className="btn-group form-btn">
+                          <button
+                            type="button"
+                            className="btn form-button font-12 font-bold"
+                          >
+                            LET'S TALK{" "}
+                          </button>
+                          <button
+                            type="button"
+                            className="btn form-button-child px-3"
+                          >
+                            <span className="">
+                              <span className="form-btn-arrow btn-right-arrow"></span>
+                            </span>
+                          </button>
+                          <div className="dropdown-menu"></div>
+                        </div>
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 text-center ">
                 <img
-                  src="images/shopify/shopify-buy-now-banner.svg"
+                  src="/images/shopify/shopify-buy-now-banner.svg"
                   alt="shopify-image"
                   className="img-fluid shopify-image mobile-image-border storefront-img"
                 />
@@ -196,65 +197,66 @@ export default class Shopify extends Component {
             <div className="row">
               <div class="col-12 shopify-sec-3-content">
                 <p class="text-above-main-title text-center">OUR EXPERIENCE</p>
-                <h1 class="main-title title-orange text-center">
+                <h3 class="main-title title-orange text-center">
                   Latest Works
-                </h1>
+                </h3>
               </div>
             </div>
             {/*section 3 */}
 
             {/* <Slider> </Slider>*/}
-             <Wpsliderv2 images={latestWork}> </Wpsliderv2>
+            <Wpsliderv2 images={latestWork}> </Wpsliderv2>
           </div>
 
-          <div className="shopify-section-4-main">
-            <div className="container-fluid shopify-section-4">
+          <div className="shopify-section-4-main ">
+            <div className="container-fluid shopify-section-4 ">
               <div className="container">
                 {/*section 4 */}
 
-                <div className="row justify-content-center  pl-3 pr-3">
-                  <div className="col-12 col-lg-5 col-xxl-5 col-md-12 content-four-section">
-                    <p className="text-above-main-title title-white">
+                <div className="row justify-content-center  pl-3 pr-3 pb-5 ">
+                  <div className="col-12 col-lg-5 col-xxl-5 col-md-12 content-four-section pb-5 mb-5">
+                    <div className="text-above-main-title title-white">
                       THE BEST E-COMMERCE PLATFORM
-                    </p>
+                    </div>
 
-                    <h1 className="shopify-title">
+                    <h3 className="shopify-title">
                       <span className="main-title title-white d-block">
                         Why Shopify?
                         <br />
                         <img
-                          src="images/shopify/shopify-quoute.svg"
-                          alt="quote"
+                          src="/images/shopify/shopify-quoute.svg"
+                          alt="shopify quote"
                         />
                       </span>
-                    </h1>
+                    </h3>
 
                     <p class="hash-content-col title-white why-us-hash-content">
-                      <p>
+                      <p className="text-justify">
                         We recommend Shopify because its world leading
                         E-Commerce platform that's great in performance and easy
                         to manage. We are official Shopify setup experts and
                         Shopify Partners from California.
                       </p>
                     </p>
-                     <div className="contact-form-link">
-                      <Link href="/contact-us" className="contact-form-link"><a>
-                        <div className="btn-group">
-                          <button
-                            type="button"
-                            className="btn btn-hashtag font-bold"
-                          >
-                            LET'S TALK{" "}
-                          </button>
-                          <button type="button" className="btn  px-3">
-                            <span className="">
-                              <span className="hashtag-arrow btn-right-arrow"></span>
-                            </span>
-                          </button>
-                          <div className="dropdown-menu"></div>
-                        </div>
-						</a>
-            </Link>
+                    <div className="contact-form-link">
+                      <Link href="/contact-us" className="contact-form-link">
+                        <a>
+                          <div className="btn-group">
+                            <button
+                              type="button"
+                              className="btn btn-hashtag font-bold"
+                            >
+                              LET'S TALK{" "}
+                            </button>
+                            <button type="button" className="btn  px-3">
+                              <span className="">
+                                <span className="hashtag-arrow btn-right-arrow"></span>
+                              </span>
+                            </button>
+                            <div className="dropdown-menu"></div>
+                          </div>
+                        </a>
+                      </Link>
                     </div>
                   </div>
 
@@ -270,20 +272,20 @@ export default class Shopify extends Component {
           <div className="container shopify-benifits-section">
             <div className="row">
               <div class="col-12">
-                <p class="text-above-main-title text-center">
+                <div class="text-above-main-title text-center">
                   PERFECT SOLUTION FOR BUSINESS
-                </p>
-                <h1 class="main-title title-orange text-center">
+                </div>
+                <h3 class="main-title title-orange text-center">
                   Shopify Benefits
-                </h1>
+                </h3>
               </div>
             </div>
             {/* section 1 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12">
-                <h1 className="shopify-title text-level-4">
+                <p className="shopify-title text-level-4">
                   Beautiful Storefront
-                </h1>
+                </p>
                 <div className="shopify-content mt-4">
                   <p>
                     <ul className="shopify-benifits-list">
@@ -296,7 +298,7 @@ export default class Shopify extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 text-center ">
                 <img
-                  src="images/shopify/storefront.svg"
+                  src="/images/shopify/storefront.svg"
                   alt="storefront"
                   className="img-fluid shopify-image mobile-image-border"
                 />
@@ -306,12 +308,12 @@ export default class Shopify extends Component {
             {/* section 2 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12  order-2 order-lg-12 order-md-2 order-sm-2">
-                <h1 className="shopify-title text-level-4">
+                <p className="shopify-title text-level-4">
                   Great Shopping Experience
-                </h1>
+                </p>
                 <div className="shopify-content mt-4">
                   <p>
-                    <ul className="shopify-benifits-list">
+                    <ul className="shopify-benifits-list text-justify">
                       <li>Highly secure transactions</li>
                       <li>Integrated shipping rates</li>
                       <li>Multiple payment options</li>
@@ -323,7 +325,7 @@ export default class Shopify extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 order-3 text-center ">
                 <img
-                  src="images/shopify/experience.svg"
+                  src="/images/shopify/experience.svg"
                   alt="shopping-experience"
                   className="img-fluid shopify-image mobile-image-border"
                 />
@@ -333,13 +335,13 @@ export default class Shopify extends Component {
             {/* section 3 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12">
-                <h1 className="shopify-title text-level-4">
+                <p className="shopify-title text-level-4">
                   Professional
                   <br /> Admin Dashboard
-                </h1>
+                </p>
                 <div className="shopify-content mt-4">
                   <p>
-                    <ul className="shopify-benifits-list">
+                    <ul className="shopify-benifits-list text-justify">
                       <li>Easy product management</li>
                       <li>Customer database</li>
                       <li>Easy order management and refunds</li>
@@ -351,7 +353,7 @@ export default class Shopify extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 text-center ">
                 <img
-                  src="images/shopify/dashboard.svg"
+                  src="/images/shopify/dashboard.svg"
                   alt="dashboard"
                   className="img-fluid shopify-image mobile-image-border"
                 />
@@ -361,12 +363,12 @@ export default class Shopify extends Component {
             {/* section 4 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12  order-2 order-lg-12 order-md-2 order-sm-2">
-                <h1 className="shopify-title text-level-4">
+                <p className="shopify-title text-level-4">
                   Sales and Marketing
-                </h1>
+                </p>
                 <div className="shopify-content mt-4">
                   <p>
-                    <ul className="shopify-benifits-list">
+                    <ul className="shopify-benifits-list text-justify">
                       <li>Highly optimized and Google-Ready</li>
                       <li>Discounts and gift card features</li>
                       <li>Sell on social media</li>
@@ -377,7 +379,7 @@ export default class Shopify extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 order-3 text-center">
                 <img
-                  src="images/shopify/marketing.svg"
+                  src="/images/shopify/marketing.svg"
                   alt="sales"
                   className="img-fluid shopify-image mobile-image-border"
                 />
@@ -387,10 +389,10 @@ export default class Shopify extends Component {
             {/* section 5 */}
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               <div className="col-lg-5 col-md-12 col-sm-12">
-                <h1 className="shopify-title text-level-4">High Performance</h1>
+                <p className="shopify-title text-level-4">High Performance</p>
                 <div className="shopify-content mt-4">
                   <p>
-                    <ul className="shopify-benifits-list">
+                    <ul className="shopify-benifits-list text-justify">
                       <li>Faster than any other E-Commerce store</li>
                       <li>Unlimited data bandwidth</li>
                       <li>99.98% uptime guaranteed</li>
@@ -401,7 +403,7 @@ export default class Shopify extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 text-center ">
                 <img
-                  src="images/shopify/perfomance.svg"
+                  src="/images/shopify/perfomance.svg"
                   alt="performance"
                   className="img-fluid shopify-image mobile-image-border"
                 />
@@ -412,12 +414,12 @@ export default class Shopify extends Component {
             <div className="row justify-content-center mt-5 section-2-row pl-3 pr-3">
               {/* <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-12 order-md-12 order-sm-12"> */}
               <div className="col-lg-5 col-md-12 col-sm-12  order-2 order-lg-12 order-md-2 order-sm-2">
-                <h1 className="shopify-title text-level-4">
+                <p className="shopify-title text-level-4">
                   Enjoy the FREE Admin App
-                </h1>
+                </p>
                 <div className="shopify-content mt-4">
                   <p>
-                    <ul className="shopify-benifits-list">
+                    <ul className="shopify-benifits-list text-justify">
                       <li>Run business on the go</li>
                       <li>Manage orders</li>
                       <li>Manage inventory</li>
@@ -429,7 +431,7 @@ export default class Shopify extends Component {
               </div>
               <div className="col-lg-5 col-md-12 col-sm-12 order-3 text-center ">
                 <img
-                  src="images/shopify/admin-app.svg"
+                  src="/images/shopify/admin-app.svg"
                   alt="admin_app"
                   className="img-fluid shopify-image mobile-image-border"
                 />
@@ -439,9 +441,9 @@ export default class Shopify extends Component {
 
           {/* contact form */}
 
-          <Contact></Contact>
+         <div className="shopify_contact"> <Contact></Contact></div>
         </section>
-        <Footer></Footer>
+        <div className="shopify_footer"><Footer></Footer></div>
       </div>
     );
   }

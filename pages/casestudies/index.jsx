@@ -1,18 +1,32 @@
 import React, { Component, useEffect } from "react";
-import Header from "../../components/header/index.jsx";
-import Footer from "../../components/footer/index.jsx";
+
 // import Underconstruction from '../../../components/under-construction/index.jsx';
-import Contact from "../../components/contacts/index.jsx";
 import DocumentMeta from "react-document-meta";
 // import $ from "jquery";
 import axios from "axios";
 import * as config from "../../config.js";
-import Slide from "react-reveal/Reveal";
 
+import Link from "next/link";
+
+import dynamic from "next/dynamic";
 require("typeface-montserrat");
 // require('paroller.js');
 import Axios from "axios";
 import https from "https";
+
+import "lazysizes";
+// import a plugin
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
+
+const Slide = dynamic(() => import("react-reveal/Reveal"));
+const Contact = dynamic(() => import("../../components/contacts/index.jsx"));
+
+const Header = dynamic(() => import("../../components/header/index.jsx"), {
+  // ssr: false,
+});
+const Footer = dynamic(() => import("../../components/footer/index.jsx"), {
+  ssr: false,
+});
 
 export async function getServerSideProps() {
   let data = [];
@@ -27,7 +41,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "casestudies",
       },
     })
     .then((response) => {
@@ -75,16 +89,16 @@ export default class Speakinc extends Component {
   }
 
   componentDidMount() {
-      window.jQuery = require('jquery');
-      window.paroller = require('paroller.js');
+    window.jQuery = require("jquery");
+    window.paroller = require("paroller.js");
 
-      window.jQuery(".parallax-block").paroller({
-          factor: 0.2,
-          factorMd: 0.2,
-          factorSm: 0.2,
-          type: 'background',
-          direction: 'vertical'
-      });
+    window.jQuery(".parallax-block").paroller({
+      factor: 0.2,
+      factorMd: 0.2,
+      factorSm: 0.2,
+      type: "background",
+      direction: "vertical",
+    });
     // $('.parallax-block').paroller({
     // factor: 0.2,
     // factorMd: 0.2,
@@ -95,27 +109,15 @@ export default class Speakinc extends Component {
   }
 
   render() {
-    const meta = {
-      title: "Case studies - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
     const { data } = this.state;
     return (
       <div className="case-study-list" id="case-study-list">
-        {console.log(meta)}
-        {/* <DocumentMeta {...meta} /> */}
         <Header
-          title={meta.title}
-          description="hashtag"
-          keywords={meta?.name?.keywords}
+          title={data.title}
+          description={data.description}
+          keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
-
         {/*<Underconstruction></Underconstruction>*/}
         <section className="content-container">
           <div className="listing-banner">
@@ -125,10 +127,15 @@ export default class Speakinc extends Component {
                   <Slide bottom>
                     <div className="list-banner-text">
                       <h1>
-                        <span className="title-orange">Case Studies</span>{" "}
-                        <br />
-                        We Let Our Portfolio Do The Talk!
+                        <span className="title-orange case_Studies">
+                          Case Studies
+                        </span>{" "}
                       </h1>
+                      <br />
+                      <h2 className="case_para">
+                        We Let Our Portfolio Do The Talk!
+                      </h2>
+
                       <div className="btn-comm">
                         <a href="#contact">Say Hello</a>
                       </div>
@@ -144,7 +151,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-maikeinc-background.png') center -32px / cover repeat",
+                  "url('/images/case-studies/Parallax-maikeinc-background.webp') center -32px / cover repeat",
                 backgroundSize: "cover",
               }}
             >
@@ -154,10 +161,10 @@ export default class Speakinc extends Component {
                     <Slide right>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/maikeinc">Maike Inc</a>
+                          <Link href="/casestudies/maikeinc">Maike Inc</Link>
                         </h3>
                         <span>Full Stack Development</span>
-                        <p>
+                        <p className="text-justify">
                           Maike inc takes the pain out of product research by
                           providing the consumer with the results of hundreds of
                           products and thousands of customer reviews in one easy
@@ -168,7 +175,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/maikeinc/tech-icon7.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/maikeinc/tech-icon7.svg"
                                   alt="Python"
                                 />
                               </div>
@@ -176,7 +184,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/maikeinc/tech-icon1.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/maikeinc/tech-icon1.svg"
                                   alt="Django"
                                 />
                               </div>
@@ -184,7 +193,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/maikeinc/tech-icon3.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/maikeinc/tech-icon3.svg"
                                   alt="Angular"
                                 />
                               </div>
@@ -192,7 +202,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/maikeinc/tech-icon4.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/maikeinc/tech-icon4.svg"
                                   alt="Bootstrap"
                                 />
                               </div>
@@ -200,7 +211,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/speakinc/tech-icon2.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/speakinc/tech-icon2.svg"
                                   alt="MySQL"
                                 />
                               </div>
@@ -210,7 +222,7 @@ export default class Speakinc extends Component {
                         <a href="/casestudies/maikeinc">
                           Learn more{""}
                           <i
-                            className="fa fa-chevron-right"
+                            className="fa fa-chevron-right ml-1"
                             aria-hidden="true"
                           ></i>
                         </a>
@@ -227,8 +239,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-speakinc-Background.png') center -17px / cover repeat"
-              
+                  "url('/images/case-studies/Parallax-speakinc-Background.webp') center -17px / cover repeat",
               }}
             >
               <div className="container">
@@ -237,10 +248,10 @@ export default class Speakinc extends Component {
                     <Slide left>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/speakinc">Speakinc</a>
+                          <Link href="/casestudies/speakinc">Speakinc</Link>
                         </h3>
                         <span>Full Stack Development</span>
-                        <p>
+                        <p className="text-justify">
                           SpeakInc is a No 1 US based speakers booking platform,
                           which helps in searching and booking keynote speakers
                           or entertainers for different conventions, conferences
@@ -251,7 +262,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/speakinc/tech-icon7.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/speakinc/tech-icon7.svg"
                                   alt="Python"
                                 />
                               </div>
@@ -259,7 +271,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/speakinc/tech-icon1.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/speakinc/tech-icon1.svg"
                                   alt="Django"
                                 />
                               </div>
@@ -267,7 +280,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/speakinc/tech-icon4.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/speakinc/tech-icon4.svg"
                                   alt="Filemaker"
                                 />
                               </div>
@@ -275,7 +289,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/speakinc/tech-icon2.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/speakinc/tech-icon2.svg"
                                   alt="MySQL"
                                 />
                               </div>
@@ -283,7 +298,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/speakinc/tech-icon6.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/speakinc/tech-icon6.svg"
                                   alt="Hubspot"
                                 />
                               </div>
@@ -310,7 +326,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-megalot-background.png') center -25px / cover repeat"
+                  "url('/images/case-studies/Parallax-megalot-background.webp') center -25px / cover repeat",
               }}
             >
               <div className="container">
@@ -319,10 +335,12 @@ export default class Speakinc extends Component {
                     <Slide right>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/megalot">Megalot</a>
+                          {/* <a> */}
+                          <Link href="/casestudies/megalot">Megalot</Link>
+                          {/* </a> */}
                         </h3>
                         <span>Full Stack Development</span>
-                        <p>
+                        <p className="text-justify">
                           In the world of crypto and decentralized finance,
                           gambling has always been one of the ideal use cases.
                           Crypto facilitates gambling in the form of easy to use
@@ -336,7 +354,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk small">
                                 <img
-                                  src="/images/case-studies/megalot/tech-icon1.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/megalot/tech-icon1.svg"
                                   alt="Web3"
                                 />
                               </div>
@@ -344,7 +363,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk small">
                                 <img
-                                  src="/images/case-studies/megalot/tech-icon2.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/megalot/tech-icon2.svg"
                                   alt="HTML"
                                 />
                               </div>
@@ -352,7 +372,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk small">
                                 <img
-                                  src="/images/case-studies/megalot/tech-icon3.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/megalot/tech-icon3.svg"
                                   alt="JS"
                                 />
                               </div>
@@ -360,7 +381,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk small">
                                 <img
-                                  src="/images/case-studies/megalot/tech-icon4.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/megalot/tech-icon4.svg"
                                   alt="Metamask"
                                 />
                               </div>
@@ -368,7 +390,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/megalot/tech-icon5.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/megalot/tech-icon5.svg"
                                   alt="Solidity"
                                 />
                               </div>
@@ -376,7 +399,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/megalot/tech-icon6.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/megalot/tech-icon6.svg"
                                   alt="Ethereum"
                                 />
                               </div>
@@ -403,7 +427,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-filemaker-Background.jpg') center -21px / cover repeat",
+                  "url('/images/case-studies/Parallax-filemaker-Background.webp') center -21px / cover repeat",
                 backgroundSize: "cover",
               }}
             >
@@ -413,10 +437,10 @@ export default class Speakinc extends Component {
                     <Slide left>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/filemaker">Filemaker</a>
+                          <Link href="/casestudies/filemaker">Filemaker</Link>
                         </h3>
                         <span>Full Stack Development</span>
-                        <p>
+                        <p className="text-justify">
                           It helps in searching and booking keynote speakers or
                           entertainers for different conventions, conferences or
                           events. Speakinc has exceptional expertise matching
@@ -427,7 +451,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/filemaker/intro-logo-1.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/filemaker/intro-logo-1.svg"
                                   alt="FileMaker"
                                 />
                               </div>
@@ -435,7 +460,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/filemaker/intro-logo-2.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/filemaker/intro-logo-2.svg"
                                   alt="MySQL"
                                 />
                               </div>
@@ -443,7 +469,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/filemaker/intro-logo-4.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/filemaker/intro-logo-4.svg"
                                   alt="Hubspot"
                                 />
                               </div>
@@ -470,7 +497,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-easylevel-background.jpg') center -19px / cover repeat",
+                  "url('/images/case-studies/Parallax-easylevel-background.webp') center -19px / cover repeat",
                 backgroundSize: "cover",
               }}
             >
@@ -480,10 +507,10 @@ export default class Speakinc extends Component {
                     <Slide right>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/easy-level">Easy-Level</a>
+                          <Link href="/casestudies/easy-level">Easy-Level</Link>
                         </h3>
                         <span>Full Stack Development</span>
-                        <p>
+                        <p className="text-justify">
                           We offer a p2p decentralized system in which all
                           participants are rewarded based on the degree of
                           participation in the system with the native ADV token
@@ -495,7 +522,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk small">
                                 <img
-                                  src="/images/case-studies/easylevel/tech-icon1.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/easylevel/tech-icon1.svg"
                                   alt="Web3"
                                 />
                               </div>
@@ -503,7 +531,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/easylevel/tech-icon2.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/easylevel/tech-icon2.svg"
                                   alt="Ethereum"
                                 />
                               </div>
@@ -511,7 +540,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/easylevel/tech-icon5.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/easylevel/tech-icon5.svg"
                                   alt="Solidity"
                                 />
                               </div>
@@ -538,7 +568,7 @@ export default class Speakinc extends Component {
               className="parallax-block"
               style={{
                 background:
-                  "url('/images/case-studies/Parallax-multi-token-Background.jpg') center -40px / cover repeat",
+                  "url('/images/case-studies/Parallax-multi-token-Background.webp') center -40px / cover repeat",
                 backgroundSize: "cover",
               }}
             >
@@ -548,12 +578,12 @@ export default class Speakinc extends Component {
                     <Slide left>
                       <div className="parallax-inner-blk">
                         <h3 className="title-orange">
-                          <a href="/casestudies/multitoken">
+                          <Link href="/casestudies/multitoken">
                             Multi Token Wallet
-                          </a>
+                          </Link>
                         </h3>
                         <span>Full Stack Development</span>
-                        <p>
+                        <p className="text-justify">
                           This project allows a variety of uses in practice.
                           Real world assets like cars can be tokenized and added
                           to the blockchain. We employ the ERC1155 standard
@@ -566,7 +596,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk small">
                                 <img
-                                  src="/images/case-studies/multitoken/tech-icon1.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/multitoken/tech-icon1.svg"
                                   alt="Web3"
                                 />
                               </div>
@@ -574,7 +605,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/multitoken/tech-icon2.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/multitoken/tech-icon2.svg"
                                   alt="Ethereum"
                                 />
                               </div>
@@ -582,7 +614,8 @@ export default class Speakinc extends Component {
                             <li>
                               <div className="ico-blk">
                                 <img
-                                  src="/images/case-studies/multitoken/tech-icon5.svg"
+                                  class="lazyload"
+                                  data-src="/images/case-studies/multitoken/tech-icon5.svg"
                                   alt="Solidity"
                                 />
                               </div>
@@ -604,7 +637,7 @@ export default class Speakinc extends Component {
             </div>
           </div>
 
-          <div id="contact">
+          <div id="contact" className='cs_contact'>
             <Contact></Contact>
           </div>
         </section>

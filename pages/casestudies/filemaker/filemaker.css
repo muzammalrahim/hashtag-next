@@ -5,6 +5,37 @@ commented by sherin since main title css is already called in main css file
   font-size: 50px;
 }*/
 
+
+.case-filmmaker-size{
+  display: inline-block;
+
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 0px;
+  padding: 5px;
+  border: 1px solid #ffb783;
+  border-radius: 4px;
+  color: #fff;
+}
+.filemaker-h2-size h2{
+  font-size: 1.5em;
+  color: #fff;
+}
+
+
+.filemaker .filemaker_title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-display: swap;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+.filemaker .filemaker_margin_bottom {
+  margin-bottom: 2rem;
+}
+
 .case-study.filemaker .features-blk {
   background: #f5f5f5;
   padding: 60px 0;
@@ -41,6 +72,14 @@ commented by sherin since main title css is already called in main css file
 .case-study.filemaker .common-title-blk {
   background-image: url(/images/service/vector.svg);
   background-size: contain;
+}
+@media(min-width:1024px){
+  .common-title-blk p{
+    font-size: 30px !important;
+  }
+  .common-title-blk h2{
+    font-size: 18px !important;
+  }
 }
 
 .case-study.filemaker ul.exp-ul li
@@ -89,6 +128,7 @@ ul.exp-ul li {
     margin-bottom: 25px;
     list-style-type: none;
         font-family: Montserrat !important;
+        font-display: swap;
     color: #434343 !important;
     font-size: 16px;
 }

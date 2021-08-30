@@ -45,14 +45,23 @@ footer {
 
 .copyright-text {
     font-family: 'Montserrat', sans-serif;
+font-display: swap;
     font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: 700;
+    font-size: 14px;
     text-align: center;
     line-height: 18px;
     /*padding-top: 14px;*/
     margin: 0;
-    color: #818181;
+    color: #818181 !important;
+}
+
+.copyright-text a{
+    color: #818181 !important;
+}
+.copyright-text a:hover{
+  
+    color: #c4c1c1 !important;
 }
 
 .footer-badge {
@@ -62,6 +71,7 @@ footer {
 
 .footer-desc {
     font-family: 'Montserrat', sans-serif;
+font-display: swap;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -73,6 +83,7 @@ footer {
     list-style: none !important;
     padding-left: unset;
     font-family: 'Montserrat', sans-serif;
+font-display: swap;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -82,6 +93,7 @@ footer {
 
 .footer-sub-title {
     font-family: 'Montserrat', sans-serif;
+font-display: swap;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -96,6 +108,7 @@ footer {
 .footer-center p {
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
+font-display: swap;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -119,6 +132,7 @@ footer {
 .footer-center p span {
     display: block;
     font-family: 'Montserrat', sans-serif;
+font-display: swap;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -129,6 +143,7 @@ footer {
 .footer-center p a {
     display: block;
     font-family: 'Montserrat', sans-serif;
+font-display: swap;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -157,6 +172,7 @@ footer {
     left: 50%;
     white-space: nowrap;
     font-family: 'Montserrat', sans-serif;
+font-display: swap;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -318,6 +334,7 @@ footer {
     #back-to-top-btn::after {
         content: "\f077";
         font-family: FontAwesome;
+        font-display: swap;
         font-weight: normal;
         font-style: normal;
         font-size: 2em;
@@ -361,6 +378,7 @@ footer {
     #back-to-top-btn::after {
         content: "\f077";
         font-family: FontAwesome;
+        font-display: swap;
         font-weight: normal;
         font-style: normal;
         font-size: 2em;
@@ -394,6 +412,11 @@ footer {
 
     .ns-back-to-top {
         background-color: #2f3133 !important;
+    }
+}
+@media(max-width:1056px){
+    .form-inline-bottom{
+        width: 300px;
     }
 }
 
@@ -529,6 +552,7 @@ footer {
     transform: rotate(-90deg);
     white-space: nowrap;
     font-family: 'Montserrat', sans-serif;
+    font-display: swap;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;

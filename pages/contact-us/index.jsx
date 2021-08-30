@@ -1,11 +1,22 @@
 import React, { Component } from "react";
-import Header from "../../components/header/index.jsx";
-import Footer from "../../components/footer/index.jsx";
-import Contactusform from "../../components/contactusPage/index.jsx";
 import DocumentMeta from "react-document-meta";
 require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
+
+import dynamic from "next/dynamic";
+import "lazysizes";
+// import a plugin
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
+
+const Contactusform = dynamic(
+  () => import("../../components/contactusPage/index.jsx"),
+  { ssr: false }
+);
+const Header = dynamic(() => import("../../components/header/index.jsx"));
+const Footer = dynamic(() => import("../../components/footer/index.jsx"), {
+  ssr: false,
+});
 
 export async function getServerSideProps() {
   let data = [];
@@ -51,15 +62,15 @@ export default class Contactus extends Component {
 
   render() {
     let { tabindex } = this.state;
-   
+
     const { data } = this.state;
     return (
       <div className="contact-main" id="contact-main">
-     
         <Header
           title={data.title}
           description={data.description}
           keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
         <section className="content-container">
           <div className="container-fluid service-bg p-0 m-0 ">
@@ -68,19 +79,19 @@ export default class Contactus extends Component {
                 <div className="container ">
                   <div className="row justify-content-center service-banner-content pl-3 pr-3">
                     <div className="col-lg-6 col-md-12">
-                      <p className="sub-text-above-main-title title-white">
+                      <div className="sub-text-above-main-title title-white">
                         Get in touch we'd love to help{" "}
-                      </p>
+                      </div>
                       <h1 className="main-title title-white d-block">
                         Contact us
                       </h1>
                     </div>
                     <div className="col-lg-6 col-md-12 text-white  ">
-                      <p className="bold-contents service-content-box pl-4">
+                      <h2 className="bold-contents service-content-box pl-4 text-justify">
                         We always love to hear from potential clients. Get in
                         touch, start the conversation, and we’ll take it from
                         there.
-                      </p>
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -91,9 +102,6 @@ export default class Contactus extends Component {
           {/* tab section start */}
           <div className="container-fluid contact-section-two pt-3 pb-3">
             <div className="container">
-
-
-
               <div className="row justify-content-center mt-5 mb-5">
                 <div className="col-12" id="tabs">
                   <div className="col-lg-6 col-md-12 col-sm-12">
@@ -113,7 +121,9 @@ export default class Contactus extends Component {
                           role="tab"
                           aria-controls="nav-home"
                           aria-selected="true"
-                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 1 })}}
+                          onClick={(e) => {
+                            e.preventDefault(), this.setState({ tabindex: 1 });
+                          }}
                         >
                           Sunnyvale
                         </a>
@@ -127,7 +137,9 @@ export default class Contactus extends Component {
                           role="tab"
                           aria-controls="nav-sanjose"
                           aria-selected="true"
-                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 2 })}}
+                          onClick={(e) => {
+                            e.preventDefault(), this.setState({ tabindex: 2 });
+                          }}
                         >
                           San Jose
                         </a>
@@ -141,7 +153,9 @@ export default class Contactus extends Component {
                           role="tab"
                           aria-controls="nav-contact"
                           aria-selected="false"
-                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 3 })}}
+                          onClick={(e) => {
+                            e.preventDefault(), this.setState({ tabindex: 3 });
+                          }}
                         >
                           San Diego
                         </a>
@@ -155,7 +169,9 @@ export default class Contactus extends Component {
                           role="tab"
                           aria-controls="nav-profile"
                           aria-selected="false"
-                          onClick={(e) =>{e.preventDefault(), this.setState({ tabindex: 4 })}}
+                          onClick={(e) => {
+                            e.preventDefault(), this.setState({ tabindex: 4 });
+                          }}
                         >
                           Kochi
                         </a>
@@ -176,32 +192,34 @@ export default class Contactus extends Component {
                     >
                       <div className="row tab-content">
                         <div className="col-lg-6 col-md-12 col-sm-12">
-                          <img
-                            src="images/home/location.svg"
-                            alt="location"
-                            className="address-icons"
-                          />{" "}
-                          <span className="address-content">Sunnyvale</span>
-                          <address className="address-text">
+                          <h3 className="address-content">
+                            <img
+                              data-src="/images/home/location.svg"
+                              alt="location"
+                              className="address-icons lazyload "
+                            />{" "}
+                            <span className="address-content">Sunnyvale</span>
+                          </h3>
+                          <h3 className="address-text">
                             100 S. Murphy Ave. Suite 200
                             <br />
                             Sunnyvale, CA 94086
                             <br />
                             USA
-                          </address>
+                          </h3>
                           <img
-                            src="images/home/phone.svg"
+                            data-src="/images/home/phone.svg"
                             alt="phone"
-                            className="address-icons"
+                            className="address-icons lazyload "
                           />{" "}
                           <span className="address-content">PHONE</span>
                           <p className="address-text">
                             <a href="tel:+1-408-596-2525">+1 408 596 2525</a>
                           </p>
                           <img
-                            src="images/home/email.svg"
+                            data-src="/images/home/email.svg"
                             alt="email"
-                            className="address-icons"
+                            className="address-icons lazyload "
                           />{" "}
                           <span className="address-content">EMAIL</span>
                           <p className="address-text">
@@ -219,8 +237,9 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              src="images/home/linkedin.svg"
-                              className="pl-2 pr-2 contact-linkedin"
+                              data-src="/images/home/linkedin.svg"
+                              alt="linkedin"
+                              className="pl-2 pr-2 contact-linkedin lazyload"
                             />
                           </a>
                           <a
@@ -228,16 +247,17 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              src="images/home/facebook-logo.svg"
-                              className="conatct-fb"
+                              data-src="/images/home/facebook-logo.svg"
+                              alt="facebook"
+                              className="conatct-fb lazyload"
                             />
                           </a>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12">
                           <div className="hash-map h-100">
                             <iframe
-                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.5289063403397!2d-122.03185048529588!3d37.37732237983374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb65cf6471b75%3A0x8a1d78f6bdfb3110!2sHashtag%20Systems%20Inc%20-%20Web%20development%20company!5e0!3m2!1sen!2sin!4v1599470282095!5m2!1sen!2sin"
-                              className="map-image"
+                              data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.5289063403397!2d-122.03185048529588!3d37.37732237983374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb65cf6471b75%3A0x8a1d78f6bdfb3110!2sHashtag%20Systems%20Inc%20-%20Web%20development%20company!5e0!3m2!1sen!2sin!4v1599470282095!5m2!1sen!2sin"
+                              className="map-image lazyload"
                             ></iframe>
                           </div>
                         </div>
@@ -253,33 +273,35 @@ export default class Contactus extends Component {
                     >
                       <div className="row tab-content">
                         <div className="col-lg-6 col-md-12 col-sm-12">
-                          <img
-                            src="images/home/location.svg"
-                            alt="location"
-                            className="address-icons"
-                          />{" "}
-                          <span className="address-content">San Jose</span>
-                          <address className="address-text">
+                          <h3 className="address-content">
+                            <img
+                              data-src="/images/home/location.svg"
+                              alt="location"
+                              className="address-icons lazyload "
+                            />{" "}
+                            <span className="address-content">San Jose</span>
+                          </h3>
+                          <h3 className="address-text">
                             99 S Almaden Blvd Suite
                             <br />
                             600 San Jose, CA 95113
                             <br />
                             USA
                             <br />
-                          </address>
+                          </h3>
                           <img
-                            src="images/home/phone.svg"
+                            data-src="/images/home/phone.svg"
                             alt="phone"
-                            className="address-icons"
+                            className="address-icons lazyload "
                           />{" "}
                           <span className="address-content">PHONE</span>
                           <p className="address-text">
                             <a href="tel:+1-408-404-7323">+1 408 404 7323</a>
                           </p>
                           <img
-                            src="images/home/email.svg"
+                            data-src="/images/home/email.svg"
                             alt="email"
-                            className="address-icons"
+                            className="address-icons lazyload "
                           />{" "}
                           <span className="address-content">EMAIL</span>
                           <p className="address-text">
@@ -296,8 +318,9 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              src="images/home/linkedin.svg"
-                              className="pl-2 pr-2 contact-linkedin"
+                              data-src="/images/home/linkedin.svg"
+                              alt="linkedin"
+                              className="pl-2 pr-2 contact-linkedin lazyload"
                             />
                           </a>
                           <a
@@ -305,16 +328,17 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              src="images/home/facebook-logo.svg"
-                              className="conatct-fb"
+                              data-src="/images/home/facebook-logo.svg"
+                              alt="facebook"
+                              className="conatct-fb lazyload"
                             />
                           </a>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12">
                           <div className="hash-map h-100">
                             <iframe
-                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.428428473099!2d-121.89654558515603!3d37.332364645262906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcca46fe2751d%3A0xac22cd23368a6885!2s99%20S%20Almaden%20Blvd%20%23600%2C%20San%20Jose%2C%20CA%2095113%2C%20USA!5e0!3m2!1sen!2sin!4v1604491251986!5m2!1sen!2sin"
-                              className="map-image"
+                              data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.428428473099!2d-121.89654558515603!3d37.332364645262906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcca46fe2751d%3A0xac22cd23368a6885!2s99%20S%20Almaden%20Blvd%20%23600%2C%20San%20Jose%2C%20CA%2095113%2C%20USA!5e0!3m2!1sen!2sin!4v1604491251986!5m2!1sen!2sin"
+                              className="map-image lazyload"
                             ></iframe>
                           </div>
                         </div>
@@ -331,22 +355,24 @@ export default class Contactus extends Component {
                     >
                       <div className="row tab-content">
                         <div className="col-lg-6 col-md-12 col-sm-12">
-                          <img
-                            src="images/home/location.svg"
-                            alt="location"
-                            className="address-icons"
-                          />{" "}
-                          <span className="address-content">San Diego</span>
-                          <address className="address-text">
+                          <h3 className="address-content">
+                            <img
+                              data-src="/images/home/location.svg"
+                              alt="location"
+                              className="address-icons lazyload "
+                            />{" "}
+                            <span className="address-content">San Diego</span>
+                          </h3>
+                          <h3 className="address-text ">
                             7770 Regents Rd. #113-385
                             <br />
                             San Diego, CA 92122, <br />
                             USA
-                          </address>
+                          </h3>
                           <img
-                            src="images/home/email.svg"
+                            data-src="/images/home/email.svg"
                             alt="email"
-                            className="address-icons"
+                            className="address-icons lazyload "
                           />{" "}
                           <span className="address-content">EMAIL</span>
                           <p className="address-text">
@@ -363,8 +389,9 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              src="images/home/linkedin.svg"
-                              className="pl-2 pr-2 contact-linkedin"
+                              data-src="/images/home/linkedin.svg"
+                              alt="linkedin"
+                              className="pl-2 pr-2 contact-linkedin lazyload"
                             />
                           </a>
                           <a
@@ -372,16 +399,17 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              src="images/home/facebook-logo.svg"
-                              className="conatct-fb"
+                              data-src="/images/home/facebook-logo.svg"
+                              alt="facebook"
+                              className="conatct-fb lazyload"
                             />
                           </a>
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12">
                           <div className="hash-map h-100">
                             <iframe
-                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.3362449183883!2d-117.22655108533353!3d32.8628218869136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc012bd2a9e523%3A0x9bf6efa5cf00201d!2s7770%20Regents%20Rd%2C%20San%20Diego%2C%20CA%2092122%2C%20USA!5e0!3m2!1sen!2sin!4v1599480789688!5m2!1sen!2sin"
-                              className="map-image"
+                              data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.3362449183883!2d-117.22655108533353!3d32.8628218869136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc012bd2a9e523%3A0x9bf6efa5cf00201d!2s7770%20Regents%20Rd%2C%20San%20Diego%2C%20CA%2092122%2C%20USA!5e0!3m2!1sen!2sin!4v1599480789688!5m2!1sen!2sin"
+                              className="map-image lazyload"
                             ></iframe>
                           </div>
                         </div>
@@ -397,32 +425,34 @@ export default class Contactus extends Component {
                     >
                       <div className="row tab-content">
                         <div className="col-lg-6 col-md-12 col-sm-12">
-                          <img
-                            src="images/home/location.svg"
-                            alt="location"
-                            className="address-icons"
-                          />{" "}
-                          <span className="address-content">Kochi</span>
-                          <address className="address-text">
+                          <h3 className="address-content">
+                            <img
+                              data-src="/images/home/location.svg"
+                              alt="location"
+                              className="address-icons lazyload "
+                            />{" "}
+                            <span className="address-content">Kochi</span>
+                          </h3>
+                          <h3 className="address-text text-justify">
                             Infopark Technology Business Center JNI Stadium,{" "}
                             <br />
                             Kaloor,
                             <br /> Kerala, India
                             <br />
-                          </address>
+                          </h3>
                           <img
-                            src="images/home/phone.svg"
+                            data-src="/images/home/phone.svg"
                             alt="phone"
-                            className="address-icons"
+                            className="address-icons lazyload"
                           />{" "}
                           <span className="address-content">PHONE</span>
                           <p className="address-text">
                             <a href="tel:+91-9207749168">+91 9207749168</a>
                           </p>
                           <img
-                            src="images/home/email.svg"
+                            data-src="/images/home/email.svg"
                             alt="email"
-                            className="address-icons"
+                            className="address-icons lazyload "
                           />{" "}
                           <span className="address-content">EMAIL</span>
                           <p className="address-text">
@@ -439,8 +469,8 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              src="images/home/linkedin.svg"
-                              className="pl-2 pr-2 contact-linkedin"
+                              data-src="/images/home/linkedin.svg"
+                              className="pl-2 pr-2 contact-linkedin lazyload"
                               alt="linkedin"
                             />
                           </a>
@@ -449,8 +479,8 @@ export default class Contactus extends Component {
                             target="_blank"
                           >
                             <img
-                              src="images/home/facebook-logo.svg"
-                              className="conatct-fb"
+                              data-src="/images/home/facebook-logo.svg"
+                              className="conatct-fb lazyload"
                               alt="facebook"
                             />
                           </a>
@@ -458,8 +488,8 @@ export default class Contactus extends Component {
                         <div className="col-lg-6 col-md-12 col-sm-12">
                           <div className="hash-map h-100">
                             <iframe
-                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.262837900139!2d76.29727491404789!3d9.995134242854492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d1642da3df1%3A0xbe327fe6330aebf3!2sHashtag%20Systems%20India%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1599470444577!5m2!1sen!2sin"
-                              className="map-image"
+                              data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.262837900139!2d76.29727491404789!3d9.995134242854492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d1642da3df1%3A0xbe327fe6330aebf3!2sHashtag%20Systems%20India%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1599470444577!5m2!1sen!2sin"
+                              className="map-image lazyload"
                             ></iframe>
                           </div>
                         </div>
@@ -468,8 +498,6 @@ export default class Contactus extends Component {
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
 
@@ -484,15 +512,15 @@ export default class Contactus extends Component {
                   <div>
                     {" "}
                     <div className="col-12">
-                      <p className="text-above-main-title w-100">
+                      <p className="text-above-main-title w-100 text-justify">
                         TELL US ABOUT YOUR BIG IDEAS AND WE'LL TELL YOU HOW WE
                         CAN HELP
                       </p>
-                      <h1 className="main-title">
+                      <h2 className="main-title">
                         <span className="title-orange d-block mob-left">
                           Have an idea? Lets discuss
                         </span>
-                      </h1>
+                      </h2>
                     </div>
                     <Contactusform
                       handleFormHide={this.handleFormHide}
@@ -505,15 +533,16 @@ export default class Contactus extends Component {
                         <h3 className="title-orange form-title">
                           Thank you for contacting us
                         </h3>
-                        <p>
+                        <p className="text-justify">
                           We appreciate that you've taken time to write us. We
                           will get back to you soon.
                         </p>
                       </div>
                       <div className="msg-bx-col pl-3">
                         <img
-                          src="/images/contacts/contact-success.svg"
+                          data-src="/images/contacts/contact-success.svg"
                           alt="contact-success"
+                          className="lazyload"
                         />
                       </div>
                     </div>
@@ -531,19 +560,21 @@ export default class Contactus extends Component {
               <div className="row justify-content-center pl-3 pr-3 ">
                 <div className="col-lg-5 col-md-12 col-sm-12">
                   <img
-                    src="images/contacts/puzzles.svg"
-                    className="img-fluid"
+                    data-src="/images/contacts/puzzles.svg"
+                    className="img-fluid lazyload"
                     alt="join-team"
+                    height="auto"
+                    width="100%"
                   />
                 </div>
                 <div className="col-lg-5 col-md-12 col-sm-12 my-auto">
-                  <h1 className="main-title">
+                  <h2 className="main-title">
                     <span className="title-orange d-block mob-left">
                       Join the Team
                     </span>
-                  </h1>
+                  </h2>
                   <div className="contact-content mt-4">
-                    <p>
+                    <p className="text-justify">
                       We’re always looking for bright and driven individuals to
                       be part of our great team.
                     </p>
@@ -576,7 +607,7 @@ export default class Contactus extends Component {
 
         {/* two clm section  end */}
 
-        <Footer></Footer>
+       <div className="contact_footer"> <Footer></Footer></div>
       </div>
     );
   }

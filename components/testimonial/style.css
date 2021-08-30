@@ -8,11 +8,11 @@
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-user-select: none;
+    /* -webkit-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
     -moz-user-select: none;
-    user-select: none;
+    user-select: none; */
 
 }
 
@@ -25,6 +25,16 @@
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
         transform: translateX(-50%);*/
+}
+.testimonial_main .testimonialHead{
+    font-family: 'Montserrat' !important;
+    font-display: swap;
+    font-size: 21px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: 32px !important;
+    letter-spacing: -0.05em !important;
+    text-align: left !important;
 }
 
 .testim .wrap {
@@ -78,7 +88,7 @@
 }
 
 .testim .arrow.right {
-    right: 10px;
+    right: 0;
 }
 
 .testim .dots {
@@ -161,7 +171,8 @@
 
 
 .testim .cont div h2 {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
+    font-display: swap;
     font-size: 21px;
     font-style: normal;
     font-weight: 700;
@@ -172,7 +183,8 @@
 }
 
 .testim .cont div p {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
+    font-display: swap;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -230,7 +242,14 @@
     -o-animation: testim-content-out .5s ease-in-out forwards;
     animation: testim-content-out .5s ease-in-out forwards;
 }
-
+@media(max-width:801px) and (min-width:768px){
+    .testim .arrow.right{
+       right: -35px;
+    }
+    .testim .arrow.left{
+        left:-35px
+    }
+}
 @-webkit-keyframes testim-scale {
     0% {
         -webkit-box-shadow: 0px 0px 0px 0px #eee;
@@ -657,6 +676,7 @@
     line-height: 1;
     z-index: 1;
     font-family: sans-serif;
+    font-display: swap;
 }
 
 .testi-position {

@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Header from '../../../components/header/index.jsx';
-import Footer from '../../../components/footer/index.jsx';
-import Underconstruction from '../../../components/under-construction/index.jsx';
-import Contact from '../../../components/contacts/index.jsx';
-import DocumentMeta from 'react-document-meta';
-import $ from 'jquery';
-import axios from 'axios';
-import * as config from '../../../config.js';
+import Header from "../../../components/header/index.jsx";
+import Footer from "../../../components/footer/index.jsx";
+import Underconstruction from "../../../components/under-construction/index.jsx";
+import Contact from "../../../components/contacts/index.jsx";
+import DocumentMeta from "react-document-meta";
+import $ from "jquery";
+import axios from "axios";
+import * as config from "../../../config.js";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import Slide from 'react-reveal/Reveal';
+import Slide from "react-reveal/Reveal";
 
-require('typeface-montserrat')
+require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
 
@@ -29,7 +29,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "casestudies-filemaker",
       },
     })
     .then((response) => {
@@ -51,18 +51,7 @@ export default class Filemaker extends Component {
   componentDidMount() {}
 
   render() {
-    const meta = {
-      title:
-        "Filemaker Case study - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
-const { data } = this.state;
+    const { data } = this.state;
     const settings = {
       infinite: true,
       slidesToShow: 1,
@@ -87,30 +76,35 @@ const { data } = this.state;
 
     return (
       <div className="case-study filemaker" id="filemaker-case-study">
-        <Header title={meta?.title} keywords={meta?.name?.keywords}></Header>
+        <Header
+          title={data.title}
+          description={data.description}
+          keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
+        ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
             <div className="container">
               <div className="row">
                 <div className="col-md-10">
-                  <div className="common-title-wrap px-md-3">
-                    <div className="common-head-blk">
-                      <h6>Website development &amp; design</h6>
-                      <h2 className="main-title title-white">
-                        Filemaker in Action
+                  <div className="common-title-wrap c-heading px-md-3 ">
+                    <div className="case-filmmaker-size">
+                      <p className="filemaker_title">
+                        Custom Software Development
+                      </p>
+                    </div>
+                    <h1 className="main-title title-white">
+                      Filemaker in Action
+                    </h1>
+                    <div className="intro-desc title-white filemaker-h2-size">
+                      <h2 className="text-justify">
+                        The FileMaker Platform empowers problem solvers to
+                        <br />
+                        create, share, and integrate custom apps to address
+                        their
+                        <br />
+                        ever changing business challenges.
                       </h2>
-                      <div className="intro-desc title-white">
-                        <p>
-                          <b>
-                            The FileMaker Platform empowers problem solvers to
-                            <br />
-                            create, share, and integrate custom apps to address
-                            their
-                            <br />
-                            ever changing business challenges.
-                          </b>
-                        </p>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -127,7 +121,7 @@ const { data } = this.state;
                       <li>
                         <img
                           src="/images/case-studies/filemaker/intro-logo-1.svg"
-                          alt="filemaker"
+                          alt="File Maker"
                         />
                       </li>
                       <li>
@@ -161,7 +155,7 @@ const { data } = this.state;
                 <div className="col-md-5 offset-md-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">Description</h6>
+                      <div className="text-above-main-title">DESCRIPTION</div>
                       <h3 className="main-title title-orange">Introduction</h3>
                     </div>
                     <p>
@@ -169,7 +163,7 @@ const { data } = this.state;
                         SpeakInc is a No 1 US based speakers booking platform
                       </strong>
                     </p>
-                    <p>
+                    <p className="text-justify">
                       It helps in searching and booking keynote speakers or
                       entertainers for different conventions, conferences or
                       events. Speakinc has exceptional expertise matching
@@ -179,12 +173,12 @@ const { data } = this.state;
 
                   <div className="project-unique-wrap challenge-sec">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">Challenges</h6>
+                      <div className="text-above-main-title">CHALLENGES</div>
                       <h3 className="main-title title-orange">
                         Business Challenge
                       </h3>
                     </div>
-                    <p>
+                    <p className="text-justify">
                       Processing client queries and keeping track of it manually
                       in
                       <br /> <b>Hubspot</b> and <b>Filemaker</b> was literally a
@@ -192,7 +186,7 @@ const { data } = this.state;
                       They needed a secure and user friendly way to sync the
                       queries and manage marketing leads and proposals.
                     </p>
-                    <p>
+                    <p className="text-justify">
                       <b>FileMaker DB</b> has huge client records and it has
                       been used for many years. Another challenge was to upload
                       only active clients on this Web application. So we created
@@ -203,16 +197,16 @@ const { data } = this.state;
 
                   <div className="project-unique-wrap challenge-sec">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">What We Do</h6>
+                      <div className="text-above-main-title">WHAT WE DO</div>
                       <h3 className="main-title title-orange">Solution</h3>
                     </div>
-                    <p>
+                    <p className="text-justify">
                       <b>The solution</b> was to upgrade the database to the
                       current version of FileMaker systems and deploy a new
                       simple interface that could better support their marketing
                       department’s workflow.
                     </p>
-                    <p>
+                    <p className="text-justify">
                       <b>We built</b> a modern solution with REST API for
                       syncing leads in Filemaker to Hubspot CRM. Hubspot plays a
                       role in managing leads and clients. These leads, client
@@ -240,7 +234,7 @@ const { data } = this.state;
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-10">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">How It Works</h6>
+                    <div className="text-above-main-title">HOW IT WORKS</div>
                     <h3 className="main-title title-orange">Architecture</h3>
                   </div>
                   <div className="workflow-wrap">
@@ -274,26 +268,29 @@ const { data } = this.state;
                     <h3 className="main-title title-white">Benefits</h3>
                   </div>
                   <div className="benefit-para">
-                    <p>
+                    <p className="text-justify">
                       <b>
-                        With the new Filemake now in the place they have <br />a
-                        modern dahsboard that makes it a easy for access and
+                        With the new Filemaker now in the place they have <br />
+                        a modern dashboard that makes it a easy for access and
                         <br />
                         manage data in different databases, third party apis.
                       </b>
                     </p>
-                    <p>
-                      This system uses Filemaker to communicate with a mysql
-                      database that is connected with multiple web based
-                      applications. Primary call was to centralise a UI for
-                      accessing all different modules.
+                    <p className="text-justify">
+                      <b>
+                        {" "}
+                        This system uses Filemaker to communicate with a mysql
+                        database that is connected with multiple web based
+                        applications. Primary call was to centralise a UI for
+                        accessing all different modules.
+                      </b>
                     </p>
                   </div>
                 </div>
                 <div className="col-md-6 col-lg-6">
                   <div className="img-blk">
                     <img
-                      src="/images/case-studies/filemaker/benefits-img.svg"
+                      src="/images/case-studies/filemaker/benefits-img.png"
                       alt="Architecture"
                     />
                   </div>
@@ -315,12 +312,12 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured1.svg"
-                          alt="featured1"
+                          alt="File Maker"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Easy to <br />
                           use
-                        </h4>
+                        </p>
                         <hr class="hashtag-underline" />
                       </div>
                     </div>
@@ -330,12 +327,12 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured2.svg"
-                          alt="featured2"
+                          alt="File Maker"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Redesigned <br />
                           the interface
-                        </h4>
+                        </p>
                         <hr className="hashtag-underline" />
                       </div>
                     </div>
@@ -345,11 +342,11 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured3.svg"
-                          alt="featured3"
+                          alt="File Maker"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Automatic data synchronization
-                        </h4>
+                        </p>
                         <hr className="hashtag-underline" />
                       </div>
                     </div>
@@ -359,13 +356,13 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured4.svg"
-                          alt="featured4"
+                          alt="File Maker"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Available offline
                           <br />
                           and Online
-                        </h4>
+                        </p>
                         <hr className="hashtag-underline" />
                       </div>
                     </div>
@@ -380,13 +377,13 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured5.svg"
-                          alt="featured5"
+                          alt="File Maker"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Centralised
                           <br />
                           data
-                        </h4>
+                        </p>
                         <hr className="hashtag-underline" />
                       </div>
                     </div>
@@ -396,11 +393,11 @@ const { data } = this.state;
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
                           src="/images/case-studies/filemaker/featured6.svg"
-                          alt="featured6"
+                          alt="File Maker"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Flexible for future requirements
-                        </h4>
+                        </p>
                         <hr className="hashtag-underline" />
                       </div>
                     </div>
@@ -415,9 +412,9 @@ const { data } = this.state;
               <div className="row justify-content-center">
                 <div className="col-md-12 col-lg-10 col-xl-8">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">Our Skillsets</h6>
+                    <div className="text-above-main-title">OUR SKILLSET</div>
                     <h3 className="main-title title-orange">
-                      We are experts in
+                      We Are Experts In
                     </h3>
                   </div>
                 </div>
@@ -448,11 +445,11 @@ const { data } = this.state;
                 <div className="col-lg-8 col-sm-12">
                   <Slide bottom>
                     <div className="project-blk-title">
-                      <h3 className="main-title title-white">
+                      <p className="main-title title-white filemaker_margin_bottom">
                         Committed to creating solutions
                         <br />
                         that provide value for customers
-                      </h3>
+                      </p>
                       <div className="learn-more home-lm-link-vs">
                         <div className="btn-comm">
                           <a href="/contact-us">LET'S TALK</a>

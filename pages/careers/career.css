@@ -48,6 +48,9 @@
     width: 40px;
     margin-left: 0 !important;
 }
+.career_image{
+    text-align: center;
+}
 
 /* media queries */
 @media screen and (min-width: 360px) and (-webkit-device-pixel-ratio: 3) {
@@ -62,7 +65,7 @@
     }
 
     #careers-main .service-bg {
-        height: 480px !important;
+        height: 470px !important;
     }
 
     #careers-main .service-bg-right {
@@ -76,6 +79,10 @@
     body #careers-main .main-title {
         font-size: 31px !important;
     }
+  .service-bg , .career-join-bg , .career_contact , .career_footer{
+        width: 350px !important;
+    }
+    
 }
 
 @media screen and (device-aspect-ratio: 40/71) {
@@ -135,6 +142,38 @@
     }
 }
 
+@media(max-width:1024px){
+    .contact-form-link .form-button{
+        width: 240px !important;
+    }
+}
+
+@media(max-width:2880px) {
+    .coming__soon{
+        margin-top: 70px;
+    }
+}
+
+ @media(width:1024px){
+    .join-team-title-row p{
+        position: absolute;
+    top: -100px;
+    left: 35%;
+        
+    }
+}
+@media(max-width:2880px) and (min-width:2560px) {
+    .what-we-do-border-style{
+        margin-top: 150px;
+       
+    }
+    .join-team-title-row p{
+        margin-top:100px;
+    }
+    #careers-main .container .what-we-do-border-style {
+        height: 200px !important;
+    }
+    }
 
 @media (min-width: 768px) {
     #careers-main .what-we-do-responsive .text-level-5 {
@@ -274,7 +313,7 @@ and (max-device-width : 1024px)  { .career-join-bg
     }
 
     #careers-main .container .what-we-do-border-style {
-        height: unset !important;
+        height: 500px !important;
     }
 
     .career-join-bg {
@@ -305,6 +344,7 @@ and (max-device-width : 1024px)  { .career-join-bg
 }
 .hashtag-careers-vacancies {
     font-family: Montserrat;
+    font-display: swap;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;

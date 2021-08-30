@@ -1,17 +1,25 @@
-import React, { Component } from 'react';
-import Header from '../../../components/header/index.jsx';
-import Footer from '../../../components/footer/index.jsx';
-import Underconstruction from '../../../components/under-construction/index.jsx';
-import Contact from '../../../components/contacts/index.jsx';
-import DocumentMeta from 'react-document-meta';
-import $ from 'jquery';
-import axios from 'axios';
-import * as config from '../../../config.js';
-import Slider from "react-slick";
+import React, { Component } from "react";
 import "slick-carousel/slick/slick.css";
-import Slide from 'react-reveal/Reveal';
+import dynamic from "next/dynamic";
+const Header = dynamic(
+  () => import("../../../components/header/index.jsx"),
+  {}
+);
+const Slider = dynamic(() => import("react-slick"), {});
+const Slide = dynamic(() => import("react-reveal/Reveal"), {});
+const Footer = dynamic(
+  () => import("../../../components/footer/index.jsx"),
+  {}
+);
+const Contact = dynamic(
+  () => import("../../../components/contacts/index.jsx"),
+  {}
+);
 
-require('typeface-montserrat')
+import "slick-carousel/slick/slick.css";
+import "lazysizes";
+
+require("typeface-montserrat");
 import Axios from "axios";
 import https from "https";
 
@@ -28,7 +36,7 @@ export async function getServerSideProps() {
     .get("https://api.hashtag-ca.com/api/v1/metadata", {
       params: {
         page_type: "static",
-        slug: "sevices",
+        slug: "casestudies-speakinc",
       },
     })
     .then((response) => {
@@ -50,18 +58,7 @@ export default class Speakinc extends Component {
   componentDidMount() {}
 
   render() {
-    const meta = {
-      title:
-        "Speakinc Case study - FullStack Web Development| Bay area, California",
-      meta: {
-        charset: "utf-8",
-        name: {
-          keywords:
-            "Web development company,software development company,web development kochi,web development company kochi,software development kochi,web development company kochi,software development kochi,web design and development kochi,full stack development company,wordpress customisation company kerala,shopify theme development company kerala,ecommerce development company kerala,woocommerce development company kerala,web development company California,software development california,wordpress development california,wordpress development kochi,shopify development kochi,shopify development california,wordpress customisation company,shopify theme development company,ecommerce development company kochi,ecommerce development company california",
-        },
-      },
-    };
-const { data } = this.state;
+    const { data } = this.state;
     const settings = {
       infinite: true,
       slidesToShow: 1,
@@ -85,10 +82,12 @@ const { data } = this.state;
     };
 
     return (
-      <div className="case-study" id="case-study">
+      <div className="case-study speakinc" id="case-study">
         <Header
-          title={meta?.title}
-          keywords={meta?.name?.keywords}
+          title={data.title}
+          description={data.description}
+          keywords={data.keywords}
+          canonical_tags={data.canonical_tags}
         ></Header>
         <section className="content-container case-study">
           <div className="common-title-blk">
@@ -96,26 +95,26 @@ const { data } = this.state;
               <div className="row">
                 <div className="col-md-6">
                   <div className="common-title-wrap px-md-3">
-                    <div className="common-head-blk">
-                      <h6>Website development & design</h6>
-                      <h2 className="main-title title-white">SpeakInc</h2>
-                      <ul className="project-info">
-                        <li>
-                          <strong>Industry:</strong>Event Management and
-                          Consulting
-                        </li>
-                        <li>
-                          <strong>Location:</strong>San Diego, California
-                        </li>
-                        <li>
-                          <strong>Established:</strong>Since 1989
-                        </li>
-                        <li>
-                          <strong>Technologies:</strong>Python, Django,
-                          Filemaker, Hubspot
-                        </li>
-                      </ul>
-                    </div>
+                    {/* <div className="case-speakinc-size">
+                      <p className="speak_inc">Website development & design</p>
+                    </div> */}
+                    <h1 className="main-title title-white">SpeakInc</h1>
+                    <ul className="project-info">
+                      <li>
+                        <strong>Industry:</strong>Event Management and
+                        Consulting
+                      </li>
+                      <li>
+                        <strong>Location:</strong>San Diego, California
+                      </li>
+                      <li>
+                        <strong>Established:</strong>Since 1989
+                      </li>
+                      <li>
+                        <strong>Technologies:</strong>Python, Django, Filemaker,
+                        Hubspot
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -125,29 +124,30 @@ const { data } = this.state;
           <div className="project-about-blk">
             <div className="container">
               <div className="row">
-                <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1">
+                <div className="col-md-11 offset-md-1 col-lg-5 offset-lg-1 speakinc_bottom">
                   <div className="project-blk-title">
-                    <h6 className="text-above-main-title">introduction</h6>
-                    <h3 class="main-title title-orange">About Speakinc</h3>
+                    <div className="text-above-main-title">INTRODUCTION</div>
+                    <h2 class="main-title title-orange">About Speakinc</h2>
                   </div>
-                  <p>
+                  <p className="text-justify">
                     <strong>SpeakInc</strong> is a No 1 US based speakers
                     booking platform, which helps in searching and booking
                     keynote speakers or entertainers for different conventions,
                     conferences or events.
                   </p>
-                  <p>
+                  <p className="text-justify">
                     They are an employee-owned and operated company, and the
                     largest speakers bureau in the western United States.
                   </p>
-                  <p>
+                  <p className="text-justify">
                     Speakinc has an exceptional expertise matching keynote
                     speakers to client events{" "}
                   </p>
                 </div>
-                <div className="img-blk">
+                <div className="img-blk speakinLaptopHeight">
                   <img
-                    src="/images/case-studies/speakinc/speakin_laptop.svg"
+                    class="lazyload"
+                    data-src="/images/case-studies/speakinc/speakin_laptop.webp"
                     alt="speakin_laptop"
                   />
                 </div>
@@ -161,17 +161,18 @@ const { data } = this.state;
                 <div className="col-md-5 offset-md-1">
                   <div className="project-unique-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">
-                        product uniqueness
-                      </h6>
-                      <h3 class="main-title title-orange">What`s So Special</h3>
+                      <div className="text-above-main-title">
+                        PRODUCT UNIQUENESS
+                      </div>
+                      <h2 class="main-title title-orange">What`s So Special</h2>
                     </div>
                     <div className="project-spec-grid">
                       <Slide bottom>
                         <div className="project-spec-col">
                           <img
-                            src="/images/case-studies/speakinc/feature-icon1.svg"
-                            alt="feature-icon1"
+                            class="lazyload"
+                            data-src="/images/case-studies/speakinc/feature-icon1.svg"
+                            alt="Design"
                           />
                           <span>Easy navigation</span>
                         </div>
@@ -179,8 +180,9 @@ const { data } = this.state;
                       <Slide bottom>
                         <div className="project-spec-col">
                           <img
-                            src="/images/case-studies/speakinc/feature-icon2.svg"
-                            alt="feature-icon2"
+                            class="lazyload"
+                            data-src="/images/case-studies/speakinc/feature-icon2.svg"
+                            alt="Design"
                           />
                           <span>Dynamic Designs</span>
                         </div>
@@ -188,8 +190,9 @@ const { data } = this.state;
                       <Slide bottom>
                         <div className="project-spec-col">
                           <img
-                            src="/images/case-studies/speakinc/feature-icon3.svg"
-                            alt="feature-icon3"
+                            class="lazyload"
+                            data-src="/images/case-studies/speakinc/feature-icon3.svg"
+                            alt="Design"
                           />
                           <span>Responsive Design</span>
                         </div>
@@ -197,8 +200,9 @@ const { data } = this.state;
                       <Slide bottom>
                         <div className="project-spec-col">
                           <img
-                            src="/images/case-studies/speakinc/feature-icon4.svg"
-                            alt="feature-icon4"
+                            class="lazyload"
+                            data-src="/images/case-studies/speakinc/feature-icon4.svg"
+                            alt="Design"
                           />
                           <span>Trendy, intuitive design</span>
                         </div>
@@ -208,9 +212,10 @@ const { data } = this.state;
                 </div>
                 <div className="col-md-6 ">
                   <Slide bottom>
-                    <div className="hand-img-blk">
+                    <div className="hand-img-blk speakinMobileMargin">
                       <img
-                        src="/images/case-studies/speakinc/spekinc-phone-mockup.svg"
+                        class="lazyload"
+                        data-src="/images/case-studies/speakinc/spekinc-phone-mockup.webp"
                         alt="spekinc-phone-mockup"
                       />
                     </div>
@@ -226,10 +231,10 @@ const { data } = this.state;
                 <div className="col-md-12">
                   <div className="project-slider-wrap">
                     <div className="project-blk-title">
-                      <h6 className="text-above-main-title">
-                        Design with user in mind
-                      </h6>
-                      <h3 class="main-title title-orange">User Interface</h3>
+                      <div className="text-above-main-title">
+                        DESIGN WITH USER IN MIND
+                      </div>
+                      <h2 class="main-title title-orange">User Interface</h2>
                     </div>
 
                     <div className="ui-slider">
@@ -237,40 +242,45 @@ const { data } = this.state;
                         <div className="slide-div">
                           <div className="slider-img">
                             <img
-                              src="/images/case-studies/speakinc/speakinc-1.svg"
-                              alt="speakinc-1"
+                              class="lazyload"
+                              data-src="/images/case-studies/speakinc/speakinc-1.webp"
+                              alt="Design"
                             />
                           </div>
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
                             <img
-                              src="/images/case-studies/speakinc/speakinc-2.svg"
-                              alt="speakinc-2"
+                              class="lazyload"
+                              data-src="/images/case-studies/speakinc/speakinc-2.webp"
+                              alt="Design"
                             />
                           </div>
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
                             <img
-                              src="/images/case-studies/speakinc/speakinc-3.svg"
-                              alt="speakinc-3"
+                              class="lazyload"
+                              data-src="/images/case-studies/speakinc/speakinc-3.webp"
+                              alt="Design"
                             />
                           </div>
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
                             <img
-                              src="/images/case-studies/speakinc/speakinc-4.svg"
-                              alt="speakinc-4"
+                              class="lazyload"
+                              data-src="/images/case-studies/speakinc/speakinc-4.webp"
+                              alt="Design"
                             />
                           </div>
                         </div>
                         <div className="slide-div">
                           <div className="slider-img">
                             <img
-                              src="/images/case-studies/speakinc/speakinc-5.svg"
-                              alt="speakinc-5"
+                              class="lazyload"
+                              data-src="/images/case-studies/speakinc/speakinc-5.webp"
+                              alt="Design"
                             />
                           </div>
                         </div>
@@ -289,19 +299,22 @@ const { data } = this.state;
                   <Slide bottom>
                     <div className="technology-wrap">
                       <div className="project-blk-title">
-                        <h6 className="text-above-main-title">project stack</h6>
-                        <h3 class="main-title title-orange">Technogies Used</h3>
+                        <div className="text-above-main-title">
+                          PROJECT STACK
+                        </div>
+                        <h2 class="main-title title-orange">Technologies Used</h2>
                       </div>
                       <div className="technology-list">
                         <div className="tech-item">
                           <img
-                            src="/images/case-studies/speakinc/tech-icon1.svg"
+                            class="lazyload"
+                            data-src="/images/case-studies/speakinc/tech-icon1.svg"
                             alt="Django"
                           />
-                          <h5>
+                          <p5>
                             Framework: <span>Django 2.0</span>
-                          </h5>
-                          <p>
+                          </p5>
+                          <p className="text-justify">
                             Django is a Python-based free and open-source web
                             framework, which follows the model-template-view
                             architectural pattern.{" "}
@@ -309,16 +322,17 @@ const { data } = this.state;
                         </div>
                         <div className="tech-item">
                           <img
-                            src="/images/case-studies/speakinc/tech-icon2.svg"
+                            class="lazyload"
+                            data-src="/images/case-studies/speakinc/tech-icon2.svg"
                             alt="MySQL"
                           />
-                          <h5>
+                          <p5>
                             Database:{" "}
                             <span>
                               MySQL 8 ( Managed Databases By Digital Ocean )
                             </span>
-                          </h5>
-                          <p>
+                          </p5>
+                          <p className="text-justify">
                             DigitalOcean’s Managed Databases are a fully
                             managed, high performance database cluster service.
                             Using managed databases is a powerful alternative to
@@ -328,13 +342,14 @@ const { data } = this.state;
                         </div>
                         <div className="tech-item">
                           <img
-                            src="/images/case-studies/speakinc/tech-icon3.svg"
+                            class="lazyload"
+                            data-src="/images/case-studies/speakinc/tech-icon3.svg"
                             alt="Nginx"
                           />
-                          <h5>
+                          <p5>
                             Web Server: <span>Nginx </span>
-                          </h5>
-                          <p>
+                          </p5>
+                          <p className="text-justify">
                             Nginx, is an open-source web server that, since its
                             initial success as a web server, is now also used as
                             a reverse proxy, HTTP cache, and load balancer.
@@ -342,13 +357,14 @@ const { data } = this.state;
                         </div>
                         <div className="tech-item">
                           <img
-                            src="/images/case-studies/speakinc/tech-icon4.svg"
+                            class="lazyload"
+                            data-src="/images/case-studies/speakinc/tech-icon4.svg"
                             alt="Filemaker Pro"
                           />
-                          <h5>
+                          <p5>
                             Filemaker <span>Pro</span>
-                          </h5>
-                          <p>
+                          </p5>
+                          <p className="text-justify">
                             FileMaker is a cross-platform relational database
                             application which integrates a database engine with
                             a graphical user interface and security features,
@@ -358,13 +374,14 @@ const { data } = this.state;
                         </div>
                         <div className="tech-item">
                           <img
-                            src="/images/case-studies/speakinc/tech-icon5.svg"
+                            class="lazyload"
+                            data-src="/images/case-studies/speakinc/tech-icon5.svg"
                             alt="Ubuntu"
                           />
-                          <h5>
+                          <p5>
                             Operating System: <span>Ubuntu 18.04 </span>
-                          </h5>
-                          <p>
+                          </p5>
+                          <p className="text-justify">
                             Ubuntu is an open source software operating system
                             that runs from the desktop, to the cloud, to all
                             your internet connected things.
@@ -374,9 +391,10 @@ const { data } = this.state;
                     </div>
                   </Slide>
                 </div>
-                <div className="sticky-img">
+                <div className="sticky-img speakinLaptopHeight">
                   <img
-                    src="/images/case-studies/speakinc/speakin_laptop.svg"
+                    class="lazyload"
+                    data-src="/images/case-studies/speakinc/speakin_laptop.webp"
                     alt="speakin_laptop"
                   />
                 </div>
@@ -387,28 +405,28 @@ const { data } = this.state;
           <div className="diagram-blk">
             <div className="container">
               <div className="row">
-                <div className="col-md-5 offset-md-1">
+                <div className="col-md-5 offset-md-1 ">
                   <div className="project-blk-title">
-                    <h6 className="text-above-main-title">how its built</h6>
-                    <h3 class="main-title title-orange">Systems</h3>
+                    <div className="text-above-main-title">HOW ITS BUILT</div>
+                    <h2 class="main-title title-orange">Systems</h2>
                   </div>
                   <div className="cust-order-list">
                     <ol>
-                      <li>
+                      <li className="text-justify">
                         <strong>Web application</strong> through which web users
                         can find speakers and inquire about them to the bureau
                         through inquiry forms,which are integrated to hubspot.
                       </li>
-                      <li>
+                      <li className="text-justify">
                         <strong>Filemaker application</strong> for the bureau
                         that enables the direct communication between the bureau
                         and users interested in speakers, and speaker handling.
                       </li>
-                      <li>
+                      <li className="text-justify">
                         <strong>SEO for ensuring the presence</strong> of the
                         web application on search engines and all social media.
                       </li>
-                      <li>
+                      <li className="text-justify">
                         <strong>Hubspot for content management</strong>, lead
                         management,sales management.
                       </li>
@@ -418,7 +436,8 @@ const { data } = this.state;
                 <div className="col-md-6">
                   <div className="dfd-blk">
                     <img
-                      src="/images/case-studies/speakinc/workflow.svg"
+                      class="lazyload"
+                      data-src="/images/case-studies/speakinc/workflow.svg"
                       alt="workflow"
                     />
                   </div>
@@ -432,8 +451,8 @@ const { data } = this.state;
               <div className="row">
                 <div className="col-md-12">
                   <div className="project-blk-title text-center">
-                    <h6 className="text-above-main-title">WHAT`S INSIDE</h6>
-                    <h3 class="main-title title-orange">Features</h3>
+                    <div className="text-above-main-title">WHAT`S INSIDE</div>
+                    <h2 class="main-title title-orange">Features</h2>
                   </div>
                 </div>
               </div>
@@ -444,14 +463,15 @@ const { data } = this.state;
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/case-studies/speakinc/feature1.svg"
-                          alt="feature1"
+                          class="lazyload"
+                          data-src="/images/case-studies/speakinc/feature1.svg"
+                          alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           User Friendly <br />
                           Dashboard
-                        </h4>
-                        <p>
+                        </p>
+                        <p className="text-justify">
                           Less complex dashboard, that can be easily handled by
                           anybody, for controlling the web application features.
                         </p>
@@ -462,14 +482,15 @@ const { data } = this.state;
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/case-studies/speakinc/feature2.svg"
-                          alt="feature2"
+                          class="lazyload"
+                          data-src="/images/case-studies/speakinc/feature2.svg"
+                          alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Easy <br />
                           Search{" "}
-                        </h4>
-                        <p>
+                        </p>
+                        <p className="text-justify">
                           Users can easily do quick searches which shows exactly
                           what they want from the site.
                         </p>
@@ -480,14 +501,15 @@ const { data } = this.state;
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/case-studies/speakinc/feature3.svg"
-                          alt="feature3"
+                          class="lazyload"
+                          data-src="/images/case-studies/speakinc/feature3.svg"
+                          alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Portfolio <br />
                           Option
-                        </h4>
-                        <p>
+                        </p>
+                        <p className="text-justify">
                           Users can inquire about multiple speakers at the same
                           time by adding them into a portfolio and submitting
                           them together.
@@ -499,11 +521,12 @@ const { data } = this.state;
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/case-studies/speakinc/feature4.svg"
-                          alt="feature4"
+                          class="lazyload"
+                          data-src="/images/case-studies/speakinc/feature4.svg"
+                          alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">Blogs</h4>
-                        <p>
+                        <p className="text-level-5 title-black">Blogs</p>
+                        <p className="text-justify">
                           Blogs that are managed through hubspot are integrated
                           to web applications through application program
                           interfaces.
@@ -520,13 +543,14 @@ const { data } = this.state;
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/case-studies/speakinc/feature5.svg"
-                          alt="feature5"
+                          class="lazyload"
+                          data-src="/images/case-studies/speakinc/feature5.svg"
+                          alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Hubspot Form Integrations{" "}
-                        </h4>
-                        <p>
+                        </p>
+                        <p className="text-justify">
                           Different forms configured in hubspot are integrated
                           with scripts and apis.
                         </p>
@@ -537,13 +561,14 @@ const { data } = this.state;
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/case-studies/speakinc/feature6.svg"
-                          alt="feature6"
+                          class="lazyload"
+                          data-src="/images/case-studies/speakinc/feature6.svg"
+                          alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Weekly Speakers and Slider Speakers
-                        </h4>
-                        <p>
+                        </p>
+                        <p className="text-justify">
                           Top quality speakers are assigned as weekly speakers
                           based on their rankings and priority.
                         </p>
@@ -554,13 +579,14 @@ const { data } = this.state;
                     <div className="col-lg-3 col-sm-6 mob-padding">
                       <div className="what-we-do-border-style what-we-do-responsive">
                         <img
-                          src="/images/case-studies/speakinc/feature7.svg"
-                          alt="feature7"
+                          class="lazyload"
+                          data-src="/images/case-studies/speakinc/feature7.svg"
+                          alt="feature"
                         />
-                        <h4 className="text-level-5 title-black">
+                        <p className="text-level-5 title-black">
                           Social Media integrations
-                        </h4>
-                        <p>
+                        </p>
+                        <p className="text-justify">
                           Playlist from youtube integrated and other social
                           media plugins added to the website.
                         </p>
@@ -572,9 +598,9 @@ const { data } = this.state;
             </div>
           </div>
 
-          <Contact></Contact>
+         <div className="speakinc__contact"> <Contact></Contact></div>
         </section>
-        <Footer></Footer>
+       <div className="speakinc_footer"> <Footer></Footer></div>
       </div>
     );
   }

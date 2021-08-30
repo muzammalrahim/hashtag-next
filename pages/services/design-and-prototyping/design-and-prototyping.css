@@ -1,0 +1,261 @@
+#Dnpbanner .section-2-row .title-black {
+    color: #434343 !important;
+}
+
+#Dnpbanner .what-we-do-border-style {
+    height: 375px;
+}
+
+#Dnpbanner .text-above-main-title-c {
+    text-transform: uppercase;
+}
+
+#Dnpbanner .main-title-sub-bc {
+    font-size: 50px;
+}
+
+@media only screen and (min-width: 2500px) {
+    #Dnpbanner .what-we-do-border-style {
+        height: 305px;
+    }
+
+    #Dnpbanner .shopify-banner-content {
+        padding-top: 70px !important;
+    }
+
+    #Dnpbanner .main-title-sub-bc {
+        font-size: 90px;
+    }
+
+}
+@media(max-width:290px){
+    .dap_contact{
+        width: 350px;
+    }
+    .dap_footer{
+        width:350px
+    }
+}
+@media only screen and (max-width: 2499px) and (min-width: 2000px) {
+    #Dnpbanner .what-we-do-border-style {
+        height: 320px !important;
+    }
+}
+
+@media only screen and (max-width: 2500px) and (min-width: 1921px) {
+    #Dnpbanner .shopify-banner-frame {
+        height: 550px !important;
+    }
+
+    #Dnpbanner .shopify-bg {
+        height: 490px;
+    }
+
+    #Dnpbanner .shopify-banner-content {
+        padding-top: 75px !important;
+    }
+}
+
+@media only screen and (device-aspect-ratio: 1920/1080) {
+    #Dnpbanner .shopify-banner-content {
+        padding-top: 59px;
+    }
+}
+
+@media only screen and (max-width: 1999px) and (min-width: 1900px) {
+    #Dnpbanner .what-we-do-border-style {
+        height: 335px;
+    }
+
+    #Dnpbanner .why-bc-sec-tt {
+        font-size: 81px;
+    }
+}
+
+@media (min-width: 1900px) {
+    #Dnpbanner .main-title-sub-bc {
+        font-size: 78px;
+    }
+}
+
+@media only screen and (max-width: 1499px) and (min-width: 1280px) {
+    #Dnpbanner .what-we-do-border-style {
+        height: 370px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-height: 1024px) and (min-width: 768px) and (orientation: portrait) {
+    #Dnpbanner .what-we-do-border-style {
+        height: 410px;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 1024px) {
+    #Dnpbanner .sc-ip-pro .col-lg-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 45px;
+    }
+
+    #Dnpbanner .what-we-do-border-style {
+        height: 450px;
+    }
+
+    /* #Dnpbanner .sc-ip-pro-mt{  
+        margin-top: 0px !important;
+    } */
+    #Dnpbanner .shopify-banner-content {
+        padding-top: 70px;
+    }
+
+    #Dnpbanner .why-bc-sec-tt {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #Dnpbanner .shopify-banner-content {
+        padding-top: 45px;
+    }
+
+    #Dnpbanner .shopify-bg {
+        height: 460px;
+    }
+
+    #Dnpbanner .shopify-banner-frame {
+        height: 463px;
+    }
+
+    #Dnpbanner .main-title-bc-sec-h {
+        font-size: 50px;
+    }
+
+    #Dnpbanner .sc-ip-pro-mt {
+        margin-top: 0px !important;
+    }
+
+    #Dnpbanner .main-title-sub-bc {
+        font-size: 46px;
+    }
+
+    #Dnpbanner .dp-on-sm {
+        display: block;
+    }
+
+    #Dnpbanner .hd-on-sm {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 769px) {
+    #Dnpbanner .dp-on-sm {
+        display: none;
+    }
+
+    #Dnpbanner .hd-on-sm {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    #Dnpbanner .main-title-sub-bc {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #Dnpbanner .sc-ip-pro .col-lg-4 {
+        margin-bottom: 45px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 540px) {
+    #Dnpbanner .what-we-do-border-style {
+        height: 325px;
+    }
+
+    #Dnpbanner .main-title-bc-sec-h {
+        font-size: 36px !important;
+    }
+
+    #Dnpbanner .shopify-bg {
+        height: 500px;
+    }
+
+    #Dnpbanner .shopify-banner-frame {
+        height: 502px;
+    }
+
+    #Dnpbanner .main-title-sub-bc {
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #Dnpbanner .shopify-banner-content {
+        padding-top: 40px;
+    }
+
+    #Dnpbanner .shopify-banner-frame {
+        height: 568px;
+    }
+
+    #Dnpbanner .shopify-bg {
+        height: 565px;
+    }
+}
+
+@media (max-width: 375px) {
+    #Dnpbanner .what-we-do-border-style.what-we-do-border-style {
+        height: 420px;
+    }
+
+    #Dnpbanner .main-title-bc-sec-h {
+        font-size: 36px !important;
+    }
+
+    #Dnpbanner .main-title-sub-bc {
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #Dnpbanner .shopify-banner-frame {
+        height: 655px;
+    }
+
+    #Dnpbanner .shopify-bg {
+        height: 650px;
+    }
+
+    #Dnpbanner .what-we-do-border-style.what-we-do-border-style {
+        height: 465px;
+    }
+}
+
+#Dnpbanner .why-choose-bc-sec {
+    background-image: url('/images/blockchain/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 100px 15px;
+}
+
+#Dnpbanner .why-choose-bc-sec-btn button:first-child {
+    background: #fff;
+    color: #434343 !important;
+}
+
+#Dnpbanner .why-choose-bc-sec-btn button:nth-child(2) {
+    background: #FF6B00 !important;
+}
+
+#Dnpbanner .why-choose-bc-sec-btn .form-btn-arrowbc-sec {
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+}
+
+#Dnpbanner .shopify-sec-3-content {
+    margin-top: 70px;
+}
