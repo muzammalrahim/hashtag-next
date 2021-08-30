@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import Header from "../../components/header/index.jsx";
 import Footer from "../../components/footer/index.jsx";
 import Contact from "../../components/contacts/index.jsx";
-import DocumentMeta from "react-document-meta";
 require("typeface-montserrat");
 
 import Axios from "axios";

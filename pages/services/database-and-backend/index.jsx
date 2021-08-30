@@ -413,7 +413,7 @@ export default class DatabasePage extends Component {
                 <div className="row justify-content-center mt-2">
                   <div class="col-lg-2 col-md-2 col-6 text-center my-auto d-flex pt-5">
                     <img
-                      src="3/images/database/mysql-2.svg"
+                      src="/images/database/mysql-2.svg"
                       alt="mysql"
                       class="img-fluid mx-auto my-auto "
                     />

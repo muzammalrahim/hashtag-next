@@ -1,10 +1,4 @@
 import React, { Component } from "react";
-
-import Underconstruction from "../../../components/under-construction/index.jsx";
-import DocumentMeta from "react-document-meta";
-import $ from "jquery";
-import axios from "axios";
-import * as config from "../../../config.js";
 import "slick-carousel/slick/slick.css";
 import dynamic from "next/dynamic";
 const Header = dynamic(
