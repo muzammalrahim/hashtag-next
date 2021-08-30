@@ -203,13 +203,10 @@ alt="logo"
                                 <li className="nav-item">
                                     <Link
                                         href="/about-us"
-
-                                    >
-                                        <a className="nav-link"
                                            className={`nav-link ${Activetabindex === "/about-us" || Activetabindex === "/about-us" ? "active" : ""
                                            }`} activeclassName="active">
-                                            About Us <span className="sr-only">(current)</span>
-                                        </a>
+                                            About Us
+                                       
                                     </Link>
                                 </li>
                                 <li className="nav-item">
