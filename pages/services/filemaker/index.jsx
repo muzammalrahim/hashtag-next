@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import Axios from "axios";
 import https from "https";
 
+require("typeface-montserrat");
 import dynamic from "next/dynamic";
 import "lazysizes";
 // import a plugin

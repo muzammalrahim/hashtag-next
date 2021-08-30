@@ -3,6 +3,7 @@ import DocumentMeta from "react-document-meta";
 import Axios from "axios";
 import https from "https";
 
+require("typeface-montserrat");
 import dynamic from "next/dynamic";
 
 const Slide = dynamic(() => import("react-reveal/Reveal"));

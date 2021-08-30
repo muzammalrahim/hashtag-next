@@ -45,7 +45,6 @@ export async function getServerSideProps() {
   };
 }
 
-require("typeface-montserrat");
 
 export default class Shopify extends Component {
   constructor(props) {

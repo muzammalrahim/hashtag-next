@@ -4,9 +4,6 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 const Post = dynamic(() => import("./post"));
 import $ from "jquery";
-// import Post from "./post.jsx"
-// import "@fortawesome/fontawesome-free/css/all.min.css";
-// dynamic(() => import("@fortawesome/fontawesome-free/css/all.min.css"));
 
 
 const Header = ({ title, description, keywords, canonical_tags }) => {
@@ -18,18 +15,6 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       setActiveTabIndex(localStorage.getItem("Activetabindex2"));
     }
   };
-
-  // useEffect(() => {
-  //   window.onload = function () {
-  //     setTimeout(function () {
-  //       var scriptElement = document.createElement("script");
-  //       scriptElement.type = "text/javascript";
-  //       // scriptElement.src =
-  //       //   "https://www.googletagmanager.com/gtag/js?id=UA-78643548-1";
-  //       document.head.appendChild(scriptElement);
-  //     }, 10);
-  //   };
-  // }, []);
 
   useEffect(() => {
     getindex();
@@ -79,7 +64,7 @@ const Header = ({ title, description, keywords, canonical_tags }) => {
       <meta property="twitter:description" content={description} />
       <link rel="canonical" href={canonical}></link>
 
-<script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"></script>
+{/* <script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-78643548-1"></script> */}
       
   <script
   dangerouslySetInnerHTML={{

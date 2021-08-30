@@ -6,6 +6,7 @@ import DocumentMeta from "react-document-meta";
 import Slide from "react-reveal/Reveal";
 import Axios from "axios";
 import https from "https";
+require("typeface-montserrat");
 
 export async function getServerSideProps() {
   let data = [];
