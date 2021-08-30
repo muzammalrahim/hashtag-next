@@ -1685,18 +1685,18 @@ button.btn.form-button-child.px-3:hover {
 }
 .mobile-banner {
      /* background-image: url(/images/home/home-mobile-banner.webp);   */
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 722px;
-    background-position: center;
-    color: #fff!important;
-    background-color: #fd6b00!important;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 520px;
+     background-position: center;
+     color: #fff!important;
+     background-color: #fd6b00!important;
+     margin-bottom: 250px;
 }
 .mobile-banner img{
      /* background-image: url(/images/home/home-mobile-banner.webp);   */
-     height: 222px;
      width: 100%;
-     margin-top: 280px;
+     margin-top: 58px;
 }
 /* .tempara{
     font-family: Garamond, serif;

@@ -112,7 +112,7 @@ export default class Home extends Component {
                     Web, Mobile &amp; Cloud
                   </span>
                 </p>
-                {/* <div className="text-center">
+                <div className="text-center">
                   <a className="sol-but-ab" href="/services">
                     <div className="btn-group text-center">
                       <button
@@ -129,7 +129,7 @@ export default class Home extends Component {
                       <div className="dropdown-menu"></div>
                     </div>
                   </a>
-                </div> */}
+                </div>
               </div>
               <img src="/images/home/home-mobile-banner.webp" /> 
             </div>
